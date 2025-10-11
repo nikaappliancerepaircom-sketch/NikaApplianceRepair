@@ -8,7 +8,7 @@ Disallow: /private/
 Disallow: /temp/
 
 # Sitemap location
-Sitemap: https://nikaappliancerepair.com/sitemap.xml
+Sitemap: https://www.nikaappliancerepair.com/sitemap.xml
 
 # Crawl delay (in seconds)
 Crawl-delay: 1
