@@ -1,0 +1,115 @@
+<!-- Interlinking Components HTML Templates -->
+
+<!-- 1. Breadcrumb Navigation (Every Page) -->
+<nav class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+        <meta itemprop="position" content="1" />
+    </span> > 
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="/services/"><span itemprop="name">Services</span></a>
+        <meta itemprop="position" content="2" />
+    </span> > 
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Refrigerator Repair</span>
+        <meta itemprop="position" content="3" />
+    </span>
+</nav>
+
+<!-- 2. In-Content Contextual Links (Service Page Example) -->
+<article class="service-content">
+    <h1>Refrigerator Repair in Chicago</h1>
+    
+    <p>When your refrigerator stops cooling, you need fast, reliable service. Our 
+    <a href="/about/certifications">licensed technicians</a> diagnose and repair all 
+    major brands including <a href="/brands/samsung-appliance-repair">Samsung</a>, 
+    <a href="/brands/lg-appliance-repair">LG</a>, and 
+    <a href="/brands/whirlpool-appliance-repair">Whirlpool</a>.</p>
+    
+    <h2>Common Refrigerator Problems We Fix</h2>
+    <p>The most frequent issues include 
+    <a href="/problems/refrigerator-not-cooling">refrigerators not cooling properly</a>, 
+    <a href="/problems/ice-maker-not-working">ice maker malfunctions</a>, and 
+    <a href="/problems/refrigerator-leaking-water">water leaks</a>. If you're experiencing 
+    any of these problems in <a href="/locations/downtown-chicago">Downtown Chicago</a> or 
+    <a href="/locations/north-side">the North Side</a>, we offer 
+    <a href="/emergency-repair">same-day emergency service</a>.</p>
+    
+    <div class="service-tip">
+        <h3>Related Appliance Issues</h3>
+        <p>Problems with your refrigerator often affect your 
+        <a href="/services/freezer-repair">freezer</a> as well. If you're also having 
+        issues with other kitchen appliances, check out our 
+        <a href="/services/dishwasher-repair">dishwasher repair</a> and 
+        <a href="/services/oven-repair">oven repair</a> services.</p>
+    </div>
+</article>
+<!-- 3. Related Services Widget (Auto-inserted on service pages) -->
+<aside class="related-services-widget">
+    <h3>You Might Also Need</h3>
+    <div class="related-grid">
+        <a href="/services/washer-repair" class="related-card">
+            <span class="icon">🌊</span>
+            <span class="service">Washer Repair</span>
+            <span class="reason">Often paired with dryer issues</span>
+        </a>
+        <a href="/services/dishwasher-repair" class="related-card">
+            <span class="icon">🍽️</span>
+            <span class="service">Dishwasher Repair</span>
+            <span class="reason">Similar water-related problems</span>
+        </a>
+        <a href="/emergency-repair" class="related-card urgent">
+            <span class="icon">🚨</span>
+            <span class="service">Emergency Service</span>
+            <span class="reason">Need immediate help?</span>
+        </a>
+    </div>
+</aside>
+
+<!-- 4. Location-Based Interlinking (Bottom of service pages) -->
+<section class="local-service-links">
+    <h3>Refrigerator Repair Services by Area</h3>
+    <div class="location-grid">
+        <a href="/services/refrigerator-repair/downtown-chicago">
+            Downtown Chicago Refrigerator Repair
+        </a>
+        <a href="/services/refrigerator-repair/north-side">
+            North Side Refrigerator Repair
+        </a>
+        <a href="/services/refrigerator-repair/south-side">
+            South Side Refrigerator Repair
+        </a>
+        <a href="/services/refrigerator-repair/west-side">
+            West Side Refrigerator Repair
+        </a>
+    </div>
+    <p>We service all of <a href="/locations/chicago">Chicago and surrounding areas</a> 
+    with <a href="/pricing">transparent pricing</a> and 
+    <a href="/warranty">90-day warranty</a> on all repairs.</p>
+</section>
+
+<!-- 5. Smart Footer Links (Dynamic based on current page) -->
+<footer>
+    <div class="smart-footer-links">
+        <!-- If on Refrigerator Repair page, show: -->
+        <div class="footer-column">
+            <h4>Common Refrigerator Issues</h4>
+            <ul>
+                <li><a href="/problems/refrigerator-not-cooling">Not Cooling</a></li>
+                <li><a href="/problems/ice-maker-broken">Ice Maker Broken</a></li>
+                <li><a href="/problems/refrigerator-leaking">Water Leaking</a></li>
+                <li><a href="/problems/refrigerator-noisy">Strange Noises</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h4>Refrigerator Brands We Service</h4>
+            <ul>
+                <li><a href="/brands/samsung-refrigerator-repair">Samsung</a></li>
+                <li><a href="/brands/lg-refrigerator-repair">LG</a></li>
+                <li><a href="/brands/whirlpool-refrigerator-repair">Whirlpool</a></li>
+                <li><a href="/brands/all">View All Brands</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>

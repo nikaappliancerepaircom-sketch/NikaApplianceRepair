@@ -1,0 +1,283 @@
+{
+  "timestamp": "2025-10-02 17:57:33",
+  "total_pages": 21,
+  "pages_tested": 21,
+  "pages_passed": 0,
+  "pages_failed": 21,
+  "details": {
+    "index.html": {
+      "category": "main",
+      "path": "index.html",
+      "seo_score": 50,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 1458 not optimal",
+        "2. Keyword density 5.62% too high",
+        "3. Only 1 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "services/refrigerator-repair.html": {
+      "category": "services",
+      "path": "services/refrigerator-repair.html",
+      "seo_score": 34,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 163 not optimal",
+        "2. Keyword density 3.68% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes",
+        "5. Font size 14px too small"
+      ],
+      "status": "FAIL"
+    },
+    "services/washer-repair.html": {
+      "category": "services",
+      "path": "services/washer-repair.html",
+      "seo_score": 34,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 163 not optimal",
+        "2. Keyword density 3.68% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes",
+        "5. Font size 14px too small"
+      ],
+      "status": "FAIL"
+    },
+    "services/dryer-repair.html": {
+      "category": "services",
+      "path": "services/dryer-repair.html",
+      "seo_score": 34,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 159 not optimal",
+        "2. Keyword density 3.77% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes",
+        "5. Font size 14px too small"
+      ],
+      "status": "FAIL"
+    },
+    "services/oven-repair.html": {
+      "category": "services",
+      "path": "services/oven-repair.html",
+      "seo_score": 34,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 163 not optimal",
+        "2. Keyword density 3.68% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes",
+        "5. Font size 14px too small"
+      ],
+      "status": "FAIL"
+    },
+    "services/stove-cooktop-repair.html": {
+      "category": "services",
+      "path": "services/stove-cooktop-repair.html",
+      "seo_score": 34,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 168 not optimal",
+        "2. Keyword density 3.57% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes",
+        "5. Font size 14px too small"
+      ],
+      "status": "FAIL"
+    },
+    "services/freezer-repair.html": {
+      "category": "services",
+      "path": "services/freezer-repair.html",
+      "seo_score": 34,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 159 not optimal",
+        "2. Keyword density 3.77% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes",
+        "5. Font size 14px too small"
+      ],
+      "status": "FAIL"
+    },
+    "services/dishwasher-repair.html": {
+      "category": "services",
+      "path": "services/dishwasher-repair.html",
+      "seo_score": 53,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 1289 not optimal",
+        "2. Only 1 images",
+        "3. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "services/refrigerator-freezer-repair.html": {
+      "category": "services",
+      "path": "services/refrigerator-freezer-repair.html",
+      "seo_score": 53,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 1290 not optimal",
+        "2. Only 1 images",
+        "3. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "services/washer-dryer-repair.html": {
+      "category": "services",
+      "path": "services/washer-dryer-repair.html",
+      "seo_score": 53,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 1290 not optimal",
+        "2. Only 1 images",
+        "3. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "services/oven-stove-repair.html": {
+      "category": "services",
+      "path": "services/oven-stove-repair.html",
+      "seo_score": 53,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 1290 not optimal",
+        "2. Only 1 images",
+        "3. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "services/dishwasher-installation.html": {
+      "category": "services",
+      "path": "services/dishwasher-installation.html",
+      "seo_score": 53,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 1289 not optimal",
+        "2. Only 1 images",
+        "3. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "locations/toronto.html": {
+      "category": "locations",
+      "path": "locations/toronto.html",
+      "seo_score": 50,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 495 not optimal",
+        "2. Keyword density 5.66% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "locations/mississauga.html": {
+      "category": "locations",
+      "path": "locations/mississauga.html",
+      "seo_score": 46,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 492 not optimal",
+        "2. Keyword density 5.69% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "locations/brampton.html": {
+      "category": "locations",
+      "path": "locations/brampton.html",
+      "seo_score": 46,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 492 not optimal",
+        "2. Keyword density 5.69% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "locations/vaughan.html": {
+      "category": "locations",
+      "path": "locations/vaughan.html",
+      "seo_score": 46,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 492 not optimal",
+        "2. Keyword density 5.69% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "locations/markham.html": {
+      "category": "locations",
+      "path": "locations/markham.html",
+      "seo_score": 46,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 492 not optimal",
+        "2. Keyword density 5.69% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "locations/richmond-hill.html": {
+      "category": "locations",
+      "path": "locations/richmond-hill.html",
+      "seo_score": 46,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 511 not optimal",
+        "2. Keyword density 5.48% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "locations/etobicoke.html": {
+      "category": "locations",
+      "path": "locations/etobicoke.html",
+      "seo_score": 48,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 491 not optimal",
+        "2. Keyword density 5.70% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "locations/scarborough.html": {
+      "category": "locations",
+      "path": "locations/scarborough.html",
+      "seo_score": 48,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 491 not optimal",
+        "2. Keyword density 5.70% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "locations/north-york.html": {
+      "category": "locations",
+      "path": "locations/north-york.html",
+      "seo_score": 48,
+      "data_consistency": "UNKNOWN",
+      "critical_issues": [
+        "1. Word count 511 not optimal",
+        "2. Keyword density 5.48% too high",
+        "3. Only 0 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    }
+  }
+}

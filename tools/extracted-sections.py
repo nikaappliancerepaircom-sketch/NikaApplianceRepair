@@ -1,0 +1,919 @@
+# Extracted sections from index.html
+# Each section contains the complete HTML structure including all attributes, classes, styles, and content
+
+SECTION_1 = """<section class="hero-section">
+        <div class="hero-bg-animation">
+            <!-- Refrigerator Icon -->
+            <div class="floating-icon icon-1">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 2C5.9 2 5 2.9 5 4V19C5 20.1 5.9 21 7 21H17C18.1 21 19 20.1 19 19V4C19 2.9 18.1 2 17 2H7ZM7 4H17V10H7V4ZM7 12H17V19H7V12ZM8 5V8H10V5H8ZM8 13V16H10V13H8Z"/>
+                </svg>
+            </div>
+
+            <!-- Dishwasher Icon -->
+            <div class="floating-icon icon-2">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2ZM18 4V8H6V4H18ZM6 20V10H18V20H6ZM8 5C7.45 5 7 5.45 7 6C7 6.55 7.45 7 8 7C8.55 7 9 6.55 9 6C9 5.45 8.55 5 8 5ZM10 5C9.45 5 9 5.45 9 6C9 6.55 9.45 7 10 7C10.55 7 11 6.55 11 6C11 5.45 10.55 5 10 5ZM8 12C7.45 12 7 12.45 7 13S7.45 14 8 14 9 13.55 9 13 8.55 12 8 12ZM8 16C7.45 16 7 16.45 7 17S7.45 18 8 18 9 17.55 9 17 8.55 16 8 16ZM11.5 12C10.67 12 10 12.67 10 13.5S10.67 15 11.5 15 13 14.33 13 13.5 12.33 12 11.5 12ZM15.5 13C15.22 13 15 13.22 15 13.5S15.22 14 15.5 14 16 13.78 16 13.5 15.78 13 15.5 13Z"/>
+                </svg>
+            </div>
+
+            <!-- Dryer Icon -->
+            <div class="floating-icon icon-3">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 2H18C19.11 2 20 2.89 20 4V20C20 21.11 19.11 22 18 22H6C4.89 22 4 21.11 4 20V4C4 2.89 4.89 2 6 2ZM6 4V7H18V4H6ZM6 9V20H18V9H6ZM8 5C8.55 5 9 5.45 9 6C9 6.55 8.55 7 8 7C7.45 7 7 6.55 7 6C7 5.45 7.45 5 8 5ZM10 5C10.55 5 11 5.45 11 6C11 6.55 10.55 7 10 7C9.45 7 9 6.55 9 6C9 5.45 9.45 5 10 5ZM12 11.5C14.21 11.5 16 13.29 16 15.5S14.21 19.5 12 19.5 8 17.71 8 15.5 9.79 11.5 12 11.5ZM12 13.5C10.9 13.5 10 14.4 10 15.5S10.9 17.5 12 17.5 14 16.6 14 15.5 13.1 13.5 12 13.5Z"/>
+                </svg>
+            </div>
+
+            <!-- Stove Icon -->
+            <div class="floating-icon icon-4">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8H20V5H4V8ZM6 2C6.55 2 7 2.45 7 3S6.55 4 6 4 5 3.55 5 3 5.45 2 6 2ZM9 2C9.55 2 10 2.45 10 3S9.55 4 9 4 8 3.55 8 3 8.45 2 9 2ZM15 2C15.55 2 16 2.45 16 3S15.55 4 15 4 14 3.55 14 3 14.45 2 15 2ZM18 2C18.55 2 19 2.45 19 3S18.55 4 18 4 17 3.55 17 3 17.45 2 18 2ZM4 10V19C4 20.1 4.9 21 6 21H18C19.1 21 20 20.1 20 19V10H4ZM8 18C6.9 18 6 17.1 6 16C6 14.9 6.9 14 8 14S10 14.9 10 16C10 17.1 9.1 18 8 18ZM16 18C14.9 18 14 17.1 14 16C14 14.9 14.9 14 16 14S18 14.9 18 16C18 17.1 17.1 18 16 18Z"/>
+                </svg>
+            </div>
+
+            <!-- Oven Icon -->
+            <div class="floating-icon icon-5">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 3C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H4ZM4 5H20V9H4V5ZM4 11H20V19H4V11ZM5 6V8H7V6H5ZM8 6V8H10V6H8ZM19 6C18.45 6 18 6.45 18 7C18 7.55 18.45 8 19 8C19.55 8 20 7.55 20 7C20 6.45 19.55 6 19 6ZM6 13V17H18V13H6Z"/>
+                </svg>
+            </div>
+
+            <!-- Washing Machine Icon -->
+            <div class="floating-icon icon-6">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 2H18C19.11 2 20 2.89 20 4V20C20 21.11 19.11 22 18 22H6C4.89 22 4 21.11 4 20V4C4 2.89 4.89 2 6 2ZM6 4V20H18V4H6ZM12 7C14.76 7 17 9.24 17 12S14.76 17 12 17 7 14.76 7 12 9.24 7 12 7ZM12 9C10.34 9 9 10.34 9 12S10.34 15 12 15 15 13.66 15 12 13.66 9 12 9ZM8 5C8.55 5 9 5.45 9 6S8.55 7 8 7 7 6.55 7 6 7.45 5 8 5ZM10 5C10.55 5 11 5.45 11 6S10.55 7 10 7 9 6.55 9 6 9.45 5 10 5Z"/>
+                </svg>
+            </div>
+
+            <!-- Hidden icons -->
+            <div class="floating-icon icon-7" style="display: none;"></div>
+            <div class="floating-icon icon-8" style="display: none;"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        We're the <span class="highlight-yellow">appliance</span>
+                        repair company that
+                        will <span class="highlight-yellow">make</span> you say...
+                        <span class="wow-text">WOW!</span>
+                    </h1>
+                    <p class="hero-subtitle">Same-day service • 90-day warranty • All brands</p>
+                    <p class="hero-trust-text">✅ No Hidden Fees - Ever! • Licensed & Insured • 5+ Years Experience</p>
+                    <div class="hero-cta-group">
+                        <a href="#book" class="cta-primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                            </svg>
+                            Book Service Now
+                        </a>
+                        <a href="tel:4377476737" class="cta-secondary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                            </svg>
+                            CLICK TO CALL US TODAY
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/friendly-technician-character.png" alt="Professional Appliance Repair Technician">
+                </div>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_2 = """<section class="countdown-section" style="text-align: center !important;">
+        <div class="container" style="text-align: center !important;">
+            <h2 class="countdown-title" style="text-align: center !important; width: 100% !important;">Book Online & Save $40 on Any Appliance Repair</h2>
+            <p class="countdown-label">DEAL ENDS IN</p>
+            <div class="countdown-timer" style="display: flex !important; flex-direction: row !important; justify-content: center !important; gap: 20px !important;">
+                <div class="timer-box">
+                    <div class="timer-value" id="minutes">14</div>
+                    <div class="timer-label">MINUTES</div>
+                </div>
+                <div class="timer-box">
+                    <div class="timer-value" id="seconds">45</div>
+                    <div class="timer-label">SECONDS</div>
+                </div>
+            </div>
+            <a href="#book" class="countdown-cta">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                </svg>
+                CLICK TO BOOK DIAGNOSTIC NOW
+            </a>
+        </div>
+    </section>"""
+
+SECTION_3 = """<section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Appliance Repair Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Refrigerator Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="10" width="60" height="80" rx="8" fill="#2196F3" stroke="#1976D2" stroke-width="2"/>
+                            <rect x="25" y="15" width="50" height="35" rx="4" fill="#B3E5FC"/>
+                            <rect x="25" y="55" width="50" height="30" rx="4" fill="#81D4FA"/>
+                            <rect x="30" y="20" width="15" height="25" rx="2" fill="#E3F2FD"/>
+                            <rect x="65" y="60" width="6" height="20" rx="3" fill="#1565C0"/>
+                            <circle cx="35" cy="65" r="2" fill="#0D47A1"/>
+                            <path d="M55 25H60V30H55V25Z" fill="#90CAF9"/>
+                            <path d="M55 35H60V40H55V35Z" fill="#90CAF9"/>
+                        </svg>
+                    </div>
+                    <h3>Refrigerator Repair</h3>
+                    <p>Expert fridge repair service for all types. Fixed within 24 hours. Call us before your ice melts!</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Dishwasher Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="20" width="70" height="60" rx="6" fill="#E91E63" stroke="#C2185B" stroke-width="2"/>
+                            <rect x="20" y="25" width="60" height="45" rx="4" fill="#F8BBD0"/>
+                            <rect x="25" y="30" width="50" height="35" rx="3" fill="#FCE4EC"/>
+                            <circle cx="30" cy="75" r="2" fill="#880E4F"/>
+                            <circle cx="40" cy="75" r="2" fill="#880E4F"/>
+                            <circle cx="50" cy="75" r="2" fill="#880E4F"/>
+                            <rect x="60" y="73" width="15" height="4" rx="2" fill="#AD1457"/>
+                            <!-- Water droplets -->
+                            <path d="M35 40C35 42 33 45 33 45C33 45 31 42 31 40C31 38 31.9 37 33 37C34.1 37 35 38 35 40Z" fill="#81D4FA"/>
+                            <path d="M45 45C45 47 43 50 43 50C43 50 41 47 41 45C41 43 41.9 42 43 42C44.1 42 45 43 45 45Z" fill="#81D4FA"/>
+                            <path d="M55 40C55 42 53 45 53 45C53 45 51 42 51 40C51 38 51.9 37 53 37C54.1 37 55 38 55 40Z" fill="#81D4FA"/>
+                            <!-- Dishes -->
+                            <ellipse cx="50" cy="55" rx="15" ry="3" fill="#FFAB91"/>
+                            <ellipse cx="50" cy="50" rx="12" ry="2" fill="#FFCCBC"/>
+                        </svg>
+                    </div>
+                    <h3>Dishwasher Repair</h3>
+                    <p>Covering built-in, portable, double, and countertop dishwashers. Notice issues? Time to call for repair.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Dryer Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="15" width="70" height="70" rx="8" fill="#FF6B35" stroke="#E65100" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="25" fill="#FFE0B2" stroke="#FFB74D" stroke-width="2"/>
+                            <rect x="20" y="20" width="60" height="8" rx="4" fill="#BF360C"/>
+                            <circle cx="30" cy="24" r="3" fill="#FFD54F"/>
+                            <circle cx="40" cy="24" r="3" fill="#4CAF50"/>
+                            <rect x="55" y="22" width="20" height="4" rx="2" fill="#FF8A65"/>
+                            <!-- Drum pattern -->
+                            <path d="M50 30 L45 45 L50 50 L55 45 Z" fill="#FFAB91"/>
+                            <path d="M35 40 L40 50 L35 55 L30 50 Z" fill="#FFAB91"/>
+                            <path d="M65 40 L70 50 L65 55 L60 50 Z" fill="#FFAB91"/>
+                            <path d="M50 55 L45 60 L50 70 L55 60 Z" fill="#FFAB91"/>
+                            <!-- Lint indicator -->
+                            <rect x="65" y="75" width="15" height="5" rx="2" fill="#FDD835" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <h3>Dryer Repair</h3>
+                    <p>Expert dryer repair services. Our experienced technicians swiftly diagnose and fix any issue.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Stove Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="40" width="80" height="45" rx="6" fill="#7B1FA2" stroke="#4A148C" stroke-width="2"/>
+                            <rect x="15" y="45" width="70" height="35" fill="#CE93D8"/>
+                            <!-- Burners -->
+                            <circle cx="30" cy="60" r="12" fill="#4A148C" stroke="#311B92" stroke-width="2"/>
+                            <circle cx="30" cy="60" r="8" fill="#6A1B9A"/>
+                            <circle cx="30" cy="60" r="4" fill="#8E24AA"/>
+
+                            <circle cx="70" cy="60" r="12" fill="#4A148C" stroke="#311B92" stroke-width="2"/>
+                            <circle cx="70" cy="60" r="8" fill="#6A1B9A"/>
+                            <circle cx="70" cy="60" r="4" fill="#8E24AA"/>
+
+                            <!-- Control knobs -->
+                            <circle cx="20" cy="75" r="4" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1"/>
+                            <circle cx="35" cy="75" r="4" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1"/>
+                            <circle cx="65" cy="75" r="4" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1"/>
+                            <circle cx="80" cy="75" r="4" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1"/>
+
+                            <!-- Flames -->
+                            <path d="M25 25C25 30 30 35 30 35C30 35 35 30 35 25C35 20 32.5 17 30 17C27.5 17 25 20 25 25Z" fill="#FF6F00" opacity="0.8"/>
+                            <path d="M28 27C28 29 30 31 30 31C30 31 32 29 32 27C32 25 31 24 30 24C29 24 28 25 28 27Z" fill="#FDD835"/>
+
+                            <path d="M65 25C65 30 70 35 70 35C70 35 75 30 75 25C75 20 72.5 17 70 17C67.5 17 65 20 65 25Z" fill="#FF6F00" opacity="0.8"/>
+                            <path d="M68 27C68 29 70 31 70 31C70 31 72 29 72 27C72 25 71 24 70 24C69 24 68 25 68 27Z" fill="#FDD835"/>
+                        </svg>
+                    </div>
+                    <h3>Stove Repair</h3>
+                    <p>Expert stove repair for any model. Say goodbye to cold sandwiches for dinner with our help.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Oven Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="20" width="70" height="65" rx="6" fill="#DC2626" stroke="#B91C1C" stroke-width="2"/>
+                            <rect x="20" y="25" width="60" height="10" rx="3" fill="#7F1D1D"/>
+                            <!-- Control panel -->
+                            <circle cx="30" cy="30" r="3" fill="#FCA5A5"/>
+                            <circle cx="40" cy="30" r="3" fill="#FCA5A5"/>
+                            <circle cx="50" cy="30" r="3" fill="#FCA5A5"/>
+                            <rect x="60" y="28" width="15" height="4" rx="2" fill="#FEE2E2"/>
+                            <!-- Oven door -->
+                            <rect x="20" y="40" width="60" height="40" rx="4" fill="#991B1B"/>
+                            <rect x="25" y="45" width="50" height="30" rx="3" fill="#450A0A" opacity="0.8"/>
+                            <rect x="30" y="50" width="40" height="20" rx="2" fill="#1F2937" opacity="0.6"/>
+                            <!-- Window glow -->
+                            <rect x="35" y="55" width="30" height="10" rx="2" fill="#FED7AA" opacity="0.5"/>
+                            <!-- Handle -->
+                            <rect x="25" y="42" width="50" height="3" rx="1.5" fill="#D1D5DB"/>
+                            <!-- Rack lines -->
+                            <line x1="35" y1="58" x2="65" y2="58" stroke="#9CA3AF" stroke-width="1"/>
+                            <line x1="35" y1="62" x2="65" y2="62" stroke="#9CA3AF" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3>Oven Repair</h3>
+                    <p>Fixing cooktops, range tops, ovens, single or multiple. Our oven repair expert handles all issues.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Washing Machine Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="10" width="70" height="80" rx="8" fill="#00BCD4" stroke="#0097A7" stroke-width="2"/>
+                            <rect x="20" y="15" width="60" height="15" rx="4" fill="#006064"/>
+                            <!-- Control panel -->
+                            <circle cx="30" cy="22" r="3" fill="#B2EBF2"/>
+                            <circle cx="40" cy="22" r="3" fill="#4DD0E1"/>
+                            <rect x="50" y="20" width="25" height="4" rx="2" fill="#E0F7FA"/>
+                            <!-- Door -->
+                            <circle cx="50" cy="55" r="25" fill="#00838F" stroke="#006064" stroke-width="2"/>
+                            <circle cx="50" cy="55" r="20" fill="#E0F7FA" opacity="0.3"/>
+                            <!-- Water and bubbles -->
+                            <circle cx="45" cy="50" r="3" fill="#81D4FA" opacity="0.8"/>
+                            <circle cx="55" cy="58" r="2" fill="#B3E5FC" opacity="0.7"/>
+                            <circle cx="48" cy="62" r="4" fill="#4FC3F7" opacity="0.6"/>
+                            <circle cx="58" cy="48" r="2.5" fill="#81D4FA" opacity="0.8"/>
+                            <!-- Clothes inside -->
+                            <path d="M40 55 Q50 60 60 55 Q55 65 45 65 Q40 60 40 55Z" fill="#F06292" opacity="0.7"/>
+                            <path d="M45 50 Q50 45 55 50 Q52 55 48 55 Q45 52 45 50Z" fill="#FFB74D" opacity="0.7"/>
+                            <!-- Door handle -->
+                            <rect x="75" y="50" width="5" height="10" rx="2.5" fill="#CFD8DC"/>
+                        </svg>
+                    </div>
+                    <h3>Washing Machine Repair</h3>
+                    <p>Commercial and residential washer repair service. Certified technicians ready to fix any issue.</p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="#book" class="cta-primary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                    </svg>
+                    BOOK SERVICE NOW
+                </a>
+                <a href="tel:4377476737" class="cta-secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                    </svg>
+                    CALL NOW: 437-747-6737
+                </a>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_4 = """<section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title-light">Why Our <span class="highlight-yellow">Appliance Repair Service</span> Is Better</h2>
+            <p class="section-subtitle">We're not just fixing appliances - we're building trust with every service call</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Lightning Fast Response</h3>
+                    <p>45-minute average arrival time. Same-day service for 95% of calls. We know broken appliances can't wait.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Certified Experts</h3>
+                    <p>Factory-trained, licensed, and insured technicians. 5+ years minimum experience on every truck.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden fees, no surprises. Get exact quotes before we start. Plus, save $40 as a new customer!</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔧</div>
+                    <h3>Genuine Parts Only</h3>
+                    <p>OEM and high-quality parts that last. No cheap knockoffs that break in 6 months.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>90-Day Guarantee</h3>
+                    <p>Industry-leading warranty on all repairs. If something goes wrong, we'll fix it free - no questions asked.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏠</div>
+                    <h3>All Brands Welcome</h3>
+                    <p>Authorized to service 90+ brands. From Samsung to Sub-Zero, we've got you covered.</p>
+                </div>
+            </div>
+
+            <div class="why-cta">
+                <p class="cta-text">Experience the difference with Toronto's most trusted repair service</p>
+                <a href="#book" class="cta-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                    SCHEDULE YOUR REPAIR TODAY
+                </a>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_5 = """<section class="about-section" id="about" style="text-align: center !important;">
+        <div class="container" style="text-align: center !important;">
+            <h2 class="section-title" style="text-align: center !important; width: 100% !important; display: block !important;">About Nick's Appliance Repair</h2>
+
+            <div class="about-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; max-width: 1200px; margin: 0 auto;">
+                <!-- Left Side - Video and Info -->
+                <div class="about-left">
+                    <div class="modern-video-card">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/Nk1ab2OskJ4?start=2&modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3&disablekb=1&playsinline=1" title="Nick's Appliance Repair Story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Our Story</h3>
+                            <p>See how we became Toronto's #1 choice</p>
+                            <div class="video-stats">
+                                <div class="stat-item likes">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/>
+                                    </svg>
+                                    <span>1.8K Likes</span>
+                                </div>
+                                <div class="stat-item views">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                    </svg>
+                                    <span>45K Views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="company-story">
+                        <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 1rem;">Your Trusted Appliance Experts</h3>
+                        <p>Since 2019, Nick's Appliance Repair has been the go-to choice for homeowners across Toronto and the GTA. What started as a one-man operation has grown into a team of certified professionals, all sharing the same commitment to excellence.</p>
+                        <p>We understand that appliance breakdowns are stressful and inconvenient. That's why we've built our business around fast response times, transparent pricing, and quality repairs that last.</p>
+                    </div>
+                </div>
+
+                <!-- Right Side - Stats and Features -->
+                <div class="about-right">
+                    <div class="experience-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">5+</div>
+                            <div class="stat-text">Years in Business</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">5,200+</div>
+                            <div class="stat-text">Repairs Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">98%</div>
+                            <div class="stat-text">Customer Satisfaction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">45min</div>
+                            <div class="stat-text">Average Response Time</div>
+                        </div>
+                    </div>
+
+                    <div class="service-features">
+                        <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 1rem;">What Sets Us Apart</h3>
+                        <ul class="features-list">
+                            <li><span class="feature-icon">✓</span> Licensed, bonded & insured technicians</li>
+                            <li><span class="feature-icon">✓</span> Same-day service available</li>
+                            <li><span class="feature-icon">✓</span> 90-day warranty on all repairs</li>
+                            <li><span class="feature-icon">✓</span> Upfront pricing - no hidden fees</li>
+                            <li><span class="feature-icon">✓</span> Factory-authorized for major brands</li>
+                            <li><span class="feature-icon">✓</span> Emergency service available 24/7</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <div class="cert-badge">
+                            <div class="cert-icon">🏆</div>
+                            <span>Certified Technicians</span>
+                        </div>
+                        <div class="cert-badge">
+                            <div class="cert-icon">⭐</div>
+                            <span>5-Star Rated</span>
+                        </div>
+                        <div class="cert-badge">
+                            <div class="cert-icon">🛡️</div>
+                            <span>Fully Insured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_6 = """<section class="countdown-section">
+        <div class="container">
+            <h2 class="countdown-title">Book Online & Save $40 on Any Appliance Repair</h2>
+            <p class="countdown-label">DEAL ENDS IN</p>
+            <div class="countdown-timer" style="display: flex !important; flex-direction: row !important; justify-content: center !important; gap: 20px !important;">
+                <div class="timer-box">
+                    <div class="timer-value" id="minutes-2">14</div>
+                    <div class="timer-label">MINUTES</div>
+                </div>
+                <div class="timer-box">
+                    <div class="timer-value" id="seconds-2">45</div>
+                    <div class="timer-label">SECONDS</div>
+                </div>
+            </div>
+            <a href="#book" class="countdown-cta">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                </svg>
+                CLICK TO BOOK DIAGNOSTIC NOW
+            </a>
+        </div>
+    </section>"""
+
+SECTION_7 = """<section class="brands-section" id="brands">
+        <div class="container">
+            <h2 class="section-title">Licensed Repair of All Appliance Brands</h2>
+            <p class="section-subtitle">That means no matter how many different kinds you own, you don't need to call someone else! These brands include Asco, Amana, Brava, Cyclone, Fisher & Paykel, Gaggenau, Blomberg, Bosch, Bertazzoni, Frigidaire, Fulgor Milano, GE, Fhiaba, Falmec, Huebsch, Hot Point, Panasonic, Inglis, Jenn-Air, Liebherr, Moffat, Maytag, Miele, LG, Electrolux, KitchenAid, Thermador, Viking, Sub-Zero, Samsung, Kenmore - Sears Appliances, Dacor, White Westinghouse, Whirlpool, Wolf, Zephyr and many more.</p>
+
+            <!-- Brand Logos Section -->
+            <div class="brand-logos-section">
+                <div class="brand-logos-showcase">
+                    <!-- Row 1 -->
+                    <div class="logo-item logo-whirlpool">Whirlpool</div>
+                    <div class="logo-item logo-viking">VIKING</div>
+                    <div class="logo-item logo-samsung">SAMSUNG</div>
+                    <div class="logo-item logo-ge">GE</div>
+                    <div class="logo-item logo-frigidaire">FRIGIDAIRE</div>
+                    <div class="logo-item logo-fisher">Fisher & Paykel</div>
+
+                    <!-- Row 2 -->
+                    <div class="logo-item logo-maytag">MAYTAG</div>
+                    <div class="logo-item logo-lg"><a href="/brands/lg-appliance-repair-toronto.html" style="text-decoration: none; color: inherit;">LG</a></div>
+                    <div class="logo-item logo-kitchenaid">KitchenAid</div>
+                    <div class="logo-item logo-electrolux">Electrolux</div>
+                    <div class="logo-item logo-dacor">dacor</div>
+                    <div class="logo-item logo-bosch">BOSCH</div>
+
+                    <!-- Row 3 -->
+                    <div class="logo-item logo-kenmore">Kenmore</div>
+                    <div class="logo-item logo-jennair">JENN-AIR</div>
+                    <div class="logo-item logo-inglis">Inglis</div>
+                    <div class="logo-item logo-blomberg">Blomberg</div>
+                    <div class="logo-item logo-bertazzoni">BERTAZZONI</div>
+                    <div class="logo-item logo-amana">AMANA</div>
+
+                    <!-- Row 4 -->
+                    <div class="logo-item logo-hotpoint">Hotpoint</div>
+                    <div class="logo-item logo-hobart">HOBART</div>
+                </div>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_8 = """<section class="testimonials-modern">
+        <div class="container">
+            <div class="testimonials-header">
+                <h2>Real Customers, Real Stories <span class="video-icon">📹</span></h2>
+                <p>Watch what our happy customers have to say about their experience</p>
+            </div>
+
+            <div class="testimonials-modern-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/vdL7LqIvzhs?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Nick's Appliance Repair - Brad's Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">Amazing same-day service!</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/P0RYfb2D-wY?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Real Customer Review - Nick's Appliance Repair" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">Professional and reliable!</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/0ChLLYanSNY?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Nick's Appliance Repair Review" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">Saved my day! Thank you!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row of Testimonials -->
+            <div class="testimonials-modern-grid" style="max-width: 800px; margin: 0 auto 4rem;">
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/tca6jz3rJvA?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Nick's Appliance Repair Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">Excellent warranty service!</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/-u4mEmLB6gI?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Nick's Appliance Repair Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">Fair pricing, great job!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Counter -->
+            <div class="customer-counter">
+                <h3>Join <span class="counter-number">5,200+</span> Happy Customers Today!</h3>
+                <a href="tel:4377476737" class="cta-call-modern">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                    </svg>
+                    CALL: 437-747-6737
+                </a>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_9 = """<section class="areas-section" id="areas">
+        <div class="container">
+            <div class="areas-header">
+                <span class="areas-badge">60+ SERVICE AREAS</span>
+                <h2 class="section-title">We're In Your Neighborhood</h2>
+                <p class="section-subtitle">Fast, reliable appliance repair service across Toronto & GTA</p>
+            </div>
+
+            <div class="areas-grid">
+                <div class="area-item">📍 Ajax</div>
+                <div class="area-item">📍 Aurora</div>
+                <div class="area-item">📍 Agincourt</div>
+                <div class="area-item">📍 Bayview Glen</div>
+                <div class="area-item">📍 Berczy Village</div>
+                <div class="area-item">📍 Beverley Glen</div>
+                <div class="area-item">📍 Bradford</div>
+                <div class="area-item">📍 Beverley Acres</div>
+                <div class="area-item">📍 Brampton</div>
+                <div class="area-item">📍 Cachet</div>
+                <div class="area-item">📍 Cathedraltown</div>
+                <div class="area-item">📍 Calgary</div>
+                <div class="area-item">📍 Concord</div>
+                <div class="area-item">📍 Don Valley Village</div>
+                <div class="area-item">📍 Elgin Mills</div>
+                <div class="area-item">📍 East Gwillimbury</div>
+                <div class="area-item">📍 East York</div>
+                <div class="area-item">📍 Edmonton</div>
+                <div class="area-item">📍 Etobicoke</div>
+                <div class="area-item">📍 Greensborough</div>
+                <div class="area-item">📍 GTA</div>
+                <div class="area-item">📍 Gormley</div>
+                <div class="area-item">📍 Hillcrest village</div>
+                <div class="area-item">📍 Innisfil</div>
+                <div class="area-item">📍 King City</div>
+                <div class="area-item">📍 Kleinburg</div>
+                <div class="area-item">📍 Holland Landing</div>
+                <div class="area-item">📍 Langstaff</div>
+                <div class="area-item">📍 Lamoreaux</div>
+                <div class="area-item">📍 Maple</div>
+                <div class="area-item">📍 Markham</div>
+                <div class="area-item">📍 Mount Albert</div>
+                <div class="area-item">📍 Milliken</div>
+                <div class="area-item">📍 Mississauga</div>
+                <div class="area-item">📍 Newmarket</div>
+                <div class="area-item">📍 North York</div>
+                <div class="area-item">📍 Oak-Ridges</div>
+                <div class="area-item">📍 Oakville</div>
+                <div class="area-item">📍 Oshawa</div>
+                <div class="area-item">📍 Pickering</div>
+                <div class="area-item">📍 Richmond Hill</div>
+                <div class="area-item">📍 Richvale</div>
+                <div class="area-item">📍 Raymerville Markville East</div>
+                <div class="area-item">📍 Steeles</div>
+                <div class="area-item">📍 Scarborough</div>
+                <div class="area-item">📍 Schomberg</div>
+                <div class="area-item">📍 Stouffville</div>
+                <div class="area-item">📍 Thornhill</div>
+                <div class="area-item">📍 Toronto</div>
+                <div class="area-item">📍 Unionville</div>
+                <div class="area-item">📍 Uxbridge</div>
+                <div class="area-item">📍 Vaughan</div>
+                <div class="area-item">📍 Whitby</div>
+                <div class="area-item">📍 Woodbridge</div>
+                <div class="area-item">📍 Wismer Commons</div>
+                <div class="area-item">📍 Yongehurst</div>
+                <div class="area-item">📍 Burlington</div>
+                <div class="area-item">📍 Milton</div>
+                <div class="area-item">📍 Georgetown</div>
+                <div class="area-item">📍 Halton Hills</div>
+            </div>
+
+            <div class="areas-features">
+                <div class="area-feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>5-Minute Response</h3>
+                    <p>Lightning-fast arrival in your area</p>
+                </div>
+                <div class="area-feature">
+                    <div class="feature-icon">🏆</div>
+                    <h3>5-Star Service</h3>
+                    <p>Top-rated in every neighborhood</p>
+                </div>
+                <div class="area-feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>7 Days Service</h3>
+                    <p>Including weekends & holidays</p>
+                </div>
+                <div class="area-feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Full Warranty</h3>
+                    <p>90 days parts & labor</p>
+                </div>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_10 = """<section class="property-managers-section">
+        <div class="container">
+            <div class="pm-content">
+                <div class="pm-text">
+                    <div class="pm-badge">
+                        <span class="badge-icon">🏢</span>
+                        <span class="badge-text">FOR PROPERTY MANAGERS</span>
+                    </div>
+
+                    <h2 class="pm-title">Property Managers & Landlords</h2>
+                    <h3 class="pm-subtitle">Your Trusted Partner for All Properties</h3>
+                    <p class="pm-description">Managing multiple properties? We understand your unique needs:</p>
+
+                    <ul class="pm-benefits-modern">
+                        <li>
+                            <span class="benefit-check">✅</span>
+                            <div class="benefit-content">
+                                <strong>Priority Service</strong>
+                                <span>Jump to the front of the line</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="benefit-check">✅</span>
+                            <div class="benefit-content">
+                                <strong>Volume Discounts</strong>
+                                <span>Save more on multiple repairs</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="benefit-check">✅</span>
+                            <div class="benefit-content">
+                                <strong>Transparent Pricing</strong>
+                                <span>Clear quotes, no hidden fees</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="benefit-check">✅</span>
+                            <div class="benefit-content">
+                                <strong>24/7 Emergency Line</strong>
+                                <span>Dedicated support number</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="benefit-check">✅</span>
+                            <div class="benefit-content">
+                                <strong>Tenant Communication</strong>
+                                <span>We handle it professionally</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="benefit-check">✅</span>
+                            <div class="benefit-content">
+                                <strong>Preventive Maintenance</strong>
+                                <span>Keep appliances running longer</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="pm-stats-modern">
+                        <div class="pm-stat-card">
+                            <span class="stat-number-large">500+</span>
+                            <span class="stat-label-modern">Properties Serviced</span>
+                        </div>
+                        <div class="pm-stat-card">
+                            <span class="stat-number-large">45min</span>
+                            <span class="stat-label-modern">Average Response</span>
+                        </div>
+                        <div class="pm-stat-card">
+                            <span class="stat-number-large">15%</span>
+                            <span class="stat-label-modern">Volume Discount</span>
+                        </div>
+                    </div>
+
+                    <div class="pm-cta-section">
+                        <a href="landlords.html" class="cta-business">
+                            <span>⚡</span>
+                            LEARN MORE - BUSINESS ACCOUNTS
+                        </a>
+                        <div class="pm-floating-badge">
+                            <span>💰</span>
+                            <span>Save 15%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_11 = """<section class="booking-section" id="book">
+        <div class="container">
+            <h2 class="section-title">Book Your Repair Service Now</h2>
+            <p class="section-subtitle">Fill out the form below or call us directly</p>
+            <p class="booking-fast-text">⚡ Book in 30 seconds • Same-day service available • We'll call you within 15 minutes!</p>
+
+            <div class="booking-content">
+                <div class="booking-form">
+                    <form>
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address" required>
+                            <select required>
+                                <option value="">Select Appliance Type</option>
+                                <option value="refrigerator">Refrigerator</option>
+                                <option value="washer">Washing Machine</option>
+                                <option value="dryer">Dryer</option>
+                                <option value="dishwasher">Dishwasher</option>
+                                <option value="oven">Oven</option>
+                                <option value="stove">Stove/Cooktop</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Address" required>
+                            <input type="text" placeholder="Postal Code" required>
+                        </div>
+                        <textarea placeholder="Describe the issue..." rows="3"></textarea>
+                        <button type="submit" class="submit-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                            </svg>
+                            BOOK SERVICE NOW
+                        </button>
+                    </form>
+                </div>
+
+                <div class="booking-info">
+                    <div class="info-box">
+                        <h3>💯 Satisfaction Guaranteed</h3>
+                        <p>90-day warranty on all repairs. If you're not happy, we'll make it right.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>📞 Prefer to Call?</h3>
+                        <p>Speak directly with our dispatch team</p>
+                        <a href="tel:4377476737" class="call-btn-large">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                            </svg>
+                            437-747-6737
+                        </a>
+                    </div>
+                    <div class="info-box">
+                        <h3>⏰ Business Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 8:00 PM<br>
+                        Saturday: 9:00 AM - 6:00 PM<br>
+                        Sunday: 10:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_12 = """<section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p class="section-subtitle">Simple 3-step process to get your appliances working like new</p>
+
+            <div class="steps-container">
+                <div class="step-item step-1">
+                    <div class="step-number">
+                        <span class="step-text">STEP</span>
+                        <span class="step-digit">1</span>
+                    </div>
+                    <h3 class="step-title">Book Service</h3>
+                    <p class="step-description">Call or book online. We'll schedule same-day service when possible.</p>
+                </div>
+
+                <div class="step-item step-2">
+                    <div class="step-number">
+                        <span class="step-text">STEP</span>
+                        <span class="step-digit">2</span>
+                    </div>
+                    <h3 class="step-title">Expert Diagnosis</h3>
+                    <p class="step-description">Our certified technician arrives on time and diagnoses the issue.</p>
+                </div>
+
+                <div class="step-item step-3">
+                    <div class="step-number">
+                        <span class="step-text">STEP</span>
+                        <span class="step-digit">3</span>
+                    </div>
+                    <h3 class="step-title">Fast Repair</h3>
+                    <p class="step-description">We fix it right the first time with genuine parts and 90-day warranty.</p>
+                </div>
+            </div>
+
+            <div class="progress-note">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="progress-text">Most repairs completed in under 2 hours</p>
+            </div>
+
+            <div class="how-it-works-cta">
+                <a href="tel:4377476737" class="cta-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                    </svg>
+                    CALL NOW: 437-747-6737
+                </a>
+            </div>
+        </div>
+    </section>"""
+
+SECTION_13 = """<section class="faq-section" style="text-align: center !important;">
+        <div class="container" style="text-align: center !important;">
+            <h2 class="section-title" style="text-align: center !important; width: 100% !important; font-size: 2.5rem; color: #1e40af; margin-bottom: 3rem;">Frequently Asked Questions</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it worth it to fix an appliance?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most appliances are worth repairing if they're less than 10 years old and the repair cost is less than 50% of replacement cost. Our technicians provide honest assessments and will tell you if replacement makes more sense.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Which is better repair or replace?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Generally, repair if: the appliance is less than 8 years old, repair costs less than 50% of new, or it's a high-end model. Replace if: it's over 15 years old, repairs are frequent, or energy efficiency is poor.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the warranty on your appliance repair services?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a comprehensive 90-day warranty on all repairs. This covers both parts and labor. If the same issue occurs within 90 days, we'll fix it free of charge.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the best way to maintain my appliances?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Regular cleaning, following manufacturer guidelines, not overloading, and scheduling annual maintenance checks. We offer maintenance services to keep your appliances running efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What should I do if my appliance breaks down?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>First, unplug the appliance for safety. Check basic issues like power supply or circuit breakers. If the problem persists, call us at 437-747-6737 for same-day service. Don't attempt complex repairs yourself.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>"""

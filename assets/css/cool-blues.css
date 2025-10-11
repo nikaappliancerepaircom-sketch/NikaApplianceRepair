@@ -1,0 +1,409 @@
+/* ========================================
+   COOL BLUES COLOR SCHEME
+   Clean, Professional, Modern
+   ======================================== */
+
+:root {
+    /* Cool Blue Palette */
+    --cool-blue-primary: #2193b0;
+    --cool-blue-secondary: #6dd5ed;
+    --cool-blue-dark: #1a7a91;
+    --cool-blue-light: #a8e6f5;
+    --cool-blue-pale: #e6f7fb;
+    
+    /* Monochrome */
+    --pure-white: #FFFFFF;
+    --off-white: #F8FAFB;
+    --light-gray: #F5F7FA;
+    --medium-gray: #E0E7ED;
+    --dark-gray: #6B7C8C;
+    --charcoal: #2C3E50;
+    --pure-black: #000000;
+}
+
+/* Override Hero Background */
+.hero-section {
+    background: linear-gradient(135deg, var(--cool-blue-primary) 0%, var(--cool-blue-secondary) 100%);
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
+    z-index: 1;
+}
+
+/* White Floating Shapes */
+.floating-shape {
+    background: rgba(255, 255, 255, 0.15) !important;
+    opacity: 1;
+    filter: blur(40px);
+}
+
+/* Hero Content with White/Black */
+.hero-badge {
+    background: var(--pure-white);
+    color: var(--cool-blue-primary);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.badge-icon {
+    background: var(--cool-blue-primary);
+    color: var(--pure-white);
+}
+
+/* Title in Dark Blue/Black */
+.hero-title {
+    color: var(--pure-white) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--pure-white) !important;
+}
+
+.text-gradient {
+    background: none !important;
+    -webkit-text-fill-color: var(--cool-blue-pale) !important;
+    color: var(--cool-blue-pale) !important;
+}
+
+/* Appliance rotation - all white */
+.appliance-item {
+    color: var(--pure-white) !important;
+}
+
+/* Hero description */
+.hero-description {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Feature pills - white with transparency */
+.feature-pill {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: var(--pure-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.feature-icon {
+    background: var(--pure-white) !important;
+    color: var(--cool-blue-primary) !important;
+}
+
+/* Buttons - White and Blue */
+.btn-primary {
+    background: var(--pure-white) !important;
+    color: var(--cool-blue-primary) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: var(--off-white) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+    background: transparent !important;
+    color: var(--pure-white) !important;
+    border: 2px solid var(--pure-white) !important;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.phone-icon {
+    background: var(--pure-white) !important;
+    color: var(--cool-blue-primary) !important;
+}
+
+/* Info cards - Clean white */
+.info-card {
+    background: var(--pure-white) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    background: var(--cool-blue-primary) !important;
+    color: var(--pure-white);
+}
+
+.card-content h4 {
+    color: var(--charcoal);
+}
+
+.card-content p {
+    color: var(--dark-gray);
+}
+
+/* Trust stats - Blue accent */
+.trust-number {
+    color: var(--cool-blue-primary) !important;
+}
+
+.trust-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Trust bar - Clean design */
+.trust-bar {
+    background: var(--light-gray);
+}
+
+.trust-item {
+    background: var(--pure-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.trust-icon {
+    background: var(--cool-blue-primary) !important;
+    color: var(--pure-white);
+}
+
+.trust-text h3 {
+    color: var(--charcoal);
+}
+
+.trust-text p {
+    color: var(--dark-gray);
+}
+
+/* Services Section - Clean cards */
+.services-section {
+    background: var(--pure-white);
+}
+
+.service-card {
+    background: var(--off-white) !important;
+    border: 1px solid var(--medium-gray);
+}
+
+.service-card:hover {
+    background: var(--pure-white) !important;
+    border-color: var(--cool-blue-primary);
+    box-shadow: 0 10px 30px rgba(33, 147, 176, 0.15);
+}
+
+.service-icon {
+    background: var(--cool-blue-primary) !important;
+    color: var(--pure-white) !important;
+}
+
+.service-card h3 {
+    color: var(--charcoal);
+}
+
+.service-link {
+    color: var(--cool-blue-primary);
+}
+
+/* How it works - Blue gradient background */
+.how-it-works {
+    background: linear-gradient(135deg, var(--cool-blue-pale) 0%, var(--light-gray) 100%);
+}
+
+.step-card {
+    background: var(--pure-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+    background: var(--cool-blue-primary) !important;
+    color: var(--pure-white);
+}
+
+.step-icon {
+    color: var(--cool-blue-primary) !important;
+}
+
+/* Brands - Monochrome */
+.brands-section {
+    background: var(--off-white);
+}
+
+.brand-item {
+    background: var(--pure-white);
+    border: 1px solid var(--medium-gray);
+    color: var(--dark-gray);
+}
+
+.brand-item:hover {
+    background: var(--cool-blue-primary) !important;
+    color: var(--pure-white) !important;
+    border-color: var(--cool-blue-primary);
+}
+
+/* Testimonials */
+.testimonials-section {
+    background: var(--light-gray);
+}
+
+.testimonial-card {
+    background: var(--pure-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stars {
+    color: var(--cool-blue-primary);
+}
+
+/* FAQ Section */
+.faq-section {
+    background: var(--pure-white);
+}
+
+.faq-item {
+    background: var(--off-white);
+    border-left: 4px solid var(--cool-blue-primary) !important;
+}
+
+.faq-question {
+    color: var(--charcoal);
+}
+
+/* CTA Section - Blue gradient */
+.cta-section {
+    background: linear-gradient(135deg, var(--cool-blue-dark) 0%, var(--cool-blue-primary) 100%);
+    color: var(--pure-white);
+}
+
+.cta-title {
+    color: var(--pure-white);
+}
+
+/* Footer - Dark */
+.site-footer {
+    background: var(--charcoal);
+    color: var(--pure-white);
+}
+
+.footer-logo .brand-icon {
+    background: var(--cool-blue-primary) !important;
+}
+
+.footer-social a {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social a:hover {
+    background: var(--cool-blue-primary);
+}
+
+/* Floating phone button */
+.floating-phone {
+    background: var(--cool-blue-primary) !important;
+    color: var(--pure-white);
+    box-shadow: 0 4px 20px rgba(33, 147, 176, 0.4);
+}
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 4px 20px rgba(33, 147, 176, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(33, 147, 176, 0.6);
+    }
+    100% {
+        box-shadow: 0 4px 20px rgba(33, 147, 176, 0.4);
+    }
+}
+
+/* Modal */
+.modal-content {
+    background: var(--pure-white);
+}
+
+.modal-content h2 {
+    color: var(--cool-blue-primary) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--cool-blue-primary) !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--cool-blue-primary);
+    box-shadow: 0 0 0 3px rgba(33, 147, 176, 0.1);
+}
+
+/* Service preview */
+.service-preview {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.service-icon {
+    background: var(--cool-blue-primary) !important;
+    color: var(--pure-white) !important;
+}
+
+.service-icon:hover {
+    background: var(--cool-blue-dark) !important;
+}
+
+/* Remove all rainbow and colorful effects */
+@keyframes rainbow {
+    display: none;
+}
+
+.brand-icon:hover {
+    background: var(--cool-blue-dark) !important;
+    animation: none !important;
+}
+
+/* Clean, professional appearance */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Remove saturation filter */
+.hero-wrapper {
+    filter: none !important;
+}
+
+/* Header adjustments */
+.header-top-bar {
+    background: var(--cool-blue-dark) !important;
+}
+
+.nav-brand .brand-icon {
+    background: var(--cool-blue-primary) !important;
+}
+
+.book-button {
+    background: var(--cool-blue-primary) !important;
+    color: var(--pure-white) !important;
+}
+
+.book-button:hover {
+    background: var(--cool-blue-dark) !important;
+}
+
+/* Clean professional look throughout */
+section {
+    border-top: 1px solid var(--medium-gray);
+}
+
+/* Typography adjustments for readability */
+p {
+    color: var(--dark-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--charcoal);
+}
+
+/* Ensure white text on blue backgrounds */
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section p,
+.cta-section h2,
+.cta-section p {
+    color: var(--pure-white) !important;
+}

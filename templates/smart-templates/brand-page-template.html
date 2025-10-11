@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- DYNAMIC SEO META - Generated based on brand context -->
+    <meta name="description" content="{{BRAND_META_DESCRIPTION}}">
+    <meta name="keywords" content="{{BRAND_KEYWORDS}}">
+    <title>{{BRAND_PAGE_TITLE}}</title>
+    
+    <!-- Standard includes -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Brand-specific CSS variables -->
+    <style>
+        :root {
+            --brand-primary: {{BRAND_PRIMARY_COLOR}};
+            --brand-secondary: {{BRAND_SECONDARY_COLOR}};
+        }
+    </style>
+</head>
+<body>
+    <!-- UNIVERSAL HEADER - Same across all pages -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text">
+                        <span class="logo-primary">NIKA</span>
+                        <span class="logo-secondary">Appliance Repair</span>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#areas">Areas</a></li>
+                        <li class="has-dropdown">
+                            <a href="/#brands">Brands</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/brands/lg-appliance-repair.html">LG</a></li>
+                                <li><a href="/brands/samsung-appliance-repair.html">Samsung</a></li>
+                                <li><a href="/brands/whirlpool-appliance-repair.html">Whirlpool</a></li>
+                                <li><a href="/brands/ge-appliance-repair.html">GE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:4377476737" class="call-btn">437-747-6737</a>
+                    <a href="#book" class="book-btn">Book Service</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HERO SECTION - Unique content for each brand -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                {{BRAND_HERO_CONTENT}}
+                <!-- Example for LG:
+                <div class="brand-badge">⚡ LG AUTHORIZED SERVICE EXPERTS</div>
+                <h1>Toronto's Leading LG Appliance Repair Specialists</h1>
+                <p>Factory-trained on Linear Compressor & Smart ThinQ technology</p>
+                
+                Example for Samsung:
+                <div class="brand-badge">🔧 SAMSUNG CERTIFIED TECHNICIANS</div>
+                <h1>Expert Samsung Appliance Repair You Can Trust</h1>
+                <p>Digital Inverter specialists with genuine Samsung parts</p>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION - Unique services based on brand specialties -->
+    <section class="services-section">
+        <div class="container">
+            <h2>{{BRAND_NAME}} Appliance Repair Services</h2>
+            {{BRAND_SERVICES_CONTENT}}
+            <!-- Generated based on brand's product line and common issues -->
+        </div>
+    </section>
+
+    <!-- EXPERTISE SECTION - Unique to brand's technology -->
+    <section class="expertise-section">
+        <div class="container">
+            <h2>Why We're {{BRAND_NAME}}'s Top Choice</h2>
+            {{BRAND_EXPERTISE_CONTENT}}
+            <!-- Example for LG: Linear Compressor expertise, Smart Diagnosis certified
+                 Example for Samsung: FlexWash certified, Twin Cooling specialists -->
+        </div>
+    </section>
+
+    <!-- COMMON PROBLEMS - Brand-specific issues -->
+    <section class="problems-section">
+        <div class="container">
+            <h2>Common {{BRAND_NAME}} Problems We Fix</h2>
+            {{BRAND_PROBLEMS_CONTENT}}
+            <!-- Dynamically generated based on brand's known issues -->
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS - Filtered for this brand -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>{{BRAND_NAME}} Owners Love Our Service</h2>
+            {{BRAND_TESTIMONIALS}}
+            <!-- Show testimonials specific to this brand -->
+        </div>
+    </section>
+
+    <!-- FAQ SECTION - Brand-specific questions -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>{{BRAND_NAME}} Repair FAQs</h2>
+            {{BRAND_FAQ_CONTENT}}
+            <!-- Generated based on brand-specific concerns -->
+        </div>
+    </section>
+
+    <!-- UNIVERSAL FOOTER - Same across all pages -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#about">Why Choose Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#process">Working Process</a></li>
+                        <li><a href="#book">Online Booking</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms Of Use</a></li>
+                        <li><a href="/sitemap.xml">Sitemap</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/services/refrigerator-repair">Refrigerator Repair Service</a></li>
+                        <li><a href="/services/washing-machine-repair">Washing Machine Repair</a></li>
+                        <li><a href="/services/dishwasher-repair">Dishwasher Repair Service</a></li>
+                        <li><a href="/services/dryer-repair">Dryer Repair Service</a></li>
+                        <li><a href="/services/oven-repair">Oven Repair Services</a></li>
+                        <li><a href="/services/stove-repair">Stove Repair Service</a></li>
+                        <li><a href="/services/maintenance">Maintenance Services</a></li>
+                        <li><a href="/services/installation">Installation Services</a></li>
+                        <li><a href="/commercial">Commercial Appliance Repair</a></li>
+                        <li><a href="landlords.html" style="color: var(--primary-yellow); font-weight: 600;">Property Managers & Landlords</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <h3>Call Us</h3>
+                        <a href="tel:4377476737" class="phone-link">+1 (437) 747-67-37</a>
+                        
+                        <h3>Email</h3>
+                        <a href="mailto:care@niappliancerepair.ca">care@niappliancerepair.ca</a>
+                        
+                        <h3>WhatsApp</h3>
+                        <p>Click to write or call us</p>
+                        
+                        <h3>Address</h3>
+                        <p>60 Walter Tunny Cresent,<br>
+                        East Gwillimbury, ON L9N 0R3</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>NIKA</h4>
+                    <h5>APPLIANCE REPAIR SERVICE</h5>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <span class="payment-badge">Visa</span>
+                        <span class="payment-badge">Mastercard</span>
+                        <span class="payment-badge">Amex</span>
+                        <span class="payment-badge">Bitcoin</span>
+                    </div>
+                    
+                    <div class="footer-cta">
+                        <p class="cta-label">LinkedIn<br>Customer Service Award</p>
+                        <a href="#" class="amex-link">AMEX PREMIUM<br>Business Member</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="service-area">755 Steeles Ave W #311, North York, ON M2R 2V9<br>
+                Marshall St, Richmond Hill, ON L4C 0K9</p>
+                
+                <div class="footer-brands">
+                    <h4>We Service Over 90 Brands</h4>
+                    <p>LG Appliance Repair • Samsung Appliance Repair • Whirlpool Appliance Repair • Bosch Appliance Repair • Kenmore - Sears Appliance Repair • Electrolux Appliance Repair • Dacor Appliance Repair • Blomberg Appliance Repair • Fisher & Paykel Appliance Repair • Frigidaire Appliance Repair • Maytag Appliance Repair • JennAir Appliance Repair • KitchenAid Appliance Repair • Viking Appliance Repair • Sub-Zero Appliance Repair • Miele Appliance Repair • Fulgor Milano Appliance Repair • Cyclone Appliance Repair • Liebherr Appliance Repair • Huebsch Appliance Repair • Fisher Paykel Appliance Repair • Panasonic Appliance Repair • Inglis Appliance Repair • GE Appliance Repair • Bertazzoni Appliance Repair • Amana Appliance Repair</p>
+                </div>
+                
+                <div class="copyright">
+                    <p>© 2024 Nika Appliance Repair. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

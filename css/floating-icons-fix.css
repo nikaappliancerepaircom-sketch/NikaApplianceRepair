@@ -1,0 +1,113 @@
+/* Fix for floating icons - prevent overlap with content on all devices */
+
+/* Disable ALL floating icons on mobile and tablet */
+@media (max-width: 1023px) {
+    .floating-icon,
+    .hero-floating-icon,
+    .floating-icons,
+    .hero-floating-icons,
+    .icon-float,
+    [class*="float-icon"] {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+/* On desktop, ensure floating icons are visible and don't overlap important content */
+@media (min-width: 1024px) {
+    .floating-icon,
+    .hero-floating-icon,
+    .floating-icons,
+    .hero-floating-icons {
+        display: block !important;
+        visibility: visible !important;
+        pointer-events: none !important; /* Can't be clicked */
+        z-index: 1 !important; /* Behind all interactive elements */
+        opacity: 0.15 !important; /* Make them very subtle */
+    }
+
+    /* Make SVG icons visible */
+    .floating-icon svg {
+        display: block !important;
+        width: 60px;
+        height: 60px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* Ensure main content has higher z-index */
+    .hero-content,
+    .hero-form,
+    .cta-button,
+    .nav-menu,
+    header,
+    form,
+    button,
+    a {
+        position: relative;
+        z-index: 10 !important;
+    }
+}
+
+/* Fix specific float animation to keep icons within bounds */
+@keyframes float {
+    0%, 100% { 
+        transform: translate(0, 0) rotate(0deg); 
+    }
+    25% { 
+        transform: translate(20px, -15px) rotate(15deg); /* Reduced movement */
+    }
+    50% { 
+        transform: translate(-15px, -25px) rotate(30deg); /* Reduced movement */
+    }
+    75% { 
+        transform: translate(-20px, 15px) rotate(-15deg); /* Reduced movement */
+    }
+}
+
+/* Ensure hero section doesn't overflow */
+.hero,
+.hero-section,
+.service-hero,
+.location-hero {
+    position: relative;
+    overflow: hidden !important;
+}
+
+/* Mobile-specific fixes for hero sections */
+@media (max-width: 767px) {
+    .hero h1,
+    .hero-section h1,
+    .service-hero h1 {
+        font-size: 1.75rem !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+    }
+    
+    .hero-features {
+        padding: 0 10px;
+    }
+    
+    .hero-features span {
+        font-size: 0.75rem !important;
+        padding: 4px 8px !important;
+    }
+    
+    .cta-button {
+        font-size: 0.875rem !important;
+        padding: 10px 20px !important;
+        margin: 5px !important;
+    }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero h1,
+    .hero-section h1,
+    .service-hero h1 {
+        font-size: 2.25rem !important;
+    }
+    
+    .hero-features span {
+        font-size: 0.875rem !important;
+    }
+}

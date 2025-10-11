@@ -1,0 +1,1368 @@
+/* ========================================
+   NEW DESIGN IMPLEMENTATION - RESPONSIVE
+   Mobile-First Approach
+   ======================================== */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--gray-900);
+    background: var(--white);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Ensure English text rendering */
+html[lang="en"] {
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Container with proper responsive widths */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+/* ========================================
+   1. HEADER DESIGN - RESPONSIVE
+   ======================================== */
+
+/* Top Bar (Hot Pink) */
+.header-top-bar {
+    background: var(--hot-pink);
+    color: white;
+    padding: 0.375rem 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .header-top-bar {
+        padding: 0.5rem 0;
+        font-size: 0.875rem;
+    }
+}
+
+.top-bar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+@media (min-width: 768px) {
+    .top-bar-content {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+.top-bar-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .top-bar-left {
+        gap: 2rem;
+    }
+}
+
+.top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    white-space: nowrap;
+}
+
+.top-bar-item i {
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/* $40 OFF Blinking Animation */
+.highlight {
+    font-weight: 700;
+    animation: blink-offer 2s ease-in-out infinite;
+}
+
+@keyframes blink-offer {
+    0%, 100% { 
+        opacity: 1; 
+        transform: scale(1);
+    }
+    50% { 
+        opacity: 0.8; 
+        transform: scale(1.05);
+    }
+}
+/* Main Navigation - Clean White with Shadow */
+.main-nav {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .nav-container {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* Colorful Gradient Logo (N in a box) */
+.nav-brand {
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .brand-link {
+        gap: 0.75rem;
+    }
+}
+
+.brand-link:hover {
+    transform: scale(1.05);
+}
+
+.brand-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-yellow) 50%, var(--bright-green) 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(33, 150, 243, 0.3);
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .brand-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+    }
+}
+
+.icon-text {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .icon-text {
+        font-size: 1.5rem;
+    }
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-main {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-900);
+}
+
+@media (min-width: 768px) {
+    .brand-main {
+        font-size: 1.5rem;
+    }
+}
+
+.brand-sub {
+    font-size: 0.625rem;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+    .brand-sub {
+        font-size: 0.75rem;
+    }
+}
+
+/* Navigation Menu - Hidden on Mobile */
+.nav-main {
+    display: none;
+}
+
+@media (min-width: 968px) {
+    .nav-main {
+        display: block;
+    }
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1024px) {
+    .nav-list {
+        gap: 2rem;
+    }
+}
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: var(--gray-700);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue);
+}
+
+/* Dropdown Indicators */
+.dropdown .nav-link svg {
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .nav-link svg {
+    transform: rotate(180deg);
+}
+
+.dropdown .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-yellow);
+    transition: width 0.3s ease;
+}
+
+.dropdown:hover .nav-link::after {
+    width: 100%;
+}
+
+/* Phone Button with Animated Ring Effect */
+.nav-contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .nav-contact {
+        gap: 1rem;
+    }
+}
+
+.phone-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    padding: 0.375rem 0.75rem;
+    border-radius: 50px;
+    background: var(--gray-100);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .phone-button {
+        gap: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.phone-button:hover {
+    background: var(--primary-yellow);
+    transform: translateY(-2px);
+}
+
+/* Animated Ring Effect */
+.phone-icon-animated {
+    width: 32px;
+    height: 32px;
+    background: var(--bright-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: ring-bell 2s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+    .phone-icon-animated {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.phone-icon-animated::before,
+.phone-icon-animated::after {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--bright-green);
+    border-radius: 50%;
+    opacity: 0;
+    animation: ring-pulse 2s ease-in-out infinite;
+}
+
+.phone-icon-animated::before {
+    animation-delay: 0s;
+}
+
+.phone-icon-animated::after {
+    animation-delay: 1s;
+}
+
+@keyframes ring-bell {
+    0%, 100% { transform: rotate(0deg); }
+    10%, 30% { transform: rotate(-10deg); }
+    20%, 40% { transform: rotate(10deg); }
+}
+
+@keyframes ring-pulse {
+    0% {
+        width: 32px;
+        height: 32px;
+        opacity: 0.6;
+    }
+    100% {
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+}
+
+.phone-icon-animated svg {
+    color: white;
+    width: 16px;
+    height: 16px;
+}
+
+@media (min-width: 768px) {
+    .phone-icon-animated svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+.phone-info {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .phone-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.call-now {
+    font-size: 0.625rem;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+    .call-now {
+        font-size: 0.75rem;
+    }
+}
+
+.phone-num {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--gray-900);
+}
+
+@media (min-width: 768px) {
+    .phone-num {
+        font-size: 1.125rem;
+    }
+}
+
+/* Blue Gradient "Book Online" CTA */
+.book-button {
+    display: none;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #1976D2 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (min-width: 968px) {
+    .book-button {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .book-button {
+        padding: 0.875rem 2rem;
+    }
+}
+
+.book-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.book-button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.book-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(33, 150, 243, 0.4);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+@media (min-width: 968px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+}
+
+.mobile-menu-btn span {
+    width: 25px;
+    height: 3px;
+    background: var(--gray-700);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* ========================================
+   2. HERO SECTION DESIGN - RESPONSIVE
+   ======================================== */
+
+.hero-main {
+    position: relative;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #f8fafb;
+}
+
+@media (min-width: 768px) {
+    .hero-main {
+        min-height: calc(100vh - 120px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-main {
+        min-height: calc(100vh - 140px);
+    }
+}
+/* Subtle Gradient Background with Radial Patterns */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.hero-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(33, 150, 243, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 214, 0, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(76, 175, 80, 0.08) 0%, transparent 50%);
+}
+
+.hero-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #E3F2FD 0%, #F5F9FF 50%, #E8F5E9 100%);
+    opacity: 0.5;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .hero-container {
+        padding: 3rem 1.5rem;
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        padding: 4rem 2rem;
+    }
+}
+
+/* Hero Content Side */
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .hero-content {
+        text-align: left;
+        margin: 0;
+    }
+}
+
+/* Yellow Tag "Toronto's #1 Rated Service" */
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    background: var(--primary-yellow);
+    color: var(--gray-900);
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 10px rgba(255, 214, 0, 0.3);
+    animation: tag-bounce 2s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+    .hero-tag {
+        gap: 0.5rem;
+        padding: 0.625rem 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@keyframes tag-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
+.tag-icon {
+    font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+    .tag-icon {
+        font-size: 1.25rem;
+    }
+}
+
+/* Dynamic Headline with Rotating Appliance Names */
+.hero-headline {
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .hero-headline {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.line-1 {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--gray-700);
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .line-1 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .line-1 {
+        font-size: 2.5rem;
+    }
+}
+.line-2 {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    line-height: 1.1;
+    margin: 0.25rem 0;
+}
+
+@media (min-width: 768px) {
+    .line-2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .line-2 {
+        font-size: 4.5rem;
+    }
+}
+
+.line-3 {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .line-3 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .line-3 {
+        font-size: 4.5rem;
+    }
+}
+
+/* Rotating Appliance Names */
+.word-rotate {
+    position: relative;
+    display: inline-block;
+    min-width: 280px;
+    height: 1.2em;
+}
+
+@media (min-width: 768px) {
+    .word-rotate {
+        min-width: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .word-rotate {
+        min-width: 400px;
+    }
+}
+
+.rotate-item {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.rotate-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Description */
+.hero-desc {
+    font-size: 1rem;
+    color: var(--gray-700);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+    .hero-desc {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-desc {
+        font-size: 1.25rem;
+    }
+}
+
+/* Green Checkmark Benefits */
+.hero-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .hero-benefits {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-benefits {
+        justify-content: flex-start;
+    }
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: var(--gray-700);
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .benefit {
+        justify-content: flex-start;
+    }
+}
+
+.benefit-icon {
+    width: 24px;
+    height: 24px;
+    background: var(--bright-green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    .benefit-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 1.125rem;
+    }
+}
+/* Large CTA Button with Arrow */
+.hero-cta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-cta-group {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-cta-group {
+        justify-content: flex-start;
+    }
+}
+
+.cta-main {
+    background: linear-gradient(135deg, var(--bright-green) 0%, #45a049 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .cta-main {
+        padding: 1.125rem 2.5rem;
+        font-size: 1.125rem;
+        gap: 0.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cta-main {
+        padding: 1.25rem 3rem;
+        font-size: 1.25rem;
+    }
+}
+
+.cta-main::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) skewX(-20deg);
+    transition: left 0.5s ease;
+}
+
+.cta-main:hover::before {
+    left: 100%;
+}
+
+.cta-main:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(76, 175, 80, 0.4);
+}
+
+.cta-main svg {
+    transition: transform 0.3s ease;
+}
+
+.cta-main:hover svg {
+    transform: translateX(5px);
+}
+
+.cta-or {
+    color: var(--gray-500);
+    font-weight: 500;
+}
+
+/* Phone Number with Pulsing Effect */
+.cta-phone {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .cta-phone {
+        font-size: 1.5rem;
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cta-phone {
+        font-size: 1.75rem;
+    }
+}
+
+.cta-phone:hover {
+    color: var(--primary-blue);
+}
+
+.phone-pulse {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--hot-pink);
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .phone-pulse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.phone-pulse::before,
+.phone-pulse::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--hot-pink);
+    opacity: 0.6;
+    animation: pulse-ring 2s ease-in-out infinite;
+}
+
+.phone-pulse::after {
+    animation-delay: 1s;
+}
+
+@keyframes pulse-ring {
+    0% { 
+        transform: scale(1); 
+        opacity: 0.6; 
+    }
+    100% { 
+        transform: scale(1.8); 
+        opacity: 0; 
+    }
+}
+/* Trust Badges at Bottom */
+.trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .trust-row {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .trust-row {
+        justify-content: flex-start;
+    }
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: var(--gray-600);
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+    background: white;
+    border-radius: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+    .trust-item {
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.trust-item img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 768px) {
+    .trust-item img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Hero Visual Side */
+.hero-visual-new {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+@media (min-width: 1024px) {
+    .hero-visual-new {
+        display: flex;
+    }
+}
+
+/* Central Appliance Illustration */
+.visual-main {
+    position: relative;
+    z-index: 1;
+}
+
+.visual-main img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+}
+
+/* Floating Cards with Emojis */
+.float-card {
+    position: absolute;
+    background: white;
+    padding: 0.875rem 1.25rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 1200px) {
+    .float-card {
+        padding: 1rem 1.5rem;
+    }
+}
+
+.float-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Gentle Floating Animation */
+@keyframes float-gentle {
+    0%, 100% { 
+        transform: translateY(0) rotate(0deg); 
+    }
+    25% { 
+        transform: translateY(-8px) rotate(1deg); 
+    }
+    75% { 
+        transform: translateY(5px) rotate(-1deg); 
+    }
+}
+
+.card-top {
+    top: 10%;
+    right: 10%;
+    animation: float-gentle 6s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.card-right {
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: float-gentle 6s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.card-bottom {
+    bottom: 15%;
+    left: 5%;
+    animation: float-gentle 6s ease-in-out infinite;
+    animation-delay: 4s;
+}
+
+.card-emoji {
+    font-size: 2rem;
+}
+
+@media (min-width: 1200px) {
+    .card-emoji {
+        font-size: 2.5rem;
+    }
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text strong {
+    font-size: 0.875rem;
+    color: var(--gray-900);
+    font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+    .card-text strong {
+        font-size: 1rem;
+    }
+}
+
+.card-text span {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+}
+
+@media (min-width: 1200px) {
+    .card-text span {
+        font-size: 0.875rem;
+    }
+}
+/* Bottom Stats Bar */
+.hero-bottom-bar {
+    background: var(--gray-900);
+    color: white;
+    padding: 1.25rem 0;
+    position: relative;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .hero-bottom-bar {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-bottom-bar {
+        padding: 1.75rem 0;
+    }
+}
+
+.bottom-bar-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+@media (min-width: 768px) {
+    .bottom-bar-content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+.bar-item {
+    text-align: center;
+}
+
+.bar-item strong {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-yellow);
+    margin-bottom: 0.125rem;
+    font-family: var(--font-heading);
+}
+
+@media (min-width: 768px) {
+    .bar-item strong {
+        font-size: 1.75rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bar-item strong {
+        font-size: 2rem;
+    }
+}
+
+.bar-item span {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .bar-item span {
+        font-size: 0.875rem;
+    }
+}
+
+/* ========================================
+   3. UTILITY CLASSES
+   ======================================== */
+
+/* Visually Hidden but Accessible */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ========================================
+   4. ANIMATIONS & INTERACTIONS
+   ======================================== */
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus States */
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* Remove focus outline for mouse users */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Loading State */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* ========================================
+   5. PRINT STYLES
+   ======================================== */
+
+@media print {
+    .header-top-bar,
+    .mobile-menu-btn,
+    .hero-bg,
+    .float-card {
+        display: none !important;
+    }
+    
+    .hero-main {
+        min-height: auto;
+        background: white;
+    }
+    
+    .hero-container {
+        padding: 2rem 0;
+    }
+}
+
+/* ========================================
+   6. HIGH CONTRAST MODE SUPPORT
+   ======================================== */
+
+@media (prefers-contrast: high) {
+    .hero-tag {
+        border: 2px solid currentColor;
+    }
+    
+    .cta-main,
+    .book-button {
+        border: 2px solid transparent;
+    }
+    
+    .cta-main:hover,
+    .book-button:hover {
+        border-color: currentColor;
+    }
+}
+
+/* ========================================
+   7. REDUCED MOTION SUPPORT
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

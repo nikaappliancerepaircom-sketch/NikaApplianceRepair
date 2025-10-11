@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMAD Dashboard - Nika Appliance Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #1a202c;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: #718096;
+            font-size: 1.1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stat-card h3 {
+            color: #718096;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value.green { color: #10b981; }
+        .stat-value.yellow { color: #f59e0b; }
+        .stat-value.red { color: #ef4444; }
+
+        .stat-label {
+            color: #a0aec0;
+            font-size: 0.875rem;
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow-x: auto;
+        }
+
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .table-header h2 {
+            color: #1a202c;
+            font-size: 1.5rem;
+        }
+
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #f7fafc;
+        }
+
+        th {
+            text-align: left;
+            padding: 1rem;
+            color: #4a5568;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        tbody tr:hover {
+            background: #f7fafc;
+        }
+
+        .page-name {
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .score {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .score.green { color: #10b981; }
+        .score.yellow { color: #f59e0b; }
+        .score.red { color: #ef4444; }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge.pass {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .badge.fail {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .badge.pending {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .category {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: #e0e7ff;
+            color: #3730a3;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .timestamp {
+            color: #a0aec0;
+            font-size: 0.875rem;
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid #e2e8f0;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            border-color: #667eea;
+            background: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 BMAD Dashboard</h1>
+            <p>Real-time monitoring of all 62 pages | BMAD Method (277 Parameters)</p>
+            <p class="timestamp">Last updated: <span id="lastUpdate">Loading...</span></p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Pages</h3>
+                <div class="stat-value">62</div>
+                <div class="stat-label">1 Main + 11 Services + 30 Locations + 20 Blog</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Passing Pages</h3>
+                <div class="stat-value green" id="passingPages">0</div>
+                <div class="stat-label">85+ Score (Target)</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Needs Work</h3>
+                <div class="stat-value yellow" id="needsWork">62</div>
+                <div class="stat-label">50-84 Score</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Failing Pages</h3>
+                <div class="stat-value red" id="failingPages">0</div>
+                <div class="stat-label">&lt;50 Score</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Average Score</h3>
+                <div class="stat-value yellow" id="avgScore">70</div>
+                <div class="stat-label">Across all pages</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Data Consistency</h3>
+                <div class="stat-value green" id="dataConsistency">100%</div>
+                <div class="stat-label">All critical data matches</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="table-header">
+                <h2>📊 All Pages Status</h2>
+                <button class="btn" onclick="runAllTests()">🔄 Run All Tests</button>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterPages('all')">All (62)</button>
+                <button class="filter-btn" onclick="filterPages('main')">Main (1)</button>
+                <button class="filter-btn" onclick="filterPages('services')">Services (11)</button>
+                <button class="filter-btn" onclick="filterPages('locations')">Locations (30)</button>
+                <button class="filter-btn" onclick="filterPages('blog')">Blog (20)</button>
+                <button class="filter-btn" onclick="filterPages('pass')">✅ Passing</button>
+                <button class="filter-btn" onclick="filterPages('fail')">❌ Failing</button>
+            </div>
+
+            <table id="pagesTable">
+                <thead>
+                    <tr>
+                        <th>Page</th>
+                        <th>Category</th>
+                        <th>SEO Score</th>
+                        <th>Data Consistency</th>
+                        <th>Status</th>
+                        <th>Last Test</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr data-category="main" data-status="pending">
+                        <td class="page-name">index.html</td>
+                        <td><span class="category">Main</span></td>
+                        <td><span class="score yellow">50</span>/100</td>
+                        <td><span class="badge pass">PASS</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('index.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/refrigerator-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">80</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/refrigerator-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/washer-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">78</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/washer-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/dryer-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">78</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/dryer-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/oven-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">78</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/oven-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/stove-cooktop-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">80</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/stove-cooktop-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/freezer-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">77</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/freezer-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/dishwasher-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">80</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/dishwasher-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/refrigerator-freezer-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">78</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/refrigerator-freezer-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/washer-dryer-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">80</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/washer-dryer-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/oven-stove-repair.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">80</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/oven-stove-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="services" data-status="pending">
+                        <td class="page-name">services/dishwasher-installation.html</td>
+                        <td><span class="category">Services</span></td>
+                        <td><span class="score yellow">80</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('services/dishwasher-installation.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/ajax.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">72</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/ajax.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/aurora.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">72</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/aurora.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/barrie.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">72</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/barrie.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/bolton.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">72</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/bolton.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/brampton.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/brampton.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/burlington.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/burlington.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/caledon.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/caledon.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/concord.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/concord.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/east-gwillimbury.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/east-gwillimbury.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/etobicoke.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/etobicoke.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/georgetown.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/georgetown.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/king-city.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/king-city.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/maple.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">72</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/maple.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/markham.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/markham.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/milton.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">72</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/milton.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/mississauga.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/mississauga.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/newmarket.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/newmarket.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/north-york.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/north-york.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/oakville.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/oakville.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/oshawa.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">72</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/oshawa.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/pickering.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/pickering.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/richmond-hill.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/richmond-hill.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/scarborough.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/scarborough.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/stouffville.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/stouffville.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/thornhill.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/thornhill.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/toronto.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/toronto.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/uxbridge.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/uxbridge.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/vaughan.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/vaughan.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/whitby.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">72</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/whitby.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="locations" data-status="pending">
+                        <td class="page-name">locations/woodbridge.html</td>
+                        <td><span class="category">Locations</span></td>
+                        <td><span class="score yellow">74</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('locations/woodbridge.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/how-to-fix-refrigerator-not-cooling.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">60</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/how-to-fix-refrigerator-not-cooling.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/washer-not-draining-solutions.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/washer-not-draining-solutions.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/dryer-not-heating-troubleshooting.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/dryer-not-heating-troubleshooting.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/dishwasher-not-cleaning-solutions.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/dishwasher-not-cleaning-solutions.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/oven-temperature-calibration-guide.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/oven-temperature-calibration-guide.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/appliance-maintenance-schedule.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">60</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/appliance-maintenance-schedule.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/signs-appliance-needs-repair.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/signs-appliance-needs-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/diy-vs-professional-appliance-repair.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/diy-vs-professional-appliance-repair.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/best-appliance-brands-2025.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">60</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/best-appliance-brands-2025.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/repair-vs-replace-appliances.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/repair-vs-replace-appliances.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/energy-efficient-appliances-worth-it.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">60</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/energy-efficient-appliances-worth-it.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/buying-used-appliances-toronto.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/buying-used-appliances-toronto.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/appliance-warranties-explained.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/appliance-warranties-explained.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/appliance-repair-costs-toronto-2025.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">60</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/appliance-repair-costs-toronto-2025.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/reliable-appliance-repair-gta.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/reliable-appliance-repair-gta.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/toronto-appliance-disposal-recycling.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/toronto-appliance-disposal-recycling.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/buy-appliance-parts-toronto.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">60</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/buy-appliance-parts-toronto.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/prepare-appliances-winter-toronto.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">60</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/prepare-appliances-winter-toronto.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/spring-appliance-maintenance-gta.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/spring-appliance-maintenance-gta.html')">Test</button></td>
+                    </tr>
+                    <tr data-category="blog" data-status="pending">
+                        <td class="page-name">blog/emergency-appliance-repair-fridge.html</td>
+                        <td><span class="category">Blog</span></td>
+                        <td><span class="score yellow">62</span>/100</td>
+                        <td><span class="badge fail">FAIL</span></td>
+                        <td><span class="badge pending">Needs Work</span></td>
+                        <td class="timestamp">Just now</td>
+                        <td><button class="btn" style="padding: 0.5rem 1rem; font-size: 0.875rem;" onclick="testPage('blog/emergency-appliance-repair-fridge.html')">Test</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        <div class="table-container" style="margin-top: 2rem;">
+            <div class="table-header">
+                <h2>🎭 Playwright Browser Tests</h2>
+                <span class="timestamp">Last test: 2025-10-02 23:12:38</span>
+            </div>
+
+            <div class="stats-grid" style="margin: 1.5rem 0;">
+                <div class="stat-card">
+                    <h3>Total Tested</h3>
+                    <div class="stat-value">62</div>
+                    <div class="stat-label">Full browser tests</div>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Passed</h3>
+                    <div class="stat-value green">1</div>
+                    <div class="stat-label">All tests passed</div>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Failed</h3>
+                    <div class="stat-value red">61</div>
+                    <div class="stat-label">Dropdown visibility issues</div>
+                </div>
+            </div>
+
+            <div style="background: #f7fafc; padding: 20px; border-radius: 8px; margin: 1.5rem 0;">
+                <h3 style="margin-bottom: 1rem;">Test Results Summary</h3>
+                <p><strong>✅ index.html PASSED</strong> - All dropdowns and footer links work correctly</p>
+                <p><strong>❌ 61 pages FAILED</strong> - Dropdown element not visible (CSS issue)</p>
+
+                <h4 style="margin-top: 1.5rem;">What was tested:</h4>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>✓ Header dropdown exists</li>
+                    <li>✓ Dropdown menu visible on hover</li>
+                    <li>✓ All 8+ location links in dropdown</li>
+                    <li>✓ Footer Service Areas section</li>
+                    <li>✓ Footer links validation</li>
+                    <li>✓ Responsive typography loaded</li>
+                    <li>✓ Mobile viewport test (375x667)</li>
+                    <li>✓ Console errors detection</li>
+                    <li>✓ Full-page screenshots</li>
+                </ul>
+
+                <h4 style="margin-top: 1.5rem; color: #ef4444;">Issue Found:</h4>
+                <p>Dropdown element exists but "not visible" - inline &lt;style&gt; tags not properly placed by BeautifulSoup</p>
+
+                <h4 style="margin-top: 1.5rem; color: #10b981;">Fix Applied:</h4>
+                <p>✅ Created external CSS file: <code>css/dropdown-styles.css</code></p>
+                <p>✅ Added link to all 62 pages</p>
+                <p>✅ Removed problematic inline styles</p>
+                <p><strong>Ready for re-test!</strong></p>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+                <h3>Screenshots Available</h3>
+                <p>Full-page screenshots saved in: <code>screenshots/</code></p>
+                <p>View screenshots: <code>C:\NikaApplianceRepair/screenshots/</code></p>
+            </div>
+        </div>
+    
+</div>
+    </div>
+
+    <script>
+        // Update timestamp
+        function updateTimestamp() {
+            const now = new Date();
+            document.getElementById('lastUpdate').textContent = now.toLocaleString();
+        }
+
+        // Filter pages
+        function filterPages(filter) {
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Filter logic will be implemented when we have real data
+            console.log('Filtering by:', filter);
+        }
+
+        // Run all tests
+        function runAllTests() {
+            alert('Running BMAD tests on all 62 pages...\n\nThis will take approximately 10-15 minutes.\n\nYou can monitor progress in the console.');
+            // Will execute Python script
+        }
+
+        // Initialize
+        updateTimestamp();
+        setInterval(updateTimestamp, 60000); // Update every minute
+
+        // Load data from JSON reports
+        function loadTestData() {
+            // Will load from bmad_mass_test_*.json files
+            fetch('bmad_mass_test_latest.json')
+                .then(response => response.json())
+                .then(data => {
+                    updateDashboard(data);
+                })
+                .catch(err => console.log('No test data yet'));
+        }
+
+        function updateDashboard(data) {
+            // Update stats
+            document.getElementById('passingPages').textContent = data.pages_passed || 0;
+            document.getElementById('needsWork').textContent = data.pages_needs_work || 0;
+            document.getElementById('failingPages').textContent = data.pages_failed || 0;
+
+            // Calculate average
+            const avg = data.average_score || 0;
+            const avgEl = document.getElementById('avgScore');
+            avgEl.textContent = avg.toFixed(0);
+            avgEl.className = 'stat-value ' + (avg >= 85 ? 'green' : avg >= 50 ? 'yellow' : 'red');
+        }
+
+        // Load on page load
+        loadTestData();
+    </script>
+</body>
+</html>

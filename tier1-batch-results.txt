@@ -1,0 +1,1046 @@
+
+============================================================
+BMAD V2 - TESTING: services\dishwasher-installation.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24/7', '24 hours']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24/7', '24 hours']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\dishwasher-installation.html.backup_20251010_175003
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\dishwasher-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24 hours', '24/7']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24 hours', '24/7']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\dishwasher-repair.html.backup_20251010_175003
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\dryer-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24 hours', '24/7']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24 hours', '24/7']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\dryer-repair.html.backup_20251010_175003
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\freezer-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24 hours', '24/7']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24 hours', '24/7']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\freezer-repair.html.backup_20251010_175003
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\oven-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24 hours', '24/7']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24 hours', '24/7']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\oven-repair.html.backup_20251010_175004
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\oven-stove-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24/7', '24 hours']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24/7', '24 hours']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\oven-stove-repair.html.backup_20251010_175004
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\refrigerator-freezer-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24/7', '24 hours']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24/7', '24 hours']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\refrigerator-freezer-repair.html.backup_20251010_175004
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\refrigerator-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\stove-cooktop-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24/7', '24 hours']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24/7', '24 hours']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\stove-cooktop-repair.html.backup_20251010_175005
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\washer-dryer-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24 hours', '24/7']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24 hours', '24/7']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\washer-dryer-repair.html.backup_20251010_175005
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+============================================================
+BMAD V2 - TESTING: services\washer-repair.html
+============================================================
+Auto-fix: ENABLED
+
+============================================================
+[TIER 1] CRITICAL PARAMETERS (15)
+============================================================
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[FAIL] 2. Hours consistency [CRITICAL]
+   >> Multiple hours found: ['24 hours', '24/7']
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 93/100
+============================================================
+[BLOCKED] TIER 1 BLOCKED - Critical failures found
+
+CRITICAL ISSUES:
+  - 2. Hours consistency: Multiple hours found: ['24 hours', '24/7']
+============================================================
+
+[AUTO-FIX] Applying fixes...
+[OK] Backup created: services\backups\washer-repair.html.backup_20251010_175006
+
+============================================================
+[FIX] TIER 1 AUTO-FIX
+============================================================
+[OK] Fixed phone consistency: 2 variations -> 437-747-6737
+[OK] Fixed rating consistency: all -> 4.9  star
+[OK] Fixed review count: all -> 5,200+
+[OK] Phone already in header/hero
+
+============================================================
+FIXES APPLIED: 3
+============================================================
+1. Phone numbers normalized to 437-747-6737
+2. Rating normalized to 4.9
+3. Review count normalized to 5,200+
+============================================================
+
+[RE-TEST] Verifying fixes...
+
+============================================================
+TIER 1: CRITICAL PARAMETERS (15)
+============================================================
+
+------------------------------------------------------------
+TEST RESULTS:
+------------------------------------------------------------
+[PASS] 1. Phone consistency [CRITICAL]
+[PASS] 2. Hours consistency [CRITICAL]
+[PASS] 3. Warranty consistency [CRITICAL]
+[PASS] 4. Rating consistency [CRITICAL]
+[PASS] 5. Review count consistency [CRITICAL]
+[PASS] 6. Years consistency [CRITICAL]
+[PASS] 7. Address consistency
+[PASS] 8. Email consistency
+[PASS] 9. LocalBusiness schema [CRITICAL]
+[PASS] 10. AggregateRating schema [CRITICAL]
+[PASS] 11. Mobile viewport [CRITICAL]
+[PASS] 12. Single H1 tag [CRITICAL]
+[PASS] 13. Valid HTML structure [CRITICAL]
+[PASS] 14. HTTPS/SSL
+[PASS] 15. Phone in header/hero [CRITICAL]
+
+============================================================
+TIER 1 SCORE: 100/100
+============================================================
+[SUCCESS] TIER 1 PASSED - Ready for Tier 2
+============================================================
+
+[SUCCESS] Tier 1 passed! Ready for Tier 2
+
+Found 11 files to optimize
+======================================================================
+
+======================================================================
+Processing: services\dishwasher-installation.html
+======================================================================
+
+======================================================================
+Processing: services\dishwasher-repair.html
+======================================================================
+
+======================================================================
+Processing: services\dryer-repair.html
+======================================================================
+
+======================================================================
+Processing: services\freezer-repair.html
+======================================================================
+
+======================================================================
+Processing: services\oven-repair.html
+======================================================================
+
+======================================================================
+Processing: services\oven-stove-repair.html
+======================================================================
+
+======================================================================
+Processing: services\refrigerator-freezer-repair.html
+======================================================================
+
+======================================================================
+Processing: services\refrigerator-repair.html
+======================================================================
+
+======================================================================
+Processing: services\stove-cooktop-repair.html
+======================================================================
+
+======================================================================
+Processing: services\washer-dryer-repair.html
+======================================================================
+
+======================================================================
+Processing: services\washer-repair.html
+======================================================================
+
+======================================================================
+BATCH OPTIMIZATION SUMMARY
+======================================================================
+[SUCCESS] dishwasher-installation.html
+[SUCCESS] dishwasher-repair.html
+[SUCCESS] dryer-repair.html
+[SUCCESS] freezer-repair.html
+[SUCCESS] oven-repair.html
+[SUCCESS] oven-stove-repair.html
+[SUCCESS] refrigerator-freezer-repair.html
+[SUCCESS] refrigerator-repair.html
+[SUCCESS] stove-cooktop-repair.html
+[SUCCESS] washer-dryer-repair.html
+[SUCCESS] washer-repair.html
+
+======================================================================
+Total: 11 | Passed: 11 | Failed: 0
+======================================================================

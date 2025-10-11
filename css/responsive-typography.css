@@ -1,0 +1,162 @@
+/* Responsive Typography System with CSS clamp() */
+/* BMAD Method 2025 - Adaptive text sizing */
+
+/* Root Typography Variables */
+:root {
+    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+    --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+    --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+    --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+
+    /* Responsive Headings */
+    --h1-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+    --h2-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.5rem);
+    --h3-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.875rem);
+    --h4-size: clamp(1.125rem, 1rem + 0.625vw, 1.5rem);
+    --h5-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    --h6-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+
+    /* Line Heights */
+    --line-tight: 1.25;
+    --line-snug: 1.375;
+    --line-normal: 1.5;
+    --line-relaxed: 1.625;
+    --line-loose: 2;
+}
+
+/* Heading Typography */
+h1, .h1 {
+    font-size: var(--h1-size);
+    line-height: var(--line-tight);
+    font-weight: 700;
+}
+
+h2, .h2 {
+    font-size: var(--h2-size);
+    line-height: var(--line-tight);
+    font-weight: 600;
+}
+
+h3, .h3 {
+    font-size: var(--h3-size);
+    line-height: var(--line-snug);
+    font-weight: 600;
+}
+
+h4, .h4 {
+    font-size: var(--h4-size);
+    line-height: var(--line-snug);
+    font-weight: 500;
+}
+
+h5, .h5 {
+    font-size: var(--h5-size);
+    line-height: var(--line-normal);
+    font-weight: 500;
+}
+
+h6, .h6 {
+    font-size: var(--h6-size);
+    line-height: var(--line-normal);
+    font-weight: 500;
+}
+
+/* Body Text */
+body {
+    font-size: var(--text-base);
+    line-height: var(--line-relaxed);
+}
+
+p {
+    font-size: var(--text-base);
+    line-height: var(--line-relaxed);
+}
+
+/* Text Size Utilities */
+.text-xs {
+    font-size: var(--text-xs);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-base {
+    font-size: var(--text-base);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+/* Lead Text (Hero/Intro) */
+.lead, .hero-text {
+    font-size: clamp(1.125rem, 1rem + 0.625vw, 1.5rem);
+    line-height: var(--line-relaxed);
+}
+
+/* Button Text */
+button, .btn, .cta-button {
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+/* Navigation */
+nav a, .nav-link {
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+/* Footer Text */
+footer {
+    font-size: var(--text-sm);
+}
+
+/* Blockquotes */
+blockquote {
+    font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+    line-height: var(--line-loose);
+}
+
+/* Code/Pre */
+code, pre {
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 0.9375rem);
+}
+
+/* Lists */
+ul, ol {
+    font-size: var(--text-base);
+    line-height: var(--line-relaxed);
+}
+
+/* Tables */
+table {
+    font-size: var(--text-sm);
+}
+
+/* Responsive Spacing based on text size */
+h1 { margin-bottom: clamp(1rem, 0.5rem + 2.5vw, 2rem); }
+h2 { margin-bottom: clamp(0.75rem, 0.5rem + 1.25vw, 1.5rem); }
+h3 { margin-bottom: clamp(0.5rem, 0.25rem + 1.25vw, 1.25rem); }
+h4, h5, h6 { margin-bottom: clamp(0.5rem, 0.25rem + 1.25vw, 1rem); }
+p { margin-bottom: clamp(0.75rem, 0.5rem + 1.25vw, 1.25rem); }
+
+/* Accessibility - Ensure minimum readable sizes */
+@media (max-width: 320px) {
+    body {
+        font-size: 16px; /* Never smaller than 16px for readability */
+    }
+}
+
+/* Print Styles */
+@media print {
+    :root {
+        --text-base: 12pt;
+        --h1-size: 24pt;
+        --h2-size: 18pt;
+        --h3-size: 14pt;
+    }
+}

@@ -1,0 +1,165 @@
+/* Mobile-Specific Fixes for Countdown and Sections */
+
+/* Fix countdown timer on mobile - prevent overlap */
+@media (max-width: 640px) {
+    .countdown-section {
+        padding: 40px 15px !important;
+    }
+    
+    .countdown-timer {
+        margin-bottom: 20px !important;
+        gap: 10px !important;
+    }
+    
+    .timer-box {
+        min-width: 90px !important;
+        padding: 15px !important;
+    }
+    
+    .timer-value {
+        font-size: 1.75rem !important;
+    }
+    
+    .timer-label {
+        font-size: 0.75rem !important;
+    }
+    
+    /* Fix CTA button color and spacing */
+    .countdown-cta {
+        background: #0ea5e9 !important; /* Primary blue from style guide */
+        color: white !important;
+        margin-top: 20px !important;
+        padding: 12px 20px !important;
+        font-size: 0.875rem !important;
+        width: 90% !important;
+        max-width: 300px !important;
+    }
+    
+    .countdown-cta:hover {
+        background: #0284c7 !important;
+    }
+    
+    /* Fix section titles */
+    h2, .section-title {
+        font-size: 1.5rem !important;
+        padding: 0 15px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Fix "Your Trusted Appliance Experts" section */
+    .trusted-section,
+    .experts-section {
+        padding: 40px 15px !important;
+    }
+    
+    .trusted-content {
+        padding: 0 !important;
+    }
+    
+    /* Fix "What Sets Us Apart" section */
+    .features-section,
+    .apart-section,
+    [class*="sets-apart"] {
+        padding: 40px 15px !important;
+    }
+    
+    .features-grid,
+    .apart-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .feature-card,
+    .apart-card {
+        padding: 20px !important;
+        text-align: center !important;
+    }
+}
+
+/* Tablet fixes */
+@media (min-width: 641px) and (max-width: 1023px) {
+    .countdown-section {
+        padding: 60px 20px !important;
+    }
+    
+    .countdown-timer {
+        margin-bottom: 30px !important;
+    }
+    
+    .countdown-cta {
+        background: #0ea5e9 !important;
+        margin-top: 10px !important;
+    }
+}
+
+/* Ensure proper button styling on all devices */
+.countdown-cta {
+    background: #0ea5e9 !important; /* Primary blue */
+    color: white !important;
+    border: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.countdown-cta:hover,
+.countdown-cta:focus {
+    background: #0284c7 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(14, 165, 233, 0.3) !important;
+}
+
+/* Fix section containers on mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px !important;
+        width: 100% !important;
+    }
+    
+    section {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+    
+    /* Prevent any content from going off-screen */
+    * {
+        max-width: 100vw !important;
+    }
+    
+    /* Fix text that might be too large */
+    p, li, span {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+}
+
+/* Specific fixes for "Your Trusted Appliance Experts" */
+.about-right h3,
+.trusted-section h3 {
+    font-size: 1.25rem !important;
+    margin-bottom: 1rem !important;
+    color: #0f172a !important;
+}
+
+@media (max-width: 768px) {
+    .about-right,
+    .trusted-content {
+        text-align: center !important;
+        padding: 20px 0 !important;
+    }
+    
+    .about-right p,
+    .trusted-content p {
+        font-size: 0.875rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1rem !important;
+    }
+}

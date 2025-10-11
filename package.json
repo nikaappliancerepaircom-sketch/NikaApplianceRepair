@@ -1,0 +1,17 @@
+{
+  "name": "nika-appliance-repair-tests",
+  "version": "1.0.0",
+  "description": "Mobile responsive tests for Nika Appliance Repair service pages",
+  "scripts": {
+    "test": "playwright test",
+    "test:mobile": "playwright test tests/mobile-test.spec.js",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "keywords": ["playwright", "mobile", "testing", "responsive"],
+  "author": "Nika Appliance Repair",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}

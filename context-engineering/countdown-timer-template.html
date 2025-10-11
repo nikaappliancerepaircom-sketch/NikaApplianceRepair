@@ -1,0 +1,217 @@
+<!-- Countdown Timer Template Component -->
+<!-- 
+    USAGE: This component can be used 1-2 times per page to create urgency
+    CUSTOMIZATION: Update the title text and timer values as needed
+    PLACEMENT: Works best after hero section or before booking form
+-->
+
+<!-- Standard Countdown Timer Section -->
+<section class="countdown-section">
+    <div class="container">
+        <h2 class="countdown-title">Book Online & Save $40 on Any Appliance Repair</h2>
+        <p class="countdown-label">DEAL ENDS IN</p>
+        <div class="countdown-timer">
+            <div class="timer-box">
+                <div class="timer-value" id="minutes">14</div>
+                <div class="timer-label">MINUTES</div>
+            </div>
+            <div class="timer-box">
+                <div class="timer-value" id="seconds">45</div>
+                <div class="timer-label">SECONDS</div>
+            </div>
+        </div>
+        <a href="#book" class="countdown-cta">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+            CLICK TO BOOK DIAGNOSTIC NOW
+        </a>
+    </div>
+</section>
+
+<!-- Alternative Version - Compact Inline Timer -->
+<div class="inline-countdown-banner">
+    <div class="container">
+        <div class="inline-countdown-content">
+            <span class="inline-offer-text">🎉 Limited Time: Save $40 on Any Repair!</span>
+            <div class="inline-timer">
+                <span class="inline-timer-label">Ends in:</span>
+                <span class="inline-timer-value" id="inline-minutes">14</span>
+                <span class="inline-timer-separator">:</span>
+                <span class="inline-timer-value" id="inline-seconds">45</span>
+            </div>
+            <a href="#book" class="inline-book-btn">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- CSS Styles (Already in style.css) -->
+<style>
+/* Main Countdown Timer Styles */
+.countdown-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: var(--white);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.countdown-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.countdown-label {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.timer-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    min-width: 120px;
+}
+
+.timer-value {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--white);
+}
+
+.timer-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Inline Countdown Banner Styles */
+.inline-countdown-banner {
+    background: #E53E3E;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.inline-countdown-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.inline-offer-text {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.inline-timer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.inline-timer-value {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.inline-book-btn {
+    background: white;
+    color: #E53E3E;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.inline-book-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .countdown-title {
+        font-size: 1.75rem;
+    }
+    
+    .timer-value {
+        font-size: 2.5rem;
+    }
+    
+    .timer-box {
+        min-width: 100px;
+        padding: 1rem 1.5rem;
+    }
+    
+    .inline-countdown-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+</style>
+
+<!-- JavaScript Timer Logic -->
+<script>
+// Countdown Timer Function
+function startCountdownTimer() {
+    // Set initial time (14 minutes, 45 seconds)
+    let totalSeconds = 14 * 60 + 45;
+    
+    function updateTimer() {
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        
+        // Update main timer
+        const minutesEl = document.getElementById('minutes');
+        const secondsEl = document.getElementById('seconds');
+        
+        if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');
+        if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');
+        
+        // Update inline timer if exists
+        const inlineMinutesEl = document.getElementById('inline-minutes');
+        const inlineSecondsEl = document.getElementById('inline-seconds');
+        
+        if (inlineMinutesEl) inlineMinutesEl.textContent = minutes.toString().padStart(2, '0');
+        if (inlineSecondsEl) inlineSecondsEl.textContent = seconds.toString().padStart(2, '0');
+        
+        if (totalSeconds > 0) {
+            totalSeconds--;
+        } else {
+            // Reset timer when it reaches 0
+            totalSeconds = 14 * 60 + 45;
+        }
+    }
+    
+    // Update immediately and then every second
+    updateTimer();
+    setInterval(updateTimer, 1000);
+}
+
+// Start timer when page loads
+document.addEventListener('DOMContentLoaded', startCountdownTimer);
+</script>

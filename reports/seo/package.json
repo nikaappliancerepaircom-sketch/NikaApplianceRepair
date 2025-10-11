@@ -1,0 +1,17 @@
+{
+  "name": "nika-appliance-repair",
+  "version": "1.0.0",
+  "description": "Nika Appliance Repair Website",
+  "scripts": {
+    "dev": "npm run build && concurrently \"npm run watch\" \"npm run server\"",
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "server": "node server.js",
+    "serve": "npm run build && npm run server"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "fs-extra": "^11.1.1",
+    "concurrently": "^8.2.0"
+  }
+}

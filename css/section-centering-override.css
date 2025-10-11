@@ -1,0 +1,230 @@
+/* Comprehensive Centering Fixes with Higher Specificity */
+
+/* Override any conflicting styles with !important */
+.countdown-section,
+.about-section,
+.faq-section,
+.brands-section,
+.services-section,
+.how-it-works-section,
+.testimonials-section,
+.contact-section {
+    text-align: center !important;
+    width: 100% !important;
+}
+
+/* Ensure all containers are properly centered */
+.container {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 20px !important;
+    text-align: center !important;
+}
+
+/* Fix all section titles */
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.countdown-title,
+[class*="title"] {
+    text-align: center !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+
+/* Specific fix for countdown section */
+.countdown-section {
+    background: #f8f9fa !important;
+    padding: 60px 0 !important;
+    text-align: center !important;
+}
+
+.countdown-section .container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.countdown-title {
+    font-size: 2rem !important;
+    color: #1e40af !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.countdown-label {
+    font-size: 1.25rem !important;
+    color: #6b7280 !important;
+    margin-bottom: 1.5rem !important;
+    text-align: center !important;
+}
+
+.countdown-timer {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    margin: 0 auto 2rem !important;
+    flex-wrap: wrap !important;
+}
+
+.timer-box {
+    background: #dc2626 !important;
+    color: white !important;
+    padding: 20px 30px !important;
+    border-radius: 10px !important;
+    text-align: center !important;
+    min-width: 120px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.timer-value {
+    font-size: 3rem !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+}
+
+.timer-label {
+    font-size: 0.875rem !important;
+    margin-top: 5px !important;
+}
+
+.countdown-cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    background: #1e40af !important;
+    color: white !important;
+    padding: 15px 30px !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    margin: 0 auto !important;
+}
+
+.countdown-cta:hover {
+    background: #1e3a8a !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Fix About Section */
+.about-section {
+    padding: 80px 0 !important;
+    background: white !important;
+}
+
+.about-section .section-title {
+    font-size: 2.5rem !important;
+    color: #1e40af !important;
+    margin-bottom: 3rem !important;
+    text-align: center !important;
+}
+
+.about-layout {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+@media (min-width: 768px) {
+    .about-layout {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+/* Center video section */
+.modern-video-card {
+    background: white !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    margin: 0 auto !important;
+    max-width: 600px !important;
+}
+
+.video-wrapper {
+    position: relative !important;
+    padding-bottom: 56.25% !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+.video-wrapper iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+}
+
+/* Fix FAQ Section */
+.faq-section {
+    background: #f8f9fa !important;
+    padding: 80px 0 !important;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem !important;
+    color: #1e40af !important;
+    margin-bottom: 3rem !important;
+    text-align: center !important;
+}
+
+.faq-container {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+}
+
+.faq-item {
+    background: white !important;
+    margin-bottom: 1rem !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.faq-question {
+    padding: 20px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    font-weight: 600 !important;
+    color: #1e40af !important;
+    text-align: left !important;
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+    .countdown-title {
+        font-size: 1.5rem !important;
+        padding: 0 15px !important;
+    }
+    
+    .timer-box {
+        min-width: 140px !important;
+        padding: 15px 20px !important;
+    }
+    
+    .timer-value {
+        font-size: 2.5rem !important;
+    }
+    
+    .about-section .section-title {
+        font-size: 2rem !important;
+        padding: 0 15px !important;
+    }
+    
+    .countdown-timer {
+        width: 100% !important;
+        padding: 0 15px !important;
+    }
+}

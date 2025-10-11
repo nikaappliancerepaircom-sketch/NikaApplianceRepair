@@ -1,0 +1,173 @@
+/* Global Centering Fixes for All Sections */
+
+/* Fix About Section - Center all content */
+.about-section,
+.section-about,
+#about,
+[class*="about"] {
+    text-align: center !important;
+}
+
+.about-section .container,
+.section-about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-section h2,
+.section-about h2,
+.about-section h3,
+.section-about h3 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Fix countdown timer centering */
+.countdown-section,
+.timer-section,
+.deal-section,
+[class*="countdown"] {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-timer,
+.timer-container,
+.countdown-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.countdown-box,
+.timer-box,
+.countdown-item {
+    text-align: center;
+    min-width: 120px;
+}
+
+/* Fix FAQ Section Centering */
+.faq-section,
+.section-faq,
+#faq,
+[class*="faq"] {
+    text-align: center !important;
+}
+
+.faq-section h2,
+.section-faq h2 {
+    text-align: center !important;
+    margin-bottom: 2rem;
+}
+
+.faq-container,
+.faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+/* Fix video section centering */
+.video-section,
+.section-video,
+.about-video {
+    text-align: center !important;
+    padding: 60px 0;
+}
+
+.video-container,
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.video-container iframe,
+.video-wrapper iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+/* Fix story section */
+.story-section,
+.our-story {
+    text-align: center !important;
+    padding: 40px 20px;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Fix all headings to be centered */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center !important;
+}
+
+/* Fix trusted experts section */
+.trusted-section,
+.experts-section,
+[class*="trusted"] {
+    text-align: center !important;
+}
+
+.trusted-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Ensure all containers are centered */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Fix any flex containers */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Mobile responsiveness for centered content */
+@media (max-width: 768px) {
+    .countdown-timer,
+    .timer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .countdown-box,
+    .timer-box {
+        min-width: 150px;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    
+    .container {
+        padding: 0 15px;
+    }
+}

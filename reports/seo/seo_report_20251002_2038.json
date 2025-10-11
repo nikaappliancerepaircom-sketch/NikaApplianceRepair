@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-02T20:38:16.941396",
+  "scores": {
+    "content": 45.0,
+    "technical": 75,
+    "ai_optimization": 40,
+    "local_seo": 63.75,
+    "user_experience": 75
+  },
+  "issues": [
+    "Word count 2716 not optimal",
+    "Keyword density 3.46% too high",
+    "Only 4 images",
+    "Add AI summary boxes"
+  ],
+  "recommendations": [],
+  "overall_score": 56
+}

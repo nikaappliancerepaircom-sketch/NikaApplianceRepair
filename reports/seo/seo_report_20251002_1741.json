@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-10-02T17:41:53.032741",
+  "scores": {
+    "content": 45.0,
+    "technical": 55,
+    "ai_optimization": 20,
+    "local_seo": 38.75,
+    "user_experience": 75
+  },
+  "issues": [
+    "Word count 1449 not optimal",
+    "Keyword density 5.66% too high",
+    "Only 1 images",
+    "Add more schema types",
+    "Add AI summary boxes"
+  ],
+  "recommendations": [],
+  "overall_score": 42
+}

@@ -1,0 +1,698 @@
+{
+  "timestamp": "2025-10-02 23:12:38",
+  "total_pages": 62,
+  "passed": 1,
+  "failed": 61,
+  "details": {
+    "index.html": {
+      "url": "http://localhost:8080/index.html",
+      "path": "C:\\NikaApplianceRepair\\index.html",
+      "tests": {
+        "header_dropdown_exists": true,
+        "dropdown_menu_visible": true,
+        "dropdown_links_count": 12,
+        "footer_service_areas": true,
+        "footer_links_count": 8,
+        "sample_dropdown_href": "/locations/ajax.html",
+        "responsive_typography_loaded": true,
+        "h1_font_size": "63px",
+        "mobile_menu_exists": true,
+        "console_errors": 0
+      },
+      "issues": [],
+      "passed": true,
+      "screenshot": "C:\\NikaApplianceRepair\\screenshots\\index.png"
+    },
+    "services\\dishwasher-installation.html": {
+      "url": "http://localhost:8080/services/dishwasher-installation.html",
+      "path": "C:\\NikaApplianceRepair\\services\\dishwasher-installation.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\dishwasher-repair.html": {
+      "url": "http://localhost:8080/services/dishwasher-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\dishwasher-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\dryer-repair.html": {
+      "url": "http://localhost:8080/services/dryer-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\dryer-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\freezer-repair.html": {
+      "url": "http://localhost:8080/services/freezer-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\freezer-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\oven-repair.html": {
+      "url": "http://localhost:8080/services/oven-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\oven-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\oven-stove-repair.html": {
+      "url": "http://localhost:8080/services/oven-stove-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\oven-stove-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\refrigerator-freezer-repair.html": {
+      "url": "http://localhost:8080/services/refrigerator-freezer-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\refrigerator-freezer-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\refrigerator-repair.html": {
+      "url": "http://localhost:8080/services/refrigerator-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\refrigerator-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\stove-cooktop-repair.html": {
+      "url": "http://localhost:8080/services/stove-cooktop-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\stove-cooktop-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\washer-dryer-repair.html": {
+      "url": "http://localhost:8080/services/washer-dryer-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\washer-dryer-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "services\\washer-repair.html": {
+      "url": "http://localhost:8080/services/washer-repair.html",
+      "path": "C:\\NikaApplianceRepair\\services\\washer-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\ajax.html": {
+      "url": "http://localhost:8080/locations/ajax.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\ajax.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\aurora.html": {
+      "url": "http://localhost:8080/locations/aurora.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\aurora.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\barrie.html": {
+      "url": "http://localhost:8080/locations/barrie.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\barrie.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\bolton.html": {
+      "url": "http://localhost:8080/locations/bolton.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\bolton.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\brampton.html": {
+      "url": "http://localhost:8080/locations/brampton.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\brampton.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\burlington.html": {
+      "url": "http://localhost:8080/locations/burlington.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\burlington.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\caledon.html": {
+      "url": "http://localhost:8080/locations/caledon.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\caledon.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\concord.html": {
+      "url": "http://localhost:8080/locations/concord.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\concord.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\east-gwillimbury.html": {
+      "url": "http://localhost:8080/locations/east-gwillimbury.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\east-gwillimbury.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\etobicoke.html": {
+      "url": "http://localhost:8080/locations/etobicoke.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\etobicoke.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\georgetown.html": {
+      "url": "http://localhost:8080/locations/georgetown.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\georgetown.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\king-city.html": {
+      "url": "http://localhost:8080/locations/king-city.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\king-city.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\maple.html": {
+      "url": "http://localhost:8080/locations/maple.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\maple.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\markham.html": {
+      "url": "http://localhost:8080/locations/markham.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\markham.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\milton.html": {
+      "url": "http://localhost:8080/locations/milton.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\milton.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\mississauga.html": {
+      "url": "http://localhost:8080/locations/mississauga.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\mississauga.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\newmarket.html": {
+      "url": "http://localhost:8080/locations/newmarket.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\newmarket.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\north-york.html": {
+      "url": "http://localhost:8080/locations/north-york.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\north-york.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\oakville.html": {
+      "url": "http://localhost:8080/locations/oakville.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\oakville.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\oshawa.html": {
+      "url": "http://localhost:8080/locations/oshawa.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\oshawa.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\pickering.html": {
+      "url": "http://localhost:8080/locations/pickering.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\pickering.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\richmond-hill.html": {
+      "url": "http://localhost:8080/locations/richmond-hill.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\richmond-hill.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\scarborough.html": {
+      "url": "http://localhost:8080/locations/scarborough.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\scarborough.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\stouffville.html": {
+      "url": "http://localhost:8080/locations/stouffville.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\stouffville.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\thornhill.html": {
+      "url": "http://localhost:8080/locations/thornhill.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\thornhill.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\toronto.html": {
+      "url": "http://localhost:8080/locations/toronto.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\toronto.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\uxbridge.html": {
+      "url": "http://localhost:8080/locations/uxbridge.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\uxbridge.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\vaughan.html": {
+      "url": "http://localhost:8080/locations/vaughan.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\vaughan.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\whitby.html": {
+      "url": "http://localhost:8080/locations/whitby.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\whitby.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "locations\\woodbridge.html": {
+      "url": "http://localhost:8080/locations/woodbridge.html",
+      "path": "C:\\NikaApplianceRepair\\locations\\woodbridge.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    54 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\appliance-maintenance-schedule.html": {
+      "url": "http://localhost:8080/blog/appliance-maintenance-schedule.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\appliance-maintenance-schedule.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\appliance-repair-costs-toronto-2025.html": {
+      "url": "http://localhost:8080/blog/appliance-repair-costs-toronto-2025.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\appliance-repair-costs-toronto-2025.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\appliance-warranties-explained.html": {
+      "url": "http://localhost:8080/blog/appliance-warranties-explained.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\appliance-warranties-explained.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\best-appliance-brands-2025.html": {
+      "url": "http://localhost:8080/blog/best-appliance-brands-2025.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\best-appliance-brands-2025.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\buy-appliance-parts-toronto.html": {
+      "url": "http://localhost:8080/blog/buy-appliance-parts-toronto.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\buy-appliance-parts-toronto.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\buying-used-appliances-toronto.html": {
+      "url": "http://localhost:8080/blog/buying-used-appliances-toronto.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\buying-used-appliances-toronto.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\dishwasher-not-cleaning-solutions.html": {
+      "url": "http://localhost:8080/blog/dishwasher-not-cleaning-solutions.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\dishwasher-not-cleaning-solutions.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\diy-vs-professional-appliance-repair.html": {
+      "url": "http://localhost:8080/blog/diy-vs-professional-appliance-repair.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\diy-vs-professional-appliance-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\dryer-not-heating-troubleshooting.html": {
+      "url": "http://localhost:8080/blog/dryer-not-heating-troubleshooting.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\dryer-not-heating-troubleshooting.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\emergency-appliance-repair-fridge.html": {
+      "url": "http://localhost:8080/blog/emergency-appliance-repair-fridge.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\emergency-appliance-repair-fridge.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\energy-efficient-appliances-worth-it.html": {
+      "url": "http://localhost:8080/blog/energy-efficient-appliances-worth-it.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\energy-efficient-appliances-worth-it.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\how-to-fix-refrigerator-not-cooling.html": {
+      "url": "http://localhost:8080/blog/how-to-fix-refrigerator-not-cooling.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\how-to-fix-refrigerator-not-cooling.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\oven-temperature-calibration-guide.html": {
+      "url": "http://localhost:8080/blog/oven-temperature-calibration-guide.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\oven-temperature-calibration-guide.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\prepare-appliances-winter-toronto.html": {
+      "url": "http://localhost:8080/blog/prepare-appliances-winter-toronto.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\prepare-appliances-winter-toronto.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\reliable-appliance-repair-gta.html": {
+      "url": "http://localhost:8080/blog/reliable-appliance-repair-gta.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\reliable-appliance-repair-gta.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\repair-vs-replace-appliances.html": {
+      "url": "http://localhost:8080/blog/repair-vs-replace-appliances.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\repair-vs-replace-appliances.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\signs-appliance-needs-repair.html": {
+      "url": "http://localhost:8080/blog/signs-appliance-needs-repair.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\signs-appliance-needs-repair.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\spring-appliance-maintenance-gta.html": {
+      "url": "http://localhost:8080/blog/spring-appliance-maintenance-gta.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\spring-appliance-maintenance-gta.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\toronto-appliance-disposal-recycling.html": {
+      "url": "http://localhost:8080/blog/toronto-appliance-disposal-recycling.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\toronto-appliance-disposal-recycling.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n"
+      ],
+      "passed": false
+    },
+    "blog\\washer-not-draining-solutions.html": {
+      "url": "http://localhost:8080/blog/washer-not-draining-solutions.html",
+      "path": "C:\\NikaApplianceRepair\\blog\\washer-not-draining-solutions.html",
+      "tests": {
+        "header_dropdown_exists": true
+      },
+      "issues": [
+        "Error: ElementHandle.hover: Timeout 30000ms exceeded.\nCall log:\n  - attempting hover action\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible and stable\n      - element is not visible\n    - retrying hover action\n      - waiting 100ms\n    57 \u00d7 waiting for element to be visible and stable\n       - element is not visible\n     - retrying hover action\n       - waiting 500ms\n    - waiting for element to be visible and stable\n"
+      ],
+      "passed": false
+    }
+  }
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Quality Validator - Nika Appliance Repair</title>
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .validator {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2196F3;
+            font-family: 'Fredoka', cursive;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #1A237E;
+        }
+        .checklist-item {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .checklist-item input[type="checkbox"] {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        .required {
+            background: #FFE8E8;
+            border-color: #E91E63;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .score.excellent { background: #4CAF50; color: white; }
+        .score.good { background: #FFD600; color: #1A237E; }
+        .score.poor { background: #E91E63; color: white; }
+        .validate-btn {
+            background: #2196F3;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+        .error-list {
+            background: #FFE8E8;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            display: none;
+        }
+        .error-list h3 {
+            margin-top: 0;
+            color: #E91E63;
+        }
+        .error-list ul {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="validator">
+        <h1>🔍 Page Quality Validator</h1>
+        <p>Page URL: <input type="text" id="pageUrl" style="width: 100%; padding: 10px; margin: 10px 0;"></p>
+        
+        <!-- Critical Requirements -->
+        <div class="section required">
+            <h2>⚠️ CRITICAL REQUIREMENTS (Must Have)</h2>
+            <div class="checklist-item">
+                <input type="checkbox" id="phone-correct" class="critical">
+                <label>Phone number 437-747-6737 in header, footer, and CTAs</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="mobile-responsive" class="critical">
+                <label>Mobile responsive (test on phone)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="load-time" class="critical">
+                <label>Page loads under 5 seconds</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="cta-visible" class="critical">
+                <label>At least one CTA above fold</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="keyword-present" class="critical">
+                <label>Primary keyword in title and H1</label>
+            </div>
+        </div>
+
+        <!-- SEO Requirements -->
+        <div class="section">
+            <h2>🔍 SEO Requirements</h2>
+            <div class="checklist-item">
+                <input type="checkbox" id="title-length">
+                <label>Title tag 50-60 characters with keyword + location + brand</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="meta-desc">
+                <label>Meta description 150-160 chars with phone number</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="h1-single">
+                <label>Only ONE H1 tag on page</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="schema-markup">
+                <label>Schema markup implemented</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="internal-links">
+                <label>3-5 internal links to related pages</label>
+            </div>
+        </div>
+
+        <!-- Psychological Triggers -->
+        <div class="section">
+            <h2>🧠 Psychological Elements</h2>
+            <div class="checklist-item">
+                <input type="checkbox" id="trust-signals">
+                <label>Trust signals visible (Licensed, Warranty, Reviews)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="urgency">
+                <label>Urgency element ($40 OFF, Limited time, etc.)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="social-proof">
+                <label>At least 2 testimonials with locations</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="risk-reversal">
+                <label>Risk reversal (Free diagnostic, Guarantee, etc.)</label>
+            </div>
+        </div>
+
+        <!-- Visual Design -->
+        <div class="section">
+            <h2>🎨 Visual Requirements</h2>
+            <div class="checklist-item">
+                <input type="checkbox" id="color-psychology">
+                <label>Colors match psychology (Green CTA, Blue trust, Pink urgency)</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="fonts-correct">
+                <label>Fonts: Fredoka for headings, Rubik for body</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="whitespace">
+                <label>Adequate white space around CTAs</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="images-optimized">
+                <label>Images optimized and have alt tags</label>
+            </div>
+        </div>
+
+        <!-- Conversion Elements -->
+        <div class="section">
+            <h2>💰 Conversion Optimization</h2>
+            <div class="checklist-item">
+                <input type="checkbox" id="form-fields">
+                <label>Form has maximum 6 fields</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="cta-text">
+                <label>CTA text is action-oriented (not "Submit")</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="value-prop">
+                <label>Clear value proposition in hero</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="multiple-ctas">
+                <label>3-4 CTAs throughout the page</label>
+            </div>
+        </div>
+
+        <button class="validate-btn" onclick="validatePage()">Validate Page Quality</button>
+        
+        <div class="error-list" id="errorList">
+            <h3>❌ Missing Requirements:</h3>
+            <ul id="errors"></ul>
+        </div>
+        
+        <div class="score" id="scoreDisplay"></div>
+        
+        <div id="recommendations" style="display:none;">
+            <h3>📋 Recommendations:</h3>
+            <ul id="recommendList"></ul>
+        </div>
+    </div>
+
+    <script>
+        function validatePage() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const critical = document.querySelectorAll('.critical');
+            const errors = [];
+            const recommendations = [];
+            let totalChecked = 0;
+            let criticalMissing = false;
+            
+            // Check critical items
+            critical.forEach(cb => {
+                if (!cb.checked) {
+                    criticalMissing = true;
+                    errors.push(`CRITICAL: ${cb.nextElementSibling.textContent}`);
+                }
+            });
+            
+            // Check all items
+            checkboxes.forEach(cb => {
+                if (cb.checked) {
+                    totalChecked++;
+                } else if (!cb.classList.contains('critical')) {
+                    recommendations.push(cb.nextElementSibling.textContent);
+                }
+            });
+            
+            const score = Math.round((totalChecked / checkboxes.length) * 100);
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            const errorList = document.getElementById('errorList');
+            const errorUl = document.getElementById('errors');
+            const recommendDiv = document.getElementById('recommendations');
+            const recommendUl = document.getElementById('recommendList');
+            
+            // Display score
+            scoreDisplay.textContent = `Quality Score: ${score}%`;
+            if (criticalMissing) {
+                scoreDisplay.className = 'score poor';
+                scoreDisplay.innerHTML += '<br>⚠️ CRITICAL ITEMS MISSING - DO NOT LAUNCH!';
+            } else if (score >= 90) {
+                scoreDisplay.className = 'score excellent';
+                scoreDisplay.innerHTML += '<br>✅ Ready to launch!';
+            } else if (score >= 80) {
+                scoreDisplay.className = 'score good';
+                scoreDisplay.innerHTML += '<br>⚡ Minor improvements needed';
+            } else {
+                scoreDisplay.className = 'score poor';
+                scoreDisplay.innerHTML += '<br>❌ Major improvements required';
+            }
+            
+            // Display errors
+            if (errors.length > 0) {
+                errorList.style.display = 'block';
+                errorUl.innerHTML = errors.map(e => `<li>${e}</li>`).join('');
+            } else {
+                errorList.style.display = 'none';
+            }
+            
+            // Display recommendations
+            if (recommendations.length > 0 && !criticalMissing) {
+                recommendDiv.style.display = 'block';
+                recommendUl.innerHTML = recommendations.map(r => `<li>${r}</li>`).join('');
+            } else {
+                recommendDiv.style.display = 'none';
+            }
+            
+            // Log to console for debugging
+            console.log('Page Quality Report:', {
+                url: document.getElementById('pageUrl').value,
+                score: score,
+                criticalMissing: criticalMissing,
+                errors: errors,
+                recommendations: recommendations,
+                timestamp: new Date().toISOString()
+            });
+        }
+        
+        // Auto-save progress
+        function saveProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const progress = {};
+            checkboxes.forEach(cb => {
+                progress[cb.id] = cb.checked;
+            });
+            console.log('Progress saved:', progress);
+        }
+        
+        // Add save on change
+        document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', saveProgress);
+        });
+    </script>
+</body>
+</html>

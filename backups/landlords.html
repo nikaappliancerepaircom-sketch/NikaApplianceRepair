@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preload critical resources -->
+    <link rel="preload" as="style" href="css/style.css">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/fredoka/v14/X7n34bchD2rGZqjLWBZQh623ZL0.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4i1VU80V5_dOg.woff2" type="font/woff2" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Commercial appliance repair for property managers & landlords in Toronto. Volume discounts, priority service, 24/7 support. 500+ properties serviced. Call 437-747-6737">
+    <meta name="keywords" content="commercial appliance repair Toronto, landlord appliance service, property management repair, rental property maintenance">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Commercial Appliance Repair for Landlords Toronto | Volume Discounts">
+    <meta property="og:description" content="Your trusted partner for 500+ rental properties. Priority service, volume discounts up to 20%, 24/7 emergency support.">
+    <meta property="og:type" content="website">
+    <title>Commercial Appliance Repair for Landlords Toronto | Volume Discounts - Nika</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Landlord-specific styles */
+        .landlord-hero {
+            background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+            color: white;
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Dark overlay for better contrast */
+        .landlord-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3); /* Dark overlay for better text contrast */
+            z-index: 1;
+        }
+        
+        .landlord-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="10" y="10" width="30" height="30" fill="rgba(255,255,255,0.05)"/><rect x="60" y="60" width="30" height="30" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: 100px 100px;
+            z-index: 0;
+        }
+        
+        .hero-business {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .business-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Ensure high contrast for text */
+        .landlord-hero h1 {
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-subtitle {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            opacity: 1; /* Remove any opacity */
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            display: block;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #FFD600; /* Yellow for contrast */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .stat-label {
+            color: #FFFFFF;
+            font-size: 1.125rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .volume-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 3rem 0;
+        }
+        
+        .volume-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .volume-table th {
+            background: var(--primary-blue);
+            color: white;
+            padding: 1.25rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .volume-table td {
+            padding: 1.25rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .volume-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .volume-table tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .savings-highlight {
+            color: var(--bright-green);
+            font-weight: 700;
+        }
+        
+        .partner-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .partner-benefit {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .partner-benefit:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" class="logo-text">
+                        <span class="logo-primary">NIKA</span>
+                        <span class="logo-secondary">Appliance Repair</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#volume">Volume Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:4377476737" class="call-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                        Business Line
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="landlord-hero">
+        <div class="container">
+            <div class="hero-business">
+                <span class="business-badge">PROPERTY MANAGEMENT PARTNER</span>
+                <h1>Commercial Appliance Repair<br>for Toronto Landlords</h1>
+                <p class="hero-subtitle">Your trusted partner for 500+ rental properties across the GTA</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">45min</span>
+                        <span class="stat-label">Average Response</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Emergency Service</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15%</span>
+                        <span class="stat-label">Volume Discount</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta-group">
+                    <a href="#contact" class="cta-primary">Get Business Account</a>
+                    <a href="tel:4377476737" class="cta-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                        Call: 437-747-6737
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <span class="trust-icon">🏢</span>
+                    <span>500+ Properties</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">📋</span>
+                    <span>Detailed Invoices</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">🛡️</span>
+                    <span>Liability Insurance</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">⚡</span>
+                    <span>Priority Service</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volume Pricing Section -->    <!-- Volume Pricing Section -->
+    <section class="volume-section" id="volume">
+        <div class="container">
+            <h2 class="section-title">Volume Discount Pricing</h2>
+            <p class="section-subtitle">The more properties you manage, the more you save</p>
+            
+            <div class="volume-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number of Properties</th>
+                            <th>Discount Rate</th>
+                            <th>Service Call Price</th>
+                            <th>You Save</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1-5 Properties</td>
+                            <td>5% Off</td>
+                            <td>$85 (was $89)</td>
+                            <td class="savings-highlight">$4 per call</td>
+                        </tr>
+                        <tr>
+                            <td>6-15 Properties</td>
+                            <td>10% Off</td>
+                            <td>$80 (was $89)</td>
+                            <td class="savings-highlight">$9 per call</td>
+                        </tr>
+                        <tr>
+                            <td>16-30 Properties</td>
+                            <td>15% Off</td>
+                            <td>$76 (was $89)</td>
+                            <td class="savings-highlight">$13 per call</td>
+                        </tr>
+                        <tr>
+                            <td>31+ Properties</td>
+                            <td>20% Off</td>
+                            <td>$71 (was $89)</td>
+                            <td class="savings-highlight">$18 per call</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p class="volume-note">* Additional discounts available for preventive maintenance contracts</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Why Property Managers Choose Us</h2>
+            
+            <div class="partner-benefits">
+                <div class="partner-benefit">
+                    <span class="benefit-number">45min</span>
+                    <h3>Rapid Response</h3>
+                    <p>Priority dispatch for business accounts. Your tenants won't wait long.</p>
+                </div>
+                
+                <div class="partner-benefit">
+                    <span class="benefit-number">24/7</span>
+                    <h3>Always Available</h3>
+                    <p>Emergency hotline exclusively for property managers. We're here when you need us.</p>
+                </div>
+                
+                <div class="partner-benefit">
+                    <span class="benefit-number">1</span>
+                    <h3>Clear Pricing</h3>
+                    <p>Transparent quotes with no hidden fees. You know the cost before we start.</p>
+                </div>
+                
+                <div class="partner-benefit">
+                    <span class="benefit-number">100%</span>
+                    <h3>Tenant Satisfaction</h3>
+                    <p>Professional communication with tenants. We make you look good.</p>
+                </div>
+                
+                <div class="partner-benefit">
+                    <span class="benefit-number">90</span>
+                    <h3>Day Warranty</h3>
+                    <p>Extended warranty on all repairs. Peace of mind for you and your tenants.</p>
+                </div>
+                
+                <div class="partner-benefit">
+                    <span class="benefit-number">$1M</span>
+                    <h3>Liability Coverage</h3>
+                    <p>Fully insured and bonded. Your properties are protected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Comprehensive Property Services</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Preventive Maintenance</h3>
+                    <p>Regular check-ups to prevent breakdowns. Keep appliances running longer.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Tenant Portal</h3>
+                    <p>Online system for tenants to request service. You stay in the loop.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Repair Analytics</h3>
+                    <p>Monthly reports on all service calls. Track expenses by property.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏃</div>
+                    <h3>Move-Out Inspections</h3>
+                    <p>Appliance condition reports for tenant transitions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💳</div>
+                    <h3>Multiple Payment Options</h3>
+                    <p>Credit cards, checks, or e-transfer accepted. Quick and easy payment after each job.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Tenant Education</h3>
+                    <p>We teach proper appliance use to reduce service calls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Property Managers Say</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Managing 42 units is challenging, but Nika makes appliance repairs one less worry. Their response time is incredible."</p>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong>
+                        <span>Property Manager, 42 units</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The volume discount really helps when managing 42 units. Their detailed invoices make expense tracking easy for each property."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Williams</strong>
+                        <span>Real Estate Investor</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"15% discount adds up fast when you have multiple properties. Great service and even better prices."</p>
+                    <div class="testimonial-author">
+                        <strong>David Park</strong>
+                        <span>Owns 18 rental units</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get Your Business Account Today</h2>
+            <p class="section-subtitle">Fill out the form or call our business line: 437-747-6737</p>
+            
+            <div class="contact-form-wrapper">
+                <form class="business-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Company Name" required>
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="number" placeholder="Number of Properties" min="1" required>
+                        <select required>
+                            <option value="">Property Type</option>
+                            <option>Residential</option>
+                            <option>Commercial</option>
+                            <option>Mixed</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Tell us about your properties and needs" rows="4"></textarea>
+                    <button type="submit" class="submit-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        Create Business Account
+                    </button>
+                </form>
+                
+                <div class="contact-info-box">
+                    <h3>Direct Business Line</h3>
+                    <a href="tel:4377476737" class="phone-large">437-747-6737</a>
+                    <p>Mon-Fri: 7am-8pm<br>Weekends: 8am-6pm</p>
+                    
+                    <h4>Benefits Include:</h4>
+                    <ul>
+                        <li>✅ Priority scheduling</li>
+                        <li>✅ Volume discounts up to 20%</li>
+                        <li>✅ Dedicated account manager</li>
+                        <li>✅ Detailed invoices per job</li>
+                        <li>✅ 24/7 emergency hotline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Business Services</h4>
+                    <ul>
+                        <li><a href="#volume">Volume Pricing</a></li>
+                        <li><a href="#services">Property Services</a></li>
+                        <li><a href="#contact">Get Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Residential Service</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Insurance Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p class="phone-large">437-747-6737</p>
+                    <p>business@nikarepair.ca</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Nika Appliance Repair. Serving Toronto property managers since 2019.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form handling
+        document.querySelector('.business-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! We\'ll contact you within 1 business day to set up your account.');
+        });
+    </script>
+</body>
+</html>

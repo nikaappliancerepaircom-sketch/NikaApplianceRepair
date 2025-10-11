@@ -1,0 +1,197 @@
+/* Custom Video Player Styling */
+
+/* About Section Video */
+.video-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    padding: 5px;
+    box-shadow: 0 10px 30px rgba(33, 150, 243, 0.15);
+    margin-bottom: 1.5rem;
+}
+
+.video-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.video-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 315px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 0;
+    background: #000;
+}
+
+/* Hide YouTube branding overlay */
+.video-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 50px;
+    background: linear-gradient(to left, rgba(0,0,0,0.9) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* Testimonial Videos */
+.testimonial-video {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-video:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    padding: 2px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+.video-thumbnail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.video-thumbnail:hover::before {
+    transform: translateX(100%);
+}
+
+.video-thumbnail::after {
+    content: '▶';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #2196F3;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.video-thumbnail:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-thumbnail iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 13px;
+    position: relative;
+}
+
+.video-thumbnail:hover {
+    box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+    transform: scale(1.02);
+}
+
+/* Custom play button overlay */
+.video-play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Hide YouTube branding as much as possible */
+.video-thumbnail iframe,
+.video-wrapper iframe {
+    border: none;
+}
+
+/* Add modest=1 and rel=0 to hide YouTube logo and related videos */
+/* This should be added to the iframe src URLs */
+
+/* Video titles styling */
+.testimonial-title {
+    font-weight: 600;
+    color: var(--gray-800);
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.testimonial-video:hover .testimonial-title {
+    color: var(--primary-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .video-wrapper iframe {
+        height: 200px;
+    }
+    
+    .video-thumbnail iframe {
+        height: 180px;
+    }
+    
+    .video-thumbnail::after {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+/* Animation for loading */
+@keyframes videoShimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.video-thumbnail.loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: videoShimmer 1.5s infinite;
+}

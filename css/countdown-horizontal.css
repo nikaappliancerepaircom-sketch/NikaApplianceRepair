@@ -1,0 +1,85 @@
+/* Force Horizontal Layout for Countdown Timer */
+
+.countdown-timer {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    margin: 0 auto 2rem !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+}
+
+.timer-box {
+    display: inline-block !important;
+    background: #dc2626 !important;
+    color: white !important;
+    padding: 20px 30px !important;
+    border-radius: 10px !important;
+    text-align: center !important;
+    min-width: 120px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    margin: 0 !important;
+    flex: 0 0 auto !important;
+}
+
+/* Ensure container doesn't force vertical */
+.countdown-section .container {
+    display: block !important;
+    text-align: center !important;
+}
+
+/* Override any flex column rules */
+.countdown-section,
+.countdown-section > *,
+.countdown-section .container {
+    flex-direction: row !important;
+}
+
+/* Keep horizontal even on mobile */
+@media (max-width: 480px) {
+    .countdown-timer {
+        flex-direction: row !important;
+        gap: 10px !important;
+    }
+    
+    .timer-box {
+        min-width: 100px !important;
+        padding: 15px 20px !important;
+    }
+    
+    .timer-value {
+        font-size: 2rem !important;
+    }
+}
+
+/* Tablet and up */
+@media (min-width: 481px) {
+    .countdown-timer {
+        flex-direction: row !important;
+        gap: 20px !important;
+    }
+    
+    .timer-box {
+        min-width: 140px !important;
+        padding: 20px 30px !important;
+    }
+}
+
+/* Remove any conflicting styles */
+.countdown-timer > * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    vertical-align: middle !important;
+}
+
+/* Ensure proper alignment */
+.countdown-section {
+    overflow: visible !important;
+}
+
+.countdown-timer {
+    overflow: visible !important;
+    white-space: nowrap !important;
+}

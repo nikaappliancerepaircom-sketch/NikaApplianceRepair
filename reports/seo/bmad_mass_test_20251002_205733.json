@@ -1,0 +1,662 @@
+{
+  "timestamp": "2025-10-02 20:57:17",
+  "total_pages": 62,
+  "pages_tested": 62,
+  "pages_passed": 0,
+  "pages_failed": 62,
+  "details": {
+    "index.html": {
+      "category": "main",
+      "path": "index.html",
+      "seo_score": 50,
+      "data_consistency": "PASS",
+      "critical_issues": [
+        "1. Word count 1458 not optimal",
+        "2. Keyword density 5.62% too high",
+        "3. Only 1 images",
+        "4. Add AI summary boxes"
+      ],
+      "status": "FAIL"
+    },
+    "services/refrigerator-repair.html": {
+      "category": "services",
+      "path": "services/refrigerator-repair.html",
+      "seo_score": 80,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3242 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/washer-repair.html": {
+      "category": "services",
+      "path": "services/washer-repair.html",
+      "seo_score": 78,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3244 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/dryer-repair.html": {
+      "category": "services",
+      "path": "services/dryer-repair.html",
+      "seo_score": 78,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3241 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/oven-repair.html": {
+      "category": "services",
+      "path": "services/oven-repair.html",
+      "seo_score": 78,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3241 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/stove-cooktop-repair.html": {
+      "category": "services",
+      "path": "services/stove-cooktop-repair.html",
+      "seo_score": 80,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3243 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/freezer-repair.html": {
+      "category": "services",
+      "path": "services/freezer-repair.html",
+      "seo_score": 77,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3238 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/dishwasher-repair.html": {
+      "category": "services",
+      "path": "services/dishwasher-repair.html",
+      "seo_score": 80,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3244 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/refrigerator-freezer-repair.html": {
+      "category": "services",
+      "path": "services/refrigerator-freezer-repair.html",
+      "seo_score": 78,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3245 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/washer-dryer-repair.html": {
+      "category": "services",
+      "path": "services/washer-dryer-repair.html",
+      "seo_score": 80,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3247 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/oven-stove-repair.html": {
+      "category": "services",
+      "path": "services/oven-stove-repair.html",
+      "seo_score": 80,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3244 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "services/dishwasher-installation.html": {
+      "category": "services",
+      "path": "services/dishwasher-installation.html",
+      "seo_score": 80,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3244 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "locations/ajax.html": {
+      "category": "locations",
+      "path": "locations/ajax.html",
+      "seo_score": 70,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/aurora.html": {
+      "category": "locations",
+      "path": "locations/aurora.html",
+      "seo_score": 70,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/barrie.html": {
+      "category": "locations",
+      "path": "locations/barrie.html",
+      "seo_score": 70,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/bolton.html": {
+      "category": "locations",
+      "path": "locations/bolton.html",
+      "seo_score": 70,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/brampton.html": {
+      "category": "locations",
+      "path": "locations/brampton.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/burlington.html": {
+      "category": "locations",
+      "path": "locations/burlington.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/caledon.html": {
+      "category": "locations",
+      "path": "locations/caledon.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/concord.html": {
+      "category": "locations",
+      "path": "locations/concord.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/east-gwillimbury.html": {
+      "category": "locations",
+      "path": "locations/east-gwillimbury.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3217 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/etobicoke.html": {
+      "category": "locations",
+      "path": "locations/etobicoke.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/georgetown.html": {
+      "category": "locations",
+      "path": "locations/georgetown.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/king-city.html": {
+      "category": "locations",
+      "path": "locations/king-city.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3217 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/maple.html": {
+      "category": "locations",
+      "path": "locations/maple.html",
+      "seo_score": 70,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/markham.html": {
+      "category": "locations",
+      "path": "locations/markham.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/milton.html": {
+      "category": "locations",
+      "path": "locations/milton.html",
+      "seo_score": 70,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/mississauga.html": {
+      "category": "locations",
+      "path": "locations/mississauga.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/newmarket.html": {
+      "category": "locations",
+      "path": "locations/newmarket.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/north-york.html": {
+      "category": "locations",
+      "path": "locations/north-york.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3217 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/oakville.html": {
+      "category": "locations",
+      "path": "locations/oakville.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/oshawa.html": {
+      "category": "locations",
+      "path": "locations/oshawa.html",
+      "seo_score": 70,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/pickering.html": {
+      "category": "locations",
+      "path": "locations/pickering.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/richmond-hill.html": {
+      "category": "locations",
+      "path": "locations/richmond-hill.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3217 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/scarborough.html": {
+      "category": "locations",
+      "path": "locations/scarborough.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/stouffville.html": {
+      "category": "locations",
+      "path": "locations/stouffville.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/thornhill.html": {
+      "category": "locations",
+      "path": "locations/thornhill.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/toronto.html": {
+      "category": "locations",
+      "path": "locations/toronto.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/uxbridge.html": {
+      "category": "locations",
+      "path": "locations/uxbridge.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/vaughan.html": {
+      "category": "locations",
+      "path": "locations/vaughan.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/whitby.html": {
+      "category": "locations",
+      "path": "locations/whitby.html",
+      "seo_score": 70,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "locations/woodbridge.html": {
+      "category": "locations",
+      "path": "locations/woodbridge.html",
+      "seo_score": 72,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3211 not optimal",
+        "2. Keyword density 3.05% too high"
+      ],
+      "status": "FAIL"
+    },
+    "blog/how-to-fix-refrigerator-not-cooling.html": {
+      "category": "blog",
+      "path": "blog/how-to-fix-refrigerator-not-cooling.html",
+      "seo_score": 60,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 4130 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/washer-not-draining-solutions.html": {
+      "category": "blog",
+      "path": "blog/washer-not-draining-solutions.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3378 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/dryer-not-heating-troubleshooting.html": {
+      "category": "blog",
+      "path": "blog/dryer-not-heating-troubleshooting.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3154 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/dishwasher-not-cleaning-solutions.html": {
+      "category": "blog",
+      "path": "blog/dishwasher-not-cleaning-solutions.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3152 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/oven-temperature-calibration-guide.html": {
+      "category": "blog",
+      "path": "blog/oven-temperature-calibration-guide.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3148 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/appliance-maintenance-schedule.html": {
+      "category": "blog",
+      "path": "blog/appliance-maintenance-schedule.html",
+      "seo_score": 60,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3151 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/signs-appliance-needs-repair.html": {
+      "category": "blog",
+      "path": "blog/signs-appliance-needs-repair.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3148 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/diy-vs-professional-appliance-repair.html": {
+      "category": "blog",
+      "path": "blog/diy-vs-professional-appliance-repair.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3151 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/best-appliance-brands-2025.html": {
+      "category": "blog",
+      "path": "blog/best-appliance-brands-2025.html",
+      "seo_score": 60,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3151 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/repair-vs-replace-appliances.html": {
+      "category": "blog",
+      "path": "blog/repair-vs-replace-appliances.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3151 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/energy-efficient-appliances-worth-it.html": {
+      "category": "blog",
+      "path": "blog/energy-efficient-appliances-worth-it.html",
+      "seo_score": 60,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3153 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/buying-used-appliances-toronto.html": {
+      "category": "blog",
+      "path": "blog/buying-used-appliances-toronto.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3153 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/appliance-warranties-explained.html": {
+      "category": "blog",
+      "path": "blog/appliance-warranties-explained.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3146 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/appliance-repair-costs-toronto-2025.html": {
+      "category": "blog",
+      "path": "blog/appliance-repair-costs-toronto-2025.html",
+      "seo_score": 60,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3152 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/reliable-appliance-repair-gta.html": {
+      "category": "blog",
+      "path": "blog/reliable-appliance-repair-gta.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3149 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/toronto-appliance-disposal-recycling.html": {
+      "category": "blog",
+      "path": "blog/toronto-appliance-disposal-recycling.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3147 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/buy-appliance-parts-toronto.html": {
+      "category": "blog",
+      "path": "blog/buy-appliance-parts-toronto.html",
+      "seo_score": 60,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3149 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/prepare-appliances-winter-toronto.html": {
+      "category": "blog",
+      "path": "blog/prepare-appliances-winter-toronto.html",
+      "seo_score": 60,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3149 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/spring-appliance-maintenance-gta.html": {
+      "category": "blog",
+      "path": "blog/spring-appliance-maintenance-gta.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3145 not optimal"
+      ],
+      "status": "FAIL"
+    },
+    "blog/emergency-appliance-repair-fridge.html": {
+      "category": "blog",
+      "path": "blog/emergency-appliance-repair-fridge.html",
+      "seo_score": 62,
+      "data_consistency": "FAIL",
+      "critical_issues": [
+        "1. Word count 3153 not optimal"
+      ],
+      "status": "FAIL"
+    }
+  }
+}

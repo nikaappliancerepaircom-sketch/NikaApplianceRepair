@@ -1,0 +1,535 @@
+/* ==========================================
+   DESKTOP & TABLET OPTIMIZATION
+   Centered sections, not too wide
+   ========================================== */
+
+/* ==========================================
+   CONTAINER - CENTERED & MAX WIDTH
+   ========================================== */
+
+/* All devices - enforce container max-width */
+.container {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    width: 100% !important;
+}
+
+/* Larger desktops - even more contained */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1400px !important;
+    }
+}
+
+/* ==========================================
+   SECTIONS - CENTERED & CONTAINED
+   ========================================== */
+
+section {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+/* Content sections with backgrounds should be full-width,
+   but inner content should be contained */
+section > .container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* ==========================================
+   HERO SECTION - LAPTOP & DESKTOP
+   ========================================== */
+
+/* Laptop (1024px - 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .hero-section {
+        padding: 80px 0 !important;
+    }
+
+    .hero-content {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 3rem !important;
+        align-items: center !important;
+        max-width: 1100px !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-text {
+        text-align: left !important;
+    }
+
+    .hero-image {
+        max-width: 450px !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-title {
+        font-size: 2.75rem !important;
+    }
+}
+
+/* Desktop (1440px+) */
+@media (min-width: 1440px) {
+    .hero-section {
+        padding: 100px 0 !important;
+    }
+
+    .hero-content {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 4rem !important;
+        align-items: center !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-text {
+        text-align: left !important;
+    }
+
+    .hero-image {
+        max-width: 500px !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-title {
+        font-size: 3rem !important;
+    }
+}
+
+/* ==========================================
+   TABLET (768px - 1023px) - CENTERED
+   ========================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-section {
+        padding: 70px 0 !important;
+    }
+
+    .hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 2.5rem !important;
+        max-width: 700px !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-text {
+        order: 1 !important;
+        text-align: center !important;
+    }
+
+    .hero-image {
+        order: 2 !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-title {
+        font-size: 2.25rem !important;
+    }
+
+    .hero-cta-group {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 1rem !important;
+        flex-wrap: wrap !important;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        min-width: 200px !important;
+    }
+}
+
+/* ==========================================
+   GRIDS - RESPONSIVE & CENTERED
+   ========================================== */
+
+/* Services Grid */
+@media (min-width: 1024px) {
+    .services-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2rem !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .services-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+        max-width: 800px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* Benefits Grid */
+@media (min-width: 1024px) {
+    .benefits-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2rem !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .benefits-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+        max-width: 800px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   ABOUT SECTION - CENTERED LAYOUT
+   ========================================== */
+
+@media (min-width: 1024px) {
+    .about-layout {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 3rem !important;
+        align-items: start !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .about-layout {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        max-width: 700px !important;
+        margin: 0 auto !important;
+    }
+
+    .about-left,
+    .about-right {
+        text-align: center !important;
+    }
+}
+
+/* ==========================================
+   TESTIMONIALS - CENTERED GRID
+   ========================================== */
+
+@media (min-width: 1024px) {
+    .testimonials-modern-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2rem !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .testimonials-modern-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+        max-width: 800px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   BRANDS SECTION - CENTERED GRID
+   ========================================== */
+
+@media (min-width: 1024px) {
+    .brand-logos-showcase {
+        display: grid !important;
+        grid-template-columns: repeat(6, 1fr) !important;
+        gap: 1.5rem !important;
+        max-width: 1100px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .brand-logos-showcase {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 1rem !important;
+        max-width: 700px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   AREAS SECTION - CENTERED GRID
+   ========================================== */
+
+@media (min-width: 1024px) {
+    .areas-grid {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 1rem !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .areas-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.75rem !important;
+        max-width: 700px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   BOOKING SECTION - CENTERED LAYOUT
+   ========================================== */
+
+@media (min-width: 1024px) {
+    .booking-content {
+        display: grid !important;
+        grid-template-columns: 2fr 1fr !important;
+        gap: 2.5rem !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .booking-content {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        max-width: 700px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   FOOTER - CENTERED LAYOUT
+   ========================================== */
+
+@media (min-width: 1024px) {
+    .footer-content {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 3rem !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-content {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem !important;
+        max-width: 700px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   PRICING TABLE - CENTERED
+   ========================================== */
+
+@media (min-width: 768px) {
+    .pricing-table {
+        max-width: 900px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   FAQ SECTION - CENTERED
+   ========================================== */
+
+@media (min-width: 768px) {
+    .faq-grid {
+        max-width: 900px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   SERVICE DETAILS - CENTERED CONTENT
+   ========================================== */
+
+@media (min-width: 768px) {
+    .service-details-section .container {
+        max-width: 900px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   COUNTDOWN SECTION - CENTERED
+   ========================================== */
+
+@media (min-width: 768px) {
+    .countdown-section {
+        text-align: center !important;
+    }
+
+    .countdown-section .container {
+        max-width: 800px !important;
+        margin: 0 auto !important;
+    }
+
+    .countdown-timer {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 1.5rem !important;
+        max-width: 600px !important;
+        margin: 0 auto 2rem !important;
+    }
+
+    .timer-box {
+        min-width: 140px !important;
+    }
+}
+
+/* ==========================================
+   HOW IT WORKS - CENTERED
+   ========================================== */
+
+@media (min-width: 1024px) {
+    .steps-container {
+        display: flex !important;
+        justify-content: space-between !important;
+        gap: 2rem !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .steps-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        max-width: 500px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   TEXT CONTENT - READABLE WIDTH
+   ========================================== */
+
+/* Long paragraphs should not be too wide (readability) */
+@media (min-width: 768px) {
+    .service-details-section p {
+        max-width: 80ch !important; /* 80 characters per line for readability */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* ==========================================
+   SECTION TITLES - CENTERED
+   ========================================== */
+
+.section-title,
+.section-title-light,
+.section-subtitle {
+    text-align: center !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* ==========================================
+   HEADER - CENTERED CONTENT
+   ========================================== */
+
+.header-content {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* ==========================================
+   PREVENT CONTENT FROM BEING TOO WIDE
+   ========================================== */
+
+/* Cards should have max-width */
+@media (min-width: 1440px) {
+    .service-card,
+    .benefit-card,
+    .testimonial-card {
+        max-width: 450px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   SPACING - CONSISTENT PADDING
+   ========================================== */
+
+@media (min-width: 1024px) {
+    section {
+        padding: 80px 0 !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    section {
+        padding: 60px 0 !important;
+    }
+}
+
+/* ==========================================
+   BUTTONS - CENTERED IN CTA SECTIONS
+   ========================================== */
+
+.services-cta,
+.why-cta,
+.how-it-works-cta {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    flex-wrap: wrap !important;
+}
+
+/* ==========================================
+   MAP - CENTERED & MAX WIDTH
+   ========================================== */
+
+@media (min-width: 768px) {
+    .map-container {
+        max-width: 1000px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ==========================================
+   PREVENT ULTRA-WIDE CONTENT ON 4K SCREENS
+   ========================================== */
+
+@media (min-width: 2560px) {
+    .container {
+        max-width: 1600px !important;
+    }
+
+    section > .container {
+        max-width: 1600px !important;
+    }
+}

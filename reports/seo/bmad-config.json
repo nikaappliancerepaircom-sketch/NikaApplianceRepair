@@ -1,0 +1,95 @@
+{
+  "project": {
+    "name": "Nika Appliance Repair",
+    "industry": "Appliance Repair Services",
+    "location": "Toronto & GTA, Ontario, Canada",
+    "type": "Local Service Business"
+  },
+  "business_data": {
+    "phone_number": "437-747-6737",
+    "phone_normalized": "4377476737",
+    "email": "care@niappliancerepair.ca",
+    "address": "60 Walter Tunny Crescent, East Gwillimbury, ON L9N 0R3",
+    "service_area": "Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, and all GTA"
+  },
+  "quality_metrics": {
+    "warranty_period": 90,
+    "warranty_unit": "day",
+    "rating": "4.9",
+    "review_count": "5200",
+    "years_experience": 6,
+    "customers_served": 5200
+  },
+  "keywords": {
+    "primary": "appliance repair",
+    "secondary": ["refrigerator repair", "washer repair", "dryer repair", "dishwasher repair", "oven repair", "stove repair"],
+    "semantic": ["service", "repair", "technician", "emergency", "warranty", "licensed", "insured", "professional", "certified", "same-day"],
+    "location_modifiers": ["Toronto", "GTA", "Mississauga", "Brampton", "Vaughan"],
+    "service_types": ["same-day", "emergency", "professional", "licensed", "certified"]
+  },
+  "bmad_targets": {
+    "content_word_count_min": 2500,
+    "content_word_count_max": 3000,
+    "keyword_density_min": 2.0,
+    "keyword_density_max": 2.5,
+    "internal_links_min": 10,
+    "images_min": 5,
+    "sections_min": 6,
+    "sections_max": 12,
+    "cta_buttons_min": 3,
+    "cta_count_min": 3,
+    "cta_count_max": 8,
+    "trust_signals_min": 5,
+    "phone_mentions_min": 8,
+    "form_fields_max": 5
+  },
+  "page_structure": {
+    "required_sections": [
+      "hero",
+      "services",
+      "about",
+      "process",
+      "testimonials",
+      "faq",
+      "contact",
+      "footer"
+    ],
+    "required_ctas": [
+      "Call Now",
+      "Book Service",
+      "Get Quote"
+    ]
+  },
+  "conversion_elements": {
+    "phone_visibility": "header and footer minimum",
+    "emergency_badge": true,
+    "trust_badges": ["Licensed", "Insured", "Warranty", "Same-Day Service"],
+    "social_proof": ["reviews", "rating", "customer count"],
+    "urgency_triggers": ["same-day", "emergency", "24/7"]
+  },
+  "technical_seo": {
+    "title_length_min": 50,
+    "title_length_max": 60,
+    "meta_description_min": 150,
+    "meta_description_max": 160,
+    "h1_count": 1,
+    "schema_types_min": 2,
+    "mobile_optimized": true,
+    "https_required": true
+  },
+  "user_experience": {
+    "max_paragraph_sentences": 5,
+    "min_lists": 3,
+    "button_contrast_min": 4.5,
+    "font_size_min": 16,
+    "line_height_min": 1.5,
+    "white_space_adequate": true
+  },
+  "social_proof": {
+    "testimonials_min": 3,
+    "rating_display_min": 1,
+    "review_count_display": true,
+    "trust_badges": true,
+    "certifications": ["Licensed", "Insured", "Certified"]
+  }
+}

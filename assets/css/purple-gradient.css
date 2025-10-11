@@ -1,0 +1,422 @@
+/* ========================================
+   PURPLE GRADIENT COLOR SCHEME
+   Clean, Professional, Modern
+   ======================================== */
+
+:root {
+    /* Purple Gradient Palette */
+    --purple-primary: #673ab7;
+    --purple-secondary: #512da8;
+    --purple-dark: #4527a0;
+    --purple-light: #9575cd;
+    --purple-pale: #d1c4e9;
+    --purple-accent: #7c4dff;
+    
+    /* Monochrome */
+    --pure-white: #FFFFFF;
+    --off-white: #FAFAFB;
+    --light-gray: #F5F3F7;
+    --medium-gray: #E8E4ED;
+    --dark-gray: #6B6C7E;
+    --charcoal: #2E2E3E;
+    --pure-black: #000000;
+}
+
+/* Override Hero Background */
+.hero-section {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%);
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
+    z-index: 1;
+}
+
+/* White Floating Shapes */
+.floating-shape {
+    background: rgba(255, 255, 255, 0.1) !important;
+    opacity: 1;
+    filter: blur(60px);
+}
+
+/* Hero Content with White/Purple */
+.hero-badge {
+    background: var(--pure-white);
+    color: var(--purple-primary);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.badge-icon {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%);
+    color: var(--pure-white);
+}
+
+/* Title in White */
+.hero-title {
+    color: var(--pure-white) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--pure-white) !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--purple-light) 0%, var(--pure-white) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Appliance rotation - all white */
+.appliance-item {
+    color: var(--pure-white) !important;
+}
+
+/* Hero description */
+.hero-description {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Feature pills - white with transparency */
+.feature-pill {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: var(--pure-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.feature-pill:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.feature-icon {
+    background: var(--pure-white) !important;
+    color: var(--purple-primary) !important;
+}
+
+/* Buttons - White and Purple */
+.btn-primary {
+    background: var(--pure-white) !important;
+    color: var(--purple-primary) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background: var(--off-white) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+    background: transparent !important;
+    color: var(--pure-white) !important;
+    border: 2px solid var(--pure-white) !important;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.phone-icon {
+    background: var(--pure-white) !important;
+    color: var(--purple-primary) !important;
+}
+
+/* Info cards - Clean white */
+.info-card {
+    background: var(--pure-white) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+    color: var(--pure-white);
+}
+
+.card-content h4 {
+    color: var(--charcoal);
+}
+
+.card-content p {
+    color: var(--dark-gray);
+}
+
+/* Trust stats - Purple accent */
+.trust-number {
+    color: var(--purple-primary) !important;
+}
+
+.trust-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Trust bar - Clean design */
+.trust-bar {
+    background: var(--light-gray);
+}
+
+.trust-item {
+    background: var(--pure-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.trust-icon {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+    color: var(--pure-white);
+}
+
+.trust-text h3 {
+    color: var(--charcoal);
+}
+
+.trust-text p {
+    color: var(--dark-gray);
+}
+
+/* Services Section - Clean cards */
+.services-section {
+    background: var(--pure-white);
+}
+
+.service-card {
+    background: var(--off-white) !important;
+    border: 1px solid var(--medium-gray);
+}
+
+.service-card:hover {
+    background: var(--pure-white) !important;
+    border-color: var(--purple-primary);
+    box-shadow: 0 10px 30px rgba(103, 58, 183, 0.15);
+}
+
+.service-card::before {
+    background: linear-gradient(90deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+}
+
+.service-icon {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+    color: var(--pure-white) !important;
+}
+
+.service-card h3 {
+    color: var(--charcoal);
+}
+
+.service-link {
+    color: var(--purple-primary);
+}
+
+/* How it works - Purple gradient background */
+.how-it-works {
+    background: linear-gradient(135deg, var(--purple-pale) 0%, var(--light-gray) 100%);
+}
+
+.step-card {
+    background: var(--pure-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+    color: var(--pure-white);
+}
+
+.step-icon {
+    color: var(--purple-primary) !important;
+}
+
+/* Brands - Monochrome */
+.brands-section {
+    background: var(--off-white);
+}
+
+.brand-item {
+    background: var(--pure-white);
+    border: 1px solid var(--medium-gray);
+    color: var(--dark-gray);
+}
+
+.brand-item:hover {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+    color: var(--pure-white) !important;
+    border-color: var(--purple-primary);
+}
+
+/* Testimonials */
+.testimonials-section {
+    background: var(--light-gray);
+}
+
+.testimonial-card {
+    background: var(--pure-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stars {
+    color: var(--purple-primary);
+}
+
+/* FAQ Section */
+.faq-section {
+    background: var(--pure-white);
+}
+
+.faq-item {
+    background: var(--off-white);
+    border-left: 4px solid var(--purple-primary) !important;
+}
+
+.faq-question {
+    color: var(--charcoal);
+}
+
+/* CTA Section - Purple gradient */
+.cta-section {
+    background: linear-gradient(135deg, var(--purple-secondary) 0%, var(--purple-primary) 100%);
+    color: var(--pure-white);
+}
+
+.cta-title {
+    color: var(--pure-white);
+}
+
+/* Footer - Dark */
+.site-footer {
+    background: var(--charcoal);
+    color: var(--pure-white);
+}
+
+.footer-logo .brand-icon {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+}
+
+.footer-social a {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social a:hover {
+    background: var(--purple-primary);
+}
+
+/* Floating phone button */
+.floating-phone {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+    color: var(--pure-white);
+    box-shadow: 0 4px 20px rgba(103, 58, 183, 0.4);
+}
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 4px 20px rgba(103, 58, 183, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(103, 58, 183, 0.6);
+    }
+    100% {
+        box-shadow: 0 4px 20px rgba(103, 58, 183, 0.4);
+    }
+}
+
+/* Modal */
+.modal-content {
+    background: var(--pure-white);
+}
+
+.modal-content h2 {
+    color: var(--purple-primary) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--purple-primary) !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--purple-primary);
+    box-shadow: 0 0 0 3px rgba(103, 58, 183, 0.1);
+}
+
+/* Service preview */
+.service-preview {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.service-icon {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+    color: var(--pure-white) !important;
+}
+
+.service-icon:hover {
+    background: var(--purple-dark) !important;
+}
+
+/* Header adjustments */
+.header-top-bar {
+    background: var(--purple-dark) !important;
+}
+
+.nav-brand .brand-icon {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+}
+
+.book-button {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-secondary) 100%) !important;
+    color: var(--pure-white) !important;
+}
+
+.book-button:hover {
+    background: linear-gradient(135deg, var(--purple-secondary) 0%, var(--purple-dark) 100%) !important;
+}
+
+/* Phone button animation */
+.phone-icon-animated {
+    background: var(--purple-primary) !important;
+}
+
+.phone-icon-animated::before,
+.phone-icon-animated::after {
+    border-color: var(--purple-primary) !important;
+}
+
+/* Clean professional look throughout */
+section {
+    border-top: 1px solid var(--medium-gray);
+}
+
+/* Typography adjustments for readability */
+p {
+    color: var(--dark-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--charcoal);
+}
+
+/* Ensure white text on purple backgrounds */
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section p,
+.cta-section h2,
+.cta-section p {
+    color: var(--pure-white) !important;
+}
+
+/* Remove all rainbow effects */
+.brand-icon:hover {
+    background: linear-gradient(135deg, var(--purple-secondary) 0%, var(--purple-dark) 100%) !important;
+    animation: none !important;
+}
+
+/* Remove saturation filter */
+.hero-wrapper {
+    filter: none !important;
+}

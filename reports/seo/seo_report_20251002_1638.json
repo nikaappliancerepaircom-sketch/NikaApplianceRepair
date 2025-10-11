@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-10-02T16:38:52.244770",
+  "scores": {
+    "content": 55.0,
+    "technical": 65,
+    "ai_optimization": 80,
+    "local_seo": 63.75,
+    "user_experience": 50
+  },
+  "issues": [
+    "Word count 1384 not optimal",
+    "Only 3 images"
+  ],
+  "recommendations": [],
+  "overall_score": 64
+}

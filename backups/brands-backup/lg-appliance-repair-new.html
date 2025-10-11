@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LG appliance repair Toronto ⚡ Factory-trained experts • Same-day service • 90-day warranty • Genuine LG parts • 5,200+ happy customers. Call 437-747-6737 for $40 OFF!">
+    <meta name="keywords" content="LG appliance repair Toronto, LG refrigerator repair, LG washer repair, LG dryer repair, LG dishwasher repair, LG ThinQ repair">
+    <meta name="author" content="Nika Appliance Repair">
+    <meta property="og:title" content="LG Appliance Repair Toronto | Same Day Service | Save $40">
+    <meta property="og:description" content="Expert LG appliance repair in Toronto & GTA. Factory-trained technicians. Genuine parts. Book online or call 437-747-6737!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nikaappliancerepair.ca/brands/lg-appliance-repair">
+    <title>LG Appliance Repair Toronto | Factory-Trained Experts | Save $40 - Nika</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Custom Video Styling -->
+    <link rel="stylesheet" href="../css/video-custom.css">
+    <!-- Modern Video Styling -->
+    <link rel="stylesheet" href="../css/video-modern.css">
+    <!-- How It Works Modern -->
+    <link rel="stylesheet" href="../css/how-it-works-modern.css">
+    <!-- Redesigned About Section -->
+    <link rel="stylesheet" href="../css/about-redesign.css">
+    
+    <style>
+        /* LG Brand Specific Styles */
+        :root {
+            --lg-red: #A50034;
+            --lg-gray: #6B6B6B;
+        }
+
+        /* Brand Badge */
+        .lg-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--lg-red);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* LG Hero Background */
+        .hero-section {
+            background: var(--primary-blue);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* LG Appliance Icons Animation - Similar to Homepage */
+        .lg-hero-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .lg-floating-icon {
+            position: absolute;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .lg-floating-icon svg {
+            display: block;
+            transform-style: preserve-3d;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+
+        /* Icon positions - similar to homepage */
+        .lg-icon-1 {
+            top: 20%;
+            left: 5%;
+            animation: floatDiagonal 25s infinite ease-in-out;
+        }
+
+        .lg-icon-2 {
+            top: 20%;
+            right: 8%;
+            animation: floatCircular 30s infinite ease-in-out;
+            animation-delay: 2s;
+        }
+
+        .lg-icon-3 {
+            top: 50%;
+            left: 5%;
+            animation: floatDiagonal 28s infinite ease-in-out reverse;
+            animation-delay: 4s;
+        }
+
+        .lg-icon-4 {
+            top: 50%;
+            right: 8%;
+            animation: floatWave 32s infinite ease-in-out;
+            animation-delay: 1s;
+        }
+
+        /* Service Cards - Matching Homepage Style */
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(165, 0, 52, 0.2);
+            border-color: var(--lg-red);
+        }
+
+        .service-icon {
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            color: var(--navy-blue);
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        /* Stats Bar - LG Colors */
+        .lg-stats-bar {
+            background: linear-gradient(135deg, var(--lg-red) 0%, #C41E3A 100%);
+            padding: 2rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Dropdown Menu - From Homepage */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            min-width: 200px;
+            border-radius: 5px;
+            padding: 0.5rem 0;
+            z-index: 1000;
+        }
+
+        .has-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .lg-floating-icon svg {
+                width: 32px;
+                height: 32px;
+            }
+
+            .lg-icon-3, .lg-icon-4 {
+                display: none;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header - Same as Homepage -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <div class="logo-text">
+                            <span class="logo-primary">NIKA</span>
+                            <span class="logo-secondary">Appliance Repair</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#areas">Areas</a></li>
+                        <li class="has-dropdown">
+                            <a href="/#brands">Brands</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/brands/lg-appliance-repair.html">LG</a></li>
+                                <li><a href="/brands/samsung-appliance-repair.html">Samsung</a></li>
+                                <li><a href="/brands/whirlpool-appliance-repair.html">Whirlpool</a></li>
+                                <li><a href="/brands/ge-appliance-repair.html">GE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:4377476737" class="call-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                        437-747-6737
+                    </a>
+                    <a href="#book" class="book-btn">Book Service</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with LG Theme -->
+    <section class="hero-section">
+        <div class="lg-hero-animation">
+            <!-- LG Refrigerator Icon -->
+            <div class="lg-floating-icon lg-icon-1">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 2C5.9 2 5 2.9 5 4V19C5 20.1 5.9 21 7 21H17C18.1 21 19 20.1 19 19V4C19 2.9 18.1 2 17 2H7ZM7 4H17V10H7V4ZM7 12H17V19H7V12ZM8 5V8H10V5H8ZM8 13V16H10V13H8Z"/>
+                </svg>
+            </div>
+            
+            <!-- LG Washer Icon -->
+            <div class="lg-floating-icon lg-icon-2">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 2H18C19.11 2 20 2.89 20 4V20C20 21.11 19.11 22 18 22H6C4.89 22 4 21.11 4 20V4C4 2.89 4.89 2 6 2ZM6 4V20H18V4H6ZM12 7C14.76 7 17 9.24 17 12S14.76 17 12 17 7 14.76 7 12 9.24 7 12 7ZM12 9C10.34 9 9 10.34 9 12S10.34 15 12 15 15 13.66 15 12 13.66 9 12 9ZM8 5C8.55 5 9 5.45 9 6S8.55 7 8 7 7 6.55 7 6 7.45 5 8 5ZM10 5C10.55 5 11 5.45 11 6S10.55 7 10 7 9 6.55 9 6 9.45 5 10 5Z"/>
+                </svg>
+            </div>
+            
+            <!-- LG Dryer Icon -->
+            <div class="lg-floating-icon lg-icon-3">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 2H18C19.11 2 20 2.89 20 4V20C20 21.11 19.11 22 18 22H6C4.89 22 4 21.11 4 20V4C4 2.89 4.89 2 6 2ZM6 4V7H18V4H6ZM6 9V20H18V9H6ZM8 5C8.55 5 9 5.45 9 6C9 6.55 8.55 7 8 7C7.45 7 7 6.55 7 6C7 5.45 7.45 5 8 5ZM10 5C10.55 5 11 5.45 11 6C11 6.55 10.55 7 10 7C9.45 7 9 6.55 9 6C9 5.45 9.45 5 10 5ZM12 11.5C14.21 11.5 16 13.29 16 15.5S14.21 19.5 12 19.5 8 17.71 8 15.5 9.79 11.5 12 11.5ZM12 13.5C10.9 13.5 10 14.4 10 15.5S10.9 17.5 12 17.5 14 16.6 14 15.5 13.1 13.5 12 13.5Z"/>
+                </svg>
+            </div>
+            
+            <!-- LG Dishwasher Icon -->
+            <div class="lg-floating-icon lg-icon-4">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2ZM18 4V8H6V4H18ZM6 20V10H18V20H6ZM8 5C7.45 5 7 5.45 7 6C7 6.55 7.45 7 8 7C8.55 7 9 6.55 9 6C9 5.45 8.55 5 8 5ZM10 5C9.45 5 9 5.45 9 6C9 6.55 9.45 7 10 7C10.55 7 11 6.55 11 6C11 5.45 10.55 5 10 5ZM8 12C7.45 12 7 12.45 7 13S7.45 14 8 14 9 13.55 9 13 8.55 12 8 12ZM8 16C7.45 16 7 16.45 7 17S7.45 18 8 18 9 17.55 9 17 8.55 16 8 16ZM11.5 12C10.67 12 10 12.67 10 13.5S10.67 15 11.5 15 13 14.33 13 13.5 12.33 12 11.5 12ZM15.5 13C15.22 13 15 13.22 15 13.5S15.22 14 15.5 14 16 13.78 16 13.5 15.78 13 15.5 13Z"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="lg-badge">
+                        <span>⚡</span>
+                        LG AUTHORIZED SERVICE EXPERTS
+                    </div>
+                    <h1 class="hero-title">
+                        We're the <span class="highlight-yellow">LG appliance</span>
+                        repair experts that
+                        will <span class="highlight-yellow">fix</span> your
+                        <span class="wow-text">LG!</span>
+                    </h1>
+                    <p class="hero-subtitle">Factory-trained technicians • Genuine LG parts • All LG models</p>
+                    <p class="hero-trust-text">✅ Linear Compressor Experts • Smart ThinQ Certified • 90-Day Warranty</p>
+                    <div class="hero-cta-group">
+                        <a href="#book" class="cta-primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                            </svg>
+                            Book LG Repair Now
+                        </a>
+                        <a href="tel:4377476737" class="cta-secondary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                            </svg>
+                            CALL FOR LG REPAIR TODAY
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/images/lg-technician-character.png" alt="LG Appliance Repair Expert">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LG Stats Bar -->
+    <section class="lg-stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">2,500+</div>
+                    <div class="stat-label">LG Appliances Fixed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Certified Technicians</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">First-Visit Fix Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">45min</div>
+                    <div class="stat-label">Average Response</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Countdown Timer Section - From Homepage -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2 class="countdown-title">Book LG Repair & Save $40 on Your Service</h2>
+            <p class="countdown-label">DEAL ENDS IN</p>
+            <div class="countdown-timer">
+                <div class="timer-box">
+                    <div class="timer-value" id="minutes">14</div>
+                    <div class="timer-label">MINUTES</div>
+                </div>
+                <div class="timer-box">
+                    <div class="timer-value" id="seconds">45</div>
+                    <div class="timer-label">SECONDS</div>
+                </div>
+            </div>
+            <a href="#book" class="countdown-cta">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                </svg>
+                BOOK LG REPAIR NOW
+            </a>
+        </div>
+    </section>
+
+    <!-- LG Appliances We Service -->
+    <section class="services-section" id="lg-services">
+        <div class="container">
+            <h2 class="section-title">LG Appliances We Repair</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- LG Refrigerator Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="10" width="60" height="80" rx="8" fill="#A50034" stroke="#8B0028" stroke-width="2"/>
+                            <rect x="25" y="15" width="50" height="35" rx="4" fill="#FFE5EC"/>
+                            <rect x="25" y="55" width="50" height="30" rx="4" fill="#FFCDD2"/>
+                            <rect x="30" y="20" width="15" height="25" rx="2" fill="#FFFFFF"/>
+                            <rect x="65" y="60" width="6" height="20" rx="3" fill="#6B0020"/>
+                            <circle cx="35" cy="65" r="2" fill="#4A0015"/>
+                            <text x="50" y="35" text-anchor="middle" fill="#A50034" font-family="Arial" font-size="12" font-weight="bold">LG</text>
+                        </svg>
+                    </div>
+                    <h3>LG Refrigerators</h3>
+                    <p>French door, side-by-side, InstaView Door-in-Door, Smart ThinQ models. Linear compressor experts!</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- LG Washer Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="15" width="60" height="70" rx="6" fill="#A50034" stroke="#8B0028" stroke-width="2"/>
+                            <rect x="25" y="20" width="50" height="10" rx="2" fill="#6B0020"/>
+                            <circle cx="50" cy="55" r="20" fill="#FFE5EC" stroke="#FFCDD2" stroke-width="2"/>
+                            <circle cx="50" cy="55" r="15" fill="#FFFFFF" stroke="#A50034" stroke-width="1"/>
+                            <circle cx="35" cy="25" r="3" fill="#FFFFFF"/>
+                            <circle cx="45" cy="25" r="3" fill="#FFFFFF"/>
+                            <text x="50" y="60" text-anchor="middle" fill="#A50034" font-family="Arial" font-size="10" font-weight="bold">LG</text>
+                        </svg>
+                    </div>
+                    <h3>LG Washers</h3>
+                    <p>Front load, top load, TurboWash technology, steam washers. All-in-one units expertly serviced.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- LG Dryer Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="15" width="60" height="70" rx="6" fill="#A50034" stroke="#8B0028" stroke-width="2"/>
+                            <rect x="25" y="20" width="50" height="15" rx="2" fill="#6B0020"/>
+                            <circle cx="50" cy="55" r="20" fill="#FFE5EC" stroke="#FFCDD2" stroke-width="2"/>
+                            <path d="M40 45 Q50 55 40 65 Q50 55 60 65 Q50 55 60 45 Q50 55 40 45" fill="#A50034" opacity="0.5"/>
+                            <circle cx="35" cy="27" r="3" fill="#FFFFFF"/>
+                            <rect x="60" y="25" width="10" height="5" rx="2" fill="#FFFFFF"/>
+                            <text x="50" y="80" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="8" font-weight="bold">STEAM</text>
+                        </svg>
+                    </div>
+                    <h3>LG Dryers</h3>
+                    <p>Electric dryers, SteamDryer technology, sensor dry systems. TurboSteam and heat pump models.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- LG Dishwasher Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="20" width="70" height="60" rx="6" fill="#A50034" stroke="#8B0028" stroke-width="2"/>
+                            <rect x="20" y="25" width="60" height="45" rx="4" fill="#FFE5EC"/>
+                            <rect x="25" y="30" width="50" height="35" rx="3" fill="#FFFFFF"/>
+                            <circle cx="30" cy="75" r="2" fill="#6B0020"/>
+                            <circle cx="40" cy="75" r="2" fill="#6B0020"/>
+                            <rect x="60" y="73" width="15" height="4" rx="2" fill="#8B0028"/>
+                            <!-- QuadWash Jets -->
+                            <path d="M35 40 L35 50 M45 40 L45 50 M55 40 L55 50 M65 40 L65 50" stroke="#A50034" stroke-width="2"/>
+                            <text x="50" y="60" text-anchor="middle" fill="#A50034" font-family="Arial" font-size="8" font-weight="bold">QuadWash</text>
+                        </svg>
+                    </div>
+                    <h3>LG Dishwashers</h3>
+                    <p>QuadWash technology, TrueSteam models, Smart ThinQ dishwashers. LoDecibel quiet operation.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- LG Range Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="40" width="80" height="45" rx="6" fill="#A50034" stroke="#8B0028" stroke-width="2"/>
+                            <rect x="15" y="45" width="70" height="35" fill="#FFE5EC"/>
+                            <!-- Burners -->
+                            <circle cx="30" cy="60" r="12" fill="#6B0020" stroke="#4A0015" stroke-width="2"/>
+                            <circle cx="30" cy="60" r="8" fill="#8B0028"/>
+                            <circle cx="70" cy="60" r="12" fill="#6B0020" stroke="#4A0015" stroke-width="2"/>
+                            <circle cx="70" cy="60" r="8" fill="#8B0028"/>
+                            <!-- Control knobs -->
+                            <circle cx="20" cy="75" r="4" fill="#FFFFFF" stroke="#FFCDD2" stroke-width="1"/>
+                            <circle cx="80" cy="75" r="4" fill="#FFFFFF" stroke="#FFCDD2" stroke-width="1"/>
+                            <text x="50" y="35" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="8" font-weight="bold">ProBake</text>
+                        </svg>
+                    </div>
+                    <h3>LG Ranges & Ovens</h3>
+                    <p>Electric ranges, induction cooktops, ProBake convection. Air fry technology and double ovens.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- LG Microwave Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="25" width="70" height="50" rx="6" fill="#A50034" stroke="#8B0028" stroke-width="2"/>
+                            <rect x="20" y="30" width="45" height="40" rx="4" fill="#2B2B2B"/>
+                            <rect x="25" y="35" width="35" height="30" rx="2" fill="#1A1A1A" opacity="0.8"/>
+                            <rect x="70" y="35" width="10" height="30" rx="2" fill="#FFE5EC"/>
+                            <circle cx="75" cy="40" r="2" fill="#6B0020"/>
+                            <circle cx="75" cy="48" r="2" fill="#6B0020"/>
+                            <rect x="72" y="56" width="6" height="2" rx="1" fill="#6B0020"/>
+                            <text x="42" y="53" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="8" font-weight="bold">Smart</text>
+                            <text x="42" y="62" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="8" font-weight="bold">Inverter</text>
+                        </svg>
+                    </div>
+                    <h3>LG Microwaves</h3>
+                    <p>Over-the-range, countertop, built-in models. Smart Inverter technology for even cooking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common LG Problems - Homepage Style -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Common LG Appliance Problems We Fix</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 2C5.9 2 5 2.9 5 4V19C5 20.1 5.9 21 7 21H17C18.1 21 19 20.1 19 19V4C19 2.9 18.1 2 17 2H7ZM7 4H17V10H7V4ZM7 12H17V19H7V12Z"/>
+                        </svg>
+                    </div>
+                    <h3>LG Refrigerator Issues</h3>
+                    <p>Linear compressor failure, not cooling, ice maker problems, Er FF/Er IF errors, water dispenser issues.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 2H18C19.11 2 20 2.89 20 4V20C20 21.11 19.11 22 18 22H6C4.89 22 4 21.11 4 20V4C4 2.89 4.89 2 6 2ZM12 7C14.76 7 17 9.24 17 12S14.76 17 12 17 7 14.76 7 12 9.24 7 12 7Z"/>
+                        </svg>
+                    </div>
+                    <h3>LG Washer Problems</h3>
+                    <p>OE error (drain issues), UE error (unbalanced), LE error (motor locked), not spinning, door lock problems.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 2H18C19.11 2 20 2.89 20 4V20C20 21.11 19.11 22 18 22H6C4.89 22 4 21.11 4 20V4C4 2.89 4.89 2 6 2ZM6 4V7H18V4H6ZM12 11.5C14.21 11.5 16 13.29 16 15.5S14.21 19.5 12 19.5 8 17.71 8 15.5 9.79 11.5 12 11.5Z"/>
+                        </svg>
+                    </div>
+                    <h3>LG Dryer Issues</h3>
+                    <p>Not heating, taking too long to dry, D80/D90 flow errors, drum not turning, control panel issues.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2ZM18 4V8H6V4H18ZM6 20V10H18V20H6Z"/>
+                        </svg>
+                    </div>
+                    <h3>LG Dishwasher Problems</h3>
+                    <p>Not cleaning properly, water not draining, OE or AE error codes, door latch problems, spray arm issues.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 3C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H4ZM4 5H20V9H4V5ZM4 11H20V19H4V11Z"/>
+                        </svg>
+                    </div>
+                    <h3>LG Range/Oven Issues</h3>
+                    <p>Not heating properly, uneven cooking, error codes, control panel malfunction, door problems.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4H20V16H8.17L6 18.17V16H4V4M4 2C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H6V21L9 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2H4Z"/>
+                        </svg>
+                    </div>
+                    <h3>Smart ThinQ Issues</h3>
+                    <p>WiFi connectivity problems, app not working, smart features malfunctioning, remote control issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us for LG - Homepage Style -->
+    <section class="about-section" id="why-lg">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Why We're Toronto's LG Appliance Experts</h2>
+                    <p class="about-intro">With over 2,500 LG appliances repaired and factory-trained technicians, we're the trusted choice for LG repairs in Toronto & GTA.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Factory-Trained Technicians</h3>
+                                <p>Our team receives ongoing training on LG's latest technologies including Linear Compressor and Smart ThinQ.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Genuine LG Parts</h3>
+                                <p>We use authentic LG replacement parts to ensure your appliance performs like new and maintains warranty.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>90-Day Warranty</h3>
+                                <p>All LG repairs backed by our comprehensive warranty for your complete peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="../assets/images/lg-expert-technician.jpg" alt="LG Appliance Repair Expert">
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">2,500+</span>
+                            <span class="stat-label">LG Repairs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> is under 10 years old and repair costs less than 50% of replacement, repair is usually worthwhile. We'll give honest advice about whether repair or replacement makes more sense.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need LG Appliance Repair Today?</h2>
+                <p>Don't let a broken LG appliance disrupt your day. Our expert technicians are ready to help!</p>
+                <div class="cta-buttons">
+                    <a href="tel:4377476737" class="cta-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                        Call 437-747-6737
+                    </a>
+                    <a href="#book" class="cta-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                        </svg>
+                        Book Online - Save $40
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Same as Homepage -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#areas">Service Areas</a></li>
+                        <li><a href="/#about">About Us</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="/services/refrigerator-repair">Refrigerator Repair</a></li>
+                        <li><a href="/services/washer-repair">Washer Repair</a></li>
+                        <li><a href="/services/dryer-repair">Dryer Repair</a></li>
+                        <li><a href="/services/dishwasher-repair">Dishwasher Repair</a></li>
+                        <li><a href="/services/oven-repair">Oven Repair</a></li>
+                        <li><a href="/services/microwave-repair">Microwave Repair</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Brand Specialists</h3>
+                    <ul>
+                        <li><a href="/brands/lg-appliance-repair.html" class="active">LG Repair</a></li>
+                        <li><a href="/brands/samsung-appliance-repair.html">Samsung Repair</a></li>
+                        <li><a href="/brands/whirlpool-appliance-repair.html">Whirlpool Repair</a></li>
+                        <li><a href="/brands/ge-appliance-repair.html">GE Repair</a></li>
+                        <li><a href="/brands/kenmore-appliance-repair.html">Kenmore Repair</a></li>
+                        <li><a href="/brands/bosch-appliance-repair.html">Bosch Repair</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                        <a href="tel:4377476737">437-747-6737</a>
+                    </p>
+                    <p class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        service@nikaappliancerepair.ca
+                    </p>
+                    <p class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        Serving Toronto & GTA
+                    </p>
+                    <div class="business-hours">
+                        <h4>Business Hours</h4>
+                        <p>Mon-Fri: 8AM - 8PM<br>
+                        Sat: 9AM - 6PM<br>
+                        Sun: 10AM - 5PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nika Appliance Repair. All rights reserved. | Licensed & Insured | NO GAS APPLIANCES</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Phone Button -->
+    <a href="tel:4377476737" class="floating-phone">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+        </svg>
+        <span class="phone-text">Call Now</span>
+    </a>
+
+    <!-- Additional LG-Specific Styles -->
+    <style>
+        /* Appliance Tag */
+        .appliance-tag {
+            display: inline-block;
+            background: var(--lg-red);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Brand Item Lists */
+        .brand-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .brand-item h3 {
+            color: var(--lg-red);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .brand-item ul {
+            list-style: none;
+        }
+
+        .brand-item li {
+            padding: 0.5rem 0;
+            color: #64748b;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .brand-item li:last-child {
+            border-bottom: none;
+        }
+
+        /* Booking Form Styles */
+        .booking-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .booking-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--lg-red);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: var(--bright-green);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .booking-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .brands-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .booking-form {
+                padding: 1.5rem;
+            }
+            
+            .floating-phone .phone-text {
+                display: none;
+            }
+            
+            .hero-content {
+                text-align: center;
+            }
+            
+            .hero-image {
+                display: none;
+            }
+        }
+
+        /* FAQ Active State */
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // Countdown Timer
+        function startCountdown() {
+            let minutes = 14;
+            let seconds = 45;
+            
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+            
+            const timer = setInterval(() => {
+                if (seconds === 0) {
+                    if (minutes === 0) {
+                        clearInterval(timer);
+                        // Reset timer
+                        minutes = 14;
+                        seconds = 45;
+                        startCountdown();
+                        return;
+                    }
+                    minutes--;
+                    seconds = 59;
+                } else {
+                    seconds--;
+                }
+                
+                minutesEl.textContent = minutes.toString().padStart(2, '0');
+                secondsEl.textContent = seconds.toString().padStart(2, '0');
+            }, 1000);
+        }
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isOpen = item.classList.contains('active');
+                
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+                
+                // Open clicked
+                if (!isOpen) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Form Submission
+        document.querySelector('.booking-form form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! We will contact you within 30 minutes to confirm your LG appliance repair appointment.');
+        });
+
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Start countdown on load
+        startCountdown();
+
+        // Animations for floating icons (same as homepage)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.service-card, .benefit-card, .testimonial-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

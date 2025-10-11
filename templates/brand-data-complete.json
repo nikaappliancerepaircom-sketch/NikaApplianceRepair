@@ -1,0 +1,566 @@
+{
+  "brands": [
+    {
+      "name": "LG",
+      "slug": "lg",
+      "primary_color": "#A50034",
+      "secondary_color": "#6B0020",
+      "description": "Expert LG appliance repair service for all models",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "LG Refrigerator Repair",
+          "description": "Fix Linear Compressor issues, ice maker problems, cooling failures, and InstaView door malfunctions."
+        },
+        {
+          "icon": "washer",
+          "title": "LG Washer Repair",
+          "description": "Resolve OE, UE, and LE error codes, TurboWash problems, and Wi-Fi connectivity issues."
+        },
+        {
+          "icon": "dryer",
+          "title": "LG Dryer Repair",
+          "description": "Repair heating problems, sensor dry issues, and TurboSteam malfunctions in all LG dryers."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "LG Dishwasher Repair",
+          "description": "Service QuadWash systems, fix cleaning issues, and resolve control panel problems."
+        },
+        {
+          "icon": "oven",
+          "title": "LG Range & Oven Repair",
+          "description": "Fix ProBake convection issues, burner problems, and smart features in LG ranges."
+        }
+      ],
+      "common_problems": [
+        "LG refrigerator not cooling properly",
+        "LG washer OE error code (drainage issue)",
+        "LG dryer not heating or taking too long",
+        "LG dishwasher not cleaning dishes properly",
+        "LG oven temperature not accurate",
+        "LG ice maker not producing ice"
+      ],
+      "popular_models": [
+        "LRFVS3006S French Door Refrigerator",
+        "WM4000HWA Front Load Washer",
+        "DLEX4000W Electric Dryer",
+        "LDT5678ST Top Control Dishwasher",
+        "LRE3194ST Electric Range"
+      ]
+    },
+    {
+      "name": "Samsung",
+      "slug": "samsung",
+      "primary_color": "#1428A0",
+      "secondary_color": "#0C1F5B",
+      "description": "Professional Samsung appliance repair for all models",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "Samsung Refrigerator Repair",
+          "description": "Fix ice maker issues, cooling problems, digital display errors, and Smart Hub connectivity."
+        },
+        {
+          "icon": "washer",
+          "title": "Samsung Washer Repair",
+          "description": "Resolve error codes, drainage problems, spinning issues, and Smart Control problems."
+        },
+        {
+          "icon": "dryer",
+          "title": "Samsung Dryer Repair",
+          "description": "Fix heating issues, moisture sensor problems, and lint buildup in all Samsung dryers."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "Samsung Dishwasher Repair",
+          "description": "Repair cleaning issues, water leaks, and control panel problems with WaterWall technology."
+        },
+        {
+          "icon": "range",
+          "title": "Samsung Range Repair",
+          "description": "Service gas and electric ranges, including Smart Dial controls and convection issues."
+        }
+      ],
+      "common_problems": [
+        "Samsung ice maker freezing up",
+        "Samsung washer UE error code",
+        "Samsung dryer not heating",
+        "Samsung dishwasher not draining",
+        "Samsung oven F-1 error code",
+        "Samsung refrigerator making noise"
+      ],
+      "popular_models": [
+        "RF28R7351SR French Door Refrigerator",
+        "WF45T6000AW Front Load Washer",
+        "DVE45T6000W Electric Dryer",
+        "DW80R9950UG Linear Wash Dishwasher",
+        "NE63T8311SS Slide-in Electric Range"
+      ]
+    },
+    {
+      "name": "Whirlpool",
+      "slug": "whirlpool",
+      "primary_color": "#003DA5",
+      "secondary_color": "#002A73",
+      "description": "Trusted Whirlpool appliance repair service",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "Whirlpool Refrigerator Repair",
+          "description": "Expert repair for cooling issues, ice maker problems, and water dispenser malfunctions."
+        },
+        {
+          "icon": "washer",
+          "title": "Whirlpool Washer Repair",
+          "description": "Fix spinning problems, water level issues, and error codes in all Whirlpool washers."
+        },
+        {
+          "icon": "dryer",
+          "title": "Whirlpool Dryer Repair",
+          "description": "Resolve heating problems, timer issues, and unusual noises in Whirlpool dryers."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "Whirlpool Dishwasher Repair",
+          "description": "Service cleaning problems, water leaks, and control panel issues efficiently."
+        }
+      ],
+      "common_problems": [
+        "Whirlpool washer not spinning",
+        "Whirlpool dryer not heating",
+        "Whirlpool refrigerator leaking water",
+        "Whirlpool dishwasher not starting",
+        "Whirlpool oven not heating evenly"
+      ],
+      "popular_models": [
+        "WRF555SDFZ French Door Refrigerator",
+        "WTW5000DW Top Load Washer",
+        "WED5000DW Electric Dryer",
+        "WDT730PAHZ Dishwasher"
+      ]
+    },
+    {
+      "name": "GE",
+      "slug": "ge",
+      "primary_color": "#005EB8",
+      "secondary_color": "#004494",
+      "description": "Professional GE appliance repair services",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "GE Refrigerator Repair",
+          "description": "Fix temperature control issues, ice maker problems, and compressor failures."
+        },
+        {
+          "icon": "washer",
+          "title": "GE Washer Repair",
+          "description": "Resolve drainage issues, balance problems, and electronic control malfunctions."
+        },
+        {
+          "icon": "dryer",
+          "title": "GE Dryer Repair",
+          "description": "Repair heating elements, thermostats, and timer issues in all GE dryer models."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "GE Dishwasher Repair",
+          "description": "Fix wash performance issues, water leaks, and door latch problems."
+        }
+      ],
+      "common_problems": [
+        "GE refrigerator not cooling",
+        "GE washer not draining",
+        "GE dryer taking too long to dry",
+        "GE dishwasher not cleaning properly",
+        "GE oven error codes"
+      ],
+      "popular_models": [
+        "GFE28GYNFS French Door Refrigerator",
+        "GTW720BSNWS Top Load Washer",
+        "GTD72EBSNWS Electric Dryer",
+        "GDT665SSNSS Dishwasher"
+      ]
+    }
+  ]
+}    },
+    {
+      "name": "Bosch",
+      "slug": "bosch",
+      "primary_color": "#ED1C24",
+      "secondary_color": "#B91C1C",
+      "description": "Expert Bosch appliance repair for German engineering",
+      "services": [
+        {
+          "icon": "dishwasher",
+          "title": "Bosch Dishwasher Repair",
+          "description": "Service quiet operation issues, cleaning problems, and error codes in Bosch dishwashers."
+        },
+        {
+          "icon": "washer",
+          "title": "Bosch Washer Repair",
+          "description": "Fix drainage issues, spin problems, and control panel malfunctions."
+        },
+        {
+          "icon": "dryer",
+          "title": "Bosch Dryer Repair",
+          "description": "Resolve condensation issues, heating problems, and sensor malfunctions."
+        },
+        {
+          "icon": "oven",
+          "title": "Bosch Oven Repair",
+          "description": "Repair European convection systems, self-cleaning issues, and temperature problems."
+        }
+      ],
+      "common_problems": [
+        "Bosch dishwasher E24 error code",
+        "Bosch washer not draining",
+        "Bosch dryer not drying clothes",
+        "Bosch oven not heating properly",
+        "Bosch dishwasher not cleaning"
+      ],
+      "popular_models": [
+        "SHPM88Z75N 800 Series Dishwasher",
+        "WAW285H2UC Front Load Washer",
+        "WTG86402UC Condensation Dryer",
+        "HBL8451UC Double Wall Oven"
+      ]
+    },
+    {
+      "name": "KitchenAid",
+      "slug": "kitchenaid",
+      "primary_color": "#E4002B",
+      "secondary_color": "#B91C1C",
+      "description": "Professional KitchenAid appliance repair service",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "KitchenAid Refrigerator Repair",
+          "description": "Fix temperature issues, ice maker problems, and water filter malfunctions."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "KitchenAid Dishwasher Repair",
+          "description": "Resolve cleaning issues, water leaks, and control panel problems."
+        },
+        {
+          "icon": "range",
+          "title": "KitchenAid Range Repair",
+          "description": "Service convection issues, burner problems, and electronic controls."
+        },
+        {
+          "icon": "mixer",
+          "title": "KitchenAid Mixer Repair",
+          "description": "Fix motor issues, gear problems, and attachment malfunctions."
+        }
+      ],
+      "common_problems": [
+        "KitchenAid refrigerator not cooling",
+        "KitchenAid dishwasher not draining",
+        "KitchenAid oven not heating evenly",
+        "KitchenAid mixer making noise",
+        "KitchenAid ice maker not working"
+      ],
+      "popular_models": [
+        "KRFC704FPS French Door Refrigerator",
+        "KDTE334GPS Dishwasher",
+        "KSEG700ESS Slide-In Electric Range",
+        "KSM150PSER Artisan Stand Mixer"
+      ]
+    },
+    {
+      "name": "Frigidaire",
+      "slug": "frigidaire",
+      "primary_color": "#0066CC",
+      "secondary_color": "#004A99",
+      "description": "Reliable Frigidaire appliance repair services",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "Frigidaire Refrigerator Repair",
+          "description": "Fix cooling issues, defrost problems, and compressor failures."
+        },
+        {
+          "icon": "washer",
+          "title": "Frigidaire Washer Repair",
+          "description": "Resolve error codes, drainage issues, and agitator problems."
+        },
+        {
+          "icon": "dryer",
+          "title": "Frigidaire Dryer Repair",
+          "description": "Repair heating elements, thermostats, and control board issues."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "Frigidaire Dishwasher Repair",
+          "description": "Fix spray arm issues, water leaks, and cleaning problems."
+        }
+      ],
+      "common_problems": [
+        "Frigidaire refrigerator not cooling",
+        "Frigidaire washer not spinning",
+        "Frigidaire dryer not heating",
+        "Frigidaire dishwasher leaving spots",
+        "Frigidaire ice maker problems"
+      ],
+      "popular_models": [
+        "FFHB2750TS French Door Refrigerator",
+        "FFTW4120SW Top Load Washer",
+        "FFRE4120SW Electric Dryer",
+        "FFID2426TS Dishwasher"
+      ]
+    },
+    {
+      "name": "Maytag",
+      "slug": "maytag",
+      "primary_color": "#002A5C",
+      "secondary_color": "#001F42",
+      "description": "Dependable Maytag appliance repair service",
+      "services": [
+        {
+          "icon": "washer",
+          "title": "Maytag Washer Repair",
+          "description": "Fix commercial-grade components, resolve error codes, and bearing issues."
+        },
+        {
+          "icon": "dryer",
+          "title": "Maytag Dryer Repair",
+          "description": "Repair PowerDry systems, heating problems, and moisture sensor issues."
+        },
+        {
+          "icon": "refrigerator",
+          "title": "Maytag Refrigerator Repair",
+          "description": "Service cooling systems, ice makers, and PowerCold features."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "Maytag Dishwasher Repair",
+          "description": "Fix PowerBlast cycles, cleaning issues, and control problems."
+        }
+      ],
+      "common_problems": [
+        "Maytag washer not agitating",
+        "Maytag dryer not starting",
+        "Maytag refrigerator running constantly",
+        "Maytag dishwasher not filling",
+        "Maytag washer F51 error code"
+      ],
+      "popular_models": [
+        "MVW7232HW Top Load Washer",
+        "MED7230HW Electric Dryer",
+        "MFI2570FEZ French Door Refrigerator",
+        "MDB8959SKZ Dishwasher"
+      ]
+    },
+    {
+      "name": "Electrolux",
+      "slug": "electrolux",
+      "primary_color": "#003366",
+      "secondary_color": "#002244",
+      "description": "Premium Electrolux appliance repair service",
+      "services": [
+        {
+          "icon": "washer",
+          "title": "Electrolux Washer Repair",
+          "description": "Service Perfect Steam technology, SmartBoost, and LuxCare systems."
+        },
+        {
+          "icon": "dryer",
+          "title": "Electrolux Dryer Repair",
+          "description": "Fix Perfect Steam, Instant Refresh, and predictive dry issues."
+        },
+        {
+          "icon": "refrigerator",
+          "title": "Electrolux Refrigerator Repair",
+          "description": "Repair TasteLock crispers, cooling issues, and luxury features."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "Electrolux Dishwasher Repair",
+          "description": "Service LuxCare wash systems and satellite spray arms."
+        }
+      ],
+      "common_problems": [
+        "Electrolux washer E11 error code",
+        "Electrolux dryer not heating",
+        "Electrolux refrigerator ice maker issues",
+        "Electrolux dishwasher not cleaning",
+        "Electrolux washer door lock problems"
+      ],
+      "popular_models": [
+        "EFLS627UTT Front Load Washer",
+        "EFME627UTT Electric Dryer",
+        "EI23BC82SS French Door Refrigerator",
+        "EIDW1815US Dishwasher"
+      ]
+    }    },
+    {
+      "name": "Viking",
+      "slug": "viking",
+      "primary_color": "#6B6B6B",
+      "secondary_color": "#4A4A4A",
+      "description": "Professional Viking luxury appliance repair",
+      "services": [
+        {
+          "icon": "range",
+          "title": "Viking Range Repair",
+          "description": "Service professional ranges, VariSimmer systems, and infrared broilers."
+        },
+        {
+          "icon": "refrigerator",
+          "title": "Viking Refrigerator Repair",
+          "description": "Fix ProChill temperature management and built-in refrigeration."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "Viking Dishwasher Repair",
+          "description": "Repair commercial-grade wash systems and stainless steel interiors."
+        },
+        {
+          "icon": "oven",
+          "title": "Viking Oven Repair",
+          "description": "Service convection systems, French door ovens, and steam ovens."
+        }
+      ],
+      "common_problems": [
+        "Viking range igniter not working",
+        "Viking refrigerator temperature fluctuations",
+        "Viking dishwasher not draining",
+        "Viking oven not reaching temperature",
+        "Viking range burner not lighting"
+      ],
+      "popular_models": [
+        "VGR5366BSS Professional Range",
+        "VCBB5363ELSS Built-In Refrigerator",
+        "VDW302SS Dishwasher",
+        "VESO5302SS Electric Oven"
+      ]
+    },
+    {
+      "name": "Sub-Zero",
+      "slug": "sub-zero",
+      "primary_color": "#8B0000",
+      "secondary_color": "#660000",
+      "description": "Expert Sub-Zero luxury refrigeration repair",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "Sub-Zero Refrigerator Repair",
+          "description": "Service dual refrigeration, air purification, and vacuum seal systems."
+        },
+        {
+          "icon": "freezer",
+          "title": "Sub-Zero Freezer Repair",
+          "description": "Fix temperature issues, ice buildup, and compressor problems."
+        },
+        {
+          "icon": "wine",
+          "title": "Sub-Zero Wine Storage Repair",
+          "description": "Repair wine preservation systems and temperature zones."
+        },
+        {
+          "icon": "ice",
+          "title": "Sub-Zero Ice Maker Repair",
+          "description": "Service built-in ice makers and water filtration systems."
+        }
+      ],
+      "common_problems": [
+        "Sub-Zero refrigerator service indicator",
+        "Sub-Zero vacuum seal issues",
+        "Sub-Zero temperature fluctuations",
+        "Sub-Zero ice maker not producing ice",
+        "Sub-Zero error code EC 50"
+      ],
+      "popular_models": [
+        "BI-48SID Side-by-Side",
+        "BI-36UFD French Door",
+        "700BR All-Refrigerator",
+        "UC-15I Ice Maker"
+      ]
+    },
+    {
+      "name": "Kenmore",
+      "slug": "kenmore",
+      "primary_color": "#0033A0",
+      "secondary_color": "#002270",
+      "description": "Reliable Kenmore appliance repair for all models",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "Kenmore Refrigerator Repair",
+          "description": "Fix Elite and standard models, ice makers, and cooling issues."
+        },
+        {
+          "icon": "washer",
+          "title": "Kenmore Washer Repair",
+          "description": "Service top-load, front-load, and Elite washer problems."
+        },
+        {
+          "icon": "dryer",
+          "title": "Kenmore Dryer Repair",
+          "description": "Repair heating issues, timer problems, and Elite dryer features."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "Kenmore Dishwasher Repair",
+          "description": "Fix Ultra Wash systems, control panels, and water issues."
+        }
+      ],
+      "common_problems": [
+        "Kenmore refrigerator not cooling",
+        "Kenmore washer LE error code",
+        "Kenmore dryer not heating",
+        "Kenmore dishwasher not cleaning",
+        "Kenmore Elite HE3 washer F11 error"
+      ],
+      "popular_models": [
+        "795.51833 French Door Refrigerator",
+        "110.27002 Top Load Washer",
+        "110.66002 Electric Dryer",
+        "665.13543 Dishwasher"
+      ]
+    },
+    {
+      "name": "Jenn-Air",
+      "slug": "jenn-air",
+      "primary_color": "#000000",
+      "secondary_color": "#333333",
+      "description": "Premium Jenn-Air appliance repair service",
+      "services": [
+        {
+          "icon": "range",
+          "title": "Jenn-Air Range Repair",
+          "description": "Service downdraft ventilation, dual-fuel ranges, and induction cooktops."
+        },
+        {
+          "icon": "refrigerator",
+          "title": "Jenn-Air Refrigerator Repair",
+          "description": "Fix obsidian interiors, climate control drawers, and water systems."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "Jenn-Air Dishwasher Repair",
+          "description": "Repair TriFecta wash systems and luxury features."
+        },
+        {
+          "icon": "oven",
+          "title": "Jenn-Air Wall Oven Repair",
+          "description": "Service convection systems, steam ovens, and V2 controls."
+        }
+      ],
+      "common_problems": [
+        "Jenn-Air downdraft not working",
+        "Jenn-Air refrigerator making noise",
+        "Jenn-Air dishwasher not drying",
+        "Jenn-Air oven error codes",
+        "Jenn-Air cooktop not igniting"
+      ],
+      "popular_models": [
+        "JGS1450FS Gas Range",
+        "JFC2089BEM French Door Refrigerator",
+        "JDTSS246GM Dishwasher",
+        "JJW2430DS Wall Oven"
+      ]
+    }
+  ]
+}

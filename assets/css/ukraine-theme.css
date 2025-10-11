@@ -1,0 +1,707 @@
+/* ========================================
+   UKRAINE COLOR SCHEME
+   Blue and Yellow Theme
+   ======================================== */
+
+:root {
+    /* Ukraine Colors */
+    --ukraine-blue: #004ff9;
+    --ukraine-yellow: #fff94c;
+    --ukraine-blue-dark: #003ecc;
+    --ukraine-blue-light: #3374ff;
+    --ukraine-yellow-dark: #e6e000;
+    --ukraine-yellow-light: #ffffa3;
+    
+    /* Monochrome */
+    --pure-white: #FFFFFF;
+    --off-white: #FAFBFC;
+    --light-gray: #F5F7FA;
+    --medium-gray: #E0E7ED;
+    --dark-gray: #6B7C8C;
+    --charcoal: #2C3E50;
+    --pure-black: #000000;
+}
+
+/* Override Hero Background */
+.hero-section {
+    background: linear-gradient(135deg, var(--ukraine-blue) 0%, var(--ukraine-yellow) 100%);
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 79, 249, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 249, 76, 0.3) 0%, transparent 50%);
+    z-index: 1;
+}
+
+/* Floating Shapes - White */
+.floating-shape {
+    background: rgba(255, 255, 255, 0.2) !important;
+    opacity: 1;
+    filter: blur(80px);
+}
+
+/* Hero Content */
+.hero-badge {
+    background: var(--ukraine-yellow);
+    color: var(--ukraine-blue);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+}
+
+.badge-icon {
+    background: var(--ukraine-blue);
+    color: var(--ukraine-yellow);
+}
+
+/* Title in White */
+.hero-title {
+    color: var(--pure-white) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--pure-white) !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text-gradient {
+    background: none !important;
+    -webkit-text-fill-color: var(--ukraine-yellow) !important;
+    color: var(--ukraine-yellow) !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Appliance rotation - all white */
+.appliance-item {
+    color: var(--pure-white) !important;
+}
+
+/* Hero description */
+.hero-description {
+    color: var(--pure-white);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Feature pills */
+.feature-pill {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    color: var(--ukraine-blue);
+    border: 2px solid var(--ukraine-blue);
+    font-weight: 600;
+}
+
+.feature-pill:hover {
+    background: var(--pure-white);
+    transform: translateY(-2px);
+}
+
+.feature-icon {
+    background: var(--ukraine-blue) !important;
+    color: var(--pure-white) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--ukraine-yellow) !important;
+    color: var(--ukraine-blue) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    border: 2px solid var(--ukraine-yellow);
+}
+
+.btn-primary:hover {
+    background: var(--ukraine-yellow-dark) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+    background: var(--pure-white) !important;
+    color: var(--ukraine-blue) !important;
+    border: 2px solid var(--pure-white) !important;
+    font-weight: 700;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.phone-icon {
+    background: var(--ukraine-blue) !important;
+    color: var(--ukraine-yellow) !important;
+}
+
+/* Info cards */
+.info-card {
+    background: var(--pure-white) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--ukraine-blue);
+}
+
+.card-icon {
+    background: var(--ukraine-blue) !important;
+    color: var(--ukraine-yellow);
+}
+
+.card-content h4 {
+    color: var(--ukraine-blue);
+}
+
+.card-content p {
+    color: var(--dark-gray);
+}
+
+/* Trust stats */
+.trust-number {
+    color: var(--ukraine-yellow) !important;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.trust-label {
+    color: var(--pure-white);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Trust bar */
+.trust-bar {
+    background: var(--light-gray);
+}
+
+.trust-item {
+    background: var(--pure-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--ukraine-blue);
+}
+
+.trust-item:nth-child(odd) .trust-icon {
+    background: var(--ukraine-blue) !important;
+    color: var(--ukraine-yellow);
+}
+
+.trust-item:nth-child(even) .trust-icon {
+    background: var(--ukraine-yellow) !important;
+    color: var(--ukraine-blue);
+}
+
+.trust-text h3 {
+    color: var(--ukraine-blue);
+}
+
+.trust-text p {
+    color: var(--dark-gray);
+}
+
+/* Services Section */
+.services-section {
+    background: var(--pure-white);
+}
+
+.service-card {
+    background: var(--off-white) !important;
+    border: 2px solid var(--medium-gray);
+}
+
+.service-card:hover {
+    background: var(--pure-white) !important;
+    border-color: var(--ukraine-blue);
+    box-shadow: 0 10px 30px rgba(0, 79, 249, 0.15);
+}
+
+.service-card::before {
+    background: var(--ukraine-blue) !important;
+}
+
+.service-card:nth-child(odd) .service-icon {
+    background: var(--ukraine-blue) !important;
+    color: var(--ukraine-yellow) !important;
+}
+
+.service-card:nth-child(even) .service-icon {
+    background: var(--ukraine-yellow) !important;
+    color: var(--ukraine-blue) !important;
+}
+
+.service-card h3 {
+    color: var(--ukraine-blue);
+}
+
+.service-link {
+    color: var(--ukraine-blue);
+    font-weight: 600;
+}
+
+/* How it works */
+.how-it-works {
+    background: linear-gradient(135deg, rgba(0, 79, 249, 0.05) 0%, rgba(255, 249, 76, 0.05) 100%);
+}
+
+.step-card {
+    background: var(--pure-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--medium-gray);
+}
+
+.step-number:nth-child(odd) {
+    background: var(--ukraine-blue) !important;
+    color: var(--pure-white);
+}
+
+.step-number:nth-child(even) {
+    background: var(--ukraine-yellow) !important;
+    color: var(--ukraine-blue);
+}
+
+.step-card:nth-child(odd) .step-number {
+    background: var(--ukraine-blue) !important;
+    color: var(--pure-white);
+}
+
+.step-card:nth-child(even) .step-number {
+    background: var(--ukraine-yellow) !important;
+    color: var(--ukraine-blue);
+}
+
+.step-card:nth-child(odd) .step-icon {
+    color: var(--ukraine-blue) !important;
+}
+
+.step-card:nth-child(even) .step-icon {
+    color: var(--ukraine-yellow-dark) !important;
+}
+
+/* Brands */
+.brands-section {
+    background: var(--off-white);
+}
+
+.brand-item {
+    background: var(--pure-white);
+    border: 2px solid var(--medium-gray);
+    color: var(--dark-gray);
+}
+
+.brand-item:hover {
+    background: var(--ukraine-blue) !important;
+    color: var(--ukraine-yellow) !important;
+    border-color: var(--ukraine-blue);
+}
+
+/* Testimonials */
+.testimonials-section {
+    background: var(--light-gray);
+}
+
+.testimonial-card {
+    background: var(--pure-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--ukraine-blue);
+}
+
+.stars {
+    color: var(--ukraine-yellow-dark);
+}
+
+/* FAQ Section */
+.faq-section {
+    background: var(--pure-white);
+}
+
+.faq-item:nth-child(odd) {
+    border-left: 4px solid var(--ukraine-blue) !important;
+}
+
+.faq-item:nth-child(even) {
+    border-left: 4px solid var(--ukraine-yellow) !important;
+}
+
+.faq-question {
+    color: var(--ukraine-blue);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(180deg, var(--ukraine-blue) 0%, var(--ukraine-blue-dark) 100%);
+    color: var(--pure-white);
+}
+
+.cta-title {
+    color: var(--pure-white);
+}
+
+.cta-note {
+    color: var(--ukraine-yellow) !important;
+}
+
+/* Footer */
+.site-footer {
+    background: var(--charcoal);
+    color: var(--pure-white);
+}
+
+.footer-logo .brand-icon {
+    background: linear-gradient(180deg, var(--ukraine-blue) 0%, var(--ukraine-blue) 50%, var(--ukraine-yellow) 50%, var(--ukraine-yellow) 100%) !important;
+}
+
+.footer-social a {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social a:hover {
+    background: var(--ukraine-blue);
+}
+
+/* Floating phone button */
+.floating-phone {
+    background: var(--ukraine-yellow) !important;
+    color: var(--ukraine-blue);
+    box-shadow: 0 4px 20px rgba(255, 249, 76, 0.5);
+    font-weight: 700;
+}
+
+.floating-phone:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(255, 249, 76, 0.7);
+}
+
+/* Modal */
+.modal-content {
+    background: var(--pure-white);
+}
+
+.modal-content h2 {
+    color: var(--ukraine-blue) !important;
+    background: none !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--ukraine-blue);
+    box-shadow: 0 0 0 3px rgba(0, 79, 249, 0.1);
+}
+
+/* Service preview */
+.service-preview {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.service-icon {
+    background: var(--ukraine-blue) !important;
+    color: var(--ukraine-yellow) !important;
+}
+
+.service-icon:nth-child(even) {
+    background: var(--ukraine-yellow) !important;
+    color: var(--ukraine-blue) !important;
+}
+
+.service-icon:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+/* Header adjustments */
+.header-top-bar {
+    background: var(--ukraine-blue) !important;
+}
+
+.nav-brand .brand-icon {
+    background: linear-gradient(180deg, var(--ukraine-blue) 0%, var(--ukraine-blue) 50%, var(--ukraine-yellow) 50%, var(--ukraine-yellow) 100%) !important;
+}
+
+.book-button {
+    background: var(--ukraine-yellow) !important;
+    color: var(--ukraine-blue) !important;
+    font-weight: 700;
+}
+
+.book-button:hover {
+    background: var(--ukraine-yellow-dark) !important;
+}
+
+/* Phone button animation */
+.phone-icon-animated {
+    background: var(--ukraine-blue) !important;
+}
+
+.phone-icon-animated::before,
+.phone-icon-animated::after {
+    border-color: var(--ukraine-blue) !important;
+}
+
+/* Typography adjustments */
+p {
+    color: var(--dark-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--charcoal);
+}
+
+/* Ensure readability */
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section p,
+.cta-section h2,
+.cta-section p {
+    color: var(--pure-white) !important;
+}
+
+/* Remove rainbow effects */
+.brand-icon:hover {
+    animation: none !important;
+}
+
+/* Remove saturation filter */
+.hero-wrapper {
+    filter: none !important;
+}
+
+/* Special Ukraine theme touches */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add subtle flag wave effect */
+@keyframes wave {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+}
+
+.hero-bg {
+    animation: wave 10s ease-in-out infinite;
+}/* ========================================
+   UKRAINE GRADIENT UPDATES
+   Smooth gradients throughout
+   ======================================== */
+
+/* Trust icons with gradients */
+.trust-item .trust-icon {
+    background: linear-gradient(135deg, var(--ukraine-blue) 0%, var(--ukraine-yellow) 100%) !important;
+    color: var(--pure-white);
+}
+
+/* Service icons gradient */
+.service-icon {
+    background: linear-gradient(135deg, var(--ukraine-blue) 0%, var(--ukraine-yellow) 100%) !important;
+    color: var(--pure-white) !important;
+}
+
+/* CTA Section gradient */
+.cta-section {
+    background: linear-gradient(135deg, var(--ukraine-blue) 0%, var(--ukraine-blue-dark) 50%, var(--ukraine-yellow-dark) 100%) !important;
+}
+
+/* Buttons with gradients */
+.btn-primary {
+    background: linear-gradient(135deg, var(--ukraine-yellow) 0%, var(--ukraine-yellow-light) 100%) !important;
+    color: var(--ukraine-blue) !important;
+    border: none !important;
+}
+
+.book-button {
+    background: linear-gradient(135deg, var(--ukraine-blue) 0%, var(--ukraine-blue-light) 100%) !important;
+    color: var(--pure-white) !important;
+}
+
+/* Header gradient */
+.header-top-bar {
+    background: linear-gradient(90deg, var(--ukraine-blue) 0%, var(--ukraine-blue-light) 100%) !important;
+}
+
+/* Footer gradient overlay */
+.site-footer {
+    background: var(--charcoal);
+    position: relative;
+}
+
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ukraine-blue) 0%, var(--ukraine-yellow) 100%);
+}
+
+/* Floating phone button gradient */
+.floating-phone {
+    background: linear-gradient(135deg, var(--ukraine-yellow) 0%, var(--ukraine-yellow-dark) 100%) !important;
+}
+
+/* Info cards gradient accent */
+.info-card {
+    background: var(--pure-white) !important;
+    border: none !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ukraine-blue) 0%, var(--ukraine-yellow) 100%);
+}
+
+/* Step cards gradient accent */
+.step-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.step-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ukraine-blue) 0%, var(--ukraine-yellow) 100%);
+}
+
+/* Brand hover gradient */
+.brand-item:hover {
+    background: linear-gradient(135deg, var(--ukraine-blue) 0%, var(--ukraine-blue-light) 100%) !important;
+}
+
+/* Service card hover gradient */
+.service-card:hover {
+    background: linear-gradient(135deg, rgba(0, 79, 249, 0.05) 0%, rgba(255, 249, 76, 0.05) 100%) !important;
+}
+
+/* Testimonial card gradient accent */
+.testimonial-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--ukraine-blue) 0%, var(--ukraine-yellow) 100%);
+}
+
+/* FAQ items gradient */
+.faq-item {
+    background: var(--off-white);
+    border-left: none !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--ukraine-blue) 0%, var(--ukraine-yellow) 100%);
+}
+
+/* How it works gradient background */
+.how-it-works {
+    background: linear-gradient(135deg, rgba(0, 79, 249, 0.03) 0%, rgba(255, 249, 76, 0.08) 100%);
+}
+
+/* Testimonials gradient background */
+.testimonials-section {
+    background: linear-gradient(135deg, rgba(255, 249, 76, 0.05) 0%, rgba(0, 79, 249, 0.05) 100%);
+}
+
+/* Modal header gradient */
+.modal-content h2 {
+    background: linear-gradient(135deg, var(--ukraine-blue) 0%, var(--ukraine-blue-light) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Form focus gradient */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--ukraine-blue);
+    background: linear-gradient(135deg, rgba(0, 79, 249, 0.02) 0%, rgba(255, 249, 76, 0.02) 100%);
+}
+
+/* Service preview gradient */
+.service-preview {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 249, 76, 0.1) 100%);
+}
+
+/* Navigation hover effects */
+.nav-link:hover {
+    color: var(--ukraine-blue);
+    background: linear-gradient(90deg, transparent 0%, rgba(0, 79, 249, 0.05) 50%, transparent 100%);
+    padding: 0.5rem 1rem;
+    margin: 0 -1rem;
+    border-radius: 4px;
+}
+
+/* Phone animation gradient */
+.phone-icon-animated {
+    background: linear-gradient(135deg, var(--ukraine-blue) 0%, var(--ukraine-blue-light) 100%) !important;
+}
+
+/* Trust number gradient text */
+.trust-number {
+    background: linear-gradient(135deg, var(--ukraine-yellow) 0%, var(--ukraine-yellow-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+/* Section title gradients */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ukraine-blue) 0%, var(--ukraine-yellow) 100%);
+    border-radius: 2px;
+}
+
+/* Smooth wave animation update */
+@keyframes wave {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.hero-section {
+    background-size: 200% 200%;
+    animation: wave 15s ease-in-out infinite;
+}

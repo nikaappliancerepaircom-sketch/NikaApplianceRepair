@@ -1,0 +1,271 @@
+/* Redesigned About Section */
+
+.about-section {
+    padding: var(--section-padding) 0;
+    background: var(--gray-100);
+}
+
+/* Use same title style as services section */
+.about-section .section-title {
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* New Layout Structure */
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Left Side */
+.about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.video-container {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+.company-story {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.company-story h3 {
+    color: var(--dark);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.company-story p {
+    color: var(--gray-700);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.company-story p:last-child {
+    margin-bottom: 0;
+}
+
+/* Right Side */
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Founder Section */
+.founder-section {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.founder-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.founder-image-box {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-blue);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.founder-initials {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.founder-details h4 {
+    color: var(--dark);
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.founder-role {
+    color: var(--primary-blue);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.founder-message {
+    color: var(--gray-700);
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* Experience Stats */
+.experience-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.stat-item {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.stat-text {
+    color: var(--gray-700);
+    font-size: 0.9rem;
+}
+
+/* Service Features */
+.service-features {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.service-features h4 {
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--gray-700);
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.feature-icon {
+    color: var(--bright-green);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Certifications */
+.certifications {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.cert-badge {
+    background: var(--white);
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.cert-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.cert-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cert-badge span {
+    display: block;
+    color: var(--gray-700);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .experience-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .founder-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .founder-image-box {
+        margin-bottom: 1rem;
+    }
+    
+    .certifications {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .company-story,
+    .founder-section,
+    .service-features {
+        padding: 1.5rem;
+    }
+    
+    .stat-value {
+        font-size: 2rem;
+    }
+}

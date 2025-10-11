@@ -1,0 +1,400 @@
+/* Mobile Responsive CSS for Nika Appliance Repair */
+/* Fixes overflow issues and ensures all elements stay within viewport */
+
+/* Base responsive settings */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 320px; /* Minimum width for smallest devices */
+}
+
+/* Container responsive */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Prevent floating icons from overlapping content */
+.floating-icons,
+.hero-floating-icons {
+    display: none; /* Hide on mobile by default */
+}
+
+@media (min-width: 1024px) {
+    .floating-icons,
+    .hero-floating-icons {
+        display: block;
+        pointer-events: none; /* Prevent icons from blocking clicks */
+        z-index: 1; /* Keep behind interactive elements */
+    }
+}
+/* Emergency Bar - Mobile Responsive */
+.emergency-bar {
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.emergency-bar p {
+    margin: 0;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/* Navigation - Mobile Responsive */
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul {
+    display: none; /* Hide on mobile by default */
+}
+
+.mobile-menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media (min-width: 768px) {
+    nav ul {        display: flex !important;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Hero Section - Mobile Responsive */
+.hero-section,
+.service-hero,
+.location-hero,
+.services-hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 60px 0 40px; /* Reduced padding on mobile */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10; /* Keep content above any floating elements */
+}
+
+/* Typography - Mobile Responsive */
+h1 {
+    font-size: 2rem; /* Smaller on mobile */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;    word-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-section,
+    .service-hero,
+    .location-hero,
+    .services-hero {
+        padding: 80px 0 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section,
+    .service-hero,
+    .location-hero,
+    .services-hero {
+        padding: 100px 0 80px;
+    }
+}
+
+/* Buttons - Mobile Responsive */
+.cta-button,
+.btn,
+button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 14px;
+    white-space: nowrap;    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    margin: 5px;
+}
+
+@media (min-width: 768px) {
+    .cta-button,
+    .btn,
+    button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
+
+/* Forms - Mobile Responsive */
+.hero-form,
+.quick-quote-form,
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 16px; /* Prevents zoom on iOS */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Grid Layouts - Mobile Responsive */
+.services-grid,
+.problems-grid,
+.brands-grid,
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+@media (min-width: 640px) {    .services-grid,
+    .problems-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .problems-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Service Cards - Mobile Responsive */
+.service-card,
+.problem-card,
+.feature-card {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+/* Hero Features - Mobile Responsive */
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hero-features span {
+    font-size: 14px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .hero-features {
+        gap: 20px;    }
+    
+    .hero-features span {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+/* Images - Mobile Responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer - Mobile Responsive */
+footer {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0 20px;
+}
+
+footer .grid,
+footer > div > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    footer .grid,
+    footer > div > div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Floating Phone Button - Mobile */
+.floating-phone {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;    background: #22c55e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+}
+
+/* Dropdown Menus - Mobile Safe */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto;
+    min-width: 200px;
+    max-width: calc(100vw - 40px);
+}
+
+/* Prevent horizontal scroll */
+.section,
+section {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Tables - Mobile Responsive */
+table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+/* Lists - Mobile Responsive */
+ul, ol {
+    padding-left: 20px;
+    width: 100%;
+}
+
+/* Utility Classes */
+.mobile-only {
+    display: block;
+}
+
+.desktop-only {
+    display: none;
+}
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+    
+    .desktop-only {
+        display: block;
+    }
+}
+
+/* Fix for specific overflow issues */
+.hero-content > *,
+.service-content > *,
+.location-content > * {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* Responsive spacing */
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
+.p-5 { padding: 3rem; }
+
+/* Safe area for notched devices */
+@supports (padding: max(0px)) {
+    .container {
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
+    }
+}

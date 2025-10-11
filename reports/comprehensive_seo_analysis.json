@@ -1,0 +1,3173 @@
+{
+  "analysis_date": "2025-10-03T11:26:52.697218",
+  "total_pages": 43,
+  "average_scores": {
+    "overall": 78.45,
+    "categories": {
+      "metadata": 76.84,
+      "content": 74.7,
+      "technical": 69.6,
+      "local_seo": 96.05,
+      "voice_search": 80.7,
+      "user_experience": 78.14
+    }
+  },
+  "page_results": [
+    {
+      "file": "dishwasher-installation.html",
+      "timestamp": "2025-10-03T11:26:50.418207",
+      "overall_score": 80.0,
+      "category_scores": {
+        "metadata": 77,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 95,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [
+          "Toronto mentioned 14 times (target 15-40)"
+        ],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 38,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1738,
+          "keyword_density": 4.32,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 14,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "dishwasher-repair.html",
+      "timestamp": "2025-10-03T11:26:50.472782",
+      "overall_score": 80.75,
+      "category_scores": {
+        "metadata": 77,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 43,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1934,
+          "keyword_density": 4.34,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 38,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 11,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 36
+        },
+        "voice_search": {
+          "question_headers": 9,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "dryer-repair.html",
+      "timestamp": "2025-10-03T11:26:50.526801",
+      "overall_score": 80.3,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 80,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 46,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1933,
+          "keyword_density": 4.35,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 38,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 11,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 36
+        },
+        "voice_search": {
+          "question_headers": 9,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "freezer-repair.html",
+      "timestamp": "2025-10-03T11:26:50.579297",
+      "overall_score": 80.0,
+      "category_scores": {
+        "metadata": 77,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 80,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 44,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1930,
+          "keyword_density": 4.35,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 38,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 11,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 36
+        },
+        "voice_search": {
+          "question_headers": 9,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "index.html",
+      "timestamp": "2025-10-03T11:26:50.591006",
+      "overall_score": 45.1,
+      "category_scores": {
+        "metadata": 79,
+        "content": 30,
+        "technical": 60,
+        "local_seo": 40,
+        "voice_search": 15,
+        "user_experience": 55
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Word count 309 (target 1500-2500)",
+          "Keyword density 9.39% over-optimized",
+          "Only 0 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [
+          "Toronto mentioned 4 times (target 15-40)"
+        ],
+        "voice_search": [
+          "Only 2 question headers (need 5+)",
+          "Missing FAQ schema"
+        ],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 157,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 309,
+          "keyword_density": 9.39,
+          "h1_count": 1,
+          "h2_count": 3,
+          "h3_count": 11,
+          "image_count": 0,
+          "internal_links": 21,
+          "lists": 3,
+          "bold_elements": 0
+        },
+        "technical": {
+          "schema_count": 2,
+          "schema_types": [
+            "LocalBusiness",
+            "BreadcrumbList"
+          ],
+          "css_files": 2,
+          "inline_css": 1,
+          "total_scripts": 2,
+          "async_scripts": 0,
+          "semantic_elements": 7
+        },
+        "local_seo": {
+          "toronto_mentions": 4,
+          "region_mentions": 2,
+          "phone_mentions": 13,
+          "neighborhood_mentions": 2
+        },
+        "voice_search": {
+          "question_headers": 2,
+          "conversational_phrases": 0,
+          "lists": 3,
+          "tables": 0,
+          "summary_boxes": 0
+        },
+        "ux": {
+          "forms": 0,
+          "cta_buttons": 1,
+          "aria_labels": 3
+        }
+      }
+    },
+    {
+      "file": "oven-repair.html",
+      "timestamp": "2025-10-03T11:26:50.643890",
+      "overall_score": 80.3,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 80,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 45,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1935,
+          "keyword_density": 4.34,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 38,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 11,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 36
+        },
+        "voice_search": {
+          "question_headers": 9,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "oven-stove-repair.html",
+      "timestamp": "2025-10-03T11:26:50.698050",
+      "overall_score": 79.25,
+      "category_scores": {
+        "metadata": 77,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 95,
+        "voice_search": 80,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [
+          "Toronto mentioned 14 times (target 15-40)"
+        ],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 43,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1740,
+          "keyword_density": 4.43,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 14,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "refrigerator-freezer-repair.html",
+      "timestamp": "2025-10-03T11:26:50.758732",
+      "overall_score": 79.25,
+      "category_scores": {
+        "metadata": 77,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 95,
+        "voice_search": 80,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [
+          "Toronto mentioned 14 times (target 15-40)"
+        ],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 42,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1738,
+          "keyword_density": 4.43,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 14,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "refrigerator-repair.html",
+      "timestamp": "2025-10-03T11:26:50.810814",
+      "overall_score": 80.3,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 80,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 46,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1932,
+          "keyword_density": 4.35,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 38,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 11,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 36
+        },
+        "voice_search": {
+          "question_headers": 9,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "stove-cooktop-repair.html",
+      "timestamp": "2025-10-03T11:26:50.862900",
+      "overall_score": 79.25,
+      "category_scores": {
+        "metadata": 77,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 95,
+        "voice_search": 80,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [
+          "Toronto mentioned 14 times (target 15-40)"
+        ],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 39,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1737,
+          "keyword_density": 4.43,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 14,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "washer-dryer-repair.html",
+      "timestamp": "2025-10-03T11:26:50.916796",
+      "overall_score": 80.3,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 95,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [
+          "Toronto mentioned 14 times (target 15-40)"
+        ],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 45,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1743,
+          "keyword_density": 4.42,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 14,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "washer-repair.html",
+      "timestamp": "2025-10-03T11:26:50.971174",
+      "overall_score": 80.75,
+      "category_scores": {
+        "metadata": 77,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 43,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1936,
+          "keyword_density": 4.34,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 38,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 11,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 36
+        },
+        "voice_search": {
+          "question_headers": 9,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 33
+        }
+      }
+    },
+    {
+      "file": "ajax.html",
+      "timestamp": "2025-10-03T11:26:51.022352",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 151,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1761,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "aurora.html",
+      "timestamp": "2025-10-03T11:26:51.076001",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 153,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "barrie.html",
+      "timestamp": "2025-10-03T11:26:51.128507",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 153,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "bolton.html",
+      "timestamp": "2025-10-03T11:26:51.182451",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 153,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "brampton.html",
+      "timestamp": "2025-10-03T11:26:51.235888",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 155,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 27
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "burlington.html",
+      "timestamp": "2025-10-03T11:26:51.289066",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 157,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "caledon.html",
+      "timestamp": "2025-10-03T11:26:51.343990",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 154,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1763,
+          "keyword_density": 4.76,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "concord.html",
+      "timestamp": "2025-10-03T11:26:51.427163",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 154,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "east-gwillimbury.html",
+      "timestamp": "2025-10-03T11:26:51.481228",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 51,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1764,
+          "keyword_density": 4.76,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 22,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "etobicoke.html",
+      "timestamp": "2025-10-03T11:26:51.535920",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 156,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1759,
+          "keyword_density": 4.78,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 16,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 27
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "georgetown.html",
+      "timestamp": "2025-10-03T11:26:51.596525",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 157,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "index.html",
+      "timestamp": "2025-10-03T11:26:51.604008",
+      "overall_score": 16.15,
+      "category_scores": {
+        "metadata": 0,
+        "content": 25,
+        "technical": 22,
+        "local_seo": 15,
+        "voice_search": 5,
+        "user_experience": 25
+      },
+      "issues": {
+        "metadata": [
+          "No <head> tag found"
+        ],
+        "content": [
+          "Word count 161 (target 1500-2500)",
+          "Found 0 H1 tags (should be 1)",
+          "Only 0 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [
+          "Toronto mentioned 5 times (target 15-40)"
+        ],
+        "voice_search": [
+          "Only 1 question headers (need 5+)"
+        ],
+        "ux": [
+          "Missing navigation"
+        ]
+      },
+      "details": {
+        "metadata": {},
+        "content": {
+          "word_count": 161,
+          "keyword_density": 1.86,
+          "h1_count": 0,
+          "h2_count": 2,
+          "h3_count": 3,
+          "image_count": 0,
+          "internal_links": 30,
+          "lists": 0,
+          "bold_elements": 0
+        },
+        "technical": {
+          "schema_count": 0,
+          "schema_types": [],
+          "css_files": 0,
+          "inline_css": 0,
+          "total_scripts": 1,
+          "async_scripts": 0,
+          "semantic_elements": 3
+        },
+        "local_seo": {
+          "toronto_mentions": 5,
+          "region_mentions": 4,
+          "phone_mentions": 2,
+          "neighborhood_mentions": 4
+        },
+        "voice_search": {
+          "question_headers": 1,
+          "conversational_phrases": 0,
+          "lists": 0,
+          "tables": 0,
+          "summary_boxes": 0
+        },
+        "ux": {
+          "forms": 0,
+          "cta_buttons": 1,
+          "aria_labels": 0
+        }
+      }
+    },
+    {
+      "file": "king-city.html",
+      "timestamp": "2025-10-03T11:26:51.674843",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 156,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1765,
+          "keyword_density": 4.76,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "maple.html",
+      "timestamp": "2025-10-03T11:26:51.728067",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 152,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1763,
+          "keyword_density": 4.76,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "markham.html",
+      "timestamp": "2025-10-03T11:26:51.789862",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 154,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 27
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "milton.html",
+      "timestamp": "2025-10-03T11:26:51.844235",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 153,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "mississauga.html",
+      "timestamp": "2025-10-03T11:26:51.899030",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 158,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 27
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "newmarket.html",
+      "timestamp": "2025-10-03T11:26:51.958810",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 156,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "north-york.html",
+      "timestamp": "2025-10-03T11:26:52.011059",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 157,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1764,
+          "keyword_density": 4.76,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 16,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 27
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "oakville.html",
+      "timestamp": "2025-10-03T11:26:52.068385",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 155,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "oshawa.html",
+      "timestamp": "2025-10-03T11:26:52.120234",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 153,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "pickering.html",
+      "timestamp": "2025-10-03T11:26:52.208533",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 156,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "richmond-hill.html",
+      "timestamp": "2025-10-03T11:26:52.262043",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 160,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1764,
+          "keyword_density": 4.76,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "scarborough.html",
+      "timestamp": "2025-10-03T11:26:52.318582",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 158,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1759,
+          "keyword_density": 4.78,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 16,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 27
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "stouffville.html",
+      "timestamp": "2025-10-03T11:26:52.372946",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 158,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "thornhill.html",
+      "timestamp": "2025-10-03T11:26:52.425816",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 156,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "toronto.html",
+      "timestamp": "2025-10-03T11:26:52.482885",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 154,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1761,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 21,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "uxbridge.html",
+      "timestamp": "2025-10-03T11:26:52.536228",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 155,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1763,
+          "keyword_density": 4.76,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "vaughan.html",
+      "timestamp": "2025-10-03T11:26:52.587923",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 154,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1760,
+          "keyword_density": 4.77,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 9,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 27
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "whitby.html",
+      "timestamp": "2025-10-03T11:26:52.642403",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 153,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1763,
+          "keyword_density": 4.76,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    },
+    {
+      "file": "woodbridge.html",
+      "timestamp": "2025-10-03T11:26:52.697218",
+      "overall_score": 81.05,
+      "category_scores": {
+        "metadata": 79,
+        "content": 77,
+        "technical": 71,
+        "local_seo": 100,
+        "voice_search": 85,
+        "user_experience": 80
+      },
+      "issues": {
+        "metadata": [],
+        "content": [
+          "Only 1 images (need 5+)"
+        ],
+        "technical": [],
+        "local_seo": [],
+        "voice_search": [],
+        "ux": []
+      },
+      "details": {
+        "metadata": {
+          "title_length": 60,
+          "description_length": 157,
+          "og_tags": 7,
+          "twitter_tags": 3
+        },
+        "content": {
+          "word_count": 1763,
+          "keyword_density": 4.76,
+          "h1_count": 1,
+          "h2_count": 12,
+          "h3_count": 33,
+          "image_count": 1,
+          "internal_links": 60,
+          "lists": 8,
+          "bold_elements": 18
+        },
+        "technical": {
+          "schema_count": 3,
+          "schema_types": [
+            "LocalBusiness",
+            "FAQPage",
+            "BreadcrumbList"
+          ],
+          "css_files": 16,
+          "inline_css": 2,
+          "total_scripts": 7,
+          "async_scripts": 0,
+          "semantic_elements": 16
+        },
+        "local_seo": {
+          "toronto_mentions": 15,
+          "region_mentions": 8,
+          "phone_mentions": 25,
+          "neighborhood_mentions": 22
+        },
+        "voice_search": {
+          "question_headers": 5,
+          "conversational_phrases": 1,
+          "lists": 8,
+          "tables": 1,
+          "summary_boxes": 13
+        },
+        "ux": {
+          "forms": 1,
+          "cta_buttons": 11,
+          "aria_labels": 34
+        }
+      }
+    }
+  ]
+}

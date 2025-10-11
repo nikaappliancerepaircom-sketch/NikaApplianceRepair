@@ -1,0 +1,648 @@
+/* ==========================================
+   COMPREHENSIVE RESPONSIVE DESIGN
+   Ensures all sections work on mobile, tablet, laptop, desktop
+   ========================================== */
+
+/* Base responsive fixes */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+/* Container responsive */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Prevent any section from overflowing */
+section {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ==========================================
+   HERO SECTION RESPONSIVE
+   ========================================== */
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    .hero-section {
+        padding: 80px 0;
+        min-height: 600px;
+    }
+
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .hero-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .hero-cta-group {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-section {
+        padding: 60px 0;
+        min-height: 500px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text {
+        order: 1;
+    }
+
+    .hero-image {
+        order: 2;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        min-width: 200px;
+    }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 40px 0;
+        min-height: auto;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .hero-text {
+        order: 1;
+    }
+
+    .hero-image {
+        order: 2;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    .hero-title br {
+        display: none;
+    }
+
+    .wow-text {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: stretch;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* ==========================================
+   SERVICES GRID RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+}
+
+/* ==========================================
+   BENEFITS / WHY CHOOSE GRID RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .benefit-card {
+        padding: 1.5rem;
+    }
+}
+
+/* ==========================================
+   ABOUT SECTION RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .about-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .about-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-left,
+    .about-right {
+        text-align: center;
+    }
+
+    .experience-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* ==========================================
+   BRANDS GRID RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .brand-logos-showcase {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .brand-logos-showcase {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .brand-logos-showcase {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .logo-item {
+        height: 55px;
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+}
+
+/* ==========================================
+   TESTIMONIALS GRID RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .testimonials-modern-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .testimonials-modern-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .testimonials-modern-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* ==========================================
+   AREAS GRID RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .areas-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .areas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .areas-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .area-item {
+        font-size: 0.85rem;
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+/* ==========================================
+   BOOKING SECTION RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .booking-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .booking-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}
+
+/* ==========================================
+   FOOTER RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .social-links,
+    .payment-methods {
+        justify-content: center;
+    }
+}
+
+/* ==========================================
+   PRICING TABLE RESPONSIVE
+   ========================================== */
+
+/* Mobile */
+@media (max-width: 767px) {
+    .pricing-table {
+        font-size: 0.85rem;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 10px 8px !important;
+    }
+
+    .pricing-table th {
+        font-size: 0.75rem;
+    }
+}
+
+/* ==========================================
+   HOW IT WORKS RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .steps-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .step-item {
+        flex: 1;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .steps-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* ==========================================
+   HEADER NAVIGATION RESPONSIVE
+   ========================================== */
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .main-nav {
+        display: flex !important;
+    }
+
+    .header-cta {
+        display: flex !important;
+    }
+
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .main-nav {
+        display: none;
+    }
+
+    .header-cta {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex !important;
+    }
+
+    .header-content {
+        padding: 0.75rem 0;
+    }
+}
+
+/* ==========================================
+   CENTRALIZATION FIX
+   All content should be centered and not overflow
+   ========================================== */
+
+/* Ensure all text content is centered on mobile */
+@media (max-width: 767px) {
+    .section-title,
+    .section-subtitle,
+    .section-title-light {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    /* Center CTA buttons */
+    .services-cta,
+    .why-cta,
+    .how-it-works-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+}
+
+/* Ensure images don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure iframes (Google Maps, YouTube) are responsive */
+iframe {
+    max-width: 100%;
+}
+
+/* ==========================================
+   VIDEO WRAPPER RESPONSIVE
+   ========================================== */
+
+.video-wrapper,
+.testimonial-video-wrapper,
+.modern-video-card .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe,
+.testimonial-video-wrapper iframe,
+.modern-video-card .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ==========================================
+   MOBILE TYPOGRAPHY ADJUSTMENTS
+   ========================================== */
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    p,
+    li {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+/* ==========================================
+   TOUCH-FRIENDLY BUTTONS ON MOBILE
+   ========================================== */
+
+@media (max-width: 767px) {
+    button,
+    .cta-primary,
+    .cta-secondary,
+    .submit-btn,
+    .call-btn,
+    .book-btn {
+        min-height: 48px; /* Touch-friendly size */
+        padding: 12px 20px;
+    }
+}
+
+/* ==========================================
+   PREVENT TEXT OVERFLOW
+   ========================================== */
+
+.hero-title,
+.section-title,
+.section-subtitle,
+.benefit-card h3,
+.service-card h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* ==========================================
+   SMOOTH TRANSITIONS FOR RESPONSIVE CHANGES
+   ========================================== */
+
+.hero-content,
+.services-grid,
+.benefits-grid,
+.about-layout,
+.booking-content,
+.footer-content {
+    transition: all 0.3s ease;
+}

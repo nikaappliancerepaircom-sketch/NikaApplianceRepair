@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- DYNAMIC SEO META - Generated based on location context -->
+    <meta name="description" content="{{LOCATION_META_DESCRIPTION}}">
+    <meta name="keywords" content="{{LOCATION_KEYWORDS}}">
+    <title>{{LOCATION_PAGE_TITLE}}</title>
+    
+    <!-- Standard includes -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- UNIVERSAL HEADER -->
+    {{UNIVERSAL_HEADER}}
+    
+    <!-- LOCATION HERO - Unique local content -->
+    <section class="hero-section location-hero">
+        <div class="container">
+            {{LOCATION_HERO_CONTENT}}
+            <!-- Example for Toronto:
+            <h1>Appliance Repair in Toronto - 45 Minute Response</h1>
+            <p>Serving Downtown, North York, Scarborough & all GTA areas</p>
+            <div class="local-badge">📍 Your Toronto neighbors trust us!</div>
+            
+            Example for Mississauga:
+            <h1>Mississauga Appliance Repair - Same Day Service</h1>
+            <p>From Square One to Port Credit - we're your local experts</p>
+            <div class="local-badge">🏘️ Proudly serving Mississauga since 2019</div>
+            -->
+        </div>
+    </section>
+    
+    <!-- LOCAL STATS - Area-specific proof -->
+    <section class="local-stats">
+        <div class="container">
+            {{LOCATION_STATS_CONTENT}}
+            <!-- Example:
+            - 500+ repairs in Toronto last month
+            - 45 minute average response time
+            - 98% same-day service rate
+            -->
+        </div>
+    </section>
+    
+    <!-- NEIGHBORHOODS - Areas we serve -->
+    <section class="neighborhoods-section">
+        <div class="container">
+            <h2>{{LOCATION_NAME}} Neighborhoods We Service</h2>
+            {{LOCATION_NEIGHBORHOODS_CONTENT}}
+            <!-- List of specific areas, landmarks, postal codes -->
+        </div>
+    </section>
+    
+    <!-- LOCAL TESTIMONIALS - From this area -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Your {{LOCATION_NAME}} Neighbors Say</h2>
+            {{LOCATION_TESTIMONIALS}}
+            <!-- Reviews mentioning local streets/areas -->
+        </div>
+    </section>
+    
+    <!-- WHY LOCAL MATTERS -->
+    <section class="local-benefits">
+        <div class="container">
+            <h2>Why Choose Local {{LOCATION_NAME}} Repair?</h2>
+            {{LOCATION_BENEFITS_CONTENT}}
+            <!-- Benefits of choosing local service -->
+        </div>
+    </section>
+    
+    <!-- EMERGENCY SERVICE - Local response times -->
+    <section class="emergency-section">
+        <div class="container">
+            <h2>24/7 Emergency Service in {{LOCATION_NAME}}</h2>
+            {{LOCATION_EMERGENCY_CONTENT}}
+            <!-- Emphasize quick local response -->
+        </div>
+    </section>
+    
+    <!-- ALL SERVICES - Available in this location -->
+    <section class="services-section">
+        <div class="container">
+            <h2>Appliance Services in {{LOCATION_NAME}}</h2>
+            {{LOCATION_SERVICES_LIST}}
+            <!-- Grid of all services available locally -->
+        </div>
+    </section>
+    
+    <!-- LOCAL FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>{{LOCATION_NAME}} Service FAQs</h2>
+            {{LOCATION_FAQ_CONTENT}}
+            <!-- Location-specific questions -->
+        </div>
+    </section>
+    
+    <!-- UNIVERSAL FOOTER -->
+    {{UNIVERSAL_FOOTER}}
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

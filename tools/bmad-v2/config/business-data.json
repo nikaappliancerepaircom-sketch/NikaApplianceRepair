@@ -1,0 +1,90 @@
+{
+  "project": {
+    "name": "Nika Appliance Repair",
+    "version": "2.0",
+    "last_updated": "2025-10-10"
+  },
+  "business_data": {
+    "company_name": "Nika Appliance Repair",
+    "phone_number": "437-747-6737",
+    "phone_normalized": "4377476737",
+    "email": "info@nikaappliancerepair.com",
+    "address": "Toronto, ON",
+    "service_hours": "24/7",
+    "website": "https://nikaappliancerepair.com"
+  },
+  "quality_metrics": {
+    "rating": 4.9,
+    "review_count": 5200,
+    "warranty_period": 90,
+    "warranty_unit": "day",
+    "years_in_business": 6
+  },
+  "keywords": {
+    "primary": "appliance repair",
+    "secondary": [
+      "refrigerator repair",
+      "dishwasher repair",
+      "washer repair",
+      "dryer repair",
+      "oven repair",
+      "stove repair"
+    ],
+    "semantic": [
+      "licensed",
+      "certified",
+      "experienced",
+      "professional",
+      "same-day service",
+      "emergency repair",
+      "warranty",
+      "Toronto",
+      "GTA"
+    ],
+    "locations": [
+      "Toronto",
+      "Mississauga",
+      "Brampton",
+      "North York",
+      "Scarborough",
+      "Etobicoke",
+      "Markham",
+      "Vaughan",
+      "Richmond Hill"
+    ]
+  },
+  "bmad_targets": {
+    "content_word_count_min": 1500,
+    "content_word_count_max": 2500,
+    "keyword_density_min": 1.5,
+    "keyword_density_max": 2.5,
+    "internal_links_min": 10,
+    "images_min": 10,
+    "cta_count_min": 3,
+    "cta_count_max": 8,
+    "form_fields_max": 5,
+    "sections_min": 6,
+    "sections_max": 12
+  },
+  "social_proof": {
+    "testimonials_min": 3,
+    "rating_display_min": 3,
+    "trust_badges_min": 3
+  },
+  "page_structure": {
+    "required_sections": [
+      "hero",
+      "services",
+      "why choose us",
+      "testimonials",
+      "service area",
+      "contact"
+    ]
+  },
+  "deployment_criteria": {
+    "tier_1_required": 100,
+    "tier_2_target": 85,
+    "tier_3_target": 70,
+    "overall_minimum": 85
+  }
+}

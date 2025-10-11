@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-10-03T10:48:51.749087",
+  "scores": {
+    "content": 60.0,
+    "technical": 65,
+    "ai_optimization": 60,
+    "local_seo": 63.75,
+    "user_experience": 100
+  },
+  "issues": [
+    "Keyword density 4.95% too high",
+    "Only 2 images"
+  ],
+  "recommendations": [],
+  "overall_score": 66
+}

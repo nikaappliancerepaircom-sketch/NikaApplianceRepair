@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Analysis Report - Nika Appliance Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .header h1 {
+            color: #1a202c;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: #718096;
+            font-size: 1.1rem;
+        }
+
+        .overall-score {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .score-circle {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(#f59e0b 282.42deg, #e5e7eb 282.42deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        .score-inner {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .score-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #f59e0b;
+        }
+
+        .score-status {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-top: 0.5rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stat-card h3 {
+            color: #718096;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value.green { color: #10b981; }
+        .stat-value.yellow { color: #f59e0b; }
+        .stat-value.red { color: #ef4444; }
+
+        .stat-label {
+            color: #a0aec0;
+            font-size: 0.875rem;
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow-x: auto;
+            margin-bottom: 2rem;
+        }
+
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .table-header h2 {
+            color: #1a202c;
+            font-size: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #f7fafc;
+            color: #4a5568;
+            font-weight: 600;
+            text-align: left;
+            padding: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            color: #4a5568;
+        }
+
+        tr:hover {
+            background: #f7fafc;
+        }
+
+        .score-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .score-badge.green {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .score-badge.yellow {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .score-badge.red {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .issues-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .issues-section h2 {
+            color: #1a202c;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .issue-card {
+            background: #f7fafc;
+            border-left: 4px solid #ef4444;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .issue-card h4 {
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .issue-list {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .timestamp {
+            text-align: center;
+            color: white;
+            margin-top: 2rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Comprehensive SEO Analysis Report</h1>
+            <p>270+ Parameter Analysis | Nika Appliance Repair Website</p>
+        </div>
+
+        <div class="overall-score">
+            <h2>Overall SEO Score</h2>
+            <div class="score-circle">
+                <div class="score-inner">
+                    <div class="score-number">78</div>
+                    <div class="score-status">GOOD</div>
+                </div>
+            </div>
+            <p style="color: #718096; margin-top: 1rem;">
+                Based on 43 pages analyzed
+            </p>
+        </div>
+
+        <div class="stats-grid">
+
+        <div class="stat-card">
+            <h3>Metadata</h3>
+            <div class="stat-value green">76.8</div>
+            <div class="stat-label">out of 100</div>
+        </div>
+        
+        <div class="stat-card">
+            <h3>Content</h3>
+            <div class="stat-value yellow">74.7</div>
+            <div class="stat-label">out of 100</div>
+        </div>
+        
+        <div class="stat-card">
+            <h3>Technical</h3>
+            <div class="stat-value yellow">69.6</div>
+            <div class="stat-label">out of 100</div>
+        </div>
+        
+        <div class="stat-card">
+            <h3>Local Seo</h3>
+            <div class="stat-value green">96.0</div>
+            <div class="stat-label">out of 100</div>
+        </div>
+        
+        <div class="stat-card">
+            <h3>Voice Search</h3>
+            <div class="stat-value green">80.7</div>
+            <div class="stat-label">out of 100</div>
+        </div>
+        
+        <div class="stat-card">
+            <h3>User Experience</h3>
+            <div class="stat-value green">78.1</div>
+            <div class="stat-label">out of 100</div>
+        </div>
+        
+        </div>
+
+        <div class="table-container">
+            <div class="table-header">
+                <h2>🏆 Top Performing Pages</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Page</th>
+                        <th>Overall Score</th>
+                        <th>Content</th>
+                        <th>Technical</th>
+                        <th>Local SEO</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+        <tr>
+            <td>1</td>
+            <td>ajax.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>aurora.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>barrie.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>bolton.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>brampton.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+        <tr>
+            <td>6</td>
+            <td>burlington.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td>caledon.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+        <tr>
+            <td>8</td>
+            <td>concord.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td>east-gwillimbury.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+        <tr>
+            <td>10</td>
+            <td>etobicoke.html</td>
+            <td><span class="score-badge green">81.0</span></td>
+            <td>77</td>
+            <td>71</td>
+            <td>100</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <div class="table-header">
+                <h2>⚠️ Pages Needing Improvement</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Page</th>
+                        <th>Score</th>
+                        <th>Top Issues</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+        <tr>
+            <td>1</td>
+            <td>index.html</td>
+            <td><span class="score-badge red">16.1</span></td>
+            <td>No <head> tag found, Word count 161 (target 1500-2500), Found 0 H1 tags (should be 1)</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>index.html</td>
+            <td><span class="score-badge red">45.1</span></td>
+            <td>Word count 309 (target 1500-2500), Keyword density 9.39% over-optimized, Only 0 images (need 5+)</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>oven-stove-repair.html</td>
+            <td><span class="score-badge yellow">79.2</span></td>
+            <td>Only 1 images (need 5+), Toronto mentioned 14 times (target 15-40)</td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td>refrigerator-freezer-repair.html</td>
+            <td><span class="score-badge yellow">79.2</span></td>
+            <td>Only 1 images (need 5+), Toronto mentioned 14 times (target 15-40)</td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td>stove-cooktop-repair.html</td>
+            <td><span class="score-badge yellow">79.2</span></td>
+            <td>Only 1 images (need 5+), Toronto mentioned 14 times (target 15-40)</td>
+        </tr>
+        
+        <tr>
+            <td>6</td>
+            <td>dishwasher-installation.html</td>
+            <td><span class="score-badge yellow">80.0</span></td>
+            <td>Only 1 images (need 5+), Toronto mentioned 14 times (target 15-40)</td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td>freezer-repair.html</td>
+            <td><span class="score-badge yellow">80.0</span></td>
+            <td>Only 1 images (need 5+)</td>
+        </tr>
+        
+        <tr>
+            <td>8</td>
+            <td>dryer-repair.html</td>
+            <td><span class="score-badge yellow">80.3</span></td>
+            <td>Only 1 images (need 5+)</td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td>oven-repair.html</td>
+            <td><span class="score-badge yellow">80.3</span></td>
+            <td>Only 1 images (need 5+)</td>
+        </tr>
+        
+        <tr>
+            <td>10</td>
+            <td>refrigerator-repair.html</td>
+            <td><span class="score-badge yellow">80.3</span></td>
+            <td>Only 1 images (need 5+)</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+        <div class="issues-section">
+            <h2>🔍 Detailed Issues (Sample Pages)</h2>
+
+        </div>
+
+        <div class="timestamp">
+            <p>Report Generated: October 03, 2025 at 11:26 AM</p>
+            <p>Analysis Date: 2025-10-03</p>
+        </div>
+    </div>
+</body>
+</html>

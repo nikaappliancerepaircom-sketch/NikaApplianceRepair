@@ -1,0 +1,166 @@
+/* Correct CTA Button Colors Based on Context */
+
+/* Online Booking Buttons - Green */
+.cta-button.booking,
+.btn-booking,
+.book-online,
+.schedule-service,
+.book-repair,
+[href*="book"],
+[onclick*="book"],
+.countdown-cta {
+    background: #22c55e !important; /* Green for booking */
+    color: white !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.cta-button.booking:hover,
+.btn-booking:hover,
+.book-online:hover,
+.schedule-service:hover,
+.book-repair:hover,
+[href*="book"]:hover,
+.countdown-cta:hover {
+    background: #16a34a !important; /* Darker green on hover */
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3) !important;
+}
+
+/* Call Now Buttons - Violet/Purple */
+.cta-button.call,
+.btn-call,
+.call-now,
+.phone-cta,
+[href^="tel:"],
+.emergency-phone {
+    background: #7c3aed !important; /* Violet for calls */
+    color: white !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.cta-button.call:hover,
+.btn-call:hover,
+.call-now:hover,
+.phone-cta:hover,
+[href^="tel:"]:hover,
+.emergency-phone:hover {
+    background: #6d28d9 !important; /* Darker violet on hover */
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3) !important;
+}
+
+/* Header phone button */
+header [href^="tel:"],
+nav [href^="tel:"] {
+    background: #7c3aed !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+}
+
+/* Emergency bar phone links */
+.emergency-bar a[href^="tel:"] {
+    color: white !important;
+    background: transparent !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+
+/* Floating phone button */
+.floating-phone {
+    background: #7c3aed !important;
+    color: white !important;
+}
+
+.floating-phone:hover {
+    background: #6d28d9 !important;
+    transform: scale(1.1) !important;
+}
+
+/* Service page CTAs */
+.service-hero [href^="tel:"] {
+    background: #7c3aed !important;
+}
+
+.service-hero [href*="book"] {
+    background: #22c55e !important;
+}
+
+/* Location page CTAs */
+.location-hero [href^="tel:"] {
+    background: #7c3aed !important;
+}
+
+.location-hero [href*="book"] {
+    background: #22c55e !important;
+}
+
+/* CTA Section buttons */
+.cta-section [href^="tel:"] {
+    background: white !important;
+    color: #7c3aed !important;
+}
+
+.cta-section [href*="book"] {
+    background: white !important;
+    color: #22c55e !important;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 768px) {
+    /* Ensure colors are consistent on mobile */
+    .countdown-cta {
+        background: #22c55e !important;
+    }
+    
+    header [href^="tel:"] {
+        background: #7c3aed !important;
+        padding: 8px 16px !important;
+        font-size: 0.875rem !important;
+    }
+}
+
+/* Fix countdown section button specifically */
+.countdown-section .countdown-cta {
+    background: #22c55e !important; /* Green for booking */
+    color: white !important;
+    border: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 15px 30px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.countdown-section .countdown-cta:hover {
+    background: #16a34a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3) !important;
+}
+
+/* Ensure all booking-related buttons are green */
+.hero-cta [href*="book"],
+.hero-form button[type="submit"],
+form button[type="submit"],
+.book-now,
+.book-diagnostic {
+    background: #22c55e !important;
+    color: white !important;
+}
+
+/* Ensure all call-related buttons are violet */
+.hero-cta [href^="tel:"],
+.call-technician,
+.emergency-call {
+    background: #7c3aed !important;
+    color: white !important;
+}

@@ -1,0 +1,423 @@
+{
+  "locations": [
+    {
+      "name": "Toronto",
+      "slug": "toronto",
+      "type": "major-city",
+      "lat": "43.653226",
+      "lng": "-79.383184",
+      "population": "2,731,571",
+      "description": "Professional appliance repair service in Toronto",
+      "neighborhoods": [
+        "Downtown Toronto",
+        "North York",
+        "Scarborough",
+        "Etobicoke",
+        "East York",
+        "York"
+      ],
+      "landmarks": [
+        "CN Tower",
+        "Rogers Centre",
+        "Toronto Eaton Centre",
+        "University of Toronto",
+        "Toronto General Hospital"
+      ]
+    },
+    {
+      "name": "North York",
+      "slug": "north-york",
+      "type": "district",
+      "lat": "43.761539",
+      "lng": "-79.411079",
+      "population": "869,401",
+      "description": "Fast appliance repair service in North York",
+      "neighborhoods": [
+        "Willowdale",
+        "Don Valley Village",
+        "Bayview Village",
+        "York Mills",
+        "Lawrence Park"
+      ],
+      "landmarks": [
+        "North York Centre",
+        "York University",
+        "Fairview Mall",
+        "North York General Hospital"
+      ]
+    },
+    {
+      "name": "Mississauga",
+      "slug": "mississauga",
+      "type": "major-city",
+      "lat": "43.589045",
+      "lng": "-79.644120",
+      "population": "721,599",
+      "description": "Expert appliance repair in Mississauga",
+      "neighborhoods": [
+        "Port Credit",
+        "Streetsville",
+        "Meadowvale",
+        "Cooksville",
+        "Clarkson"
+      ],
+      "landmarks": [
+        "Square One Shopping Centre",
+        "Toronto Pearson Airport",
+        "Credit Valley Hospital",
+        "University of Toronto Mississauga"
+      ]
+    },
+    {
+      "name": "Scarborough",
+      "slug": "scarborough",
+      "type": "district",
+      "lat": "43.772100",
+      "lng": "-79.239800",
+      "population": "632,098",
+      "description": "Reliable appliance repair in Scarborough",
+      "neighborhoods": [
+        "Agincourt",
+        "Malvern",
+        "Guildwood",
+        "Rouge",
+        "Centennial"
+      ],
+      "landmarks": [
+        "Scarborough Town Centre",
+        "University of Toronto Scarborough",
+        "Scarborough Bluffs",
+        "Rouge Hospital"
+      ]
+    },
+    {
+      "name": "Brampton",
+      "slug": "brampton",
+      "type": "major-city",
+      "lat": "43.731548",
+      "lng": "-79.762419",
+      "population": "593,638",
+      "description": "Professional appliance repair service in Brampton",
+      "neighborhoods": [
+        "Bramalea",
+        "Heart Lake",
+        "Springdale",
+        "Fletcher's Creek",
+        "Downtown Brampton"
+      ],
+      "landmarks": [
+        "Bramalea City Centre",
+        "Brampton Civic Hospital",
+        "Sheridan College",
+        "Rose Theatre"
+      ]
+    },
+    {
+      "name": "Markham",
+      "slug": "markham",
+      "type": "city",
+      "lat": "43.856100",
+      "lng": "-79.337100",
+      "population": "328,966",
+      "description": "Quality appliance repair in Markham",
+      "neighborhoods": [
+        "Unionville",
+        "Milliken",
+        "Cornell",
+        "Thornhill",
+        "Berczy Village"
+      ],
+      "landmarks": [
+        "Markville Mall",
+        "Markham Stouffville Hospital",
+        "CF Markville",
+        "Main Street Markham"
+      ]
+    },
+    {
+      "name": "Richmond Hill",
+      "slug": "richmond-hill",
+      "type": "city",
+      "lat": "43.882300",
+      "lng": "-79.440300",
+      "population": "195,022",
+      "description": "Fast appliance repair in Richmond Hill",
+      "neighborhoods": [
+        "Oak Ridges",
+        "Richvale",
+        "Langstaff",
+        "Mill Pond",
+        "Crosby"
+      ],
+      "landmarks": [
+        "Hillcrest Mall",
+        "Richmond Hill Centre",
+        "MacKenzie Health",
+        "David Dunlap Observatory"
+      ]
+    },
+    {
+      "name": "Vaughan",
+      "slug": "vaughan",
+      "type": "city",
+      "lat": "43.825700",
+      "lng": "-79.508400",
+      "population": "306,233",
+      "description": "Expert appliance repair service in Vaughan",
+      "neighborhoods": [
+        "Woodbridge",
+        "Maple",
+        "Thornhill",
+        "Concord",
+        "Kleinburg"
+      ],
+      "landmarks": [
+        "Vaughan Mills",
+        "Canada's Wonderland",
+        "Mackenzie Vaughan Hospital",
+        "McMichael Canadian Art Collection"
+      ]
+    },
+    {
+      "name": "Oakville",
+      "slug": "oakville",
+      "type": "city",
+      "lat": "43.467517",
+      "lng": "-79.687666",
+      "population": "193,832",
+      "description": "Premium appliance repair in Oakville",
+      "neighborhoods": [
+        "Downtown Oakville",
+        "Bronte",
+        "Glen Abbey",
+        "Palermo",
+        "River Oaks"
+      ],
+      "landmarks": [
+        "Oakville Place",
+        "Oakville Trafalgar Hospital",
+        "Sheridan College",
+        "Glen Abbey Golf Club"
+      ]
+    },
+    {
+      "name": "Etobicoke",
+      "slug": "etobicoke",
+      "type": "district",
+      "lat": "43.654494",
+      "lng": "-79.566859",
+      "population": "365,143",
+      "description": "Reliable appliance repair in Etobicoke",
+      "neighborhoods": [
+        "Islington",
+        "Long Branch",
+        "Mimico",
+        "Kingsway",
+        "Rexdale"
+      ],
+      "landmarks": [
+        "Sherway Gardens",
+        "Humber College",
+        "Etobicoke General Hospital",
+        "Woodbine Racetrack"
+      ]
+    }
+  ]
+}    },
+    {
+      "name": "Ajax",
+      "slug": "ajax",
+      "type": "town",
+      "lat": "43.850700",
+      "lng": "-79.036600",
+      "population": "119,677",
+      "description": "Quick appliance repair service in Ajax",
+      "neighborhoods": [
+        "Downtown Ajax",
+        "Applewood",
+        "Riverside",
+        "Pickering Village"
+      ],
+      "landmarks": [
+        "Ajax Downs",
+        "Lakeridge Health Ajax",
+        "Durham College"
+      ]
+    },
+    {
+      "name": "Pickering",
+      "slug": "pickering",
+      "type": "city",
+      "lat": "43.838400",
+      "lng": "-79.089000",
+      "population": "91,771",
+      "description": "Professional appliance repair in Pickering",
+      "neighborhoods": [
+        "Downtown Pickering",
+        "Liverpool",
+        "Dunbarton",
+        "Rouge Park"
+      ],
+      "landmarks": [
+        "Pickering Town Centre",
+        "Rouge Hospital",
+        "Pickering Nuclear Station"
+      ]
+    },
+    {
+      "name": "Whitby",
+      "slug": "whitby",
+      "type": "town",
+      "lat": "43.897700",
+      "lng": "-78.942900",
+      "population": "128,377",
+      "description": "Expert appliance repair service in Whitby",
+      "neighborhoods": [
+        "Downtown Whitby",
+        "Brooklin",
+        "Port Whitby",
+        "Lynde Creek"
+      ],
+      "landmarks": [
+        "Whitby Mall",
+        "Lakeridge Health Whitby",
+        "Durham College"
+      ]
+    },
+    {
+      "name": "Oshawa",
+      "slug": "oshawa",
+      "type": "city",
+      "lat": "43.897100",
+      "lng": "-78.865800",
+      "population": "159,458",
+      "description": "Fast appliance repair in Oshawa",
+      "neighborhoods": [
+        "Downtown Oshawa",
+        "North Oshawa",
+        "Windfields",
+        "Kedron"
+      ],
+      "landmarks": [
+        "Oshawa Centre",
+        "Lakeridge Health Oshawa",
+        "Ontario Tech University"
+      ]
+    },
+    {
+      "name": "Burlington",
+      "slug": "burlington",
+      "type": "city",
+      "lat": "43.325200",
+      "lng": "-79.799000",
+      "population": "183,314",
+      "description": "Quality appliance repair in Burlington",
+      "neighborhoods": [
+        "Downtown Burlington",
+        "Aldershot",
+        "Appleby",
+        "Roseland"
+      ],
+      "landmarks": [
+        "Burlington Centre",
+        "Joseph Brant Hospital",
+        "Royal Botanical Gardens"
+      ]
+    },
+    {
+      "name": "Milton",
+      "slug": "milton",
+      "type": "town",
+      "lat": "43.518300",
+      "lng": "-79.883300",
+      "population": "110,128",
+      "description": "Reliable appliance repair service in Milton",
+      "neighborhoods": [
+        "Downtown Milton",
+        "Dempsey",
+        "Clarke",
+        "Harrison"
+      ],
+      "landmarks": [
+        "Milton Mall",
+        "Milton District Hospital",
+        "Conservation Halton"
+      ]
+    },
+    {
+      "name": "Aurora",
+      "slug": "aurora",
+      "type": "town",
+      "lat": "44.006500",
+      "lng": "-79.450400",
+      "population": "55,445",
+      "description": "Professional appliance repair in Aurora",
+      "neighborhoods": [
+        "Aurora Village",
+        "Aurora Heights",
+        "Bayview Northeast"
+      ],
+      "landmarks": [
+        "Aurora Town Square",
+        "Southlake Regional Health Centre"
+      ]
+    },
+    {
+      "name": "Newmarket",
+      "slug": "newmarket",
+      "type": "town",
+      "lat": "44.059200",
+      "lng": "-79.461300",
+      "population": "84,224",
+      "description": "Expert appliance repair in Newmarket",
+      "neighborhoods": [
+        "Downtown Newmarket",
+        "Stonehaven",
+        "Glenway"
+      ],
+      "landmarks": [
+        "Upper Canada Mall",
+        "Southlake Regional Health Centre",
+        "Newmarket GO Station"
+      ]
+    },
+    {
+      "name": "Georgetown",
+      "slug": "georgetown",
+      "type": "town",
+      "lat": "43.656200",
+      "lng": "-79.914300",
+      "population": "42,123",
+      "description": "Fast appliance repair service in Georgetown",
+      "neighborhoods": [
+        "Downtown Georgetown",
+        "Glen Williams",
+        "Silver Creek"
+      ],
+      "landmarks": [
+        "Georgetown Marketplace",
+        "Georgetown Hospital"
+      ]
+    },
+    {
+      "name": "East York",
+      "slug": "east-york",
+      "type": "district",
+      "lat": "43.690500",
+      "lng": "-79.327600",
+      "population": "118,071",
+      "description": "Quick appliance repair in East York",
+      "neighborhoods": [
+        "Leaside",
+        "Thorncliffe Park",
+        "Flemingdon Park",
+        "O'Connor-Parkview"
+      ],
+      "landmarks": [
+        "East York Town Centre",
+        "Leaside Memorial Arena",
+        "Toronto East General Hospital"
+      ]
+    }
+  ]
+}

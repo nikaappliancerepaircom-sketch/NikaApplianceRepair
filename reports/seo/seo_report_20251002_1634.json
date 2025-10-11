@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-10-02T16:34:56.012565",
+  "scores": {
+    "content": 80.0,
+    "technical": 75,
+    "ai_optimization": 60,
+    "local_seo": 63.75,
+    "user_experience": 75
+  },
+  "issues": [
+    "Toronto oversaturation: 49"
+  ],
+  "recommendations": [],
+  "overall_score": 70
+}

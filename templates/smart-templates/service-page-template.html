@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- DYNAMIC SEO META - Generated based on service context -->
+    <meta name="description" content="{{SERVICE_META_DESCRIPTION}}">
+    <meta name="keywords" content="{{SERVICE_KEYWORDS}}">
+    <title>{{SERVICE_PAGE_TITLE}}</title>
+    
+    <!-- Standard includes -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- UNIVERSAL HEADER -->
+    {{UNIVERSAL_HEADER}}
+    
+    <!-- SERVICE HERO - Unique content for each service -->
+    <section class="hero-section service-hero">
+        <div class="container">
+            {{SERVICE_HERO_CONTENT}}
+            <!-- Example for Refrigerator:
+            <h1>Emergency Refrigerator Repair in Toronto</h1>
+            <p>Don't let food spoil! Same-day service for all brands</p>
+            <div class="urgency-message">🚨 Food at risk? We arrive in 45 minutes!</div>
+            
+            Example for Washer:
+            <h1>Professional Washing Machine Repair Service</h1>
+            <p>Get your laundry routine back on track today</p>
+            <div class="urgency-message">👕 Laundry piling up? Same-day service available!</div>
+            -->
+        </div>
+    </section>
+    
+    <!-- COMMON PROBLEMS - Service-specific issues -->
+    <section class="problems-section">
+        <div class="container">
+            <h2>Common {{SERVICE_NAME}} Problems We Fix</h2>
+            {{SERVICE_PROBLEMS_CONTENT}}
+            <!-- Dynamically generated based on appliance type -->
+        </div>
+    </section>
+    
+    <!-- BRANDS WE SERVICE - For this appliance type -->
+    <section class="brands-section">
+        <div class="container">
+            <h2>{{SERVICE_NAME}} Brands We Repair</h2>
+            {{SERVICE_BRANDS_CONTENT}}
+            <!-- List relevant brands with their specific models -->
+        </div>
+    </section>
+    
+    <!-- PRICING - Service-specific pricing info -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2>{{SERVICE_NAME}} Repair Pricing</h2>
+            {{SERVICE_PRICING_CONTENT}}
+            <!-- Transparent pricing for this service type -->
+        </div>
+    </section>
+    
+    <!-- PROCESS - How we fix this appliance -->
+    <section class="process-section">
+        <div class="container">
+            <h2>Our {{SERVICE_NAME}} Repair Process</h2>
+            {{SERVICE_PROCESS_CONTENT}}
+            <!-- Step-by-step for this specific service -->
+        </div>
+    </section>
+    
+    <!-- MAINTENANCE TIPS - Prevent future issues -->
+    <section class="tips-section">
+        <div class="container">
+            <h2>{{SERVICE_NAME}} Maintenance Tips</h2>
+            {{SERVICE_TIPS_CONTENT}}
+            <!-- Preventive care specific to appliance -->
+        </div>
+    </section>
+    
+    <!-- SERVICE FAQ - Common questions for this service -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>{{SERVICE_NAME}} Repair FAQs</h2>
+            {{SERVICE_FAQ_CONTENT}}
+        </div>
+    </section>
+    
+    <!-- UNIVERSAL FOOTER -->
+    {{UNIVERSAL_FOOTER}}
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>

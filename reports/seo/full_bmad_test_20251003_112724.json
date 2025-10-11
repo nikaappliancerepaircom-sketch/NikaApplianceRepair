@@ -1,0 +1,926 @@
+{
+  "timestamp": "2025-10-03T11:27:24.225877",
+  "overall_average": 84.0,
+  "category_averages": {
+    "services": 77.9,
+    "locations": 82.0,
+    "blog": 90.7,
+    "main": 79.0
+  },
+  "pages": {
+    "main/index.html": {
+      "score": 79,
+      "issues": [
+        "Word count 1490 not optimal (2500-3000)",
+        "Keyword density 5.50% too high (over-optimization)",
+        "Images 1 (need 5+)",
+        "Title 78 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1490,
+      "keyword_density": 5.5,
+      "internal_links": 82,
+      "images": 1,
+      "schema_types": 5,
+      "phone_mentions": 16
+    },
+    "services/dishwasher-installation.html": {
+      "score": 79,
+      "issues": [
+        "Word count 1710 not optimal (2500-3000)",
+        "Keyword density 3.98% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Title 38 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1710,
+      "keyword_density": 3.98,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/dishwasher-repair.html": {
+      "score": 79,
+      "issues": [
+        "Word count 1911 not optimal (2500-3000)",
+        "Keyword density 3.45% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Title 43 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1911,
+      "keyword_density": 3.45,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/dryer-repair.html": {
+      "score": 79,
+      "issues": [
+        "Word count 1910 not optimal (2500-3000)",
+        "Keyword density 3.46% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Title 46 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1910,
+      "keyword_density": 3.46,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/freezer-repair.html": {
+      "score": 79,
+      "issues": [
+        "Word count 1907 not optimal (2500-3000)",
+        "Keyword density 3.57% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Title 44 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1907,
+      "keyword_density": 3.57,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/oven-repair.html": {
+      "score": 79,
+      "issues": [
+        "Word count 1912 not optimal (2500-3000)",
+        "Keyword density 3.45% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Title 45 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1912,
+      "keyword_density": 3.45,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/oven-stove-repair.html": {
+      "score": 76,
+      "issues": [
+        "Word count 1711 not optimal (2500-3000)",
+        "Keyword density 3.97% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Meta description 168 chars (target: 120-160)",
+        "Title 43 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1711,
+      "keyword_density": 3.97,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/refrigerator-freezer-repair.html": {
+      "score": 76,
+      "issues": [
+        "Word count 1710 not optimal (2500-3000)",
+        "Keyword density 3.98% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Meta description 164 chars (target: 120-160)",
+        "Title 42 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1710,
+      "keyword_density": 3.98,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/refrigerator-repair.html": {
+      "score": 79,
+      "issues": [
+        "Word count 1910 not optimal (2500-3000)",
+        "Keyword density 3.46% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Title 46 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1910,
+      "keyword_density": 3.46,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/stove-cooktop-repair.html": {
+      "score": 76,
+      "issues": [
+        "Word count 1709 not optimal (2500-3000)",
+        "Keyword density 3.98% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Meta description 168 chars (target: 120-160)",
+        "Title 39 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1709,
+      "keyword_density": 3.98,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/washer-dryer-repair.html": {
+      "score": 76,
+      "issues": [
+        "Word count 1714 not optimal (2500-3000)",
+        "Keyword density 3.97% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Meta description 164 chars (target: 120-160)",
+        "Title 45 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1714,
+      "keyword_density": 3.97,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "services/washer-repair.html": {
+      "score": 79,
+      "issues": [
+        "Word count 1913 not optimal (2500-3000)",
+        "Keyword density 3.45% too high (over-optimization)",
+        "Images 2 (need 5+)",
+        "Title 43 chars (target: 50-60)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1913,
+      "keyword_density": 3.45,
+      "internal_links": 83,
+      "images": 2,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/ajax.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1730 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1730,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/aurora.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/barrie.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/bolton.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/brampton.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/burlington.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/caledon.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1732 not optimal (2500-3000)",
+        "Keyword density 4.73% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1732,
+      "keyword_density": 4.73,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/concord.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/east-gwillimbury.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1734 not optimal (2500-3000)",
+        "Keyword density 4.73% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1734,
+      "keyword_density": 4.73,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 22
+    },
+    "locations/etobicoke.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1728 not optimal (2500-3000)",
+        "Keyword density 4.75% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1728,
+      "keyword_density": 4.75,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/georgetown.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/king-city.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1734 not optimal (2500-3000)",
+        "Keyword density 4.73% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1734,
+      "keyword_density": 4.73,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/maple.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1732 not optimal (2500-3000)",
+        "Keyword density 4.73% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1732,
+      "keyword_density": 4.73,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/markham.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/milton.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/mississauga.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/newmarket.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/north-york.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1733 not optimal (2500-3000)",
+        "Keyword density 4.73% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1733,
+      "keyword_density": 4.73,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/oakville.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/oshawa.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/pickering.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/richmond-hill.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1733 not optimal (2500-3000)",
+        "Keyword density 4.73% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1733,
+      "keyword_density": 4.73,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/scarborough.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1728 not optimal (2500-3000)",
+        "Keyword density 4.75% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1728,
+      "keyword_density": 4.75,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/stouffville.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/thornhill.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/toronto.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1730 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1730,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/uxbridge.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1732 not optimal (2500-3000)",
+        "Keyword density 4.73% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1732,
+      "keyword_density": 4.73,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/vaughan.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1729 not optimal (2500-3000)",
+        "Keyword density 4.74% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1729,
+      "keyword_density": 4.74,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/whitby.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1732 not optimal (2500-3000)",
+        "Keyword density 4.73% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1732,
+      "keyword_density": 4.73,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "locations/woodbridge.html": {
+      "score": 82,
+      "issues": [
+        "Word count 1732 not optimal (2500-3000)",
+        "Keyword density 4.73% too high (over-optimization)",
+        "Images 3 (need 5+)",
+        "Sections 13 (target: 6-12)"
+      ],
+      "word_count": 1732,
+      "keyword_density": 4.73,
+      "internal_links": 83,
+      "images": 3,
+      "schema_types": 10,
+      "phone_mentions": 25
+    },
+    "blog/appliance-maintenance-schedule.html": {
+      "score": 89,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Title 71 chars (target: 50-60)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2761,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/appliance-repair-costs-toronto-2025.html": {
+      "score": 89,
+      "issues": [
+        "Keyword density 0.87% (target: 2.0-2.5%)",
+        "Title 61 chars (target: 50-60)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2764,
+      "keyword_density": 0.87,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/appliance-warranties-explained.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2756,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/best-appliance-brands-2025.html": {
+      "score": 89,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Title 65 chars (target: 50-60)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2761,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/buy-appliance-parts-toronto.html": {
+      "score": 89,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Title 45 chars (target: 50-60)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2759,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/buying-used-appliances-toronto.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2763,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/dishwasher-not-cleaning-solutions.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2762,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/diy-vs-professional-appliance-repair.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.80% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2761,
+      "keyword_density": 0.8,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/dryer-not-heating-troubleshooting.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2764,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/emergency-appliance-repair-fridge.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.80% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2763,
+      "keyword_density": 0.8,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 12
+    },
+    "blog/energy-efficient-appliances-worth-it.html": {
+      "score": 89,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Title 61 chars (target: 50-60)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2763,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/how-to-fix-refrigerator-not-cooling.html": {
+      "score": 84,
+      "issues": [
+        "Word count 3740 not optimal (2500-3000)",
+        "Keyword density 0.59% (target: 2.0-2.5%)",
+        "Title 65 chars (target: 50-60)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 3740,
+      "keyword_density": 0.59,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 12
+    },
+    "blog/oven-temperature-calibration-guide.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2758,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/prepare-appliances-winter-toronto.html": {
+      "score": 89,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Title 63 chars (target: 50-60)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2759,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/reliable-appliance-repair-gta.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.87% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2759,
+      "keyword_density": 0.87,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/repair-vs-replace-appliances.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2761,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/signs-appliance-needs-repair.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2758,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/spring-appliance-maintenance-gta.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2755,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/toronto-appliance-disposal-recycling.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.65% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2757,
+      "keyword_density": 0.65,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    },
+    "blog/washer-not-draining-solutions.html": {
+      "score": 92,
+      "issues": [
+        "Keyword density 0.60% (target: 2.0-2.5%)",
+        "Sections 0 (target: 6-12)"
+      ],
+      "word_count": 2988,
+      "keyword_density": 0.6,
+      "internal_links": 25,
+      "images": 5,
+      "schema_types": 3,
+      "phone_mentions": 11
+    }
+  }
+}

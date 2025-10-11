@@ -1,0 +1,81 @@
+{
+  "brands": [
+    {
+      "name": "Samsung",
+      "slug": "samsung",
+      "primary_color": "#1428A0",
+      "secondary_color": "#0C1F5B",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "Samsung Refrigerator Repair",
+          "description": "Fix ice maker issues, cooling problems, digital display errors, and Smart Hub connectivity issues in all Samsung fridge models."
+        },
+        {
+          "icon": "washer",
+          "title": "Samsung Washer Repair",
+          "description": "Resolve error codes, drainage problems, spinning issues, and Smart Control problems in Samsung washing machines."
+        },
+        {
+          "icon": "dryer",
+          "title": "Samsung Dryer Repair",
+          "description": "Fix heating issues, moisture sensor problems, and lint buildup in all Samsung dryer models including FlexDry."
+        },
+        {
+          "icon": "dishwasher",
+          "title": "Samsung Dishwasher Repair",
+          "description": "Repair cleaning issues, water leaks, and control panel problems in Samsung dishwashers with WaterWall technology."
+        },
+        {
+          "icon": "range",
+          "title": "Samsung Range Repair",
+          "description": "Service gas and electric ranges, including Smart Dial controls, convection issues, and self-cleaning problems."
+        },
+        {
+          "icon": "microwave",
+          "title": "Samsung Microwave Repair",
+          "description": "Fix heating problems, turntable issues, and sensor cooking malfunctions in over-the-range and countertop models."
+        }
+      ],
+      "common_problems": [
+        "Ice maker not working or making hollow ice cubes",
+        "Refrigerator not cooling but freezer works fine",
+        "Washer showing UE, DC, or ND error codes",
+        "Dryer not heating or taking too long to dry",
+        "Dishwasher leaving spots or not cleaning properly",
+        "Range burners not heating evenly"
+      ],
+      "popular_models": [
+        "RF28R7351SR French Door Refrigerator",
+        "WF45R6300AV Front Load Washer",
+        "DVE45R6300V Electric Dryer",
+        "DW80R9950UG Linear Wash Dishwasher",
+        "NE63A6711SS Electric Range",
+        "ME21M706BAS Over-the-Range Microwave"
+      ]
+    },
+    {
+      "name": "LG",
+      "slug": "lg",
+      "primary_color": "#A50034",
+      "secondary_color": "#6B0020",
+      "services": [
+        {
+          "icon": "refrigerator",
+          "title": "LG Refrigerator Repair",
+          "description": "Expert repair for Linear Compressor issues, ice maker problems, and InstaView door malfunctions."
+        },
+        {
+          "icon": "washer",
+          "title": "LG Washer Repair",
+          "description": "Fix OE, UE, and LE error codes, TurboWash problems, and Wi-Fi connectivity issues."
+        },
+        {
+          "icon": "dryer",
+          "title": "LG Dryer Repair",
+          "description": "Resolve heating problems, sensor dry issues, and TurboSteam malfunctions."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+/* ========================================
+   COLORFUL DESIGN UPDATE
+   Using all brand colors from context
+   ======================================== */
+
+/* Override Hero Background */
+.hero-section {
+    background: linear-gradient(135deg, #E3F2FD 0%, #FFF9C4 50%, #E8F5E9 100%);
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(33, 150, 243, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255, 214, 0, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 40% 20%, rgba(76, 175, 80, 0.1) 0%, transparent 40%);
+    z-index: 1;
+}
+
+/* Colorful Floating Shapes */
+.floating-shape {
+    opacity: 0.15;
+    filter: blur(2px);
+}
+
+/* Badge with gradient */
+.hero-badge {
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--orange) 100%);
+    color: var(--gray-900);
+    box-shadow: 0 4px 20px rgba(255, 214, 0, 0.3);
+}
+
+.badge-icon {
+    background: white;
+    color: var(--orange);
+}
+
+/* Title with multiple colors */
+.hero-title {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--primary-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--hot-pink) 0%, var(--purple) 100%) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Colorful appliance rotation */
+.appliance-item:nth-child(1) { color: var(--primary-blue); }
+.appliance-item:nth-child(2) { color: var(--bright-green); }
+.appliance-item:nth-child(3) { color: var(--hot-pink); }
+.appliance-item:nth-child(4) { color: var(--orange); }
+.appliance-item:nth-child(5) { color: var(--purple); }
+.appliance-item:nth-child(6) { color: var(--cyan); }
+
+/* Feature pills with different colors */
+.feature-pill:nth-child(1) .feature-icon { background: var(--bright-green); }
+.feature-pill:nth-child(2) .feature-icon { background: var(--primary-blue); }
+.feature-pill:nth-child(3) .feature-icon { background: var(--hot-pink); }
+
+/* Gradient buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--bright-green) 0%, var(--cyan) 100%);
+    box-shadow: 0 4px 20px rgba(76, 175, 80, 0.4);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 8px 30px rgba(76, 175, 80, 0.5);
+}
+
+.btn-secondary {
+    background: white;
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(135deg, var(--primary-blue) 0%, var(--purple) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+/* Info cards with colors */
+.card-1 .card-icon {
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--orange) 100%);
+}
+
+.card-2 .card-icon {
+    background: linear-gradient(135deg, var(--hot-pink) 0%, var(--purple) 100%);
+}
+
+.card-3 .card-icon {
+    background: linear-gradient(135deg, var(--bright-green) 0%, var(--cyan) 100%);
+}
+
+/* Trust stats colors */
+.trust-stat:nth-child(1) .trust-number { color: var(--primary-blue); }
+.trust-stat:nth-child(2) .trust-number { color: var(--bright-green); }
+.trust-stat:nth-child(3) .trust-number { color: var(--hot-pink); }
+
+/* Trust bar with gradient backgrounds */
+.trust-item:nth-child(1) .trust-icon {
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--orange) 100%);
+}
+
+.trust-item:nth-child(2) .trust-icon {
+    background: linear-gradient(135deg, var(--hot-pink) 0%, var(--purple) 100%);
+}
+
+.trust-item:nth-child(3) .trust-icon {
+    background: linear-gradient(135deg, var(--bright-green) 0%, var(--cyan) 100%);
+}
+
+.trust-item:nth-child(4) .trust-icon {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark) 100%);
+}
+
+/* Service cards with colorful hover */
+.service-card:nth-child(1):hover { background: linear-gradient(135deg, rgba(33, 150, 243, 0.1) 0%, rgba(0, 188, 212, 0.1) 100%); }
+.service-card:nth-child(2):hover { background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(255, 214, 0, 0.1) 100%); }
+.service-card:nth-child(3):hover { background: linear-gradient(135deg, rgba(233, 30, 99, 0.1) 0%, rgba(255, 107, 53, 0.1) 100%); }
+.service-card:nth-child(4):hover { background: linear-gradient(135deg, rgba(123, 31, 162, 0.1) 0%, rgba(33, 150, 243, 0.1) 100%); }
+.service-card:nth-child(5):hover { background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 214, 0, 0.1) 100%); }
+.service-card:nth-child(6):hover { background: linear-gradient(135deg, rgba(0, 188, 212, 0.1) 0%, rgba(76, 175, 80, 0.1) 100%); }
+
+/* Service icons with colors */
+.service-card:nth-child(1) .service-icon { background: var(--primary-blue); color: white; font-size: 35px; }
+.service-card:nth-child(2) .service-icon { background: var(--bright-green); color: white; font-size: 35px; }
+.service-card:nth-child(3) .service-icon { background: var(--hot-pink); color: white; font-size: 35px; }
+.service-card:nth-child(4) .service-icon { background: var(--orange); color: white; font-size: 35px; }
+.service-card:nth-child(5) .service-icon { background: var(--purple); color: white; font-size: 35px; }
+.service-card:nth-child(6) .service-icon { background: var(--cyan); color: white; font-size: 35px; }
+
+/* How it works gradient background */
+.how-it-works {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.05) 0%, rgba(255, 214, 0, 0.05) 100%);
+}
+
+/* Step numbers with different colors */
+.step-card:nth-child(1) .step-number { background: var(--primary-blue); }
+.step-card:nth-child(2) .step-number { background: var(--bright-green); }
+.step-card:nth-child(3) .step-number { background: var(--hot-pink); }
+.step-card:nth-child(4) .step-number { background: var(--purple); }
+
+/* Step icons matching */
+.step-card:nth-child(1) .step-icon { color: var(--primary-blue); }
+.step-card:nth-child(2) .step-icon { color: var(--bright-green); }
+.step-card:nth-child(3) .step-icon { color: var(--hot-pink); }
+.step-card:nth-child(4) .step-icon { color: var(--purple); }
+
+/* Brands with hover colors */
+.brand-item:nth-child(1):hover { background: var(--primary-blue); }
+.brand-item:nth-child(2):hover { background: var(--bright-green); }
+.brand-item:nth-child(3):hover { background: var(--hot-pink); }
+.brand-item:nth-child(4):hover { background: var(--orange); }
+.brand-item:nth-child(5):hover { background: var(--purple); }
+.brand-item:nth-child(6):hover { background: var(--cyan); }
+.brand-item:nth-child(7):hover { background: var(--primary-yellow); color: var(--gray-900); }
+.brand-item:nth-child(8):hover { background: var(--dark); }
+.brand-item:nth-child(9):hover { background: linear-gradient(135deg, var(--primary-blue) 0%, var(--bright-green) 100%); }
+.brand-item:nth-child(10):hover { background: linear-gradient(135deg, var(--hot-pink) 0%, var(--purple) 100%); }
+.brand-item:nth-child(11):hover { background: linear-gradient(135deg, var(--orange) 0%, var(--primary-yellow) 100%); color: var(--gray-900); }
+.brand-item:nth-child(12):hover { background: linear-gradient(135deg, var(--cyan) 0%, var(--primary-blue) 100%); }
+
+/* Testimonials section with gradient */
+.testimonials-section {
+    background: linear-gradient(135deg, rgba(123, 31, 162, 0.05) 0%, rgba(0, 188, 212, 0.05) 100%);
+}
+
+/* FAQ items with colorful accents */
+.faq-item {
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.faq-item:nth-child(1) { border-left-color: var(--primary-blue); }
+.faq-item:nth-child(2) { border-left-color: var(--bright-green); }
+.faq-item:nth-child(3) { border-left-color: var(--hot-pink); }
+.faq-item:nth-child(4) { border-left-color: var(--orange); }
+.faq-item:nth-child(5) { border-left-color: var(--purple); }
+.faq-item:nth-child(6) { border-left-color: var(--cyan); }
+
+/* CTA section with vibrant gradient */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--purple) 50%, var(--hot-pink) 100%);
+}
+
+/* Footer with dark blue */
+.site-footer {
+    background: var(--dark);
+}
+
+/* Floating phone button */
+.floating-phone {
+    background: linear-gradient(135deg, var(--hot-pink) 0%, var(--orange) 100%);
+    animation: pulse-shadow 2s infinite;
+}
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 4px 20px rgba(233, 30, 99, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(233, 30, 99, 0.6);
+    }
+    100% {
+        box-shadow: 0 4px 20px rgba(233, 30, 99, 0.4);
+    }
+}
+
+/* Modal with gradient header */
+.modal-content h2 {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--bright-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Form inputs with colorful focus */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+/* Service preview icons */
+.service-preview {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+    backdrop-filter: blur(20px);
+}
+
+.service-icon:nth-child(1) { background: var(--primary-blue); color: white; }
+.service-icon:nth-child(2) { background: var(--bright-green); color: white; }
+.service-icon:nth-child(3) { background: var(--hot-pink); color: white; }
+.service-icon:nth-child(4) { background: var(--orange); color: white; }
+
+/* Make everything more vibrant and playful */
+.hero-wrapper {
+    filter: saturate(1.1);
+}
+
+/* Add rainbow animation to brand icon on hover */
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.brand-icon:hover {
+    background: linear-gradient(270deg, var(--primary-blue), var(--bright-green), var(--primary-yellow), var(--hot-pink), var(--purple), var(--cyan));
+    background-size: 600% 600%;
+    animation: rainbow 3s ease infinite;
+}

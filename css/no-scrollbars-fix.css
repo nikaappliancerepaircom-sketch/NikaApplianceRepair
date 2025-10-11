@@ -1,0 +1,327 @@
+/* ==========================================
+   NO SCROLLBARS FIX
+   Remove all unwanted scroll bars from elements
+   ========================================== */
+
+/* ==========================================
+   GLOBAL SCROLLBAR FIX
+   ========================================== */
+
+/* Hide scrollbars on ALL elements except body and specific containers */
+*:not(body):not(html):not(.areas-grid):not(textarea) {
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+/* Only body and html can have scroll */
+html {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+/* ==========================================
+   COUNTDOWN TIMER - NO SCROLL
+   ========================================== */
+
+.countdown-timer,
+.timer-box,
+.timer-value,
+.timer-label {
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+/* Force countdown to not create scrollbars */
+.countdown-section {
+    overflow: visible !important;
+}
+
+.countdown-section * {
+    overflow: visible !important;
+}
+
+/* ==========================================
+   BRAND LOGOS - NO SCROLL
+   ========================================== */
+
+.logo-item,
+.brand-logo,
+.brand-logos-showcase,
+.brand-logos-section {
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+/* ==========================================
+   TEXT ELEMENTS - NO SCROLL
+   ========================================== */
+
+h1, h2, h3, h4, h5, h6,
+p, span, div, a,
+.hero-title,
+.section-title,
+.section-subtitle {
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+/* ==========================================
+   CARDS - NO SCROLL
+   ========================================== */
+
+.service-card,
+.benefit-card,
+.testimonial-card,
+.area-item,
+.faq-item {
+    overflow: visible !important;
+}
+
+/* ==========================================
+   BUTTONS - NO SCROLL
+   ========================================== */
+
+button,
+.cta-primary,
+.cta-secondary,
+.submit-btn,
+.call-btn,
+.book-btn {
+    overflow: visible !important;
+}
+
+/* ==========================================
+   GRIDS - NO SCROLL (except areas)
+   ========================================== */
+
+.services-grid,
+.benefits-grid,
+.testimonials-grid,
+.testimonials-modern-grid,
+.brand-logos-showcase,
+.booking-content,
+.footer-content {
+    overflow: visible !important;
+}
+
+/* Areas grid can scroll horizontally on mobile if needed */
+.areas-grid {
+    overflow: visible !important;
+}
+
+@media (max-width: 767px) {
+    .areas-grid {
+        overflow: visible !important;
+    }
+}
+
+/* ==========================================
+   CONTAINERS - NO SCROLL
+   ========================================== */
+
+.container,
+section,
+header,
+footer,
+nav {
+    overflow: visible !important;
+}
+
+/* Hero section needs visible overflow for floating icons */
+.hero-section,
+.hero-content,
+.hero-text,
+.hero-image {
+    overflow: visible !important;
+}
+
+/* ==========================================
+   SPECIAL ELEMENTS THAT NEED HIDDEN OVERFLOW
+   ========================================== */
+
+/* Video wrappers must hide overflow */
+.video-wrapper,
+.testimonial-video-wrapper,
+.modern-video-card .video-wrapper {
+    overflow: hidden !important;
+}
+
+/* Images should not overflow */
+img {
+    overflow: hidden !important;
+}
+
+/* Iframes should not create scroll */
+iframe {
+    overflow: hidden !important;
+}
+
+/* ==========================================
+   HIDE SCROLLBARS VISUALLY
+   ========================================== */
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+    display: none !important;
+}
+
+*::-webkit-scrollbar-track {
+    display: none !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    display: none !important;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: none !important;
+}
+
+/* IE and Edge Legacy */
+* {
+    -ms-overflow-style: none !important;
+}
+
+/* ==========================================
+   EXCEPTION: Allow scroll on body/html only
+   ========================================== */
+
+html::-webkit-scrollbar {
+    width: 12px !important;
+    display: block !important;
+}
+
+html::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+    display: block !important;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #888 !important;
+    border-radius: 6px !important;
+    display: block !important;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #555 !important;
+}
+
+body::-webkit-scrollbar {
+    width: 12px !important;
+    display: block !important;
+}
+
+/* ==========================================
+   TABLE OVERFLOW FIX
+   ========================================== */
+
+table {
+    overflow: visible !important;
+}
+
+/* On mobile, tables can scroll horizontally */
+@media (max-width: 767px) {
+    table {
+        display: block !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+}
+
+/* ==========================================
+   FORM ELEMENTS - NO SCROLL
+   ========================================== */
+
+input,
+select,
+button {
+    overflow: visible !important;
+}
+
+/* Textarea can have scroll */
+textarea {
+    overflow: auto !important;
+    resize: vertical !important;
+}
+
+/* ==========================================
+   SPECIFIC FIXES FOR PROBLEM ELEMENTS
+   ========================================== */
+
+/* Fix for Fisher & Paykel and other brand names */
+.logo-item,
+.brand-logo,
+.brand-name {
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: normal !important;
+}
+
+/* Fix for hero title text */
+.hero-title,
+.wow-text {
+    overflow: visible !important;
+    text-overflow: clip !important;
+}
+
+/* Fix for countdown boxes */
+.timer-box {
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.timer-value,
+.timer-label {
+    overflow: visible !important;
+    text-overflow: clip !important;
+}
+
+/* ==========================================
+   MOBILE SPECIFIC FIXES
+   ========================================== */
+
+@media (max-width: 767px) {
+    /* Remove all scrollbars except body */
+    * {
+        overflow: visible !important;
+    }
+
+    html, body {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+
+    /* Video wrappers still need hidden */
+    .video-wrapper,
+    .testimonial-video-wrapper {
+        overflow: hidden !important;
+    }
+
+    /* Textarea can scroll */
+    textarea {
+        overflow: auto !important;
+    }
+}
+
+/* ==========================================
+   PREVENT CONTENT SHIFT FROM SCROLLBAR
+   ========================================== */
+
+html {
+    scrollbar-gutter: stable !important;
+}
