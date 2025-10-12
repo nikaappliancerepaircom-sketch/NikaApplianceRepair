@@ -233,9 +233,20 @@
     <link rel="stylesheet" href="../css/responsive-comprehensive.css">
     <link rel="stylesheet" href="../css/desktop-tablet-optimization.css">
     <link rel="stylesheet" href="../css/mobile-strict-fix.css">
+    <!-- Mobile BMAD Typography & Buttons -->
+    <link rel="stylesheet" href="../css/mobile-bmad-typography.css">
+    <!-- Lighthouse Accessibility & Performance Fixes -->
+    <link rel="stylesheet" href="../css/lighthouse-fixes.css">
+    <!-- YouTube Facade (Lazy Loading) -->
+    <link rel="stylesheet" href="../css/youtube-facade.css">
+    <!-- Mobile Overflow & Centering Fix -->
+    <link rel="stylesheet" href="../css/mobile-overflow-fix.css">
     <link rel="stylesheet" href="../css/no-scrollbars-fix.css">
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
     <!-- Header -->
     <header class="main-header">
         <div class="container">
@@ -266,7 +277,7 @@
                     </a>
                     <a href="#book" class="book-btn">Book Service</a>
                 </div>
-                <button class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -287,7 +298,7 @@
     </nav>
 
     <!-- Hero Section with Animated Background -->
-    <section class="hero-section">
+    <section class="hero-section" id="main-content">
         <div class="hero-bg-animation">
             <!-- Refrigerator Icon -->
             <div class="floating-icon icon-1">
@@ -1274,7 +1285,8 @@
         this.style.transform = 'scale(1)';
     });
     </script>
-    <script src="../js/main.js"></script>
-    <script src="../js/countdown-timer.js"></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/countdown-timer.js" defer></script>
+    <script src="../js/youtube-facade.js" defer></script>
 </body>
 </html>
