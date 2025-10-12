@@ -1587,7 +1587,7 @@ a {
 /* Footer */
 .main-footer {
     background: var(--primary-blue);
-    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+    background: linear-gradient(135deg, #1976D2 0%, #2196F3 50%, #1565C0 100%);
     color: var(--white);
     padding: 3rem 0 1rem;
     position: relative;
