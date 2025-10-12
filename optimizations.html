@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageSpeed Optimizations Tracker - Nika Appliance Repair</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px 40px;
+            background: #f8f9fa;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-card .label {
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .optimization-list {
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .optimization-list h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .optimization-list ul {
+            list-style: none;
+        }
+
+        .optimization-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .optimization-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .status-complete {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .page-type {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .type-home {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .type-service {
+            background: #f3e5f5;
+            color: #6a1b9a;
+        }
+
+        .type-location {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .filter-buttons {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .score {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .score-high {
+            color: #28a745;
+        }
+
+        .score-medium {
+            color: #ffc107;
+        }
+
+        .score-low {
+            color: #dc3545;
+        }
+
+        .timestamp {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 0.9rem;
+            background: #f8f9fa;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 PageSpeed Optimizations Tracker</h1>
+            <p>Comprehensive optimization log for all pages | Nika Appliance Repair</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number">40</div>
+                <div class="label">Total Pages</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">40</div>
+                <div class="label">Optimized</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">89+</div>
+                <div class="label">Target Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">100%</div>
+                <div class="label">Completion</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Applied Optimizations</h2>
+
+            <div class="optimization-list">
+                <h3>📱 Mobile & Performance</h3>
+                <ul>
+                    <li>Mobile BMAD Typography & Buttons (mobile-bmad-typography.css)</li>
+                    <li>Mobile Overflow & Centering Fix (mobile-overflow-fix.css)</li>
+                    <li>YouTube Facade for Lazy Loading (youtube-facade.css)</li>
+                    <li>JavaScript defer attributes (main.js, countdown-timer.js)</li>
+                </ul>
+            </div>
+
+            <div class="optimization-list">
+                <h3>♿ Accessibility & Best Practices</h3>
+                <ul>
+                    <li>Lighthouse Accessibility Fixes (lighthouse-fixes.css)</li>
+                    <li>FINAL Overflow Fix - Deprecated API Fix (final-overflow-fix.css)</li>
+                    <li>ARIA labels on mobile menu buttons (aria-label="Toggle mobile menu")</li>
+                    <li>Screen reader only labels for form inputs (sr-only class)</li>
+                    <li>Skip to content navigation links (skip-to-content)</li>
+                    <li>Main content landmarks (id="main-content")</li>
+                </ul>
+            </div>
+
+            <div class="optimization-list">
+                <h3>🔗 SEO & Internal Linking</h3>
+                <ul>
+                    <li>Fixed header navigation to point to homepage sections (/#services, /#about, etc)</li>
+                    <li>Corrected footer service links across all pages</li>
+                    <li>Fixed logo links to homepage (/)</li>
+                    <li>Proper anchor navigation structure</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Pages Optimization Status</h2>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterPages('all')">All Pages</button>
+                <button class="filter-btn" onclick="filterPages('home')">Homepage</button>
+                <button class="filter-btn" onclick="filterPages('service')">Services</button>
+                <button class="filter-btn" onclick="filterPages('location')">Locations</button>
+            </div>
+
+            <table id="optimizationsTable">
+                <thead>
+                    <tr>
+                        <th>Page Type</th>
+                        <th>Page URL</th>
+                        <th>Expected Score</th>
+                        <th>Optimizations Applied</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- HOMEPAGE -->
+                    <tr data-type="home">
+                        <td><span class="page-type type-home">Home</span></td>
+                        <td><a href="/" target="_blank">/</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+
+                    <!-- SERVICE PAGES -->
+                    <tr data-type="service">
+                        <td><span class="page-type type-service">Service</span></td>
+                        <td><a href="/services/refrigerator-repair.html" target="_blank">/services/refrigerator-repair.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="service">
+                        <td><span class="page-type type-service">Service</span></td>
+                        <td><a href="/services/dishwasher-repair.html" target="_blank">/services/dishwasher-repair.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="service">
+                        <td><span class="page-type type-service">Service</span></td>
+                        <td><a href="/services/washer-repair.html" target="_blank">/services/washer-repair.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="service">
+                        <td><span class="page-type type-service">Service</span></td>
+                        <td><a href="/services/dryer-repair.html" target="_blank">/services/dryer-repair.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="service">
+                        <td><span class="page-type type-service">Service</span></td>
+                        <td><a href="/services/oven-repair.html" target="_blank">/services/oven-repair.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="service">
+                        <td><span class="page-type type-service">Service</span></td>
+                        <td><a href="/services/stove-repair.html" target="_blank">/services/stove-repair.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="service">
+                        <td><span class="page-type type-service">Service</span></td>
+                        <td><a href="/services/microwave-repair.html" target="_blank">/services/microwave-repair.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="service">
+                        <td><span class="page-type type-service">Service</span></td>
+                        <td><a href="/services/freezer-repair.html" target="_blank">/services/freezer-repair.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="service">
+                        <td><span class="page-type type-service">Service</span></td>
+                        <td><a href="/services/range-repair.html" target="_blank">/services/range-repair.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+
+                    <!-- LOCATION PAGES -->
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/toronto.html" target="_blank">/locations/toronto.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/mississauga.html" target="_blank">/locations/mississauga.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/brampton.html" target="_blank">/locations/brampton.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/north-york.html" target="_blank">/locations/north-york.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/scarborough.html" target="_blank">/locations/scarborough.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/markham.html" target="_blank">/locations/markham.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/vaughan.html" target="_blank">/locations/vaughan.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/richmond-hill.html" target="_blank">/locations/richmond-hill.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/oakville.html" target="_blank">/locations/oakville.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/etobicoke.html" target="_blank">/locations/etobicoke.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/ajax.html" target="_blank">/locations/ajax.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/aurora.html" target="_blank">/locations/aurora.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/barrie.html" target="_blank">/locations/barrie.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/bolton.html" target="_blank">/locations/bolton.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/burlington.html" target="_blank">/locations/burlington.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/caledon.html" target="_blank">/locations/caledon.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/concord.html" target="_blank">/locations/concord.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/east-gwillimbury.html" target="_blank">/locations/east-gwillimbury.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/georgetown.html" target="_blank">/locations/georgetown.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/king-city.html" target="_blank">/locations/king-city.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/maple.html" target="_blank">/locations/maple.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/milton.html" target="_blank">/locations/milton.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/newmarket.html" target="_blank">/locations/newmarket.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/oshawa.html" target="_blank">/locations/oshawa.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/pickering.html" target="_blank">/locations/pickering.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/stouffville.html" target="_blank">/locations/stouffville.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/thornhill.html" target="_blank">/locations/thornhill.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/uxbridge.html" target="_blank">/locations/uxbridge.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/whitby.html" target="_blank">/locations/whitby.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                    <tr data-type="location">
+                        <td><span class="page-type type-location">Location</span></td>
+                        <td><a href="/locations/woodbridge.html" target="_blank">/locations/woodbridge.html</a></td>
+                        <td><span class="score score-high">89+</span></td>
+                        <td>All 10 optimizations</td>
+                        <td><span class="status-badge status-complete">Complete</span></td>
+                        <td>2025-10-12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="timestamp">
+            Last Updated: October 12, 2025 | Total Pages Optimized: 40/40 | Success Rate: 100%
+        </div>
+    </div>
+
+    <script>
+        function filterPages(type) {
+            const rows = document.querySelectorAll('#optimizationsTable tbody tr');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update button states
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter rows
+            rows.forEach(row => {
+                if (type === 'all') {
+                    row.style.display = '';
+                } else {
+                    const rowType = row.getAttribute('data-type');
+                    row.style.display = rowType === type ? '' : 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
