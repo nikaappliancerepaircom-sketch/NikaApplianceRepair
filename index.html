@@ -224,6 +224,8 @@
     <link rel="stylesheet" href="css/mobile-strict-fix.css">
     <!-- Mobile Overflow & Centering Fix -->
     <link rel="stylesheet" href="css/mobile-overflow-fix.css">
+    <!-- YouTube Facade (Lazy Loading) -->
+    <link rel="stylesheet" href="css/youtube-facade.css">
     <!-- No Scrollbars Fix (MUST BE LAST) -->
     <link rel="stylesheet" href="css/no-scrollbars-fix.css">
 </head>
@@ -617,7 +619,7 @@
                 <div class="about-left">
                     <div class="modern-video-card">
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/Nk1ab2OskJ4?start=2&modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3&disablekb=1&playsinline=1" title="Nick's Appliance Repair Story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="youtube-facade" data-video-id="Nk1ab2OskJ4" data-start-time="2"></div>
                         </div>
                         <div class="video-info">
                             <h3>Our Story</h3>
@@ -751,7 +753,7 @@
                 <!-- Testimonial 1 -->
                 <div class="testimonial-card">
                     <div class="testimonial-video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/vdL7LqIvzhs?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Nick's Appliance Repair - Brad's Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="youtube-facade" data-video-id="vdL7LqIvzhs"></div>
                     </div>
                     <div class="testimonial-content">
                         <div class="rating-stars">⭐⭐⭐⭐⭐</div>
@@ -762,7 +764,7 @@
                 <!-- Testimonial 2 -->
                 <div class="testimonial-card">
                     <div class="testimonial-video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/P0RYfb2D-wY?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Real Customer Review - Nick's Appliance Repair" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="youtube-facade" data-video-id="P0RYfb2D-wY"></div>
                     </div>
                     <div class="testimonial-content">
                         <div class="rating-stars">⭐⭐⭐⭐⭐</div>
@@ -773,7 +775,7 @@
                 <!-- Testimonial 3 -->
                 <div class="testimonial-card">
                     <div class="testimonial-video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/0ChLLYanSNY?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Nick's Appliance Repair Review" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="youtube-facade" data-video-id="0ChLLYanSNY"></div>
                     </div>
                     <div class="testimonial-content">
                         <div class="rating-stars">⭐⭐⭐⭐⭐</div>
@@ -787,7 +789,7 @@
                 <!-- Testimonial 4 -->
                 <div class="testimonial-card">
                     <div class="testimonial-video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/tca6jz3rJvA?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Nick's Appliance Repair Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="youtube-facade" data-video-id="tca6jz3rJvA"></div>
                     </div>
                     <div class="testimonial-content">
                         <div class="rating-stars">⭐⭐⭐⭐⭐</div>
@@ -798,7 +800,7 @@
                 <!-- Testimonial 5 -->
                 <div class="testimonial-card">
                     <div class="testimonial-video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/-u4mEmLB6gI?modestbranding=1&rel=0&showinfo=0&controls=1&fs=0&iv_load_policy=3" title="Nick's Appliance Repair Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="youtube-facade" data-video-id="-u4mEmLB6gI"></div>
                     </div>
                     <div class="testimonial-content">
                         <div class="rating-stars">⭐⭐⭐⭐⭐</div>
@@ -1188,6 +1190,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/youtube-facade.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/countdown-timer.js" defer></script>
 </body>

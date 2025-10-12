@@ -1,0 +1,140 @@
+/**
+ * YouTube Facade - Lightweight Lazy Loading
+ * Заменяет тяжелые YouTube iframes на легкие превью
+ * Загружает видео только при клике пользователя
+ */
+
+.youtube-facade {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background-color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.youtube-facade img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.youtube-facade:hover img {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Play Button */
+.youtube-facade::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    background-color: rgba(255, 0, 0, 0.9);
+    border-radius: 12px;
+    z-index: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.youtube-facade:hover::before {
+    background-color: rgba(255, 0, 0, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Play Triangle */
+.youtube-facade::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.youtube-facade:hover::after {
+    transform: translate(-40%, -50%) scale(1.1);
+}
+
+/* Active state - when iframe is loaded */
+.youtube-facade.youtube-facade--active {
+    cursor: default;
+}
+
+.youtube-facade.youtube-facade--active::before,
+.youtube-facade.youtube-facade--active::after {
+    display: none;
+}
+
+/* Iframe styles */
+.youtube-facade iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Loading state */
+.youtube-facade.youtube-facade--loading {
+    background: linear-gradient(
+        90deg,
+        #000 25%,
+        #333 50%,
+        #000 75%
+    );
+    background-size: 200% 100%;
+    animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .youtube-facade::before {
+        width: 56px;
+        height: 40px;
+    }
+
+    .youtube-facade::after {
+        border-left: 16px solid white;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+}
+
+@media (max-width: 480px) {
+    .youtube-facade::before {
+        width: 48px;
+        height: 34px;
+        border-radius: 8px;
+    }
+
+    .youtube-facade::after {
+        border-left: 14px solid white;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+    }
+}
