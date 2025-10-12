@@ -228,10 +228,15 @@
     <link rel="stylesheet" href="css/youtube-facade.css">
     <!-- Mobile BMAD Typography & Buttons -->
     <link rel="stylesheet" href="css/mobile-bmad-typography.css">
+    <!-- Lighthouse Accessibility & Performance Fixes -->
+    <link rel="stylesheet" href="css/lighthouse-fixes.css">
     <!-- No Scrollbars Fix (MUST BE LAST) -->
     <link rel="stylesheet" href="css/no-scrollbars-fix.css">
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
     <!-- Header -->
     <header class="main-header">
         <div class="container">
@@ -262,7 +267,7 @@
                     </a>
                     <a href="#book" class="book-btn">Book Service</a>
                 </div>
-                <button class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -272,7 +277,7 @@
     </header>
 
     <!-- Hero Section with Animated Background -->
-    <section class="hero-section">
+    <section class="hero-section" id="main-content">
         <div class="hero-bg-animation">
             <!-- Refrigerator Icon -->
             <div class="floating-icon icon-1">
@@ -931,12 +936,16 @@
                 <div class="booking-form">
                     <form>
                         <div class="form-row">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="tel" placeholder="Phone Number" required>
+                            <label for="customer-name" class="sr-only">Your Name</label>
+                            <input type="text" id="customer-name" name="name" placeholder="Your Name" required aria-label="Your Name">
+                            <label for="customer-phone" class="sr-only">Phone Number</label>
+                            <input type="tel" id="customer-phone" name="phone" placeholder="Phone Number" required aria-label="Phone Number">
                         </div>
                         <div class="form-row">
-                            <input type="email" placeholder="Email Address" required>
-                            <select required>
+                            <label for="customer-email" class="sr-only">Email Address</label>
+                            <input type="email" id="customer-email" name="email" placeholder="Email Address" required aria-label="Email Address">
+                            <label for="appliance-type" class="sr-only">Select Appliance Type</label>
+                            <select id="appliance-type" name="appliance-type" required aria-label="Select Appliance Type">
                                 <option value="">Select Appliance Type</option>
                                 <option value="refrigerator">Refrigerator</option>
                                 <option value="washer">Washing Machine</option>
@@ -947,10 +956,13 @@
                             </select>
                         </div>
                         <div class="form-row">
-                            <input type="text" placeholder="Your Address" required>
-                            <input type="text" placeholder="Postal Code" required>
+                            <label for="customer-address" class="sr-only">Your Address</label>
+                            <input type="text" id="customer-address" name="address" placeholder="Your Address" required aria-label="Your Address">
+                            <label for="customer-postal" class="sr-only">Postal Code</label>
+                            <input type="text" id="customer-postal" name="postal" placeholder="Postal Code" required aria-label="Postal Code">
                         </div>
-                        <textarea placeholder="Describe the issue..." rows="4"></textarea>
+                        <label for="issue-description" class="sr-only">Describe the issue</label>
+                        <textarea id="issue-description" name="description" placeholder="Describe the issue..." rows="4" aria-label="Describe the issue"></textarea>
                         <button type="submit" class="submit-btn">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
                                 <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>

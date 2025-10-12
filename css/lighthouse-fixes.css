@@ -1,0 +1,301 @@
+/**
+ * Lighthouse Accessibility & Performance Fixes
+ * Исправления для Best Practices, Accessibility и Performance
+ */
+
+/* ===== FIX 1: Remove deprecated overflow: visible on img ===== */
+/* Deprecated API - overflow на img, video, canvas вызывает warning */
+img,
+video,
+canvas {
+    overflow: clip !important; /* Современная альтернатива overflow: hidden */
+}
+
+/* ===== FIX 2: Better color contrast for stats/likes text ===== */
+/* Проблема: розовый текст "1.8K Likes" имеет низкий контраст */
+.stat-item.likes span,
+.video-stats .likes span {
+    color: #C2185B !important; /* Темнее розовый для лучшего контраста */
+    font-weight: 600 !important;
+}
+
+/* Whirlpool logo - улучшаем контраст */
+.logo-whirlpool {
+    color: #E69500 !important; /* Темнее золотой */
+    font-weight: 800 !important;
+}
+
+/* LG logo - улучшаем видимость */
+.logo-lg {
+    background: #D00042 !important; /* Немного темнее красный */
+}
+
+/* Все brand logos - лучший контраст */
+.logo-item {
+    color: #444 !important; /* Темнее серый по умолчанию */
+}
+
+/* ===== FIX 3: Accessibility improvements ===== */
+
+/* Mobile menu toggle - добавим aria-label через CSS content (визуально) */
+.mobile-menu-toggle {
+    position: relative;
+}
+
+/* Screen reader only text для mobile menu */
+.mobile-menu-toggle::before {
+    content: 'Mobile Menu Toggle';
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* ===== FIX 4: Form labels - визуально скрытые но доступные для screen readers ===== */
+
+/* Создадим визуально скрытый класс для labels */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+}
+
+/* ===== FIX 5: Focus indicators for accessibility ===== */
+
+/* Улучшенные focus states для keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #2196F3 !important;
+    outline-offset: 2px !important;
+    border-radius: 4px;
+}
+
+.faq-question:focus-visible {
+    outline: 3px solid #1A237E !important;
+    outline-offset: 2px !important;
+}
+
+/* ===== FIX 6: Button accessibility ===== */
+
+/* Все кнопки должны иметь указатель */
+button {
+    cursor: pointer;
+}
+
+/* Mobile menu toggle улучшения */
+.mobile-menu-toggle:hover {
+    opacity: 0.8;
+}
+
+.mobile-menu-toggle:focus {
+    outline: 2px solid #2196F3;
+    outline-offset: 4px;
+}
+
+/* ===== FIX 7: Link accessibility ===== */
+
+/* Links должны иметь подчеркивание при focus */
+a:focus-visible {
+    text-decoration: underline;
+}
+
+/* Exception для кнопок-ссылок */
+.cta-primary:focus-visible,
+.cta-secondary:focus-visible,
+.call-btn:focus-visible,
+.book-btn:focus-visible {
+    text-decoration: none;
+}
+
+/* ===== FIX 8: Improved tap targets on mobile ===== */
+
+@media (max-width: 768px) {
+    /* Ensure all interactive elements are at least 48x48px */
+    .area-item,
+    .logo-item,
+    .faq-question,
+    .footer-column a {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 16px;
+    }
+
+    /* Footer links spacing */
+    .footer-column li {
+        margin-bottom: 12px;
+    }
+
+    .footer-column a {
+        display: inline-block;
+        padding: 8px 0;
+        min-height: 44px;
+        line-height: 1.6;
+    }
+}
+
+/* ===== FIX 9: Video stats better contrast ===== */
+
+.video-stats {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-stats .stat-item {
+    color: #333 !important;
+}
+
+.video-stats .stat-item svg {
+    fill: #666;
+}
+
+.video-stats .likes svg {
+    fill: #C2185B !important;
+}
+
+.video-stats .views svg {
+    fill: #0288D1 !important;
+}
+
+/* ===== FIX 10: Ensure proper heading hierarchy ===== */
+
+/* Проблема решается структурно в HTML, но добавим визуальные подсказки */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* ===== FIX 11: Skip to content link (accessibility best practice) ===== */
+
+.skip-to-content {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 10000;
+    padding: 1rem 2rem;
+    background: #2196F3;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: top 0.3s ease;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* ===== FIX 12: Improved form accessibility ===== */
+
+/* Placeholder не заменяет label - добавим визуальные лейблы */
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+input[type="tel"]:focus::placeholder,
+select:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0.5;
+}
+
+/* ===== FIX 13: Better error states ===== */
+
+input:invalid:not(:placeholder-shown),
+select:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border-color: #DC2626 !important;
+    background-color: #FEE2E2 !important;
+}
+
+input:valid:not(:placeholder-shown),
+select:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
+    border-color: #059669 !important;
+}
+
+/* ===== FIX 14: Print styles (accessibility & performance) ===== */
+
+@media print {
+    /* Скрыть ненужное при печати */
+    .hero-bg-animation,
+    .floating-icon,
+    .mobile-menu-toggle,
+    .countdown-section,
+    video,
+    iframe {
+        display: none !important;
+    }
+
+    /* Оптимизация для печати */
+    * {
+        background: white !important;
+        color: black !important;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+}
+
+/* ===== FIX 15: Reduced motion preference ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .floating-icon {
+        animation: none !important;
+    }
+
+    .wow-text {
+        animation: none !important;
+    }
+}
+
+/* ===== FIX 16: Dark mode support (accessibility) ===== */
+
+@media (prefers-color-scheme: dark) {
+    /* Не меняем дизайн, но улучшаем контраст для dark mode */
+    .logo-item {
+        background: #2D2D2D !important;
+        color: #E0E0E0 !important;
+    }
+}
+
+/* ===== FIX 17: High contrast mode support ===== */
+
+@media (prefers-contrast: high) {
+    button,
+    a,
+    input,
+    select,
+    textarea {
+        border: 2px solid currentColor !important;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        border: 3px solid white !important;
+    }
+}
