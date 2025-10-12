@@ -1,0 +1,443 @@
+/**
+ * Mobile BMAD Typography & Button Standards
+ * Best Mobile Adaptive Design - оптимальные размеры для мобильных устройств
+ *
+ * Стандарты:
+ * - Минимальный размер тапабельных элементов: 44x44px (Apple) / 48x48px (Google)
+ * - Удобочитаемый текст: минимум 16px для body
+ * - Чёткая иерархия заголовков
+ * - Комфортный межстрочный интервал
+ */
+
+/* ===== МОБИЛЬНЫЕ УСТРОЙСТВА (до 768px) ===== */
+@media (max-width: 768px) {
+
+    /* ========== ЗАГОЛОВКИ ========== */
+
+    /* H1 - Главные заголовки страниц */
+    h1,
+    .hero-title,
+    .section-title {
+        font-size: 2rem !important; /* 32px */
+        line-height: 1.25 !important;
+        margin-bottom: 1rem !important;
+        font-weight: 700 !important;
+    }
+
+    /* Hero WOW текст - немного больше для акцента */
+    .wow-text {
+        font-size: 2.5rem !important; /* 40px */
+        line-height: 1.1 !important;
+    }
+
+    /* H2 - Заголовки секций */
+    h2,
+    .section-title,
+    .section-title-light,
+    .countdown-title {
+        font-size: 1.75rem !important; /* 28px */
+        line-height: 1.3 !important;
+        margin-bottom: 1rem !important;
+        font-weight: 700 !important;
+    }
+
+    /* H3 - Подзаголовки карточек */
+    h3,
+    .service-card h3,
+    .benefit-card h3,
+    .area-feature h3 {
+        font-size: 1.25rem !important; /* 20px */
+        line-height: 1.4 !important;
+        margin-bottom: 0.75rem !important;
+        font-weight: 600 !important;
+    }
+
+    /* H4 - Мелкие заголовки */
+    h4 {
+        font-size: 1.125rem !important; /* 18px */
+        line-height: 1.4 !important;
+        font-weight: 600 !important;
+    }
+
+    /* ========== BODY TEXT ========== */
+
+    /* Основной текст - минимум 16px для читаемости */
+    body,
+    p,
+    .section-subtitle,
+    .hero-subtitle {
+        font-size: 1rem !important; /* 16px */
+        line-height: 1.6 !important;
+    }
+
+    /* Мелкий текст - не меньше 14px */
+    small,
+    .timer-label,
+    .countdown-label,
+    .stat-label {
+        font-size: 0.875rem !important; /* 14px */
+        line-height: 1.5 !important;
+    }
+
+    /* ========== КНОПКИ - PRIMARY ========== */
+
+    /* Основные CTA кнопки */
+    .cta-primary,
+    .cta-secondary,
+    .countdown-cta,
+    .submit-btn {
+        min-height: 52px !important; /* Выше минимума 48px для комфорта */
+        font-size: 1rem !important; /* 16px - оптимально */
+        padding: 14px 28px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        border-radius: 50px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.5rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Иконки в кнопках */
+    .cta-primary svg,
+    .cta-secondary svg,
+    .countdown-cta svg,
+    .submit-btn svg {
+        width: 20px !important;
+        height: 20px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* ========== КНОПКИ - HEADER ========== */
+
+    /* Кнопки в хедере (Call, Book) */
+    .call-btn,
+    .book-btn {
+        min-height: 48px !important;
+        font-size: 0.9375rem !important; /* 15px */
+        padding: 12px 20px !important;
+        font-weight: 700 !important;
+    }
+
+    /* Кнопки в хедере - иконки */
+    .call-btn svg,
+    .book-btn svg {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    /* ========== КНОПКИ - LARGE VARIANTS ========== */
+
+    /* Крупные телефонные кнопки */
+    .call-btn-large,
+    .cta-call-modern {
+        min-height: 56px !important; /* Больше для важных действий */
+        font-size: 1.125rem !important; /* 18px */
+        padding: 16px 32px !important;
+        font-weight: 700 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.75rem !important;
+    }
+
+    /* ========== ТАЙМЕР ========== */
+
+    .timer-box {
+        min-width: 140px !important;
+        width: 100% !important;
+        max-width: 180px !important;
+        padding: 1.25rem 1.5rem !important;
+    }
+
+    .timer-value {
+        font-size: 2.5rem !important; /* 40px */
+        line-height: 1 !important;
+        font-weight: 700 !important;
+    }
+
+    .timer-label {
+        font-size: 0.75rem !important; /* 12px */
+        margin-top: 0.5rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    /* ========== КАРТОЧКИ СЕРВИСОВ ========== */
+
+    .service-card {
+        padding: 2rem 1.5rem !important;
+        text-align: center !important;
+    }
+
+    .service-card h3 {
+        font-size: 1.375rem !important; /* 22px - чуть больше для акцента */
+        margin-bottom: 0.75rem !important;
+    }
+
+    .service-card p {
+        font-size: 1rem !important; /* 16px */
+        line-height: 1.6 !important;
+    }
+
+    /* ========== КАРТОЧКИ BENEFITS ========== */
+
+    .benefit-card {
+        padding: 1.75rem 1.5rem !important;
+    }
+
+    .benefit-icon {
+        font-size: 2.5rem !important; /* 40px */
+        margin-bottom: 1rem !important;
+    }
+
+    .benefit-card h3 {
+        font-size: 1.25rem !important; /* 20px */
+        margin-bottom: 0.75rem !important;
+    }
+
+    .benefit-card p {
+        font-size: 0.9375rem !important; /* 15px */
+        line-height: 1.6 !important;
+    }
+
+    /* ========== AREAS GRID ========== */
+
+    .area-item {
+        font-size: 0.9375rem !important; /* 15px */
+        padding: 0.875rem 1rem !important;
+        min-height: 48px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    /* ========== TESTIMONIALS ========== */
+
+    .testimonial-card {
+        padding: 1.5rem !important;
+    }
+
+    .testimonial-text {
+        font-size: 1rem !important; /* 16px */
+        line-height: 1.6 !important;
+    }
+
+    .rating-stars {
+        font-size: 1.25rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    /* ========== FAQ ========== */
+
+    .faq-question {
+        font-size: 1.0625rem !important; /* 17px */
+        padding: 1.25rem 1rem !important;
+        min-height: 52px !important;
+    }
+
+    .faq-answer {
+        font-size: 0.9375rem !important; /* 15px */
+        line-height: 1.7 !important;
+        padding: 0 1rem !important;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 1rem 1rem 1.5rem !important;
+    }
+
+    .faq-icon {
+        font-size: 1.5rem !important;
+        min-width: 28px !important;
+    }
+
+    /* ========== BRANDS LOGOS ========== */
+
+    .logo-item {
+        font-size: 0.9375rem !important; /* 15px */
+        padding: 0.875rem 0.75rem !important;
+        min-height: 56px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* ========== BOOKING FORM ========== */
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+        font-size: 1rem !important; /* 16px - предотвращает зум на iOS */
+        padding: 0.875rem 1rem !important;
+        min-height: 48px !important;
+    }
+
+    .info-box h3 {
+        font-size: 1.125rem !important; /* 18px */
+        margin-bottom: 0.75rem !important;
+    }
+
+    .info-box p {
+        font-size: 0.9375rem !important; /* 15px */
+        line-height: 1.6 !important;
+    }
+
+    /* ========== FOOTER ========== */
+
+    .footer-column h4 {
+        font-size: 1.125rem !important; /* 18px */
+        margin-bottom: 1rem !important;
+    }
+
+    .footer-column a,
+    .footer-column li {
+        font-size: 0.9375rem !important; /* 15px */
+        line-height: 1.8 !important;
+    }
+
+    .phone-link {
+        font-size: 1.25rem !important; /* 20px */
+        font-weight: 700 !important;
+    }
+
+    /* ========== STATS & NUMBERS ========== */
+
+    .stat-value,
+    .stat-number {
+        font-size: 2.5rem !important; /* 40px */
+        line-height: 1 !important;
+        font-weight: 700 !important;
+    }
+
+    .stat-text,
+    .stat-label {
+        font-size: 0.875rem !important; /* 14px */
+        margin-top: 0.5rem !important;
+    }
+
+    /* ========== COUNTER NUMBERS ========== */
+
+    .counter-number {
+        font-size: 2rem !important; /* 32px */
+        font-weight: 700 !important;
+    }
+}
+
+/* ===== ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (до 480px) ===== */
+@media (max-width: 480px) {
+
+    /* Немного уменьшаем для совсем маленьких экранов */
+    h1,
+    .hero-title {
+        font-size: 1.75rem !important; /* 28px */
+    }
+
+    .wow-text {
+        font-size: 2.25rem !important; /* 36px */
+    }
+
+    h2,
+    .section-title {
+        font-size: 1.5rem !important; /* 24px */
+    }
+
+    h3 {
+        font-size: 1.125rem !important; /* 18px */
+    }
+
+    /* Кнопки остаются читаемыми */
+    .cta-primary,
+    .cta-secondary,
+    .countdown-cta {
+        font-size: 0.9375rem !important; /* 15px */
+        padding: 12px 24px !important;
+        min-height: 50px !important;
+    }
+
+    /* Таймер компактнее */
+    .timer-value {
+        font-size: 2.25rem !important; /* 36px */
+    }
+
+    .timer-box {
+        max-width: 160px !important;
+        padding: 1rem 1.25rem !important;
+    }
+}
+
+/* ===== LANDSCAPE ORIENTATION (мобильный в горизонтальном режиме) ===== */
+@media (max-width: 768px) and (orientation: landscape) {
+
+    /* Уменьшаем вертикальные отступы в landscape */
+    .cta-primary,
+    .cta-secondary,
+    .countdown-cta {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        min-height: 44px !important;
+    }
+
+    h1,
+    .hero-title {
+        font-size: 1.75rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    h2,
+    .section-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+/* Увеличение для пользователей с плохим зрением */
+@media (prefers-contrast: high) {
+    @media (max-width: 768px) {
+        body,
+        p {
+            font-size: 1.0625rem !important; /* 17px */
+        }
+
+        .cta-primary,
+        .cta-secondary {
+            font-size: 1.0625rem !important; /* 17px */
+        }
+    }
+}
+
+/* ===== TOUCH TARGET SIZE ===== */
+@media (max-width: 768px) {
+
+    /* Все интерактивные элементы минимум 44x44px */
+    a,
+    button,
+    input[type="submit"],
+    input[type="button"],
+    .cta-primary,
+    .cta-secondary,
+    .call-btn,
+    .book-btn,
+    .area-item,
+    .faq-question {
+        min-height: 48px !important;
+        min-width: 48px !important;
+        touch-action: manipulation !important; /* Предотвращает двойное нажатие для зума */
+    }
+
+    /* Links в футере и навигации */
+    .footer-column a,
+    .main-nav a {
+        min-height: 44px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        padding: 0.5rem 0 !important;
+    }
+}
