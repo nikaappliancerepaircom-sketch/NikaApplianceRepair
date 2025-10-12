@@ -100,126 +100,16 @@
     opacity: 1;
 }
 
-/* Brand Name Text */
+/* Brand Name Text - Simplified White Text Only */
 .brand-name-premium {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.1rem;
     color: white;
     position: relative;
     z-index: 1;
     text-align: center;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Individual Brand Styles */
-.brand-logo-card.logo-whirlpool .brand-name-premium {
-    font-style: italic;
-    color: #FFD600;
-}
-
-.brand-logo-card.logo-viking .brand-name-premium {
-    letter-spacing: 2px;
-    color: #FFE082;
-}
-
-.brand-logo-card.logo-samsung .brand-name-premium {
-    letter-spacing: 3px;
-    color: white;
-}
-
-.brand-logo-card.logo-ge .brand-name-premium {
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-
-.brand-logo-card.logo-frigidaire .brand-name-premium {
-    color: #FFCDD2;
-}
-
-.brand-logo-card.logo-fisher .brand-name-premium {
-    font-size: 0.9rem;
-}
-
-.brand-logo-card.logo-maytag .brand-name-premium {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-}
-
-.brand-logo-card.logo-lg .brand-name-premium {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-}
-
-.brand-logo-card.logo-kitchenaid .brand-name-premium {
-    font-style: italic;
-    color: #FFCDD2;
-}
-
-.brand-logo-card.logo-electrolux .brand-name-premium {
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-.brand-logo-card.logo-dacor .brand-name-premium {
-    font-weight: 300;
-    letter-spacing: 3px;
-}
-
-.brand-logo-card.logo-bosch .brand-name-premium {
-    color: #FFCDD2;
-    letter-spacing: 1px;
-}
-
-.brand-logo-card.logo-kenmore .brand-name-premium {
-    font-weight: 700;
-}
-
-.brand-logo-card.logo-jennair .brand-name-premium {
-    letter-spacing: 2px;
-    font-weight: 300;
-}
-
-.brand-logo-card.logo-inglis .brand-name-premium {
-    font-weight: 700;
-    font-style: italic;
-    color: #FFCDD2;
-}
-
-.brand-logo-card.logo-blomberg .brand-name-premium {
-    font-weight: 700;
-    color: #FFCDD2;
-}
-
-.brand-logo-card.logo-bertazzoni .brand-name-premium {
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    color: #FFD54F;
-}
-
-.brand-logo-card.logo-amana .brand-name-premium {
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #FFCDD2;
-}
-
-.brand-logo-card.logo-hotpoint .brand-name-premium {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 0.5rem 1.5rem;
-    font-weight: 500;
-}
-
-.brand-logo-card.logo-hobart .brand-name-premium {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0.5rem 1.5rem;
-    font-weight: 700;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
 }
 
 /* Trust Badge CTA */
