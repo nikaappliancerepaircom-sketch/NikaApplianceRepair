@@ -1,0 +1,107 @@
+/**
+ * FINAL OVERFLOW FIX - MUST BE LOADED LAST
+ * Исправляет deprecated API warning для overflow: visible на img/video/canvas
+ * Этот файл загружается после всех остальных CSS и имеет финальное слово
+ */
+
+/* ===== CRITICAL: Deprecated API Fix ===== */
+/* GitHub WICG shared-element-transitions требует overflow: clip вместо visible */
+
+/* Максимальная специфичность для переопределения ЛЮБЫХ других правил */
+html body *:is(img, video, canvas),
+html body img,
+html body video,
+html body canvas,
+body img,
+body video,
+body canvas,
+img,
+video,
+canvas {
+    overflow: clip !important;
+}
+
+/* Дополнительная защита - перебиваем любые классы и ID */
+[class] img,
+[class] video,
+[class] canvas,
+[id] img,
+[id] video,
+[id] canvas {
+    overflow: clip !important;
+}
+
+/* Специфичные селекторы для всех возможных контекстов */
+section img,
+section video,
+section canvas,
+div img,
+div video,
+div canvas,
+main img,
+main video,
+main canvas,
+article img,
+article video,
+article canvas,
+aside img,
+aside video,
+aside canvas,
+header img,
+header video,
+header canvas,
+footer img,
+footer video,
+footer canvas,
+nav img,
+nav video,
+nav canvas {
+    overflow: clip !important;
+}
+
+/* Hero и другие специфичные секции */
+.hero-section img,
+.hero-section video,
+.hero-section canvas,
+.hero-image img,
+.service-icon img,
+.service-icon video,
+.service-icon canvas,
+.video-wrapper img,
+.video-wrapper video,
+.video-wrapper canvas {
+    overflow: clip !important;
+}
+
+/* Ensure it works even with inline styles */
+img[style*="overflow"],
+video[style*="overflow"],
+canvas[style*="overflow"] {
+    overflow: clip !important;
+}
+
+/* Special case for SVG images */
+img[src$=".svg"],
+img[src*=".svg?"],
+img[src*=".svg#"] {
+    overflow: clip !important;
+}
+
+/* Additional specificity boost using :where() and :is() */
+:where(img, video, canvas),
+:is(img, video, canvas) {
+    overflow: clip !important;
+}
+
+/* Final catch-all with highest specificity */
+*:is(img):not([overflow="visible"]),
+*:is(video):not([overflow="visible"]),
+*:is(canvas):not([overflow="visible"]) {
+    overflow: clip !important;
+}
+
+/* ===== End of Deprecated API Fix ===== */
+
+/* Note: overflow: clip is the modern alternative to overflow: hidden */
+/* It prevents content from being painted outside the element bounds */
+/* without affecting scrolling behavior or creating scroll containers */

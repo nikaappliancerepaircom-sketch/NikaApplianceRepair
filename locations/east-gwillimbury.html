@@ -126,7 +126,7 @@
 <style>
         /* Green for all booking buttons */
         .countdown-cta,
-        [href="#book"],
+        [href="/#book"],
         [href*="booking"],
         .book-online,
         .schedule-service {
@@ -135,7 +135,7 @@
         }
         
         .countdown-cta:hover,
-        [href="#book"]:hover {
+        [href="/#book"]:hover {
             background: #16a34a !important;
         }
         
@@ -296,6 +296,16 @@
         padding: clamp(12px, 2vw, 18px) clamp(24px, 4vw, 36px) !important;
     }
     </style>
+    <!-- Mobile BMAD Typography & Buttons -->
+    <link rel="stylesheet" href="../css/mobile-bmad-typography.css">
+    <!-- Lighthouse Accessibility & Performance Fixes -->
+    <link rel="stylesheet" href="../css/lighthouse-fixes.css">
+    <!-- YouTube Facade (Lazy Loading) -->
+    <link rel="stylesheet" href="../css/youtube-facade.css">
+    <!-- Mobile Overflow & Centering Fix -->
+    <link rel="stylesheet" href="../css/mobile-overflow-fix.css">
+    <!-- FINAL Overflow Fix - Deprecated API Fix -->
+    <link rel="stylesheet" href="../css/final-overflow-fix.css">
 </head>
 <body>
 <a class="skip-to-content" href="#main-content" style="
@@ -320,11 +330,11 @@
 </div>
 <nav class="main-nav">
 <ul>
-<li><a href="#services">Services</a></li>
-<li><a href="#about">About</a></li>
-<li class="has-dropdown"><a href="#areas">Areas</a><ul class="dropdown-menu"><li><a href="../locations/ajax.html">Ajax</a></li><li><a href="../locations/aurora.html">Aurora</a></li><li><a href="../locations/barrie.html">Barrie</a></li><li><a href="../locations/bolton.html">Bolton</a></li><li><a href="../locations/brampton.html">Brampton</a></li><li><a href="../locations/burlington.html">Burlington</a></li><li><a href="../locations/etobicoke.html">Etobicoke</a></li><li><a href="../locations/markham.html">Markham</a></li></ul></li>
+<li><a href="/#services">Services</a></li>
+<li><a href="/#about">About</a></li>
+<li class="has-dropdown"><a href="/#areas">Areas</a><ul class="dropdown-menu"><li><a href="../locations/ajax.html">Ajax</a></li><li><a href="../locations/aurora.html">Aurora</a></li><li><a href="../locations/barrie.html">Barrie</a></li><li><a href="../locations/bolton.html">Bolton</a></li><li><a href="../locations/brampton.html">Brampton</a></li><li><a href="../locations/burlington.html">Burlington</a></li><li><a href="../locations/etobicoke.html">Etobicoke</a></li><li><a href="../locations/markham.html">Markham</a></li></ul></li>
 <li class="has-dropdown">
-<a href="#brands">Brands</a>
+<a href="/#brands">Brands</a>
 <ul class="dropdown-menu">
 <li><a href="/brands/lg-appliance-repair-toronto.html">LG</a></li>
 <li><a href="/brands/samsung-appliance-repair.html">Samsung</a></li>
@@ -332,7 +342,7 @@
 <li><a href="/brands/ge-appliance-repair.html">GE</a></li>
 </ul>
 </li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="/#contact">Contact</a></li>
 </ul>
 </nav>
 <div class="header-cta">
@@ -346,7 +356,7 @@
 </svg>
                         437-747-6737
                     </a>
-<a aria-label="Book Service" class="book-btn" href="#book">Book Service</a>
+<a aria-label="Book Service" class="book-btn" href="/#book">Book Service</a>
 </div>
 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
 <span></span>
@@ -357,7 +367,7 @@
 </div>
 </header>
 <!-- Hero Section with Animated Background -->
-<section aria-label="Hero banner" class="hero-section">
+<section aria-label="Hero banner" class="hero-section" id="main-content">
 <div class="hero-bg-animation">
 <!-- Refrigerator Icon -->
 <div class="floating-icon icon-1">
@@ -438,7 +448,7 @@ Fast, reliable appliance service service: We provide same-day repair for refrige
 
 
 <div class="hero-cta-group">
-<a aria-label="Book Service Now" class="cta-primary" href="#book">
+<a aria-label="Book Service Now" class="cta-primary" href="/#book">
 <svg fill="white" height="24" viewbox="0 0 24 24" width="24">
 <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"></path>
 </svg>
@@ -471,7 +481,7 @@ Fast, reliable appliance service service: We provide same-day repair for refrige
 <div class="timer-label">SECONDS</div>
 </div>
 </div>
-<a aria-label="CLICK TO BOOK DIAGNOSTIC NOW" class="countdown-cta" href="#book">
+<a aria-label="CLICK TO BOOK DIAGNOSTIC NOW" class="countdown-cta" href="/#book">
 <svg fill="white" height="24" viewbox="0 0 24 24" width="24">
 <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"></path>
 </svg>
@@ -629,7 +639,7 @@ Fast, reliable appliance service service: We provide same-day repair for refrige
 </div>
 </div>
 <div class="services-cta">
-<a aria-label="BOOK SERVICE NOW" class="cta-primary" href="#book">
+<a aria-label="BOOK SERVICE NOW" class="cta-primary" href="/#book">
 <svg fill="white" height="24" viewbox="0 0 24 24" width="24">
 <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"></path>
 </svg>
@@ -726,7 +736,7 @@ Fast, reliable appliance service service: We provide same-day repair for refrige
 </div>
 <div class="why-cta">
 <p class="cta-text">Experience the difference with Toronto's most trusted repair service</p>
-<a aria-label="SCHEDULE YOUR REPAIR TODAY" class="cta-primary" href="#book">
+<a aria-label="SCHEDULE YOUR REPAIR TODAY" class="cta-primary" href="/#book">
 <svg fill="white" height="20" viewbox="0 0 24 24" width="20">
 <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"></path>
 </svg>
@@ -1249,10 +1259,10 @@ Fast, reliable appliance service service: We provide same-day repair for refrige
 <div class="footer-column">
 <h4>Useful Links</h4>
 <ul>
-<li><a href="#about">Why Choose Us</a></li>
+<li><a href="/#about">Why Choose Us</a></li>
 <li><a href="#testimonials">Testimonials</a></li>
 <li><a href="#process">Working Process</a></li>
-<li><a href="#book">Online Booking</a></li>
+<li><a href="/#book">Online Booking</a></li>
 <li><a href="#faq">FAQ</a></li>
 <li><a href="/privacy">Privacy Policy</a></li>
 <li><a href="/terms">Terms Of Use</a></li>

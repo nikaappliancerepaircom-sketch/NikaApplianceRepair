@@ -5,10 +5,32 @@
 
 /* ===== FIX 1: Remove deprecated overflow: visible on img ===== */
 /* Deprecated API - overflow на img, video, canvas вызывает warning */
+/* CRITICAL: This must override no-scrollbars-fix.css */
 img,
 video,
-canvas {
+canvas,
+img *,
+video *,
+canvas * {
     overflow: clip !important; /* Современная альтернатива overflow: hidden */
+}
+
+/* Force override for any img/video/canvas regardless of selector specificity */
+*:is(img, video, canvas) {
+    overflow: clip !important;
+}
+
+/* Additional safety - catch any img/video/canvas in any context */
+body img,
+body video,
+body canvas,
+section img,
+section video,
+section canvas,
+div img,
+div video,
+div canvas {
+    overflow: clip !important;
 }
 
 /* ===== FIX 2: Better color contrast for stats/likes text ===== */

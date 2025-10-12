@@ -23,6 +23,18 @@ add_css_if_missing() {
     fi
 }
 
+# Function to add final-overflow-fix.css AFTER no-scrollbars-fix.css
+add_final_overflow_fix() {
+    local file=$1
+
+    # Check if final-overflow-fix.css is already present
+    if ! grep -q "final-overflow-fix.css" "$file"; then
+        # Find the line with no-scrollbars-fix.css and insert after it
+        sed -i "/no-scrollbars-fix.css/a\\    <!-- FINAL Overflow Fix - MUST BE ABSOLUTELY LAST -->\n    <link rel=\"stylesheet\" href=\"../css/final-overflow-fix.css\">" "$file"
+        echo "  Added final-overflow-fix.css to $(basename $file)"
+    fi
+}
+
 # Function to add defer to scripts
 add_defer_to_scripts() {
     local file=$1
@@ -102,6 +114,9 @@ for file in services/*.html; do
     add_css_if_missing "$file" "css/youtube-facade.css" "YouTube Facade (Lazy Loading)"
     add_css_if_missing "$file" "css/mobile-overflow-fix.css" "Mobile Overflow & Centering Fix"
 
+    # Add final overflow fix AFTER no-scrollbars-fix.css
+    add_final_overflow_fix "$file"
+
     # Add defer to scripts
     add_defer_to_scripts "$file"
 
@@ -131,6 +146,9 @@ for file in locations/*.html; do
     add_css_if_missing "$file" "css/youtube-facade.css" "YouTube Facade (Lazy Loading)"
     add_css_if_missing "$file" "css/mobile-overflow-fix.css" "Mobile Overflow & Centering Fix"
 
+    # Add final overflow fix AFTER no-scrollbars-fix.css
+    add_final_overflow_fix "$file"
+
     # Add defer to scripts
     add_defer_to_scripts "$file"
 
@@ -155,6 +173,7 @@ echo "- Added Mobile BMAD typography CSS"
 echo "- Added Lighthouse accessibility fixes"
 echo "- Added YouTube facade for lazy loading"
 echo "- Added Mobile overflow fixes"
+echo "- Added FINAL overflow fix (deprecated API fix)"
 echo "- Added defer to JavaScript files"
 echo "- Fixed mobile menu accessibility"
 echo "- Added skip-to-content links"
