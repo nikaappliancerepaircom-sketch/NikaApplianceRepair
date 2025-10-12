@@ -1,0 +1,172 @@
+{
+  "project": {
+    "name": "Nika Appliance Repair",
+    "domain": "nikaappliancerepair.com",
+    "type": "appliance_repair_service",
+    "location": "Toronto & GTA, Ontario, Canada"
+  },
+
+  "business_data": {
+    "phone_number": "437-747-6737",
+    "phone_normalized": "4377476737",
+    "email": "care@niappliancerepair.ca",
+    "address_street": "60 Walter Tunny Cresent",
+    "address_city": "East Gwillimbury",
+    "address_region": "ON",
+    "address_postal": "L9N 0R3",
+    "address_country": "CA"
+  },
+
+  "quality_metrics": {
+    "rating": 4.9,
+    "review_count": 5200,
+    "years_in_business": 5,
+    "warranty_period": 90,
+    "warranty_unit": "day",
+    "response_time_minutes": 45,
+    "completion_rate_percent": 98,
+    "established_year": 2019
+  },
+
+  "keywords": {
+    "primary": "appliance repair",
+    "secondary": [
+      "refrigerator repair",
+      "washer repair",
+      "dryer repair",
+      "dishwasher repair",
+      "oven repair",
+      "stove repair"
+    ],
+    "semantic": [
+      "same-day service",
+      "licensed technician",
+      "warranty",
+      "certified",
+      "professional",
+      "emergency repair",
+      "24/7",
+      "toronto",
+      "gta",
+      "ontario"
+    ],
+    "locations": [
+      "Toronto",
+      "North York",
+      "Scarborough",
+      "Mississauga",
+      "Brampton",
+      "Markham",
+      "Vaughan",
+      "Richmond Hill"
+    ]
+  },
+
+  "bmad_targets": {
+    "content_word_count_min": 1500,
+    "content_word_count_max": 2500,
+    "keyword_density_min": 1.5,
+    "keyword_density_max": 2.5,
+    "internal_links_min": 10,
+    "images_min": 10,
+    "cta_count_min": 5,
+    "cta_count_max": 8,
+    "form_fields_max": 5,
+    "sections_min": 7,
+    "sections_max": 12
+  },
+
+  "page_structure": {
+    "required_sections": [
+      "hero",
+      "services",
+      "about",
+      "testimonials",
+      "areas",
+      "contact",
+      "faq"
+    ]
+  },
+
+  "social_proof": {
+    "testimonials_min": 3,
+    "rating_display_min": 2
+  },
+
+  "services": [
+    "Refrigerator Repair",
+    "Washing Machine Repair",
+    "Dryer Repair",
+    "Dishwasher Repair",
+    "Oven Repair",
+    "Stove Repair",
+    "Freezer Repair",
+    "Microwave Repair",
+    "Range Repair"
+  ],
+
+  "brands_serviced": [
+    "LG",
+    "Samsung",
+    "Whirlpool",
+    "Bosch",
+    "Kenmore",
+    "Electrolux",
+    "KitchenAid",
+    "Maytag",
+    "GE",
+    "Frigidaire",
+    "Viking",
+    "Sub-Zero",
+    "Miele",
+    "Dacor",
+    "Blomberg",
+    "Fisher & Paykel",
+    "JennAir",
+    "Amana",
+    "Bertazzoni",
+    "Thermador"
+  ],
+
+  "service_areas": [
+    "Ajax",
+    "Aurora",
+    "Brampton",
+    "Burlington",
+    "East York",
+    "Etobicoke",
+    "Markham",
+    "Mississauga",
+    "Newmarket",
+    "North York",
+    "Oakville",
+    "Oshawa",
+    "Pickering",
+    "Richmond Hill",
+    "Scarborough",
+    "Stouffville",
+    "Thornhill",
+    "Toronto",
+    "Vaughan",
+    "Whitby",
+    "Woodbridge"
+  ],
+
+  "operating_hours": {
+    "monday_friday": "08:00-20:00",
+    "saturday": "09:00-18:00",
+    "sunday": "10:00-17:00",
+    "emergency_24_7": true
+  },
+
+  "unique_selling_points": [
+    "Same-day service",
+    "90-day warranty",
+    "Licensed & insured",
+    "Factory-trained technicians",
+    "OEM parts only",
+    "Transparent pricing",
+    "45-minute average response",
+    "5+ years experience minimum"
+  ]
+}

@@ -1,7 +1,7 @@
 # BMAD v2 - COMPLETE OPTIMIZATION METHOD
-## Єдина система тестування та оптимізації по 277+ параметрам
+## Єдина система тестування та оптимізації по 282 параметрам
 
-**Version:** 2.0
+**Version:** 2.1
 **Date:** 2025-10-12
 **Status:** Production Ready
 
@@ -30,7 +30,7 @@
 
 ### What is BMAD v2?
 
-**BMAD (Best Method for Appliance Documentation)** - це комплексна система оптимізації веб-сторінок по 277 параметрам, розділених на 9 рівнів (Tiers) за критичністю.
+**BMAD (Best Method for Appliance Documentation)** - це комплексна система оптимізації веб-сторінок по 282 параметрам, розділених на 9 рівнів (Tiers) за критичністю.
 
 ### Core Principles:
 
@@ -42,11 +42,11 @@
 
 ### Key Metrics:
 
-- **Total parameters:** 277
-- **Auto-fixable:** ~165 (60%)
+- **Total parameters:** 282
+- **Auto-fixable:** ~170 (60%)
 - **Manual optimization:** ~112 (40%)
 - **Deployment blockers:** Tier 1 only (15 params)
-- **Recommended for production:** Tier 1-4 (120 params)
+- **Recommended for production:** Tier 1-4 (125 params)
 
 ---
 
@@ -84,7 +84,7 @@
 | Tier | Name | Params | Target | Auto-fix | Blocks Deploy | Time |
 |------|------|--------|--------|----------|---------------|------|
 | **1** | Critical Foundation | 15 | 100% | 100% | 🔴 YES | 2 min |
-| **2** | SEO + CRO Core | 30 | 85% | 75% | ⚠️ Warn | 5 min |
+| **2** | SEO + AI + CRO Core | 35 | 85% | 80% | ⚠️ Warn | 7 min |
 | **3** | Content + Basic UX | 50 | 70% | 40% | ❌ No | 5 hrs |
 | **4** | Performance + Speed | 25 | 80% | 60% | ❌ No | 2 hrs |
 | **5** | Cross-Browser | 30 | 70% | 20% | ❌ No | 3 hrs |
@@ -92,7 +92,7 @@
 | **7** | Analytics + Tracking | 28 | 70% | 80% | ❌ No | 1 hr |
 | **8** | Content Features | 30 | 50% | 10% | ❌ No | varies |
 | **9** | Integrations + Polish | 34 | 40% | 40% | ❌ No | varies |
-| **TOTAL** | | **277** | | **60%** | | **~20 hrs** |
+| **TOTAL** | | **282** | | **60%** | | **~20 hrs** |
 
 ---
 
@@ -224,7 +224,7 @@ claude-agent run technical-agent [file.html]
 
 ---
 
-## ⭐ TIER 2: SEO + CRO CORE (30 параметрів)
+## ⭐ TIER 2: SEO + AI SEARCH + CRO CORE (35 параметрів)
 
 ### 🎯 Target: 85%+ (WARNING IF < 85%)
 
@@ -305,9 +305,55 @@ claude-agent run technical-agent [file.html]
     - Auto-fix: ✅ Generate 6 Twitter tags
     - Agent: `social-meta-agent`
 
-### Category B: CRO Essentials (15 params)
+### Category B: AI Search Optimization (5 params) - CRITICAL
 
-31. **CTA count: 3-8 (optimal 5-7)**
+**CRITICAL: 98%+ required (AI search engines & voice assistants)**
+
+31. **Speakable Schema for voice assistants**
+    - Check: SpeakableSpecification schema present
+    - Targets: Alexa, Google Assistant, Siri, voice search
+    - Auto-fix: ✅ Generate speakable schema from main content
+    - Agent: `ai-search-agent`
+    - Points: 20/100 for AI Search category
+
+32. **HowTo Schema for AI understanding**
+    - Check: HowTo schema with step-by-step process
+    - Targets: ChatGPT, Perplexity AI, Google AI Overview, Bing AI
+    - Auto-fix: ✅ Generate HowTo schema from process content
+    - Agent: `ai-search-agent`
+    - Points: 20/100 for AI Search category
+
+33. **FAQ Schema for Q&A optimization**
+    - Check: FAQPage schema present (also tested in SEO)
+    - Targets: All AI search engines for Q&A format
+    - Auto-fix: ✅ Generate FAQ schema from FAQ section
+    - Agent: `schema-agent`
+    - Points: 20/100 for AI Search category
+
+34. **WebPage Schema with mainEntity**
+    - Check: WebPage schema provides context to AI
+    - Targets: Search engine AI context understanding
+    - Auto-fix: ✅ Generate WebPage schema wrapper
+    - Agent: `ai-search-agent`
+    - Points: 20/100 for AI Search category
+
+35. **Schema diversity: 4+ types**
+    - Check: Minimum 4 different schema types for comprehensive AI understanding
+    - Targets: Rich context for all AI systems
+    - Auto-fix: ✅ Generate missing schemas (LocalBusiness, FAQ, HowTo, WebPage, etc.)
+    - Agent: `ai-search-agent`
+    - Points: 20/100 for AI Search category
+
+**Why AI Search Optimization is Critical:**
+- ChatGPT, Perplexity, Google AI Overview crawl and index structured data
+- Voice assistants (Alexa, Google Assistant, Siri) prioritize Speakable content
+- AI search engines favor HowTo and FAQ structured formats for answers
+- Schema diversity improves comprehension across different AI systems
+- Target score: 98%+ (5/5 parameters = 100%)
+
+### Category C: CRO Essentials (15 params)
+
+36. **CTA count: 3-8 (optimal 5-7)**
     - Check: Count call-to-action buttons
     - Auto-fix: ⚠️ Report if too many (> 8)
     - Agent: `cro-agent`
@@ -386,6 +432,7 @@ claude-agent run technical-agent [file.html]
 
 ```bash
 python tools/bmad-v2/tests/tier2_seo.py [file.html]
+python tools/bmad-v2/tests/tier2_ai_search.py [file.html]
 python tools/bmad-v2/tests/tier2_cro.py [file.html]
 python tools/bmad-v2/fixers/tier2_fixer.py [file.html]
 ```
@@ -396,6 +443,9 @@ python tools/bmad-v2/fixers/tier2_fixer.py [file.html]
 # SEO optimization
 claude-agent run seo-optimization-agent [file.html]
 
+# AI Search optimization
+claude-agent run ai-search-agent [file.html]
+
 # CRO optimization
 claude-agent run cro-optimization-agent [file.html]
 
@@ -405,8 +455,9 @@ claude-agent run tier2-full-agent [file.html]
 
 ### Success Criteria:
 
-- ✅ Score: 26+/30 = 85%+
+- ✅ Score: 30+/35 = 85%+
 - ✅ SEO fundamentals solid
+- ✅ AI Search schemas present (98%+ required)
 - ✅ CRO elements present
 - ⚠️ Warning if 80-84%
 
@@ -1857,6 +1908,7 @@ claude-agent run tier9-full-agent [file.html]
 
 **Tier 2 Agents:**
 - `seo-optimization-agent` - Full SEO audit + fixes
+- `ai-search-agent` - AI Search schemas (Speakable, HowTo, WebPage)
 - `cro-optimization-agent` - CRO audit + suggestions
 - `seo-meta-agent` - Meta tags optimization
 - `image-seo-agent` - Image SEO + alt text
@@ -2093,7 +2145,7 @@ fi
 
 ## 📚 SUMMARY
 
-### BMAD v2 Method = 9 Tiers, 277 Parameters
+### BMAD v2 Method = 9 Tiers, 282 Parameters
 
 **Production Requirements:**
 - ✅ Tier 1: 100% (BLOCKS deployment)
@@ -2126,7 +2178,41 @@ fi
 
 ---
 
-**Version:** 2.0
+## 🆕 VERSION 2.1 CHANGELOG
+
+### Added in v2.1 (2025-10-12):
+
+**New Category: AI Search Optimization (5 params) - CRITICAL**
+- Added to Tier 2 as Category B
+- Requires 98%+ score (higher than standard 85% tier requirement)
+- Total parameters increased: 277 → 282
+- Tier 2 parameters: 30 → 35
+
+**AI Search Parameters:**
+1. Speakable Schema for voice assistants (Alexa, Google Assistant, Siri)
+2. HowTo Schema for AI engines (ChatGPT, Perplexity, Google AI Overview, Bing AI)
+3. FAQ Schema for Q&A optimization (all AI search engines)
+4. WebPage Schema with mainEntity for AI context
+5. Schema diversity: minimum 4 types for comprehensive AI understanding
+
+**Why This Matters:**
+- Modern AI search engines (ChatGPT, Perplexity, Google AI Overview) are becoming primary search interfaces
+- Voice assistants require Speakable schema for audio answers
+- Structured data is how AI systems understand and index content
+- Higher requirement (98% vs 85%) reflects critical importance
+
+**New Test Commands:**
+```bash
+python tools/bmad-complete-test.py [file.html]  # Now includes AI Search (8 categories)
+python tools/bmad-v2/tests/tier2_ai_search.py [file.html]  # Standalone test
+```
+
+**New Agent:**
+- `ai-search-agent` - Generates and validates AI Search schemas
+
+---
+
+**Version:** 2.1
 **Last Updated:** 2025-10-12
 **Status:** ✅ PRODUCTION READY
 **Methodology:** BMAD (Best Method for Appliance Documentation)

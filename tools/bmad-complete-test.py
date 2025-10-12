@@ -80,7 +80,8 @@ class BMADCompleteTester:
         self.test_cro()                # 20 params
         self.test_psychology()         # 25 params
         self.test_conversion_design()  # 10 params
-        self.test_responsive_typography()  # 10 params - NEW
+        self.test_responsive_typography()  # 10 params
+        self.test_ai_search_optimization()  # 5 params - CRITICAL AI
 
         # Print final report
         self.print_final_report()
@@ -534,6 +535,65 @@ class BMADCompleteTester:
         else:
             self.tests_failed += 1
 
+    def test_ai_search_optimization(self):
+        """AI Search Optimization - 5 params (CRITICAL 98+ required)"""
+        print("[8/12] AI SEARCH OPTIMIZATION (5 params)...", end="", flush=True)
+
+        score = 0
+        issues = []
+
+        # 1. Speakable Schema for Voice Assistants (Alexa, Google Assistant, Siri)
+        has_speakable = 'SpeakableSpecification' in self.html_content or 'speakable' in self.html_content.lower()
+        if has_speakable:
+            score += 20
+        else:
+            issues.append("Missing Speakable schema for voice assistants")
+
+        # 2. HowTo Schema for AI Understanding (ChatGPT, Perplexity, etc.)
+        has_howto = '"@type":\s*"HowTo"' in self.html_content or '"@type": "HowTo"' in self.html_content
+        if re.search(r'"@type":\s*"HowTo"', self.html_content):
+            score += 20
+        else:
+            issues.append("Missing HowTo schema for AI search engines")
+
+        # 3. Structured Q&A Format (FAQ Schema already tested in SEO)
+        has_faq = 'FAQPage' in self.html_content
+        if has_faq:
+            score += 20
+        else:
+            issues.append("Missing FAQ schema for Q&A optimization")
+
+        # 4. WebPage Schema with mainEntity for AI context
+        has_webpage = '"@type":\s*"WebPage"' in self.html_content or '"@type": "WebPage"' in self.html_content
+        if re.search(r'"@type":\s*"WebPage"', self.html_content):
+            score += 20
+        else:
+            issues.append("Missing WebPage schema for AI context")
+
+        # 5. Rich structured data (minimum 4 schema types for comprehensive AI understanding)
+        schema_types = re.findall(r'"@type":\s*"([^"]+)"', self.html_content)
+        unique_schemas = len(set(schema_types))
+        if unique_schemas >= 4:
+            score += 20
+        else:
+            issues.append(f"Schema diversity: {unique_schemas}/4 types (need 4+ for AI)")
+
+        final_score = min(100, score)
+
+        # AI Search Optimization is CRITICAL - must be 98+
+        self.results['ai_search_optimization'] = {
+            'score': final_score,
+            'status': 'PASS' if final_score >= 98 else 'WARN' if final_score >= 85 else 'FAIL',
+            'issues': issues,
+            'critical': True  # Mark as critical
+        }
+
+        print(f" {final_score}/100 [{self.results['ai_search_optimization']['status']}]")
+        if final_score >= 98:
+            self.tests_passed += 1
+        else:
+            self.tests_failed += 1
+
     def print_final_report(self):
         """Print comprehensive final report"""
         print("\n" + "=" * 60)
@@ -554,15 +614,31 @@ class BMADCompleteTester:
         print(f"Tests Passed: {self.tests_passed}")
         print(f"Tests Failed: {self.tests_failed}")
 
-        # Deployment decision
+        # Deployment decision - BMAD V2: ALL categories must be 85+
         data_consistency_passed = self.results.get('data_consistency', {}).get('score', 0) == 100
 
-        if data_consistency_passed and overall_score >= 85:
+        # Check if ALL categories pass 85+ (except data consistency which needs 100)
+        all_categories_pass = True
+        failing_categories = []
+        for category, result in self.results.items():
+            if category == 'data_consistency':
+                continue  # Already checked above
+            if result.get('score', 0) < 85:
+                all_categories_pass = False
+                failing_categories.append(f"{category}: {result.get('score', 0)}/100")
+
+        if data_consistency_passed and all_categories_pass and overall_score >= 85:
             print("\n[APPROVED] DEPLOYMENT APPROVED")
             print("All critical parameters pass. Page ready for production.")
         elif not data_consistency_passed:
             print("\n[BLOCKED] DEPLOYMENT BLOCKED")
             print("CRITICAL: Data consistency failed. Fix immediately!")
+        elif not all_categories_pass:
+            print("\n[BLOCKED] DEPLOYMENT BLOCKED")
+            print(f"BMAD V2 REQUIREMENT: ALL categories must score 85+/100")
+            print(f"Failing categories:")
+            for cat in failing_categories:
+                print(f"  - {cat}")
         else:
             print("\n[BLOCKED] DEPLOYMENT BLOCKED")
             print(f"Score {overall_score:.1f}/100 is below 85. Fix issues and retest.")
