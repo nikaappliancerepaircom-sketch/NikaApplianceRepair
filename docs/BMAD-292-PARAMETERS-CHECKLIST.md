@@ -383,11 +383,46 @@ python psychology-checker.py website/PAGE.html
 - [ ] No false scarcity: ALL urgency triggers = TRUTH (no fake timers)
 
 #### Authority & Trust (5 parameters)
-- [ ] Credentials displayed: "Licensed", "Insured", "Certified" (with numbers if available)
+- [ ] Credentials displayed: "Licensed", "Insured" (with numbers if available)
 - [ ] Years in business: "Since 2015" (specific date)
 - [ ] Completion stats: "5000+ repairs completed" (real number)
-- [ ] Certifications visible: BBB, manufacturer certifications
+- [ ] Certifications visible: BBB, local business certifications (NO manufacturer claims)
 - [ ] Guarantee prominent: "90-day warranty" mentioned 3+ times
+
+**⚠️ CRITICAL: NO FALSE CLAIMS**
+- ❌ NO "Factory-authorized", "Factory-certified", "Manufacturer-approved"
+- ❌ NO "Official service center" or similar manufacturer claims
+- ❌ NO brand partnerships unless you have written agreements
+- ✅ YES: "We repair [brand]", "Experienced with [brand]", "We service [brand]"
+
+**🚨 CRITICAL: ONLY REPAIR 6 MAJOR APPLIANCES**
+We ONLY repair these 6 appliances - NEVER mention others:
+- ✅ Refrigerator (fridge, freezer)
+- ✅ Dishwasher
+- ✅ Dryer
+- ✅ Stove (cooktop, range, gas/electric)
+- ✅ Oven (wall oven, range oven)
+- ✅ Washing Machine (washer, laundry machine)
+
+**❌ DO NOT MENTION - WE DO NOT SERVICE:**
+- ❌ Rice cookers, pressure cookers, slow cookers
+- ❌ Microwaves
+- ❌ Range hoods, ventilation fans
+- ❌ Wine fridges, beverage centers, kegerators
+- ❌ Espresso machines, coffee makers
+- ❌ Ice makers (standalone)
+- ❌ Trash compactors
+- ❌ Garbage disposals
+- ❌ Water heaters
+- ❌ HVAC (air conditioning, heating, furnaces)
+- ❌ Any small appliances
+- ❌ Any specialty cooking equipment (wok ranges, steamers, etc.)
+
+**WHY THIS MATTERS:**
+- Promising services we don't provide = legal liability
+- Customer disappointment = negative reviews
+- Wasted service calls = lost revenue
+- False advertising = potential lawsuits
 
 **PSYCHOLOGY PASS CRITERIA: 85+/100 score, all triggers ethical & truthful**
 

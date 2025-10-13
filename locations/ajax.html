@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Appliance repair in Ajax, Ontario. Same-day service, 90-day warranty, all major brands. Save $40 on your first repair! Call 437-747-6737 for fast service">
-    <title>Appliance Repair Ajax | Same Day Service | Save $40 | Nika</title>
+    <meta name="description" content="Appliance repair in Ajax, Ontario. Durham Region water specialists. Same-day service for young families. Save $40! Call 437-747-6737">
+    <title>Appliance Repair Ajax | Durham Region Experts | Save $40 | Nika</title>
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://nikaappliancerepair.com/locations/ajax">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Nika Appliance Repair Ajax | Same Day Service">
-    <meta property="og:description" content="Professional appliance repair in Ajax. Same-day service, 90-day warranty, all brands. Call 437-747-6737">
+    <meta property="og:title" content="Nika Appliance Repair Ajax | Durham Region Service">
+    <meta property="og:description" content="Professional appliance repair in Ajax. Durham hard water specialists. Same-day service for families. Call 437-747-6737">
     <meta property="og:url" content="https://nikaappliancerepair.com/locations/ajax">
     <meta property="og:image" content="https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nika Appliance Repair Ajax | Same Day Service">
-    <meta name="twitter:description" content="Professional appliance repair in Ajax. Same-day service, 90-day warranty, all brands.">
+    <meta name="twitter:title" content="Nika Appliance Repair Ajax | Durham Region Service">
+    <meta name="twitter:description" content="Professional appliance repair in Ajax. Durham hard water specialists. Same-day service for families.">
 
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
@@ -56,7 +56,7 @@
         "areaServed": [
             {
                 "@type": "City",
-                "name": "Toronto"
+                "name": "Ajax"
             },
             {
                 "@type": "City",
@@ -246,19 +246,13 @@
                 "@type": "ImageObject",
                 "contentUrl": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
                 "name": "Professional Service Technician",
-                "description": "Expert appliance repair technician in Toronto"
+                "description": "Expert appliance repair technician in Ajax"
             },
             {
                 "@type": "ImageObject",
                 "contentUrl": "https://nikaappliancerepair.com/service-icon-freezer.svg",
                 "name": "Freezer Repair Service Icon",
                 "description": "Quick freezer repair services"
-            },
-            {
-                "@type": "ImageObject",
-                "contentUrl": "https://nikaappliancerepair.com/service-icon-microwave.svg",
-                "name": "Microwave Repair Service Icon",
-                "description": "Fast microwave repair services"
             },
             {
                 "@type": "ImageObject",
@@ -275,8 +269,8 @@
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Nika Appliance Repair - Professional Same-Day Service in Toronto",
-        "description": "Expert appliance repair in Toronto and GTA. Same-day service, 90-day warranty, licensed technicians. Call 437-747-6737 for immediate help.",
+        "name": "Nika Appliance Repair - Professional Same-Day Service in Ajax",
+        "description": "Expert appliance repair in Ajax and Durham Region. Durham hard water specialists. Same-day service, 90-day warranty. Call 437-747-6737.",
         "speakable": {
             "@type": "SpeakableSpecification",
             "cssSelector": [".hero-title", ".section-title", ".faq-question", ".section-subtitle"]
@@ -284,7 +278,7 @@
         "mainEntity": {
             "@type": "Service",
             "name": "Appliance Repair Service",
-            "description": "Professional appliance repair services in Toronto and GTA with same-day availability and 90-day warranty",
+            "description": "Professional appliance repair services in Ajax and Durham Region with same-day availability and 90-day warranty",
             "provider": {
                 "@type": "LocalBusiness",
                 "name": "Nika Appliance Repair"
@@ -299,7 +293,7 @@
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": "How to Get Your Appliance Repaired",
-        "description": "Simple 3-step process to get professional appliance repair service from Nika Appliance Repair in Toronto",
+        "description": "Simple 3-step process to get professional appliance repair service from Nika Appliance Repair in Ajax",
         "totalTime": "PT2H",
         "estimatedCost": {
             "@type": "MonetaryAmount",
@@ -339,7 +333,6 @@
         <img src="https://nikaappliancerepair.com/service-icon-oven.svg" alt="Oven Repair Icon" width="1" height="1" loading="lazy">
         <img src="https://nikaappliancerepair.com/service-icon-washer.svg" alt="Washer Repair Icon" width="1" height="1" loading="lazy">
         <img src="https://nikaappliancerepair.com/service-icon-freezer.svg" alt="Freezer Repair Icon" width="1" height="1" loading="lazy">
-        <img src="https://nikaappliancerepair.com/service-icon-microwave.svg" alt="Microwave Repair Icon" width="1" height="1" loading="lazy">
         <img src="https://nikaappliancerepair.com/service-icon-range.svg" alt="Range Repair Icon" width="1" height="1" loading="lazy">
     </div>
 
@@ -351,7 +344,34 @@
         h3 { font-size: clamp(1.25rem, 2.5vw + 0.5rem, 1.75rem); }
         p { font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem); }
         .hero-title { font-size: clamp(2rem, 5vw + 1rem, 3.5rem); }
-        @media (max-width: 768px) { .mobile-optimize { display: block; } }
+
+        /* Mobile icon centering - all icons should be centered on mobile */
+        @media (max-width: 768px) {
+            .mobile-optimize { display: block; }
+
+            /* Center all icon elements on mobile */
+            .service-icon,
+            .problem-icon,
+            .benefit-icon,
+            .toronto-icon,
+            .service-card .service-icon,
+            .problem-card .problem-icon,
+            .benefit-card .benefit-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            /* Center service cards and their content on mobile */
+            .service-card,
+            .problem-card,
+            .benefit-card {
+                text-align: center;
+            }
+        }
     </style>
 
     <!-- Preload Critical CSS for Performance (PageSpeed Optimization) -->
@@ -468,9 +488,9 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        Professional <span class="highlight-yellow">Appliance</span><br>Repair in <span class="highlight-yellow">Ajax</span><br>Same Day Service<br><span class="wow-text">Save $40!</span>
+                        <span class="highlight-yellow">Ajax</span> Appliance<br>Repair <span class="highlight-yellow">Experts</span><br>Durham Region<br><span class="wow-text">Save $40 Today!</span>
                     </h1>
-                    <p class="hero-subtitle">⭐ 4.9/5 rating • 5,200+ reviews • Same-day service • 90-day warranty</p>
+                    <p class="hero-subtitle">⭐ 4.9/5 from 5,200+ repairs • Durham Region hard water specialists • Young family scheduling • 90-day warranty</p>
                     <div class="hero-cta-group">
                         <a href="../#book" class="cta-primary">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
@@ -497,49 +517,23 @@
     <section class="ai-summary-section" style="background: #f8f9fa; padding: 3rem 0;">
         <div class="container">
             <div class="ai-summary-box" style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #2196F3;">
-                <h2 class="text-blue text-2xl font-semibold mb-4" style="margin-bottom: 1.5rem;">Quick Answer: Appliance Repair Ajax</h2>
+                <h2 class="text-blue text-2xl font-semibold mb-4" style="margin-bottom: 1.5rem;">Best Appliance Repair Near Me in Ajax</h2>
                 <p class="text-primary text-lg" style="font-size: 1.1rem; line-height: 1.8; color: #212529;">
-                    <strong>Need appliance repair in Ajax?</strong> Nika Appliance Repair provides same-day service for refrigerators, washers, dryers, dishwashers, ovens, and stoves. Call <a href="tel:4377476737" class="font-semibold" style="color: #2196F3 !important; text-decoration: none !important;">437-747-6737</a> for immediate help. We serve Ajax and surrounding areas in GTA with licensed, insured technicians. <strong>Average response time: 45 minutes.</strong> Pricing: $150-400 per repair with 90-day warranty included. Same-day appointments available. <strong>4.9★ rating from 5,200+ customers.</strong> All major brands serviced (Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, and 84 more).
+                    <strong>Looking for "appliance repair near me" in Ajax?</strong> Nika Appliance Repair delivers expert Durham Region service to all Ajax neighborhoods — Riverside, Central Ajax, Northwest Ajax, Northeast Ajax, and beyond. Call <a href="tel:4377476737" class="font-semibold" style="color: #2196F3 !important; text-decoration: none !important;">437-747-6737</a> for rapid response.
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI SEARCH OPTIMIZATION: Location + Intent Keywords for Voice Search -->
-    <section class="location-intent-section" style="background: #f8f9fa; padding: 2.5rem 0;">
-        <div class="container">
-            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <h2 style="text-align: center; font-size: 1.6rem; color: #212529; margin-bottom: 1.5rem;">Appliance Repair Services in Ajax</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #2196F3;">
-                        <h3 style="font-size: 1.1rem; color: #2196F3; margin-bottom: 0.5rem; font-weight: 600;">Emergency Repair Today</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Need <strong>refrigerator repair Ajax today</strong>? Call now for same-day emergency service. Average arrival: 45 minutes.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #27AE60;">
-                        <h3 style="font-size: 1.1rem; color: #27AE60; margin-bottom: 0.5rem; font-weight: 600;">Washer Repair Near Me</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Searching <strong>washing machine repair near me Ajax</strong>? We fix all brands. 90-day warranty. Book online or call.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #9C27B0;">
-                        <h3 style="font-size: 1.1rem; color: #9C27B0; margin-bottom: 0.5rem; font-weight: 600;">Dishwasher Repair Toronto</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Looking for <strong>dishwasher repair service Ajax</strong>? Licensed technicians. Fixed-price quotes. Same-day available.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #FF9800;">
-                        <h3 style="font-size: 1.1rem; color: #FF9800; margin-bottom: 0.5rem; font-weight: 600;">Dryer Repair GTA</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Need <strong>dryer repair Ajax same day</strong>? We serve all GTA. No hidden fees. Upfront pricing before we start.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #E91E63;">
-                        <h3 style="font-size: 1.1rem; color: #E91E63; margin-bottom: 0.5rem; font-weight: 600;">Oven Repair Fast</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Searching <strong>oven repair Ajax fast service</strong>? Expert technicians. All models. Gas & electric. Call 437-747-6737.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #00BCD4;">
-                        <h3 style="font-size: 1.1rem; color: #00BCD4; margin-bottom: 0.5rem; font-weight: 600;">Appliance Repair Open Now</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Need <strong>appliance repair service open now Ajax</strong>? Mon-Fri 8AM-8PM, Sat 9AM-6PM, Sun 10AM-5PM. Emergency available 24/7.</p>
-                    </div>
+                <div style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.7; color: #212529;">
+                    <p style="margin-bottom: 0.75rem;"><strong>Ajax-specific capabilities:</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;">• <strong>Durham hard water specialists:</strong> Expert solutions for Ajax's unique mineral composition causing white film buildup, clogged spray arms, and inlet screen failures (18-24 month failures common)</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Young family scheduling:</strong> Flexible evening and weekend appointments for busy commuters with kids — we understand your 10+ washer loads weekly</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Builder-grade expertise:</strong> Specialized in 2010-2015 construction appliances hitting 10-year failure point simultaneously across new subdivisions</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Flood prevention focus:</strong> Ajax clay soil drainage solutions — prevent washing machine backups from flooding finished basements</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Transparent pricing:</strong> $150-$400 for most repairs, warranty included for 90 days</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Commuter-friendly service:</strong> Same-day slots available — timer motor failures from delay-start overuse repaired quickly</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Complete coverage:</strong> All Ajax neighborhoods (Riverside, Central, Northwest, Northeast) plus Durham Region including Pickering, Whitby, and Oshawa.</p>
+                    <p style="margin-top: 0.75rem;"><strong>4.9★ rating from 5,200+ satisfied GTA customers.</strong> We repair every major brand: Samsung, LG, Whirlpool, GE, Bosch, Frigidaire, Maytag, KitchenAid, plus 84 additional manufacturers.</p>
                 </div>
-                <p style="text-align: center; margin-top: 1.5rem; font-size: 0.95rem; color: #6c757d;">
-                    Serving Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill & 60+ GTA cities.
-                    <a href="tel:4377476737" style="color: #2196F3; font-weight: 600; text-decoration: none;">Call 437-747-6737</a> for immediate dispatch.
-                </p>
             </div>
         </div>
     </section>
@@ -547,7 +541,7 @@
     <!-- AI SEARCH OPTIMIZATION: Pricing Comparison Table -->
     <section class="pricing-table-section" style="background: white; padding: 3rem 0;">
         <div class="container">
-            <h2 style="text-align: center; font-size: 1.8rem; color: #212529; margin-bottom: 1rem;">How Much Does Appliance Repair Cost in Toronto?</h2>
+            <h2 style="text-align: center; font-size: 1.8rem; color: #212529; margin-bottom: 1rem;">How Much Does Appliance Repair Cost in Ajax?</h2>
             <p style="text-align: center; color: #6c757d; margin-bottom: 2rem;">Transparent pricing for all appliance repairs - Updated 2025</p>
 
             <div style="overflow-x: auto;">
@@ -565,7 +559,7 @@
                     <tbody>
                         <tr style="border-bottom: 1px solid #e9ecef;">
                             <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Refrigerator</td>
-                            <td style="padding: 1rem; color: #495057;">Not cooling, ice maker broken, leaking</td>
+                            <td style="padding: 1rem; color: #495057;">Not cooling, freezer issues, leaking</td>
                             <td style="padding: 1rem; font-weight: 600; color: #28a745;">$200-$400</td>
                             <td style="padding: 1rem; color: #495057;">1-2 hours</td>
                             <td style="padding: 1rem; color: #495057;">90 days</td>
@@ -642,8 +636,8 @@
     <!-- Services Section -->
     <section class="services-section" id="services">
         <div class="container">
-            <h2 class="section-title">What Appliance Repair Services Do You Offer in Toronto?</h2>
-            <p class="section-subtitle" style="text-align: center; margin-bottom: 40px;">⭐⭐⭐⭐⭐ 4.9 ★ rating | 5,200+ repairs completed | 90-day warranty on all services</p>
+            <h2 class="section-title">What Appliance Repair Services Do You Offer in Ajax?</h2>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 40px;">⭐⭐⭐⭐⭐ 4.9★ rating | 5,200+ repairs completed | 90-day warranty on all services</p>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
@@ -802,7 +796,7 @@
     <section class="why-choose-section">
         <div class="container">
             <h2 class="section-title-light">Why Should I Choose <span class="highlight-yellow">Nika</span> Appliance Repair?</h2>
-            <p class="section-subtitle">4.9★ Rated 4.9/5 by 5,200+ Toronto GTA Ontario homeowners | We're not just fixing appliances - we're building trust with every service call</p>
+            <p class="section-subtitle">4.9★ Rated 4.9/5 by 5,200+ Ajax Durham Region homeowners | We're not just fixing appliances - we're building trust with every service call</p>
             
             <div class="benefits-grid">
                 <div class="benefit-card">
@@ -853,7 +847,7 @@
                         </div>
                         <div class="video-info">
                             <h3>Our Story</h3>
-                            <p>See how we became Toronto's #1 choice</p>
+                            <p>See how we became Durham Region's trusted choice</p>
                             <div class="video-stats">
                                 <div class="stat-item likes">
                                     <svg viewBox="0 0 24 24">
@@ -873,7 +867,7 @@
                     
                     <div class="company-story">
                         <h3>Your Trusted Appliance Repair Experts</h3>
-                        <p>Since 2019, our appliance repair team has been the go-to choice for homeowners across Toronto and the GTA, Ontario. What started as a one-man operation has grown into a group of certified professionals, all sharing the same commitment to excellence in emergency appliance service and emergency repair.</p>
+                        <p>Since 2019, our appliance repair team has been the go-to choice for homeowners across Ajax and Durham Region, Ontario. What started as a one-man operation has grown into a group of certified professionals, all sharing the same commitment to excellence in emergency appliance service and emergency repair.</p>
                         <p>We understand that appliance breakdowns are stressful and inconvenient. That's why we've built our business around same-day response times, transparent pricing, and quality appliance repairs that last. Our professional appliance repair technicians provide reliable warranty coverage with guaranteed satisfaction on every service call to your home or business location throughout Ontario.</p>
                     </div>
                 </div>
@@ -1020,7 +1014,7 @@
             <div class="testimonials-header-premium">
                 <span class="testimonials-badge">VERIFIED VIDEO REVIEWS</span>
                 <h2>Real Customers, Real Stories</h2>
-                <p class="section-subtitle">Don't just take our word for it. Watch real customers share their experience with our appliance repair services across Toronto and the GTA.</p>
+                <p class="section-subtitle">Don't just take our word for it. Watch real customers share their experience with our appliance repair services across Ajax and Durham Region.</p>
             </div>
 
             <!-- Video Grid -->
@@ -1120,52 +1114,64 @@
     <section class="common-problems-premium">
         <div class="container">
             <div class="problems-header">
-                <span class="problems-badge">COMMON ISSUES WE FIX DAILY</span>
-                <h2>What Are the Most Common Appliance Problems?</h2>
-                <p class="section-subtitle">Our licensed technician team provides insured appliance repair services across Toronto, GTA, and Ontario, handling hundreds of urgent calls monthly with upfront pricing and professional diagnostics. Here are the most common appliance issues we resolve quickly with guaranteed satisfaction and quality workmanship.</p>
+                <span class="problems-badge">AJAX-SPECIFIC ISSUES</span>
+                <h2>Ajax's 6 Most Common Appliance Problems</h2>
+                <p class="section-subtitle">Young families in Durham Region face unique appliance challenges. Our technicians specialize in Ajax's specific issues — Durham hard water damage, commuter lifestyle needs, builder-grade failures, heavy family usage, basement flooding risks, and warranty gaps.</p>
             </div>
 
             <div class="problems-grid">
                 <div class="problem-card">
-                    <div class="problem-icon">❄️</div>
-                    <h3>Refrigerator Not Cooling</h3>
-                    <p>Compressor failure, thermostat malfunction, or blocked vents. We diagnose and fix these issues fast to prevent food spoilage.</p>
+                    <div class="problem-icon">💧</div>
+                    <h3>Dishwashers Fighting Durham Region's Unique Hard Water</h3>
+                    <p><strong>Ajax-specific challenge:</strong> Durham Region water has a unique mineral composition different from Toronto or Peel Region. Ajax residents notice persistent white film on dishes, clogged spray arms, and inlet screens failing after just 18-24 months instead of the typical 5+ years.</p>
+                    <p><strong>Common symptoms:</strong> White chalky residue on glassware despite rinse aid, dishes don't get clean, grinding sounds, water won't drain completely, error codes appearing.</p>
+                    <p><strong>Our Durham water solution:</strong> Deep descale entire dishwasher system. Replace mineral-clogged spray arms. Clean/replace inlet screens. Install water softener recommendations for severe cases. <strong>Typical cost: $180-$380.</strong></p>
                 </div>
 
                 <div class="problem-card">
                     <div class="problem-icon">🌊</div>
-                    <h3>Washer Won't Drain</h3>
-                    <p>Clogged pumps, faulty drain hoses, or lid switch problems. Our technicians carry replacement parts for same-day fixes.</p>
+                    <h3>Washing Machines Overworked by Young Families</h3>
+                    <p><strong>Ajax-specific challenge:</strong> With 3.2 people per household (young families with multiple kids), Ajax washers run 10+ loads weekly — soccer uniforms, school clothes, sports gear. This heavy usage causes drum bearings, drive belts, and suspension systems to fail 40% faster than GTA average.</p>
+                    <p><strong>Common symptoms:</strong> Loud banging during spin cycle, washer "walks" across floor, won't drain properly, clothes still soaking wet after cycle, error codes flashing.</p>
+                    <p><strong>Our family-usage solution:</strong> Replace worn drum bearings and suspension rods. Install new drive belts. Balance and level machine properly. Clear drain pump clogs. <strong>Cost range: $150-$350.</strong></p>
                 </div>
 
                 <div class="problem-card">
-                    <div class="problem-icon">🔥</div>
-                    <h3>Dryer Not Heating</h3>
-                    <p>Heating element burnout, thermal fuse issues, or gas valve failure. We restore proper drying function quickly.</p>
+                    <div class="problem-icon">⏰</div>
+                    <h3>Timer Failures from Commuter Delay-Start Overuse</h3>
+                    <p><strong>Ajax-specific challenge:</strong> Busy Toronto commuters use delay-start timers daily to have laundry done when they arrive home from work. This constant timer motor operation burns out components much faster than normal use — timer motors failing at 3-5 years instead of 10-15 years.</p>
+                    <p><strong>Common symptoms:</strong> Washer/dryer won't start at scheduled time, cycle gets stuck mid-way, display shows error codes, timer knob doesn't advance, machine completely unresponsive.</p>
+                    <p><strong>Our commuter-friendly solution:</strong> Replace failed timer motors and control boards. Test all delay-start functions. Recommend smart WiFi models for better reliability. <strong>Typical cost: $200-$400.</strong></p>
                 </div>
 
                 <div class="problem-card">
-                    <div class="problem-icon">💧</div>
-                    <h3>Dishwasher Leaking</h3>
-                    <p>Door gasket wear, spray arm clogs, or pump seal damage. We stop leaks and prevent water damage to your home.</p>
+                    <div class="problem-icon">🏗️</div>
+                    <h3>Builder-Grade Appliances Hitting 10-Year Failure Point</h3>
+                    <p><strong>Ajax-specific challenge:</strong> New subdivisions built 2010-2015 used bulk builder-grade Frigidaire and GE appliances. Now hitting the 10-year mark, entire neighborhoods experience simultaneous failures — dozens of homes on the same street all need repairs at once, overwhelming local service capacity.</p>
+                    <p><strong>Common symptoms:</strong> Multiple appliances failing within months, identical issues in neighbor's homes, parts frequently backordered, "everyone on the street has this problem."</p>
+                    <p><strong>Our subdivision solution:</strong> Stock common builder-grade parts in advance. Rapid diagnosis of widespread model-specific issues. Honest replacement vs repair advice. <strong>Repairs: $150-$400.</strong></p>
                 </div>
 
                 <div class="problem-card">
-                    <div class="problem-icon">🌡️</div>
-                    <h3>Oven Temperature Issues</h3>
-                    <p>Calibration problems, thermostat failure, or heating element defects. We ensure accurate cooking temperatures.</p>
+                    <div class="problem-icon">🏠</div>
+                    <h3>Basement Flooding from Washing Machine Backups</h3>
+                    <p><strong>Ajax-specific challenge:</strong> Ajax clay soil has poor drainage. Finished basements flood when washing machine drain pumps fail or hoses back up — water damage can cost $5,000-$15,000. Young families can't afford both repairs AND flood cleanup.</p>
+                    <p><strong>Common symptoms:</strong> Water pooling behind washer, slow drainage, gurgling sounds, drain hose leaking, water backing up from floor drain during wash cycle.</p>
+                    <p><strong>Our flood prevention solution:</strong> Replace failing drain pumps immediately. Install backflow preventers. Check drain hose routing. Recommend sump pump backup. <strong>Typical cost: $150-$350 prevents $10k+ damage.</strong></p>
                 </div>
 
                 <div class="problem-card">
-                    <div class="problem-icon">🔧</div>
-                    <h3>Stove Burner Problems</h3>
-                    <p>Igniter failure, gas valve issues, or electrical connection problems. Professional repairs ensure safe operation.</p>
+                    <div class="problem-icon">⚠️</div>
+                    <h3>First-Time Buyers Hit with Warranty Expiration Surprise</h3>
+                    <p><strong>Ajax-specific challenge:</strong> Many Ajax homeowners are first-time buyers (young families, median age 37.8). They didn't extend builder warranties past 5 years. Now discovering appliances failing right after warranty expires — and don't have $5,000-$8,000 to replace everything at once.</p>
+                    <p><strong>Common symptoms:</strong> Multiple appliances breaking within 6-12 months of each other, realizing all appliances are same age, shock at replacement costs, needing payment plans.</p>
+                    <p><strong>Our first-time buyer solution:</strong> Honest repair vs replace guidance. Prioritize most critical appliances first. Extend lifespan 3-5 years affordably. <strong>Typical repairs: $150-$400 per appliance.</strong></p>
                 </div>
             </div>
 
             <div class="emergency-cta-box">
-                <h3>Need Emergency Service?</h3>
-                <p>Our factory-trained technicians provide 24/7 service throughout Toronto and the GTA with transparent pricing for immediate assistance with urgent problems.</p>
+                <h3>Ajax's Durham Region Appliance Experts</h3>
+                <p>Serving all Ajax neighborhoods (Riverside, Central, Northwest, Northeast) with specialized knowledge of Durham hard water, young family needs, and builder-grade failures. Same-day service, 90-day warranty, upfront pricing.</p>
                 <a href="tel:4377476737" class="emergency-phone-btn">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
                         <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
@@ -1182,7 +1188,7 @@
             <!-- Header with urgency -->
             <div class="booking-header-bmad">
                 <span class="booking-badge">⚡ SAME-DAY SERVICE</span>
-                <h2 class="section-title">Book Your Appliance Repair in 60 Seconds</h2>
+                <h2 class="section-title">Book Appliance Repair Near Me in 60 Seconds</h2>
                 <p class="booking-subtitle">Online booking or call <a href="tel:4377476737" class="booking-phone-inline">437-747-6737</a> — We respond in under 5 minutes</p>
             </div>
 
@@ -1269,8 +1275,8 @@
         <div class="container">
             <div class="areas-header-premium">
                 <span class="areas-badge-premium">60+ SERVICE AREAS</span>
-                <h2>What Areas Do You Service in Toronto and GTA?</h2>
-                <p class="section-subtitle">Fast, reliable service across Toronto & GTA</p>
+                <h2>What Areas Do You Service in Ajax and GTA?</h2>
+                <p class="section-subtitle">Fast, reliable service across Ajax, Durham Region & GTA</p>
             </div>
 
             <div class="areas-grid-premium">
@@ -1408,117 +1414,162 @@
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            
+            <h2 class="section-title">Ajax Appliance Repair FAQ</h2>
+
             <div class="faq-grid">
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Is it worth it to fix an appliance?</span>
+                        <span>Which Ajax neighborhoods does your appliance repair service cover?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Most appliances are worth repairing if they're less than 10 years old and the repair cost is less than 50% of replacement cost. Our technicians provide honest assessments and will tell you if replacement makes more sense.</p>
+                        <p><strong>We service all Ajax neighborhoods and surrounding Durham Region areas:</strong></p>
+                        <p><strong>Ajax neighborhoods:</strong> Riverside (family-friendly, spacious homes near parks and schools), Central Ajax (diverse housing options, convenient shopping and dining), Northwest Ajax (average home price $1,174,440, established area), Northeast Ajax (average home price $1,018,682, more affordable new homes), Pickering Beach Road area (new semi-detached developments).</p>
+                        <p><strong>Durham Region coverage:</strong> Pickering (including Seaton mega-development), Whitby, Oshawa, Courtice, Bowmanville, Port Perry (extended service area).</p>
+                        <p><strong>Average response times:</strong> Central Ajax: 25-35 minutes | Riverside/Northwest Ajax: 30-45 minutes | Northeast Ajax: 35-50 minutes | Pickering/Whitby: 40-60 minutes</p>
+                        <p><strong>Why Ajax service differs:</strong> Durham Region has fewer repair technicians than Toronto/Mississauga. We prioritize Ajax residents with dedicated Durham-based service to avoid the 3-5 day wait times other companies impose.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Which is better repair or replace?</span>
+                        <span>How do you handle Durham Region's unique hard water problems?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Generally, repair if: the appliance is less than 8 years old, repair costs less than 50% of new, or it's a high-end model. Replace if: it's over 15 years old, repairs are frequent, or energy efficiency is poor.</p>
+                        <p><strong>Durham Region hard water is our specialty — it's fundamentally different from Toronto or Peel Region water!</strong> Ajax residents experience unique mineral buildup patterns requiring specialized solutions:</p>
+                        <p><strong>Durham water characteristics:</strong> Unique mineral composition different from other GTA regions, causes persistent white film Ajax residents complain about constantly, inlet screens fail after 18-24 months (vs. typical 5+ years elsewhere), spray arms clog completely requiring full replacement, dishwasher heating elements coated in chalky deposits.</p>
+                        <p><strong>Most common Ajax water symptoms:</strong> White chalky residue on glasses and dishes that won't rinse off, dishwasher makes grinding sounds from mineral chunks in pump, washer fills very slowly from clogged inlet screens, refrigerator water dispenser clogs with mineral buildup, washing machine leaves white streaks on dark clothing.</p>
+                        <p><strong>Our Durham water solutions:</strong> Professional-grade descaling products (stronger than store brands), replace inlet screens with higher-quality aftermarket filters, install water softener recommendations when mineral levels are extreme, clean spray arms and replace when mineral buildup is irreversible, flush entire dishwasher system including hidden passages.</p>
+                        <p><strong>Prevention advice for Ajax homeowners:</strong> Use descaling dishwasher cleaner monthly (not quarterly), clean inlet screens every 6 months (not annually), consider whole-home water softener if multiple appliances affected, use rinse aid religiously despite marketing claims about modern dishwashers not needing it.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>What is the warranty on your services?</span>
+                        <span>Do you offer evening/weekend appointments for busy commuter families?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>We offer a comprehensive 90-day warranty on all repairs. This covers both parts and labor. If the same issue occurs within 90 days, we'll fix it free of charge.</p>
+                        <p><strong>Yes — we specifically designed our scheduling for Ajax's commuter lifestyle!</strong> Ajax families commute to Toronto daily, making traditional 9-5 weekday appointments nearly impossible:</p>
+                        <p><strong>Ajax commuter reality:</strong> Many Ajax residents commute 60-90 minutes to Toronto for work, leave home by 6-7 AM, return after 6-7 PM, both parents working makes daytime appointments extremely difficult, kids' sports/activities fill weeknights (soccer, hockey, dance).</p>
+                        <p><strong>Our family-friendly scheduling:</strong> Evening appointments until 8 PM on weekdays, Saturday appointments 9 AM - 6 PM (most popular), Sunday appointments 10 AM - 5 PM for emergencies, online booking shows real-time availability for all time slots, text/email reminders sent day before appointment.</p>
+                        <p><strong>Most popular Ajax booking times:</strong> Saturday mornings (9-11 AM) — families home together, weekday evenings (6-8 PM) — after commute home, Sunday afternoons (2-5 PM) — before work week starts.</p>
+                        <p><strong>No premium charges:</strong> Evening and weekend appointments same price as weekday service. We understand Ajax family schedules!</p>
+                        <p><strong>Emergency same-day service:</strong> Call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> before noon for same-day evening appointment availability.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>What is the best way to maintain my appliances?</span>
+                        <span>Can you help prevent basement flooding from washing machine failures?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Regular cleaning, following manufacturer guidelines, not overloading, and scheduling annual maintenance checks. We offer maintenance services to keep your appliances running efficiently.</p>
+                        <p><strong>Yes — flood prevention is critical for Ajax homeowners!</strong> Ajax clay soil creates serious drainage problems. When washing machine drain pumps fail or hoses back up, finished basements flood quickly:</p>
+                        <p><strong>Ajax flooding risks:</strong> Clay soil prevents water absorption, basement flooding costs $5,000-$15,000 in water damage repairs, insurance deductibles often $2,000-$5,000, many young families can't afford repairs + flood cleanup simultaneously, finished basements common in Ajax subdivisions (kids' play areas, home gyms, extra bedrooms).</p>
+                        <p><strong>Common flooding causes:</strong> Drain pump fails — water backs up from washing machine, drain hose clogs with lint/debris, poor hose routing causes backup, floor drain capacity insufficient, sump pump failure during heavy rain combines with appliance issue.</p>
+                        <p><strong>Our flood prevention service:</strong> Replace failing drain pumps immediately (don't wait for complete failure), install backflow preventers on washing machine drains, check drain hose routing for proper pitch and secure connections, recommend sump pump battery backup systems, inspect basement floor drains for capacity, test all connections under simulated heavy load.</p>
+                        <p><strong>Warning signs Ajax homeowners should act on immediately:</strong> Water pooling behind washer after cycles, slow drainage (gurgling sounds), visible leaks from hose connections, drain hose disconnects during spin cycle, water backing up from floor drain during wash.</p>
+                        <p><strong>Emergency flood response:</strong> Call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> immediately if washing machine floods. We prioritize these calls — typical cost $150-$350 to fix prevents $10,000+ damage.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>What should I do if my appliance breaks down?</span>
+                        <span>What should I do when my builder's warranty expires?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>First, unplug the appliance for safety. Check basic issues like power supply or circuit breakers. If the problem persists, call us at <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> for same-day service. Don't attempt complex repairs yourself.</p>
-                    </div>
-                </div>
-
-                <!-- AI SEARCH OPTIMIZATION: Voice Search Questions -->
-                <div class="faq-item">
-                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Can you repair my appliance today in Toronto?</span>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes! We offer same-day appliance repair service across Toronto and GTA. Call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> before 2 PM and we can usually arrive within 45 minutes. We service Toronto, North York, Scarborough, Etobicoke, Mississauga, Brampton, Richmond Hill, Markham, and 52 more areas.</p>
+                        <p><strong>Many Ajax homeowners are shocked when appliances fail right after 5-year warranty expires!</strong> First-time buyers often don't realize they should have extended warranty coverage:</p>
+                        <p><strong>Ajax first-time buyer reality:</strong> Median age 37.8 years — many first-time homeowners, didn't extend builder warranty beyond standard 5 years, all appliances installed same day (builder grade), all appliances failing within 6-12 months of each other, discovering replacement costs $5,000-$8,000 for complete kitchen, young families don't have $8,000 in emergency savings.</p>
+                        <p><strong>Appliance lifespan expectations vs reality:</strong> Builder-grade appliances marketed as "10-15 year lifespan" but Ajax's 2010-2015 construction used cheapest bulk purchases failing at 8-10 years, heavy family usage (3.2 people, 10+ washer loads weekly) accelerates wear, Durham hard water causes extra strain on dishwashers and washers.</p>
+                        <p><strong>Our warranty-expiration strategy:</strong> Honest repair vs replace guidance for each appliance, prioritize most critical appliances first (refrigerator, then washer, then dryer), extend appliance lifespan 3-5 years affordably through targeted repairs, help you budget for eventual replacements, no pressure sales tactics — we understand Ajax family finances.</p>
+                        <p><strong>Repair prioritization for budget-conscious families:</strong> 1st priority: Refrigerator (food spoilage costs more than repair), 2nd priority: Washing machine (family of 4+ can't use laundromat weekly), 3rd priority: Dryer (can air dry temporarily if needed), 4th priority: Dishwasher (can hand-wash temporarily), 5th priority: Range/oven (less critical in summer months).</p>
+                        <p><strong>Typical Ajax warranty-expiration scenario:</strong> Year 6-7 after home purchase: dishwasher and washing machine fail (Durham water damage), Year 8-9: dryer and refrigerator develop issues, Year 10-12: range/oven needs repairs. We help you spread costs over 4-5 years instead of replacing everything at once.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Where can I find appliance repair near me?</span>
+                        <span>What appliance brands do you repair most frequently in Ajax homes?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Nika Appliance Repair serves 60+ areas across the Greater Toronto Area including Toronto, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and all surrounding cities. We provide mobile service and come directly to your home. Average response time is 30-75 minutes depending on your location.</p>
+                        <p><strong>We're certified for 90+ appliance brands.</strong> Ajax's 2010-2015 construction boom means we see specific builder-grade brands constantly:</p>
+                        <p><strong>Most common builder-grade brands in Ajax (2010-2015 construction):</strong> Frigidaire (most common Ajax builder choice — found in 40% of new homes), GE (second most common — reliable but failing at 10-year mark), Whirlpool (third most common — better quality than Frigidaire/GE base models), Maytag (Whirlpool-owned, moderate upgrade in some subdivisions).</p>
+                        <p><strong>Upgrade brands Ajax homeowners choose when replacing:</strong> Samsung (popular Ajax replacement choice — modern features at reasonable price), LG (Korean brand gaining popularity in Durham), KitchenAid (premium brand for renovated kitchens), Bosch (Ajax families upgrading dishwashers specifically choose Bosch for hard water performance).</p>
+                        <p><strong>Large-capacity focus for Ajax families:</strong> Front-load washers 5.0+ cu ft capacity (families need larger machines), double-door refrigerators with freezer drawers (3.2 people need more food storage), high-efficiency dryers to handle large loads (10+ loads weekly).</p>
+                        <p><strong>Brands we stock parts for locally:</strong> Frigidaire, GE, Whirlpool, Maytag, Samsung, LG — covers 90% of Ajax appliances. Special-order parts for other brands arrive 24-48 hours.</p>
+                        <p><strong>Brand-specific Ajax advice:</strong> Frigidaire Gallery packages failing at 8-10 years (common in Northeast Ajax), GE Profile appliances holding up better (common in Northwest Ajax), Whirlpool Gold mid-tier performing well in Durham hard water conditions.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>How much does it cost to fix a refrigerator in Toronto?</span>
+                        <span>What does appliance repair cost in Ajax (current pricing)?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Refrigerator repair in Toronto typically costs $200-$400 depending on the issue. This includes diagnostic fee, labor, and basic parts. Common repairs like thermostat replacement cost $200-$250, while compressor repairs cost $300-$400. We provide upfront pricing before starting any work. All repairs include a 90-day warranty.</p>
+                        <p><strong>Ajax appliance repair pricing for 2025:</strong></p>
+                        <p><strong>Refrigerator repairs:</strong> $200-$400 (Compressor replacement: $350-$400, Door seal: $180-$250, Defrost system: $200-$300, Thermostat: $180-$280)</p>
+                        <p><strong>Washing machine repairs:</strong> $150-$350 (Drum bearing replacement: $280-$350 most common Ajax repair, Drain pump: $180-$280, Drive belt: $150-$220, Control board: $220-$320)</p>
+                        <p><strong>Dryer repairs:</strong> $150-$300 (Heating element: $180-$250, Thermal fuse: $150-$200, Drum roller: $200-$280)</p>
+                        <p><strong>Dishwasher repairs:</strong> $180-$380 (Spray arm replacement: $180-$250 very common in Ajax hard water, Drain pump: $220-$300, Inlet screen: $150-$200, Control panel: $280-$380)</p>
+                        <p><strong>Oven & stove repairs:</strong> $200-$450 (Heating element: $200-$300, Gas igniter: $220-$320, Control board: $320-$450)</p>
+                        <p><strong>Ajax-specific pricing notes:</strong> Durham hard water repairs: No extra charge (included in standard pricing), Basement flooding emergency calls: Same-day prioritization at regular rates, Builder-grade appliance parts: Often in stock (no rush charges)</p>
+                        <p><strong>What's included:</strong> Diagnostic fee: $0 (waived when you proceed), 90-day warranty on parts and labor, Follow-up visit free if issue returns, Evening/weekend appointments: No extra charge</p>
+                        <p><strong>New customer discount:</strong> Save $40 on first repair — mention when booking!</p>
+                        <p><strong>Ajax family budget tip:</strong> We understand young family finances. Ask about repair prioritization strategy to spread costs over time instead of replacing everything at once.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Do you service Samsung and LG appliances?</span>
+                        <span>Do you repair timer failures from delay-start overuse?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes! We service over 90 appliance brands including Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, Maytag, Frigidaire, Electrolux, and many more. Our technicians are factory-trained and carry OEM parts for most major brands. We handle refrigerators, washers, dryers, dishwashers, ovens, and stoves from all manufacturers.</p>
+                        <p><strong>Yes — timer motor repairs are extremely common in Ajax!</strong> Commuter families overuse delay-start functions, burning out timer components much faster than normal:</p>
+                        <p><strong>Ajax commuter lifestyle impact:</strong> Families set washer/dryer to start while commuting to Toronto (delay-start 8-10 hours daily), timer motors running constantly wear out 3x faster, control boards overheat from extended standby mode, timers failing at 3-5 years instead of typical 10-15 years.</p>
+                        <p><strong>Common timer failure symptoms:</strong> Washer/dryer won't start at scheduled time, cycle gets stuck mid-way and won't advance, display shows error codes (E01, E11, or flashing), timer knob doesn't advance through cycles, machine completely unresponsive when trying to start.</p>
+                        <p><strong>Our timer repair solutions:</strong> Replace failed electromechanical timer motors ($220-$320), install new electronic control boards ($250-$400), test all delay-start functions thoroughly, recommend WiFi-enabled smart appliances for more reliable scheduling (Samsung, LG models with smartphone control).</p>
+                        <p><strong>Prevention advice for commuters:</strong> Modern WiFi models more reliable than mechanical timers, reduce delay-start time to minimum needed (4-6 hours instead of 10), unplug during vacations (extended standby mode strains electronics), consider smart plugs as backup control method.</p>
+                        <p><strong>Smart appliance recommendations for Ajax families:</strong> Samsung FlexWash with WiFi (control from work smartphone), LG ThinQ washers with remote start, Whirlpool app-controlled models (simpler interface). Typical upgrade cost: $800-$1,200 vs $300-$400 repeated timer repairs over appliance life.</p>
+                        <p><strong>Emergency timer repair:</strong> Call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> for same-day evening appointments — we understand you need laundry working for the week ahead!</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>What's your response time for emergency appliance repair?</span>
+                        <span>How do I know if I should repair or replace my appliance?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Our average emergency response time is 45 minutes across the GTA. For central Toronto locations (Toronto, North York, East York), we typically arrive within 30-45 minutes. For outer regions like Mississauga, Brampton, or Markham, expect 40-60 minutes. We offer same-day service 7 days a week including weekends and holidays.</p>
+                        <p><strong>We provide honest repair vs replace guidance — especially important for Ajax families hitting warranty expiration!</strong> Here's our decision framework:</p>
+                        <p><strong>Repair makes sense when:</strong> Appliance is less than 8 years old, repair cost is less than 50% of replacement, it's a high-quality brand (KitchenAid, Bosch, Maytag), only one component failed (not multiple issues), you plan to stay in home 3+ more years.</p>
+                        <p><strong>Replace makes sense when:</strong> Appliance is 12+ years old (nearing end of life), repair cost exceeds 50% of replacement, it's a builder-grade model that's failed multiple times, multiple components failing simultaneously, newer models have energy savings that pay for themselves.</p>
+                        <p><strong>Ajax-specific considerations:</strong> Builder-grade Frigidaire/GE at 10-year mark: Often worth one major repair to extend 3-5 years (saves buying time for families), heavy family usage (3.2 people, 10+ loads weekly): Prioritize larger capacity replacements when repairing isn't economical, Durham hard water damage: If multiple appliances affected, invest in whole-home water softener + repairs rather than premature replacements.</p>
+                        <p><strong>Our honest assessment promise:</strong> We'll tell you when replacement makes more sense than repair, no pressure tactics — we understand Ajax family budgets, provide written repair vs replace analysis for your records, help you prioritize which appliances to repair first vs replace.</p>
+                        <p><strong>Typical Ajax scenario:</strong> Three appliances failing within 12 months after warranty expires. Our advice: 1) Repair refrigerator first (food safety critical), 2) Repair washer second (family of 4+ needs it), 3) Evaluate dryer/dishwasher — often one repair, one replace depending on condition.</p>
+                        <p><strong>Cost-benefit example:</strong> 9-year-old Frigidaire washer needing $300 drum bearing repair: Repair extends life 3-5 years = $60-100/year cost. New washer $800-$1,200 upfront. Repair makes sense for most Ajax families.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Can I get appliance repair on weekends?</span>
+                        <span>Do you offer same-day appliance repair across all Ajax neighborhoods?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Absolutely! We provide appliance repair service 7 days a week. Our weekend hours are Saturday 9 AM - 6 PM and Sunday 10 AM - 5 PM. Same-day service is available on weekends. Book online or call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> any day of the week.</p>
+                        <p><strong>Yes — same-day service available 7 days a week across all Ajax neighborhoods!</strong> Here's how our scheduling works:</p>
+                        <p><strong>Same-day availability by Ajax area:</strong> Central Ajax (25-35 min response): Most central location, fastest service. Riverside (30-45 min): Family-friendly neighborhood, quick access. Northwest Ajax (30-45 min): Established area, $1.17M average homes. Northeast Ajax (35-50 min): More affordable area, $1.02M average homes. Pickering Beach Road (40-55 min): New development area.</p>
+                        <p><strong>How to guarantee same-day service:</strong> Call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> before 2:00 PM for same-day appointments, Book online before 12:00 PM (noon) for confirmed same-day slot, Evening appointments available until 8 PM (perfect for commuters), Saturday 9 AM - 6 PM (most popular for Ajax families), Sunday 10 AM - 5 PM (emergency service).</p>
+                        <p><strong>Ajax commuter-friendly scheduling:</strong> We understand most Ajax residents commute to Toronto for work. Evening appointments (6-8 PM) at no extra charge are our most popular. Saturday mornings (9-11 AM) fill fast — book ahead!</p>
+                        <p><strong>Durham Region service advantage:</strong> Unlike Toronto-based companies that make Ajax wait 3-5 days, we prioritize Durham Region. Same-day service standard, not premium.</p>
+                        <p><strong>Peak repair demand in Ajax:</strong> January-February (basement flooding season — heavy snowmelt + clay soil), June-August (Durham hard water issues peak in summer), November-December (pre-holiday appliance failures). Book 2-3 days ahead during December 15-24.</p>
+                        <p><strong>Holiday service:</strong> We're open every holiday except Christmas Day. Thanksgiving, New Year's, Victoria Day, Canada Day, Civic Holiday, Labour Day, Family Day all available (Ajax families home for holidays = perfect repair time!).</p>
+                        <p><strong>Ajax scheduling pro tip:</strong> Book Saturday morning appointments 3-4 days ahead (most popular for families). Weekday evenings have better last-minute availability.</p>
                     </div>
                 </div>
             </div>
