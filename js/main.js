@@ -1,11 +1,20 @@
 // Main JavaScript file for Nika Appliance Repair
 
 document.addEventListener('DOMContentLoaded', function() {
-    
+
     // Initialize all interactive elements immediately
+    updateCurrentYear();
     initializeFAQ();
     initializeForms();
     initializeSmoothScrolling();
+
+    // Update current year in copyright
+    function updateCurrentYear() {
+        const yearElement = document.getElementById('current-year');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+    }
     
     // FAQ Functionality
     function initializeFAQ() {
