@@ -1482,9 +1482,9 @@ a {
 }
 
 .faq-item.active {
-    border-color: #1A237E; /* Dark blue/navy color matching section titles */
-    box-shadow: 0 5px 20px rgba(26, 35, 126, 0.15);
-    background: #F8F9FF; /* Very light blue/purple background */
+    border-color: #2196F3; /* Blue gradient color */
+    box-shadow: 0 5px 20px rgba(33, 150, 243, 0.15);
+    background: #F0F7FF; /* Very light blue background */
 }
 
 .faq-question {
@@ -1505,7 +1505,10 @@ a {
 }
 
 .faq-question span:first-child {
-    color: #1A237E; /* Dark blue/navy color matching section titles */
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     flex: 1;
     padding-right: 1rem;
 }
@@ -1527,21 +1530,27 @@ a {
 }
 
 .faq-question:hover {
-    background: rgba(26, 35, 126, 0.03); /* Very subtle navy hover effect */
+    background: rgba(33, 150, 243, 0.03); /* Very subtle blue hover effect */
     padding-left: 2.25rem;
 }
 
 .faq-item.active .faq-question {
-    background: rgba(26, 35, 126, 0.05); /* Very light navy background */
+    background: rgba(33, 150, 243, 0.05); /* Very light blue background */
 }
 
 .faq-item.active .faq-question span:first-child {
-    color: #1A237E; /* Keep same color when active */
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .faq-icon {
     font-size: 1.75rem;
-    color: #1A237E; /* Dark blue/navy color matching section titles */
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     transition: all 0.3s ease;
     font-weight: 300;
     min-width: 30px;
