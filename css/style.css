@@ -1330,10 +1330,10 @@ a {
 .booking-form select,
 .booking-form textarea {
     width: 100%;
-    padding: 0.75rem; /* Уменьшен padding */
+    padding: 0.75rem;
     border: 2px solid transparent;
     border-radius: 10px;
-    font-size: 0.95rem; /* Немного уменьшен размер шрифта */
+    font-size: 1rem; /* CRITICAL: Must be 16px+ to prevent mobile auto-zoom */
     font-family: var(--font-body);
     transition: all 0.3s ease;
 }
