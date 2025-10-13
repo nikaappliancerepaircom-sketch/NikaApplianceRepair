@@ -290,30 +290,50 @@ footer .footer-brands p {
    LINK STYLES - Proper styling for different link types
    ============================================ */
 
-/* Phone links - NO underline, inherit color from parent */
+/* Phone links - NO underline, NO background, inherit color from parent */
 a[href^="tel:"] {
     color: inherit !important;
     text-decoration: none !important;
+    background: none !important;
+    background-color: transparent !important;
     cursor: pointer;
 }
 
 a[href^="tel:"]:visited {
     color: inherit !important;
+    background: none !important;
+    background-color: transparent !important;
 }
 
 a[href^="tel:"]:hover {
     opacity: 0.8;
 }
 
-/* Text links in content - Blue with NO underline (phone links should be clickable text) */
+a[href^="tel:"]:active,
+a[href^="tel:"]:focus {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Text links in content - Blue with NO underline, NO background (phone links should be clickable text) */
 .ai-summary-box a[href^="tel:"] {
     color: var(--primary-blue) !important;
     text-decoration: none !important;
+    background: none !important;
+    background-color: transparent !important;
 }
 
 .ai-summary-box a[href^="tel:"]:visited {
     color: var(--primary-blue) !important;
     text-decoration: none !important;
+    background: none !important;
+    background-color: transparent !important;
+}
+
+.ai-summary-box a[href^="tel:"]:active,
+.ai-summary-box a[href^="tel:"]:focus {
+    background: none !important;
+    background-color: transparent !important;
 }
 
 /* Button-style links - NO underline, force white text for buttons */
