@@ -1,0 +1,48 @@
+/* Color Contrast Fix - WCAG 2.1 AA Compliance */
+/* This file must be loaded LAST to override all other CSS */
+
+/* Trust Metrics Section - Force white text */
+.trust-metrics-section h2,
+.trust-metrics-section h3,
+.trust-metrics-section div {
+    color: white !important;
+}
+
+/* Pricing Table Headers */
+table thead tr th {
+    color: white !important;
+}
+
+/* Service Areas Section - Headers on blue background */
+.areas-section-premium h3,
+.areas-section-premium .section-title-light {
+    color: white !important;
+}
+
+/* Footer Brands Section */
+.footer-brands h4,
+.footer-brands p {
+    color: white !important;
+}
+
+/* All elements with section-title-light class */
+.section-title-light {
+    color: white !important;
+}
+
+/* Explicit fix for metric cards */
+.trust-metrics-section [style*="background: rgba(255,255,255,0.1)"] div,
+.trust-metrics-section [style*="background: rgba(255,255,255,0.15)"] div,
+.trust-metrics-section [style*="background: rgba(255,255,255,0.2)"] div {
+    color: white !important;
+}
+
+/* Links on light blue background */
+a[href^="tel:"] {
+    color: inherit;
+}
+
+div[style*="background: #e3f2fd"] a {
+    color: #0d47a1 !important;
+    text-decoration: underline !important;
+}
