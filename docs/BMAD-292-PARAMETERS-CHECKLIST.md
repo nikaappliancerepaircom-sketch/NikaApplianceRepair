@@ -262,6 +262,31 @@ python content-quality-checker.py website/PAGE.html
 
 **⚠️ Content originality is NON-NEGOTIABLE - must be 100% unique**
 
+**🚨 CRITICAL RULE FOR LOCATION PAGES:**
+- **Each location page MUST have 100% unique content**
+- **NO duplicate content across location pages** (Google penalty)
+- **Write content manually, quality over speed**
+- **Research each location before writing** (neighborhoods, demographics, local issues)
+- **Include location-specific details** (known areas, local landmarks, climate issues)
+- **Unique FAQs for each location** (3-5 location-specific questions)
+- **Do NOT rush** - take time to write quality content
+- **Tokens are NOT important** - quality is everything
+
+**WHY THIS MATTERS:**
+- Google penalizes duplicate content severely (-50% to -90% ranking)
+- Users can tell generic vs location-specific content
+- Conversion rates 3x higher with localized content
+- AI search engines (ChatGPT, Perplexity) prefer unique local content
+- Competitors with generic location pages = easy to beat
+
+**MINIMUM UNIQUE CONTENT PER LOCATION PAGE:**
+- Hero section: 100% unique (mention local neighborhoods)
+- Services: 70% unique (adapt to local needs/issues)
+- Common Problems: 80% unique (climate-specific, building age issues)
+- FAQ: 100% unique (5+ local questions)
+- Testimonials: Can reuse, but add local customer references
+- Overall page uniqueness: 75%+ unique content minimum
+
 #### Readability & Structure (5 parameters) - **MUST BE 4.5/5+**
 - [ ] Reading level: Grade 8-10 (understandable to average person)
 - [ ] Sentence length: Average 15-20 words

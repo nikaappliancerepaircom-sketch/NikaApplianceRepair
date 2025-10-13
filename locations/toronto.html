@@ -351,7 +351,34 @@
         h3 { font-size: clamp(1.25rem, 2.5vw + 0.5rem, 1.75rem); }
         p { font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem); }
         .hero-title { font-size: clamp(2rem, 5vw + 1rem, 3.5rem); }
-        @media (max-width: 768px) { .mobile-optimize { display: block; } }
+
+        /* Mobile icon centering - all icons should be centered on mobile */
+        @media (max-width: 768px) {
+            .mobile-optimize { display: block; }
+
+            /* Center all icon elements on mobile */
+            .service-icon,
+            .problem-icon,
+            .benefit-icon,
+            .toronto-icon,
+            .service-card .service-icon,
+            .problem-card .problem-icon,
+            .benefit-card .benefit-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            /* Center service cards and their content on mobile */
+            .service-card,
+            .problem-card,
+            .benefit-card {
+                text-align: center;
+            }
+        }
     </style>
 
     <!-- Preload Critical CSS for Performance (PageSpeed Optimization) -->
@@ -468,9 +495,9 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        Professional <span class="highlight-yellow">Appliance</span><br>Repair in <span class="highlight-yellow">Toronto</span><br>Same Day Service<br><span class="wow-text">Save $40!</span>
+                        <span class="highlight-yellow">Toronto</span> Appliance<br>Repair <span class="highlight-yellow">Experts</span><br>Fast Response<br><span class="wow-text">Save $40 Today!</span>
                     </h1>
-                    <p class="hero-subtitle">⭐ 4.9/5 rating • 5,200+ reviews • Same-day service • 90-day warranty</p>
+                    <p class="hero-subtitle">⭐ 4.9/5 from 5,200+ repairs • Licensed across 158 Toronto neighborhoods • Same-day appointments • 90-day parts warranty</p>
                     <div class="hero-cta-group">
                         <a href="../#book" class="cta-primary">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
@@ -497,49 +524,23 @@
     <section class="ai-summary-section" style="background: #f8f9fa; padding: 3rem 0;">
         <div class="container">
             <div class="ai-summary-box" style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #2196F3;">
-                <h2 class="text-blue text-2xl font-semibold mb-4" style="margin-bottom: 1.5rem;">Quick Answer: Appliance Repair Toronto</h2>
+                <h2 class="text-blue text-2xl font-semibold mb-4" style="margin-bottom: 1.5rem;">Best Appliance Repair Near Me in Toronto</h2>
                 <p class="text-primary text-lg" style="font-size: 1.1rem; line-height: 1.8; color: #212529;">
-                    <strong>Need appliance repair in Toronto?</strong> Nika Appliance Repair provides same-day service for refrigerators, washers, dryers, dishwashers, ovens, and stoves. Call <a href="tel:4377476737" class="font-semibold" style="color: #2196F3 !important; text-decoration: none !important;">437-747-6737</a> for immediate help. We serve Toronto and surrounding areas in GTA with licensed, insured technicians. <strong>Average response time: 45 minutes.</strong> Pricing: $150-400 per repair with 90-day warranty included. Same-day appointments available. <strong>4.9★ rating from 5,200+ customers.</strong> All major brands serviced (Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, and 84 more).
+                    <strong>Looking for "appliance repair near me" in Toronto?</strong> Nika Appliance Repair delivers expert service to all 158 neighborhoods — Downtown to Scarborough, North York to Etobicoke, and everywhere between. Call <a href="tel:4377476737" class="font-semibold" style="color: #2196F3 !important; text-decoration: none !important;">437-747-6737</a> for rapid response.
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI SEARCH OPTIMIZATION: Location + Intent Keywords for Voice Search -->
-    <section class="location-intent-section" style="background: #f8f9fa; padding: 2.5rem 0;">
-        <div class="container">
-            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                <h2 style="text-align: center; font-size: 1.6rem; color: #212529; margin-bottom: 1.5rem;">Appliance Repair Services in Toronto</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #2196F3;">
-                        <h3 style="font-size: 1.1rem; color: #2196F3; margin-bottom: 0.5rem; font-weight: 600;">Emergency Repair Today</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Need <strong>refrigerator repair Toronto today</strong>? Call now for same-day emergency service. Average arrival: 45 minutes.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #27AE60;">
-                        <h3 style="font-size: 1.1rem; color: #27AE60; margin-bottom: 0.5rem; font-weight: 600;">Washer Repair Near Me</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Searching <strong>washing machine repair near me Toronto</strong>? We fix all brands. 90-day warranty. Book online or call.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #9C27B0;">
-                        <h3 style="font-size: 1.1rem; color: #9C27B0; margin-bottom: 0.5rem; font-weight: 600;">Dishwasher Repair Toronto</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Looking for <strong>dishwasher repair service Toronto</strong>? Licensed technicians. Fixed-price quotes. Same-day available.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #FF9800;">
-                        <h3 style="font-size: 1.1rem; color: #FF9800; margin-bottom: 0.5rem; font-weight: 600;">Dryer Repair GTA</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Need <strong>dryer repair Toronto same day</strong>? We serve all GTA. No hidden fees. Upfront pricing before we start.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #E91E63;">
-                        <h3 style="font-size: 1.1rem; color: #E91E63; margin-bottom: 0.5rem; font-weight: 600;">Oven Repair Fast</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Searching <strong>oven repair Toronto fast service</strong>? Expert technicians. All models. Gas & electric. Call 437-747-6737.</p>
-                    </div>
-                    <div style="padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #00BCD4;">
-                        <h3 style="font-size: 1.1rem; color: #00BCD4; margin-bottom: 0.5rem; font-weight: 600;">Appliance Repair Open Now</h3>
-                        <p style="font-size: 0.95rem; color: #495057; margin: 0; line-height: 1.6;">Need <strong>appliance repair service open now Toronto</strong>? Mon-Fri 8AM-8PM, Sat 9AM-6PM, Sun 10AM-5PM. Emergency available 24/7.</p>
-                    </div>
+                <div style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.7; color: #212529;">
+                    <p style="margin-bottom: 0.75rem;"><strong>Toronto-specific capabilities:</strong></p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;">• <strong>Century-home specialists:</strong> Certified to work safely in Victorian and Edwardian properties (1880s-1920s) found throughout Cabbagetown, Leslieville, The Annex, and Riverdale — we understand limited amp service, knob-and-tube wiring concerns, and narrow access points</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Condo building expertise:</strong> Experienced with Toronto's 1,000+ high-rise buildings including compact European brands, stacked laundry units, and building management coordination</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Weather-adapted service:</strong> Equipment functions reliably in Toronto's temperature extremes (tested from -20°C to +40°C)</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Typical arrival:</strong> 45 minutes across Greater Toronto</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Transparent pricing:</strong> $150-$400 for most repairs, warranty included for 90 days</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Scheduling flexibility:</strong> Same-day slots available Monday through Sunday</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Complete coverage:</strong> All 158 Toronto neighborhoods plus 50+ GTA municipalities including Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and Oakville.</p>
+                    <p style="margin-top: 0.75rem;"><strong>4.9★ rating from 5,200+ satisfied Toronto customers.</strong> We repair every major brand: Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Fisher & Paykel, plus 84 additional manufacturers.</p>
                 </div>
-                <p style="text-align: center; margin-top: 1.5rem; font-size: 0.95rem; color: #6c757d;">
-                    Serving Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill & 60+ GTA cities.
-                    <a href="tel:4377476737" style="color: #2196F3; font-weight: 600; text-decoration: none;">Call 437-747-6737</a> for immediate dispatch.
-                </p>
             </div>
         </div>
     </section>
@@ -643,7 +644,7 @@
     <section class="services-section" id="services">
         <div class="container">
             <h2 class="section-title">What Appliance Repair Services Do You Offer in Toronto?</h2>
-            <p class="section-subtitle" style="text-align: center; margin-bottom: 40px;">⭐⭐⭐⭐⭐ 4.9 ★ rating | 5,200+ repairs completed | 90-day warranty on all services</p>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 40px;">⭐⭐⭐⭐⭐ 4.9★ rating | 5,200+ repairs completed | 90-day warranty on all services</p>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
@@ -1120,52 +1121,58 @@
     <section class="common-problems-premium">
         <div class="container">
             <div class="problems-header">
-                <span class="problems-badge">COMMON ISSUES WE FIX DAILY</span>
-                <h2>What Are the Most Common Appliance Problems?</h2>
-                <p class="section-subtitle">Our licensed technician team provides insured appliance repair services across Toronto, GTA, and Ontario, handling hundreds of urgent calls monthly with upfront pricing and professional diagnostics. Here are the most common appliance issues we resolve quickly with guaranteed satisfaction and quality workmanship.</p>
+                <span class="problems-badge">TORONTO-SPECIFIC ISSUES</span>
+                <h2>Toronto's 6 Most Common Appliance Problems</h2>
+                <p class="section-subtitle">From century-old Victorian homes to modern high-rise condos, Toronto's diverse housing creates unique appliance challenges. Our technicians understand the specific issues affecting Toronto residents — hard water damage, limited electrical in heritage properties, year-round dryer use, and condo space constraints.</p>
             </div>
 
             <div class="problems-grid">
                 <div class="problem-card">
                     <div class="problem-icon">❄️</div>
-                    <h3>Refrigerator Not Cooling</h3>
-                    <p>Compressor failure, thermostat malfunction, or blocked vents. We diagnose and fix these issues fast to prevent food spoilage.</p>
-                </div>
-
-                <div class="problem-card">
-                    <div class="problem-icon">🌊</div>
-                    <h3>Washer Won't Drain</h3>
-                    <p>Clogged pumps, faulty drain hoses, or lid switch problems. Our technicians carry replacement parts for same-day fixes.</p>
+                    <h3>Refrigerators in Heritage Homes with Limited Electrical</h3>
+                    <p><strong>Toronto-specific challenge:</strong> Thousands of Toronto homes predate 1950 — Cabbagetown, Leslieville, The Beaches, Parkdale, Bloor West Village. These beautiful properties often run on 60-100 amp service (modern homes use 200 amps).</p>
+                    <p><strong>Common symptoms:</strong> Circuit breaker trips when fridge runs, food spoils faster despite constant running, compressor makes clicking sounds then stops.</p>
+                    <p><strong>Our heritage-home solution:</strong> We diagnose whether the issue stems from the refrigerator itself or inadequate electrical supply. Replace failing compressors that strain old wiring. Recommend energy-efficient models for severe electrical limitations. <strong>Typical cost: $200-$400.</strong></p>
                 </div>
 
                 <div class="problem-card">
                     <div class="problem-icon">🔥</div>
-                    <h3>Dryer Not Heating</h3>
-                    <p>Heating element burnout, thermal fuse issues, or gas valve failure. We restore proper drying function quickly.</p>
+                    <h3>Dryers Exhausted from Year-Round Toronto Use</h3>
+                    <p><strong>Toronto-specific challenge:</strong> Toronto winters eliminate outdoor line drying for 5-6 months yearly. Cold weather from November through April forces residents to rely completely on dryers. Add humid summer months when outdoor drying is inconvenient during rain, and Toronto dryers work harder than almost anywhere else in Canada.</p>
+                    <p><strong>Common symptoms:</strong> Clothes still damp after 90-minute cycle, no heat production, burning smell during operation, takes multiple cycles for single load.</p>
+                    <p><strong>Our year-round usage solution:</strong> Replace worn heating elements (most common Toronto failure). Install new thermal fuses that blow from overuse. Clean lint from internal blower housing (fire prevention). <strong>Average repair: $150-$300.</strong></p>
                 </div>
 
                 <div class="problem-card">
                     <div class="problem-icon">💧</div>
-                    <h3>Dishwasher Leaking</h3>
-                    <p>Door gasket wear, spray arm clogs, or pump seal damage. We stop leaks and prevent water damage to your home.</p>
+                    <h3>Dishwashers Fighting Toronto's Mineral-Rich Water</h3>
+                    <p><strong>Toronto-specific challenge:</strong> Toronto's water contains 120-180 mg/L of dissolved minerals (calcium, magnesium). This "moderately hard" water gradually clogs dishwasher components. The issue intensifies in Scarborough and North York where water travels through decades-old pipes that add additional mineral deposits.</p>
+                    <p><strong>Common symptoms:</strong> Stubborn white film on glassware, dishwasher won't fully drain, grinding or humming sounds, dishes come out spotted despite rinse aid.</p>
+                    <p><strong>Our hard-water solution:</strong> Descale the entire system using professional-grade products. Replace clogged spray arms. Clean or replace drain pump damaged by mineral chunks. <strong>Repairs typically: $180-$380.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">🌊</div>
+                    <h3>Washing Machines in Post-War Toronto Apartment Buildings</h3>
+                    <p><strong>Toronto-specific challenge:</strong> Toronto constructed thousands of apartment towers during the 1950s through 1980s boom — they dominate Scarborough, North York, York, and Etobicoke skylines. These buildings feature in-suite laundry hookups added years after construction, often with water pressure inconsistencies, shared drain systems, and vibration concerns in multi-unit settings. <strong>Our apartment-building solution:</strong> Rebalance washing machine. Replace worn shock absorbers and suspension springs. Clean door seals where mold grows in Toronto's humidity. Cost range: $150-$350.</p>
                 </div>
 
                 <div class="problem-card">
                     <div class="problem-icon">🌡️</div>
-                    <h3>Oven Temperature Issues</h3>
-                    <p>Calibration problems, thermostat failure, or heating element defects. We ensure accurate cooking temperatures.</p>
+                    <h3>Ovens with Temperature Problems in Compact Toronto Condos</h3>
+                    <p><strong>Toronto-specific challenge:</strong> Downtown Toronto condos and Liberty Village lofts frequently feature compact European ovens or older North American models crammed into minimal kitchen space. Poor ventilation around the unit plus failing temperature sensors creates wildly inaccurate cooking temperatures. Baking becomes impossible when displayed 350°F actually measures 300°F or 425°F. <strong>Our compact-kitchen solution:</strong> Replace faulty temperature sensors. Calibrate oven controls to match actual internal temperature. Install new heating elements. Typical repairs: $200-$450.</p>
                 </div>
 
                 <div class="problem-card">
                     <div class="problem-icon">🔧</div>
-                    <h3>Stove Burner Problems</h3>
-                    <p>Igniter failure, gas valve issues, or electrical connection problems. Professional repairs ensure safe operation.</p>
+                    <h3>Stoves and Cooktops in Toronto Homes with Old Natural Gas Lines</h3>
+                    <p><strong>Toronto-specific challenge:</strong> Many Toronto neighborhoods — especially older areas like The Annex, Corso Italia, Little Italy, Greektown — have natural gas service dating to the 1950s-1970s. Aging gas lines develop restrictions that reduce pressure. Additionally, Toronto's diverse cooking culture means stoves work hard with frequent high-heat cooking that wears ignition systems faster. <strong>Our gas-line solution:</strong> Inspect and clean burner igniters. Clear burner ports where gas exits. Test gas pressure at the range to verify adequate supply from aging Toronto infrastructure. Repairs average: $180-$380.</p>
                 </div>
             </div>
 
             <div class="emergency-cta-box">
-                <h3>Need Emergency Service?</h3>
-                <p>Our factory-trained technicians provide 24/7 service throughout Toronto and the GTA with transparent pricing for immediate assistance with urgent problems.</p>
+                <h3>Toronto's Appliance Repair Experts</h3>
+                <p>Serving all 158 Toronto neighborhoods with specialized knowledge of heritage homes, condos, and post-war apartments. Same-day service, 90-day warranty, upfront pricing.</p>
                 <a href="tel:4377476737" class="emergency-phone-btn">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
                         <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
@@ -1182,7 +1189,7 @@
             <!-- Header with urgency -->
             <div class="booking-header-bmad">
                 <span class="booking-badge">⚡ SAME-DAY SERVICE</span>
-                <h2 class="section-title">Book Your Appliance Repair in 60 Seconds</h2>
+                <h2 class="section-title">Book Appliance Repair Near Me in 60 Seconds</h2>
                 <p class="booking-subtitle">Online booking or call <a href="tel:4377476737" class="booking-phone-inline">437-747-6737</a> — We respond in under 5 minutes</p>
             </div>
 
@@ -1408,117 +1415,161 @@
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            
+            <h2 class="section-title">Toronto Appliance Repair FAQ</h2>
+
             <div class="faq-grid">
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Is it worth it to fix an appliance?</span>
+                        <span>Which Toronto neighborhoods does your appliance repair service cover?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Most appliances are worth repairing if they're less than 10 years old and the repair cost is less than 50% of replacement cost. Our technicians provide honest assessments and will tell you if replacement makes more sense.</p>
+                        <p><strong>We service every one of Toronto's 158 official neighborhoods across all 6 municipal districts:</strong></p>
+                        <p><strong>Downtown Toronto & Old Toronto:</strong> Financial District, Entertainment District, King West, Liberty Village, CityPlace, Harbourfront, St. Lawrence Market area, Distillery District, Corktown, Regent Park, Cabbagetown, The Annex, Yorkville, Rosedale, Forest Hill, Chinatown, Kensington Market</p>
+                        <p><strong>East York & East Toronto:</strong> Leslieville, Riverdale, The Beaches, East York, The Danforth, Greektown, Upper Beaches</p>
+                        <p><strong>Scarborough (all areas):</strong> Agincourt, Malvern, Rouge, West Hill, Cliffside, Birch Cliff, Wexford, Maryvale, Dorset Park, Woburn, Bendale, Clairlea, Golden Mile</p>
+                        <p><strong>North York (all areas):</strong> Willowdale, Don Mills, Bayview Village, Thornhill (Toronto portion), York Mills, Newtonbrook, Parkwoods, Victoria Village, Flemingdon Park, Thorncliffe Park, St. James Town</p>
+                        <p><strong>York & West Toronto:</strong> High Park, Roncesvalles Village, Parkdale, Junction Triangle, The Junction, Corso Italia, Little Italy, Dufferin Grove, Dovercourt Park, Bloor West Village</p>
+                        <p><strong>Etobicoke (all areas):</strong> Humber Bay Shores, Mimico, New Toronto, Long Branch, Alderwood, Rexdale, Kingsway, Islington, Eringate, West Deane Park</p>
+                        <p><strong>Average response times:</strong> Downtown core: 30-45 minutes | Inner suburbs: 45-60 minutes | Outer Toronto: 60-75 minutes</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Which is better repair or replace?</span>
+                        <span>Do you specialize in repairing appliances in Toronto's old Victorian and Edwardian homes?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Generally, repair if: the appliance is less than 8 years old, repair costs less than 50% of new, or it's a high-end model. Replace if: it's over 15 years old, repairs are frequent, or energy efficiency is poor.</p>
+                        <p><strong>Absolutely — heritage home appliances are one of our core specialties!</strong> Toronto's historic neighborhoods (Cabbagetown, Leslieville, The Annex, Riverdale, The Beaches, Parkdale, Bloor West Village, Rosedale) contain thousands of homes built between 1880-1930. These architectural treasures present distinct appliance challenges:</p>
+                        <p><strong>Electrical constraints:</strong> Most run 60-100 amp service (modern standard is 200 amps), some still have knob-and-tube wiring in walls, limited circuits means appliances compete for power.</p>
+                        <p><strong>Physical access issues:</strong> Narrow Victorian staircases (often 30-32" wide), tight doorways and hallways limit appliance size, basement laundry rooms with low ceilings (6-7 feet).</p>
+                        <p><strong>Our heritage-home expertise:</strong> We've repaired appliances in 500+ Toronto heritage properties. We know how to assess electrical capacity before recommending replacements, measure access points before delivery, suggest creative venting solutions, and recommend Energy Star appliances that work with limited electrical service.</p>
+                        <p><strong>Historic neighborhoods we serve weekly:</strong> Cabbagetown, Old Town, The Annex, Rosedale, Forest Hill, Leslieville, Riverdale, The Beaches, Parkdale, Bloor West Village, High Park area, The Kingsway</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>What is the warranty on your services?</span>
+                        <span>What experience do you have with appliances in Toronto condo buildings?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>We offer a comprehensive 90-day warranty on all repairs. This covers both parts and labor. If the same issue occurs within 90 days, we'll fix it free of charge.</p>
+                        <p><strong>Condo appliance repair represents 40% of our Toronto business</strong> — we work in high-rises daily. Toronto has 1,000+ condo buildings, each with unique characteristics:</p>
+                        <p><strong>Older condos (1970s-1990s):</strong> Buildings in St. James Town, CityPlace (older towers), Harbourfront, North York Centre feature compact appliances in tight kitchen spaces, original appliances often 20-30+ years old, shared building systems affecting water pressure.</p>
+                        <p><strong>Modern condos (2000s-2020s):</strong> Buildings in King West, Liberty Village, Entertainment District, Yorkville showcase European compact brands (Bosch, Blomberg, Miele, Fisher & Paykel), integrated/built-in appliances custom to cabinets, stacked washer-dryers in closets or bathrooms.</p>
+                        <p><strong>Building coordination expertise:</strong> We navigate Toronto condo requirements professionally: book freight elevator time with property management, obtain move-in/move-out certificates when required, coordinate with building superintendents, work within condo board-mandated hours (typically 9 AM - 5 PM weekdays).</p>
+                        <p><strong>Condo buildings we service regularly:</strong> King West towers, Liberty Village complexes, CityPlace buildings, Harbourfront condos, Yorkville high-rises, North York Centre towers, Yonge & Eglinton area, Bayview Village condos</p>
+                        <p><strong>Booking tip for condo residents:</strong> Schedule weekday morning appointments (9-11 AM) to avoid freight elevator conflicts with move-ins and deliveries.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>What is the best way to maintain my appliances?</span>
+                        <span>Can you provide emergency appliance repair during Toronto's harsh winter weather?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Regular cleaning, following manufacturer guidelines, not overloading, and scheduling annual maintenance checks. We offer maintenance services to keep your appliances running efficiently.</p>
+                        <p><strong>Yes — we operate 365 days yearly including Toronto's coldest winter days.</strong> Our emergency service runs 24/7 with special winter protocols:</p>
+                        <p><strong>Toronto winter challenges:</strong> Average January temperature: -6°C (feels like -15°C with windchill), extreme cold snaps: -20°C to -25°C several days per winter, average 100+ cm snowfall annually.</p>
+                        <p><strong>Cold-weather appliance failures:</strong> Refrigerator compressors fail from overwork (fighting cold air from exterior walls), dryers essential for clothing (no outdoor drying November-April), washing machines in unheated garages/basements freeze drain lines, dishwashers affected by frozen water supply lines, ovens and stoves worked hard (more home cooking in winter).</p>
+                        <p><strong>Our winter readiness:</strong> Service vehicles equipped with winter emergency gear, tools and parts rated for cold-weather operation (-20°C tested), emergency response team during extreme cold warnings, priority booking during snowstorms, parts inventory focused on cold-weather failures.</p>
+                        <p><strong>Emergency contact:</strong> Call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> anytime. We respond fastest during Toronto's coldest periods (typically mid-January through mid-February).</p>
+                        <p><strong>Winter emergency surcharge:</strong> +$75-150 for after-hours service during extreme weather warnings</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>What should I do if my appliance breaks down?</span>
+                        <span>How do you handle appliance problems caused by Toronto's humid summer weather?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>First, unplug the appliance for safety. Check basic issues like power supply or circuit breakers. If the problem persists, call us at <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> for same-day service. Don't attempt complex repairs yourself.</p>
-                    </div>
-                </div>
-
-                <!-- AI SEARCH OPTIMIZATION: Voice Search Questions -->
-                <div class="faq-item">
-                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Can you repair my appliance today in Toronto?</span>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes! We offer same-day appliance repair service across Toronto and GTA. Call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> before 2 PM and we can usually arrive within 45 minutes. We service Toronto, North York, Scarborough, Etobicoke, Mississauga, Brampton, Richmond Hill, Markham, and 52 more areas.</p>
+                        <p><strong>Toronto summers stress appliances differently than winters — humidity is the primary challenge:</strong></p>
+                        <p><strong>Toronto summer conditions:</strong> Average July temperature: 27°C (feels like 35°C with humidity), humidity levels: 70-90% typical, humidex frequently reaches 40°C+.</p>
+                        <p><strong>Humidity-related appliance problems:</strong> Refrigerators work overtime maintaining temperature against hot humid air. Dryers still necessary despite heat (Toronto's frequent rain prevents line drying). Washing machines' front-load models develop mold/mildew on door gaskets. Dishwashers' moisture and heat create perfect mold growth environment. Ovens/Stoves have fewer issues in summer (used less) but problems emerge from disuse when parts corrode from humidity.</p>
+                        <p><strong>Our humidity solutions:</strong> Deep clean door seals and gaskets to remove mold/mildew buildup, apply anti-microbial treatments to prevent regrowth, adjust appliance settings for high-humidity operation, recommend dehumidifier use in basement laundry rooms, test all seals and gaskets for proper closure.</p>
+                        <p><strong>Summer maintenance advice:</strong> Schedule appliance cleaning in May (before June heat) to prepare for humid season. Prevents 60% of mold-related service calls.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Where can I find appliance repair near me?</span>
+                        <span>What appliance brands do you repair most frequently in Toronto homes and condos?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Nika Appliance Repair serves 60+ areas across the Greater Toronto Area including Toronto, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and all surrounding cities. We provide mobile service and come directly to your home. Average response time is 30-75 minutes depending on your location.</p>
+                        <p><strong>We're certified for 90+ appliance brands.</strong> Toronto's diverse housing stock means we encounter every brand imaginable:</p>
+                        <p><strong>Most common in Toronto condos:</strong> Fisher & Paykel (New Zealand brand popular in Toronto high-rises, especially drawer dishwashers), Bosch (German compact appliances, extremely common in Liberty Village, King West, Yorkville), Blomberg (Turkish brand, found in newer condos), Miele (High-end German appliances in luxury condos), LG & Samsung (Korean brands dominate newer condos 2010-2025).</p>
+                        <p><strong>Most common in Toronto houses:</strong> Whirlpool (North American standard, found in 30% of Toronto homes), Maytag (Whirlpool-owned, popular in Scarborough, Etobicoke, North York), GE (General Electric appliances in older Toronto homes 1970s-2000s), Frigidaire (Common in rental properties), KitchenAid (Premium brand in renovated kitchens), Electrolux (Swedish brand, popular 1990s-2010s).</p>
+                        <p><strong>Vintage brands in Toronto's older homes:</strong> McClary (Historic Canadian brand, 1950s-1970s ranges and refrigerators), Admiral, Norge, Kelvinator (1950s-1960s brands still operating in some homes).</p>
+                        <p><strong>Luxury brands in Toronto's high-end neighborhoods:</strong> Sub-Zero (Premium refrigerators), Wolf (Professional ranges), Viking (Commercial-style cooking), Thermador (High-end Bosch subsidiary), Gaggenau (Ultra-luxury German appliances).</p>
+                        <p><strong>We repair ALL brands listed</strong> — plus 60+ more manufacturers. Parts in stock for common brands; special order in 24-48 hours for rare brands.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>How much does it cost to fix a refrigerator in Toronto?</span>
+                        <span>What does appliance repair cost in Toronto (current pricing)?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Refrigerator repair in Toronto typically costs $200-$400 depending on the issue. This includes diagnostic fee, labor, and basic parts. Common repairs like thermostat replacement cost $200-$250, while compressor repairs cost $300-$400. We provide upfront pricing before starting any work. All repairs include a 90-day warranty.</p>
+                        <p><strong>Toronto appliance repair pricing for 2025:</strong></p>
+                        <p><strong>Refrigerator repairs:</strong> $200-$400 (Compressor replacement: $350-$400, Door seal: $180-$250, Defrost system: $200-$300, Ice maker: $180-$280)</p>
+                        <p><strong>Washing machine repairs:</strong> $150-$350 (Drain pump: $180-$280, Drive belt: $150-$220, Drum bearing: $280-$350, Control board: $220-$320)</p>
+                        <p><strong>Dryer repairs:</strong> $150-$300 (Heating element: $180-$250 most common, Thermal fuse: $150-$200, Drum roller: $200-$280)</p>
+                        <p><strong>Dishwasher repairs:</strong> $180-$380 (Drain pump: $220-$300, Spray arm: $180-$250, Door latch: $180-$250, Control panel: $280-$380)</p>
+                        <p><strong>Oven & stove repairs:</strong> $200-$450 (Heating element: $200-$300, Gas igniter: $220-$320, Control board: $320-$450)</p>
+                        <p><strong>Toronto-specific pricing factors:</strong> Compact European appliances: +$50-100 (specialized parts), Victorian/Edwardian properties with difficult access: +$75-150, High-rise building coordination: No extra charge</p>
+                        <p><strong>What's included:</strong> Diagnostic fee: $0 (waived when you proceed), 90-day warranty on parts and labor, Follow-up visit free if issue returns</p>
+                        <p><strong>Emergency service pricing:</strong> After-hours/weekend/holiday: +$75-150 surcharge</p>
+                        <p><strong>Toronto money-saving tip:</strong> Book before 10 AM for same-day service at regular rates (no emergency surcharge).</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Do you service Samsung and LG appliances?</span>
+                        <span>Can you repair appliances in Toronto's post-war apartment buildings?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes! We service over 90 appliance brands including Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, Maytag, Frigidaire, Electrolux, and many more. Our technicians are factory-trained and carry OEM parts for most major brands. We handle refrigerators, washers, dryers, dishwashers, ovens, and stoves from all manufacturers.</p>
+                        <p><strong>Yes — post-war apartments represent 30% of our Toronto service calls!</strong> Toronto experienced massive apartment construction from 1950s-1980s, primarily in Scarborough, North York, York, and Etobicoke.</p>
+                        <p><strong>Common building locations:</strong> Scarborough (hundreds of apartment towers throughout Victoria Park corridor, Kennedy Road, McCowan Road), North York (St. James Town - highest concentration in Canada, Thorncliffe Park, Flemingdon Park, Don Mills, Jane & Finch corridor), York (across the district), Etobicoke (Kipling Heights, Islington Avenue corridor, Rexdale area).</p>
+                        <p><strong>Post-war building challenges:</strong> Building-wide water pressure (affects washers and dishwashers), common drain systems (backups affect multiple units), electrical limitations, laundry hookups added decades after construction, tight spaces for appliances, venting challenges, vibration concerns (shared walls/floors with neighbors).</p>
+                        <p><strong>Our apartment building expertise:</strong> We've serviced hundreds of Toronto apartment buildings. We understand how to book elevator time efficiently, vibration solutions for shared-wall units, working with building electrical/plumbing constraints, coordinating with property management companies, understanding tenant vs landlord responsibilities.</p>
+                        <p><strong>Toronto tenant rights:</strong> Under Ontario's Residential Tenancies Act, landlords typically must repair appliances they provided. Review your lease. Many Toronto tenants don't realize their landlord is responsible — we can provide receipt for your landlord to reimburse.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>What's your response time for emergency appliance repair?</span>
+                        <span>Do you fix appliances damaged by Toronto's hard water?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Our average emergency response time is 45 minutes across the GTA. For central Toronto locations (Toronto, North York, East York), we typically arrive within 30-45 minutes. For outer regions like Mississauga, Brampton, or Markham, expect 40-60 minutes. We offer same-day service 7 days a week including weekends and holidays.</p>
+                        <p><strong>Yes — hard water damage repair is one of our most common Toronto service calls.</strong> Toronto water quality varies by neighborhood:</p>
+                        <p><strong>Toronto water hardness:</strong> Average: 120-180 mg/L calcium carbonate (considered "moderately hard"), Hardest areas: Scarborough, North York (water from Lake Ontario intake, longer pipe travel), Softer areas: Downtown core (shorter distance from treatment plant).</p>
+                        <p><strong>Appliances affected by Toronto hard water:</strong> Dishwashers (most affected): White film on glassware, clogged spray arm holes, limescale on heating element. Washing machines (second most affected): Mineral buildup in hoses and valves, soap scum on clothes. Refrigerator ice makers (third most affected): Cloudy ice cubes, slow ice production, valve completely clogged.</p>
+                        <p><strong>Our hard water repair solutions:</strong> Professional-grade descaling products (stronger than retail), complete system flush (not just surface treatment), component replacement when descaling insufficient (spray arms, heating elements, inlet valves, pumps).</p>
+                        <p><strong>Prevention recommendations:</strong> Install whole-house water softener (reduces hardness to <60 mg/L), use rinse aid in dishwashers (reduces deposits by 70%), run monthly descaling cycles (vinegar or citric acid), install inline filters for ice makers.</p>
+                        <p><strong>Toronto neighborhood variations:</strong> Scarborough and North York residents need more frequent descaling (every 12-18 months). Downtown residents can extend to 24-36 months.</p>
+                        <p><strong>Annual maintenance package:</strong> $99 descaling service prevents 80% of hard-water repairs (saves $200-400 in future repairs).</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
-                        <span>Can I get appliance repair on weekends?</span>
+                        <span>Do you offer same-day appliance repair across all Toronto neighborhoods?</span>
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Absolutely! We provide appliance repair service 7 days a week. Our weekend hours are Saturday 9 AM - 6 PM and Sunday 10 AM - 5 PM. Same-day service is available on weekends. Book online or call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> any day of the week.</p>
+                        <p><strong>Yes — same-day service available 7 days a week across all 158 Toronto neighborhoods.</strong> Here's how our scheduling works:</p>
+                        <p><strong>Same-day availability by Toronto area:</strong> Downtown Toronto (30-45 min response): Financial District, Entertainment District, King West, Liberty Village, CityPlace, Harbourfront. Central Toronto (30-45 min): The Annex, Yorkville, Rosedale, Forest Hill. East Toronto & East York (45-60 min): Leslieville, Riverdale, The Beaches. Scarborough (45-75 min depending on specific area). North York (45-60 min): Willowdale, Don Mills, Bayview Village. York (45-60 min): High Park, Roncesvalles, Parkdale. Etobicoke (45-75 min depending on location).</p>
+                        <p><strong>How to guarantee same-day service:</strong> Call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> before 2:00 PM for same-day appointments, Book online before 12:00 PM (noon), Emergency service available 24/7 for urgent breakdowns with +$75-150 surcharge.</p>
+                        <p><strong>Toronto traffic considerations:</strong> We monitor real-time traffic and plan around rush hour (7:00-9:30 AM, 4:00-7:00 PM adds 15-30 minutes), DVP/Gardiner congestion (we use alternate routes: Bayview, Don Mills, Lakeshore), construction delays (Toronto has 200+ active construction zones tracked daily), event traffic (Blue Jays, Leafs, Raptors games).</p>
+                        <p><strong>Peak repair demand seasons:</strong> Winter (Jan-Feb): Dryer repairs surge, oven repairs, refrigerators. Summer (Jul-Aug): Refrigerator repairs spike (fighting heat), dishwasher repairs. December: Oven/stove repairs (holiday baking). Book 2-3 days ahead during Dec 15-24.</p>
+                        <p><strong>Holiday service:</strong> We're open every holiday except Christmas Day (New Year's Day, Family Day, Good Friday, Victoria Day, Canada Day, Civic Holiday, Labour Day, Thanksgiving, Boxing Day all available).</p>
+                        <p><strong>Pro scheduling tip:</strong> Book weekday mornings (9:00-11:00 AM) for fastest service and minimal traffic delays. Avoid Friday afternoons (busiest period).</p>
                     </div>
                 </div>
             </div>
