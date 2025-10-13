@@ -354,6 +354,11 @@
         @media (max-width: 768px) { .mobile-optimize { display: block; } }
     </style>
 
+    <!-- Preload Critical CSS for Performance (PageSpeed Optimization) -->
+    <link rel="preload" href="css/responsive-comprehensive.css" as="style">
+    <link rel="preload" href="css/mobile-bmad-typography.css" as="style">
+    <link rel="preload" href="css/no-scrollbars-fix.css" as="style">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -455,7 +460,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/images/friendly-technician-character-min.webp" alt="Professional Service Technician" loading="lazy">
+                    <img src="assets/images/friendly-technician-character-min.webp" alt="Professional Service Technician" fetchpriority="high" width="800" height="1000">
                 </div>
             </div>
         </div>

@@ -176,13 +176,14 @@
 
 /* Content */
 .testimonial-content-premium {
-    padding: 2rem 1.5rem 1.5rem;
+    padding: 2.5rem 1.5rem 1.5rem; /* Increased top padding to move stars lower */
 }
 
 .rating-stars-premium {
     color: #FFD600;
     font-size: 1.2rem;
     margin-bottom: 1.25rem;
+    margin-top: 0.5rem; /* Added extra top margin for more space from video */
     letter-spacing: 3px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
