@@ -246,27 +246,42 @@
    FORCED CONTRAST FIXES
    ============================================ */
 
-/* Force white text on blue backgrounds */
-section[style*="#2196F3"] *,
-section[style*="#1976D2"] *,
-.trust-metrics-section *,
-.areas-section-premium * {
+/* Force white text ONLY on sections with blue gradient background */
+section.trust-metrics-section,
+section.areas-section-premium {
     color: var(--white) !important;
 }
 
-/* Exceptions for links/buttons */
-section[style*="#2196F3"] a[style*="background: white"],
-section[style*="#1976D2"] a[style*="background: white"],
-.trust-metrics-section a[style*="background: white"] {
-    color: var(--primary-blue) !important;
-}
-
-/* Table headers always white */
-table thead th {
+section.trust-metrics-section h2,
+section.trust-metrics-section h3,
+section.trust-metrics-section div,
+section.areas-section-premium h2,
+section.areas-section-premium h3,
+section.areas-section-premium div {
     color: var(--white) !important;
 }
 
-/* Footer brands */
-.footer-brands * {
+/* Exceptions for white background elements (buttons, cards on white) */
+section[style*="background: white"] *,
+div[style*="background: white"] *,
+table[style*="background: white"] * {
+    color: inherit !important;
+}
+
+/* Table headers on blue gradient - force white */
+table thead tr[style*="background: linear-gradient"] th,
+table thead tr[style*="#2196F3"] th,
+table thead tr[style*="#1976D2"] th {
+    color: var(--white) !important;
+}
+
+/* Table body cells - use their own colors */
+table tbody td {
+    color: inherit !important;
+}
+
+/* Footer brands on blue background */
+footer .footer-brands h4,
+footer .footer-brands p {
     color: var(--white) !important;
 }
