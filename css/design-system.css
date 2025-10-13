@@ -285,3 +285,38 @@ footer .footer-brands h4,
 footer .footer-brands p {
     color: var(--white) !important;
 }
+
+/* ============================================
+   LINK STYLES - Always keep brand blue color
+   ============================================ */
+
+/* All links (including visited) should be blue */
+a[href^="tel:"],
+a[href*="437-747-6737"] {
+    color: var(--primary-blue) !important;
+    text-decoration: underline;
+}
+
+/* Phone links - visited state also blue */
+a[href^="tel:"]:visited,
+a[href*="437-747-6737"]:visited {
+    color: var(--primary-blue) !important;
+}
+
+/* Phone links - hover state slightly darker */
+a[href^="tel:"]:hover,
+a[href*="437-747-6737"]:hover {
+    color: var(--primary-blue-dark) !important;
+}
+
+/* Links on white/light backgrounds */
+.ai-summary-box a,
+div[style*="background: white"] a,
+div[style*="background: #f"] a {
+    color: var(--primary-blue) !important;
+}
+
+.ai-summary-box a:visited,
+div[style*="background: white"] a:visited {
+    color: var(--primary-blue) !important;
+}
