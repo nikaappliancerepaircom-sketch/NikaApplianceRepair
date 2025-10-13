@@ -305,14 +305,15 @@ a[href^="tel:"]:hover {
     opacity: 0.8;
 }
 
-/* Text links in content - Blue with underline */
+/* Text links in content - Blue with NO underline (phone links should be clickable text) */
 .ai-summary-box a[href^="tel:"] {
     color: var(--primary-blue) !important;
-    text-decoration: underline !important;
+    text-decoration: none !important;
 }
 
 .ai-summary-box a[href^="tel:"]:visited {
     color: var(--primary-blue) !important;
+    text-decoration: none !important;
 }
 
 /* Button-style links - NO underline, force white text for buttons */
