@@ -1,14 +1,14 @@
-# 🎯 BMAD METHOD - 277 PARAMETERS MANDATORY CHECKLIST
+# 🎯 BMAD METHOD - 292 PARAMETERS MANDATORY CHECKLIST
 
-## ⚠️ CRITICAL RULE: EVERY PAGE MUST PASS ALL 277 PARAMETERS BEFORE DEPLOYMENT
+## ⚠️ CRITICAL RULE: EVERY PAGE MUST PASS ALL 292 PARAMETERS BEFORE DEPLOYMENT
 
-**Updated:** 2025-10-01 | **Version:** 2.0 | **Total Parameters:** 277
+**Updated:** 2025-01-13 | **Version:** 3.0 | **Total Parameters:** 292
 
 ---
 
-## 📊 PARAMETER BREAKDOWN (277 TOTAL)
+## 📊 PARAMETER BREAKDOWN (292 TOTAL)
 
-### 1️⃣ SEO OPTIMIZATION (30 parameters) - TARGET: 85+/100
+### 1️⃣ SEO OPTIMIZATION (45 parameters) - TARGET: 85+/100
 
 #### Content Optimization (9 parameters)
 ```bash
@@ -53,7 +53,33 @@ python seo-checker.py website/PAGE.html
 - [ ] Forms: Contact/callback form present
 - [ ] Navigation: Clear structure
 
-**SEO PASS CRITERIA: 85+/100 score**
+#### 🆕 AI Search Optimization (15 parameters) - **CRITICAL FOR 2025+**
+```bash
+python ai-search-checker.py website/PAGE.html
+```
+
+**AI Crawler Access (5 parameters):**
+- [ ] robots.txt allows GPTBot (OpenAI/ChatGPT)
+- [ ] robots.txt allows Claude-Web (Anthropic)
+- [ ] robots.txt allows PerplexityBot (Perplexity AI)
+- [ ] robots.txt allows Google-Extended (Google Gemini)
+- [ ] robots.txt allows Meta-ExternalAgent (Meta AI)
+
+**AI Content Structure (5 parameters):**
+- [ ] Direct answer in first 100 words (AI summary box)
+- [ ] All H2s formatted as natural questions
+- [ ] Comparison tables present (AI citation format)
+- [ ] HowTo schema for technical guides
+- [ ] FAQ answers in standalone format (voice-ready)
+
+**Voice Search & Conversational (5 parameters):**
+- [ ] "Near me" query variations covered
+- [ ] Voice-friendly question format (conversational)
+- [ ] Natural language answers (no keyword stuffing)
+- [ ] Location + intent combinations (e.g., "refrigerator repair Toronto today")
+- [ ] Click-to-call enabled on all phone numbers (tel: links)
+
+**SEO + AI PASS CRITERIA: 85+/100 score, AI crawler access enabled**
 
 ---
 
@@ -385,9 +411,9 @@ python conversion-design-checker.py website/PAGE.html
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│  BMAD METHOD - 277 TOTAL PARAMETERS                    │
+│  BMAD METHOD - 292 TOTAL PARAMETERS (v3.0)            │
 ├────────────────────────────────────────────────────────┤
-│  1.  SEO Optimization:        30 params → 85+/100     │
+│  1.  SEO + AI Optimization:   45 params → 85+/100  🆕│
 │  2.  Responsive Design:       80 params → 10/10       │
 │  3.  Speed Performance:        9 params → 85+/100     │
 │  4.  Cross-Browser:           28 params → 4/4         │
@@ -399,7 +425,8 @@ python conversion-design-checker.py website/PAGE.html
 │  10. Data Consistency:        15 params → 100%        │
 │  11. Conversion Design:       10 params → 85+/100     │
 ├────────────────────────────────────────────────────────┤
-│  TOTAL:                      277 PARAMETERS           │
+│  TOTAL:                      292 PARAMETERS        🚀 │
+│  NEW: +15 AI Search params (ChatGPT, Perplexity, etc)│
 │  TARGET:                     85+/100 on ALL           │
 │  DEPLOYMENT GATE:            ALL CATEGORIES PASS      │
 └────────────────────────────────────────────────────────┘
@@ -409,9 +436,9 @@ python conversion-design-checker.py website/PAGE.html
 
 ## 🚨 CRITICAL DEPLOYMENT GATES
 
-### Gate 1-6: Technical Foundation (192 params)
+### Gate 1-6: Technical Foundation (207 params)
 ```
-✅ SEO: 85+/100
+✅ SEO + AI: 85+/100 (includes AI crawler access) 🆕
 ✅ Responsive: 10/10 devices
 ✅ Speed: 85+/100
 ✅ Cross-Browser: 4/4 browsers
@@ -440,7 +467,8 @@ python conversion-design-checker.py website/PAGE.html
 python bmad-complete-test.py website/PAGE.html
 
 # Or run individually:
-python seo-checker.py website/PAGE.html                   # 30 params
+python seo-checker.py website/PAGE.html                   # 30 params (traditional SEO)
+python ai-search-checker.py website/PAGE.html             # 15 params (AI Search) 🆕
 python test-actual-scroll.py website/PAGE.html            # 80 params
 python speed-checker.py website/PAGE.html                 # 9 params
 python complete-cross-browser-tester.py website/PAGE.html # 28 params
@@ -461,25 +489,30 @@ python conversion-design-checker.py website/PAGE.html     # 10 params
 5. Move to next parameter
 6. Repeat until ALL categories 85+/100
 
-**NO DEPLOYMENT until all 277 parameters pass!**
+**NO DEPLOYMENT until all 292 parameters pass!**
 
 ---
 
 ## 💡 TIPS FOR AI AGENTS
 
 1. **Always check this file FIRST** before starting page work
-2. **Data Consistency is CRITICAL** - even 1 mismatch = FAIL entire page
-3. **Psychology triggers must be TRUE** - no fake urgency or false claims
-4. **Test after EVERY change** - don't batch fixes
-5. **Document all numbers** - maintain global consistency sheet
-6. **CRO before prettiness** - conversion > visual appeal
-7. **Mobile-first testing** - most traffic is mobile
+2. **AI Search is NOW CRITICAL** - 50%+ traffic will come from AI by 2026 🆕
+3. **Data Consistency is CRITICAL** - even 1 mismatch = FAIL entire page
+4. **Psychology triggers must be TRUE** - no fake urgency or false claims
+5. **Test after EVERY change** - don't batch fixes
+6. **Document all numbers** - maintain global consistency sheet
+7. **CRO before prettiness** - conversion > visual appeal
+8. **Mobile-first testing** - most traffic is mobile
+9. **Test in ChatGPT/Perplexity weekly** - monitor AI visibility 🆕
 
 ---
 
 ## 📄 Related Documentation
 
 - [BMAD-METHOD-COMPLETE.md](BMAD-METHOD-COMPLETE.md) - Full methodology
+- [AI-SEARCH-DOMINATION-2025-2030.md](AI-SEARCH-DOMINATION-2025-2030.md) - AI Search Strategy 🆕
+- [SEO-AI-OPTIMIZATION.md](SEO-AI-OPTIMIZATION.md) - AI & E-E-A-T Optimization
+- [AI-VISIBILITY-AUDIT.md](AI-VISIBILITY-AUDIT.md) - 90-Day AI Strategy
 - [README-FOR-AI-AGENTS.md](README-FOR-AI-AGENTS.md) - AI agent onboarding
 - [BMAD-CONTENT-QUALITY-GUIDE.md](BMAD-CONTENT-QUALITY-GUIDE.md) - Content best practices
 - [BMAD-CRO-GUIDE.md](BMAD-CRO-GUIDE.md) - Conversion optimization
@@ -488,7 +521,8 @@ python conversion-design-checker.py website/PAGE.html     # 10 params
 
 ---
 
-**Last Updated:** 2025-10-01
-**Version:** 2.0
-**Total Parameters:** 277
+**Last Updated:** 2025-01-13
+**Version:** 3.0 (AI Search Update)
+**Total Parameters:** 292 (+15 AI Search params)
 **Status:** Production Ready ✅
+**Key Change:** Added AI Search Optimization for ChatGPT, Perplexity, Google AI, Bing Copilot
