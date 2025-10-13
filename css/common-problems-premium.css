@@ -108,8 +108,12 @@
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     margin-bottom: 1rem;
-    color: white;
+    color: white !important;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    background-clip: unset !important;
 }
 
 .problems-header .section-subtitle {
@@ -188,9 +192,13 @@
     font-size: clamp(1.25rem, 2vw, 1.5rem);
     font-weight: 600;
     margin-bottom: 1rem;
-    color: white;
+    color: white !important;
     position: relative;
     z-index: 1;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    background-clip: unset !important;
 }
 
 .problem-card p {
