@@ -1,0 +1,1266 @@
+/* Dropdown Navigation Styles */
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background: #f5f5f5;
+    color: #d4a00c;
+}
+
+/* Mobile dropdown */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        background: rgba(0,0,0,0.05);
+    }
+
+    .has-dropdown.active .dropdown-menu {
+        display: block;
+    }
+}
+/* Brand Pages Hero Image Fix - Ensures consistency with index page */
+
+/* Hero section layout */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 0 0 40%;
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-text {
+        order: 1;
+        width: 100%;
+    }
+    
+    .hero-image {
+        order: 2;
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .hero-cta-group {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .hero-image {
+        max-width: 250px;
+    }
+    
+    .hero-section {
+        padding: 60px 0 30px;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.75rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-features {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    
+    .hero-feature {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.75rem;
+    }
+}
+
+/* Floating icons are now handled by floating-icons-fix.css */
+
+/* Fix button colors on brand pages */
+.hero-cta-group a[href*="book"],
+.cta-primary {
+    background: #22c55e !important;
+    color: white !important;
+}
+
+.hero-cta-group a[href^="tel:"],
+.cta-secondary {
+    background: #7c3aed !important;
+    color: white !important;
+}
+
+.hero-cta-group a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}/**
+ * FINAL OVERFLOW FIX - MUST BE LOADED LAST
+ * Исправляет deprecated API warning для overflow: visible на img/video/canvas
+ * Этот файл загружается после всех остальных CSS и имеет финальное слово
+ */
+
+/* ===== CRITICAL: Deprecated API Fix ===== */
+/* GitHub WICG shared-element-transitions требует overflow: clip вместо visible */
+
+/* Максимальная специфичность для переопределения ЛЮБЫХ других правил */
+html body *:is(img, video, canvas),
+html body img,
+html body video,
+html body canvas,
+body img,
+body video,
+body canvas,
+img,
+video,
+canvas {
+    overflow: clip !important;
+}
+
+/* Дополнительная защита - перебиваем любые классы и ID */
+[class] img,
+[class] video,
+[class] canvas,
+[id] img,
+[id] video,
+[id] canvas {
+    overflow: clip !important;
+}
+
+/* Специфичные селекторы для всех возможных контекстов */
+section img,
+section video,
+section canvas,
+div img,
+div video,
+div canvas,
+main img,
+main video,
+main canvas,
+article img,
+article video,
+article canvas,
+aside img,
+aside video,
+aside canvas,
+header img,
+header video,
+header canvas,
+footer img,
+footer video,
+footer canvas,
+nav img,
+nav video,
+nav canvas {
+    overflow: clip !important;
+}
+
+/* Hero и другие специфичные секции */
+.hero-section img,
+.hero-section video,
+.hero-section canvas,
+.hero-image img,
+.service-icon img,
+.service-icon video,
+.service-icon canvas,
+.video-wrapper img,
+.video-wrapper video,
+.video-wrapper canvas {
+    overflow: clip !important;
+}
+
+/* Ensure it works even with inline styles */
+img[style*="overflow"],
+video[style*="overflow"],
+canvas[style*="overflow"] {
+    overflow: clip !important;
+}
+
+/* Special case for SVG images */
+img[src$=".svg"],
+img[src*=".svg?"],
+img[src*=".svg#"] {
+    overflow: clip !important;
+}
+
+/* Additional specificity boost using :where() and :is() */
+:where(img, video, canvas),
+:is(img, video, canvas) {
+    overflow: clip !important;
+}
+
+/* Final catch-all with highest specificity */
+*:is(img):not([overflow="visible"]),
+*:is(video):not([overflow="visible"]),
+*:is(canvas):not([overflow="visible"]) {
+    overflow: clip !important;
+}
+
+/* ===== End of Deprecated API Fix ===== */
+
+/* Note: overflow: clip is the modern alternative to overflow: hidden */
+/* It prevents content from being painted outside the element bounds */
+/* without affecting scrolling behavior or creating scroll containers */
+/* Fix for floating icons - prevent overlap with content on all devices */
+
+/* Disable ALL floating icons on mobile and tablet */
+@media (max-width: 1023px) {
+    .floating-icon,
+    .hero-floating-icon,
+    .floating-icons,
+    .hero-floating-icons,
+    .icon-float,
+    [class*="float-icon"] {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+/* On desktop, ensure floating icons are visible and don't overlap important content */
+@media (min-width: 1024px) {
+    .floating-icon,
+    .hero-floating-icon,
+    .floating-icons,
+    .hero-floating-icons {
+        display: block !important;
+        visibility: visible !important;
+        pointer-events: none !important; /* Can't be clicked */
+        z-index: 1 !important; /* Behind all interactive elements */
+        opacity: 0.15 !important; /* Make them very subtle */
+    }
+
+    /* Make SVG icons visible */
+    .floating-icon svg {
+        display: block !important;
+        width: 60px;
+        height: 60px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* Ensure main content has higher z-index */
+    .hero-content,
+    .hero-form,
+    .cta-button,
+    .nav-menu,
+    header,
+    form,
+    button,
+    a {
+        position: relative;
+        z-index: 10 !important;
+    }
+}
+
+/* Fix specific float animation to keep icons within bounds */
+@keyframes float {
+    0%, 100% { 
+        transform: translate(0, 0) rotate(0deg); 
+    }
+    25% { 
+        transform: translate(20px, -15px) rotate(15deg); /* Reduced movement */
+    }
+    50% { 
+        transform: translate(-15px, -25px) rotate(30deg); /* Reduced movement */
+    }
+    75% { 
+        transform: translate(-20px, 15px) rotate(-15deg); /* Reduced movement */
+    }
+}
+
+/* Ensure hero section doesn't overflow */
+.hero,
+.hero-section,
+.service-hero,
+.location-hero {
+    position: relative;
+    overflow: hidden !important;
+}
+
+/* Mobile-specific fixes for hero sections */
+@media (max-width: 767px) {
+    .hero h1,
+    .hero-section h1,
+    .service-hero h1 {
+        font-size: 1.75rem !important;
+        line-height: 1.2 !important;
+        padding: 0 10px;
+    }
+    
+    .hero-features {
+        padding: 0 10px;
+    }
+    
+    .hero-features span {
+        font-size: 0.75rem !important;
+        padding: 4px 8px !important;
+    }
+    
+    .cta-button {
+        font-size: 0.875rem !important;
+        padding: 10px 20px !important;
+        margin: 5px !important;
+    }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero h1,
+    .hero-section h1,
+    .service-hero h1 {
+        font-size: 2.25rem !important;
+    }
+    
+    .hero-features span {
+        font-size: 0.875rem !important;
+    }
+}/* Global Centering Fixes for All Sections */
+
+/* Fix About Section - Center all content */
+.about-section,
+.section-about,
+#about,
+[class*="about"] {
+    text-align: center !important;
+}
+
+.about-section .container,
+.section-about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-section h2,
+.section-about h2,
+.about-section h3,
+.section-about h3 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Fix countdown timer centering */
+.countdown-section,
+.timer-section,
+.deal-section,
+[class*="countdown"] {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-timer,
+.timer-container,
+.countdown-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.countdown-box,
+.timer-box,
+.countdown-item {
+    text-align: center;
+    min-width: 120px;
+}
+
+/* Fix FAQ Section Centering */
+.faq-section,
+.section-faq,
+#faq,
+[class*="faq"] {
+    text-align: center !important;
+}
+
+.faq-section h2,
+.section-faq h2 {
+    text-align: center !important;
+    margin-bottom: 2rem;
+}
+
+.faq-container,
+.faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+/* Fix video section centering */
+.video-section,
+.section-video,
+.about-video {
+    text-align: center !important;
+    padding: 60px 0;
+}
+
+.video-container,
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.video-container iframe,
+.video-wrapper iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+/* Fix story section */
+.story-section,
+.our-story {
+    text-align: center !important;
+    padding: 40px 20px;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Fix all headings to be centered */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center !important;
+}
+
+/* Fix trusted experts section */
+.trusted-section,
+.experts-section,
+[class*="trusted"] {
+    text-align: center !important;
+}
+
+.trusted-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Ensure all containers are centered */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Fix any flex containers */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Mobile responsiveness for centered content */
+@media (max-width: 768px) {
+    .countdown-timer,
+    .timer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .countdown-box,
+    .timer-box {
+        min-width: 150px;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    
+    .container {
+        padding: 0 15px;
+    }
+}/**
+ * YouTube Facade - Lightweight Lazy Loading
+ * Заменяет тяжелые YouTube iframes на легкие превью
+ * Загружает видео только при клике пользователя
+ */
+
+.youtube-facade {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background-color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.youtube-facade img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.youtube-facade:hover img {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Play Button */
+.youtube-facade::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    background-color: rgba(255, 0, 0, 0.9);
+    border-radius: 12px;
+    z-index: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.youtube-facade:hover::before {
+    background-color: rgba(255, 0, 0, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Play Triangle */
+.youtube-facade::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.youtube-facade:hover::after {
+    transform: translate(-40%, -50%) scale(1.1);
+}
+
+/* Active state - when iframe is loaded */
+.youtube-facade.youtube-facade--active {
+    cursor: default;
+}
+
+.youtube-facade.youtube-facade--active::before,
+.youtube-facade.youtube-facade--active::after {
+    display: none;
+}
+
+/* Iframe styles */
+.youtube-facade iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Loading state */
+.youtube-facade.youtube-facade--loading {
+    background: linear-gradient(
+        90deg,
+        #000 25%,
+        #333 50%,
+        #000 75%
+    );
+    background-size: 200% 100%;
+    animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .youtube-facade::before {
+        width: 56px;
+        height: 40px;
+    }
+
+    .youtube-facade::after {
+        border-left: 16px solid white;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+}
+
+@media (max-width: 480px) {
+    .youtube-facade::before {
+        width: 48px;
+        height: 34px;
+        border-radius: 8px;
+    }
+
+    .youtube-facade::after {
+        border-left: 14px solid white;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+    }
+}
+/* Responsive Typography System with CSS clamp() */
+/* BMAD Method 2025 - Adaptive text sizing */
+
+/* Root Typography Variables */
+:root {
+    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+    --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+    --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+    --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+
+    /* Responsive Headings */
+    --h1-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+    --h2-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.5rem);
+    --h3-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.875rem);
+    --h4-size: clamp(1.125rem, 1rem + 0.625vw, 1.5rem);
+    --h5-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    --h6-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+
+    /* Line Heights */
+    --line-tight: 1.25;
+    --line-snug: 1.375;
+    --line-normal: 1.5;
+    --line-relaxed: 1.625;
+    --line-loose: 2;
+}
+
+/* Heading Typography */
+h1, .h1 {
+    font-size: var(--h1-size);
+    line-height: var(--line-tight);
+    font-weight: 700;
+}
+
+h2, .h2 {
+    font-size: var(--h2-size);
+    line-height: var(--line-tight);
+    font-weight: 600;
+}
+
+h3, .h3 {
+    font-size: var(--h3-size);
+    line-height: var(--line-snug);
+    font-weight: 600;
+}
+
+h4, .h4 {
+    font-size: var(--h4-size);
+    line-height: var(--line-snug);
+    font-weight: 500;
+}
+
+h5, .h5 {
+    font-size: var(--h5-size);
+    line-height: var(--line-normal);
+    font-weight: 500;
+}
+
+h6, .h6 {
+    font-size: var(--h6-size);
+    line-height: var(--line-normal);
+    font-weight: 500;
+}
+
+/* Body Text */
+body {
+    font-size: var(--text-base);
+    line-height: var(--line-relaxed);
+}
+
+p {
+    font-size: var(--text-base);
+    line-height: var(--line-relaxed);
+}
+
+/* Text Size Utilities */
+.text-xs {
+    font-size: var(--text-xs);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.text-base {
+    font-size: var(--text-base);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+/* Lead Text (Hero/Intro) */
+.lead, .hero-text {
+    font-size: clamp(1.125rem, 1rem + 0.625vw, 1.5rem);
+    line-height: var(--line-relaxed);
+}
+
+/* Button Text */
+button, .btn, .cta-button {
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+/* Navigation */
+nav a, .nav-link {
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+/* Footer Text */
+footer {
+    font-size: var(--text-sm);
+}
+
+/* Blockquotes */
+blockquote {
+    font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+    line-height: var(--line-loose);
+}
+
+/* Code/Pre */
+code, pre {
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 0.9375rem);
+}
+
+/* Lists */
+ul, ol {
+    font-size: var(--text-base);
+    line-height: var(--line-relaxed);
+}
+
+/* Tables */
+table {
+    font-size: var(--text-sm);
+}
+
+/* Responsive Spacing based on text size */
+h1 { margin-bottom: clamp(1rem, 0.5rem + 2.5vw, 2rem); }
+h2 { margin-bottom: clamp(0.75rem, 0.5rem + 1.25vw, 1.5rem); }
+h3 { margin-bottom: clamp(0.5rem, 0.25rem + 1.25vw, 1.25rem); }
+h4, h5, h6 { margin-bottom: clamp(0.5rem, 0.25rem + 1.25vw, 1rem); }
+p { margin-bottom: clamp(0.75rem, 0.5rem + 1.25vw, 1.25rem); }
+
+/* Accessibility - Ensure minimum readable sizes */
+@media (max-width: 320px) {
+    body {
+        font-size: 16px; /* Never smaller than 16px for readability */
+    }
+}
+
+/* Print Styles */
+@media print {
+    :root {
+        --text-base: 12pt;
+        --h1-size: 24pt;
+        --h2-size: 18pt;
+        --h3-size: 14pt;
+    }
+}
+/* =====================================================
+   RESPONSIVE TYPOGRAPHY SYSTEM - BMAD V2
+   ===================================================== */
+
+/* This CSS implements fluid typography using clamp() for
+   responsive scaling across all device sizes without media queries.
+   Required for BMAD Responsive Typography parameter (10 points).
+*/
+
+/* ===== HEADINGS ===== */
+
+h1, .h1 {
+    font-size: clamp(1.75rem, 4vw + 1rem, 3rem);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2, .h2 {
+    font-size: clamp(1.5rem, 3vw + 0.5rem, 2.25rem);
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+h3, .h3 {
+    font-size: clamp(1.25rem, 2.5vw + 0.5rem, 1.75rem);
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+h4, .h4 {
+    font-size: clamp(1.125rem, 2vw + 0.25rem, 1.5rem);
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+h5, .h5 {
+    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+h6, .h6 {
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem);
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* ===== BODY TEXT ===== */
+
+body, p, .body-text {
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem);
+    line-height: 1.6;
+}
+
+/* ===== LARGE TEXT ===== */
+
+.lead, .intro-text {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.375rem);
+    line-height: 1.6;
+}
+
+/* ===== SMALL TEXT ===== */
+
+small, .small-text {
+    font-size: clamp(0.75rem, 0.75vw + 0.25rem, 0.875rem);
+    line-height: 1.5;
+}
+
+/* ===== BUTTONS & CTAs ===== */
+
+button, .btn, .cta-button {
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem);
+    padding: clamp(0.625rem, 1vw + 0.25rem, 1rem) clamp(1.25rem, 2vw + 0.5rem, 2rem);
+}
+
+/* ===== NAVIGATION ===== */
+
+nav a, .nav-link {
+    font-size: clamp(0.875rem, 1vw + 0.125rem, 1rem);
+}
+
+/* ===== HERO SECTION SPECIFIC ===== */
+
+.hero-section h1 {
+    font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+    line-height: 1.1;
+}
+
+.hero-section p {
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
+    line-height: 1.5;
+}
+
+/* ===== SERVICE CARDS ===== */
+
+.service-card h3 {
+    font-size: clamp(1.125rem, 2vw + 0.5rem, 1.5rem);
+}
+
+.service-card p {
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1rem);
+}
+
+/* ===== TESTIMONIALS ===== */
+
+.testimonial-text {
+    font-size: clamp(0.875rem, 1.25vw + 0.25rem, 1.125rem);
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    font-size: clamp(0.875rem, 1vw + 0.125rem, 1rem);
+    font-weight: 600;
+}
+
+/* ===== FAQ SECTION ===== */
+
+.faq-question {
+    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
+    font-weight: 600;
+}
+
+.faq-answer {
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.0625rem);
+    line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    font-size: clamp(0.8125rem, 0.875vw + 0.25rem, 0.9375rem);
+}
+
+/* ===== RESPONSIVE SPACING ===== */
+
+.section-title {
+    margin-bottom: clamp(1rem, 2vw + 0.5rem, 2rem);
+}
+
+.section-padding {
+    padding-top: clamp(2rem, 4vw + 1rem, 4rem);
+    padding-bottom: clamp(2rem, 4vw + 1rem, 4rem);
+}
+
+/* ===== CONTAINER WIDTHS ===== */
+
+.container {
+    max-width: clamp(320px, 90vw, 1200px);
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 2vw, 2rem);
+}
+
+/* ===== MEDIA QUERY FALLBACKS (for older browsers) ===== */
+
+@supports not (font-size: clamp(1rem, 2vw, 2rem)) {
+    /* Fallback for browsers that don't support clamp() */
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    body, p { font-size: 1rem; }
+
+    @media (max-width: 768px) {
+        h1 { font-size: 1.75rem; }
+        h2 { font-size: 1.5rem; }
+        h3 { font-size: 1.25rem; }
+        body, p { font-size: 0.875rem; }
+    }
+}
+/* Correct CTA Button Colors Based on Context */
+
+/* Online Booking Buttons - Green */
+.cta-button.booking,
+.btn-booking,
+.book-online,
+.schedule-service,
+.book-repair,
+[href*="book"],
+[onclick*="book"],
+.countdown-cta {
+    background: #22c55e !important; /* Green for booking */
+    color: white !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.cta-button.booking:hover,
+.btn-booking:hover,
+.book-online:hover,
+.schedule-service:hover,
+.book-repair:hover,
+[href*="book"]:hover,
+.countdown-cta:hover {
+    background: #16a34a !important; /* Darker green on hover */
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3) !important;
+}
+
+/* Call Now Buttons - Violet/Purple */
+.cta-button.call,
+.btn-call,
+.call-now,
+.phone-cta,
+[href^="tel:"],
+.emergency-phone {
+    background: #7c3aed !important; /* Violet for calls */
+    color: white !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.cta-button.call:hover,
+.btn-call:hover,
+.call-now:hover,
+.phone-cta:hover,
+[href^="tel:"]:hover,
+.emergency-phone:hover {
+    background: #6d28d9 !important; /* Darker violet on hover */
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3) !important;
+}
+
+/* Header phone button */
+header [href^="tel:"],
+nav [href^="tel:"] {
+    background: #7c3aed !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+}
+
+/* Emergency bar phone links */
+.emergency-bar a[href^="tel:"] {
+    color: white !important;
+    background: transparent !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+
+/* Floating phone button */
+.floating-phone {
+    background: #7c3aed !important;
+    color: white !important;
+}
+
+.floating-phone:hover {
+    background: #6d28d9 !important;
+    transform: scale(1.1) !important;
+}
+
+/* Service page CTAs */
+.service-hero [href^="tel:"] {
+    background: #7c3aed !important;
+}
+
+.service-hero [href*="book"] {
+    background: #22c55e !important;
+}
+
+/* Location page CTAs */
+.location-hero [href^="tel:"] {
+    background: #7c3aed !important;
+}
+
+.location-hero [href*="book"] {
+    background: #22c55e !important;
+}
+
+/* CTA Section buttons */
+.cta-section [href^="tel:"] {
+    background: white !important;
+    color: #7c3aed !important;
+}
+
+.cta-section [href*="book"] {
+    background: white !important;
+    color: #22c55e !important;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 768px) {
+    /* Ensure colors are consistent on mobile */
+    .countdown-cta {
+        background: #22c55e !important;
+    }
+    
+    header [href^="tel:"] {
+        background: #7c3aed !important;
+        padding: 8px 16px !important;
+        font-size: 0.875rem !important;
+    }
+}
+
+/* Fix countdown section button specifically */
+.countdown-section .countdown-cta {
+    background: #22c55e !important; /* Green for booking */
+    color: white !important;
+    border: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 15px 30px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.countdown-section .countdown-cta:hover {
+    background: #16a34a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3) !important;
+}
+
+/* Ensure all booking-related buttons are green */
+.hero-cta [href*="book"],
+.hero-form button[type="submit"],
+form button[type="submit"],
+.book-now,
+.book-diagnostic {
+    background: #22c55e !important;
+    color: white !important;
+}
+
+/* Ensure all call-related buttons are violet */
+.hero-cta [href^="tel:"],
+.call-technician,
+.emergency-call {
+    background: #7c3aed !important;
+    color: white !important;
+}/* Color Contrast Fix - WCAG 2.1 AA Compliance */
+/* This file must be loaded LAST to override all other CSS */
+/* Maximum specificity with !important to force white text on blue backgrounds */
+
+/* Trust Metrics Section - FORCE white text with highest specificity */
+section.trust-metrics-section h2.section-title-light,
+section.trust-metrics-section h2,
+section.trust-metrics-section h3.section-title-light,
+section.trust-metrics-section h3,
+section.trust-metrics-section div[style],
+section.trust-metrics-section div,
+.trust-metrics-section h2,
+.trust-metrics-section h3,
+.trust-metrics-section div {
+    color: #ffffff !important;
+}
+
+/* Pricing Table Headers - FORCE white */
+table thead tr[style*="background"] th,
+table thead tr th[style],
+table thead tr th {
+    color: #ffffff !important;
+}
+
+/* Service Areas Section - Headers on blue background */
+section.areas-section-premium h3.section-title-light,
+section.areas-section-premium h3,
+.areas-section-premium h3,
+.areas-section-premium .section-title-light {
+    color: #ffffff !important;
+}
+
+/* Footer Brands Section - FORCE white */
+footer .footer-brands h4,
+footer .footer-brands p,
+.footer-brands h4,
+.footer-brands p {
+    color: #ffffff !important;
+}
+
+/* All elements with section-title-light class - FORCE white */
+h2.section-title-light,
+h3.section-title-light,
+.section-title-light {
+    color: #ffffff !important;
+}
+
+/* Explicit fix for metric cards - ULTRA specific */
+section[style*="background: linear-gradient"] div[style*="background: rgba"] div,
+.trust-metrics-section > div > div > div > div,
+[style*="background: rgba(255,255,255,0.1)"] > div,
+[style*="background: rgba(255,255,255,0.15)"] > div,
+[style*="background: rgba(255,255,255,0.2)"] > div {
+    color: #ffffff !important;
+}
+
+/* Links on light blue background */
+div[style*="background: #e3f2fd"] a[href^="tel:"] {
+    color: #0d47a1 !important;
+    text-decoration: underline !important;
+}
+
+/* Nuclear option - Force white on ANY div inside blue gradient background */
+section[style*="#2196F3"] div,
+section[style*="#1976D2"] div {
+    color: #ffffff !important;
+}

@@ -1,48 +1,67 @@
 /* Color Contrast Fix - WCAG 2.1 AA Compliance */
 /* This file must be loaded LAST to override all other CSS */
+/* Maximum specificity with !important to force white text on blue backgrounds */
 
-/* Trust Metrics Section - Force white text */
+/* Trust Metrics Section - FORCE white text with highest specificity */
+section.trust-metrics-section h2.section-title-light,
+section.trust-metrics-section h2,
+section.trust-metrics-section h3.section-title-light,
+section.trust-metrics-section h3,
+section.trust-metrics-section div[style],
+section.trust-metrics-section div,
 .trust-metrics-section h2,
 .trust-metrics-section h3,
 .trust-metrics-section div {
-    color: white !important;
+    color: #ffffff !important;
 }
 
-/* Pricing Table Headers */
+/* Pricing Table Headers - FORCE white */
+table thead tr[style*="background"] th,
+table thead tr th[style],
 table thead tr th {
-    color: white !important;
+    color: #ffffff !important;
 }
 
 /* Service Areas Section - Headers on blue background */
+section.areas-section-premium h3.section-title-light,
+section.areas-section-premium h3,
 .areas-section-premium h3,
 .areas-section-premium .section-title-light {
-    color: white !important;
+    color: #ffffff !important;
 }
 
-/* Footer Brands Section */
+/* Footer Brands Section - FORCE white */
+footer .footer-brands h4,
+footer .footer-brands p,
 .footer-brands h4,
 .footer-brands p {
-    color: white !important;
+    color: #ffffff !important;
 }
 
-/* All elements with section-title-light class */
+/* All elements with section-title-light class - FORCE white */
+h2.section-title-light,
+h3.section-title-light,
 .section-title-light {
-    color: white !important;
+    color: #ffffff !important;
 }
 
-/* Explicit fix for metric cards */
-.trust-metrics-section [style*="background: rgba(255,255,255,0.1)"] div,
-.trust-metrics-section [style*="background: rgba(255,255,255,0.15)"] div,
-.trust-metrics-section [style*="background: rgba(255,255,255,0.2)"] div {
-    color: white !important;
+/* Explicit fix for metric cards - ULTRA specific */
+section[style*="background: linear-gradient"] div[style*="background: rgba"] div,
+.trust-metrics-section > div > div > div > div,
+[style*="background: rgba(255,255,255,0.1)"] > div,
+[style*="background: rgba(255,255,255,0.15)"] > div,
+[style*="background: rgba(255,255,255,0.2)"] > div {
+    color: #ffffff !important;
 }
 
 /* Links on light blue background */
-a[href^="tel:"] {
-    color: inherit;
-}
-
-div[style*="background: #e3f2fd"] a {
+div[style*="background: #e3f2fd"] a[href^="tel:"] {
     color: #0d47a1 !important;
     text-decoration: underline !important;
+}
+
+/* Nuclear option - Force white on ANY div inside blue gradient background */
+section[style*="#2196F3"] div,
+section[style*="#1976D2"] div {
+    color: #ffffff !important;
 }
