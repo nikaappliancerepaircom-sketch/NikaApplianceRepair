@@ -287,36 +287,57 @@ footer .footer-brands p {
 }
 
 /* ============================================
-   LINK STYLES - Always keep brand blue color
+   LINK STYLES - Proper styling for different link types
    ============================================ */
 
-/* All links (including visited) should be blue */
-a[href^="tel:"],
-a[href*="437-747-6737"] {
-    color: var(--primary-blue) !important;
-    text-decoration: underline;
+/* Phone links - NO underline, inherit color from parent */
+a[href^="tel:"] {
+    color: inherit !important;
+    text-decoration: none !important;
+    cursor: pointer;
 }
 
-/* Phone links - visited state also blue */
-a[href^="tel:"]:visited,
-a[href*="437-747-6737"]:visited {
+a[href^="tel:"]:visited {
+    color: inherit !important;
+}
+
+a[href^="tel:"]:hover {
+    opacity: 0.8;
+}
+
+/* Text links in content - Blue with underline */
+.ai-summary-box a[href^="tel:"] {
+    color: var(--primary-blue) !important;
+    text-decoration: underline !important;
+}
+
+.ai-summary-box a[href^="tel:"]:visited {
     color: var(--primary-blue) !important;
 }
 
-/* Phone links - hover state slightly darker */
-a[href^="tel:"]:hover,
-a[href*="437-747-6737"]:hover {
-    color: var(--primary-blue-dark) !important;
+/* Button-style links - NO underline, force white text for buttons */
+.cta-primary,
+a.cta-primary,
+.cta-secondary,
+a.cta-secondary,
+.brands-cta-btn,
+a.brands-cta-btn,
+.submit-btn,
+button.submit-btn,
+.call-btn-large,
+a.call-btn-large {
+    text-decoration: none !important;
+    color: white !important;
 }
 
-/* Links on white/light backgrounds */
-.ai-summary-box a,
-div[style*="background: white"] a,
-div[style*="background: #f"] a {
-    color: var(--primary-blue) !important;
-}
-
-.ai-summary-box a:visited,
-div[style*="background: white"] a:visited {
-    color: var(--primary-blue) !important;
+.cta-primary:visited,
+a.cta-primary:visited,
+.cta-secondary:visited,
+a.cta-secondary:visited,
+.brands-cta-btn:visited,
+a.brands-cta-btn:visited,
+.call-btn-large:visited,
+a.call-btn-large:visited {
+    color: white !important;
+    text-decoration: none !important;
 }
