@@ -8,7 +8,8 @@
    ========================================== */
 
 /* Hide scrollbars on ALL elements except body and specific containers */
-*:not(body):not(html):not(.areas-grid):not(textarea) {
+/* CRITICAL: Exclude img, video, canvas to avoid deprecated API warning */
+*:not(body):not(html):not(.areas-grid):not(textarea):not(img):not(video):not(canvas) {
     overflow: visible !important;
     overflow-x: visible !important;
     overflow-y: visible !important;
@@ -155,9 +156,9 @@ nav {
     overflow: hidden !important;
 }
 
-/* Images should not overflow */
-img {
-    overflow: hidden !important;
+/* Images should not overflow - use clip instead of hidden to avoid deprecated API */
+img, video, canvas {
+    overflow: clip !important;
 }
 
 /* Iframes should not create scroll */
@@ -297,13 +298,19 @@ textarea {
 
 @media (max-width: 767px) {
     /* Remove all scrollbars except body */
-    * {
+    /* CRITICAL: Exclude img, video, canvas to avoid deprecated API warning */
+    *:not(img):not(video):not(canvas) {
         overflow: visible !important;
     }
 
     html, body {
         overflow-x: hidden !important;
         overflow-y: auto !important;
+    }
+
+    /* Media elements must use clip to avoid deprecated API */
+    img, video, canvas {
+        overflow: clip !important;
     }
 
     /* Video wrappers still need hidden */
