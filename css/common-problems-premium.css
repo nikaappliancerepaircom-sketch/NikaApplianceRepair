@@ -248,52 +248,22 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 1rem;
+    color: #2196F3 !important;
 }
 
 .emergency-cta-box p {
-    color: #4a5568;
+    color: #4a5568 !important;
     font-size: clamp(1rem, 1.3vw, 1.1rem);
     line-height: 1.7;
     margin-bottom: 1.5rem;
 }
 
-.emergency-phone-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 1rem;
-    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
-    color: white;
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(39, 174, 96, 0.4);
-}
-
-.emergency-phone-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(39, 174, 96, 0.6);
-    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
-}
-
-.emergency-phone-btn svg {
-    width: 24px;
-    height: 24px;
-    animation: ring 2s infinite;
-}
-
-@keyframes ring {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    10%, 30% {
-        transform: rotate(-10deg);
-    }
-    20%, 40% {
-        transform: rotate(10deg);
-    }
+/* Emergency phone button styling - purple gradient with high priority */
+.emergency-cta-box .emergency-phone-btn {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%) !important;
+    color: white !important;
 }
 
 /* Mobile Responsive */

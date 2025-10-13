@@ -1,0 +1,315 @@
+/* ================================================
+   CTA BUTTONS - BMAD Method Optimized
+   Created: 2025-01-13
+   Purpose: 6-7 CTA buttons for maximum conversion
+   ================================================ */
+
+/* ============================================
+   1. HEADER BOOKING BUTTON (Green)
+   ============================================ */
+.header-book-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: #27AE60;
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.header-book-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+}
+
+.header-book-btn svg {
+    margin-right: 8px;
+}
+
+/* ============================================
+   2. HERO CTA GROUP (Primary + Secondary)
+   ============================================ */
+.hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Primary = Booking (Green) */
+.cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2.5rem;
+    background: #27AE60;
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 20px rgba(39, 174, 96, 0.35);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    min-height: 56px;
+}
+
+.cta-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(39, 174, 96, 0.45);
+    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+}
+
+/* Secondary = Call (Purple) */
+.cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2.5rem;
+    background: #7c3aed;
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    min-height: 56px;
+}
+
+.cta-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(124, 58, 237, 0.45);
+    background: linear-gradient(135deg, #6d28d9 0%, #7c3aed 100%);
+}
+
+/* ============================================
+   3. COUNTDOWN CTA (Green - Booking)
+   ============================================ */
+.countdown-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 3rem;
+    background: #27AE60;
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 0 8px 25px rgba(39, 174, 96, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    margin-top: 2rem;
+    animation: pulse-shadow 2s infinite;
+}
+
+.countdown-cta:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(39, 174, 96, 0.5);
+    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+}
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 8px 25px rgba(39, 174, 96, 0.4);
+    }
+    50% {
+        box-shadow: 0 8px 35px rgba(39, 174, 96, 0.6);
+    }
+    100% {
+        box-shadow: 0 8px 25px rgba(39, 174, 96, 0.4);
+    }
+}
+
+/* ============================================
+   4. EMERGENCY PHONE BUTTON (Purple - Call)
+   ============================================ */
+.emergency-phone-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 2.5rem;
+    background: #7c3aed;
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 1.5rem;
+    animation: pulse-shadow-purple 2s infinite;
+}
+
+.emergency-phone-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(124, 58, 237, 0.5);
+    background: linear-gradient(135deg, #6d28d9 0%, #7c3aed 100%);
+}
+
+.emergency-phone-btn svg {
+    width: 24px;
+    height: 24px;
+    animation: ring 2s infinite;
+}
+
+@keyframes ring {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes pulse-shadow-purple {
+    0% {
+        box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+    }
+    50% {
+        box-shadow: 0 8px 35px rgba(124, 58, 237, 0.6);
+    }
+    100% {
+        box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+    }
+}
+
+/* ============================================
+   5. FOOTER CTA BOX & BUTTON (Purple - Call)
+   ============================================ */
+.footer-cta-box {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 2rem 0;
+}
+
+.footer-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2.5rem;
+    background: #7c3aed;
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(124, 58, 237, 0.45);
+    background: linear-gradient(135deg, #6d28d9 0%, #7c3aed 100%);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero-cta-group {
+        justify-content: center;
+    }
+
+    .header-book-btn {
+        display: none; /* Hide on tablet to save space */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-primary,
+    .cta-secondary,
+    .countdown-cta,
+    .emergency-phone-btn,
+    .footer-cta-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+
+    .header-book-btn {
+        display: none;
+    }
+
+    .footer-cta-box {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .cta-primary,
+    .cta-secondary,
+    .countdown-cta,
+    .emergency-phone-btn,
+    .footer-cta-btn {
+        font-size: 1rem;
+        padding: 0.875rem 1.5rem;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY & FOCUS STATES
+   ============================================ */
+.header-book-btn:focus-visible,
+.cta-primary:focus-visible,
+.cta-secondary:focus-visible,
+.countdown-cta:focus-visible,
+.emergency-phone-btn:focus-visible,
+.footer-cta-btn:focus-visible {
+    outline: 3px solid #FFD600;
+    outline-offset: 2px;
+}
+
+/* ============================================
+   BUTTON ICON STYLING
+   ============================================ */
+.cta-primary svg,
+.cta-secondary svg,
+.countdown-cta svg,
+.emergency-phone-btn svg,
+.footer-cta-btn svg,
+.header-book-btn svg {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}

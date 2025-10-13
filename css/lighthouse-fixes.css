@@ -134,8 +134,9 @@ a:focus-visible {
 /* Exception для кнопок-ссылок */
 .cta-primary:focus-visible,
 .cta-secondary:focus-visible,
-.call-btn:focus-visible,
-.book-btn:focus-visible {
+/* Header buttons removed */
+.cta-primary:focus-visible,
+.cta-secondary:focus-visible {
     text-decoration: none;
 }
 

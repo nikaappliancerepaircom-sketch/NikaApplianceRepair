@@ -191,6 +191,45 @@
     color: var(--primary-blue);
 }
 
+/* Service Coverage Table */
+.coverage-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.table-caption {
+    caption-side: bottom;
+    padding: var(--space-2);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--text-sm);
+    font-style: italic;
+}
+
+.table-header-row {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+}
+
+.table-row {
+    border-bottom: 1px solid var(--gray-300);
+    transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+    background-color: rgba(33, 150, 243, 0.05);
+}
+
+.table-row-alt {
+    background-color: var(--gray-100);
+}
+
+.table-row-alt:hover {
+    background-color: rgba(33, 150, 243, 0.08);
+}
+
 /* Metric Cards */
 .metric-card {
     text-align: center;
@@ -337,36 +376,44 @@ a[href^="tel:"]:focus {
 }
 
 /* Button-style links - NO underline, force white text for buttons */
+/* PRIMARY = Booking (Green), SECONDARY = Call (Purple) */
+/* Note: .call-btn and .book-btn removed from header */
 .cta-primary,
 a.cta-primary,
-.cta-secondary,
-a.cta-secondary,
-.brands-cta-btn,
-a.brands-cta-btn,
+.countdown-cta,
+a.countdown-cta,
 .submit-btn,
 button.submit-btn,
-.call-btn,
-a.call-btn,
+.brands-cta-btn,
+a.brands-cta-btn {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.cta-secondary,
+a.cta-secondary,
 .call-btn-large,
-a.call-btn-large,
-.emergency-phone-btn,
-a.emergency-phone-btn {
+a.call-btn-large {
     text-decoration: none !important;
     color: white !important;
 }
 
 .cta-primary:visited,
 a.cta-primary:visited,
+.countdown-cta:visited,
+a.countdown-cta:visited,
+.submit-btn:visited,
+button.submit-btn:visited,
+.brands-cta-btn:visited,
+a.brands-cta-btn:visited {
+    color: white !important;
+    text-decoration: none !important;
+}
+
 .cta-secondary:visited,
 a.cta-secondary:visited,
-.brands-cta-btn:visited,
-a.brands-cta-btn:visited,
-.call-btn:visited,
-a.call-btn:visited,
 .call-btn-large:visited,
-a.call-btn-large:visited,
-.emergency-phone-btn:visited,
-a.emergency-phone-btn:visited {
+a.call-btn-large:visited {
     color: white !important;
     text-decoration: none !important;
 }

@@ -1062,12 +1062,12 @@ footer {
 }
 
 /* Call Now Buttons - Violet/Purple */
+/* NOTE: Removed [href^="tel:"] generic selector to avoid conflicts with .call-btn class */
+/* Button classes in style.css now have correct colors without !important conflicts */
 .cta-button.call,
 .btn-call,
 .call-now,
-.phone-cta,
-[href^="tel:"],
-.emergency-phone {
+.phone-cta {
     background: #7c3aed !important; /* Violet for calls */
     color: white !important;
     border: none !important;
@@ -1077,23 +1077,13 @@ footer {
 .cta-button.call:hover,
 .btn-call:hover,
 .call-now:hover,
-.phone-cta:hover,
-[href^="tel:"]:hover,
-.emergency-phone:hover {
+.phone-cta:hover {
     background: #6d28d9 !important; /* Darker violet on hover */
     transform: translateY(-2px) !important;
     box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3) !important;
 }
 
-/* Header phone button */
-header [href^="tel:"],
-nav [href^="tel:"] {
-    background: #7c3aed !important;
-    color: white !important;
-    padding: 10px 20px !important;
-    border-radius: 50px !important;
-    font-weight: 600 !important;
-}
+/* Header phone button - REMOVED: styles now in style.css to avoid !important conflicts */
 
 /* Emergency bar phone links */
 .emergency-bar a[href^="tel:"] {
@@ -1149,12 +1139,8 @@ nav [href^="tel:"] {
     .countdown-cta {
         background: #22c55e !important;
     }
-    
-    header [href^="tel:"] {
-        background: #7c3aed !important;
-        padding: 8px 16px !important;
-        font-size: 0.875rem !important;
-    }
+
+    /* Header button styles now in style.css */
 }
 
 /* Fix countdown section button specifically */

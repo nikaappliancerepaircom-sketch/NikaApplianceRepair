@@ -42,11 +42,11 @@
 
 ### Key Metrics:
 
-- **Total parameters:** 282
-- **Auto-fixable:** ~170 (60%)
-- **Manual optimization:** ~112 (40%)
+- **Total parameters:** 287
+- **Auto-fixable:** ~172 (60%)
+- **Manual optimization:** ~115 (40%)
 - **Deployment blockers:** Tier 1 only (15 params)
-- **Recommended for production:** Tier 1-4 (125 params)
+- **Recommended for production:** Tier 1-4 (130 params)
 
 ---
 
@@ -84,7 +84,7 @@
 | Tier | Name | Params | Target | Auto-fix | Blocks Deploy | Time |
 |------|------|--------|--------|----------|---------------|------|
 | **1** | Critical Foundation | 15 | 100% | 100% | 🔴 YES | 2 min |
-| **2** | SEO + AI + CRO Core | 35 | 85% | 80% | ⚠️ Warn | 7 min |
+| **2** | SEO + AI + CRO Core | 40 | 85% | 80% | ⚠️ Warn | 7 min |
 | **3** | Content + Basic UX | 50 | 70% | 40% | ❌ No | 5 hrs |
 | **4** | Performance + Speed | 25 | 80% | 60% | ❌ No | 2 hrs |
 | **5** | Cross-Browser | 30 | 70% | 20% | ❌ No | 3 hrs |
@@ -92,7 +92,7 @@
 | **7** | Analytics + Tracking | 28 | 70% | 80% | ❌ No | 1 hr |
 | **8** | Content Features | 30 | 50% | 10% | ❌ No | varies |
 | **9** | Integrations + Polish | 34 | 40% | 40% | ❌ No | varies |
-| **TOTAL** | | **282** | | **60%** | | **~20 hrs** |
+| **TOTAL** | | **287** | | **60%** | | **~20 hrs** |
 
 ---
 
@@ -224,7 +224,7 @@ claude-agent run technical-agent [file.html]
 
 ---
 
-## ⭐ TIER 2: SEO + AI SEARCH + CRO CORE (35 параметрів)
+## ⭐ TIER 2: SEO + AI SEARCH + CRO CORE (40 параметрів)
 
 ### 🎯 Target: 85%+ (WARNING IF < 85%)
 
@@ -351,7 +351,7 @@ claude-agent run technical-agent [file.html]
 - Schema diversity improves comprehension across different AI systems
 - Target score: 98%+ (5/5 parameters = 100%)
 
-### Category C: CRO Essentials (15 params)
+### Category C: CRO Essentials (20 params)
 
 36. **CTA count: 3-8 (optimal 5-7)**
     - Check: Count call-to-action buttons
@@ -427,6 +427,44 @@ claude-agent run technical-agent [file.html]
     - Check: Header sticks on scroll + phone visible
     - Auto-fix: ⚠️ Report (requires CSS/JS)
     - Agent: `ux-agent`
+
+46. **Design system: Font consistency (2 fonts only)**
+    - Check: Only Fredoka (headings) + Rubik (body) used
+    - Auto-fix: ⚠️ Report violations, suggest font-family corrections
+    - Agent: `design-consistency-agent`
+    - Why: Reduces cognitive load, faster page load, professional appearance
+    - UNIFIED DESIGN RULE: Fredoka for h1-h6, Rubik for p/body/span
+
+47. **Design system: Button type consistency (2 types only)**
+    - Check: Only green booking buttons + purple call buttons
+    - Auto-fix: ⚠️ Report violations, convert to standard types
+    - Agent: `design-consistency-agent`
+    - Why: Color psychology (green = commit, purple = urgency), consistent UX
+    - UNIFIED DESIGN RULE: Green gradient (#27AE60 → #2ECC71) for booking actions, Purple gradient (#7c3aed → #8b5cf6) for call actions
+
+48. **Button sizing for conversion (responsive)**
+    - Check: Buttons meet minimum touch target sizes
+    - Mobile: min-height 44px (Apple HIG standard)
+    - Tablet: min-height 48px
+    - Desktop: min-height 56px
+    - Auto-fix: ✅ Add responsive min-height in CSS
+    - Agent: `conversion-optimization-agent`
+    - Why: Larger buttons = easier clicks = higher conversion rate (especially mobile)
+    - CRO Impact: 44px+ touch targets proven to increase mobile conversions by 15-20%
+
+49. **Design system: Background consistency (3 types only)**
+    - Check: Only white (#ffffff), light gray (#f8f9fa), or blue gradient backgrounds
+    - Auto-fix: ⚠️ Report violations, suggest standard backgrounds
+    - Agent: `design-consistency-agent`
+    - Why: Visual consistency, easier maintenance, professional appearance
+    - UNIFIED DESIGN RULE: White for primary sections, light gray for alternating sections, blue gradient for premium/trust sections
+
+50. **Design system: Unified gray scale**
+    - Check: Only 5 gray shades used consistently (#212529, #495057, #6c757d, #dee2e6, #f8f9fa)
+    - Auto-fix: ✅ Replace inconsistent grays with nearest standard
+    - Agent: `design-consistency-agent`
+    - Why: Consistent text contrast, professional appearance, accessibility
+    - UNIFIED DESIGN RULE: Use CSS variables from design-system.css (--gray-900 through --gray-100)
 
 ### Testing Commands:
 
@@ -2145,7 +2183,7 @@ fi
 
 ## 📚 SUMMARY
 
-### BMAD v2 Method = 9 Tiers, 282 Parameters
+### BMAD v2 Method = 9 Tiers, 287 Parameters
 
 **Production Requirements:**
 - ✅ Tier 1: 100% (BLOCKS deployment)
@@ -2188,6 +2226,12 @@ fi
 - Total parameters increased: 277 → 282
 - Tier 2 parameters: 30 → 35
 
+**New: Unified Design System Parameters (5 params) - CRO CRITICAL**
+- Added to Tier 2, Category C (CRO Essentials)
+- Parameters 46-50 cover design consistency for conversion optimization
+- Total parameters increased: 282 → 287
+- Tier 2 parameters: 35 → 40
+
 **AI Search Parameters:**
 1. Speakable Schema for voice assistants (Alexa, Google Assistant, Siri)
 2. HowTo Schema for AI engines (ChatGPT, Perplexity, Google AI Overview, Bing AI)
@@ -2207,8 +2251,23 @@ python tools/bmad-complete-test.py [file.html]  # Now includes AI Search (8 cate
 python tools/bmad-v2/tests/tier2_ai_search.py [file.html]  # Standalone test
 ```
 
-**New Agent:**
+**Unified Design System Parameters:**
+1. Font consistency: 2 fonts only (Fredoka headings + Rubik body)
+2. Button type consistency: 2 types only (green booking + purple call)
+3. Button sizing for conversion: Responsive min-heights (44px mobile, 48px tablet, 56px desktop)
+4. Background consistency: 3 types only (white, light gray, blue gradient)
+5. Unified gray scale: 5 shades only for consistent text contrast
+
+**Why Design System Matters:**
+- Consistent design = professional appearance = higher trust = more conversions
+- Button sizing directly impacts mobile conversion rates (44px+ = 15-20% improvement)
+- Color psychology: green = commitment action, purple = urgency action
+- Reduces cognitive load and improves user experience
+
+**New Agents:**
 - `ai-search-agent` - Generates and validates AI Search schemas
+- `design-consistency-agent` - Validates unified design system compliance
+- `conversion-optimization-agent` - Validates button sizing and CRO best practices
 
 ---
 
