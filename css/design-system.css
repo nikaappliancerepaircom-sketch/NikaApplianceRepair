@@ -345,8 +345,12 @@ a.cta-secondary,
 a.brands-cta-btn,
 .submit-btn,
 button.submit-btn,
+.call-btn,
+a.call-btn,
 .call-btn-large,
-a.call-btn-large {
+a.call-btn-large,
+.emergency-phone-btn,
+a.emergency-phone-btn {
     text-decoration: none !important;
     color: white !important;
 }
@@ -357,8 +361,12 @@ a.cta-primary:visited,
 a.cta-secondary:visited,
 .brands-cta-btn:visited,
 a.brands-cta-btn:visited,
+.call-btn:visited,
+a.call-btn:visited,
 .call-btn-large:visited,
-a.call-btn-large:visited {
+a.call-btn-large:visited,
+.emergency-phone-btn:visited,
+a.emergency-phone-btn:visited {
     color: white !important;
     text-decoration: none !important;
 }

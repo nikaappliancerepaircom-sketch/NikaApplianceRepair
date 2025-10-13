@@ -261,7 +261,7 @@
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-    background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
     color: white;
     padding: 1rem 2.5rem;
     border-radius: 50px;
@@ -269,13 +269,13 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(155, 89, 182, 0.4);
+    box-shadow: 0 10px 30px rgba(39, 174, 96, 0.4);
 }
 
 .emergency-phone-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(155, 89, 182, 0.6);
-    background: linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%);
+    box-shadow: 0 15px 40px rgba(39, 174, 96, 0.6);
+    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
 }
 
 .emergency-phone-btn svg {

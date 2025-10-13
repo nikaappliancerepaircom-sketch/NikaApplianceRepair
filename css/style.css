@@ -177,15 +177,15 @@ a {
     align-items: center;
     gap: 0.75rem;
     padding: 1.25rem 2.5rem;
-    background: #9B59B6;
-    background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);
+    background: #27AE60;
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
     color: var(--white);
     border-radius: 50px;
     font-weight: 700;
     font-size: 1.25rem; /* 22.5px - increased */
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 8px 20px rgba(155, 89, 182, 0.35);
+    box-shadow: 0 8px 20px rgba(39, 174, 96, 0.35);
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
@@ -194,8 +194,8 @@ a {
 
 .cta-secondary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(155, 89, 182, 0.45);
-    background: linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%);
+    box-shadow: 0 12px 30px rgba(39, 174, 96, 0.45);
+    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
 }
 /* Header Styles */
 .main-header {
@@ -277,15 +277,15 @@ a {
 }
 
 .call-btn {
-    background: #9B59B6;
-    background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);
+    background: #27AE60;
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
     color: var(--white);
-    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.35);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.35);
 }
 
 .call-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(155, 89, 182, 0.45);
+    box-shadow: 0 8px 20px rgba(39, 174, 96, 0.45);
 }
 
 .book-btn {
@@ -1437,22 +1437,22 @@ a {
     align-items: center;
     gap: 0.75rem;
     padding: 1.25rem 2.5rem;
-    background: #9B59B6;
-    background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);
+    background: #27AE60;
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
     color: var(--white);
     border-radius: 50px;
     font-size: 1.25rem;
     font-weight: 700;
     margin-top: 1rem;
-    box-shadow: 0 8px 20px rgba(155, 89, 182, 0.35);
+    box-shadow: 0 8px 20px rgba(39, 174, 96, 0.35);
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 .call-btn-large:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(155, 89, 182, 0.45);
-    background: linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%);
+    box-shadow: 0 12px 30px rgba(39, 174, 96, 0.45);
+    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
 }
 
 /* FAQ Section */
@@ -2064,15 +2064,15 @@ a {
     }
 }
 
-@keyframes pulse-shadow-purple {
+@keyframes pulse-shadow-green {
     0% {
-        box-shadow: 0 8px 20px rgba(155, 89, 182, 0.35);
+        box-shadow: 0 8px 20px rgba(39, 174, 96, 0.35);
     }
     50% {
-        box-shadow: 0 8px 30px rgba(155, 89, 182, 0.6);
+        box-shadow: 0 8px 30px rgba(39, 174, 96, 0.6);
     }
     100% {
-        box-shadow: 0 8px 20px rgba(155, 89, 182, 0.35);
+        box-shadow: 0 8px 20px rgba(39, 174, 96, 0.35);
     }
 }
 
@@ -2081,7 +2081,7 @@ a {
 }
 
 .call-btn-large {
-    animation: pulse-shadow-purple 2s infinite;
+    animation: pulse-shadow-green 2s infinite;
 }
 
 /* Enhanced Button Icons */
