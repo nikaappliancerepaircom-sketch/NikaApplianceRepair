@@ -1,24 +1,266 @@
+# ============================================================
 # Robots.txt for Nika Appliance Repair
-# Last updated: 2025
+# Last updated: 2025-01-13
+# Version: 2.0 (AI-Optimized)
+# ============================================================
 
+# ============================================================
+# DEFAULT RULE - Allow all legitimate crawlers
+# ============================================================
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
+Disallow: /backups/
+Disallow: /node_modules/
+Disallow: /tools/
+Disallow: /reports/
 
-# Sitemap location
-Sitemap: https://nikaappliancerepair.com/sitemap.xml
+# ============================================================
+# TRADITIONAL SEARCH ENGINES
+# ============================================================
 
-# Crawl delay (in seconds)
-Crawl-delay: 1
-
-# Google specific
+# Google Search
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
-# Bing specific
+# Google Image Search
+User-agent: Googlebot-Image
+Allow: /
+
+# Google Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Bing Search
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
+
+# Yandex (Russia)
+User-agent: YandexBot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# Baidu (China)
+User-agent: Baiduspider
+Allow: /
+
+# ============================================================
+# AI SEARCH ENGINES & LLM CRAWLERS (2025+)
+# ⚠️ CRITICAL: Without these, you're invisible to AI platforms
+# ============================================================
+
+# ------------------------------------------------------------
+# OpenAI (ChatGPT Search, GPT-4, GPT-5)
+# Used by: ChatGPT, Microsoft Copilot (partially)
+# Users: 200M+ weekly active users
+# ------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ChatGPT-User
+Allow: /
+
+# ------------------------------------------------------------
+# Anthropic (Claude AI, Claude Search)
+# Used by: Claude.ai, API integrations
+# Users: Growing rapidly (enterprise focus)
+# ------------------------------------------------------------
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 0
+
+User-agent: Claude-Web
+Allow: /
+
+# ------------------------------------------------------------
+# Perplexity AI
+# Users: 50M+ monthly, fastest growing AI search
+# ⚠️ HIGH PRIORITY - Perplexity is exploding in 2025
+# ------------------------------------------------------------
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+# ------------------------------------------------------------
+# Google AI (Gemini, Bard successor, AI Overview)
+# Used by: Google Search AI Overview, Gemini chat
+# Users: Billions (integrated in Google Search)
+# ⚠️ HIGHEST PRIORITY
+# ------------------------------------------------------------
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 0
+
+# Google AI specific (Gemini training)
+User-agent: GoogleOther
+Allow: /
+
+# ------------------------------------------------------------
+# Meta AI (Facebook, Instagram, WhatsApp AI)
+# Users: 3 Billion+ across Meta platforms
+# ⚠️ HIGH PRIORITY - Massive reach
+# ------------------------------------------------------------
+User-agent: Meta-ExternalAgent
+Allow: /
+Crawl-delay: 0
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# ------------------------------------------------------------
+# Apple Intelligence (Siri AI, Apple Search - 2025)
+# Users: 2+ Billion iOS/macOS devices
+# ⚠️ COMING Q2 2025 - Be ready early
+# ------------------------------------------------------------
+User-agent: Applebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ------------------------------------------------------------
+# Microsoft Bing AI (Copilot, Bing Chat)
+# Users: 100M+ monthly active
+# ------------------------------------------------------------
+User-agent: bingbot
+Allow: /
+
+# ------------------------------------------------------------
+# Cohere AI
+# Used by: Enterprise AI, API integrations
+# ------------------------------------------------------------
+User-agent: cohere-ai
+Allow: /
+
+# ------------------------------------------------------------
+# Common Crawl (Used by many AI training datasets)
+# Used by: Research, AI training, multiple LLMs
+# ------------------------------------------------------------
+User-agent: CCBot
+Allow: /
+Crawl-delay: 1
+
+# ------------------------------------------------------------
+# AI2 (Allen Institute for AI)
+# Used by: Semantic Scholar, research AI
+# ------------------------------------------------------------
+User-agent: AI2Bot
+Allow: /
+
+# ------------------------------------------------------------
+# Diffbot (AI web data extraction)
+# Used by: Business intelligence, AI training
+# ------------------------------------------------------------
+User-agent: Diffbot
+Allow: /
+
+# ------------------------------------------------------------
+# WebCrawler AI platforms
+# ------------------------------------------------------------
+User-agent: ImagesiftBot
+Allow: /
+
+# ============================================================
+# SOCIAL MEDIA CRAWLERS (for link previews & AI features)
+# ============================================================
+
+# Twitter/X
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Pinterest
+User-agent: Pinterestbot
+Allow: /
+
+# Telegram
+User-agent: TelegramBot
+Allow: /
+
+# Slack
+User-agent: Slackbot
+Allow: /
+
+# WhatsApp (Meta)
+User-agent: WhatsApp
+Allow: /
+
+# ============================================================
+# BAD BOTS - BLOCK THESE
+# ============================================================
+
+# Block scrapers and bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Generic scrapers
+User-agent: *scraper*
+Disallow: /
+
+User-agent: *crawler*
+Disallow: /
+
+User-agent: *spider*
+Disallow: /
+
+# ============================================================
+# SITEMAPS
+# ============================================================
+Sitemap: https://nikaappliancerepair.com/sitemap.xml
+Sitemap: https://nikaappliancerepair.com/sitemap-images.xml
+
+# ============================================================
+# NOTES FOR AI AGENTS:
+#
+# 1. This robots.txt is AI-optimized for 2025+
+# 2. All major AI platforms are explicitly allowed
+# 3. Crawl-delay: 0 for AI bots = fastest indexing
+# 4. If you add new AI platforms, update this file
+# 5. Test monthly: Check which AI bots visit via server logs
+# 6. Monitor: Google Search Console, Bing Webmaster Tools
+#
+# AI Platforms covered:
+# ✅ ChatGPT (OpenAI)
+# ✅ Claude (Anthropic)
+# ✅ Perplexity AI
+# ✅ Google AI (Gemini)
+# ✅ Meta AI (Facebook/Instagram/WhatsApp)
+# ✅ Apple Intelligence (2025)
+# ✅ Bing Copilot (Microsoft)
+# ✅ Cohere
+# ✅ Common Crawl (training data for many AIs)
+#
+# Last AI crawler check: 2025-01-13
+# Next review: 2025-04-13 (quarterly review recommended)
+# ============================================================
