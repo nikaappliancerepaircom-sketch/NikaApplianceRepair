@@ -1,14 +1,14 @@
-# 🎯 BMAD METHOD - 292 PARAMETERS MANDATORY CHECKLIST
+# 🎯 BMAD METHOD - 293 PARAMETERS MANDATORY CHECKLIST
 
-## ⚠️ CRITICAL RULE: EVERY PAGE MUST PASS ALL 292 PARAMETERS BEFORE DEPLOYMENT
+## ⚠️ CRITICAL RULE: EVERY PAGE MUST PASS ALL 293 PARAMETERS BEFORE DEPLOYMENT
 
-**Updated:** 2025-10-14 | **Version:** 3.2 (Excellence Standard) | **Total Parameters:** 292
+**Updated:** 2025-10-14 | **Version:** 3.2 (Excellence Standard) | **Total Parameters:** 293
 
 ---
 
-## 📊 PARAMETER BREAKDOWN (292 TOTAL)
+## 📊 PARAMETER BREAKDOWN (293 TOTAL)
 
-### 1️⃣ SEO OPTIMIZATION (45 parameters) - TARGET: **98+/100** ⭐
+### 1️⃣ SEO OPTIMIZATION (46 parameters) - TARGET: **98+/100** ⭐
 
 #### Content Optimization (9 parameters)
 ```bash
@@ -47,7 +47,7 @@ python verify-all-location-pages.py
 - [ ] Alt text: 100% coverage
 - [ ] Trust signals: 4 types (warranty, rating, reviews, certifications)
 
-#### Technical SEO (7 parameters)
+#### Technical SEO (8 parameters)
 - [ ] Title tag: 50-60 characters
 - [ ] Meta description: 150-160 characters
 - [ ] Schema markup: LocalBusiness, FAQPage, Service
@@ -55,6 +55,7 @@ python verify-all-location-pages.py
 - [ ] HTTPS references: All secure
 - [ ] JavaScript: Optimized/minified
 - [ ] Critical CSS: Inline
+- [ ] Clean URLs: No .html extensions in URLs (use vercel.json cleanUrls: true)
 
 #### AI Optimization (5 parameters)
 - [ ] Summary boxes: 1+ AI-friendly summary
@@ -102,7 +103,7 @@ python ai-search-checker.py website/PAGE.html
 - [ ] Location + intent combinations (e.g., "refrigerator repair Toronto today")
 - [ ] Click-to-call enabled on all phone numbers (tel: links)
 
-**SEO + AI PASS CRITERIA: 98+/100 score (44/45 minimum), AI crawler access enabled** ⭐
+**SEO + AI PASS CRITERIA: 98+/100 score (45/46 minimum), AI crawler access enabled** ⭐
 
 ---
 
@@ -569,9 +570,9 @@ python conversion-design-checker.py website/PAGE.html
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│  BMAD METHOD - 292 TOTAL PARAMETERS (v3.2)            │
+│  BMAD METHOD - 293 TOTAL PARAMETERS (v3.2)            │
 ├────────────────────────────────────────────────────────┤
-│  1.  SEO + AI Optimization:   45 params → 98+/100  ⭐│
+│  1.  SEO + AI Optimization:   46 params → 98+/100  ⭐│
 │  2.  Responsive Design:       80 params → 95+/100  ⭐│
 │  3.  Speed Performance:        9 params → 85+/100     │
 │  4.  Cross-Browser:           28 params → 4/4         │
@@ -583,7 +584,7 @@ python conversion-design-checker.py website/PAGE.html
 │  10. Data Consistency:        15 params → 100%     ⭐│
 │  11. Conversion Design:       10 params → 98+/100  ⭐│
 ├────────────────────────────────────────────────────────┤
-│  TOTAL:                      292 PARAMETERS        🚀 │
+│  TOTAL:                      293 PARAMETERS        🚀 │
 │  NEW STANDARDS (v3.2):       8 categories at 95-98%  │
 │  CRITICAL GATES:             7 categories (marked ⭐) │
 │  DEPLOYMENT GATE:            ALL CATEGORIES PASS      │
@@ -595,9 +596,9 @@ python conversion-design-checker.py website/PAGE.html
 
 ## 🚨 CRITICAL DEPLOYMENT GATES (v3.2 - EXCELLENCE STANDARD)
 
-### Gate 1-6: Technical Foundation (207 params)
+### Gate 1-6: Technical Foundation (208 params)
 ```
-✅ SEO + AI: 98+/100 (44/45 minimum) ⭐ CRITICAL - RAISED FROM 85%
+✅ SEO + AI: 98+/100 (45/46 minimum) ⭐ CRITICAL - RAISED FROM 85%
 ✅ Responsive: 95+/100 (76/80 minimum) ⭐ CRITICAL - RAISED FROM 85%
 ✅ Speed: 85+/100
 ✅ Cross-Browser: 4/4 browsers
@@ -686,12 +687,12 @@ python conversion-design-checker.py website/PAGE.html     # 10 params
 ---
 
 **Last Updated:** 2025-10-14
-**Version:** 3.2 (Excellence Standard Update)
-**Total Parameters:** 292
+**Version:** 3.2 (Excellence Standard Update + Clean URLs)
+**Total Parameters:** 293
 **Status:** Production Ready ✅
 **Key Changes (v3.2):**
 - **RAISED STANDARDS:** 7 categories now require 95-98% (near-perfection)
-- SEO + AI: 85% → 98% ⭐
+- SEO + AI: 85% → 98% ⭐ (46 params, added clean URLs requirement)
 - Responsive Design: 85% → 95% ⭐
 - Visual Design: 85% → 95% ⭐
 - CRO: 85% → 95% ⭐
@@ -700,3 +701,4 @@ python conversion-design-checker.py website/PAGE.html     # 10 params
 - Content Quality: 98% (maintained) ⭐
 - Data Consistency: 100% (maintained) ⭐
 - **Excellence Standard:** Only best-in-class pages will pass all gates
+- **Clean URLs:** All URLs must be without .html extension (vercel.json cleanUrls: true)
