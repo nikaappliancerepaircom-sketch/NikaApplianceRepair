@@ -67,10 +67,11 @@ Allow: /
 # ------------------------------------------------------------
 User-agent: GPTBot
 Allow: /
-Crawl-delay: 0
+Crawl-delay: 5
 
 User-agent: ChatGPT-User
 Allow: /
+Crawl-delay: 5
 
 # ------------------------------------------------------------
 # Anthropic (Claude AI, Claude Search)
@@ -79,10 +80,11 @@ Allow: /
 # ------------------------------------------------------------
 User-agent: anthropic-ai
 Allow: /
-Crawl-delay: 0
+Crawl-delay: 5
 
 User-agent: Claude-Web
 Allow: /
+Crawl-delay: 5
 
 # ------------------------------------------------------------
 # Perplexity AI
@@ -91,7 +93,7 @@ Allow: /
 # ------------------------------------------------------------
 User-agent: PerplexityBot
 Allow: /
-Crawl-delay: 0
+Crawl-delay: 5
 
 # ------------------------------------------------------------
 # Google AI (Gemini, Bard successor, AI Overview)
@@ -101,11 +103,12 @@ Crawl-delay: 0
 # ------------------------------------------------------------
 User-agent: Google-Extended
 Allow: /
-Crawl-delay: 0
+Crawl-delay: 5
 
 # Google AI specific (Gemini training)
 User-agent: GoogleOther
 Allow: /
+Crawl-delay: 5
 
 # ------------------------------------------------------------
 # Meta AI (Facebook, Instagram, WhatsApp AI)
@@ -114,13 +117,15 @@ Allow: /
 # ------------------------------------------------------------
 User-agent: Meta-ExternalAgent
 Allow: /
-Crawl-delay: 0
+Crawl-delay: 5
 
 User-agent: FacebookBot
 Allow: /
+Crawl-delay: 5
 
 User-agent: facebookexternalhit
 Allow: /
+Crawl-delay: 5
 
 # ------------------------------------------------------------
 # Apple Intelligence (Siri AI, Apple Search - 2025)
@@ -129,10 +134,11 @@ Allow: /
 # ------------------------------------------------------------
 User-agent: Applebot
 Allow: /
-Crawl-delay: 0
+Crawl-delay: 5
 
 User-agent: Applebot-Extended
 Allow: /
+Crawl-delay: 5
 
 # ------------------------------------------------------------
 # Microsoft Bing AI (Copilot, Bing Chat)
