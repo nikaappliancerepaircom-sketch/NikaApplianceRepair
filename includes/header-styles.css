@@ -298,8 +298,8 @@ html, body {
     box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
     z-index: 999;
     padding: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
+    grid-template-columns: 1fr 1fr; /* 2 buttons: Call + Book */
+    gap: 12px;
     width: 100%;
 }
 
@@ -348,12 +348,43 @@ html, body {
     flex-shrink: 0;
 }
 
+/* ========== MOBILE MENU DROPDOWN ========== */
+@media (max-width: 968px) {
+    /* Hide desktop navigation by default */
+    .main-nav-v2 {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        padding: 20px;
+        z-index: 1001;
+    }
+
+    /* Show navigation when menu is open */
+    .main-nav-v2.mobile-menu-open {
+        display: block;
+    }
+
+    .main-nav-v2 ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-nav-v2 a {
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+    }
+}
+
 /* ========== RESPONSIVE BREAKPOINTS ========== */
 
 /* Tablet and below (968px) */
 @media (max-width: 968px) {
-    /* Hide desktop navigation and CTAs */
-    .main-nav-v2,
+    /* Hide desktop CTAs */
     .header-ctas-v2 {
         display: none;
     }
