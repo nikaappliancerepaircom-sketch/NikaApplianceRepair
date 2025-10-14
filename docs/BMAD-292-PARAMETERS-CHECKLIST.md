@@ -2,20 +2,43 @@
 
 ## ⚠️ CRITICAL RULE: EVERY PAGE MUST PASS ALL 292 PARAMETERS BEFORE DEPLOYMENT
 
-**Updated:** 2025-01-13 | **Version:** 3.0 | **Total Parameters:** 292
+**Updated:** 2025-10-14 | **Version:** 3.2 (Excellence Standard) | **Total Parameters:** 292
 
 ---
 
 ## 📊 PARAMETER BREAKDOWN (292 TOTAL)
 
-### 1️⃣ SEO OPTIMIZATION (45 parameters) - TARGET: 85+/100
+### 1️⃣ SEO OPTIMIZATION (45 parameters) - TARGET: **98+/100** ⭐
 
 #### Content Optimization (9 parameters)
 ```bash
 python seo-checker.py website/PAGE.html
 ```
-- [ ] Word count: 1500-2500 words
+- [ ] Word count: 2000-2500 words (use verify-all-location-pages.py for accurate count)
 - [ ] Keyword density: 1.5-2.5%
+
+**⚠️ CRITICAL: WORD COUNT METHODOLOGY**
+```bash
+# CORRECT METHOD - Count ONLY visible text content (no HTML, CSS, JS):
+python verify-all-location-pages.py
+
+# This script uses BeautifulSoup to extract ONLY visible text:
+# - Auto-detects ALL .html files in locations/ folder
+# - Removes <script>, <style>, <head> tags
+# - Counts only user-visible words
+# - Ignores HTML attributes, CSS, JavaScript code
+# - Works with ANY number of location pages (10, 20, 50+)
+```
+
+**❌ WRONG METHODS - DO NOT USE:**
+- `wc -w filename.html` - counts ALL words including HTML code (300-400% higher!)
+- Simple text extraction without removing script/style tags
+- Manual counting from HTML source
+- grep/sed word counting without HTML parsing
+
+**✅ CORRECT TOOLS:**
+- `verify-all-location-pages.py` - Tests ALL location pages at once (UNIVERSAL)
+- `verify_word_count.py` - Template for single page testing (uses BeautifulSoup)
 - [ ] H1 tags: Exactly 1
 - [ ] H2/H3 hierarchy: Proper structure (5-10 H2, 12-15 H3)
 - [ ] Semantic coverage: 5+ semantic keywords
@@ -79,11 +102,11 @@ python ai-search-checker.py website/PAGE.html
 - [ ] Location + intent combinations (e.g., "refrigerator repair Toronto today")
 - [ ] Click-to-call enabled on all phone numbers (tel: links)
 
-**SEO + AI PASS CRITERIA: 85+/100 score, AI crawler access enabled**
+**SEO + AI PASS CRITERIA: 98+/100 score (44/45 minimum), AI crawler access enabled** ⭐
 
 ---
 
-### 2️⃣ RESPONSIVE DESIGN (80 parameters) - TARGET: 10/10 DEVICES PASS
+### 2️⃣ RESPONSIVE DESIGN (80 parameters) - TARGET: **95+/100** ⭐
 
 #### Devices to Test (10 devices × 8 checks = 80 parameters)
 ```bash
@@ -116,7 +139,7 @@ python test-actual-scroll.py website/PAGE.html
 7. Images fit viewport
 8. Forms usable
 
-**RESPONSIVE PASS CRITERIA: 10/10 devices with 0px overflow**
+**RESPONSIVE PASS CRITERIA: 95+/100 score (76/80 minimum), 0px overflow** ⭐
 
 ---
 
@@ -159,7 +182,7 @@ python complete-cross-browser-tester.py website/PAGE.html
 
 ---
 
-### 5️⃣ VISUAL DESIGN (30 parameters) - TARGET: 85+/100
+### 5️⃣ VISUAL DESIGN (30 parameters) - TARGET: **95+/100** ⭐
 
 ```bash
 python visual-design-checker-real.py website/PAGE.html
@@ -205,7 +228,7 @@ python visual-design-checker-real.py website/PAGE.html
 - [ ] CTAs stand out
 - [ ] Loading indicators present
 
-**VISUAL PASS CRITERIA: 85+/100 score, no critical issues**
+**VISUAL PASS CRITERIA: 95+/100 score (29/30 minimum), no critical issues** ⭐
 
 ---
 
@@ -310,7 +333,7 @@ python content-quality-checker.py website/PAGE.html
 
 ---
 
-### 🆕 8️⃣ CONVERSION RATE OPTIMIZATION (20 parameters) - TARGET: 85+/100
+### 🆕 8️⃣ CONVERSION RATE OPTIMIZATION (20 parameters) - TARGET: **95+/100** ⭐
 
 ```bash
 python cro-checker.py website/PAGE.html
@@ -344,11 +367,11 @@ python cro-checker.py website/PAGE.html
 - [ ] Loading speed fast: <3 seconds load (otherwise 50% leave)
 - [ ] Navigation simple: Maximum 5-7 menu items
 
-**CRO PASS CRITERIA: 85+/100 score, 5+ conversion points**
+**CRO PASS CRITERIA: 95+/100 score (19/20 minimum), 5+ conversion points** ⭐
 
 ---
 
-### 🆕 9️⃣ PSYCHOLOGICAL TRIGGERS (25 parameters) - TARGET: 85+/100
+### 🆕 9️⃣ PSYCHOLOGICAL TRIGGERS (25 parameters) - TARGET: **98+/100** ⭐
 
 ```bash
 python psychology-checker.py website/PAGE.html
@@ -417,14 +440,73 @@ We ONLY repair these 6 appliances - NEVER mention others:
 - ❌ HVAC (air conditioning, heating, furnaces)
 - ❌ Any small appliances
 - ❌ Any specialty cooking equipment (wok ranges, steamers, etc.)
+- ❌ **COMMERCIAL APPLIANCES** - We ONLY service residential appliances
+
+**🚨 NO COMMERCIAL APPLIANCES:**
+- ❌ NO commercial refrigerators, freezers, walk-ins
+- ❌ NO commercial ovens, ranges, convection ovens
+- ❌ NO commercial dishwashers
+- ❌ NO restaurant equipment
+- ❌ NO industrial laundry machines
+- ❌ NO any commercial-grade appliances
+- ✅ YES: ONLY residential home appliances
+
+**🚨 NO LUXURY BRANDS EMPHASIS:**
+- ❌ DO NOT emphasize luxury brands (Sub-Zero, Wolf, Miele, Thermador, Gaggenau)
+- ❌ DO NOT mention "luxury appliance specialists" or "certified for ultra-luxury"
+- ❌ DO NOT claim "factory-certified" for ANY brand (we don't have certifications)
+- ❌ DO NOT claim "manufacturer-certified" or "authorized service center"
+- ❌ Parts for luxury brands are difficult to source
+- ✅ YES: **STRONG EMPHASIS on standard residential brands** (Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, Maytag, Frigidaire)
+- ✅ YES: Can mention we service luxury brands, but NO special emphasis
+- ✅ YES: Lead with Samsung, LG, Whirlpool, GE in all brand lists
+
+**🚨 NO DISPOSAL/REMOVAL SERVICES:**
+- ❌ DO NOT mention appliance disposal service
+- ❌ DO NOT mention appliance removal service
+- ❌ DO NOT mention recycling services
+- ❌ DO NOT mention eco-certified disposal
+- ❌ We do NOT provide haul-away or disposal services
+- ✅ YES: We ONLY repair existing appliances
+
+**🚨 NO COMMERCIAL SERVICES:**
+- ❌ DO NOT service high-BTU commercial ranges (this is commercial equipment)
+- ❌ DO NOT mention commercial-grade stoves or ranges
+- ❌ DO NOT mention restaurant-style cooking equipment
+- ❌ High-BTU ranges = commercial service, we don't do this
+- ✅ YES: Standard residential ranges only (up to 18,000 BTU max)
+
+**🚨 NO REFRIGERANT SERVICES:**
+- ❌ DO NOT mention refrigerant recovery service
+- ❌ DO NOT mention refrigerant refill/recharge service
+- ❌ DO NOT mention Freon service
+- ❌ We do NOT handle refrigerant (requires EPA certification)
+- ✅ YES: We diagnose cooling issues, but refer refrigerant work to specialists
+
+**🚨 ARRIVAL TIME - BE FLEXIBLE:**
+- ❌ DO NOT promise exact times like "30-45 minutes"
+- ❌ DO NOT promise "same-day" if not guaranteed
+- ❌ Sometimes service is next day, not same day
+- ✅ YES: "Fast response time" or "Quick service"
+- ✅ YES: "Same-day service available" (not guaranteed)
+- ✅ YES: "We'll arrive as soon as possible"
+
+**🎯 TARGET AUDIENCE: RESIDENTIAL HOMEOWNERS**
+- ✅ **STRONG FOCUS** on everyday residential homeowners
+- ✅ **EMPHASIS** on standard appliances in typical homes
+- ✅ Affordable, reliable repair service
+- ✅ NOT targeting luxury/high-end market
+- ✅ Middle-class families, average homes
+- ✅ Lead with Samsung, LG, Whirlpool, GE (most common brands)
 
 **WHY THIS MATTERS:**
 - Promising services we don't provide = legal liability
 - Customer disappointment = negative reviews
 - Wasted service calls = lost revenue
 - False advertising = potential lawsuits
+- Luxury parts = hard to source, delays, customer frustration
 
-**PSYCHOLOGY PASS CRITERIA: 85+/100 score, all triggers ethical & truthful**
+**PSYCHOLOGY PASS CRITERIA: 98+/100 score (24.5/25 minimum), all triggers ethical & truthful** ⭐
 
 ---
 
@@ -459,7 +541,7 @@ python data-consistency-checker.py website/PAGE.html
 
 ---
 
-### 🆕 1️⃣1️⃣ CONVERSION DESIGN (10 parameters) - TARGET: 85+/100
+### 🆕 1️⃣1️⃣ CONVERSION DESIGN (10 parameters) - TARGET: **98+/100** ⭐
 
 ```bash
 python conversion-design-checker.py website/PAGE.html
@@ -479,7 +561,7 @@ python conversion-design-checker.py website/PAGE.html
 - [ ] Mobile images fast: Lazy loading + compressed
 - [ ] Mobile menu accessible: Hamburger menu obvious, working
 
-**CONVERSION DESIGN PASS CRITERIA: 85+/100 score**
+**CONVERSION DESIGN PASS CRITERIA: 98+/100 score (9.8/10 minimum)** ⭐
 
 ---
 
@@ -487,52 +569,57 @@ python conversion-design-checker.py website/PAGE.html
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│  BMAD METHOD - 292 TOTAL PARAMETERS (v3.1)            │
+│  BMAD METHOD - 292 TOTAL PARAMETERS (v3.2)            │
 ├────────────────────────────────────────────────────────┤
-│  1.  SEO + AI Optimization:   45 params → 85+/100  🆕│
-│  2.  Responsive Design:       80 params → 10/10       │
+│  1.  SEO + AI Optimization:   45 params → 98+/100  ⭐│
+│  2.  Responsive Design:       80 params → 95+/100  ⭐│
 │  3.  Speed Performance:        9 params → 85+/100     │
 │  4.  Cross-Browser:           28 params → 4/4         │
-│  5.  Visual Design:           30 params → 85+/100     │
+│  5.  Visual Design:           30 params → 95+/100  ⭐│
 │  6.  Accessibility:           15 params → WCAG AA     │
 │  7.  Content Quality:         15 params → 98+/100  ⭐│
-│  8.  CRO (Conversion):        20 params → 85+/100     │
-│  9.  Psychology:              25 params → 85+/100     │
+│  8.  CRO (Conversion):        20 params → 95+/100  ⭐│
+│  9.  Psychology:              25 params → 98+/100  ⭐│
 │  10. Data Consistency:        15 params → 100%     ⭐│
-│  11. Conversion Design:       10 params → 85+/100     │
+│  11. Conversion Design:       10 params → 98+/100  ⭐│
 ├────────────────────────────────────────────────────────┤
 │  TOTAL:                      292 PARAMETERS        🚀 │
-│  NEW: +15 AI Search params (ChatGPT, Perplexity, etc)│
-│  TARGET:                     85+/100 on ALL           │
-│  CRITICAL: Content Quality 98%+ (uniqueness!)      ⭐│
+│  NEW STANDARDS (v3.2):       8 categories at 95-98%  │
+│  CRITICAL GATES:             7 categories (marked ⭐) │
 │  DEPLOYMENT GATE:            ALL CATEGORIES PASS      │
+│  EXCELLENCE STANDARD:        Near-perfect execution   │
 └────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🚨 CRITICAL DEPLOYMENT GATES
+## 🚨 CRITICAL DEPLOYMENT GATES (v3.2 - EXCELLENCE STANDARD)
 
 ### Gate 1-6: Technical Foundation (207 params)
 ```
-✅ SEO + AI: 85+/100 (includes AI crawler access) 🆕
-✅ Responsive: 10/10 devices
+✅ SEO + AI: 98+/100 (44/45 minimum) ⭐ CRITICAL - RAISED FROM 85%
+✅ Responsive: 95+/100 (76/80 minimum) ⭐ CRITICAL - RAISED FROM 85%
 ✅ Speed: 85+/100
 ✅ Cross-Browser: 4/4 browsers
-✅ Visual: 85+/100
+✅ Visual: 95+/100 (29/30 minimum) ⭐ CRITICAL - RAISED FROM 85%
 ✅ Accessibility: WCAG AA
 ```
 
 ### Gate 7-11: Conversion & Trust (85 params)
 ```
-✅ Content Quality: 98+/100 (CRITICAL - uniqueness!) ⭐
-✅ CRO: 85+/100
-✅ Psychology: 85+/100
-✅ Data Consistency: 100% (CRITICAL!) ⭐
-✅ Conversion Design: 85+/100
+✅ Content Quality: 98+/100 (14.5/15 minimum) ⭐ CRITICAL
+✅ CRO: 95+/100 (19/20 minimum) ⭐ CRITICAL - RAISED FROM 85%
+✅ Psychology: 98+/100 (24.5/25 minimum) ⭐ CRITICAL - RAISED FROM 85%
+✅ Data Consistency: 100% (15/15) ⭐ CRITICAL
+✅ Conversion Design: 98+/100 (9.8/10 minimum) ⭐ CRITICAL - RAISED FROM 85%
 ```
 
 **⚠️ ALL 11 GATES MUST PASS BEFORE DEPLOYMENT**
+
+**🚨 NEW v3.2 STANDARDS:**
+- **7 CRITICAL categories** require 95-98% (near-perfection)
+- Only 4 categories remain at 85% threshold (Speed, Cross-Browser, Accessibility, old baseline)
+- This raises the bar to EXCELLENCE level - only best-in-class pages will pass
 
 ---
 
@@ -598,11 +685,18 @@ python conversion-design-checker.py website/PAGE.html     # 10 params
 
 ---
 
-**Last Updated:** 2025-10-13
-**Version:** 3.1 (Content Quality Update)
-**Total Parameters:** 292 (+15 AI Search params)
+**Last Updated:** 2025-10-14
+**Version:** 3.2 (Excellence Standard Update)
+**Total Parameters:** 292
 **Status:** Production Ready ✅
-**Key Changes:**
-- Content Quality requirement raised to 98%+ (from 85%)
-- Content originality is now non-negotiable (must be 100% unique)
-- Two CRITICAL categories: Data Consistency (100%) + Content Quality (98%)
+**Key Changes (v3.2):**
+- **RAISED STANDARDS:** 7 categories now require 95-98% (near-perfection)
+- SEO + AI: 85% → 98% ⭐
+- Responsive Design: 85% → 95% ⭐
+- Visual Design: 85% → 95% ⭐
+- CRO: 85% → 95% ⭐
+- Psychology: 85% → 98% ⭐
+- Conversion Design: 85% → 98% ⭐
+- Content Quality: 98% (maintained) ⭐
+- Data Consistency: 100% (maintained) ⭐
+- **Excellence Standard:** Only best-in-class pages will pass all gates
