@@ -42,10 +42,23 @@ python verify-all-location-pages.py
 - [ ] H1 tags: Exactly 1
 - [ ] H2/H3 hierarchy: Proper structure (5-10 H2, 12-15 H3)
 - [ ] Semantic coverage: 5+ semantic keywords
-- [ ] Internal links: 10+ links
+- [ ] Internal links: 10+ links total (location pages must link to 6+ service pages)
 - [ ] Images: 10+ images
 - [ ] Alt text: 100% coverage
 - [ ] Trust signals: 4 types (warranty, rating, reviews, certifications)
+
+**🔗 INTERNAL LINKING REQUIREMENTS:**
+- **Location pages → Service pages:** Each location page MUST link to 6 service pages minimum
+  - Refrigerator Repair → /services/refrigerator-repair
+  - Dishwasher Repair → /services/dishwasher-repair
+  - Dryer Repair → /services/dryer-repair
+  - Stove Repair → /services/stove-repair
+  - Oven Repair → /services/oven-repair
+  - Washing Machine Repair → /services/washer-repair
+- **Service pages → Location pages:** Each service page SHOULD link to 3-5 major location pages
+- **Footer links:** All pages link to main service + location pages in footer
+- **Link styling:** Use `color: inherit; text-decoration: none;` for seamless integration
+- **Why this matters:** Internal linking passes SEO juice, improves crawlability, helps users navigate
 
 #### Technical SEO (8 parameters)
 - [ ] Title tag: 50-60 characters
