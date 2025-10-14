@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Appliance repair service areas in GTA: Toronto, Mississauga, Brampton, Markham, Vaughan, Richmond Hill, Oakville, Burlington, and more. Same-day service. Call 437-747-6737">
+    <title>Service Areas | Nika Appliance Repair GTA Locations</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nikaappliancerepair.com/locations">
+
+    <!-- Unified Header Styles -->
+    <link rel="stylesheet" href="/includes/header-styles.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero-locations {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .hero-locations h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero-locations p {
+            font-size: clamp(16px, 2.5vw, 20px);
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Locations Section */
+        .locations-section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(28px, 4vw, 36px);
+            margin-bottom: 40px;
+            color: #2196F3;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .location-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border: 2px solid transparent;
+        }
+
+        .location-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            border-color: #2196F3;
+        }
+
+        .location-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .location-card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #2196F3;
+        }
+
+        .location-card p {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .location-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #2196F3;
+            font-weight: 600;
+            transition: gap 0.3s;
+        }
+
+        .location-card:hover .location-cta {
+            gap: 12px;
+        }
+
+        /* Coverage Section */
+        .coverage-section {
+            background: white;
+            padding: 60px 0;
+            margin-top: 40px;
+        }
+
+        .coverage-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .coverage-content h2 {
+            font-size: clamp(28px, 4vw, 36px);
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .coverage-content p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .coverage-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .coverage-badge {
+            background: #f0f7ff;
+            color: #2196F3;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(28px, 4vw, 36px);
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            background: white;
+            color: #4CAF50;
+            font-weight: 600;
+            font-size: 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .cta-button.secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-button.secondary:hover {
+            background: white;
+            color: #4CAF50;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-locations {
+                padding: 60px 0 40px;
+            }
+
+            .locations-section {
+                padding: 40px 0;
+            }
+
+            .locations-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .coverage-section {
+                padding: 40px 0;
+            }
+
+            .cta-section {
+                padding: 40px 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-locations">
+        <div class="container">
+            <h1>Appliance Repair Service Areas</h1>
+            <p>Professional appliance repair across Greater Toronto Area. Same-day service available in all locations.</p>
+        </div>
+    </section>
+
+    <!-- Main Locations Grid -->
+    <section class="locations-section">
+        <div class="container">
+            <h2 class="section-title">Our Service Locations</h2>
+            <div class="locations-grid">
+                <!-- Toronto -->
+                <a href="/locations/toronto" class="location-card">
+                    <div class="location-icon">🏙️</div>
+                    <h2>Toronto</h2>
+                    <p>Fast appliance repair in Toronto. All major brands. Same-day service available.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Mississauga -->
+                <a href="/locations/mississauga" class="location-card">
+                    <div class="location-icon">🏘️</div>
+                    <h2>Mississauga</h2>
+                    <p>Expert repair service in Mississauga. Hard water solutions. Condo specialists.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Brampton -->
+                <a href="/locations/brampton" class="location-card">
+                    <div class="location-icon">🏡</div>
+                    <h2>Brampton</h2>
+                    <p>Professional appliance repair in Brampton. Quick response time. Certified technicians.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Markham -->
+                <a href="/locations/markham" class="location-card">
+                    <div class="location-icon">🏠</div>
+                    <h2>Markham</h2>
+                    <p>Reliable repair service in Markham. High-end appliance specialists. Warranty included.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Vaughan -->
+                <a href="/locations/vaughan" class="location-card">
+                    <div class="location-icon">🏘️</div>
+                    <h2>Vaughan</h2>
+                    <p>Fast appliance repair in Vaughan. All brands serviced. Emergency service available.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Richmond Hill -->
+                <a href="/locations/richmond-hill" class="location-card">
+                    <div class="location-icon">🏡</div>
+                    <h2>Richmond Hill</h2>
+                    <p>Expert repair in Richmond Hill. Premium appliance specialists. Same-day appointments.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Oakville -->
+                <a href="/locations/oakville" class="location-card">
+                    <div class="location-icon">🏠</div>
+                    <h2>Oakville</h2>
+                    <p>Professional service in Oakville. Luxury appliance experts. White-glove service.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Burlington -->
+                <a href="/locations/burlington" class="location-card">
+                    <div class="location-icon">🏘️</div>
+                    <h2>Burlington</h2>
+                    <p>Trusted repair in Burlington. All major brands. Family-owned and operated.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Oshawa -->
+                <a href="/locations/oshawa" class="location-card">
+                    <div class="location-icon">🏡</div>
+                    <h2>Oshawa</h2>
+                    <p>Reliable service in Oshawa. Affordable rates. Quick turnaround time.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Ajax -->
+                <a href="/locations/ajax" class="location-card">
+                    <div class="location-icon">🏠</div>
+                    <h2>Ajax</h2>
+                    <p>Expert repair in Ajax. All appliance types. Weekend service available.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Pickering -->
+                <a href="/locations/pickering" class="location-card">
+                    <div class="location-icon">🏘️</div>
+                    <h2>Pickering</h2>
+                    <p>Professional service in Pickering. Fast response. Quality guaranteed.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+
+                <!-- Milton -->
+                <a href="/locations/milton" class="location-card">
+                    <div class="location-icon">🏡</div>
+                    <h2>Milton</h2>
+                    <p>Trusted repair in Milton. New home specialists. Warranty repairs accepted.</p>
+                    <span class="location-cta">View Details →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Section -->
+    <section class="coverage-section">
+        <div class="container">
+            <div class="coverage-content">
+                <h2>Complete GTA Coverage</h2>
+                <p>We proudly serve the entire Greater Toronto Area and surrounding communities. Our mobile service vans are ready to respond to your appliance repair needs quickly.</p>
+                <p><strong>Service includes:</strong></p>
+                <div class="coverage-list">
+                    <span class="coverage-badge">Same-Day Service</span>
+                    <span class="coverage-badge">90-Day Warranty</span>
+                    <span class="coverage-badge">Certified Technicians</span>
+                    <span class="coverage-badge">All Major Brands</span>
+                    <span class="coverage-badge">Upfront Pricing</span>
+                    <span class="coverage-badge">Weekend Appointments</span>
+                    <span class="coverage-badge">Emergency Service</span>
+                    <span class="coverage-badge">Licensed & Insured</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Schedule Service in Your Area</h2>
+            <p>Available 7 days a week • Fast response time • No hidden fees</p>
+            <div class="cta-buttons">
+                <a href="tel:4377476737" class="cta-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    Call 437-747-6737
+                </a>
+                <a href="/#book" class="cta-button secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                    Book Online
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load Unified Header & Footer -->
+    <script src="/includes/include-loader.js"></script>
+</body>
+</html>

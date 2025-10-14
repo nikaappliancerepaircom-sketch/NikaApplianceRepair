@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional appliance repair services in GTA. Refrigerator, washer, dryer, dishwasher, oven, stove, and more. Same-day service. Call 437-747-6737">
+    <title>Appliance Repair Services | Nika Appliance Repair GTA</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nikaappliancerepair.com/services">
+
+    <!-- Unified Header Styles -->
+    <link rel="stylesheet" href="/includes/header-styles.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero-services {
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .hero-services h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero-services p {
+            font-size: clamp(16px, 2.5vw, 20px);
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Services Grid */
+        .services-section {
+            padding: 60px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+        }
+
+        .service-content {
+            padding: 30px;
+        }
+
+        .service-content h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #2196F3;
+        }
+
+        .service-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .service-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #2196F3;
+            font-weight: 600;
+            transition: gap 0.3s;
+        }
+
+        .service-card:hover .service-cta {
+            gap: 12px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(28px, 4vw, 36px);
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            background: white;
+            color: #4CAF50;
+            font-weight: 600;
+            font-size: 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .cta-button.secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-button.secondary:hover {
+            background: white;
+            color: #4CAF50;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-services {
+                padding: 60px 0 40px;
+            }
+
+            .services-section {
+                padding: 40px 0;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .cta-section {
+                padding: 40px 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-services">
+        <div class="container">
+            <h1>Professional Appliance Repair Services</h1>
+            <p>Expert repair for all major appliances in GTA. Same-day service available. Certified technicians. 90-day warranty.</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Refrigerator Repair -->
+                <a href="/services/refrigerator-repair" class="service-card">
+                    <div class="service-icon">🧊</div>
+                    <div class="service-content">
+                        <h2>Refrigerator Repair</h2>
+                        <p>Not cooling? Making noise? Ice buildup? We fix all refrigerator brands including Samsung, LG, Whirlpool, GE, and more.</p>
+                        <span class="service-cta">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Washer Repair -->
+                <a href="/services/washer-repair" class="service-card">
+                    <div class="service-icon">🌀</div>
+                    <div class="service-content">
+                        <h2>Washer Repair</h2>
+                        <p>Won't spin? Leaking? Not draining? Expert washing machine repair for front-load, top-load, and HE washers.</p>
+                        <span class="service-cta">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Dryer Repair -->
+                <a href="/services/dryer-repair" class="service-card">
+                    <div class="service-icon">🔥</div>
+                    <div class="service-content">
+                        <h2>Dryer Repair</h2>
+                        <p>Not heating? Taking too long? Making loud noise? We repair all dryer types: electric, gas, and stackable units.</p>
+                        <span class="service-cta">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Dishwasher Repair -->
+                <a href="/services/dishwasher-repair" class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <div class="service-content">
+                        <h2>Dishwasher Repair</h2>
+                        <p>Not cleaning? Not draining? Leaking water? Fast dishwasher repair service for all major brands.</p>
+                        <span class="service-cta">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Oven Repair -->
+                <a href="/services/oven-repair" class="service-card">
+                    <div class="service-icon">🔥</div>
+                    <div class="service-content">
+                        <h2>Oven Repair</h2>
+                        <p>Not heating? Temperature issues? Door problems? Professional oven repair for electric and gas ovens.</p>
+                        <span class="service-cta">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Stove Repair -->
+                <a href="/services/stove-repair" class="service-card">
+                    <div class="service-icon">🍳</div>
+                    <div class="service-content">
+                        <h2>Stove Repair</h2>
+                        <p>Burners not working? Igniter problems? Control issues? Expert stove and cooktop repair service.</p>
+                        <span class="service-cta">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Range Repair -->
+                <a href="/services/range-repair" class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <div class="service-content">
+                        <h2>Range Repair</h2>
+                        <p>Complete range repair service. We fix electric and gas ranges, including double ovens and convection models.</p>
+                        <span class="service-cta">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Microwave Repair -->
+                <a href="/services/microwave-repair" class="service-card">
+                    <div class="service-icon">📡</div>
+                    <div class="service-content">
+                        <h2>Microwave Repair</h2>
+                        <p>Not heating? Display issues? Door problems? Professional microwave repair for built-in and countertop models.</p>
+                        <span class="service-cta">Learn More →</span>
+                    </div>
+                </a>
+
+                <!-- Freezer Repair -->
+                <a href="/services/freezer-repair" class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <div class="service-content">
+                        <h2>Freezer Repair</h2>
+                        <p>Not freezing? Ice buildup? Compressor noise? Expert freezer repair for upright and chest freezers.</p>
+                        <span class="service-cta">Learn More →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need Appliance Repair Today?</h2>
+            <p>Same-day service available • 90-day warranty • Certified technicians</p>
+            <div class="cta-buttons">
+                <a href="tel:4377476737" class="cta-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    Call 437-747-6737
+                </a>
+                <a href="/#book" class="cta-button secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                    Book Online
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load Unified Header & Footer -->
+    <script src="/includes/include-loader.js"></script>
+</body>
+</html>
