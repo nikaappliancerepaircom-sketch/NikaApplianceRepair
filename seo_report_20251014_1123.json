@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-10-14T11:23:54.780027",
+  "scores": {
+    "content": 75.0,
+    "technical": 65,
+    "ai_optimization": 80,
+    "local_seo": 67.5,
+    "user_experience": 50
+  },
+  "issues": [],
+  "recommendations": [],
+  "overall_score": 70
+}

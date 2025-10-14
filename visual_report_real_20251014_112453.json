@@ -1,0 +1,199 @@
+{
+  "timestamp": "2025-10-14T11:24:30.962740",
+  "url": "file:///C:/NikaApplianceRepair/locations/richmond-hill.html",
+  "screenshots": [
+    "screenshot_mobile_112443.png",
+    "screenshot_tablet_112446.png",
+    "screenshot_desktop_112450.png"
+  ],
+  "visual_issues": [
+    "Mobile: nav not visible",
+    "Tablet: nav not visible"
+  ],
+  "responsive_issues": [],
+  "overlapping_elements": [
+    {
+      "device": "Mobile",
+      "issue": "DIV.container overlaps with SECTION.hero-section"
+    },
+    {
+      "device": "Mobile",
+      "issue": "DIV.header-content overlaps with SECTION.hero-section"
+    },
+    {
+      "device": "Mobile",
+      "issue": "DIV.logo overlaps with BUTTON.mobile-menu-toggle"
+    },
+    {
+      "device": "Tablet",
+      "issue": "DIV.container overlaps with SECTION.hero-section"
+    },
+    {
+      "device": "Tablet",
+      "issue": "DIV.header-content overlaps with SECTION.hero-section"
+    },
+    {
+      "device": "Tablet",
+      "issue": "DIV.logo overlaps with BUTTON.mobile-menu-toggle"
+    },
+    {
+      "device": "Desktop",
+      "issue": "DIV.container overlaps with SECTION.hero-section"
+    },
+    {
+      "device": "Desktop",
+      "issue": "DIV.header-content overlaps with SECTION.hero-section"
+    },
+    {
+      "device": "Desktop",
+      "issue": "SECTION.hero-section overlaps with SECTION.ai-summary-section"
+    }
+  ],
+  "broken_elements": [
+    {
+      "device": "Mobile",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-refrigerator.svg"
+    },
+    {
+      "device": "Mobile",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-dishwasher.svg"
+    },
+    {
+      "device": "Mobile",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-dryer.svg"
+    },
+    {
+      "device": "Mobile",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-stove.svg"
+    },
+    {
+      "device": "Mobile",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-oven.svg"
+    },
+    {
+      "device": "Mobile",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-washer.svg"
+    },
+    {
+      "device": "Mobile",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-freezer.svg"
+    },
+    {
+      "device": "Mobile",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-range.svg"
+    },
+    {
+      "device": "Tablet",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-refrigerator.svg"
+    },
+    {
+      "device": "Tablet",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-dishwasher.svg"
+    },
+    {
+      "device": "Tablet",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-dryer.svg"
+    },
+    {
+      "device": "Tablet",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-stove.svg"
+    },
+    {
+      "device": "Tablet",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-oven.svg"
+    },
+    {
+      "device": "Tablet",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-washer.svg"
+    },
+    {
+      "device": "Tablet",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-freezer.svg"
+    },
+    {
+      "device": "Tablet",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-range.svg"
+    },
+    {
+      "device": "Desktop",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-refrigerator.svg"
+    },
+    {
+      "device": "Desktop",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-dishwasher.svg"
+    },
+    {
+      "device": "Desktop",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-dryer.svg"
+    },
+    {
+      "device": "Desktop",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-stove.svg"
+    },
+    {
+      "device": "Desktop",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-oven.svg"
+    },
+    {
+      "device": "Desktop",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-washer.svg"
+    },
+    {
+      "device": "Desktop",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-freezer.svg"
+    },
+    {
+      "device": "Desktop",
+      "type": "image",
+      "src": "https://nikaappliancerepair.com/service-icon-range.svg"
+    }
+  ],
+  "contrast_issues": [
+    {
+      "element": "A",
+      "contrast": "3.12",
+      "minimum": "4.5"
+    },
+    {
+      "element": "A",
+      "contrast": "2.28",
+      "minimum": "4.5"
+    },
+    {
+      "element": "A",
+      "contrast": "2.28",
+      "minimum": "4.5"
+    }
+  ],
+  "scores": {
+    "overall": 44,
+    "overlap": 0,
+    "visual": 80,
+    "responsive": 100,
+    "integrity": 0,
+    "contrast": 40
+  }
+}

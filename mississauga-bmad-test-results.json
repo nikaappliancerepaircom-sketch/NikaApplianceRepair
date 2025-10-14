@@ -1,0 +1,392 @@
+{
+  "total_score": 200.5,
+  "max_score": 283,
+  "gates": {
+    "Data Consistency": {
+      "pass": false,
+      "score": 70.0,
+      "critical": true
+    },
+    "Content Uniqueness": {
+      "pass": false,
+      "score": 60.0,
+      "critical": true
+    },
+    "Mobile Responsiveness": {
+      "pass": false,
+      "score": 70.0,
+      "devices_pass": 7
+    }
+  },
+  "categories": {
+    "SEO + AI Optimization": {
+      "score": 31,
+      "max": 45,
+      "percentage": 68.88888888888889,
+      "pass": false
+    },
+    "Responsive Design": {
+      "score": 56,
+      "max": 80,
+      "percentage": 70.0,
+      "devices_pass": 7,
+      "pass": false
+    },
+    "Cross-Browser Compatibility": {
+      "score": 21,
+      "max": 28,
+      "percentage": 75.0,
+      "browsers_pass": 3,
+      "pass": false
+    },
+    "Visual Design": {
+      "score": 21.0,
+      "max": 30,
+      "percentage": 70.0,
+      "pass": false
+    },
+    "Accessibility": {
+      "score": 12,
+      "max": 15,
+      "percentage": 80.0,
+      "pass": false
+    },
+    "Content Quality": {
+      "score": 9,
+      "max": 15,
+      "percentage": 60.0,
+      "pass": false
+    },
+    "Conversion Rate Optimization": {
+      "score": 14,
+      "max": 20,
+      "percentage": 70.0,
+      "pass": false
+    },
+    "Psychological Triggers": {
+      "score": 18.0,
+      "max": 25,
+      "percentage": 72.0,
+      "pass": false
+    },
+    "Data Consistency": {
+      "score": 10.5,
+      "max": 15,
+      "percentage": 70.0,
+      "pass": false
+    },
+    "Conversion Design": {
+      "score": 8,
+      "max": 10,
+      "percentage": 80.0,
+      "pass": false
+    }
+  },
+  "critical_failures": [
+    {
+      "category": "Accessibility",
+      "issue": "No focus indicators detected",
+      "severity": "critical"
+    },
+    {
+      "category": "Content Quality",
+      "issue": "Content quality 60.0% below 98% threshold",
+      "severity": "critical"
+    },
+    {
+      "category": "Psychology",
+      "issue": "False manufacturer claims detected: 1",
+      "severity": "critical"
+    },
+    {
+      "category": "Data Consistency",
+      "issue": "Multiple warranty terms: ['90-day', '90 day']",
+      "severity": "critical"
+    },
+    {
+      "category": "Data Consistency",
+      "issue": "Fake urgency detected",
+      "severity": "critical"
+    },
+    {
+      "category": "Data Consistency",
+      "issue": "Data consistency 70.0% below 100% threshold",
+      "severity": "critical"
+    }
+  ],
+  "issues": [
+    {
+      "category": "SEO",
+      "issue": "Word count 4517 not in range 1500-2500",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "Keyword density 1.04% not in range 1.5-2.5%",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "H2/H3 structure not optimal: 13 H2s, 29 H3s",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "Only 9 images found",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "Title tag 65 chars, should be 50-60",
+      "severity": "warning",
+      "line": 7
+    },
+    {
+      "category": "SEO",
+      "issue": "Meta description 148 chars, should be 150-160",
+      "severity": "warning",
+      "line": 6
+    },
+    {
+      "category": "SEO",
+      "issue": "Found 6 insecure HTTP links",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "4 JS files, should be \u22643",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "No AI-friendly summary boxes found",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "Only 1 question H3s, need 6+",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "Only 2 voice search phrases",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "Location mentions 47, should be 15-40",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "Only 2 CTA types found",
+      "severity": "warning"
+    },
+    {
+      "category": "SEO",
+      "issue": "Limited location+intent combinations",
+      "severity": "warning"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Only 1 media queries",
+      "severity": "warning"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Overflow prevention unclear",
+      "severity": "warning"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Mobile-first approach unclear",
+      "severity": "warning"
+    },
+    {
+      "category": "Cross-Browser",
+      "issue": "No vendor prefixes detected",
+      "severity": "warning"
+    },
+    {
+      "category": "Visual",
+      "issue": "Limited spacing controls",
+      "severity": "warning"
+    },
+    {
+      "category": "Visual",
+      "issue": "No grid gaps found",
+      "severity": "warning"
+    },
+    {
+      "category": "Visual",
+      "issue": "Line height not specified",
+      "severity": "warning"
+    },
+    {
+      "category": "Visual",
+      "issue": "Font weights unclear",
+      "severity": "warning"
+    },
+    {
+      "category": "Visual",
+      "issue": "Color system unclear",
+      "severity": "warning"
+    },
+    {
+      "category": "Visual",
+      "issue": "No hover states detected",
+      "severity": "warning"
+    },
+    {
+      "category": "Visual",
+      "issue": "No focus states detected",
+      "severity": "warning"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "No focus indicators detected",
+      "severity": "critical"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Some form inputs may lack labels",
+      "severity": "warning"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Heading hierarchy may be broken",
+      "severity": "warning"
+    },
+    {
+      "category": "Content Quality",
+      "issue": "Limited problem-solving content",
+      "severity": "warning"
+    },
+    {
+      "category": "Content Quality",
+      "issue": "Paragraph length 25.2 words not optimal",
+      "severity": "warning"
+    },
+    {
+      "category": "Content Quality",
+      "issue": "14 sections, optimal is 7-12",
+      "severity": "warning"
+    },
+    {
+      "category": "Content Quality",
+      "issue": "Missing 1 required sections",
+      "severity": "warning"
+    },
+    {
+      "category": "Content Quality",
+      "issue": "Section exceeds 500 words: 2238",
+      "severity": "warning"
+    },
+    {
+      "category": "Content Quality",
+      "issue": "Insufficient visual breaks",
+      "severity": "warning"
+    },
+    {
+      "category": "Content Quality",
+      "issue": "Content quality 60.0% below 98% threshold",
+      "severity": "critical"
+    },
+    {
+      "category": "CRO",
+      "issue": "Only 2 CTA types",
+      "severity": "warning"
+    },
+    {
+      "category": "CRO",
+      "issue": "CTAs not sufficiently action-oriented",
+      "severity": "warning"
+    },
+    {
+      "category": "CRO",
+      "issue": "CTA color contrast unclear",
+      "severity": "warning"
+    },
+    {
+      "category": "CRO",
+      "issue": "No sticky CTA for mobile",
+      "severity": "warning"
+    },
+    {
+      "category": "CRO",
+      "issue": "No form validation detected",
+      "severity": "warning"
+    },
+    {
+      "category": "CRO",
+      "issue": "No privacy assurance near form",
+      "severity": "warning"
+    },
+    {
+      "category": "Psychology",
+      "issue": "Limited emotional pain amplification",
+      "severity": "warning"
+    },
+    {
+      "category": "Psychology",
+      "issue": "No before/after contrast",
+      "severity": "warning"
+    },
+    {
+      "category": "Psychology",
+      "issue": "First paragraph may not intrigue",
+      "severity": "warning"
+    },
+    {
+      "category": "Psychology",
+      "issue": "No specific review count",
+      "severity": "warning"
+    },
+    {
+      "category": "Psychology",
+      "issue": "Countdown timer found - verify authenticity",
+      "severity": "warning"
+    },
+    {
+      "category": "Psychology",
+      "issue": "False manufacturer claims detected: 1",
+      "severity": "critical"
+    },
+    {
+      "category": "Data Consistency",
+      "issue": "Multiple warranty terms: ['90-day', '90 day']",
+      "severity": "critical"
+    },
+    {
+      "category": "Data Consistency",
+      "issue": "Multiple response times: ['same-day', '2-hour']",
+      "severity": "warning"
+    },
+    {
+      "category": "Data Consistency",
+      "issue": "Fake urgency detected",
+      "severity": "critical"
+    },
+    {
+      "category": "Data Consistency",
+      "issue": "Unsubstantiated claims: ['#1', 'best', 'fastest']",
+      "severity": "warning"
+    },
+    {
+      "category": "Data Consistency",
+      "issue": "Data consistency 70.0% below 100% threshold",
+      "severity": "critical"
+    },
+    {
+      "category": "Conversion Design",
+      "issue": "Color psychology unclear",
+      "severity": "warning"
+    },
+    {
+      "category": "Conversion Design",
+      "issue": "White space limited",
+      "severity": "warning"
+    }
+  ],
+  "overall_percentage": 70.84805653710248
+}
