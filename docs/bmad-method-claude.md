@@ -3,9 +3,34 @@
 ## 📋 PURPOSE
 This document provides step-by-step instructions for Claude AI to test a webpage against ALL 292 BMAD parameters automatically.
 
-**Last Updated:** 2025-10-13
-**Version:** 1.0
+**Company:** Nika Appliance Repair
+**Domain:** https://nikaappliancerepair.com
+**Last Updated:** 2025-10-16
+**Version:** 1.1
 **Total Parameters:** 292
+
+---
+
+## 🌐 COMPANY INFORMATION
+
+**Domain:** nikaappliancerepair.com
+**Business:** Appliance Repair Services
+**Service Areas:** Toronto, Mississauga, Brampton, Markham, Vaughan, Richmond Hill, and GTA
+**Founded:** 2017
+**Experience:** 8+ years
+**Phone:** 437-747-6737
+**Rating:** 4.9★ (520+ reviews)
+
+**Key Pages:**
+- Homepage: https://nikaappliancerepair.com/
+- About: https://nikaappliancerepair.com/about
+- Online Booking: https://nikaappliancerepair.com/book
+- Services: https://nikaappliancerepair.com/services
+- Locations: https://nikaappliancerepair.com/locations
+
+**Workiz CRM Integration:**
+- All booking forms integrate with Workiz CRM
+- Booking URL: https://online-booking.workiz.com/?ac=176dd5d1ce4f69e999d5930a80c1e0109e51c6c46573321e62fe8a71623f0ebb
 
 ---
 
