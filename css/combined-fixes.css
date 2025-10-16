@@ -56,7 +56,7 @@
 /* Hero section layout */
 .hero-section {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .hero-content {
@@ -350,7 +350,7 @@ img[src*=".svg#"] {
 .service-hero,
 .location-hero {
     position: relative;
-    overflow: hidden !important;
+    overflow: visible !important;
 }
 
 /* Mobile-specific fixes for hero sections */
