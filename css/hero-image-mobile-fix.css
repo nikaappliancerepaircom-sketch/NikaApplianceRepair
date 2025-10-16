@@ -1,0 +1,98 @@
+/* ==========================================
+   HERO IMAGE MOBILE FIX - Remove Gap Below Image
+   ========================================== */
+
+/* Fix for gap appearing below hero image on mobile when scrolling
+   Real cause: Fixed height hero-section combined with scroll behavior
+   Solution: Make hero-section adapt to content height on mobile */
+
+/* Mobile specific fixes */
+@media (max-width: 767px) {
+    /* Remove fixed min-height that causes gap */
+    .hero-section {
+        min-height: auto !important;
+        padding: 40px 0 20px 0 !important;
+        overflow: hidden;
+    }
+
+    /* Make hero-content fit content precisely */
+    .hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: auto !important;
+    }
+
+    /* Ensure text comes first, image second */
+    .hero-text {
+        order: 1;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .hero-image {
+        order: 2;
+        max-width: 280px;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        display: block !important;
+        line-height: 0 !important;
+    }
+
+    /* Image itself - keep gradient mask for beauty */
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        vertical-align: bottom !important;
+        line-height: 0 !important;
+    }
+
+    /* Remove any extra spacing from container */
+    .hero-section .container {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* CTA buttons - ensure no extra space */
+    .hero-cta-group {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+/* Tablet specific fixes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-section {
+        min-height: auto !important;
+        padding: 60px 0 40px 0 !important;
+    }
+
+    .hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: auto !important;
+    }
+
+    .hero-text {
+        order: 1;
+    }
+
+    .hero-image {
+        order: 2;
+        max-width: 400px;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .hero-image img {
+        margin: 0 !important;
+        padding: 0 !important;
+        vertical-align: bottom !important;
+    }
+}
