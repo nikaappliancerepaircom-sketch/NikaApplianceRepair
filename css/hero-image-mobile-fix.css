@@ -1,0 +1,105 @@
+/* ==========================================
+   HERO IMAGE MOBILE FIX - Remove Gap Below Image
+   ========================================== */
+
+/* Fix for gap appearing below hero image on mobile when scrolling */
+
+/* Base hero image styles */
+.hero-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 3;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Mobile specific fixes */
+@media (max-width: 767px) {
+    .hero-section {
+        padding-bottom: 20px !important;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        gap: 1rem !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .hero-image {
+        max-width: 280px;
+        margin: 0 auto;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        order: 2;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 !important;
+        padding: 0 !important;
+        /* Remove gradient mask on mobile to avoid gap */
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+    }
+
+    /* Ensure hero text comes first */
+    .hero-text {
+        order: 1;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Tablet specific fixes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-section {
+        padding-bottom: 40px !important;
+    }
+
+    .hero-image {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        order: 2;
+    }
+
+    .hero-image img {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .hero-text {
+        order: 1;
+    }
+}
+
+/* Ensure no extra spacing at bottom of hero section */
+.hero-section > .container {
+    padding-bottom: 0 !important;
+}
+
+.hero-section .hero-content > * {
+    margin-bottom: 0 !important;
+}
+
+.hero-section .hero-content > *:last-child {
+    padding-bottom: 0 !important;
+}
