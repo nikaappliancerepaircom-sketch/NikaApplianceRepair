@@ -1279,16 +1279,21 @@ a {
 }
 
 .booking-section .section-title {
-    margin-bottom: 1rem; /* Компактнее */
-    font-size: 2rem; /* Меньше размер */
+    margin-bottom: 1.5rem; /* Improved spacing */
+    font-size: 2.5rem; /* Larger, more prominent */
     background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 700;
+    text-align: center;
 }
 
 .booking-section .section-subtitle {
-    margin-bottom: 0.75rem; /* Компактнее */
+    margin-bottom: 2.5rem; /* More breathing room */
+    font-size: 1.2rem; /* Slightly larger for readability */
+    color: var(--gray-700);
+    text-align: center;
 }
 
 .booking-fast-text {
@@ -1309,14 +1314,33 @@ a {
 
 .booking-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem; /* Уменьшен gap */
-    margin-top: 2rem; /* Уменьшен margin */
+    grid-template-columns: 1.2fr 1fr; /* Adjusted: Give more space to form */
+    gap: 2.5rem; /* Increased gap for better separation */
+    margin-top: 2rem;
+    align-items: start;
 }
 .booking-form {
-    background: var(--gray-100);
-    padding: 1.5rem; /* Уменьшен padding */
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 2rem; /* Increased padding for better spacing */
     border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(33, 150, 243, 0.12); /* Added shadow for depth */
+    border: 2px solid rgba(33, 150, 243, 0.1); /* Subtle blue border */
+    transition: all 0.3s ease;
+}
+
+.booking-form:hover {
+    box-shadow: 0 15px 50px rgba(33, 150, 243, 0.18);
+    border-color: rgba(33, 150, 243, 0.2);
+}
+
+/* Optimize Workiz iframe for better appearance */
+.booking-form iframe {
+    max-width: 700px !important; /* Increased max-width for wider form */
+    width: 100% !important;
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .form-row {
@@ -1379,18 +1403,34 @@ a {
 }
 
 .info-box {
-    background: var(--gray-100);
-    padding: 1.25rem; /* Уменьшен padding */
-    border-radius: 15px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 2rem; /* Increased padding for better spacing */
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08); /* Enhanced shadow */
+    border: 2px solid rgba(33, 150, 243, 0.08);
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    border-color: rgba(33, 150, 243, 0.15);
 }
 
 .info-box h3 {
-    margin-bottom: 0.5rem; /* Уменьшен margin */
-    font-size: 1.1rem; /* Немного меньше размер */
+    margin-bottom: 1rem; /* Increased margin for better spacing */
+    font-size: 1.35rem; /* Larger, more prominent */
     background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 700;
+}
+
+.info-box p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--gray-700);
 }
 
 .call-btn-large {
@@ -1886,11 +1926,27 @@ a {
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
     .booking-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
-    
+
+    .booking-form {
+        order: 1;
+        padding: 1.75rem;
+        max-width: 100%;
+    }
+
+    .booking-form iframe {
+        max-width: 100% !important;
+    }
+
+    .booking-info {
+        order: 2;
+        gap: 1.5rem;
+    }
+
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1946,11 +2002,62 @@ a {
     .form-row {
         grid-template-columns: 1fr;
     }
-    
+
+    /* Mobile booking form optimizations */
+    .booking-section {
+        padding: 2.5rem 0;
+    }
+
+    .booking-section .section-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .booking-section .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .booking-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .booking-form {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+    .booking-form iframe {
+        height: 650px !important; /* Adjusted height for mobile */
+        border-radius: 10px !important;
+    }
+
+    .info-box {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+    .info-box h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .info-box p {
+        font-size: 0.95rem;
+    }
+
+    .call-btn-large {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
     .steps-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -2709,6 +2816,24 @@ a {
     overflow: hidden;
 }
 
+/* Add subtle gradient background for visual interest */
+.booking-section-bmad::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(33, 150, 243, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.booking-section-bmad > .container {
+    position: relative;
+    z-index: 1;
+}
+
 /* Header */
 .booking-header-bmad {
     text-align: center;
@@ -2762,7 +2887,7 @@ a {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 3rem;
-    max-width: 1200px;
+    max-width: 1400px; /* Increased from 1200px to 1400px for wider layout */
     margin: 0 auto;
 }
 
@@ -2771,8 +2896,26 @@ a {
     background: white;
     border-radius: 20px;
     padding: 2.5rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(33, 150, 243, 0.15); /* Enhanced shadow with blue tint */
+    border: 2px solid rgba(33, 150, 243, 0.1); /* Added blue border for emphasis */
+    transition: all 0.3s ease;
+}
+
+/* Add hover effect to form container */
+.booking-form-bmad:hover {
+    box-shadow: 0 15px 50px rgba(33, 150, 243, 0.2);
+    border-color: rgba(33, 150, 243, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Make the Workiz iframe wider and more prominent */
+.booking-form-bmad iframe {
+    width: 100% !important;
+    max-width: 700px !important; /* Increased max-width for iframe */
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+    min-height: 750px; /* Increased height for better visibility */
 }
 
 .booking-form-bmad form {
@@ -2782,22 +2925,33 @@ a {
 }
 
 .booking-form-bmad input,
-.booking-form-bmad select {
+.booking-form-bmad select,
+.booking-form-bmad textarea {
     width: 100%;
-    padding: 1rem 1.25rem;
+    padding: 1.25rem 1.5rem; /* Increased padding for larger, easier-to-tap fields */
     border: 2px solid #e0e0e0;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 1.125rem; /* Increased from 1rem to 1.125rem (18px) for better readability */
     font-family: var(--font-body);
     transition: all 0.3s ease;
     background: white;
+    min-height: 56px; /* Minimum touch target size for mobile */
 }
 
 .booking-form-bmad input:focus,
-.booking-form-bmad select:focus {
+.booking-form-bmad select:focus,
+.booking-form-bmad textarea:focus {
     outline: none;
     border-color: #2196F3;
-    box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.1);
+    box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.15); /* Stronger focus indicator */
+    transform: translateY(-1px); /* Subtle lift on focus */
+}
+
+/* Enhanced input hover state */
+.booking-form-bmad input:hover,
+.booking-form-bmad select:hover,
+.booking-form-bmad textarea:hover {
+    border-color: #90CAF9; /* Light blue hover */
 }
 
 .booking-form-bmad select {
@@ -2810,9 +2964,10 @@ a {
 }
 
 .booking-form-bmad .submit-btn {
-    margin-top: 0.5rem;
-    padding: 1.25rem 2.5rem;
-    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 1.5rem 3rem; /* Increased padding for more prominent button */
+    font-size: 1.25rem; /* Larger font size */
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2820,6 +2975,23 @@ a {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 25px rgba(39, 174, 96, 0.4);
+    min-height: 64px; /* Larger touch target */
+}
+
+.booking-form-bmad .submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(39, 174, 96, 0.5);
+    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+}
+
+.booking-form-bmad .submit-btn:active {
+    transform: translateY(-1px);
 }
 
 .booking-form-bmad .submit-btn svg {
@@ -2848,9 +3020,14 @@ a {
 
 .form-note {
     text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: var(--gray-500);
+    margin-top: 1.5rem;
+    font-size: 1rem; /* Increased from 0.9rem */
+    color: #27AE60; /* Changed to green to match CTA */
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    background: rgba(39, 174, 96, 0.08);
+    border-radius: 8px;
+    border: 1px solid rgba(39, 174, 96, 0.2);
 }
 
 /* Sidebar */
@@ -2992,10 +3169,25 @@ a {
         padding: 2rem 1.5rem;
     }
 
+    /* Enhanced mobile form styling */
+    .booking-form-bmad iframe {
+        max-width: 100% !important;
+        min-height: 700px;
+    }
+
+    .booking-form-bmad input,
+    .booking-form-bmad select,
+    .booking-form-bmad textarea {
+        font-size: 1rem; /* Ensure 16px minimum to prevent iOS zoom */
+        padding: 1.25rem 1rem;
+        min-height: 52px;
+    }
+
     .booking-form-bmad .submit-btn {
         width: 100%;
         padding: 1.25rem 1.5rem;
-        font-size: 0.95rem;
+        font-size: 1.125rem; /* Larger on mobile */
+        min-height: 60px;
     }
 
     .quick-call-box {
