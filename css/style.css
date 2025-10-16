@@ -282,7 +282,7 @@ a {
     background: var(--primary-blue);
     background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
     padding: var(--section-padding) 0;
-    overflow: hidden;
+    overflow: visible;
     min-height: 600px;
 }
 
