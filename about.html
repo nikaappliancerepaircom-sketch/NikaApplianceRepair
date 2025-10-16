@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Nika Appliance Repair - Toronto's trusted appliance repair company since 2017. 5,200+ satisfied customers, 4.9★ rating, certified technicians, same-day service. Professional appliance repair serving GTA.">
+    <title>About Us | Nika Appliance Repair Toronto | Our Story & Team</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nikaappliancerepair.com/about">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Nika Appliance Repair Toronto | Our Story & Team">
+    <meta property="og:description" content="Professional appliance repair company serving GTA since 2017. 5,200+ satisfied customers, 4.9★ rating, certified technicians.">
+    <meta property="og:url" content="https://nikaappliancerepair.com/about">
+    <meta property="og:image" content="https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Nika Appliance Repair",
+        "description": "Learn about Nika Appliance Repair - Toronto's trusted appliance repair company since 2017",
+        "url": "https://nikaappliancerepair.com/about",
+        "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair",
+            "foundingDate": "2017",
+            "telephone": "4377476737",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "East Gwillimbury",
+                "addressRegion": "ON",
+                "addressCountry": "CA"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "5200"
+            }
+        }
+    }
+    </script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero-about {
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+            color: white;
+            padding: 100px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-about .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-about h1 {
+            font-size: clamp(36px, 6vw, 56px);
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-about .subtitle {
+            font-size: clamp(18px, 3vw, 24px);
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: clamp(14px, 2vw, 16px);
+            opacity: 0.9;
+        }
+
+        /* Story Section */
+        .story-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .story-text h2 {
+            font-size: clamp(32px, 4vw, 42px);
+            color: #2196F3;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+
+        .story-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .story-text strong {
+            color: #2196F3;
+            font-weight: 600;
+        }
+
+        .story-image {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e3f2fd 100%);
+            border-radius: 20px;
+            padding: 60px;
+            text-align: center;
+            font-size: 120px;
+            line-height: 1;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 80px 0;
+            background: #f5f7fa;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(32px, 4vw, 42px);
+            color: #333;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .value-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(33,150,243,0.2);
+        }
+
+        .value-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .value-card h3 {
+            font-size: 22px;
+            color: #2196F3;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .value-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .team-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .team-feature {
+            text-align: center;
+        }
+
+        .team-feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 20px;
+            color: white;
+        }
+
+        .team-feature h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .team-feature p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Process Section */
+        .process-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e3f2fd 100%);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .process-step {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            box-shadow: 0 4px 12px rgba(39,174,96,0.3);
+        }
+
+        .process-step h3 {
+            font-size: 20px;
+            color: #333;
+            margin: 30px 0 12px;
+            font-weight: 600;
+        }
+
+        .process-step p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(32px, 4vw, 42px);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 18px 36px;
+            background: #2196F3;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+
+        .cta-button.secondary {
+            background: white;
+            border: 2px solid white;
+            color: #27AE60;
+        }
+
+        .cta-button.secondary:hover {
+            background: #f8f9fa;
+            color: #27AE60;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-about {
+                padding: 80px 0 60px;
+            }
+
+            .hero-stats {
+                gap: 30px;
+            }
+
+            .story-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .story-image {
+                order: -1;
+                padding: 40px;
+                font-size: 100px;
+            }
+
+            .story-section,
+            .values-section,
+            .team-section,
+            .process-section,
+            .cta-section {
+                padding: 60px 0;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .team-features {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-stats {
+                gap: 20px;
+            }
+
+            .stat-item {
+                flex: 1 1 40%;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 320px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="header-container">
+            <!-- Logo & Brand -->
+            <div class="header-logo">
+                <a href="/" aria-label="Nika Appliance Repair - Home">
+                    <div class="logo-icon">🔧</div>
+                    <div class="logo-text">
+                        <span class="logo-name">NIKA</span>
+                        <span class="logo-tagline">Appliance Repair</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Trust Badge (Desktop Only) -->
+            <div class="header-trust" aria-label="Customer rating">
+                <div class="trust-stars">⭐⭐⭐⭐⭐</div>
+                <div class="trust-rating">4.9 <span class="trust-reviews">(520+)</span></div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone" aria-label="Call us at 437-747-6737">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <span class="cta-phone-number">(437) 747-6737</span>
+                </a>
+                <a href="/book" class="cta-book" aria-label="Book an appointment online">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                    <span>Book Now</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" onclick="toggleMenu()">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sticky Bottom CTA -->
+    <div class="mobile-bottom-cta" role="complementary" aria-label="Quick actions">
+        <a href="tel:4377476737" class="mobile-cta-btn mobile-cta-call">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span>Call Now</span>
+        </a>
+        <a href="/book" class="mobile-cta-btn mobile-cta-book">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+            <span>Book Online</span>
+        </a>
+    </div>
+
+    <style>
+    /* ========== SEO-OPTIMIZED HEADER STYLES ========== */
+
+    /* Header Container */
+    .site-header {
+        background: #ffffff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .header-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    /* Logo */
+    .header-logo a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .logo-icon {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+    }
+
+    .logo-name {
+        font-size: 24px;
+        font-weight: 800;
+        color: #2196F3;
+        letter-spacing: 0.5px;
+    }
+
+    .logo-tagline {
+        font-size: 12px;
+        font-weight: 500;
+        color: #666;
+    }
+
+    /* Navigation */
+    .header-nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 15px;
+        transition: color 0.2s;
+        white-space: nowrap;
+    }
+
+    .nav-link:hover {
+        color: #2196F3;
+    }
+
+    /* Trust Badge */
+    .header-trust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 0 16px;
+        border-left: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    .trust-stars {
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+
+    .trust-rating {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .trust-reviews {
+        font-size: 11px;
+        font-weight: 400;
+        color: #666;
+    }
+
+    /* CTA Buttons */
+    .header-cta {
+        display: flex;
+        gap: 10px;
+    }
+
+    .cta-phone,
+    .cta-book {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        transition: all 0.2s;
+        white-space: nowrap;
+    }
+
+    .cta-phone {
+        background: #4CAF50;
+        color: white;
+    }
+
+    .cta-phone:hover {
+        background: #45a049;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(76,175,80,0.3);
+    }
+
+    .cta-book {
+        background: #2196F3;
+        color: white;
+    }
+
+    .cta-book:hover {
+        background: #1976D2;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(33,150,243,0.3);
+    }
+
+    /* Mobile Menu Button */
+    .mobile-menu-btn {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    .menu-bar {
+        width: 26px;
+        height: 3px;
+        background: #333;
+        border-radius: 2px;
+        transition: all 0.3s;
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] .menu-bar:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] .menu-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] .menu-bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+
+    /* Mobile Bottom CTA */
+    .mobile-bottom-cta {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        z-index: 999;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .mobile-cta-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 12px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 13px;
+        color: white;
+        transition: transform 0.2s;
+    }
+
+    .mobile-cta-call {
+        background: #4CAF50;
+    }
+
+    .mobile-cta-book {
+        background: #2196F3;
+    }
+
+    .mobile-cta-btn:active {
+        transform: scale(0.95);
+    }
+
+    /* ========== RESPONSIVE BREAKPOINTS ========== */
+
+    /* Large Desktop */
+    @media (min-width: 1400px) {
+        .header-container {
+            padding: 16px 40px;
+        }
+
+        .nav-list {
+            gap: 40px;
+        }
+    }
+
+    /* Desktop to Tablet */
+    @media (max-width: 1200px) {
+        .header-trust {
+            display: none;
+        }
+    }
+
+    /* Tablet */
+    @media (max-width: 968px) {
+        .header-nav {
+            display: none;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            bottom: 80px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            overflow-y: auto;
+            z-index: 998;
+        }
+
+        .header-nav.menu-open {
+            display: block;
+        }
+
+        .nav-list {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .nav-list li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 16px 12px;
+            font-size: 18px;
+        }
+
+        .header-cta {
+            display: none;
+        }
+
+        .mobile-menu-btn {
+            display: flex;
+        }
+
+        .mobile-bottom-cta {
+            display: grid;
+        }
+
+        body {
+            padding-bottom: 70px;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        .header-container {
+            padding: 10px 16px;
+        }
+
+        .logo-icon {
+            font-size: 28px;
+        }
+
+        .logo-name {
+            font-size: 20px;
+        }
+
+        .logo-tagline {
+            font-size: 11px;
+        }
+    }
+
+    /* Small Mobile */
+    @media (max-width: 480px) {
+        .logo-icon {
+            font-size: 24px;
+        }
+
+        .logo-name {
+            font-size: 18px;
+        }
+
+        .logo-tagline {
+            font-size: 10px;
+        }
+
+        .mobile-cta-btn {
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+
+    /* Accessibility */
+    .skip-to-content:focus {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #2196F3;
+        color: white;
+        padding: 10px 20px;
+        z-index: 10000;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+    </style>
+
+    <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+        const nav = document.querySelector('.header-nav');
+        const btn = document.querySelector('.mobile-menu-btn');
+        const body = document.body;
+
+        if (nav && btn) {
+            const isOpen = nav.classList.contains('menu-open');
+
+            if (isOpen) {
+                nav.classList.remove('menu-open');
+                btn.setAttribute('aria-expanded', 'false');
+                body.style.overflow = '';
+            } else {
+                nav.classList.add('menu-open');
+                btn.setAttribute('aria-expanded', 'true');
+                body.style.overflow = 'hidden';
+            }
+        }
+    }
+
+    // Close menu on link click
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.header-nav .nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const nav = document.querySelector('.header-nav');
+                const btn = document.querySelector('.mobile-menu-btn');
+                if (nav && nav.classList.contains('menu-open')) {
+                    nav.classList.remove('menu-open');
+                    btn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero-about">
+        <div class="container">
+            <h1>Toronto's Most Trusted<br>Appliance Repair Company</h1>
+            <p class="subtitle">Professional appliance repair company serving GTA since 2017</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5,200+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9★</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Same Day</span>
+                    <span class="stat-label">Service Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in <strong>2017</strong>, Nika Appliance Repair started with a simple mission: to provide honest, reliable, and affordable appliance repair services to families and businesses across the Greater Toronto Area.</p>
+                    <p>What began as a one-person operation has grown into a <strong>team of certified technicians</strong> serving thousands of satisfied customers. We've repaired over <strong>10,000 appliances</strong> and built a reputation for excellence through our commitment to quality workmanship and exceptional customer service.</p>
+                    <p>We're a professional appliance repair company dedicated to keeping your home running smoothly. Every repair comes with a <strong>90-day warranty</strong> because we stand behind our work.</p>
+                </div>
+                <div class="story-image">
+                    🔧
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Nika Appliance Repair?</h2>
+                <p>Our core values guide everything we do, ensuring you receive the best service possible.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <span class="value-icon">⚡</span>
+                    <h3>Fast & Reliable</h3>
+                    <p>Same-day service available. We arrive on time and complete most repairs in a single visit. Your time matters to us.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-icon">💯</span>
+                    <h3>Honest Pricing</h3>
+                    <p>Upfront quotes with no hidden fees. You'll know the cost before we start. We never upsell unnecessary repairs.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-icon">🎓</span>
+                    <h3>Certified Experts</h3>
+                    <p>Our technicians are factory-trained and certified. Continuous education keeps us updated on the latest appliance technology.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-icon">🛡️</span>
+                    <h3>90-Day Warranty</h3>
+                    <p>All repairs backed by our comprehensive warranty. If something goes wrong, we'll fix it – no questions asked.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-icon">♻️</span>
+                    <h3>Eco-Friendly</h3>
+                    <p>We repair instead of replace, reducing waste. Proper disposal of old parts. Sustainable practices matter to us.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-icon">❤️</span>
+                    <h3>Customer First</h3>
+                    <p>Your satisfaction is our priority. Friendly service, clean work areas, and respect for your home. Always.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Expert Team</h2>
+                <p>Certified technicians who care about your appliances as much as you do.</p>
+            </div>
+            <div class="team-features">
+                <div class="team-feature">
+                    <div class="team-feature-icon">🎓</div>
+                    <h3>Factory Certified</h3>
+                    <p>Trained by major appliance manufacturers including Samsung, LG, Whirlpool, GE, Bosch, and more.</p>
+                </div>
+                <div class="team-feature">
+                    <div class="team-feature-icon">🔍</div>
+                    <h3>Background Checked</h3>
+                    <p>All technicians undergo thorough background checks. Licensed, insured, and bonded for your peace of mind.</p>
+                </div>
+                <div class="team-feature">
+                    <div class="team-feature-icon">⭐</div>
+                    <h3>5+ Years Experience</h3>
+                    <p>Each team member has a minimum of 5 years hands-on experience repairing all major appliance brands.</p>
+                </div>
+                <div class="team-feature">
+                    <div class="team-feature-icon">🚐</div>
+                    <h3>Fully Equipped</h3>
+                    <p>Our service vans carry 95% of common parts. Most repairs completed on the first visit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Simple 4-Step Process</h2>
+                <p>From booking to completion, we make appliance repair stress-free.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Book Online or Call</h3>
+                    <p>Schedule your appointment online 24/7 or call us at (437) 747-6737. Same-day slots often available.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Diagnosis & Quote</h3>
+                    <p>Our technician diagnoses the issue and provides an upfront quote. You approve before we proceed.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Expert Repair</h3>
+                    <p>We complete the repair using quality OEM parts. Most fixes done in 60-90 minutes on the first visit.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Test & Warranty</h3>
+                    <p>We test your appliance thoroughly and provide a 90-day warranty on all parts and labor. Done right.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Experience the Nika Difference?</h2>
+            <p>Join 5,200+ satisfied customers across GTA. Same-day service available!</p>
+            <div class="cta-buttons">
+                <a href="/book" class="cta-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                    Book Service Now
+                </a>
+                <a href="tel:4377476737" class="cta-button secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    Call (437) 747-6737
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load Footer Only -->
+    <script>
+        fetch('/includes/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+</html>

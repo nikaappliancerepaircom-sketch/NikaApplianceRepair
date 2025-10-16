@@ -20,80 +20,6 @@ html, body {
     padding: 0 clamp(15px, 4vw, 40px); /* Responsive padding */
 }
 
-/* ========== URGENCY BANNER ========== */
-.urgency-banner {
-    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
-    color: white;
-    padding: clamp(10px, 2vh, 15px) 0;
-    position: relative;
-    z-index: 1001;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 100%;
-}
-
-.urgency-banner .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    min-width: 0; /* Critical for preventing overflow */
-}
-
-.urgency-text {
-    margin: 0;
-    font-size: clamp(12px, 2.5vw, 16px); /* Responsive font size */
-    font-weight: 500;
-    text-align: center;
-    flex: 1 1 auto;
-    min-width: 0; /* Allow text to shrink */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.urgency-text strong {
-    font-size: clamp(14px, 3vw, 18px);
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-.urgency-link {
-    color: white;
-    text-decoration: underline;
-    font-weight: 700;
-    white-space: nowrap;
-    margin-left: clamp(5px, 1vw, 10px);
-}
-
-/* Touch-friendly close button (44x44px minimum) */
-.urgency-close {
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 0;
-    min-width: 44px;
-    min-height: 44px;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    opacity: 0.9;
-    transition: opacity 0.3s, transform 0.2s;
-    flex-shrink: 0;
-}
-
-.urgency-close:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-.urgency-close:active {
-    transform: scale(0.95);
-}
-
 /* ========== MAIN HEADER V2 ========== */
 .main-header-v2 {
     background: white;
@@ -353,30 +279,74 @@ html, body {
     /* Hide desktop navigation by default */
     .main-nav-v2 {
         display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 60px;
         left: 0;
         right: 0;
+        bottom: 80px;
         background: white;
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        padding: 20px;
-        z-index: 1001;
+        padding: 30px 20px;
+        z-index: 998;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     /* Show navigation when menu is open */
     .main-nav-v2.mobile-menu-open {
         display: block;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .main-nav-v2 ul {
         flex-direction: column;
-        gap: 20px;
+        gap: 0;
+    }
+
+    .main-nav-v2 li {
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .main-nav-v2 li:last-child {
+        border-bottom: none;
     }
 
     .main-nav-v2 a {
         font-size: 18px;
-        padding: 10px;
+        padding: 18px 12px;
         display: block;
+        color: #333;
+        transition: all 0.2s;
+    }
+
+    .main-nav-v2 a:hover,
+    .main-nav-v2 a:active {
+        background: #f5f7fa;
+        color: #2196F3;
+        padding-left: 20px;
+    }
+
+    /* Backdrop overlay when menu is open */
+    .main-nav-v2.mobile-menu-open::before {
+        content: '';
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: -1;
     }
 }
 
@@ -397,15 +367,6 @@ html, body {
     /* Show mobile sticky bottom bar */
     .mobile-sticky-bottom {
         display: grid;
-    }
-
-    /* Adjust urgency banner */
-    .urgency-text {
-        font-size: 14px;
-    }
-
-    .urgency-text strong {
-        font-size: 16px;
     }
 
     /* Add space for sticky bottom bar */
@@ -433,28 +394,6 @@ html, body {
         font-size: 11px;
     }
 
-    .urgency-text {
-        font-size: 12px;
-    }
-
-    .urgency-text strong {
-        font-size: 14px;
-    }
-
-    .urgency-link {
-        display: inline;
-        margin-left: 5px;
-        font-size: 12px;
-    }
-
-    .urgency-close {
-        min-width: 40px;
-        min-height: 40px;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-    }
-
     /* Smaller mobile sticky bar */
     .mobile-sticky-bottom {
         padding: 8px;
@@ -478,21 +417,6 @@ html, body {
 
     .logo-secondary-v2 {
         font-size: 10px;
-    }
-
-    .urgency-text {
-        font-size: 11px;
-    }
-
-    .urgency-text strong {
-        font-size: 13px;
-    }
-
-    .urgency-link {
-        display: block;
-        margin-left: 0;
-        margin-top: 3px;
-        font-size: 11px;
     }
 
     .mobile-cta-call,
@@ -524,8 +448,7 @@ html, body {
 .header-cta-call:focus,
 .header-cta-chat:focus,
 .header-cta-book:focus,
-.mobile-menu-toggle-v2:focus,
-.urgency-close:focus {
+.mobile-menu-toggle-v2:focus {
     outline: 2px solid #2196F3;
     outline-offset: 2px;
 }
@@ -550,7 +473,6 @@ html, body {
 
 /* Print styles - hide interactive elements */
 @media print {
-    .urgency-banner,
     .header-ctas-v2,
     .mobile-menu-toggle-v2,
     .mobile-sticky-bottom {

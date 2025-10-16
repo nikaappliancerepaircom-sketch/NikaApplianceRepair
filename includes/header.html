@@ -1,13 +1,3 @@
-<!-- Urgency Banner (Top) -->
-<div class="urgency-banner" id="urgency-banner">
-    <div class="container">
-        <p class="urgency-text">
-            🔥 <strong>SAVE $40</strong> on any repair - <a href="tel:4377476737" class="urgency-link">Call 437-747-6737</a>
-        </p>
-        <button class="urgency-close" aria-label="Close banner" onclick="closeUrgencyBanner()">&times;</button>
-    </div>
-</div>
-
 <!-- Main Header -->
 <header class="main-header-v2">
     <div class="container">
@@ -38,7 +28,7 @@
                     </svg>
                     <span>437-747-6737</span>
                 </a>
-                <a href="/#book" class="header-cta-book">
+                <a href="/book" class="header-cta-book">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
                         <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
                     </svg>
@@ -64,7 +54,7 @@
         </svg>
         <span>Call</span>
     </a>
-    <a href="/#book" class="mobile-cta-book">
+    <a href="/book" class="mobile-cta-book">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
             <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
         </svg>
@@ -73,32 +63,42 @@
 </div>
 
 <script>
-// Close urgency banner
-function closeUrgencyBanner() {
-    const banner = document.getElementById('urgency-banner');
-    if (banner) {
-        banner.style.display = 'none';
-        localStorage.setItem('urgencyBannerClosed', 'true');
-    }
-}
-
-// Check if banner was closed before
-if (localStorage.getItem('urgencyBannerClosed') === 'true') {
-    const banner = document.getElementById('urgency-banner');
-    if (banner) {
-        banner.style.display = 'none';
-    }
-}
-
 // Mobile menu toggle
 function toggleMobileMenu() {
     const nav = document.querySelector('.main-nav-v2');
     const toggle = document.querySelector('.mobile-menu-toggle-v2');
+    const body = document.body;
+
     if (nav && toggle) {
-        nav.classList.toggle('mobile-menu-open');
-        toggle.classList.toggle('active');
-        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', !isExpanded);
+        const isOpen = nav.classList.contains('mobile-menu-open');
+
+        if (isOpen) {
+            // Close menu
+            nav.classList.remove('mobile-menu-open');
+            toggle.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+            body.style.overflow = '';
+        } else {
+            // Open menu
+            nav.classList.add('mobile-menu-open');
+            toggle.classList.add('active');
+            toggle.setAttribute('aria-expanded', 'true');
+            body.style.overflow = 'hidden';
+        }
     }
 }
+
+// Close menu when clicking on a link
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.main-nav-v2 a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const nav = document.querySelector('.main-nav-v2');
+            const toggle = document.querySelector('.mobile-menu-toggle-v2');
+            if (nav && toggle && nav.classList.contains('mobile-menu-open')) {
+                toggleMobileMenu();
+            }
+        });
+    });
+});
 </script>
