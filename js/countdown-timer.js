@@ -52,10 +52,10 @@
     function updateTimerDisplay() {
         let totalSeconds = getRemainingSeconds();
 
-        // If timer reached 0, reset it
+        // If timer reached 0, hide the countdown section
         if (totalSeconds === 0) {
-            resetTimer();
-            totalSeconds = TIMER_DURATION;
+            hideCountdownSection();
+            return; // Stop updating
         }
 
         const minutes = Math.floor(totalSeconds / 60);
@@ -85,6 +85,34 @@
 
         allMinutes.forEach(el => el.textContent = minutesFormatted);
         allSeconds.forEach(el => el.textContent = secondsFormatted);
+    }
+
+    /**
+     * Hide countdown section when timer expires
+     */
+    function hideCountdownSection() {
+        // Find and hide countdown sections by common class names and IDs
+        const selectors = [
+            '.countdown-section',
+            '.deal-section',
+            '#countdown',
+            '#deal',
+            '[class*="countdown"]',
+            '[id*="countdown"]'
+        ];
+
+        selectors.forEach(selector => {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(el => {
+                // Only hide if it contains timer elements
+                if (el.querySelector('.countdown-minutes') ||
+                    el.querySelector('.countdown-seconds') ||
+                    el.querySelector('#timer-minutes') ||
+                    el.querySelector('#timer-seconds')) {
+                    el.style.display = 'none';
+                }
+            });
+        });
     }
 
     /**

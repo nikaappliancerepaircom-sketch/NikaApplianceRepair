@@ -677,6 +677,73 @@
             transition-duration: 0.01ms !important;
         }
     }
+
+    /* Pricing Table Mobile Optimization */
+    .pricing-table-wrapper {
+        min-width: 700px;
+        overflow-x: auto;
+    }
+
+    .pricing-mobile-cards {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .pricing-table-wrapper {
+            display: none;
+        }
+
+        .pricing-mobile-cards {
+            display: block;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .pricing-card.featured {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 12px;
+        }
+
+        .pricing-card .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .pricing-card .price-note {
+            color: #dc2626;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+
+        .pricing-card .free-note {
+            color: #16a34a;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .pricing-card .warranty {
+            color: #64748b;
+            font-size: 0.95rem;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
+        }
+    }
     </style>
 
     <script>
@@ -961,7 +1028,9 @@
         <div class="container">
             <h2 class="section-title">Transparent Pricing</h2>
             <p class="section-subtitle">No hidden fees, no surprises</p>
-            <div style="margin: 40px 0; overflow-x: auto; background: white; padding: 20px; border-radius: 12px; text-align: center;">
+
+            <!-- Desktop Table View -->
+            <div class="pricing-table-wrapper" style="margin: 40px 0; background: white; padding: 20px; border-radius: 12px; text-align: center;">
                 <table class="pricing-table" style="max-width: 800px; margin: 0 auto; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden;">
                     <thead>
                         <tr style="background: #1e40af; color: white;">
@@ -988,6 +1057,29 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!-- Mobile Card View -->
+            <div class="pricing-mobile-cards" style="margin: 40px 0;">
+                <div class="pricing-card featured">
+                    <h3>Diagnostic Fee</h3>
+                    <div class="price">$119</div>
+                    <div class="price-note">(Limited Time Offer)</div>
+                    <div class="free-note">FREE with any repair service!</div>
+                    <div class="warranty">Warranty: N/A</div>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Basic Repair</h3>
+                    <div class="price">$150 - $250</div>
+                    <div class="warranty">Warranty: 90 Days</div>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Complex Repair</h3>
+                    <div class="price">$250 - $450</div>
+                    <div class="warranty">Warranty: 90 Days</div>
+                </div>
             </div>
         </div>
     </section>
