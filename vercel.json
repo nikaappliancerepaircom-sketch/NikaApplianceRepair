@@ -26,6 +26,19 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
+        },
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        }
+      ]
+    },
+    {
+      "source": "/locations/(.*)",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</css/design-system.css>; rel=preload; as=style, </css/style.css>; rel=preload; as=style, </assets/images/friendly-technician-character-min.webp>; rel=preload; as=image"
         }
       ]
     },
