@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Online | Nika Appliance Repair | Toronto, Mississauga, Brampton</title>
-    <meta name="description" content="Book your appliance repair online instantly with Nika Appliance Repair. Same-day service available across Toronto, Mississauga, Brampton, Markham, and Vaughan. 90-day warranty on all repairs.">
-    <meta name="keywords" content="book appliance repair, online booking Toronto, appliance repair appointment, same-day appliance repair, Nika booking">
+    <title>Book Appliance Repair Online | Nika Appliance Repair Toronto</title>
+    <meta name="description" content="Book your appliance repair online instantly. Same-day service available across Toronto & GTA. 90-day warranty on all repairs. Licensed technicians.">
+    <link rel="canonical" href="https://nikaappliancerepair.com/book">
+
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
@@ -19,60 +21,16 @@
       "provider": {
         "@type": "LocalBusiness",
         "name": "Nika Appliance Repair",
-        "image": "https://nikaappliancerepair.ca/assets/images/logo.png",
         "telephone": "+14377476737",
         "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Toronto",
-          "addressRegion": "ON",
-          "addressCountry": "CA"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 43.6532,
-          "longitude": -79.3832
-        },
-        "url": "https://nikaappliancerepair.ca",
-        "areaServed": [
-          {
-            "@type": "City",
-            "name": "Toronto"
-          },
-          {
-            "@type": "City",
-            "name": "Mississauga"
-          },
-          {
-            "@type": "City",
-            "name": "Brampton"
-          },
-          {
-            "@type": "City",
-            "name": "Markham"
-          },
-          {
-            "@type": "City",
-            "name": "Vaughan"
-          }
-        ],
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "reviewCount": "520"
+          "reviewCount": "5200"
         }
-      },
-      "description": "Book your appliance repair appointment online with Nika Appliance Repair. Same-day service available, 90-day warranty on all repairs, and licensed technicians serving Toronto and GTA.",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "CAD",
-        "price": "75",
-        "description": "Service call starting at $75"
       }
     }
     </script>
-
-    <link rel="stylesheet" href="css/hero-image-mobile-fix.css">
 
     <style>
         * {
@@ -82,30 +40,29 @@
         }
 
         body {
-            font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f8f9fa;
+            background: #f5f7fa;
         }
 
-        /* Header Styles */
-        .site-header {
+        /* Minimal Header - No Navigation */
+        .booking-header {
             background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 1rem 0;
             position: sticky;
             top: 0;
-            z-index: 1000;
-            padding: 1rem 0;
+            z-index: 100;
         }
 
-        .header-container {
-            max-width: 1400px;
+        .booking-header-container {
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 2rem;
         }
 
         .header-logo {
@@ -114,1220 +71,426 @@
             font-weight: 700;
             color: #2196F3;
             text-decoration: none;
-            white-space: nowrap;
         }
 
-        .header-logo a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .header-nav {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .nav-list {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            margin: 0;
-        }
-
-        .nav-list a {
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
-
-        .nav-list a:hover {
-            color: #2196F3;
-        }
-
-        .header-trust {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            white-space: nowrap;
-        }
-
-        .trust-stars {
-            color: #FFB800;
-            font-size: 0.9rem;
-        }
-
-        .trust-rating {
-            font-weight: 600;
-            color: #333;
-            font-size: 0.95rem;
-        }
-
-        .trust-rating span {
-            font-weight: 400;
-            color: #666;
-            font-size: 0.85rem;
-        }
-
-        .header-cta {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .cta-phone {
+        .header-phone {
             display: flex;
             align-items: center;
             gap: 0.5rem;
             padding: 0.75rem 1.5rem;
-            background: white;
-            border: 2px solid #2196F3;
-            color: #2196F3;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-        }
-
-        .cta-phone:hover {
-            background: #2196F3;
-            color: white;
-        }
-
-        .cta-book {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: linear-gradient(135deg, #27AE60 0%, #229954 100%);
+            background: #7B1FA2;
             color: white;
             text-decoration: none;
             font-weight: 600;
             border-radius: 8px;
-            transition: all 0.3s ease;
+            transition: all 0.3s;
             white-space: nowrap;
         }
 
-        .cta-book:hover {
+        .header-phone:hover {
+            background: #6A1B9A;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
         }
 
-        .mobile-menu-btn {
-            display: none;
-            flex-direction: column;
-            gap: 4px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
+        .header-phone svg {
+            width: 18px;
+            height: 18px;
         }
 
-        .mobile-menu-btn span {
-            width: 25px;
-            height: 3px;
-            background: #333;
-            border-radius: 3px;
-            transition: all 0.3s ease;
-        }
-
-        .mobile-menu-btn.active span:nth-child(1) {
-            transform: rotate(45deg) translate(6px, 6px);
-        }
-
-        .mobile-menu-btn.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .mobile-menu-btn.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(6px, -6px);
-        }
-
-        /* Mobile Bottom CTA */
-        .mobile-bottom-cta {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-            padding: 0.75rem;
-            gap: 0.75rem;
-            z-index: 999;
-        }
-
-        .mobile-cta-btn {
-            flex: 1;
-            padding: 1rem;
-            text-align: center;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-
-        .mobile-cta-call {
-            background: white;
-            border: 2px solid #2196F3;
-            color: #2196F3;
-        }
-
-        .mobile-cta-book {
-            background: linear-gradient(135deg, #27AE60 0%, #229954 100%);
-            color: white;
-        }
-
-        /* Hero Section */
+        /* Hero Section with Form */
         .booking-hero {
             background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
             color: white;
-            padding: 3rem 2rem 2rem;
+            padding: 2.5rem 1.5rem 3rem;
             text-align: center;
-        }
-
-        .booking-hero-content {
-            max-width: 900px;
-            margin: 0 auto;
         }
 
         .booking-hero h1 {
             font-family: 'Fredoka', sans-serif;
-            font-size: 2.5rem;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
             line-height: 1.2;
         }
 
         .booking-hero-subtitle {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
             opacity: 0.95;
-            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
         }
 
-        .booking-trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .trust-badge-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(255,255,255,0.15);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            backdrop-filter: blur(10px);
-        }
-
-        .trust-badge-icon {
-            font-size: 1.5rem;
-        }
-
-        .trust-badge-text {
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        /* Benefits Section */
-        .booking-benefits {
-            max-width: 1200px;
-            margin: -3rem auto 3rem;
-            padding: 0 2rem;
+        /* Booking Form - Wide and Prominent */
+        .booking-form-section {
+            max-width: 1000px;
+            margin: -2rem auto 3rem;
+            padding: 0 1.5rem;
             position: relative;
             z-index: 10;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .benefit-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
-
-        .benefit-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .benefit-card h3 {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 1.25rem;
-            color: #2196F3;
-            margin-bottom: 0.5rem;
-        }
-
-        .benefit-card p {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* Booking Form Section */
-        .booking-form-section {
-            max-width: 1200px;
-            margin: 0 auto 3rem;
-            padding: 0 2rem;
-        }
-
-        .booking-form-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .booking-form-header h2 {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .booking-form-header p {
-            font-size: 1.1rem;
-            color: #666;
         }
 
         .booking-form-container {
             background: white;
             padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
         }
 
-        .workiz-iframe-wrapper {
-            width: 100%;
-            min-height: 700px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .workiz-iframe-wrapper iframe {
-            width: 100%;
-            height: 700px;
-            border: none;
-        }
-
-        /* Process Steps */
-        .booking-process {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 2rem;
-        }
-
-        .process-header {
+        .form-header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
         }
 
-        .process-header h2 {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .process-step {
-            text-align: center;
-            position: relative;
-        }
-
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .form-header h2 {
             font-family: 'Fredoka', sans-serif;
             font-size: 1.5rem;
-            font-weight: 700;
-            margin: 0 auto 1rem;
-        }
-
-        .process-step h3 {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 1.25rem;
             color: #333;
             margin-bottom: 0.5rem;
         }
 
-        .process-step p {
+        .form-header p {
             color: #666;
             font-size: 0.95rem;
-            line-height: 1.6;
         }
 
-        /* FAQ Section */
-        .booking-faq {
-            max-width: 900px;
-            margin: 4rem auto;
-            padding: 0 2rem;
+        .workiz-iframe-wrapper {
+            width: 100%;
+            min-height: 750px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #f9f9f9;
         }
 
-        .faq-header {
-            text-align: center;
-            margin-bottom: 3rem;
+        .workiz-iframe-wrapper iframe {
+            width: 100%;
+            height: 750px;
+            border: none;
         }
 
-        .faq-header h2 {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 1rem;
+        /* Trust Badges - Minimal Below Form */
+        .trust-section {
+            max-width: 1000px;
+            margin: 0 auto 3rem;
+            padding: 0 1.5rem;
         }
 
-        .faq-item {
+        .trust-badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .trust-badge {
             background: white;
             padding: 1.5rem;
             border-radius: 12px;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .faq-question {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 1.1rem;
-            color: #2196F3;
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-
-        .faq-answer {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* CTA Section */
-        .booking-cta-section {
-            background: linear-gradient(135deg, #27AE60 0%, #229954 100%);
-            color: white;
-            padding: 4rem 2rem;
             text-align: center;
-            margin-top: 4rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
         }
 
-        .booking-cta-content {
+        .trust-badge-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-badge-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .trust-badge-subtitle {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* Urgency Banner */
+        .urgency-banner {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            color: white;
+            padding: 1.25rem 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .urgency-banner strong {
+            font-size: 1.1rem;
+        }
+
+        /* Minimal Footer */
+        .booking-footer {
+            background: #1976D2;
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .footer-content {
             max-width: 800px;
             margin: 0 auto;
         }
 
-        .booking-cta-section h2 {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 2rem;
+        .footer-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
             margin-bottom: 1rem;
         }
 
-        .booking-cta-section p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
+        .footer-phone:hover {
+            opacity: 0.9;
         }
 
-        .cta-buttons {
+        .footer-trust {
             display: flex;
-            gap: 1rem;
             justify-content: center;
+            gap: 2rem;
             flex-wrap: wrap;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
         }
 
-        .cta-btn-white {
-            padding: 1rem 2rem;
-            background: white;
-            color: #27AE60;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+        .footer-trust-item {
+            text-align: center;
         }
 
-        .cta-btn-white:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        .footer-trust-item strong {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
         }
 
-        .cta-btn-outline {
-            padding: 1rem 2rem;
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+        .footer-trust-item span {
+            font-size: 0.875rem;
+            opacity: 0.9;
         }
 
-        .cta-btn-outline:hover {
-            background: white;
-            color: #27AE60;
+        .footer-copyright {
+            font-size: 0.875rem;
+            opacity: 0.9;
+            margin-top: 1.5rem;
         }
 
-        /* Responsive Design */
-        @media (max-width: 968px) {
-            .header-nav,
-            .header-trust,
-            .header-cta {
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .booking-header-container {
+                padding: 0 1rem;
+            }
+
+            .header-logo {
+                font-size: 1.25rem;
+            }
+
+            .header-phone {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .header-phone span {
                 display: none;
             }
 
-            .mobile-menu-btn {
-                display: flex;
+            .header-phone::after {
+                content: 'Call';
             }
 
-            .header-nav.mobile-open {
-                display: flex;
-                position: fixed;
-                top: 70px;
-                left: 0;
-                right: 0;
-                background: white;
-                flex-direction: column;
-                padding: 2rem;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            }
-
-            .header-nav.mobile-open .nav-list {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .header-nav.mobile-open .nav-list a {
-                padding: 1rem 0;
-                border-bottom: 1px solid #eee;
-            }
-
-            .mobile-bottom-cta {
-                display: flex;
-            }
-
-            .booking-hero h1 {
-                font-size: 1.75rem;
-            }
-
-            .booking-hero-subtitle {
-                font-size: 1rem;
-            }
-
-            .booking-trust-badges {
-                gap: 1rem;
-            }
-
-            .trust-badge-item {
-                padding: 0.5rem 1rem;
-            }
-
-            .benefits-grid {
-                grid-template-columns: 1fr;
+            .booking-hero {
+                padding: 2rem 1rem 2.5rem;
             }
 
             .booking-form-container {
-                padding: 1rem;
+                padding: 1.25rem;
             }
 
-            .process-steps {
-                grid-template-columns: 1fr;
+            .workiz-iframe-wrapper,
+            .workiz-iframe-wrapper iframe {
+                min-height: 650px;
+                height: 650px;
             }
 
-            .cta-buttons {
-                flex-direction: column;
-                align-items: stretch;
+            .trust-badges-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .trust-badge {
+                padding: 1.25rem 0.75rem;
+            }
+
+            .trust-badge-icon {
+                font-size: 2rem;
+            }
+
+            .footer-trust {
+                gap: 1rem;
+            }
+
+            .footer-phone {
+                font-size: 1.25rem;
             }
         }
 
         @media (max-width: 480px) {
-            .booking-hero {
-                padding: 2rem 1rem 1rem;
+            .trust-badges-grid {
+                grid-template-columns: 1fr;
             }
 
-            .booking-hero h1 {
-                font-size: 1.5rem;
+            .urgency-banner {
+                font-size: 0.9rem;
+                padding: 1rem;
             }
+        }
 
-            .booking-form-header h2,
-            .process-header h2,
-            .faq-header h2,
-            .booking-cta-section h2 {
-                font-size: 1.5rem;
-            }
+        /* Loading Animation for iframe */
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
 
-            .workiz-iframe-wrapper iframe {
-                height: 600px;
-            }
+        .workiz-iframe-wrapper::before {
+            content: 'Loading booking form...';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 750px;
+            color: #666;
+            animation: pulse 1.5s infinite;
+        }
+
+        .workiz-iframe-wrapper iframe {
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header" role="banner">
-        <div class="header-container">
-            <div class="header-logo">
-                <a href="/">NIKA Appliance Repair</a>
-            </div>
-            <nav class="header-nav">
-                <ul class="nav-list">
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/locations">Locations</a></li>
-                    <li><a href="/about">About Us</a></li>
-                </ul>
-            </nav>
-            <div class="header-trust">
-                <div class="trust-stars">⭐⭐⭐⭐⭐</div>
-                <div class="trust-rating">4.9 <span>(5,200+)</span></div>
-            </div>
-            <div class="header-cta">
-                <a href="tel:4377476737" class="cta-phone">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                    </svg>
-                    437-747-6737
-                </a>
-                <a href="/book" class="cta-book">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
-                    </svg>
-                    Book Now
-                </a>
-            </div>
-            <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Minimal Header - No Menu -->
+    <header class="booking-header">
+        <div class="booking-header-container">
+            <a href="/" class="header-logo">NIKA Appliance Repair</a>
+            <a href="tel:4377476737" class="header-phone">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                <span>(437) 747-6737</span>
+            </a>
         </div>
     </header>
 
-    <!-- Mobile Bottom CTA -->
-    <div class="mobile-bottom-cta">
-        <a href="tel:4377476737" class="mobile-cta-btn mobile-cta-call">Call Now</a>
-        <a href="/book" class="mobile-cta-btn mobile-cta-book">Book Online</a>
+    <!-- Urgency Banner -->
+    <div class="urgency-banner">
+        <strong>⚡ Limited Time:</strong> Book Online Today & Save $40 on Any Service
     </div>
 
     <!-- Hero Section -->
     <section class="booking-hero">
-        <div class="booking-hero-content">
-            <h1>Book Your Appliance Repair Online</h1>
-            <p class="booking-hero-subtitle">
-                Fast, convenient online booking with instant confirmation. Choose your time slot, and we'll be there to fix your appliances the same day. No waiting, no hassle—just expert service when you need it.
-            </p>
-            <div class="booking-trust-badges">
-                <div class="trust-badge-item">
-                    <div class="trust-badge-icon">⚡</div>
-                    <div class="trust-badge-text">Same-Day Service</div>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="trust-badge-icon">✓</div>
-                    <div class="trust-badge-text">Licensed Technicians</div>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="trust-badge-icon">🛡️</div>
-                    <div class="trust-badge-text">90-Day Warranty</div>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="trust-badge-icon">⭐</div>
-                    <div class="trust-badge-text">4.9★ Rating</div>
-                </div>
-            </div>
-        </div>
+        <h1>Book Your Appliance Repair in 2 Minutes</h1>
+        <p class="booking-hero-subtitle">Same-day service available • Licensed technicians • 90-day warranty • All major brands</p>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="booking-benefits">
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <div class="benefit-icon">📅</div>
-                <h3>Choose Your Time</h3>
-                <p>Select a time slot that works best for you. Morning, afternoon, or evening—we accommodate your schedule.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">💰</div>
-                <h3>Transparent Pricing</h3>
-                <p>Service call starts at $75. Get a detailed quote before we start any work. No hidden fees, no surprises.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">🔧</div>
-                <h3>Expert Technicians</h3>
-                <p>Factory-trained professionals with 8+ years of experience repairing all major appliance brands.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-icon">✅</div>
-                <h3>Instant Confirmation</h3>
-                <p>Receive immediate booking confirmation via email and SMS. Track your technician's arrival in real-time.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Booking Form Section -->
-    <section class="booking-form-section" id="booking-form">
-        <div class="booking-form-header">
-            <h2>Schedule Your Repair Now</h2>
-            <p>Fill out the form below to book your appointment. Takes less than 2 minutes.</p>
-        </div>
+    <!-- Booking Form - Wide & Prominent -->
+    <section class="booking-form-section">
         <div class="booking-form-container">
+            <div class="form-header">
+                <h2>Select Your Service & Time Slot</h2>
+                <p>Fill out the form below and get instant confirmation</p>
+            </div>
             <div class="workiz-iframe-wrapper">
-                <iframe src='https://online-booking.workiz.com/?ac=176dd5d1ce4f69e999d5930a80c1e0109e51c6c46573321e62fe8a71623f0ebb' width="100%" height="700px" style='border:none;'></iframe>
+                <iframe src='https://online-booking.workiz.com/?ac=176dd5d1ce4f69e999d5930a80c1e0109e51c6c46573321e62fe8a71623f0ebb' loading="eager"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Process Steps -->
-    <section class="booking-process">
-        <div class="process-header">
-            <h2>How Our Booking Process Works</h2>
-        </div>
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="step-number">1</div>
-                <h3>Book Online</h3>
-                <p>Fill out our simple booking form above with your appliance details and preferred time slot. Instant confirmation sent to your email and phone.</p>
+    <!-- Trust Badges - Minimal -->
+    <section class="trust-section">
+        <div class="trust-badges-grid">
+            <div class="trust-badge">
+                <div class="trust-badge-icon">⚡</div>
+                <div class="trust-badge-title">Same-Day Service</div>
+                <div class="trust-badge-subtitle">Available 7 days/week</div>
             </div>
-            <div class="process-step">
-                <div class="step-number">2</div>
-                <h3>Technician Arrives</h3>
-                <p>Our licensed technician arrives at your scheduled time with all necessary tools and parts. Track their arrival in real-time via SMS updates.</p>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">⭐</div>
+                <div class="trust-badge-title">4.9★ Rating</div>
+                <div class="trust-badge-subtitle">5,200+ happy customers</div>
             </div>
-            <div class="process-step">
-                <div class="step-number">3</div>
-                <h3>Fast Diagnosis</h3>
-                <p>We diagnose the problem quickly and provide you with a detailed quote before starting any repair work. You approve, we proceed.</p>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">🛡️</div>
+                <div class="trust-badge-title">90-Day Warranty</div>
+                <div class="trust-badge-subtitle">Parts & labor covered</div>
             </div>
-            <div class="process-step">
-                <div class="step-number">4</div>
-                <h3>Fixed & Tested</h3>
-                <p>Your appliance is repaired efficiently and tested thoroughly. We clean up the work area and ensure everything works perfectly before we leave.</p>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">✓</div>
+                <div class="trust-badge-title">Licensed & Insured</div>
+                <div class="trust-badge-subtitle">Certified technicians</div>
             </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="booking-faq">
-        <div class="faq-header">
-            <h2>Booking Questions Answered</h2>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">How quickly can you come after I book?</h3>
-            <p class="faq-answer">We offer same-day service for most bookings in Toronto and GTA. If you book in the morning, we can often arrive within 2-4 hours. Next-day appointments are always available.</p>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">What happens after I submit the booking form?</h3>
-            <p class="faq-answer">You'll receive instant confirmation via email and SMS with your appointment details. Our dispatch team will assign a technician, and you'll get updates when they're on the way.</p>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">Can I reschedule or cancel my appointment?</h3>
-            <p class="faq-answer">Yes, absolutely. Just call us at 437-747-6737 or reply to your confirmation email. We recommend giving at least 2 hours notice for changes.</p>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">Do I need to be home during the repair?</h3>
-            <p class="faq-answer">Yes, someone 18+ needs to be present during the service call to approve the quote and provide access to the appliance.</p>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">What payment methods do you accept?</h3>
-            <p class="faq-answer">We accept cash, credit cards (Visa, MasterCard, Amex), debit cards, and e-transfers. Payment is due after the repair is completed and tested.</p>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">What areas do you service?</h3>
-            <p class="faq-answer">We serve Toronto, Mississauga, Brampton, Markham, Vaughan, Richmond Hill, and surrounding GTA communities. Check our Locations page for your specific area.</p>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="booking-cta-section">
-        <div class="booking-cta-content">
-            <h2>Prefer to Talk to Someone?</h2>
-            <p>Our friendly customer service team is ready to help you book your appointment over the phone or answer any questions you have about our services.</p>
-            <div class="cta-buttons">
-                <a href="tel:4377476737" class="cta-btn-white">Call 437-747-6737</a>
-                <a href="/services" class="cta-btn-outline">View Our Services</a>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">💰</div>
+                <div class="trust-badge-title">Upfront Pricing</div>
+                <div class="trust-badge-subtitle">No hidden fees</div>
             </div>
         </div>
     </section>
 
-    
+    <!-- Minimal Footer -->
+    <footer class="booking-footer">
+        <div class="footer-content">
+            <a href="tel:4377476737" class="footer-phone">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                (437) 747-6737
+            </a>
 
-        // Smooth scroll to booking form if hash is present
-        if (window.location.hash === '#booking-form') {
-            setTimeout(() => {
-                document.getElementById('booking-form').scrollIntoView({ behavior: 'smooth' });
-            }, 300);
-        }
-    </script>
-
-    <footer class="seo-footer-premium">
-        <div class="container">
-            <!-- Trust Badges Row -->
-            <div class="footer-trust-badges">
-                <div class="trust-badge-item">
-                    <div class="badge-icon">⭐</div>
-                    <div class="badge-text">
-                        <strong>4.9/5 Rating</strong>
-                        <span>5,200+ Reviews</span>
-                    </div>
+            <div class="footer-trust">
+                <div class="footer-trust-item">
+                    <strong>Toronto & GTA</strong>
+                    <span>50km Service Radius</span>
                 </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon">🏆</div>
-                    <div class="badge-text">
-                        <strong>Licensed & Insured</strong>
-                        <span>Since 2017</span>
-                    </div>
+                <div class="footer-trust-item">
+                    <strong>8AM - 8PM</strong>
+                    <span>7 Days a Week</span>
                 </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon">🛡️</div>
-                    <div class="badge-text">
-                        <strong>90-Day Warranty</strong>
-                        <span>Parts & Labor</span>
-                    </div>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon">⚡</div>
-                    <div class="badge-text">
-                        <strong>Same-Day Service</strong>
-                        <span>7 Days a Week</span>
-                    </div>
+                <div class="footer-trust-item">
+                    <strong>All Major Brands</strong>
+                    <span>Samsung, LG, Whirlpool +</span>
                 </div>
             </div>
 
-            <!-- Main Footer Content -->
-            <div class="footer-main-content">
-                <!-- Column 1: Services -->
-                <div class="footer-column">
-                    <h4 class="footer-heading">Our Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="services/refrigerator-repair">Refrigerator Repair</a></li>
-                        <li><a href="services/dishwasher-repair">Dishwasher Repair</a></li>
-                        <li><a href="services/washer-repair">Washer Repair</a></li>
-                        <li><a href="services/dryer-repair">Dryer Repair</a></li>
-                        <li><a href="services/oven-repair">Oven Repair</a></li>
-                        <li><a href="services/stove-repair">Stove Repair</a></li>
-                        <li><a href="services/range-repair">Range Repair</a></li>
-                        <li><a href="services/microwave-repair">Microwave Repair</a></li>
-                        <li><a href="services/freezer-repair">Freezer Repair</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 2: Top Service Areas -->
-                <div class="footer-column">
-                    <h4 class="footer-heading">Top Service Areas</h4>
-                    <ul class="footer-links">
-                        <li><a href="locations/mississauga">Mississauga</a></li>
-                        <li><a href="locations/brampton">Brampton</a></li>
-                        <li><a href="locations/markham">Markham</a></li>
-                        <li><a href="locations/vaughan">Vaughan</a></li>
-                        <li><a href="locations/richmond-hill">Richmond Hill</a></li>
-                        <li><a href="locations/oakville">Oakville</a></li>
-                        <li><a href="locations/burlington">Burlington</a></li>
-                        <li><a href="locations/oshawa">Oshawa</a></li>
-                        <li><a href="locations/ajax">Ajax</a></li>
-                        <li><a href="locations/pickering">Pickering</a></li>
-                        <li><a href="locations/milton">Milton</a></li>
-                        <li><a href="locations/whitby">Whitby</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: Company -->
-                <div class="footer-column">
-                    <h4 class="footer-heading">Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="about">About Us</a></li>
-                        <li><a href="#testimonials">Customer Reviews</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="book">Book Online</a></li>
-                        <li><a href="#areas">Service Areas</a></li>
-                        <li><a href="privacy">Privacy Policy</a></li>
-                        <li><a href="terms">Terms of Service</a></li>
-                        <li><a href="sitemap.xml">Sitemap</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Contact -->
-                <div class="footer-column footer-column-contact">
-                    <h4 class="footer-heading">Contact Us</h4>
-                    <div class="footer-contact-box">
-                        <p class="contact-item">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                            <a href="tel:4377476737" class="contact-link">(437) 747-6737</a>
-                        </p>
-                        <p class="contact-item">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                            <a href="mailto:care@niappliancerepair.ca" class="contact-link">care@niappliancerepair.ca</a>
-                        </p>
-                        <p class="contact-item">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                            </svg>
-                            <span>60 Walter Tunny Cresent<br>East Gwillimbury, ON L9N 0R3</span>
-                        </p>
-                        <p class="contact-item">
-                            <strong>📅 Service Hours:</strong><br>
-                            Mon-Fri: 8 AM - 8 PM<br>
-                            Sat: 9 AM - 6 PM<br>
-                            Sun: 10 AM - 5 PM
-                        </p>
-                    </div>
-
-                    <!-- Call to Action Button -->
-                    <a href="tel:4377476737" class="footer-cta-button">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                        </svg>
-                        Call Now for Same-Day Service
-                    </a>
-                </div>
-            </div>
-
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p class="copyright">
-                        © <span id="current-year-footer">2025</span> Nika Appliance Repair. All Rights Reserved.
-                        <span class="separator">|</span>
-                        Licensed & Insured Appliance Repair Company Serving Toronto & GTA
-                    </p>
-                    <div class="footer-social-links">
-                        <span class="footer-tagline">Trusted by 5,200+ Happy Customers</span>
-                    </div>
-                </div>
-            </div>
+            <p class="footer-copyright">
+                © <span id="current-year">2025</span> Nika Appliance Repair. Licensed & Insured.
+            </p>
         </div>
     </footer>
 
-    <style>
-    /* ========== SEO-OPTIMIZED FOOTER STYLES ========== */
-
-    .seo-footer-premium {
-        position: relative;
-        background: linear-gradient(135deg, #1976D2 0%, #2196F3 50%, #1565C0 100%);
-        color: #ffffff;
-        padding: 4rem 0 2rem;
-        overflow: hidden;
-    }
-
-    .seo-footer-premium::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background:
-            radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
-            radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
-        pointer-events: none;
-    }
-
-    .seo-footer-premium .container {
-        position: relative;
-        z-index: 2;
-    }
-
-    /* Trust Badges Row */
-    .footer-trust-badges {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        margin-bottom: 4rem;
-        padding: 2rem;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .trust-badge-item {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .badge-icon {
-        font-size: 2.5rem;
-        line-height: 1;
-    }
-
-    .badge-text {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-    }
-
-    .badge-text strong {
-        font-size: 1rem;
-        font-weight: 700;
-        color: #ffffff;
-    }
-
-    .badge-text span {
-        font-size: 0.875rem;
-        color: rgba(255, 255, 255, 0.9);
-    }
-
-    /* Main Footer Content */
-    .footer-main-content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 3rem;
-        margin-bottom: 3rem;
-    }
-
-    .footer-column {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-heading {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 1.5rem;
-        padding-bottom: 0.75rem;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .footer-links {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-
-    .footer-links li {
-        line-height: 1.6;
-    }
-
-    .footer-links a {
-        color: rgba(255, 255, 255, 0.9);
-        text-decoration: none;
-        font-size: 0.95rem;
-        transition: all 0.2s ease;
-        display: inline-block;
-    }
-
-    .footer-links a:hover {
-        color: #ffffff;
-        transform: translateX(4px);
-    }
-
-    /* Contact Column */
-    .footer-column-contact {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 1.5rem;
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .footer-contact-box {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .contact-item {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        color: rgba(255, 255, 255, 0.9);
-        margin: 0;
-    }
-
-    .contact-link {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 600;
-        transition: opacity 0.2s ease;
-    }
-
-    .contact-link:hover {
-        opacity: 0.8;
-    }
-
-    /* CTA Button */
-    .footer-cta-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.75rem;
-        background: #27AE60;
-        color: #ffffff;
-        padding: 1rem 1.5rem;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 1rem;
-        transition: all 0.3s ease;
-        border: 2px solid #27AE60;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .footer-cta-button:hover {
-        background: #229954;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
-    }
-
-    /* Footer Bottom */
-    .footer-bottom {
-        padding-top: 2rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .footer-bottom-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .copyright {
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.9);
-        margin: 0;
-    }
-
-    .separator {
-        margin: 0 0.5rem;
-        opacity: 0.5;
-    }
-
-    .footer-social-links {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .footer-tagline {
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.9);
-        font-weight: 600;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 968px) {
-        .seo-footer-premium {
-            padding: 3rem 0 1.5rem;
-        }
-
-        .footer-trust-badges {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            padding: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-main-content {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-
-        .footer-column-contact {
-            grid-column: 1 / -1;
-        }
-
-        .footer-bottom-content {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .separator {
-            display: none;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .footer-trust-badges {
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-
-        .footer-main-content {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-
-        .footer-heading {
-            font-size: 1.1rem;
-        }
-
-        .badge-text strong {
-            font-size: 0.95rem;
-        }
-
-        .badge-text span {
-            font-size: 0.8rem;
-        }
-
-        .footer-cta-button {
-            width: 100%;
-            padding: 0.875rem 1.25rem;
-            font-size: 0.95rem;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .seo-footer-premium {
-            padding: 2rem 0 1rem;
-        }
-
-        .footer-trust-badges {
-            margin-bottom: 2rem;
-        }
-
-        .badge-icon {
-            font-size: 2rem;
-        }
-
-        .footer-links a {
-            font-size: 0.9rem;
-        }
-
-        .contact-item {
-            font-size: 0.875rem;
-        }
-    }
-
-    /* Accessibility */
-    @media (prefers-reduced-motion: reduce) {
-        .footer-links a,
-        .footer-cta-button {
-            transition: none;
-        }
-    }
-    </style>
-
     <script>
-    // Set current year in footer
-    document.getElementById('current-year-footer').textContent = new Date().getFullYear();
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Prevent accidental navigation away
+        let formInteracted = false;
+        const iframe = document.querySelector('iframe');
+
+        iframe.addEventListener('load', () => {
+            formInteracted = true;
+        });
+
+        window.addEventListener('beforeunload', (e) => {
+            if (formInteracted) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
     </script>
 </body>
 </html>
