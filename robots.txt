@@ -177,9 +177,171 @@ User-agent: Diffbot
 Allow: /
 
 # ------------------------------------------------------------
-# WebCrawler AI platforms
+# xAI (Grok - Elon Musk's AI)
+# Used by: Twitter/X AI features, Grok chatbot
+# Users: 500M+ X/Twitter users
+# ⚠️ NEW 2025 - VERY IMPORTANT for X platform visibility
+# ------------------------------------------------------------
+User-agent: Grok-bot
+Allow: /
+Crawl-delay: 5
+
+User-agent: xAI-bot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# SearchGPT (OpenAI's Search Engine)
+# Used by: ChatGPT Search, OpenAI Search
+# ⚠️ NEW 2025 - Direct competitor to Google
+# ------------------------------------------------------------
+User-agent: SearchGPT
+Allow: /
+Crawl-delay: 5
+
+User-agent: OAI-SearchBot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Amazon Alexa (Voice Search & Smart Home)
+# Users: 500M+ Alexa devices worldwide
+# ⚠️ CRITICAL for voice search optimization
+# ------------------------------------------------------------
+User-agent: ia_archiver
+Allow: /
+Crawl-delay: 5
+
+User-agent: Alexabot
+Allow: /
+Crawl-delay: 5
+
+User-agent: AlexaMediaSearch
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# You.com (AI-powered search engine)
+# Users: 10M+ monthly, growing fast
+# ⚠️ Rising AI search platform
+# ------------------------------------------------------------
+User-agent: YouBot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Brave Search (Privacy-focused search)
+# Users: 50M+ Brave browser users
+# Independent index, no Google/Bing reliance
+# ------------------------------------------------------------
+User-agent: Bravebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Brave-Indexer
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Kagi (Premium AI search)
+# Users: Premium search engine users
+# High-quality, ad-free results
+# ------------------------------------------------------------
+User-agent: Kagibot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Mojeek (Independent search engine)
+# Users: Privacy-conscious searchers
+# Own index, no data from Google/Bing
+# ------------------------------------------------------------
+User-agent: MojeekBot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Yep (Ahrefs Search Engine)
+# Users: SEO professionals, quality searchers
+# Profit-sharing with content creators
+# ------------------------------------------------------------
+User-agent: YepBot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Hugging Face (AI/ML Platform)
+# Used by: AI researchers, model training
+# Growing ecosystem of AI tools
+# ------------------------------------------------------------
+User-agent: HuggingFaceBot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Inflection AI (Pi Assistant)
+# Users: Personal AI assistant users
+# Conversational AI platform
+# ------------------------------------------------------------
+User-agent: InflectionBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: PiBot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Quora / Poe (Multi-LLM Platform)
+# Used by: Poe app (access to multiple AI models)
+# Users: Millions via Quora ecosystem
+# ------------------------------------------------------------
+User-agent: QuoraBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: PoeBot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Character.AI (Conversational AI)
+# Users: 20M+ monthly
+# Character-based AI conversations
+# ------------------------------------------------------------
+User-agent: CharacterAI-Bot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Mistral AI (European AI leader)
+# Used by: Mistral chat, API integrations
+# Major European AI player
+# ------------------------------------------------------------
+User-agent: MistralBot
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Anthropic Extended (Additional crawler)
+# Extended capabilities beyond base Claude
+# ------------------------------------------------------------
+User-agent: anthropic-extended
+Allow: /
+Crawl-delay: 5
+
+# ------------------------------------------------------------
+# Other AI & Web Intelligence Platforms
 # ------------------------------------------------------------
 User-agent: ImagesiftBot
+Allow: /
+
+# DataForSEO (SEO intelligence)
+User-agent: DataForSeoBot
+Allow: /
+
+# WebCrawler (classic search)
+User-agent: WebCrawler
 Allow: /
 
 # ============================================================
@@ -251,22 +413,61 @@ Sitemap: https://nikaappliancerepair.com/sitemap-images.xml
 #
 # 1. This robots.txt is AI-optimized for 2025+
 # 2. All major AI platforms are explicitly allowed
-# 3. Crawl-delay: 0 for AI bots = fastest indexing
+# 3. Crawl-delay: 5 for AI bots = balanced crawling
 # 4. If you add new AI platforms, update this file
 # 5. Test monthly: Check which AI bots visit via server logs
 # 6. Monitor: Google Search Console, Bing Webmaster Tools
 #
-# AI Platforms covered:
-# ✅ ChatGPT (OpenAI)
-# ✅ Claude (Anthropic)
-# ✅ Perplexity AI
-# ✅ Google AI (Gemini)
-# ✅ Meta AI (Facebook/Instagram/WhatsApp)
-# ✅ Apple Intelligence (2025)
-# ✅ Bing Copilot (Microsoft)
-# ✅ Cohere
-# ✅ Common Crawl (training data for many AIs)
+# ============================================================
+# COMPLETE LIST OF ALLOWED PLATFORMS (2025):
+# ============================================================
 #
-# Last AI crawler check: 2025-01-13
-# Next review: 2025-04-13 (quarterly review recommended)
+# TRADITIONAL SEARCH ENGINES:
+# ✅ Google (Googlebot)
+# ✅ Bing (Bingbot)
+# ✅ Yandex
+# ✅ DuckDuckGo
+# ✅ Yahoo
+# ✅ Baidu
+#
+# AI SEARCH ENGINES & CHATBOTS:
+# ✅ ChatGPT / SearchGPT (OpenAI) - 200M+ users
+# ✅ Claude (Anthropic)
+# ✅ Perplexity AI - 50M+ users, fastest growing
+# ✅ Google AI (Gemini, AI Overview) - billions of users
+# ✅ Meta AI (Facebook/Instagram/WhatsApp) - 3B+ users
+# ✅ Grok / xAI (Twitter/X) - 500M+ users ⚠️ NEW 2025
+# ✅ Apple Intelligence (Siri AI) - 2B+ devices
+# ✅ Bing Copilot (Microsoft) - 100M+ users
+# ✅ Amazon Alexa - 500M+ devices ⚠️ VOICE SEARCH
+# ✅ You.com - 10M+ users
+#
+# INDEPENDENT & PRIVACY SEARCH:
+# ✅ Brave Search - 50M+ users
+# ✅ Kagi - Premium search
+# ✅ Mojeek - Independent index
+# ✅ Yep (Ahrefs) - SEO-focused
+#
+# AI PLATFORMS & TOOLS:
+# ✅ Cohere AI
+# ✅ Hugging Face
+# ✅ Inflection AI (Pi assistant)
+# ✅ Character.AI - 20M+ users
+# ✅ Mistral AI (European leader)
+# ✅ Quora / Poe (multi-LLM)
+# ✅ Common Crawl (AI training data)
+# ✅ AI2 (Allen Institute)
+# ✅ Diffbot (AI data extraction)
+#
+# SOCIAL MEDIA CRAWLERS:
+# ✅ Twitter/X (Twitterbot)
+# ✅ LinkedIn
+# ✅ Pinterest
+# ✅ Telegram
+# ✅ Slack
+# ✅ WhatsApp
+#
+# Total platforms allowed: 40+
+# Last updated: 2025-10-19
+# Next review: 2026-01-19 (quarterly review recommended)
 # ============================================================
