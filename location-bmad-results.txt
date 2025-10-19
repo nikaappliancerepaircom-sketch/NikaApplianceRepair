@@ -1,0 +1,114 @@
+============================================================
+BMAD Batch Auto-Fix - All Location Pages
+============================================================
+
+Found 32 location pages
+
+============================================================
+
+[1/32] Testing: ajax.html
+  ✓ PASS - Tier 1: 100/100
+
+[2/32] Testing: aurora.html
+  ✓ PASS - Tier 1: 100/100
+
+[3/32] Testing: bradford.html
+  ✓ PASS - Tier 1: 100/100
+
+[4/32] Testing: brampton.html
+  ✓ PASS - Tier 1: 100/100
+
+[5/32] Testing: brock.html
+  ✓ PASS - Tier 1: 100/100
+
+[6/32] Testing: burlington.html
+  ✓ PASS - Tier 1: 100/100
+
+[7/32] Testing: caledon.html
+  ✓ PASS - Tier 1: 100/100
+
+[8/32] Testing: clarington.html
+  ✓ PASS - Tier 1: 100/100
+
+[9/32] Testing: east-gwillimbury.html
+  ✓ PASS - Tier 1: 100/100
+
+[10/32] Testing: etobicoke.html
+  ✓ PASS - Tier 1: 100/100
+
+[11/32] Testing: georgina.html
+  ✓ PASS - Tier 1: 100/100
+
+[12/32] Testing: halton-hills.html
+  ✓ PASS - Tier 1: 100/100
+
+[13/32] Testing: innisfil.html
+  ✓ PASS - Tier 1: 100/100
+
+[14/32] Testing: king.html
+  ✓ PASS - Tier 1: 100/100
+
+[15/32] Testing: markham.html
+  ✓ PASS - Tier 1: 100/100
+
+[16/32] Testing: milton.html
+  ✓ PASS - Tier 1: 100/100
+
+[17/32] Testing: mississauga.html
+  ✓ PASS - Tier 1: 100/100
+
+[18/32] Testing: mono.html
+  ✓ PASS - Tier 1: 100/100
+
+[19/32] Testing: newmarket.html
+  ✓ PASS - Tier 1: 100/100
+
+[20/32] Testing: north-york.html
+  ✓ PASS - Tier 1: 100/100
+
+[21/32] Testing: oakville.html
+  ✓ PASS - Tier 1: 100/100
+
+[22/32] Testing: orangeville.html
+  ✓ PASS - Tier 1: 100/100
+
+[23/32] Testing: oshawa.html
+  ✓ PASS - Tier 1: 100/100
+
+[24/32] Testing: pickering.html
+  ✓ PASS - Tier 1: 100/100
+
+[25/32] Testing: richmond-hill.html
+  ✓ PASS - Tier 1: 100/100
+
+[26/32] Testing: scarborough.html
+  ✓ PASS - Tier 1: 100/100
+
+[27/32] Testing: scugog.html
+  ✓ PASS - Tier 1: 100/100
+
+[28/32] Testing: stouffville.html
+  ✓ PASS - Tier 1: 100/100
+
+[29/32] Testing: toronto.html
+  ✓ PASS - Tier 1: 100/100
+
+[30/32] Testing: uxbridge.html
+  ✓ PASS - Tier 1: 100/100
+
+[31/32] Testing: vaughan.html
+  ✓ PASS - Tier 1: 100/100
+
+[32/32] Testing: whitby.html
+  ✓ PASS - Tier 1: 100/100
+
+============================================================
+SUMMARY
+============================================================
+
+✓ Passed Tier 1 (100/100): 32/32
+✗ Failed/Warned: 0/32
+
+============================================================
+✓ Batch auto-fix complete!
+============================================================

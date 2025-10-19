@@ -1,0 +1,1697 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert appliance repair in North York. Serving Willowdale, Don Mills, Sheppard & all areas. Same-day service. Licensed & insured. 90-day warranty. Call now!">
+    <title>North York Appliance Repair | Same-Day Fix | <a href="tel:437-747-6737">437-747-6737</a></title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nikaappliancerepair.com/locations/north-york">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nika Appliance Repair North York | Same-Day Service">
+    <meta property="og:description" content="North York appliance repair. Multicultural cooking specialists. High-rise experts. Same-day service. Call 437-747-6737">
+    <meta property="og:url" content="https://nikaappliancerepair.com/locations/north-york">
+    <meta property="og:image" content="https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nika Appliance Repair North York | Same-Day Service">
+    <meta name="twitter:description" content="North York appliance repair. Multicultural cooking specialists. High-rise experts. Same-day service.">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nika Appliance Repair",
+        "image": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+        "logo": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+        "url": "https://nikaappliancerepair.com/",
+        "telephone": "437-747-6737",
+        "email": "care@niappliancerepair.ca",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "North York",
+            "addressLocality": "North York",
+            "addressRegion": "ON",
+            "postalCode": "M2N",
+            "addressCountry": "CA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "43.7615",
+            "longitude": "-79.4111"
+        },
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "5200",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "North York"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Willowdale"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Don Mills"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Sheppard"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "York Mills"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Bayview Village"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Thornhill"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Bathurst Manor"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Flemingdon Park"
+            }
+        ],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "17:00"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Appliance Repair Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Refrigerator Repair",
+                        "url": "https://nikaappliancerepair.com/services/refrigerator-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dishwasher Repair",
+                        "url": "https://nikaappliancerepair.com/services/dishwasher-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Washer Repair",
+                        "url": "https://nikaappliancerepair.com/services/washer-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dryer Repair",
+                        "url": "https://nikaappliancerepair.com/services/dryer-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Oven Repair",
+                        "url": "https://nikaappliancerepair.com/services/oven-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Stove Repair",
+                        "url": "https://nikaappliancerepair.com/services/stove-repair"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Do you service all North York neighborhoods including Willowdale, Don Mills, and Sheppard?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes - complete North York coverage! Willowdale (M2N, M2M, M2L, M2R), Don Mills (M3B, M3C, M3A), Sheppard (M2J, M2K), York Mills, Bayview Village, Thornhill, Bathurst Manor (M3H, M3J, M3K, M3L, M3M, M3N), Flemingdon Park (M2P, M2H). Fast response to all postal codes. Expert service for North York's diverse 672,000 population."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you repair specialty cooking appliances used in Persian, Chinese, and Korean cuisine?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes - multicultural cooking appliance experts! We repair rice cookers, steamers, wok ranges, kimchi refrigerators, Persian tahdig equipment, tandoor ovens, and specialized cooking equipment from brands like Cuckoo, Zojirushi, Tiger, Midea, and Haier. Understanding of high-heat cooking requirements. Service: $180-$450."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you service high-rise condos and apartment buildings in North York?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes - high-rise specialists! Experienced with condo board restrictions, building access coordination, freight elevator scheduling, compact appliances (18-24 inches), and older apartment infrastructure. We handle Yonge-Sheppard corridor towers, Don Mills condos, and all North York high-rises. Building insurance compliant."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does appliance repair cost in North York?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "24.9  starNorth York pricing: Standard repairs $150-$450. Specialty equipment: Multicultural appliances $180-$450, High-rise service $200-$400, Multi-generational home heavy usage repairs $220-$380. Includes diagnostic, parts, 90-day warranty. Emergency service: +$75-150. Free service call with completed repair."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do you handle Yonge and Sheppard area service calls?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Fast response to Yonge-Sheppard hub! Same-day service available. Familiar with Empress Walk, Centerpoint Mall area, TTC accessible locations, and high-rise buildings. Parking coordination included. Call <a href="tel:437-747-6737">437-747-6737</a> before 2 PM for same-day service or book online."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-refrigerator.svg",
+                "name": "Refrigerator Repair Service Icon",
+                "description": "Professional refrigerator repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-dishwasher.svg",
+                "name": "Dishwasher Repair Service Icon",
+                "description": "Expert dishwasher repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-dryer.svg",
+                "name": "Dryer Repair Service Icon",
+                "description": "Fast dryer repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-stove.svg",
+                "name": "Stove Repair Service Icon",
+                "description": "Professional stove repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-oven.svg",
+                "name": "Oven Repair Service Icon",
+                "description": "Expert oven repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-washer.svg",
+                "name": "Washing Machine Repair Service Icon",
+                "description": "Professional washer repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+                "name": "Professional Service Technician",
+                "description": "Expert appliance repair technician in North York"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-freezer.svg",
+                "name": "Freezer Repair Service Icon",
+                "description": "Quick freezer repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-range.svg",
+                "name": "Range Repair Service Icon",
+                "description": "Professional range repair services"
+            }
+        ]
+    }
+    </script>
+
+    <!-- AI SEARCH OPTIMIZATION - Speakable Schema for Voice Assistants -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Nika Appliance Repair - Same-Day Service in North York",
+        "description": "Expert appliance repair in North York. Multicultural cooking specialists. High-rise experts. Serving all neighborhoods. Same-day service. Call <a href="tel:437-747-6737">437-747-6737</a>.",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".hero-title", ".section-title", ".faq-question", ".section-subtitle"]
+        },
+        "mainEntity": {
+            "@type": "Service",
+            "name": "Appliance Repair Service",
+            "description": "Professional appliance repair services in North York with same-day availability and 90-day warranty",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Nika Appliance Repair"
+            }
+        }
+    }
+    </script>
+
+    <!-- AI SEARCH OPTIMIZATION - HowTo Schema for Step-by-Step Process -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Get Your Appliance Repaired in North York",
+        "description": "Simple 3-step process to get professional appliance repair service from Nika Appliance Repair in North York",
+        "totalTime": "PT2H",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "CAD",
+            "value": "150"
+        },
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Book Service",
+                "text": "Call <a href="tel:437-747-6737">437-747-6737</a> or book online. We'll schedule same-day service when possible.",
+                "url": "https://nikaappliancerepair.com/#book",
+                "position": 1
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Expert Diagnosis",
+                "text": "Our certified technician arrives on time and diagnoses the issue with your appliance.",
+                "position": 2
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Fast Repair",
+                "text": "We fix it right the first time with genuine OEM parts and provide a 90-day warranty on all repairs.",
+                "position": 3
+            }
+        ]
+    }
+    </script>
+
+    <!-- SEO Images - Hidden but indexed by search engines -->
+    <div style="display:none;" aria-hidden="true">
+        <img src="https://nikaappliancerepair.com/service-icon-refrigerator.svg" alt="Refrigerator Repair Icon North York" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-dishwasher.svg" alt="Dishwasher Repair Icon North York" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-dryer.svg" alt="Dryer Repair Icon North York" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-stove.svg" alt="Stove Repair Icon North York" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-oven.svg" alt="Oven Repair Icon North York" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-washer.svg" alt="Washer Repair Icon North York" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-freezer.svg" alt="Freezer Repair Icon North York" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-range.svg" alt="Range Repair Icon North York" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp" alt="North York Appliance Repair Technician" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-cooktop.svg" alt="Cooktop Repair North York" width="1" height="1" loading="lazy">
+    </div>
+
+    <link rel="stylesheet" href="../css/hero-image-mobile-fix.css">
+
+    <!-- RESPONSIVE TYPOGRAPHY SYSTEM -->
+    <style>
+        /* ========== NEW HEADER V2 STYLES ========== */
+
+        /* Urgency Banner */
+        .urgency-banner {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            color: white;
+            padding: 12px 0;
+            position: relative;
+            z-index: 1001;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .urgency-banner .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .urgency-text {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            flex: 1;
+        }
+        .urgency-text strong {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .urgency-link {
+            color: white;
+            text-decoration: underline;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+        .urgency-close {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 1;
+            opacity: 0.8;
+            transition: opacity 4.9  startar;
+        }
+        .urgency-close:hover {
+            opacity: 1;
+        }
+
+        /* Main Header V2 */
+        .main-header-v2 {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        .header-content-v2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        /* Logo V2 */
+        .logo-v2 {
+            flex-shrink: 0;
+        }
+        .logo-text-v2 {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .logo-primary-v2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #2196F3;
+            letter-spacing: 1px;
+        }
+        .logo-secondary-v2 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+        }
+
+        /* Navigation V2 */
+        .main-nav-v2 ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        .main-nav-v2 a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 4.9  startar;
+        }
+        .main-nav-v2 a:hover {
+            color: #2196F3;
+        }
+        .nav-dropdown {
+            position: relative;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            padding: 10px 0;
+            min-width: 220px;
+            z-index: 1002;
+            margin-top: 10px;
+        }
+        .nav-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin: 0;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #333;
+        }
+        .dropdown-menu a:hover {
+            background: #f5f5f5;
+            color: #2196F3;
+        }
+
+        /* Header CTAs V2 */
+        .header-ctas-v2 {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        .header-cta-call,
+        .header-cta-chat,
+        .header-cta-book {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 4.9  startar;
+            white-space: nowrap;
+        }
+        .header-cta-call {
+            background: #4CAF50;
+            color: white;
+            border: 2px solid #4CAF50;
+        }
+        .header-cta-call:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(76,175,80,0.3);
+        }
+        .header-cta-chat {
+            background: #25D366;
+            color: white;
+            border: 2px solid #25D366;
+        }
+        .header-cta-chat:hover {
+            background: #20bd5a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37,211,102,0.3);
+        }
+        .header-cta-book {
+            background: #2196F3;
+            color: white;
+            border: 2px solid #2196F3;
+        }
+        .header-cta-book:hover {
+            background: #1976D2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(33,150,243,0.3);
+        }
+
+        /* Mobile Menu Toggle V2 */
+        .mobile-menu-toggle-v2 {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        .mobile-menu-toggle-v2 span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            border-radius: 2px;
+            transition: all 4.9  startar;
+        }
+
+        /* Mobile Sticky Bottom Bar */
+        .mobile-sticky-bottom {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 999;
+            padding: 10px;
+        }
+        .mobile-sticky-bottom {
+            display: none;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+        }
+        .mobile-cta-call,
+        .mobile-cta-chat,
+        .mobile-cta-book {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 12px 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 4.9  startar;
+        }
+        .mobile-cta-call {
+            background: #4CAF50;
+            color: white;
+        }
+        .mobile-cta-chat {
+            background: #25D366;
+            color: white;
+        }
+        .mobile-cta-book {
+            background: #2196F3;
+            color: white;
+        }
+        .mobile-cta-call:active,
+        .mobile-cta-chat:active,
+        .mobile-cta-book:active {
+            transform: scale(0.95);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .main-nav-v2,
+            .header-ctas-v2 {
+                display: none;
+            }
+            .mobile-menu-toggle-v2 {
+                display: flex;
+            }
+            .mobile-sticky-bottom {
+                display: grid;
+            }
+            .urgency-text {
+                font-size: 14px;
+            }
+            .urgency-text strong {
+                font-size: 16px;
+            }
+            body {
+                padding-bottom: 70px; /* Space for sticky bottom bar */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content-v2 {
+                gap: 15px;
+            }
+            .logo-primary-v2 {
+                font-size: 24px;
+            }
+            .logo-secondary-v2 {
+                font-size: 12px;
+            }
+            .urgency-text {
+                font-size: 13px;
+            }
+            .urgency-link {
+                display: block;
+                margin-left: 0;
+                margin-top: 5px;
+            }
+        }
+
+        /* Fluid typography using clamp() for responsive scaling */
+        * { overflow-x: hidden !important; max-width: 100% !important; }
+        body { line-height: 1.6; overflow-x: hidden; }
+        h1 { font-size: clamp(1.75rem, 4vw + 1rem, 3rem); line-height: 1.3; }
+        h2 { font-size: clamp(4.9  startarem, 3vw + 4.9  starem, 2.25rem); line-height: 1.4; }
+        h3 { font-size: clamp(1.25rem, 2.5vw + 4.9  starem, 1.75rem); line-height: 1.5; }
+        p { font-size: clamp(0.875rem, 1vw + 0.25rem, 1.4.9  startarem); line-height: 1.7; }
+        .hero-title { font-size: clamp(2rem, 5vw + 1rem, 4.9  startarem); line-height: 1.2; }
+        a:hover { opacity: 0.85; transition: opacity 4.9  startar; }
+        a:focus { outline: 2px solid #2196F3; outline-offset: 2px; }
+        button:hover { opacity: 0.9; transition: opacity 4.9  startar; }
+        button:focus { outline: 2px solid #2196F3; outline-offset: 2px; }
+        .cta-primary { background: #2196F3; color: white; }
+        .cta-secondary { background: #7B1FA2; color: white; }
+        .highlight-yellow { color: #FDD835; }
+
+        /* Mobile icon centering - all icons should be centered on mobile */
+        @media (max-width: 768px) {
+            .mobile-optimize { display: block; }
+
+            /* Center all icon elements on mobile */
+            .service-icon,
+            .problem-icon,
+            .benefit-icon,
+            .toronto-icon,
+            .service-card .service-icon,
+            .problem-card .problem-icon,
+            .benefit-card .benefit-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            /* Center service cards and their content on mobile */
+            .service-card,
+            .problem-card,
+            .benefit-card {
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Preload Critical CSS for Performance (PageSpeed Optimization) -->
+    <link rel="preload" href="../css/responsive-comprehensive.css" as="style">
+    <link rel="preload" href="../css/mobile-bmad-typography.css" as="style">
+    <link rel="preload" href="../css/no-scrollbars-fix.css" as="style">
+    <link rel="preload" href="../css/combined-fixes.css" as="style">
+    <link rel="preload" href="../css/mobile-overflow-fix.css" as="style">
+    <link rel="preload" href="../css/video-modern.css" as="style">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Design System - MUST BE FIRST -->
+    <link rel="stylesheet" href="../css/design-system.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Modern Sections -->
+    <link rel="stylesheet" href="../css/video-modern.css">
+    <link rel="stylesheet" href="../css/how-it-works-modern.css">
+    <link rel="stylesheet" href="../css/about-redesign.css">
+    <!-- Responsive Design -->
+    <link rel="stylesheet" href="../css/responsive-comprehensive.css">
+    <link rel="stylesheet" href="../css/desktop-tablet-optimization.css">
+    <link rel="stylesheet" href="../css/mobile-strict-fix.css">
+    <link rel="stylesheet" href="../css/mobile-overflow-fix.css">
+    <link rel="stylesheet" href="../css/mobile-bmad-typography.css">
+    <!-- Premium Sections -->
+    <link rel="stylesheet" href="../css/common-problems-premium.css">
+    <link rel="stylesheet" href="../css/brands-premium.css">
+    <link rel="stylesheet" href="../css/areas-premium.css">
+    <!-- Performance & Accessibility -->
+    <link rel="stylesheet" href="../css/lighthouse-fixes.css">
+    <link rel="stylesheet" href="../css/no-scrollbars-fix.css">
+    <!-- Combined Fixes (includes color-contrast, youtube-facade, typography, centering, etc.) -->
+    <link rel="stylesheet" href="../css/combined-fixes.css">
+    <!-- Countdown Timer Horizontal Layout -->
+    <link rel="stylesheet" href="../css/countdown-horizontal.css">
+    <!-- CTA Buttons (BMAD Method Optimized - 6 CTA buttons) -->
+    <link rel="stylesheet" href="../css/cta-buttons.css">
+    <!-- Booking Form Optimization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://nikaappliancerepair.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://nikaappliancerepair.com/#areas"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "North York",
+                "item": "https://nikaappliancerepair.com/locations/north-york"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-container">
+            <!-- Logo & Brand -->
+            <div class="header-logo">
+                <a href="/" aria-label="Nika Appliance Repair - Home">
+                    <div class="logo-icon">🔧</div>
+                    <div class="logo-text">
+                        <span class="logo-name">NIKA</span>
+                        <span class="logo-tagline">Appliance Repair</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Trust Badge (Desktop Only) -->
+            <div class="header-trust" aria-label="Customer rating">
+                <div class="trust-stars">⭐⭐⭐⭐⭐</div>
+                <div class="trust-rating">4.9  star<span class="trust-reviews">(5,200+)</span></div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="header-cta">
+                <a href="tel:437-747-6737" class="cta-phone" aria-label="Call us at 437-747-6737">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+                    </svg>
+                    <span class="cta-phone-number"><a href="tel:437-747-6737">(437) 747-6737</a></span>
+                </a>
+                <a href="/book" class="cta-book" aria-label="Book an appointment online">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 4.9  startar2h14c4.9  startar0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                    <span>Book Now</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" onclick="toggleMenu()">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sticky Bottom CTA -->
+    <div class="mobile-bottom-cta" role="complementary" aria-label="Quick actions">
+        <a href="tel:437-747-6737" class="mobile-cta-btn mobile-cta-call">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+            </svg>
+            <span>Call Now</span>
+        </a>
+        <a href="/book" class="mobile-cta-btn mobile-cta-book">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 4.9  startar2h14c4.9  startar0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+            <span>Book Online</span>
+        </a>
+    </div>
+
+    <style>
+    /* ========== SEO-OPTIMIZED HEADER STYLES ========== */
+
+    /* Header Container */
+    .site-header {
+        background: #ffffff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .header-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    /* Logo */
+    .header-logo a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .logo-icon {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+    }
+
+    .logo-name {
+        font-size: 24px;
+        font-weight: 800;
+        color: #2196F3;
+        letter-spacing: 0.5px;
+    }
+
+    .logo-tagline {
+        font-size: 12px;
+        font-weight: 500;
+        color: #666;
+    }
+
+    /* Navigation */
+    .header-nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 15px;
+        transition: color 4.9  star;
+        white-space: nowrap;
+    }
+
+    .nav-link:hover {
+        color: #2196F3;
+    }
+
+    /* Trust Badge */
+    .header-trust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 0 16px;
+        border-left: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    .trust-stars {
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+
+    .trust-rating {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .trust-reviews {
+        font-size: 11px;
+        font-weight: 400;
+        color: #666;
+    }
+
+    /* CTA Buttons */
+    .header-cta {
+        display: flex;
+        gap: 10px;
+    }
+
+    .cta-phone,
+    .cta-book {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        transition: all 4.9  star;
+        white-space: nowrap;
+    }
+
+    .cta-phone {
+        background: #4CAF50;
+        color: white;
+    }
+
+    .cta-phone:hover {
+        background: #45a049;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(76,175,80,0.3);
+    }
+
+    .cta-book {
+        background: #2196F3;
+        color: white;
+    }
+
+    .cta-book:hover {
+        background: #1976D2;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(33,150,243,0.3);
+    }
+
+    /* Mobile Menu Button */
+    .mobile-menu-btn {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    .menu-bar {
+        width: 26px;
+        height: 3px;
+        background: #333;
+        border-radius: 2px;
+        transition: all 4.9  startar;
+    }
+
+    /* Mobile Bottom CTA */
+    .mobile-bottom-cta {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        z-index: 999;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .mobile-cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        transition: all 4.9  star;
+    }
+
+    .mobile-cta-call {
+        background: #4CAF50;
+        color: white;
+    }
+
+    .mobile-cta-book {
+        background: #2196F3;
+        color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+        .header-nav,
+        .header-trust,
+        .header-cta {
+            display: none;
+        }
+        .mobile-menu-btn {
+            display: flex;
+        }
+        .mobile-bottom-cta {
+            display: grid;
+        }
+        body {
+            padding-bottom: 70px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header-container {
+            padding: 10px 15px;
+        }
+        .logo-icon {
+            font-size: 28px;
+        }
+        .logo-name {
+            font-size: 20px;
+        }
+        .logo-tagline {
+            font-size: 11px;
+        }
+    }
+
+    /* Accessibility */
+    .skip-to-content {
+        position: absolute;
+        left: -9999px;
+        z-index: 999;
+        padding: 1em;
+        background-color: #2196F3;
+        color: white;
+        text-decoration: none;
+    }
+
+    .skip-to-content:focus {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+    }
+    </style>
+
+    <section class="hero-section" id="main-content">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="highlight-yellow">North York</span><br>Appliance <span class="highlight-yellow">Repair</span><br>Professional Service<br><span class="wow-text">Save $40 Today!</span>
+                    </h1>
+                    <p class="hero-subtitle">⭐ 4.9/5 from 5,200+ repairs • Multicultural cooking specialists • High-rise experts • Serving all North York neighborhoods • Same-day service available</p>
+                    <div class="hero-cta-group">
+                        <a href="../#book" class="cta-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 4.9  startar2h14c4.9  startar0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                            </svg>
+                            Book Service Now
+                        </a>
+                        <a href="tel:437-747-6737" class="cta-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+                            </svg>
+                            Call <a href="tel:437-747-6737">437-747-6737</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/images/friendly-technician-character-min.webp" alt="Professional Service Technician" fetchpriority="high" width="800" height="1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI SEARCH OPTIMIZATION: Direct Answer Box -->
+    <section class="ai-answer-box" style="background: #f8f9fa; padding: 2rem 0; margin: 2rem 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <div style="background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #2196F3;">
+
+                <!-- Question Format (AI crawlers look for questions) -->
+                <h2 style="font-size: 4.9  startarem; color: #212529; margin-bottom: 1rem;">
+                    Looking for reliable appliance repair in North York?
+                </h2>
+
+                <!-- Direct Answer (First 100 words = AI citation) -->
+                <p style="font-size: 4.9  startarem; line-height: 1.7; color: #212529; margin-bottom: 4.9  startarem;">
+                    <strong>Nika Appliance Repair</strong> provides same-day residential appliance repair across all North York neighborhoods. We fix Samsung, LG, Whirlpool, GE, and all major brands. Multicultural cooking appliance experts serving North York's diverse 672,000 population. High-rise specialists with building access coordination. <strong>90-day warranty</strong> on all repairs. <strong>Licensed technicians.</strong> <strong>4.9★ rating</strong> from 5,200+ customers. Call <a href="tel:437-747-6737" style="color: #2196F3; font-weight: bold; text-decoration: none;">437-747-6737</a> for fast service in North York.
+                </p>
+
+                <!-- Structured Data (AI loves lists) -->
+                <div style="background: #f8f9fa; padding: 4.9  startarem; border-radius: 6px;">
+                    <p style="font-weight: bold; margin-bottom: 0.75rem;">Service Details:</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+                        <li>✓ <strong>Service:</strong> Refrigerator, dishwasher, dryer, stove, oven, washing machine</li>
+                        <li>✓ <strong>Brands:</strong> Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, Maytag, Frigidaire, Cuckoo, Zojirushi</li>
+                        <li>✓ <strong>Response:</strong> Same-day service available 7 days/week in North York</li>
+                        <li>✓ <strong>Warranty:</strong> 90-day parts & labor warranty</li>
+                        <li>✓ <strong>Pricing:</strong> $150-$450 average repair (transparent, no hidden fees)</li>
+                        <li>✓ <strong>Rating:</strong> 4.9★ from 5,200+ customers</li>
+                    </ul>
+                </div>
+
+                <!-- North York specific details -->
+                <p style="margin-top: 4.9  startarem; font-size: 0.95rem; color: #6c757d;">
+                    <strong>North York expertise:</strong> Specialty cooking appliances for Persian, Chinese, Korean cuisine. High-rise condo service (18-24" compact appliances). All neighborhoods: Willowdale, Don Mills, Sheppard, York Mills, Bayview Village, Thornhill, Bathurst Manor, Flemingdon Park. All postal codes: M2H, M2J, M2K, M2L, M2M, M2N, M2P, M2R, M3A, M3B, M3C, M3H, M3J, M3K, M3L, M3M, M3N.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- AI SEARCH OPTIMIZATION: Pricing Comparison Table -->
+    <section class="pricing-table-section" style="background: white; padding: 3rem 0;">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 4.9  startarem; color: #212529; margin-bottom: 1rem;">How Much Does Appliance Repair Cost in North York?</h2>
+            <p style="text-align: center; color: #6c757d; margin-bottom: 2rem;">Transparent pricing for residential appliances - Updated 2025</p>
+
+            <!-- Desktop Table View -->
+            <div class="pricing-table-desktop" style="overflow-x: auto; display: block; max-width: 100%;">
+                <table style="width: 100%; min-width: 700px; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; table-layout: auto;">
+                    <caption style="caption-side: top; text-align: left; padding: 1rem; font-size: 4.9  starem; color: #6c757d; font-weight: normal;">Nika Appliance Repair Transparent Pricing Guide (2025)</caption>
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); color: white;">
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Appliance Type</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Common Issues</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Average Cost</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Repair Time</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Warranty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Refrigerator</td>
+                            <td style="padding: 1rem; color: #495057;">Not cooling, freezer issues, leaking</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$200-$400</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Washing Machine</td>
+                            <td style="padding: 1rem; color: #495057;">Won't drain, noisy, won't spin</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$150-$350</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Dryer</td>
+                            <td style="padding: 1rem; color: #495057;">Not heating, won't start, noisy</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$180-$380</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Dishwasher</td>
+                            <td style="padding: 1rem; color: #495057;">Won't drain, not cleaning, leaking</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$180-$350</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Oven/Stove</td>
+                            <td style="padding: 1rem; color: #495057;">Not heating, burner issues, error codes</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$200-$450</td>
+                            <td style="padding: 1rem; color: #495057;">1-3 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Specialty Cooking</td>
+                            <td style="padding: 1rem; color: #495057;">Rice cooker, steamer, kimchi fridge</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$180-$450</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Mobile Card View -->
+            <div class="pricing-cards-mobile" style="display: none;">
+                <div class="pricing-card" style="background: white; border: 1px solid #e9ecef; border-radius: 8px; padding: 4.9  startarem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <h3 style="color: #2196F3; font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600;">Refrigerator</h3>
+                    <p style="color: #495057; margin-bottom: 0.75rem;"><strong>Issues:</strong> Not cooling, freezer issues, leaking</p>
+                    <p style="color: #28a745; font-size: 1.25rem; font-weight: 700; margin-bottom: 4.9  starem;">$200-$400</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem; margin-bottom: 0.25rem;">⏱️ 1-2 hours • 🛡️ 90-day warranty</p>
+                </div>
+                <div class="pricing-card" style="background: white; border: 1px solid #e9ecef; border-radius: 8px; padding: 4.9  startarem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <h3 style="color: #2196F3; font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600;">Washing Machine</h3>
+                    <p style="color: #495057; margin-bottom: 0.75rem;"><strong>Issues:</strong> Won't drain, noisy, won't spin</p>
+                    <p style="color: #28a745; font-size: 1.25rem; font-weight: 700; margin-bottom: 4.9  starem;">$150-$350</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem; margin-bottom: 0.25rem;">⏱️ 1-2 hours • 🛡️ 90-day warranty</p>
+                </div>
+                <div class="pricing-card" style="background: white; border: 1px solid #e9ecef; border-radius: 8px; padding: 4.9  startarem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <h3 style="color: #2196F3; font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600;">Dryer</h3>
+                    <p style="color: #495057; margin-bottom: 0.75rem;"><strong>Issues:</strong> Not heating, won't start, noisy</p>
+                    <p style="color: #28a745; font-size: 1.25rem; font-weight: 700; margin-bottom: 4.9  starem;">$180-$380</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem; margin-bottom: 0.25rem;">⏱️ 1-2 hours • 🛡️ 90-day warranty</p>
+                </div>
+                <div class="pricing-card" style="background: white; border: 1px solid #e9ecef; border-radius: 8px; padding: 4.9  startarem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <h3 style="color: #2196F3; font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600;">Dishwasher</h3>
+                    <p style="color: #495057; margin-bottom: 0.75rem;"><strong>Issues:</strong> Won't drain, not cleaning, leaking</p>
+                    <p style="color: #28a745; font-size: 1.25rem; font-weight: 700; margin-bottom: 4.9  starem;">$180-$350</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem; margin-bottom: 0.25rem;">⏱️ 1-2 hours • 🛡️ 90-day warranty</p>
+                </div>
+                <div class="pricing-card" style="background: white; border: 1px solid #e9ecef; border-radius: 8px; padding: 4.9  startarem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <h3 style="color: #2196F3; font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600;">Oven/Stove</h3>
+                    <p style="color: #495057; margin-bottom: 0.75rem;"><strong>Issues:</strong> Not heating, burner issues, error codes</p>
+                    <p style="color: #28a745; font-size: 1.25rem; font-weight: 700; margin-bottom: 4.9  starem;">$200-$450</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem; margin-bottom: 0.25rem;">⏱️ 1-3 hours • 🛡️ 90-day warranty</p>
+                </div>
+                <div class="pricing-card" style="background: white; border: 1px solid #e9ecef; border-radius: 8px; padding: 4.9  startarem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <h3 style="color: #2196F3; font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600;">Specialty Cooking</h3>
+                    <p style="color: #495057; margin-bottom: 0.75rem;"><strong>Issues:</strong> Rice cooker, steamer, kimchi fridge</p>
+                    <p style="color: #28a745; font-size: 1.25rem; font-weight: 700; margin-bottom: 4.9  starem;">$180-$450</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem; margin-bottom: 0.25rem;">⏱️ 1-2 hours • 🛡️ 90-day warranty</p>
+                </div>
+            </div>
+
+            <style>
+                @media (max-width: 768px) {
+                    .pricing-table-desktop {
+                        display: none !important;
+                    }
+                    .pricing-cards-mobile {
+                        display: block !important;
+                    }
+                }
+            </style>
+
+            <div style="text-align: center; margin-top: 2rem; padding: 4.9  startarem; background: #f8f9fa; border-radius: 8px;">
+                <p style="margin-bottom: 1rem; color: #495057; font-size: 1rem;"><strong>What's included:</strong> Diagnostic fee, labor, parts, 90-day warranty, same-day service (when available)</p>
+                <p style="color: #6c757d; font-size: 0.95rem; margin-bottom: 1rem;">📞 <strong>Free consultation:</strong> Call <a href="tel:437-747-6737" style="color: #2196F3; text-decoration: none; font-weight: 600;">437-747-6737</a> for accurate quote</p>
+                <a href="../#book" class="cta-primary" style="display: inline-block; background: #2196F3; color: white; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 4.9  startar;">Book Your Repair Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems Section - Premium Design -->
+    <section class="common-problems-premium">
+        <div class="container">
+            <div class="problems-header">
+                <span class="problems-badge">NORTH YORK-SPECIFIC ISSUES</span>
+                <h2>What Are the Top 5 Appliance Problems in North York?</h2>
+                <p class="section-subtitle">Serving 672,000 residents across Willowdale, Don Mills, Sheppard, York Mills, Bayview Village, Thornhill, Bathurst Manor, and Flemingdon Park. Expert solutions for North York's unique challenges.</p>
+            </div>
+
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">🥘</div>
+                    <h3>How Do You Repair Specialty Cooking Appliances for Persian, Chinese, and Korean Cuisine in North York?</h3>
+                    <p><strong>North York Challenge:</strong> North York is home to one of Canada's most diverse communities with significant Persian, Chinese, and Korean populations. Families rely on specialty cooking equipment like rice cookers, pressure cookers, steamers, kimchi refrigerators, Persian tahdig pots, and wok ranges. When these appliances fail, traditional meals are impossible to prepare, causing significant stress for multi-generational households. <strong>What Causes Failures:</strong> Heavy daily use, high-heat cooking methods, hard water buildup in steamers, specialized electrical requirements (220V vs 110V), and difficulty sourcing parts for international brands. <strong>How We Fix It:</strong> We repair all specialty cooking appliances including Cuckoo, Zojirushi, Tiger, Midea, Haier, and Korean/Chinese brands. Understanding of cultural cooking requirements, sourcing of international parts, expertise with high-BTU burners and pressure cooking systems. <strong>Cost: $180-$450.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">🏢</div>
+                    <h3>How Do You Handle High-Rise Appliance Repair and Delivery Challenges in North York Condos?</h3>
+                    <p><strong>North York Challenge:</strong> North York's Yonge-Sheppard corridor and surrounding areas have hundreds of high-rise condo towers. Repairs face unique obstacles: strict building access rules, freight elevator scheduling (often only 9-11 AM or 6-8 PM), condo board insurance requirements, narrow hallways, compact appliances (18-24 inches), and parking coordination. Many technicians refuse high-rise service due to these complexities. <strong>What Causes Delays:</strong> Building access procedures, insurance verification, elevator booking conflicts, and specialized equipment for compact European appliances. <strong>Our Solution:</strong> Experienced with all North York condo buildings, pre-coordination with property management, building insurance compliant, equipment for compact appliances, flexible scheduling for elevator times, and patient service for older residents. <strong>Typical Cost: $200-$400 including building access time.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">⚡</div>
+                    <h3>What Are the Electrical Capacity Issues in North York's Older Apartment Buildings?</h3>
+                    <p><strong>North York Challenge:</strong> Many North York apartment buildings in Bathurst Manor, Flemingdon Park, and Don Mills were built in the 1960s-1970s with limited electrical capacity (60-100 amps vs modern 200 amps). When residents add modern appliances like air conditioners, dishwashers, or electric ranges, circuits overload causing breakers to trip, appliances to malfunction, or damage from power fluctuations. Landlords are often slow to upgrade electrical systems. <strong>What Causes Problems:</strong> Undersized electrical panels, aluminum wiring, shared circuits, voltage drops, and multiple high-draw appliances on one circuit. <strong>How We Help:</strong> Electrical load assessment, appliance power consumption testing, recommendations for circuit upgrades, surge protection installation, and working with landlords/electricians for solutions. We repair appliances damaged by electrical issues. <strong>Repairs: $150-$380, Electrical upgrades require licensed electrician.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">👨‍👩‍👧‍👦</div>
+                    <h3>How Do Multi-Generational Homes in North York Cause Heavy Appliance Usage and Premature Failures?</h3>
+                    <p><strong>North York Challenge:</strong> North York has one of the highest rates of multi-generational households in the GTA. Homes with 6-10 people cause extreme appliance stress: refrigerators opened 50+ times daily, washers running 2-3 loads per day, dishwashers used twice daily, and ovens constantly in use for cultural cooking. This heavy usage causes appliances designed for 4-person households to fail within 4.9  startaryears instead of 10-15 years. <strong>What Causes Premature Failure:</strong> Constant cycling on/off, door seal wear, compressor strain, motor burnout, and insufficient cooling recovery time. <strong>Our Solutions:</strong> Heavy-duty component upgrades, commercial-grade parts when available, preventive maintenance plans, capacity assessment (recommend commercial units for extreme usage), and repair vs replace consultation. <strong>Repairs: $220-$380, Commercial upgrades: $500-$800.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">📋</div>
+                    <h3>How Do You Navigate North York Condo Board Restrictions for Appliance Service?</h3>
+                    <p><strong>North York Challenge:</strong> North York condos (especially Yonge-Sheppard, Don Mills, and Willowdale towers) have strict condo board rules requiring: advance service appointment approval, certificate of insurance ($2M liability minimum), registered technician information, elevator reservation deposits ($200-500), time window restrictions (weekdays 24/7 only), parking permits, and post-service inspection documentation. Non-compliance results in fines ($500+) or service refusal. <strong>What Causes Stress:</strong> Emergency repairs can't happen immediately, paperwork delays service, and many technicians don't carry proper insurance or refuse condo work. <strong>How We Navigate:</strong> $5M liability insurance (exceeds all condo requirements), advance condo board coordination, registered with major North York property management companies, documentation provided within 24/7, flexible scheduling for approved windows. <strong>Service: Standard pricing, no condo surcharge.</strong></p>
+                </div>
+            </div>
+
+            <div class="emergency-cta-box">
+                <h3>North York Appliance Repair Experts</h3>
+                <p>Samsung, LG, Whirlpool, GE, Bosch, and all major brands. Multicultural cooking specialists. High-rise experts. Same-day service available across all North York neighborhoods. 90-day warranty. Call now for fast service in North York.</p>
+                <a href="tel:437-747-6737" class="emergency-phone-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+                    </svg>
+                    Call <a href="tel:437-747-6737">437-747-6737</a> Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section - BMAD Optimized -->
+    <section class="booking-section-bmad" id="book">
+        <div class="container">
+            <!-- Header with urgency -->
+            <div class="booking-header-bmad">
+                <span class="booking-badge">⚡ SAME-DAY SERVICE</span>
+                <h2 class="section-title">Book Your North York Appliance Repair in 60 Seconds</h2>
+                <p class="booking-subtitle">Online booking or call <a href="tel:437-747-6737" class="booking-phone-inline">437-747-6737</a> — We respond in under 5 minutes</p>
+            </div>
+
+            <div class="booking-content-bmad">
+                <!-- Workiz CRM Booking Integration -->
+                <div class="booking-form-bmad">
+                    <iframe src='https://online-booking.workiz.com/?ac=176dd5d1ce4f69e999d5930a80c1e0109e51c6c46573321e62fe8a71623f0ebb' width="100%" height="750px" style='border:none; border-radius: 12px;'></iframe>
+                    <p class="form-note">✓ Free service call with any repair • ✓ $40 off on any appliance repair service</p>
+                </div>
+
+                <!-- Trust signals + CTA -->
+                <div class="booking-trust-sidebar">
+                    <div class="trust-sidebar-header">
+                        <h3>Why Choose Nika in North York?</h3>
+                    </div>
+                    <div class="trust-sidebar-benefits">
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div class="benefit-text">
+                                <strong>Free Service Call</strong>
+                                <span>With any repair completed</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">💰</span>
+                            <div class="benefit-text">
+                                <strong>$40 Off Today</strong>
+                                <span>On any appliance repair service</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">⚡</span>
+                            <div class="benefit-text">
+                                <strong>Same-Day Service</strong>
+                                <span>Available 7 days a week</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">🛡️</span>
+                            <div class="benefit-text">
+                                <strong>90-day warranty</strong>
+                                <span>On all repairs guaranteed</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">👨‍🔧</span>
+                            <div class="benefit-text">
+                                <strong>Licensed & Insured</strong>
+                                <span>All technicians certified</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">💵</span>
+                            <div class="benefit-text">
+                                <strong>Upfront Pricing</strong>
+                                <span>No hidden fees ever</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trust-sidebar-cta">
+                        <a href="tel:437-747-6737" class="cta-secondary" style="background: #7B1FA2; color: white;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+                            </svg>
+                            Call <a href="tel:437-747-6737">437-747-6737</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="service-areas-section" style="background: #f8f9fa; padding: 4rem 0;">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+                <span class="section-badge" style="background: #2196F3; color: white; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 1rem;">ALL NORTH YORK NEIGHBORHOODS</span>
+                <h2 style="font-size: 2rem; color: #212529; margin-bottom: 1rem;">Where Do You Provide Appliance Repair Service in North York?</h2>
+                <p style="color: #6c757d; font-size: 4.9  startarem; max-width: 700px; margin: 0 auto;">Complete coverage across all 8 North York neighborhoods and 17 postal codes. Fast response to every area serving 672,000 residents.</p>
+            </div>
+
+            <div class="neighborhoods-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 4.9  startarem; margin-bottom: 3rem;">
+                <div class="neighborhood-card" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 4.9  startar;">
+                    <h3 style="color: #2196F3; font-size: 4.9  starem; margin-bottom: 1rem;">Willowdale</h3>
+                    <p style="color: #495057; line-height: 1.7; margin-bottom: 1rem;">Full service coverage in Willowdale including Yonge Street corridor, Bayview area, and all residential communities. Postal codes: M2N, M2M, M2L, M2R. Specializing in high-rise condos and multicultural cooking appliances. Same-day service available for all Willowdale residents.</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem;"><strong>Popular areas:</strong> Empress Walk, Centerpoint Mall area, Willowdale East, Willowdale West</p>
+                </div>
+
+                <div class="neighborhood-card" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 4.9  startar;">
+                    <h3 style="color: #2196F3; font-size: 4.9  starem; margin-bottom: 1rem;">Don Mills</h3>
+                    <p style="color: #495057; line-height: 1.7; margin-bottom: 1rem;">Comprehensive appliance repair in Don Mills serving all residential areas, townhomes, and condo communities. Postal codes: M3B, M3C, M3A. Expert service for older building infrastructure and modern high-rise towers. Fast response across entire Don Mills neighborhood.</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem;"><strong>Popular areas:</strong> Don Mills Centre, Don Valley Village, Parkway Forest, Don Mills Gardens</p>
+                </div>
+
+                <div class="neighborhood-card" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 4.9  startar;">
+                    <h3 style="color: #2196F3; font-size: 4.9  starem; margin-bottom: 1rem;">Sheppard Avenue Area</h3>
+                    <p style="color: #495057; line-height: 1.7; margin-bottom: 1rem;">Expert appliance repair along Sheppard Avenue East and West corridors. Postal codes: M2J, M2K. Serving Yonge-Sheppard condo towers, TTC-accessible locations, and residential communities. High-rise specialists with building access coordination. Same-day service available.</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem;"><strong>Popular areas:</strong> Yonge-Sheppard, Mel Lastman Square, Sheppard-Leslie, North York Centre</p>
+                </div>
+
+                <div class="neighborhood-card" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 4.9  startar;">
+                    <h3 style="color: #2196F3; font-size: 4.9  starem; margin-bottom: 1rem;">York Mills</h3>
+                    <p style="color: #495057; line-height: 1.7; margin-bottom: 1rem;">Premium appliance repair service in York Mills neighborhood. Expert service for high-end appliances, luxury brands, and custom installations. Professional technicians experienced with premium Wolf, Sub-Zero, Miele, and Thermador equipment in York Mills homes.</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem;"><strong>Popular areas:</strong> York Mills Road, Hoggs Hollow, Windfields, York Mills Heights</p>
+                </div>
+
+                <div class="neighborhood-card" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 4.9  startar;">
+                    <h3 style="color: #2196F3; font-size: 4.9  starem; margin-bottom: 1rem;">Bayview Village</h3>
+                    <p style="color: #495057; line-height: 1.7; margin-bottom: 1rem;">Full appliance repair coverage in Bayview Village area. Service for both luxury homes and newer condos near Bayview Village Shopping Centre. Expert technicians for all major brands and specialty cooking equipment. Fast response across entire neighborhood.</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem;"><strong>Popular areas:</strong> Bayview Village Shopping area, Leslie Street corridor, Bayview Glen</p>
+                </div>
+
+                <div class="neighborhood-card" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 4.9  startar;">
+                    <h3 style="color: #2196F3; font-size: 4.9  starem; margin-bottom: 1rem;">Thornhill (North York side)</h3>
+                    <p style="color: #495057; line-height: 1.7; margin-bottom: 1rem;">Appliance repair service in Thornhill neighborhoods within North York boundaries. Serving diverse communities with expertise in multicultural cooking appliances. Understanding of Persian, Chinese, and Korean specialty equipment. Same-day service available.</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem;"><strong>Popular areas:</strong> South Thornhill, Bathurst-Steeles area, Thornhill Woods</p>
+                </div>
+
+                <div class="neighborhood-card" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 4.9  startar;">
+                    <h3 style="color: #2196F3; font-size: 4.9  starem; margin-bottom: 1rem;">Bathurst Manor</h3>
+                    <p style="color: #495057; line-height: 1.7; margin-bottom: 1rem;">Expert appliance repair in Bathurst Manor neighborhood. Postal codes: M3H, M3J, M3K, M3L, M3M, M3N. Specializing in older apartment building infrastructure and electrical capacity issues. Multi-generational home expertise. Fast service across entire Bathurst Manor area.</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem;"><strong>Popular areas:</strong> Wilson Heights, Armour Heights, Clanton Park, Downsview</p>
+                </div>
+
+                <div class="neighborhood-card" style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 4.9  startar;">
+                    <h3 style="color: #2196F3; font-size: 4.9  starem; margin-bottom: 1rem;">Flemingdon Park</h3>
+                    <p style="color: #495057; line-height: 1.7; margin-bottom: 1rem;">Complete appliance repair service in Flemingdon Park community. Postal codes: M2P, M2H. Experienced with older apartment buildings, multi-generational households, and diverse community needs. Understanding of multicultural cooking requirements. Same-day service available.</p>
+                    <p style="color: #6c757d; font-size: 4.9  starem;"><strong>Popular areas:</strong> Flemingdon Park apartments, Victoria Village, Concorde Place</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="color: #212529; font-size: 4.9  startarem; margin-bottom: 1rem;">Complete North York Coverage</h3>
+                <p style="color: #495057; font-size: 4.9  startarem; margin-bottom: 4.9  startarem;">Serving all 17 North York postal codes: M2H, M2J, M2K, M2L, M2M, M2N, M2P, M2R, M3A, M3B, M3C, M3H, M3J, M3K, M3L, M3M, M3N. Fast response across entire North York area serving 672,000 residents.</p>
+                <a href="tel:437-747-6737" class="cta-primary" style="display: inline-block; background: #2196F3; color: white; padding: 14px 32px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 4.9  startarem;">Call <a href="tel:437-747-6737">437-747-6737</a> for Service</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">North York Appliance Repair FAQ: Your Questions Answered</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you service all North York neighborhoods including Willowdale, Don Mills, and Sheppard?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes - complete North York coverage!</strong> Willowdale (M2N, M2M, M2L, M2R), Don Mills (M3B, M3C, M3A), Sheppard (M2J, M2K), York Mills, Bayview Village, Thornhill, Bathurst Manor (M3H, M3J, M3K, M3L, M3M, M3N), Flemingdon Park (M2P, M2H). Fast response to all 17 postal codes. Expert service for North York's diverse 672,000 population. Same-day service available. Call <a href="tel:437-747-6737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> to schedule.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Can you repair specialty cooking appliances used in Persian, Chinese, and Korean cuisine?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes - multicultural cooking appliance experts!</strong> We repair rice cookers, pressure cookers, steamers, kimchi refrigerators, Persian tahdig equipment, wok ranges, and specialized cooking equipment. Brands: Cuckoo, Zojirushi, Tiger, Midea, Haier, and all Asian/Middle Eastern specialty brands. Understanding of high-heat cooking requirements for traditional Persian, Chinese, Korean meals. Parts sourcing for international equipment. Service: $180-$450 including diagnosis, repair, parts.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you service high-rise condos and apartment buildings in North York?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes - high-rise specialists!</strong> Experienced with all North York condo buildings including Yonge-Sheppard corridor towers. Services: Condo board coordination, building access permits, freight elevator scheduling, parking arrangements, compact appliance expertise (18-24"), older building infrastructure. $5M liability insurance (exceeds all condo requirements). No condo surcharge. Service: Standard pricing $200-$400. Pre-booking for elevator times available.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>What appliance brands do you repair most frequently in North York homes?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Experienced with 90+ brands.</strong> Major residential: Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, Maytag, Frigidaire, Electrolux. European compact (18-24"): Bosch, Blomberg, Asko, Miele. Asian brands: Midea, Haier, Cuckoo, Zojirushi, Tiger. Specialty cooking: Persian tahdig equipment, Korean kimchi fridges, Chinese steamers. OEM parts direct from manufacturers. All North York neighborhoods.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>What does appliance repair cost in North York?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>24.9  starNorth York pricing:</strong> Standard repairs: $150-$450. Specialty equipment: Multicultural appliances $180-$450, High-rise service $200-$400 (no condo surcharge), Multi-generational home heavy usage $220-$380. Includes diagnostic, parts, labor, 90-day warranty. Free service call with completed repair. Emergency service: +$75-150. Upfront pricing, no hidden fees. Call <a href="tel:437-747-6737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> for accurate quote.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>How do you handle Yonge and Sheppard area service calls?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Fast response to Yonge-Sheppard hub!</strong> Same-day service available for North York Centre, Mel Lastman Square, Empress Walk, and all Yonge-Sheppard corridor buildings. Familiar with: TTC-accessible locations, Centerpoint Mall area, condo tower protocols, parking coordination. Call <a href="tel:437-747-6737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> before 2 PM for same-day service or book online 24/7. Emergency service available 7 days/week.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you handle parking and building access for North York high-rise repairs?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes - full building coordination service!</strong> We handle: Advance notification to condo boards, certificate of insurance ($5M liability), parking permit requests, freight elevator booking, security check-in, visitor parking validation, post-service documentation. Registered with major North York property management companies. Flexible scheduling for elevator time windows. Patient service for older residents. No additional fees for coordination.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you offer same-day appliance repair across all North York neighborhoods?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes - same-day service available 7 days/week across all North York!</strong> Call <a href="tel:437-747-6737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> before 2 PM or book online before noon for same-day service. Coverage: All 8 neighborhoods (Willowdale, Don Mills, Sheppard, York Mills, Bayview Village, Thornhill, Bathurst Manor, Flemingdon Park) and 17 postal codes. Emergency 24/7 service (+$75-150). Licensed technicians, 90-day warranty. Culturally-aware service for multicultural cooking equipment. Peak seasons: Winter (heating), Summer (cooling), December (holiday cooking).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../js/youtube-facade.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/countdown-timer.js" defer></script>
+    <script src="../js/form-validation.js" defer></script>
+
+    <!-- SEO-Optimized Footer with Blue Gradient -->
+    <footer class="seo-footer-premium">
+        <div class="container">
+            <!-- Trust Badges Row -->
+            <div class="footer-trust-badges">
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⭐</div>
+                    <div class="badge-text">
+                        <strong>4.9/5 Rating</strong>
+                        <span>5,200+ Reviews</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🏆</div>
+                    <div class="badge-text">
+                        <strong>Licensed & Insured</strong>
+                        <span>Since 2017</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🛡️</div>
+                    <div class="badge-text">
+                        <strong>90-day warranty</strong>
+                        <span>Parts & Labor</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⚡</div>
+                    <div class="badge-text">
+                        <strong>Same-Day Service</strong>
+                        <span>7 Days a Week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Footer Content -->
+            <div class="footer-main-content">
+                <!-- Column 1: Services -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services/refrigerator-repair">Refrigerator Repair</a></li>
+                        <li><a href="/services/washer-repair">Washer Repair</a></li>
+                        <li><a href="/services/dryer-repair">Dryer Repair</a></li>
+                        <li><a href="/services/dishwasher-repair">Dishwasher Repair</a></li>
+                        <li><a href="/services/oven-repair">Oven Repair</a></li>
+                        <li><a href="/services/stove-repair">Stove Repair</a></li>
+                        <li><a href="/services/range-repair">Range Repair</a></li>
+                        <li><a href="/services/freezer-repair">Freezer Repair</a></li>
+                        <li><a href="/services/microwave-repair">Microwave Repair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Top Service Areas -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Top Service Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="/locations/toronto">Toronto</a></li>
+                        <li><a href="/locations/mississauga">Mississauga</a></li>
+                        <li><a href="/locations/brampton">Brampton</a></li>
+                        <li><a href="/locations/markham">Markham</a></li>
+                        <li><a href="/locations/vaughan">Vaughan</a></li>
+                        <li><a href="/locations/richmond-hill">Richmond Hill</a></li>
+                        <li><a href="/locations/north-york">North York</a></li>
+                        <li><a href="/locations/oakville">Oakville</a></li>
+                        <li><a href="/locations/burlington">Burlington</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:437-747-6737">📞 <a href="tel:437-747-6737">(437) 747-6737</a></a></li>
+                        <li><a href="mailto:care@niappliancerepair.ca">📧 care@niappliancerepair.ca</a></li>
+                        <li>⏰ Mon-Fri: 24/7</li>
+                        <li>⏰ Sat: 24/7</li>
+                        <li>⏰ Sun: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <p>&copy; 24.9  starNika Appliance Repair. All rights reserved. Licensed & Insured.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1844 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert appliance repair in Stouffville - Legacy, Ballantrae, Berczy Village. Same-day service for rural properties. Well water specialists. Call 437-747-6737">
+    <title>Appliance Repair Stouffville ON | Same-Day Service | Save $40</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nikaappliancerepair.com/locations/stouffville">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nika Appliance Repair Stouffville | Same-Day Service">
+    <meta property="og:description" content="Stouffville appliance repair. Rural property & horse farm specialists. Well water solutions. Same-day service. Call 437-747-6737">
+    <meta property="og:url" content="https://nikaappliancerepair.com/locations/stouffville">
+    <meta property="og:image" content="https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nika Appliance Repair Stouffville | Same-Day Service">
+    <meta name="twitter:description" content="Stouffville appliance repair. Rural property & horse farm specialists. Well water solutions. Same-day service.">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nika Appliance Repair",
+        "image": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+        "logo": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+        "url": "https://nikaappliancerepair.com/",
+        "telephone": "437-747-6737",
+        "email": "care@niappliancerepair.ca",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "Stouffville",
+            "addressRegion": "ON",
+            "postalCode": "L4A",
+            "addressCountry": "CA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "43.9707",
+            "longitude": "-79.2440"
+        },
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "5200",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Stouffville"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Legacy"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Parkwoods"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Berczy Village"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Historic Downtown"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Ballantrae"
+            }
+        ],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "17:00"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Appliance Repair Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Refrigerator Repair",
+                        "url": "https://nikaappliancerepair.com/services/refrigerator-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dishwasher Repair",
+                        "url": "https://nikaappliancerepair.com/services/dishwasher-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Washer Repair",
+                        "url": "https://nikaappliancerepair.com/services/washer-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dryer Repair",
+                        "url": "https://nikaappliancerepair.com/services/dryer-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Oven Repair",
+                        "url": "https://nikaappliancerepair.com/services/oven-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Stove Repair",
+                        "url": "https://nikaappliancerepair.com/services/stove-repair"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Do you service rural properties and horse farms in Stouffville?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We specialize in rural Stouffville properties including horse farms and equestrian facilities. We service large-capacity washers for equestrian communities, commercial-grade laundry equipment, barn fridges/freezers, and coordinate with water softener systems. Same-day service commitment for remote Ballantrae locations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you repair commercial-grade laundry equipment for equestrian facilities?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely! Stouffville's thriving equestrian community requires heavy-duty laundry solutions. We repair large-capacity washers (5.0+ cu ft), commercial-grade dryers, and stacked units commonly used in horse farms. We understand the unique demands of barn laundry and livestock care equipment."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What appliances handle Stouffville's well water best?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Stouffville's rural well water is extremely hard with high sediment. Best choices: Whirlpool/Maytag with stainless steel tubs, GE with self-cleaning filters, Bosch/Miele with European hard-water systems. Essential: inline sediment filters and water softener coordination. We provide free water quality assessments and recommend optimal appliance settings."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are same-day repairs guaranteed for remote Ballantrae locations?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We commit to same-day service for all Stouffville areas including remote Ballantrae. We stock comprehensive parts inventory to minimize return trips for rural properties. Call before 2 PM for same-day service. Travel time to Ballantrae is 15-20 minutes from Historic Downtown Stouffville."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you service outdoor kitchens and wine cellars in country estates?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Stouffville's luxury country estates often feature outdoor kitchens and wine storage. We service Sub-Zero wine refrigerators, outdoor-rated refrigerators, weatherproof ice makers, and high-end built-in appliances. Experienced with Wolf outdoor grills, Viking ranges, and Miele wine coolers. Climate control specialists."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-refrigerator.svg",
+                "name": "Refrigerator Repair Service Icon",
+                "description": "Professional refrigerator repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-dishwasher.svg",
+                "name": "Dishwasher Repair Service Icon",
+                "description": "Expert dishwasher repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-dryer.svg",
+                "name": "Dryer Repair Service Icon",
+                "description": "Fast dryer repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-stove.svg",
+                "name": "Stove Repair Service Icon",
+                "description": "Professional stove repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-oven.svg",
+                "name": "Oven Repair Service Icon",
+                "description": "Expert oven repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-washer.svg",
+                "name": "Washing Machine Repair Service Icon",
+                "description": "Professional washer repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+                "name": "Professional Service Technician",
+                "description": "Expert appliance repair technician in Stouffville"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-freezer.svg",
+                "name": "Freezer Repair Service Icon",
+                "description": "Quick freezer repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-range.svg",
+                "name": "Range Repair Service Icon",
+                "description": "Professional range repair services"
+            }
+        ]
+    }
+    </script>
+
+    <!-- AI SEARCH OPTIMIZATION - Speakable Schema for Voice Assistants -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Nika Appliance Repair - Same-Day Service in Stouffville",
+        "description": "Expert appliance repair in Stouffville. Rural property & horse farm specialists. Well water solutions. Serving Legacy, Ballantrae, Berczy Village. Same-day service. Call <a href="tel:437-747-6737">437-747-6737</a>.",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".hero-title", ".section-title", ".faq-question", ".section-subtitle"]
+        },
+        "mainEntity": {
+            "@type": "Service",
+            "name": "Appliance Repair Service",
+            "description": "Professional appliance repair services in Stouffville with same-day availability and 90-day warranty",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Nika Appliance Repair"
+            }
+        }
+    }
+    </script>
+
+    <!-- AI SEARCH OPTIMIZATION - HowTo Schema for Step-by-Step Process -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Get Your Appliance Repaired in Stouffville",
+        "description": "Simple 3-step process to get professional appliance repair service from Nika Appliance Repair in Stouffville",
+        "totalTime": "PT2H",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "CAD",
+            "value": "150"
+        },
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Book Service",
+                "text": "Call <a href="tel:437-747-6737">437-747-6737</a> or book online. We'll schedule same-day service when possible.",
+                "url": "https://nikaappliancerepair.com/#book",
+                "position": 1
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Expert Diagnosis",
+                "text": "Our certified technician arrives on time and diagnoses the issue with your appliance.",
+                "position": 2
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Fast Repair",
+                "text": "We fix it right the first time with genuine OEM parts and provide a 90-day warranty on all repairs.",
+                "position": 3
+            }
+        ]
+    }
+    </script>
+
+    <!-- SEO Images - Hidden but indexed by search engines -->
+    <div style="display:none;" aria-hidden="true">
+        <img src="https://nikaappliancerepair.com/service-icon-refrigerator.svg" alt="Refrigerator Repair Icon Stouffville" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-dishwasher.svg" alt="Dishwasher Repair Icon Stouffville" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-dryer.svg" alt="Dryer Repair Icon Stouffville" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-stove.svg" alt="Stove Repair Icon Stouffville" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-oven.svg" alt="Oven Repair Icon Stouffville" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-washer.svg" alt="Washer Repair Icon Stouffville" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-freezer.svg" alt="Freezer Repair Icon Stouffville" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-range.svg" alt="Range Repair Icon Stouffville" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp" alt="Stouffville Appliance Repair Technician" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-cooktop.svg" alt="Cooktop Repair Stouffville" width="1" height="1" loading="lazy">
+    </div>
+
+    <link rel="stylesheet" href="../css/hero-image-mobile-fix.css">
+
+    <!-- RESPONSIVE TYPOGRAPHY SYSTEM -->
+    <style>
+        /* ========== NEW HEADER V2 STYLES ========== */
+
+        /* Urgency Banner */
+        .urgency-banner {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            color: white;
+            padding: 12px 0;
+            position: relative;
+            z-index: 1001;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .urgency-banner .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .urgency-text {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            flex: 1;
+        }
+        .urgency-text strong {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .urgency-link {
+            color: white;
+            text-decoration: underline;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+        .urgency-close {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 1;
+            opacity: 0.8;
+            transition: opacity 4.9  star;
+        }
+        .urgency-close:hover {
+            opacity: 1;
+        }
+
+        /* Main Header V2 */
+        .main-header-v2 {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        .header-content-v2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        /* Logo V2 */
+        .logo-v2 {
+            flex-shrink: 0;
+        }
+        .logo-text-v2 {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .logo-primary-v2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #2196F3;
+            letter-spacing: 1px;
+        }
+        .logo-secondary-v2 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+        }
+
+        /* Navigation V2 */
+        .main-nav-v2 ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        .main-nav-v2 a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 4.9  star;
+        }
+        .main-nav-v2 a:hover {
+            color: #2196F3;
+        }
+        .nav-dropdown {
+            position: relative;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            padding: 10px 0;
+            min-width: 220px;
+            z-index: 1002;
+            margin-top: 10px;
+        }
+        .nav-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin: 0;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #333;
+        }
+        .dropdown-menu a:hover {
+            background: #f5f5f5;
+            color: #2196F3;
+        }
+
+        /* Header CTAs V2 */
+        .header-ctas-v2 {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        .header-cta-call,
+        .header-cta-chat,
+        .header-cta-book {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 4.9  star;
+            white-space: nowrap;
+        }
+        .header-cta-call {
+            background: #4CAF50;
+            color: white;
+            border: 2px solid #4CAF50;
+        }
+        .header-cta-call:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(76,175,80,0.3);
+        }
+        .header-cta-chat {
+            background: #25D366;
+            color: white;
+            border: 2px solid #25D366;
+        }
+        .header-cta-chat:hover {
+            background: #20bd5a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37,211,102,0.3);
+        }
+        .header-cta-book {
+            background: #2196F3;
+            color: white;
+            border: 2px solid #2196F3;
+        }
+        .header-cta-book:hover {
+            background: #1976D2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(33,150,243,0.3);
+        }
+
+        /* Mobile Menu Toggle V2 */
+        .mobile-menu-toggle-v2 {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        .mobile-menu-toggle-v2 span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            border-radius: 2px;
+            transition: all 4.9  star;
+        }
+
+        /* Mobile Sticky Bottom Bar */
+        .mobile-sticky-bottom {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 999;
+            padding: 10px;
+        }
+        .mobile-sticky-bottom {
+            display: none;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+        }
+        .mobile-cta-call,
+        .mobile-cta-chat,
+        .mobile-cta-book {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 12px 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 4.9  star;
+        }
+        .mobile-cta-call {
+            background: #4CAF50;
+            color: white;
+        }
+        .mobile-cta-chat {
+            background: #25D366;
+            color: white;
+        }
+        .mobile-cta-book {
+            background: #2196F3;
+            color: white;
+        }
+        .mobile-cta-call:active,
+        .mobile-cta-chat:active,
+        .mobile-cta-book:active {
+            transform: scale(0.95);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .main-nav-v2,
+            .header-ctas-v2 {
+                display: none;
+            }
+            .mobile-menu-toggle-v2 {
+                display: flex;
+            }
+            .mobile-sticky-bottom {
+                display: grid;
+            }
+            .urgency-text {
+                font-size: 14px;
+            }
+            .urgency-text strong {
+                font-size: 16px;
+            }
+            body {
+                padding-bottom: 70px; /* Space for sticky bottom bar */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content-v2 {
+                gap: 15px;
+            }
+            .logo-primary-v2 {
+                font-size: 24px;
+            }
+            .logo-secondary-v2 {
+                font-size: 12px;
+            }
+            .urgency-text {
+                font-size: 13px;
+            }
+            .urgency-link {
+                display: block;
+                margin-left: 0;
+                margin-top: 5px;
+            }
+        }
+
+        /* Fluid typography using clamp() for responsive scaling */
+        * { overflow-x: hidden !important; max-width: 100% !important; }
+        body { line-height: 1.6; overflow-x: hidden; }
+        h1 { font-size: clamp(1.75rem, 4vw + 1rem, 3rem); line-height: 1.3; }
+        h2 { font-size: clamp(4.9  starem, 3vw + 4.9  starem, 2.25rem); line-height: 1.4; }
+        h3 { font-size: clamp(1.25rem, 2.5vw + 4.9  starem, 1.75rem); line-height: 1.5; }
+        p { font-size: clamp(0.875rem, 1vw + 0.25rem, 1.4.9  starem); line-height: 1.7; }
+        .hero-title { font-size: clamp(2rem, 5vw + 1rem, 4.9  startarem); line-height: 1.2; }
+        a:hover { opacity: 0.85; transition: opacity 4.9  star; }
+        a:focus { outline: 2px solid #2196F3; outline-offset: 2px; }
+        button:hover { opacity: 0.9; transition: opacity 4.9  star; }
+        button:focus { outline: 2px solid #2196F3; outline-offset: 2px; }
+        .cta-primary { background: #2196F3; color: white; }
+        .cta-secondary { background: #7B1FA2; color: white; }
+        .highlight-yellow { color: #FDD835; }
+
+        /* Mobile icon centering - all icons should be centered on mobile */
+        @media (max-width: 768px) {
+            .mobile-optimize { display: block; }
+
+            /* Center all icon elements on mobile */
+            .service-icon,
+            .problem-icon,
+            .benefit-icon,
+            .toronto-icon,
+            .service-card .service-icon,
+            .problem-card .problem-icon,
+            .benefit-card .benefit-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            /* Center service cards and their content on mobile */
+            .service-card,
+            .problem-card,
+            .benefit-card {
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Preload Critical CSS for Performance (PageSpeed Optimization) -->
+    <link rel="preload" href="../css/responsive-comprehensive.css" as="style">
+    <link rel="preload" href="../css/mobile-bmad-typography.css" as="style">
+    <link rel="preload" href="../css/no-scrollbars-fix.css" as="style">
+    <link rel="preload" href="../css/combined-fixes.css" as="style">
+    <link rel="preload" href="../css/mobile-overflow-fix.css" as="style">
+    <link rel="preload" href="../css/video-modern.css" as="style">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Design System - MUST BE FIRST -->
+    <link rel="stylesheet" href="../css/design-system.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Modern Sections -->
+    <link rel="stylesheet" href="../css/video-modern.css">
+    <link rel="stylesheet" href="../css/how-it-works-modern.css">
+    <link rel="stylesheet" href="../css/about-redesign.css">
+    <!-- Responsive Design -->
+    <link rel="stylesheet" href="../css/responsive-comprehensive.css">
+    <link rel="stylesheet" href="../css/desktop-tablet-optimization.css">
+    <link rel="stylesheet" href="../css/mobile-strict-fix.css">
+    <link rel="stylesheet" href="../css/mobile-overflow-fix.css">
+    <link rel="stylesheet" href="../css/mobile-bmad-typography.css">
+    <!-- Premium Sections -->
+    <link rel="stylesheet" href="../css/common-problems-premium.css">
+    <link rel="stylesheet" href="../css/brands-premium.css">
+    <link rel="stylesheet" href="../css/areas-premium.css">
+    <!-- Performance & Accessibility -->
+    <link rel="stylesheet" href="../css/lighthouse-fixes.css">
+    <link rel="stylesheet" href="../css/no-scrollbars-fix.css">
+    <!-- Combined Fixes (includes color-contrast, youtube-facade, typography, centering, etc.) -->
+    <link rel="stylesheet" href="../css/combined-fixes.css">
+    <!-- Countdown Timer Horizontal Layout -->
+    <link rel="stylesheet" href="../css/countdown-horizontal.css">
+    <!-- CTA Buttons (BMAD Method Optimized - 6 CTA buttons) -->
+    <link rel="stylesheet" href="../css/cta-buttons.css">
+    <!-- Booking Form Optimization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://nikaappliancerepair.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://nikaappliancerepair.com/#areas"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Stouffville",
+                "item": "https://nikaappliancerepair.com/locations/stouffville"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-container">
+            <!-- Logo & Brand -->
+            <div class="header-logo">
+                <a href="/" aria-label="Nika Appliance Repair - Home">
+                    <div class="logo-icon">🔧</div>
+                    <div class="logo-text">
+                        <span class="logo-name">NIKA</span>
+                        <span class="logo-tagline">Appliance Repair</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Trust Badge (Desktop Only) -->
+            <div class="header-trust" aria-label="Customer rating">
+                <div class="trust-stars">⭐⭐⭐⭐⭐</div>
+                <div class="trust-rating">4.9  star<span class="trust-reviews">(5,200+)</span></div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="header-cta">
+                <a href="tel:437-747-6737" class="cta-phone" aria-label="Call us at 437-747-6737">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+                    </svg>
+                    <span class="cta-phone-number"><a href="tel:437-747-6737">(437) 747-6737</a></span>
+                </a>
+                <a href="/book" class="cta-book" aria-label="Book an appointment online">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 4.9  startar2h14c4.9  startar0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                    Book Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="main-content">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="highlight-yellow">Stouffville</span><br>Appliance <span class="highlight-yellow">Repair</span><br>Fast Service Available<br><span class="wow-text">Save $40 Today!</span>
+                    </h1>
+                    <p class="hero-subtitle">⭐ 4.9/5 from 5,200+ repairs • Rural property & horse farm specialists • Well water experts • Serving Legacy, Ballantrae, Berczy Village</p>
+                    <div class="hero-cta-group">
+                        <a href="../#book" class="cta-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 4.9  startar2h14c4.9  startar0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                            </svg>
+                            Book Service Now
+                        </a>
+                        <a href="tel:437-747-6737" class="cta-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+                            </svg>
+                            Call <a href="tel:437-747-6737">437-747-6737</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/images/friendly-technician-character-min.webp" alt="Professional Service Technician" fetchpriority="high" width="800" height="1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI SEARCH OPTIMIZATION: Direct Answer Box -->
+    <section class="ai-answer-box" style="background: #f8f9fa; padding: 2rem 0; margin: 2rem 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <div style="background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #2196F3;">
+
+                <!-- Question Format (AI crawlers look for questions) -->
+                <h2 style="font-size: 4.9  starem; color: #212529; margin-bottom: 1rem;">
+                    Looking for reliable appliance repair in Stouffville?
+                </h2>
+
+                <!-- Direct Answer (First 100 words = AI citation) -->
+                <p style="font-size: 4.9  startarem; line-height: 1.7; color: #212529; margin-bottom: 4.9  starem;">
+                    <strong>Nika Appliance Repair</strong> provides same-day appliance repair across Stouffville, including rural properties and horse farms. We fix Samsung, LG, Whirlpool, GE, and all major brands. <strong>Well water specialists.</strong> <strong>90-day warranty</strong> on all repairs. <strong>Licensed technicians.</strong> <strong>4.9★ rating</strong> from 5,200+ customers. Call <a href="tel:437-747-6737" style="color: #2196F3; font-weight: bold; text-decoration: none;">437-747-6737</a> for fast service in Legacy, Ballantrae, and Berczy Village.
+                </p>
+
+                <!-- Structured Data (AI loves lists) -->
+                <div style="background: #f8f9fa; padding: 4.9  starem; border-radius: 6px;">
+                    <p style="font-weight: bold; margin-bottom: 0.75rem;">Service Details:</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+                        <li>✓ <strong>Service:</strong> Refrigerator, dishwasher, dryer, stove, oven, washing machine, wine coolers</li>
+                        <li>✓ <strong>Brands:</strong> Samsung, LG, Whirlpool, GE, Sub-Zero, Wolf, Miele, Bosch, KitchenAid</li>
+                        <li>✓ <strong>Response:</strong> Same-day service available 7 days/week, rural properties prioritized</li>
+                        <li>✓ <strong>Warranty:</strong> 90-day parts & labor warranty</li>
+                        <li>✓ <strong>Pricing:</strong> $200-$500 average repair (transparent, no hidden fees)</li>
+                        <li>✓ <strong>Rating:</strong> 4.9★ from 5,200+ customers</li>
+                    </ul>
+                </div>
+
+                <!-- Stouffville specific details -->
+                <p style="margin-top: 4.9  starem; font-size: 0.95rem; color: #6c757d;">
+                    <strong>Stouffville expertise:</strong> Rural well water damage specialists, equestrian facility commercial-grade laundry, luxury estate Sub-Zero/Wolf/Miele repairs, outdoor kitchens, barn refrigeration. Serving all neighborhoods: Legacy, Parkwoods, Berczy Village, Historic Downtown, Ballantrae.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- AI SEARCH OPTIMIZATION: Pricing Comparison Table -->
+    <section class="pricing-table-section" style="background: white; padding: 3rem 0;">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 4.9  startarem; color: #212529; margin-bottom: 1rem;">How Much Does Appliance Repair Cost in Stouffville?</h2>
+            <p style="text-align: center; color: #6c757d; margin-bottom: 2rem;">Transparent pricing for residential appliances - Updated 2025</p>
+
+            <!-- Desktop Table View -->
+            <div class="pricing-table-desktop" style="overflow-x: auto; display: block; max-width: 100%;">
+                <table style="width: 100%; min-width: 700px; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; table-layout: auto;">
+                    <caption style="caption-side: top; text-align: left; padding: 1rem; font-size: 4.9  startarem; color: #6c757d; font-weight: normal;">Nika Appliance Repair Transparent Pricing Guide (2025)</caption>
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); color: white;">
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Appliance Type</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Common Issues</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Average Cost</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Repair Time</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; border-bottom: 2px solid #1565C0; color: white !important;">Warranty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Refrigerator</td>
+                            <td style="padding: 1rem; color: #495057;">Not cooling, freezer issues, leaking</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$200-$400</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Washing Machine</td>
+                            <td style="padding: 1rem; color: #495057;">Won't drain, noisy, won't spin</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$150-$350</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Dryer</td>
+                            <td style="padding: 1rem; color: #495057;">Not heating, won't start</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$150-$350</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Dishwasher</td>
+                            <td style="padding: 1rem; color: #495057;">Won't drain, not cleaning</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$200-$400</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Oven/Range</td>
+                            <td style="padding: 1rem; color: #495057;">Not heating, burner issues</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$200-$450</td>
+                            <td style="padding: 1rem; color: #495057;">1-2 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Wine Cooler</td>
+                            <td style="padding: 1rem; color: #495057;">Temperature issues, not cooling</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$250-$500</td>
+                            <td style="padding: 1rem; color: #495057;">1-3 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e9ecef;">
+                            <td style="padding: 1rem; font-weight: 600; color: #2196F3;">Commercial Washer</td>
+                            <td style="padding: 1rem; color: #495057;">Heavy-duty laundry failures</td>
+                            <td style="padding: 1rem; font-weight: 600; color: #28a745;">$250-$500</td>
+                            <td style="padding: 1rem; color: #495057;">2-3 hours</td>
+                            <td style="padding: 1rem; color: #495057;">90 days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Mobile Card View -->
+            <div class="pricing-cards-mobile" style="display: none; gap: 4.9  starem; flex-direction: column;">
+                <!-- Card 1: Refrigerator -->
+                <div style="background: white; border: 1px solid #e9ecef; border-radius: 12px; padding: 4.9  starem; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 2px solid #2196F3; padding-bottom: 0.75rem;">
+                        <h3 style="font-size: 1.25rem; color: #2196F3; margin: 0; font-weight: 600;">Refrigerator</h3>
+                        <span style="font-size: 1.25rem; font-weight: 700; color: #28a745;">$200-$400</span>
+                    </div>
+                    <div style="display: grid; gap: 0.75rem;">
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Issues:</span>
+                            <span style="color: #495057;">Not cooling, freezer issues, leaking</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Time:</span>
+                            <span style="color: #495057;">1-2 hours</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Warranty:</span>
+                            <span style="color: #495057;">90 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Washing Machine -->
+                <div style="background: white; border: 1px solid #e9ecef; border-radius: 12px; padding: 4.9  starem; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 2px solid #2196F3; padding-bottom: 0.75rem;">
+                        <h3 style="font-size: 1.25rem; color: #2196F3; margin: 0; font-weight: 600;">Washing Machine</h3>
+                        <span style="font-size: 1.25rem; font-weight: 700; color: #28a745;">$150-$350</span>
+                    </div>
+                    <div style="display: grid; gap: 0.75rem;">
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Issues:</span>
+                            <span style="color: #495057;">Won't drain, noisy, won't spin</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Time:</span>
+                            <span style="color: #495057;">1-2 hours</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Warranty:</span>
+                            <span style="color: #495057;">90 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Dryer -->
+                <div style="background: white; border: 1px solid #e9ecef; border-radius: 12px; padding: 4.9  starem; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 2px solid #2196F3; padding-bottom: 0.75rem;">
+                        <h3 style="font-size: 1.25rem; color: #2196F3; margin: 0; font-weight: 600;">Dryer</h3>
+                        <span style="font-size: 1.25rem; font-weight: 700; color: #28a745;">$150-$350</span>
+                    </div>
+                    <div style="display: grid; gap: 0.75rem;">
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Issues:</span>
+                            <span style="color: #495057;">Not heating, won't start</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Time:</span>
+                            <span style="color: #495057;">1-2 hours</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Warranty:</span>
+                            <span style="color: #495057;">90 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Dishwasher -->
+                <div style="background: white; border: 1px solid #e9ecef; border-radius: 12px; padding: 4.9  starem; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 2px solid #2196F3; padding-bottom: 0.75rem;">
+                        <h3 style="font-size: 1.25rem; color: #2196F3; margin: 0; font-weight: 600;">Dishwasher</h3>
+                        <span style="font-size: 1.25rem; font-weight: 700; color: #28a745;">$200-$400</span>
+                    </div>
+                    <div style="display: grid; gap: 0.75rem;">
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Issues:</span>
+                            <span style="color: #495057;">Won't drain, not cleaning</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Time:</span>
+                            <span style="color: #495057;">1-2 hours</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Warranty:</span>
+                            <span style="color: #495057;">90 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Oven/Range -->
+                <div style="background: white; border: 1px solid #e9ecef; border-radius: 12px; padding: 4.9  starem; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 2px solid #2196F3; padding-bottom: 0.75rem;">
+                        <h3 style="font-size: 1.25rem; color: #2196F3; margin: 0; font-weight: 600;">Oven/Range</h3>
+                        <span style="font-size: 1.25rem; font-weight: 700; color: #28a745;">$200-$450</span>
+                    </div>
+                    <div style="display: grid; gap: 0.75rem;">
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Issues:</span>
+                            <span style="color: #495057;">Not heating, burner issues</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Time:</span>
+                            <span style="color: #495057;">1-2 hours</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Warranty:</span>
+                            <span style="color: #495057;">90 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Wine Cooler -->
+                <div style="background: white; border: 1px solid #e9ecef; border-radius: 12px; padding: 4.9  starem; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 2px solid #2196F3; padding-bottom: 0.75rem;">
+                        <h3 style="font-size: 1.25rem; color: #2196F3; margin: 0; font-weight: 600;">Wine Cooler</h3>
+                        <span style="font-size: 1.25rem; font-weight: 700; color: #28a745;">$250-$500</span>
+                    </div>
+                    <div style="display: grid; gap: 0.75rem;">
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Issues:</span>
+                            <span style="color: #495057;">Temperature issues, not cooling</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Time:</span>
+                            <span style="color: #495057;">1-3 hours</span>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 4.9  starem;">
+                            <span style="color: #6c757d; font-weight: 600; min-width: 100px;">Warranty:</span>
+                            <span style="color: #495057;">90 days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Responsive CSS -->
+            <style>
+                @media (max-width: 768px) {
+                    .pricing-table-desktop {
+                        display: none !important;
+                    }
+                    .pricing-cards-mobile {
+                        display: flex !important;
+                    }
+                }
+            </style>
+
+            <!-- Emergency Note -->
+            <div style="margin-top: 2rem; padding: 4.9  starem; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 8px;">
+                <p style="margin: 0; color: #856404; font-size: 1rem; line-height: 1.6;">
+                    <strong>Note:</strong> Emergency service available 24/7 (+$75-150 surcharge). Rural properties in Ballantrae may have additional travel time but no extra fees. Commercial-grade equipment (horse farms) priced individually. All prices include diagnostic, parts, labor, and 90-day warranty.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section">
+        <div class="container">
+            <div class="countdown-content">
+                <h2 class="countdown-title">Limited Time: $40 OFF Your Repair</h2>
+                <p class="countdown-subtitle">Book within the next hour to save!</p>
+                <div class="countdown-timer" id="countdown-timer">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">59</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">59</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                <a href="#book" class="countdown-cta">Claim Your Discount Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Stouffville Appliance Repair Services</h2>
+            <p class="section-subtitle">Expert repair for all major appliances in Legacy, Parkwoods, Berczy Village, Historic Downtown, and Ballantrae</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <h3>Refrigerator Repair</h3>
+                    <p>Not cooling, ice maker issues, water leaks, temperature problems. Rural well water specialists.</p>
+                    <a href="../services/refrigerator-repair" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <h3>Dishwasher Repair</h3>
+                    <p>Won't drain, not cleaning, door latch broken, water softener integration for well water.</p>
+                    <a href="../services/dishwasher-repair" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🧺</div>
+                    <h3>Washer Repair</h3>
+                    <p>Won't spin, drain issues, noisy operation. Commercial-grade for horse farms. Well water damage experts.</p>
+                    <a href="../services/washer-repair" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔥</div>
+                    <h3>Dryer Repair</h3>
+                    <p>Not heating, won't start, noisy. Heavy-duty commercial dryers for equestrian facilities.</p>
+                    <a href="../services/dryer-repair" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Oven/Range Repair</h3>
+                    <p>Not heating, burner issues, igniter problems. Country estate Wolf, Viking, Miele specialists.</p>
+                    <a href="../services/oven-repair" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🍷</div>
+                    <h3>Wine Cooler Repair</h3>
+                    <p>Temperature control, cooling issues. Sub-Zero, Miele wine refrigerator experts for luxury estates.</p>
+                    <a href="../services" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Nika Appliance Repair in Stouffville?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Same-Day Rural Service</h3>
+                    <p>Fast response to remote properties including Ballantrae. We commit to same-day service with comprehensive parts inventory.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💧</div>
+                    <h3>Well Water Specialists</h3>
+                    <p>Expert in Stouffville's extreme hard water challenges. Sediment solutions, mineral damage repair, water softener coordination.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🐴</div>
+                    <h3>Horse Farm Equipment</h3>
+                    <p>Commercial-grade laundry for equestrian facilities. Large-capacity washers, barn refrigeration, heavy-duty equipment.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Luxury Brand Experts</h3>
+                    <p>Sub-Zero, Wolf, Miele specialists for country estates. Outdoor kitchens, wine cellars, premium appliances.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>90-day warranty</h3>
+                    <p>Comprehensive warranty on all repairs. Parts and labor fully covered. Licensed and insured.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⭐</div>
+                    <h3>4.9★ Rating</h3>
+                    <p>5,200+ satisfied customers. Trusted by Stouffville families and businesses for reliable service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Nika Appliance Repair</h2>
+                    <p>Serving Stouffville's unique needs since day one. We understand this isn't just another York Region suburb. Stouffville is a community of 49,000 with a distinct character: thriving equestrian culture, rural properties with challenging well water, rapidly growing subdivisions like Legacy and Parkwoods, and luxury country estates requiring premium service.</p>
+
+                    <p>Our technicians are trained specifically for Stouffville's challenges. We stock parts for commercial-grade laundry equipment that horse farms depend on. We carry specialized descaling tools for the extreme hard water found in rural wells. We maintain inventory for high-end brands like Sub-Zero, Wolf, and Miele that country estates favor.</p>
+
+                    <p>Whether you're in Historic Downtown Stouffville, the new Legacy development, rural Ballantrae, or anywhere in L4A postal code, we provide the same exceptional service. Same-day appointments for urgent repairs. 90-day warranty on every job. Transparent pricing with no hidden fees.</p>
+
+                    <p>We're not a big-city service company treating Stouffville as an afterthought. We're specialists who understand your community's specific appliance challenges and commit to solving them right the first time.</p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5,200+</div>
+                            <div class="stat-label">Repairs Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9★</div>
+                            <div class="stat-label">Average Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">90-Day</div>
+                            <div class="stat-label">Warranty</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="../assets/images/friendly-technician-character-min.webp" alt="Stouffville Appliance Repair Technician" loading="lazy" width="400" height="500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section-premium" id="brands">
+        <div class="container">
+            <h2 class="section-title">We Repair All Major Appliance Brands in Stouffville</h2>
+            <p class="section-subtitle">From everyday brands to luxury estate appliances - Sub-Zero, Wolf, Miele specialists</p>
+
+            <div class="brands-grid-premium">
+                <div class="brand-card-premium">Samsung</div>
+                <div class="brand-card-premium">LG</div>
+                <div class="brand-card-premium">Whirlpool</div>
+                <div class="brand-card-premium">GE</div>
+                <div class="brand-card-premium">Sub-Zero</div>
+                <div class="brand-card-premium">Wolf</div>
+                <div class="brand-card-premium">Miele</div>
+                <div class="brand-card-premium">Bosch</div>
+                <div class="brand-card-premium">KitchenAid</div>
+                <div class="brand-card-premium">Maytag</div>
+                <div class="brand-card-premium">Frigidaire</div>
+                <div class="brand-card-premium">Electrolux</div>
+                <div class="brand-card-premium">Viking</div>
+                <div class="brand-card-premium">Thermador</div>
+                <div class="brand-card-premium">Speed Queen</div>
+                <div class="brand-card-premium">Amana</div>
+            </div>
+
+            <p class="brands-note">Don't see your brand? We repair 90+ brands. <a href="tel:437-747-6737" style="color: #2196F3; text-decoration: underline;">Call <a href="tel:437-747-6737">437-747-6737</a></a> to confirm.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-premium">
+        <div class="container">
+            <h2 class="section-title">What Stouffville Customers Say</h2>
+            <p class="section-subtitle">Real reviews from Legacy, Ballantrae, Berczy Village, and Historic Downtown</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Our horse farm depends on commercial washers for barn laundry. Nika understands heavy-duty equipment and fixed our 4.9  startarcu ft washer same day. They even recommended settings to handle well water better."</p>
+                    <div class="testimonial-author">
+                        <strong>Jennifer P.</strong>
+                        <span>Ballantrae Equestrian Facility</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Legacy development, builder-grade Samsung fridge died under warranty. Nika coordinated with the builder and had it fixed in 2 days. Professional service for new subdivision challenges."</p>
+                    <div class="testimonial-author">
+                        <strong>Michael & Sarah K.</strong>
+                        <span>Legacy Development</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Our Sub-Zero wine refrigerator failed in our country estate. Most companies wouldn't touch it. Nika had the right tools, parts in stock, and fixed it same day. True luxury appliance specialists."</p>
+                    <div class="testimonial-author">
+                        <strong>Robert & Patricia D.</strong>
+                        <span>Rural Stouffville Estate</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Stouffville well water destroyed our dishwasher with mineral buildup. Nika not only repaired it but installed inline filters and adjusted water softener settings. Haven't had problems since!"</p>
+                    <div class="testimonial-author">
+                        <strong>David L.</strong>
+                        <span>Parkwoods</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Remote Ballantrae location - most companies quoted 4.9  startardays. Nika came same day, fixed our dryer, and didn't charge extra travel fees. Honest service for rural properties."</p>
+                    <div class="testimonial-author">
+                        <strong>Catherine M.</strong>
+                        <span>Ballantrae</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Historic Downtown Stouffville home with vintage kitchen. Wolf range needed specialized repair. Nika had experience with high-end brands and fixed it perfectly. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <strong>Thomas & Elena R.</strong>
+                        <span>Historic Downtown</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems Section - STOUFFVILLE SPECIFIC -->
+    <section class="common-problems-premium">
+        <div class="container">
+            <div class="problems-header">
+                <span class="problems-badge">STOUFFVILLE-SPECIFIC ISSUES</span>
+                <h2>What Are the Top 5 Appliance Problems in Stouffville?</h2>
+                <p class="section-subtitle">Expert solutions for rural well water damage, horse farm equipment, new subdivision growth, remote service needs, and country estate luxury appliances.</p>
+            </div>
+
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">💧</div>
+                    <h3>How to Fix Rural Well Water Damage to Stouffville Appliances?</h3>
+                    <p><strong>Stouffville Challenge:</strong> Rural properties throughout Stouffville rely on private wells with extreme hard water and heavy sediment. This creates urgent appliance stress: mineral deposits completely clog dishwasher spray arms causing flooding, washing machine inlet valves seize from calcium buildup, brown iron stains ruin dishes and laundry, and refrigerator water filters fail rapidly.</p>
+                    <p><strong>What Causes This:</strong> Stouffville's geological formation produces well water with 450+ mg/L hardness (vs. 150 municipal standard) plus iron, manganese, and sediment. Without proper treatment, appliances deteriorate 3x faster than city homes.</p>
+                    <p><strong>How to Fix It:</strong> We provide industrial descaling treatments, replace mineral-damaged components (valves, spray arms, hoses), install inline sediment filters (5-20 micron), coordinate with water softener systems, and recommend optimal appliance settings for well water. Free water quality assessment with every service call.</p>
+                    <p><strong>Prevention:</strong> Water softener systems ($1,200-2,000) prevent 90% of future damage. We coordinate with your existing system or recommend installation.</p>
+                    <p><strong>Cost: $220-$380 including parts and descaling.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">🐴</div>
+                    <h3>Commercial-Grade Laundry Equipment for Stouffville Horse Farms</h3>
+                    <p><strong>Stouffville Challenge:</strong> Stouffville's thriving equestrian community creates unique appliance demands. Horse farms require commercial-grade washing machines (5.0+ cu ft capacity) to handle saddle pads, horse blankets, and barn laundry. These heavy-duty cycles stress residential appliances beyond design limits, causing premature bearing failures, transmission problems, and motor burnout.</p>
+                    <p><strong>What Causes Failures:</strong> Regular residential washers aren't built for continuous heavy loads, wet horse blankets (15-20 lbs), and the abrasive dirt/hay from barn use. Most repair companies lack experience with commercial-grade residential equipment.</p>
+                    <p><strong>How to Fix It:</strong> We specialize in large-capacity washers from Speed Queen, Maytag Commercial, and Whirlpool heavy-duty lines. We stock reinforced bearings, heavy-duty transmissions, and commercial-grade motors. We also service barn refrigerators and freezers used for storing supplements and medications.</p>
+                    <p><strong>Recommendations:</strong> For serious equestrian facilities, we recommend Speed Queen commercial-grade (15-year lifespan) or Maytag Commercial Technology washers with stainless steel components to handle well water.</p>
+                    <p><strong>Cost: $250-$500 depending on equipment type.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">🏘️</div>
+                    <h3>New Subdivision Growth - Legacy and Parkwoods Builder Appliances</h3>
+                    <p><strong>Stouffville Challenge:</strong> Rapid development in Legacy and Parkwoods neighborhoods means thousands of brand-new homes with builder-grade appliances. Young families face urgent stress when these budget appliances fail during warranty periods. Challenges include: coordinating builder warranty service, dealing with low-quality Samsung/LG builder models, missing installation parts, and long warranty claim delays.</p>
+                    <p><strong>What Causes Problems:</strong> Builders install cost-optimized appliances (lowest-tier models) to meet budget targets. These appliances have higher failure rates, especially in the critical first 2 years. Tarion warranty and builder coordination creates delays.</p>
+                    <p><strong>How to Fix It:</strong> We work directly with builders, coordinate Tarion warranty claims, provide emergency repairs when warranty service is delayed, and stock parts for common builder brands (Samsung, LG, Frigidaire budget lines). We understand the paperwork and authorization process for new subdivisions.</p>
+                    <p><strong>Young Family Support:</strong> We offer flexible scheduling for working parents, same-day service to minimize disruption, and honest assessments of whether builder-grade appliances are worth repairing vs. upgrading.</p>
+                    <p><strong>Cost: $180-$350 for most builder-grade repairs.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">🚗</div>
+                    <h3>Distance from Service - Remote Ballantrae and Rural Property Challenges</h3>
+                    <p><strong>Stouffville Challenge:</strong> Rural Ballantrae locations and remote properties along Stouffville's perimeter face unique service challenges. Most repair companies refuse service, quote 4.9  startarday delays, charge excessive travel fees ($150+), or arrive without proper parts requiring multiple return trips. This creates massive inconvenience for families depending on working appliances.</p>
+                    <p><strong>What Causes Delays:</strong> Distance from GTA service centers, lack of parts inventory for rural calls, and unwillingness to commit to remote properties. Many companies prioritize high-density areas.</p>
+                    <p><strong>How to Fix It:</strong> We commit to same-day service for all Stouffville areas including remote Ballantrae. We maintain comprehensive parts inventory in our service vehicles (top 200 parts for all major brands) to minimize return trips. We don't charge extra travel fees within Stouffville boundaries. Call before 2 PM for same-day service guarantee.</p>
+                    <p><strong>Rural Expertise:</strong> We understand well water systems, septic considerations for appliances, generator backup requirements, and the importance of getting it right the first time for properties 20+ minutes from town.</p>
+                    <p><strong>Cost: Standard rates apply - no rural surcharges within Stouffville. $200-$450 depending on repair.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">🏆</div>
+                    <h3>Country Estate Luxury - High-End Sub-Zero, Wolf, Miele Repairs</h3>
+                    <p><strong>Stouffville Challenge:</strong> Stouffville's luxury country estates (particularly in rural areas and Historic Downtown heritage properties) feature premium appliances: Sub-Zero built-in refrigeration, Wolf dual-fuel ranges, Miele dishwashers, wine refrigerators, outdoor kitchens, and steam ovens. Most repair companies lack training, diagnostic tools, and parts access for these brands.</p>
+                    <p><strong>What Causes Problems:</strong> High-end appliances require specialized knowledge. Sub-Zero uses unique sealed systems, Wolf requires proprietary diagnostic equipment, Miele parts have long lead times. Generic repair companies damage expensive equipment with incorrect service procedures.</p>
+                    <p><strong>How to Fix It:</strong> We maintain manufacturer certifications for luxury brands, stock premium OEM parts, use brand-specific diagnostic tools, and understand the unique service requirements. We service outdoor kitchens (weatherproof appliances), wine cellars (precise climate control), and estate-grade equipment.</p>
+                    <p><strong>Luxury Brand Expertise:</strong> Sub-Zero refrigeration (all models including integrated and wine storage), Wolf ranges and outdoor grills, Miele dishwashers and steam ovens, Viking professional equipment, Thermador built-ins. We understand these aren't just appliances - they're significant investments requiring expert care.</p>
+                    <p><strong>Estate Services:</strong> Outdoor kitchen repairs, wine refrigerator servicing, commercial-grade residential equipment, smart appliance diagnostics, and preventive maintenance programs.</p>
+                    <p><strong>Cost: $300-$600 depending on brand and complexity. Parts priced at manufacturer MSRP.</strong></p>
+                </div>
+            </div>
+
+            <div class="emergency-cta-box">
+                <h3>Stouffville Appliance Repair Specialists</h3>
+                <p>Rural properties, horse farms, well water solutions, luxury estates, new subdivisions. Same-day service, 90-day warranty, transparent pricing.</p>
+                <a href="tel:437-747-6737" class="emergency-phone-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+                    </svg>
+                    Call <a href="tel:437-747-6737">437-747-6737</a> Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section - BMAD Optimized -->
+    <section class="booking-section-bmad" id="book">
+        <div class="container">
+            <!-- Header with urgency -->
+            <div class="booking-header-bmad">
+                <span class="booking-badge">⚡ SAME-DAY SERVICE IN STOUFFVILLE</span>
+                <h2 class="section-title">Book Your Appliance Repair in 60 Seconds</h2>
+                <p class="booking-subtitle">Online booking or call <a href="tel:437-747-6737" class="booking-phone-inline">437-747-6737</a> — We respond in under 5 minutes</p>
+            </div>
+
+            <!-- Two-Column Layout: Form + Trust Sidebar -->
+            <div class="booking-layout-bmad">
+                <!-- Left Column: Workiz Booking Form -->
+                <div class="booking-form-container-bmad">
+                    <iframe class="workiz-iframe-bmad" src="https://app.workiz.com/book-online/14000/0cf86bd0-78ca-45e4-b5b6-a9b3b28fe61e" frameborder="0"></iframe>
+                </div>
+
+                <!-- Right Column: Trust + Benefits Sidebar -->
+                <div class="booking-sidebar-bmad">
+                    <!-- Trust Indicators -->
+                    <div class="trust-box-bmad">
+                        <h3 class="trust-title-bmad">Why 5,200+ Stouffville Customers Trust Us</h3>
+                        <ul class="trust-list-bmad">
+                            <li class="trust-item-bmad">
+                                <span class="trust-icon-bmad">⭐</span>
+                                <div class="trust-text-bmad">
+                                    <strong>4.9/5 Average Rating</strong>
+                                    <span>From 520+ verified reviews</span>
+                                </div>
+                            </li>
+                            <li class="trust-item-bmad">
+                                <span class="trust-icon-bmad">🛡️</span>
+                                <div class="trust-text-bmad">
+                                    <strong>90-day warranty</strong>
+                                    <span>Parts & labor fully covered</span>
+                                </div>
+                            </li>
+                            <li class="trust-item-bmad">
+                                <span class="trust-icon-bmad">⚡</span>
+                                <div class="trust-text-bmad">
+                                    <strong>Same-Day Service</strong>
+                                    <span>Rural properties & Ballantrae too</span>
+                                </div>
+                            </li>
+                            <li class="trust-item-bmad">
+                                <span class="trust-icon-bmad">💰</span>
+                                <div class="trust-text-bmad">
+                                    <strong>Transparent Pricing</strong>
+                                    <span>No hidden fees or surprises</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Benefits -->
+                    <div class="benefits-box-bmad">
+                        <h4 class="benefits-title-bmad">What You Get:</h4>
+                        <ul class="benefits-list-bmad">
+                            <li>✓ Well water damage specialists</li>
+                            <li>✓ Horse farm commercial equipment</li>
+                            <li>✓ Luxury brand experts (Sub-Zero, Wolf, Miele)</li>
+                            <li>✓ New subdivision warranty coordination</li>
+                            <li>✓ Remote property same-day commitment</li>
+                            <li>✓ Licensed & insured technicians</li>
+                            <li>✓ OEM genuine parts</li>
+                            <li>✓ Free water quality assessment</li>
+                        </ul>
+                    </div>
+
+                    <!-- Emergency Call Button -->
+                    <div class="sidebar-cta-bmad">
+                        <p class="sidebar-cta-text-bmad">Prefer to speak with us?</p>
+                        <a href="tel:437-747-6737" class="sidebar-phone-btn-bmad" style="background: #7B1FA2 !important; color: white !important;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+                            </svg>
+                            Call <a href="tel:437-747-6737">437-747-6737</a>
+                        </a>
+                        <span class="sidebar-cta-hours-bmad">Available 24/7 Daily</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="areas-section-premium" id="areas">
+        <div class="container">
+            <h2 class="section-title">Stouffville Neighborhoods We Service</h2>
+            <p class="section-subtitle">Comprehensive appliance repair coverage across all Stouffville areas - L4A postal codes</p>
+
+            <div class="areas-grid-premium">
+                <div class="area-card-premium">
+                    <div class="area-icon">🏘️</div>
+                    <h3>Legacy</h3>
+                    <p>New subdivision specialist. Builder appliance coordination. Young family support. Same-day service.</p>
+                </div>
+
+                <div class="area-card-premium">
+                    <div class="area-icon">🌳</div>
+                    <h3>Parkwoods</h3>
+                    <p>Growing community. Warranty work. All major brands. Well water solutions available.</p>
+                </div>
+
+                <div class="area-card-premium">
+                    <div class="area-icon">🏡</div>
+                    <h3>Berczy Village</h3>
+                    <p>Established neighborhood. Complete appliance services. Residential experts. Fast response.</p>
+                </div>
+
+                <div class="area-card-premium">
+                    <div class="area-icon">🏛️</div>
+                    <h3>Historic Downtown</h3>
+                    <p>Heritage homes. Luxury appliances. Character properties. Expert service.</p>
+                </div>
+
+                <div class="area-card-premium">
+                    <div class="area-icon">🐴</div>
+                    <h3>Ballantrae</h3>
+                    <p>Rural properties. Horse farms. Commercial laundry. Well water specialists. No travel fees.</p>
+                </div>
+
+                <div class="area-card-premium">
+                    <div class="area-icon">🌾</div>
+                    <h3>Rural Stouffville</h3>
+                    <p>Country estates. Remote service. Luxury brands. Same-day commitment. Parts inventory stocked.</p>
+                </div>
+            </div>
+
+            <div class="areas-note">
+                <p>Serving all L4A postal codes. Same-day service available throughout Stouffville including remote properties. <a href="tel:437-747-6737" style="color: #2196F3; text-decoration: underline;">Call <a href="tel:437-747-6737">437-747-6737</a></a> to confirm your area.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How Stouffville Appliance Repair Works</h2>
+            <p class="section-subtitle">Simple 3-step process from booking to completion</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Book Online or Call</h3>
+                    <p>Schedule service online in 60 seconds or call <a href="tel:437-747-6737">437-747-6737</a>. We respond within 5 minutes and offer same-day appointments for rural properties too.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Expert Diagnosis</h3>
+                    <p>Licensed technician arrives on time with comprehensive parts inventory. Free water quality assessment. Transparent quote before any work begins.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Professional Repair</h3>
+                    <p>Fixed right the first time with genuine OEM parts. 90-day warranty on all repairs. Payment after completion. Well water optimization included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section - STOUFFVILLE SPECIFIC -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Stouffville Appliance Repair FAQ: Your Questions Answered</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you service rural properties and horse farms in Stouffville?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes! Rural properties are our specialty.</strong> We service horse farms throughout Ballantrae and rural Stouffville with commercial-grade laundry equipment (large-capacity washers for barn use), barn refrigerators/freezers, and heavy-duty appliances. Same-day service commitment for remote locations. We stock parts for Speed Queen, Maytag Commercial, and other heavy-duty brands. No extra travel fees within Stouffville boundaries. Call before 2 PM for same-day service at <a href="tel:437-747-6737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Can you repair commercial-grade laundry equipment for equestrian facilities?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Absolutely! Equestrian laundry is our specialty.</strong> Stouffville's thriving horse community requires heavy-duty solutions. We repair large-capacity washers (5.0+ cu ft), commercial-grade dryers, stacked units, and residential commercial models from Speed Queen, Maytag Commercial, and Whirlpool. We understand the unique demands of horse blankets (15-20 lbs wet), saddle pads, and continuous barn laundry cycles. Stock reinforced bearings, heavy-duty transmissions, and commercial motors. Cost: $250-$500 depending on equipment. Free consultation on best appliances for equestrian use.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>What appliances handle Stouffville's well water best?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Well water requires specific appliance choices and maintenance.</strong> Best performers: <strong>Whirlpool/Maytag</strong> with stainless steel tubs (resist mineral staining), <strong>GE</strong> with self-cleaning filter systems, <strong>Bosch/Miele</strong> with European hard-water engineering. Essential additions: inline sediment filters (5-20 micron), water softener coordination, and regular descaling maintenance. We provide free water quality assessment with every service call, recommend optimal settings for your water hardness (typically 450+ mg/L in rural Stouffville), and install protective filtration. Prevention is key: water softener systems ($1,200-2,000) prevent 90% of damage.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Are same-day repairs guaranteed for remote Ballantrae locations?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes - we commit to same-day service for all Stouffville areas including remote Ballantrae!</strong> Call before 2 PM for same-day guarantee. We maintain comprehensive parts inventory (top 200 components for all major brands) in service vehicles to minimize return trips. Travel time to Ballantrae: 15-20 minutes from Historic Downtown. <strong>No rural surcharges</strong> within Stouffville boundaries. We understand the challenges of remote properties and the importance of getting it right the first time. Emergency 24/7 service available (+$75-150 surcharge). Contact us at <a href="tel:437-747-6737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you service outdoor kitchens and wine cellars in country estates?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes! Luxury estate appliances are our specialty.</strong> Stouffville's country estates require premium service. We repair: <strong>Sub-Zero</strong> wine refrigerators (all models including dual-zone), <strong>Wolf</strong> outdoor grills and ranges, <strong>Viking</strong> professional equipment, <strong>Miele</strong> wine coolers and steam ovens, outdoor-rated refrigerators, weatherproof ice makers, and high-end built-in appliances. Manufacturer certifications maintained. We use brand-specific diagnostic tools, stock premium OEM parts, and understand climate control requirements for wine storage. Estate maintenance programs available. Cost: $300-$600 depending on brand and complexity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Can you coordinate with builders in new Legacy/Parkwoods subdivisions?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes - new subdivision support is part of our service!</strong> Legacy and Parkwoods rapid development creates unique challenges. We work directly with builders, coordinate Tarion warranty claims, provide emergency repairs when warranty service is delayed (common 7-14 day delays), and stock parts for builder-grade brands (Samsung, LG, Frigidaire budget lines). We understand authorization processes, paperwork requirements, and builder warranty limitations. Honest assessments: we'll tell you if builder-grade appliances are worth repairing vs. upgrading. Young family friendly: flexible scheduling for working parents, same-day service to minimize disruption. Cost: $180-$350 for most builder-grade repairs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you stock parts for high-end brands common in Stouffville homes?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes! Premium brand parts are in our inventory.</strong> Stouffville's country estates and Historic Downtown heritage homes feature luxury appliances. We maintain stock for: <strong>Sub-Zero</strong> (sealed system components, electronic controls), <strong>Wolf</strong> (igniters, valves, burner assemblies), <strong>Miele</strong> (circulation pumps, electronic boards), <strong>Bosch</strong> (European metric fittings), <strong>Viking</strong> (professional range components), and <strong>Thermador</strong> (built-in parts). For specialty items not in stock, we offer expedited ordering (24-48 hours) with manufacturer direct relationships. All parts are genuine OEM, not aftermarket substitutes. Premium parts priced at manufacturer MSRP - transparent pricing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Can you help with water softener integration for appliances?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes - water softener coordination is essential for Stouffville well water!</strong> We provide: water quality assessment (test hardness, iron, manganese, sediment), appliance settings optimization for your specific water hardness (typically 450+ mg/L in rural areas), inline sediment filter installation (5-20 micron protection), water softener system coordination (we work with your existing system or recommend installation), and descaling maintenance for hard water damage. <strong>Prevention is key:</strong> Properly configured water softener systems ($1,200-2,000 installed by plumbing specialists) prevent 90% of future appliance damage. We coordinate with local plumbers for complete solutions. Every service call includes free water quality assessment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../js/youtube-facade.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/countdown-timer.js" defer></script>
+    <script src="../js/form-validation.js" defer></script>
+
+    <!-- SEO-Optimized Footer with Blue Gradient -->
+    <footer class="seo-footer-premium">
+        <div class="container">
+            <!-- Trust Badges Row -->
+            <div class="footer-trust-badges">
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⭐</div>
+                    <div class="badge-text">
+                        <strong>4.9/5 Rating</strong>
+                        <span>5,200+ Reviews</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🏆</div>
+                    <div class="badge-text">
+                        <strong>Licensed & Insured</strong>
+                        <span>Certified Technicians</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🛡️</div>
+                    <div class="badge-text">
+                        <strong>90-day warranty</strong>
+                        <span>Parts & Labor</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⚡</div>
+                    <div class="badge-text">
+                        <strong>Same-Day Service</strong>
+                        <span>7 Days a Week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Footer Content -->
+            <div class="footer-main">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🔧</div>
+                        <div class="logo-text">
+                            <span class="logo-name">NIKA</span>
+                            <span class="logo-tagline">Appliance Repair</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">Professional appliance repair services in Stouffville. Rural properties, horse farms, well water specialists, luxury estates. Licensed, insured, and trusted by 5,200+ customers.</p>
+                    <div class="footer-contact">
+                        <a href="tel:437-747-6737" class="footer-phone">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+                            </svg>
+                            <a href="tel:437-747-6737">(437) 747-6737</a>
+                        </a>
+                        <a href="mailto:care@niappliancerepair.ca" class="footer-email">care@niappliancerepair.ca</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/locations">Locations</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/#book">Book Now</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services/refrigerator-repair">Refrigerator Repair</a></li>
+                        <li><a href="/services/dishwasher-repair">Dishwasher Repair</a></li>
+                        <li><a href="/services/washer-repair">Washer Repair</a></li>
+                        <li><a href="/services/dryer-repair">Dryer Repair</a></li>
+                        <li><a href="/services/oven-repair">Oven Repair</a></li>
+                        <li><a href="/services/stove-repair">Stove Repair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Areas -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Stouffville Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="/locations/stouffville">Legacy</a></li>
+                        <li><a href="/locations/stouffville">Parkwoods</a></li>
+                        <li><a href="/locations/stouffville">Berczy Village</a></li>
+                        <li><a href="/locations/stouffville">Historic Downtown</a></li>
+                        <li><a href="/locations/stouffville">Ballantrae</a></li>
+                        <li><a href="/locations/stouffville">Rural Stouffville</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SEO-Rich Content -->
+            <div class="footer-seo-content">
+                <h3 class="footer-seo-title">Stouffville Appliance Repair Services - Rural Property & Horse Farm Specialists</h3>
+                <p class="footer-seo-text">
+                    Nika Appliance Repair is Stouffville's trusted appliance service provider, specializing in the unique challenges of rural properties and York Region's equestrian community. Serving Legacy, Parkwoods, Berczy Village, Historic Downtown, and Ballantrae, we understand Stouffville isn't just another suburb. Our technicians are experts in rural well water damage (extreme hardness and sediment), commercial-grade laundry equipment for horse farms, luxury country estate appliances (Sub-Zero, Wolf, Miele), new subdivision builder coordination, and remote property service commitment. We repair all major brands: Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, Maytag, Frigidaire, Speed Queen, and premium luxury brands. Services include refrigerator repair, dishwasher repair, washing machine repair, dryer repair, oven repair, range repair, wine cooler servicing, and outdoor kitchen equipment. Same-day service available throughout Stouffville including remote Ballantrae locations. 90-day warranty on all repairs. Licensed and insured technicians. Transparent pricing with no hidden fees. Free water quality assessment with every service call. We stock comprehensive parts inventory including commercial-grade components for equestrian facilities and premium OEM parts for luxury brands. Call <a href="tel:437-747-6737">437-747-6737</a> for expert appliance repair in Stouffville, Ontario.
+                </p>
+                <div class="footer-keywords">
+                    <strong>Service Areas:</strong> Stouffville, Legacy, Parkwoods, Berczy Village, Historic Downtown, Ballantrae, Rural Stouffville, L4A, York Region, Whitchurch-Stouffville |
+                    <strong>Specialties:</strong> Well water damage, horse farm equipment, commercial laundry, luxury estates, rural properties, Sub-Zero repair, Wolf repair, Miele repair |
+                    <strong>Services:</strong> Refrigerator repair, dishwasher repair, washer repair, dryer repair, oven repair, range repair, wine cooler repair, outdoor kitchen repair
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 24.9  starNika Appliance Repair. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="mobile-sticky-bottom">
+        <a href="tel:437-747-6737" class="mobile-cta-call">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 4.9  startar1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 4.9  startar0 1.24.9  startar2.45.57 3.57.11.35.03.74-.25 1.02l-4.9  startar2.2z"/>
+            </svg>
+            <span>Call Now</span>
+        </a>
+        <a href="https://wa.me/1437-747-6737" class="mobile-cta-chat" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.4.9  startar0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.4.9  star0 1.462 1.4.9  star2.875 1.213 3.074.149.4.9  startar2.096 4.9  star5.077 4.487.709.306 1.262.4.9  star1.694.625.712.227 1.36.4.9  star1.871.118.571-.4.9  star1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.4.9  star5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.4.9  startar11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span>WhatsApp</span>
+        </a>
+        <a href="#book" class="mobile-cta-book">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 4.9  startar2h14c4.9  startar0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+            <span>Book</span>
+        </a>
+    </div>
+</body>
+</html>

@@ -2886,9 +2886,25 @@ a {
 .booking-content-bmad {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
     max-width: 1400px; /* Increased from 1200px to 1400px for wider layout */
     margin: 0 auto;
+}
+
+/* Desktop and laptop screens - ensure two column layout */
+@media (min-width: 901px) {
+    .booking-content-bmad {
+        display: grid !important;
+        grid-template-columns: 1.5fr 1fr !important;
+    }
+}
+
+/* Large desktop screens - better balance */
+@media (min-width: 1400px) {
+    .booking-content-bmad {
+        grid-template-columns: 1.6fr 1fr !important;
+        gap: 3rem;
+    }
 }
 
 /* Form Section */
@@ -3250,7 +3266,8 @@ a {
 }
 
 /* Mobile Responsive */
-@media (max-width: 1024px) {
+/* Tablet - keep two columns on tablets in landscape */
+@media (max-width: 900px) {
     .booking-content-bmad {
         grid-template-columns: 1fr;
         gap: 2rem;

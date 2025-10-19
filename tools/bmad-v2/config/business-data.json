@@ -11,7 +11,8 @@
     "email": "info@nikaappliancerepair.com",
     "address": "Toronto, ON",
     "service_hours": "24/7",
-    "website": "https://nikaappliancerepair.com"
+    "website": "https://nikaappliancerepair.com",
+    "diagnostic_fee": 119
   },
   "quality_metrics": {
     "rating": 4.9,

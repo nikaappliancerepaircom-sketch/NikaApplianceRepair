@@ -1,0 +1,2273 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert appliance repair in Newmarket - Stonehaven, Summerhill, Main Street. Same-day service for fridges, washers, ovens. Well water specialists. Call 437-747-6737">
+    <title>Appliance Repair Newmarket ON | Same-Day Service | Save $40</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nikaappliancerepair.com/locations/newmarket">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nika Appliance Repair Newmarket | Same-Day Service">
+    <meta property="og:description" content="Newmarket appliance repair. Stonehaven & Summerhill well water solutions. Main Street commercial experts. Same-day service. Call 437-747-6737">
+    <meta property="og:url" content="https://nikaappliancerepair.com/locations/newmarket">
+    <meta property="og:image" content="https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nika Appliance Repair Newmarket | Same-Day Service">
+    <meta name="twitter:description" content="Newmarket appliance repair. Well water specialists. Stonehaven, Summerhill, Main Street. Same-day service.">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nika Appliance Repair",
+        "image": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+        "logo": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+        "url": "https://nikaappliancerepair.com/",
+        "telephone": "4377476737",
+        "email": "care@niappliancerepair.ca",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Newmarket Service Area",
+            "addressLocality": "Newmarket",
+            "addressRegion": "ON",
+            "postalCode": "L3X",
+            "addressCountry": "CA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "43.2934",
+            "longitude": "-79.4608"
+        },
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "5200",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Newmarket"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Stonehaven"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Summerhill Estates"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Woodland Hill"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Armitage"
+            },
+            {
+                "@type": "Neighborhood",
+                "name": "Gorham-College Manor"
+            }
+        ],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "17:00"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Appliance Repair Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Refrigerator Repair",
+                        "url": "https://nikaappliancerepair.com/services/refrigerator-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dishwasher Repair",
+                        "url": "https://nikaappliancerepair.com/services/dishwasher-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Washer Repair",
+                        "url": "https://nikaappliancerepair.com/services/washer-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Dryer Repair",
+                        "url": "https://nikaappliancerepair.com/services/dryer-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Oven Repair",
+                        "url": "https://nikaappliancerepair.com/services/oven-repair"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Stove Repair",
+                        "url": "https://nikaappliancerepair.com/services/stove-repair"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Do you service homes with well water systems in Newmarket?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We specialize in well water-related appliance issues common in rural Newmarket properties. Hard water causes sediment buildup, mineral deposits, and premature appliance failure. We provide water softener integration, descaling services, and recommend filtration systems to protect your appliances."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you coordinate warranty repairs with builders in new Stonehaven developments?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. We work with major builders in Stonehaven and Summerhill Estates on warranty coordination. We document issues, communicate with builders, and ensure warranty coverage is properly applied. Our experience with new construction means faster resolution for builder-grade appliance failures."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What appliances work best with Newmarket's hard water?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For Newmarket's hard water, we recommend appliances with self-cleaning features and stainless steel interiors. Bosch, Miele, and high-end LG models handle hard water better. However, water softener installation is the best solution - it extends appliance life by 3-5 years and improves cleaning performance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you repair commercial restaurant equipment on Main Street?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We service commercial appliances for Main Street restaurants and businesses, including commercial refrigerators, dishwashers, ovens, and ranges. We understand downtown heritage building constraints and work efficiently to minimize business downtime. Emergency service available for critical equipment failures."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are same-day repairs available in all Newmarket neighborhoods?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We provide same-day service throughout Newmarket including Stonehaven, Summerhill Estates, Woodland Hill, Armitage, and Gorham-College Manor. Call <a href="tel:4377476737">437-747-6737</a> before noon for same-day availability. We stock common parts for faster repairs."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-refrigerator.svg",
+                "name": "Refrigerator Repair Service Icon",
+                "description": "Professional refrigerator repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-dishwasher.svg",
+                "name": "Dishwasher Repair Service Icon",
+                "description": "Expert dishwasher repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-dryer.svg",
+                "name": "Dryer Repair Service Icon",
+                "description": "Fast dryer repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-stove.svg",
+                "name": "Stove Repair Service Icon",
+                "description": "Professional stove repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-oven.svg",
+                "name": "Oven Repair Service Icon",
+                "description": "Expert oven repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-washer.svg",
+                "name": "Washing Machine Repair Service Icon",
+                "description": "Professional washer repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+                "name": "Professional Service Technician",
+                "description": "Expert appliance repair technician in Newmarket"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-freezer.svg",
+                "name": "Freezer Repair Service Icon",
+                "description": "Quick freezer repair services"
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://nikaappliancerepair.com/service-icon-range.svg",
+                "name": "Range Repair Service Icon",
+                "description": "Professional range repair services"
+            }
+        ]
+    }
+    </script>
+
+    <!-- AI SEARCH OPTIMIZATION - Speakable Schema for Voice Assistants -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Nika Appliance Repair - Same-Day Service in Newmarket",
+        "description": "Expert appliance repair in Newmarket. Well water specialists. Serving Stonehaven, Summerhill, Main Street. Same-day service. Call <a href="tel:4377476737">437-747-6737</a>.",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".hero-title", ".section-title", ".faq-question", ".section-subtitle"]
+        },
+        "mainEntity": {
+            "@type": "Service",
+            "name": "Appliance Repair Service",
+            "description": "Professional appliance repair services in Newmarket with same-day availability and 90-day warranty",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Nika Appliance Repair"
+            }
+        }
+    }
+    </script>
+
+    <!-- AI SEARCH OPTIMIZATION - HowTo Schema for Step-by-Step Process -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Get Your Appliance Repaired in Newmarket",
+        "description": "Simple 3-step process to get professional appliance repair service from Nika Appliance Repair in Newmarket",
+        "totalTime": "PT2H",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "CAD",
+            "value": "150"
+        },
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Book Service",
+                "text": "Call <a href="tel:4377476737">437-747-6737</a> or book online. We'll schedule same-day service when possible.",
+                "url": "https://nikaappliancerepair.com/#book",
+                "position": 1
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Expert Diagnosis",
+                "text": "Our certified technician arrives on time and diagnoses the issue with your appliance.",
+                "position": 2
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Fast Repair",
+                "text": "We fix it right the first time with genuine OEM parts and provide a 90-day warranty on all repairs.",
+                "position": 3
+            }
+        ]
+    }
+    </script>
+
+    <!-- SEO Images - Hidden but indexed by search engines -->
+    <div style="display:none;" aria-hidden="true">
+        <img src="https://nikaappliancerepair.com/service-icon-refrigerator.svg" alt="Refrigerator Repair Icon Newmarket" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-dishwasher.svg" alt="Dishwasher Repair Icon Newmarket" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-dryer.svg" alt="Dryer Repair Icon Newmarket" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-stove.svg" alt="Stove Repair Icon Newmarket" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-oven.svg" alt="Oven Repair Icon Newmarket" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-washer.svg" alt="Washer Repair Icon Newmarket" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-freezer.svg" alt="Freezer Repair Icon Newmarket" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-range.svg" alt="Range Repair Icon Newmarket" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp" alt="Newmarket Appliance Repair Technician" width="1" height="1" loading="lazy">
+        <img src="https://nikaappliancerepair.com/service-icon-cooktop.svg" alt="Cooktop Repair Newmarket" width="1" height="1" loading="lazy">
+    </div>
+
+    <link rel="stylesheet" href="../css/hero-image-mobile-fix.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="header-container">
+            <!-- Logo & Brand -->
+            <div class="header-logo">
+                <a href="../" aria-label="Nika Appliance Repair - Home">
+                    <div class="logo-icon">🔧</div>
+                    <div class="logo-text">
+                        <span class="logo-name">NIKA</span>
+                        <span class="logo-tagline">Appliance Repair</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../services" class="nav-link">Services</a></li>
+                    <li><a href="../locations" class="nav-link">Locations</a></li>
+                    <li><a href="../about" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Trust Badge (Desktop Only) -->
+            <div class="header-trust" aria-label="Customer rating">
+                <div class="trust-stars">⭐⭐⭐⭐⭐</div>
+                <div class="trust-rating">4.9 <span class="trust-reviews">(5,200+)</span></div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone" aria-label="Call us at 437-747-6737">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <span class="cta-phone-number">(437) 747-6737</span>
+                </a>
+                <a href="../book" class="cta-book" aria-label="Book an appointment online">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                    <span>Book Now</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" onclick="toggleMenu()">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sticky Bottom CTA -->
+    <div class="mobile-bottom-cta" role="complementary" aria-label="Quick actions">
+        <a href="tel:4377476737" class="mobile-cta-btn mobile-cta-call">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span>Call Now</span>
+        </a>
+        <a href="../book" class="mobile-cta-btn mobile-cta-book">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+            <span>Book Online</span>
+        </a>
+    </div>
+
+    <style>
+    /* ========== SEO-OPTIMIZED HEADER STYLES ========== */
+
+    /* Header Container */
+    .site-header {
+        background: #ffffff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .header-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    /* Logo */
+    .header-logo a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .logo-icon {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+    }
+
+    .logo-name {
+        font-size: 24px;
+        font-weight: 800;
+        color: #2196F3;
+        letter-spacing: 0.5px;
+    }
+
+    .logo-tagline {
+        font-size: 12px;
+        font-weight: 500;
+        color: #666;
+    }
+
+    /* Navigation */
+    .header-nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 15px;
+        transition: color 0.2s;
+        white-space: nowrap;
+    }
+
+    .nav-link:hover {
+        color: #2196F3;
+    }
+
+    /* Trust Badge */
+    .header-trust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 0 16px;
+        border-left: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    .trust-stars {
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+
+    .trust-rating {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .trust-reviews {
+        font-size: 11px;
+        font-weight: 400;
+        color: #666;
+    }
+
+    /* CTA Buttons */
+    .header-cta {
+        display: flex;
+        gap: 10px;
+    }
+
+    .cta-phone,
+    .cta-book {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        transition: all 0.2s;
+        white-space: nowrap;
+    }
+
+    .cta-phone {
+        background: #4CAF50;
+        color: white;
+    }
+
+    .cta-phone:hover {
+        background: #45a049;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(76,175,80,0.3);
+    }
+
+    .cta-book {
+        background: #2196F3;
+        color: white;
+    }
+
+    .cta-book:hover {
+        background: #1976D2;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(33,150,243,0.3);
+    }
+
+    /* Mobile Menu Button */
+    .mobile-menu-btn {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    .menu-bar {
+        width: 26px;
+        height: 3px;
+        background: #333;
+        border-radius: 2px;
+        transition: all 0.3s;
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] .menu-bar:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] .menu-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] .menu-bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+
+    /* Mobile Bottom CTA */
+    .mobile-bottom-cta {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        z-index: 999;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .mobile-cta-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 12px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 13px;
+        color: white;
+        transition: transform 0.2s;
+    }
+
+    .mobile-cta-call {
+        background: #4CAF50;
+    }
+
+    .mobile-cta-book {
+        background: #2196F3;
+    }
+
+    .mobile-cta-btn:active {
+        transform: scale(0.95);
+    }
+
+    /* ========== RESPONSIVE BREAKPOINTS ========== */
+
+    /* Large Desktop */
+    @media (min-width: 1400px) {
+        .header-container {
+            padding: 16px 40px;
+        }
+
+        .nav-list {
+            gap: 40px;
+        }
+    }
+
+    /* Desktop to Tablet */
+    @media (max-width: 1200px) {
+        .header-trust {
+            display: none;
+        }
+    }
+
+    /* Tablet */
+    @media (max-width: 968px) {
+        .header-nav {
+            display: none;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            bottom: 80px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            overflow-y: auto;
+            z-index: 998;
+        }
+
+        .header-nav.menu-open {
+            display: block;
+        }
+
+        .nav-list {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .nav-list li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 16px 12px;
+            font-size: 18px;
+        }
+
+        .header-cta {
+            display: none;
+        }
+
+        .mobile-menu-btn {
+            display: flex;
+        }
+
+        .mobile-bottom-cta {
+            display: grid;
+        }
+
+        body {
+            padding-bottom: 70px;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        .header-container {
+            padding: 10px 16px;
+        }
+
+        .logo-icon {
+            font-size: 28px;
+        }
+
+        .logo-name {
+            font-size: 20px;
+        }
+
+        .logo-tagline {
+            font-size: 11px;
+        }
+    }
+
+    /* Small Mobile */
+    @media (max-width: 480px) {
+        .logo-icon {
+            font-size: 24px;
+        }
+
+        .logo-name {
+            font-size: 18px;
+        }
+
+        .logo-tagline {
+            font-size: 10px;
+        }
+
+        .mobile-cta-btn {
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+
+    /* Accessibility */
+    .skip-to-content:focus {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #2196F3;
+        color: white;
+        padding: 10px 20px;
+        z-index: 10000;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+    </style>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header Navigation -->
+    <header class="main-header-v2">
+        <div class="container">
+            <div class="header-content-v2">
+                <!-- Logo -->
+                <div class="logo-v2">
+                    <a href="../" style="text-decoration: none;">
+                        <div class="logo-text-v2">
+                            <span class="logo-primary-v2">Nika</span>
+                            <span class="logo-secondary-v2">Appliance Repair</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="main-nav-v2" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="../#services">Services</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#areas">Areas</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../locations/richmond-hill">Richmond Hill</a></li>
+                                <li><a href="../locations/markham">Markham</a></li>
+                                <li><a href="../locations/vaughan">Vaughan</a></li>
+                                <li><a href="../locations/aurora">Aurora</a></li>
+                                <li><a href="../locations/newmarket">Newmarket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../#about">About</a></li>
+                        <li><a href="../contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header CTAs -->
+                <div class="header-ctas-v2">
+                    <a href="tel:4377476737" class="header-cta-call">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <a href="tel:4377476737">437-747-6737</a>
+                    </a>
+                    <a href="../#book" class="header-cta-book">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                        </svg>
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Bottom CTA -->
+    <div class="mobile-bottom-cta">
+        <a href="tel:4377476737" class="mobile-cta-btn mobile-cta-call">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            Call Now
+        </a>
+        <a href="../#book" class="mobile-cta-btn mobile-cta-book">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+            Book Service
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="main-content">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="highlight-yellow">Newmarket</span><br>Appliance <span class="highlight-yellow">Repair</span><br>Fast Service Available<br><span class="wow-text">Save $40 Today!</span>
+                    </h1>
+                    <p class="hero-subtitle">⭐ 4.9/5 from 5,200+ repairs • Residential appliance experts • Well water specialists • Stonehaven & Summerhill new construction experts</p>
+                    <div class="hero-cta-group">
+                        <a href="../#book" class="cta-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                            </svg>
+                            Book Service Now
+                        </a>
+                        <a href="tel:4377476737" class="cta-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            Call <a href="tel:4377476737">437-747-6737</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/images/friendly-technician-character-min.webp" alt="Professional Service Technician" fetchpriority="high" width="800" height="1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI SEARCH OPTIMIZATION: Direct Answer Box -->
+    <section class="ai-answer-box" style="background: #f8f9fa; padding: 2rem 0; margin: 2rem 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <div style="background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #2196F3;">
+
+                <!-- Question Format (AI crawlers look for questions) -->
+                <h2 style="font-size: 1.5rem; color: #212529; margin-bottom: 1rem;">
+                    Looking for reliable appliance repair in Newmarket?
+                </h2>
+
+                <!-- Direct Answer (First 100 words = AI citation) -->
+                <p style="font-size: 1.1rem; line-height: 1.7; color: #212529; margin-bottom: 1.5rem;">
+                    <strong>Nika Appliance Repair</strong> provides same-day residential appliance repair across Newmarket. We fix Samsung, LG, Whirlpool, GE, and all major brands. <strong>90-day warranty</strong> on all repairs. <strong>Licensed technicians.</strong> <strong>4.9★ rating</strong> from 5,200+ customers. Call <a href="tel:4377476737" style="color: #2196F3; font-weight: bold; text-decoration: none;">437-747-6737</a> for fast service.
+                </p>
+
+                <!-- Structured Data (AI loves lists) -->
+                <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 6px;">
+                    <p style="font-weight: bold; margin-bottom: 0.75rem;">Service Details:</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+                        <li>✓ <strong>Service:</strong> Refrigerator, dishwasher, dryer, stove, oven, washing machine</li>
+                        <li>✓ <strong>Brands:</strong> Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, Maytag, Frigidaire</li>
+                        <li>✓ <strong>Response:</strong> Same-day service available 7 days/week</li>
+                        <li>✓ <strong>Warranty:</strong> 90-day parts & labor warranty</li>
+                        <li>✓ <strong>Pricing:</strong> $200-$450 average repair (transparent, no hidden fees)</li>
+                        <li>✓ <strong>Rating:</strong> 4.9★ from 5,200+ customers</li>
+                    </ul>
+                </div>
+
+                <!-- Newmarket specific details -->
+                <p style="margin-top: 1.5rem; font-size: 0.95rem; color: #6c757d;">
+                    <strong>Newmarket expertise:</strong> Well water system specialists (hardness solutions, sediment filters), new construction warranty coordination (Stonehaven, Summerhill Estates), Main Street commercial appliances, serving all neighborhoods including Woodland Hill, Armitage, and Gorham-College Manor.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2 class="section-title">How Much Does Appliance Repair Cost in Newmarket?</h2>
+            <p class="section-subtitle">Transparent pricing with no hidden fees • Free service call with completed repair</p>
+
+            <div class="pricing-tables">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service Type</th>
+                            <th>Average Cost</th>
+                            <th>Time to Repair</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Refrigerator Repair</strong><br><small>Not cooling, leaking, ice maker issues</small></td>
+                            <td><strong>$250-$450</strong></td>
+                            <td>1-2 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dishwasher Repair</strong><br><small>Not draining, not cleaning, leaking</small></td>
+                            <td><strong>$200-$380</strong></td>
+                            <td>1-2 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Washer Repair</strong><br><small>Won't spin, won't drain, loud noises</small></td>
+                            <td><strong>$220-$400</strong></td>
+                            <td>1-2 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dryer Repair</strong><br><small>Not heating, won't start, overheating</small></td>
+                            <td><strong>$200-$380</strong></td>
+                            <td>1-2 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Oven Repair</strong><br><small>Not heating, wrong temperature, door issues</small></td>
+                            <td><strong>$230-$420</strong></td>
+                            <td>1-2 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Stove Repair</strong><br><small>Burners not working, igniter problems</small></td>
+                            <td><strong>$200-$400</strong></td>
+                            <td>1-2 hours</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <style>
+                .pricing-section {
+                    padding: 60px 0;
+                    background: #f8f9fa;
+                }
+
+                .pricing-tables {
+                    margin-top: 40px;
+                    overflow-x: auto;
+                }
+
+                .pricing-table {
+                    width: 100%;
+                    max-width: 900px;
+                    margin: 0 auto;
+                    background: white;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                }
+
+                .pricing-table thead {
+                    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+                    color: white;
+                }
+
+                .pricing-table th {
+                    padding: 20px;
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                .pricing-table tbody tr {
+                    border-bottom: 1px solid #f0f0f0;
+                    transition: background-color 0.3s;
+                }
+
+                .pricing-table tbody tr:hover {
+                    background-color: #f8f9fa;
+                }
+
+                .pricing-table td {
+                    padding: 20px;
+                    font-size: 15px;
+                }
+
+                .pricing-table td small {
+                    display: block;
+                    color: #666;
+                    margin-top: 5px;
+                    font-size: 13px;
+                }
+
+                .pricing-table td:nth-child(2) {
+                    color: #2196F3;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+
+                @media (max-width: 768px) {
+                    .pricing-table {
+                        font-size: 14px;
+                    }
+
+                    .pricing-table th,
+                    .pricing-table td {
+                        padding: 12px 8px;
+                    }
+
+                    /* Prevent images from overflowing */
+                    img {
+                        max-width: 100% !important;
+                        height: auto !important;
+                    }
+                }
+            </style>
+
+            <div style="margin-top: 1.5rem; padding: 1rem; background: #e3f2fd; border-left: 4px solid #2196F3; border-radius: 4px;">
+                <p style="margin: 0; color: #495057; font-size: 0.95rem;"><strong>Note:</strong> All prices include diagnostic fee, labor, and basic parts. Complex repairs may cost more. Emergency service and after-hours calls may have additional fees. Call <a href="tel:4377476737" style="color: #0d47a1; text-decoration: underline; font-weight: 600;">437-747-6737</a> for exact quote.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner Section with Countdown Timer -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2 class="countdown-title">How Can I Save $40 on Newmarket Appliance Repair?</h2>
+            <p class="countdown-label">DEAL ENDS IN</p>
+            <div class="countdown-timer">
+                <div class="timer-box">
+                    <div class="timer-value countdown-minutes" id="timer-minutes">14</div>
+                    <div class="timer-label">MINUTES</div>
+                </div>
+                <div class="timer-box">
+                    <div class="timer-value countdown-seconds" id="timer-seconds">45</div>
+                    <div class="timer-label">SECONDS</div>
+                </div>
+            </div>
+            <a href="../#book" class="countdown-cta">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                </svg>
+                Book Now & Save $40
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">What Appliance Repair Services Do You Offer?</h2>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 40px;">⭐ 4.9★ rating | 5,200+ repairs | 90-day warranty</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Refrigerator Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="10" width="60" height="80" rx="8" fill="#2196F3" stroke="#1976D2" stroke-width="2"/>
+                            <rect x="25" y="15" width="50" height="35" rx="4" fill="#B3E5FC"/>
+                            <rect x="25" y="55" width="50" height="30" rx="4" fill="#81D4FA"/>
+                            <rect x="30" y="20" width="15" height="25" rx="2" fill="#E3F2FD"/>
+                            <rect x="65" y="60" width="6" height="20" rx="3" fill="#1565C0"/>
+                            <circle cx="35" cy="65" r="2" fill="#0D47A1"/>
+                            <path d="M55 25H60V30H55V25Z" fill="#90CAF9"/>
+                            <path d="M55 35H60V40H55V35Z" fill="#90CAF9"/>
+                        </svg>
+                    </div>
+                    <h3><a href="../services/refrigerator-repair" style="color: inherit; text-decoration: none;">Refrigerator Repair</a></h3>
+                    <p>Expert Newmarket fridge repair for all types and brands. Not cooling, freezer issues, leaking, food spoiling. Fast service available.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Dishwasher Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="20" width="70" height="60" rx="6" fill="#E91E63" stroke="#C2185B" stroke-width="2"/>
+                            <rect x="20" y="25" width="60" height="45" rx="4" fill="#F8BBD0"/>
+                            <rect x="25" y="30" width="50" height="35" rx="3" fill="#FCE4EC"/>
+                            <circle cx="30" cy="75" r="2" fill="#880E4F"/>
+                            <circle cx="40" cy="75" r="2" fill="#880E4F"/>
+                            <circle cx="50" cy="75" r="2" fill="#880E4F"/>
+                            <rect x="60" y="73" width="15" height="4" rx="2" fill="#AD1457"/>
+                            <!-- Water droplets -->
+                            <path d="M35 40C35 42 33 45 33 45C33 45 31 42 31 40C31 38 31.9 37 33 37C34.1 37 35 38 35 40Z" fill="#81D4FA"/>
+                            <path d="M45 45C45 47 43 50 43 50C43 50 41 47 41 45C41 43 41.9 42 43 42C44.1 42 45 43 45 45Z" fill="#81D4FA"/>
+                            <path d="M55 40C55 42 53 45 53 45C53 45 51 42 51 40C51 38 51.9 37 53 37C54.1 37 55 38 55 40Z" fill="#81D4FA"/>
+                            <!-- Dishes -->
+                            <ellipse cx="50" cy="55" rx="15" ry="3" fill="#FFAB91"/>
+                            <ellipse cx="50" cy="50" rx="12" ry="2" fill="#FFCCBC"/>
+                        </svg>
+                    </div>
+                    <h3><a href="../services/dishwasher-repair" style="color: inherit; text-decoration: none;">Dishwasher Repair</a></h3>
+                    <p>Newmarket dishwasher repair for built-in, portable, double, and countertop models. Leaking, flooding, not draining, not cleaning. Well water damage specialists.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Dryer Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="15" width="70" height="70" rx="8" fill="#FF6B35" stroke="#E65100" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="25" fill="#FFE0B2" stroke="#FFB74D" stroke-width="2"/>
+                            <rect x="20" y="20" width="60" height="8" rx="4" fill="#BF360C"/>
+                            <circle cx="30" cy="24" r="3" fill="#FFD54F"/>
+                            <circle cx="40" cy="24" r="3" fill="#4CAF50"/>
+                            <rect x="55" y="22" width="20" height="4" rx="2" fill="#FF8A65"/>
+                            <!-- Drum pattern -->
+                            <path d="M50 30 L45 45 L50 50 L55 45 Z" fill="#FFAB91"/>
+                            <path d="M35 40 L40 50 L35 55 L30 50 Z" fill="#FFAB91"/>
+                            <path d="M65 40 L70 50 L65 55 L60 50 Z" fill="#FFAB91"/>
+                            <path d="M50 55 L45 60 L50 70 L55 60 Z" fill="#FFAB91"/>
+                            <!-- Lint indicator -->
+                            <rect x="65" y="75" width="15" height="5" rx="2" fill="#FDD835" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <h3><a href="../services/dryer-repair" style="color: inherit; text-decoration: none;">Dryer Repair</a></h3>
+                    <p>Newmarket dryer repair for gas and electric models. Not heating, won't start, noisy drum. Fast fix and service available.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Stove Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="40" width="80" height="45" rx="6" fill="#7B1FA2" stroke="#4A148C" stroke-width="2"/>
+                            <rect x="15" y="45" width="70" height="35" fill="#CE93D8"/>
+                            <!-- Burners -->
+                            <circle cx="30" cy="60" r="12" fill="#4A148C" stroke="#311B92" stroke-width="2"/>
+                            <circle cx="30" cy="60" r="8" fill="#6A1B9A"/>
+                            <circle cx="30" cy="60" r="4" fill="#8E24AA"/>
+
+                            <circle cx="70" cy="60" r="12" fill="#4A148C" stroke="#311B92" stroke-width="2"/>
+                            <circle cx="70" cy="60" r="8" fill="#6A1B9A"/>
+                            <circle cx="70" cy="60" r="4" fill="#8E24AA"/>
+
+                            <!-- Control knobs -->
+                            <circle cx="20" cy="75" r="4" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1"/>
+                            <circle cx="35" cy="75" r="4" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1"/>
+                            <circle cx="65" cy="75" r="4" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1"/>
+                            <circle cx="80" cy="75" r="4" fill="#E1BEE7" stroke="#BA68C8" stroke-width="1"/>
+
+                            <!-- Flames -->
+                            <path d="M25 25C25 30 30 35 30 35C30 35 35 30 35 25C35 20 32.5 17 30 17C27.5 17 25 20 25 25Z" fill="#FF6F00" opacity="0.8"/>
+                            <path d="M28 27C28 29 30 31 30 31C30 31 32 29 32 27C32 25 31 24 30 24C29 24 28 25 28 27Z" fill="#FDD835"/>
+
+                            <path d="M65 25C65 30 70 35 70 35C70 35 75 30 75 25C75 20 72.5 17 70 17C67.5 17 65 20 65 25Z" fill="#FF6F00" opacity="0.8"/>
+                            <path d="M68 27C68 29 70 31 70 31C70 31 72 29 72 27C72 25 71 24 70 24C69 24 68 25 68 27Z" fill="#FDD835"/>
+                        </svg>
+                    </div>
+                    <h3><a href="../services/stove-repair" style="color: inherit; text-decoration: none;">Stove Repair</a></h3>
+                    <p>Newmarket stove repair for gas and electric models including residential ranges. Burners not igniting, uneven heat, control issues.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Oven Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="20" width="70" height="65" rx="6" fill="#DC2626" stroke="#B91C1C" stroke-width="2"/>
+                            <rect x="20" y="25" width="60" height="10" rx="3" fill="#7F1D1D"/>
+                            <!-- Control panel -->
+                            <circle cx="30" cy="30" r="3" fill="#FCA5A5"/>
+                            <circle cx="40" cy="30" r="3" fill="#FCA5A5"/>
+                            <circle cx="50" cy="30" r="3" fill="#FCA5A5"/>
+                            <rect x="60" y="28" width="15" height="4" rx="2" fill="#FEE2E2"/>
+                            <!-- Oven door -->
+                            <rect x="20" y="40" width="60" height="40" rx="4" fill="#991B1B"/>
+                            <rect x="25" y="45" width="50" height="30" rx="3" fill="#450A0A" opacity="0.8"/>
+                            <rect x="30" y="50" width="40" height="20" rx="2" fill="#1F2937" opacity="0.6"/>
+                            <!-- Window glow -->
+                            <rect x="35" y="55" width="30" height="10" rx="2" fill="#FED7AA" opacity="0.5"/>
+                            <!-- Handle -->
+                            <rect x="25" y="42" width="50" height="3" rx="1.5" fill="#D1D5DB"/>
+                            <!-- Rack lines -->
+                            <line x1="35" y1="58" x2="65" y2="58" stroke="#9CA3AF" stroke-width="1"/>
+                            <line x1="35" y1="62" x2="65" y2="62" stroke="#9CA3AF" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3><a href="../services/oven-repair" style="color: inherit; text-decoration: none;">Oven Repair</a></h3>
+                    <p>Newmarket oven repair for gas, electric, and dual-fuel models. Not heating, wrong temperature, door seal issues.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <!-- Custom Washing Machine Icon -->
+                        <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="10" width="70" height="80" rx="8" fill="#00BCD4" stroke="#0097A7" stroke-width="2"/>
+                            <rect x="20" y="15" width="60" height="15" rx="4" fill="#006064"/>
+                            <!-- Control panel -->
+                            <circle cx="30" cy="22" r="3" fill="#B2EBF2"/>
+                            <circle cx="40" cy="22" r="3" fill="#4DD0E1"/>
+                            <rect x="50" y="20" width="25" height="4" rx="2" fill="#E0F7FA"/>
+                            <!-- Door -->
+                            <circle cx="50" cy="55" r="25" fill="#00838F" stroke="#006064" stroke-width="2"/>
+                            <circle cx="50" cy="55" r="20" fill="#E0F7FA" opacity="0.3"/>
+                            <!-- Water and bubbles -->
+                            <circle cx="45" cy="50" r="3" fill="#81D4FA" opacity="0.8"/>
+                            <circle cx="55" cy="58" r="2" fill="#B3E5FC" opacity="0.7"/>
+                            <circle cx="48" cy="62" r="4" fill="#4FC3F7" opacity="0.6"/>
+                            <circle cx="58" cy="48" r="2.5" fill="#81D4FA" opacity="0.8"/>
+                            <!-- Clothes inside -->
+                            <path d="M40 55 Q50 60 60 55 Q55 65 45 65 Q40 60 40 55Z" fill="#F06292" opacity="0.7"/>
+                            <path d="M45 50 Q50 45 55 50 Q52 55 48 55 Q45 52 45 50Z" fill="#FFB74D" opacity="0.7"/>
+                            <!-- Door handle -->
+                            <rect x="75" y="50" width="5" height="10" rx="2.5" fill="#CFD8DC"/>
+                        </svg>
+                    </div>
+                    <h3><a href="../services/washer-repair" style="color: inherit; text-decoration: none;">Washing Machine Repair</a></h3>
+                    <p>Newmarket washer repair for front-load, top-load, and high-efficiency models. Won't drain, won't spin, loud noises, leaking, flooding. Well water damage specialists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title-light">Why Should I Choose <span class="highlight-yellow">Nika</span> Appliance Repair?</h2>
+            <p class="section-subtitle">4.9★ rated by 5,200+ homeowners | Building trust with every service call</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Lightning Fast Response</h3>
+                    <p>Fast response time. Same-day service available for most calls. We know broken appliances can't wait.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Licensed Appliance Repair Experts</h3>
+                    <p>Experienced, licensed, and insured technicians. 5+ years minimum experience on every service truck.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden fees, no surprises. Get exact quotes before we start. Plus, save $40 as a new customer!</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔧</div>
+                    <h3>Genuine Parts Only</h3>
+                    <p>OEM and high-quality parts that last. No cheap knockoffs that break in 6 months.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>90-Day Guarantee</h3>
+                    <p>Industry-leading warranty on all repairs. If something goes wrong, we'll fix it free - no questions asked.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏠</div>
+                    <h3>All Brands Welcome</h3>
+                    <p>Experienced with all major brands. Samsung, LG, Whirlpool, GE, Bosch, KitchenAid, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Who Is Behind Nika Appliance Repair?</h2>
+
+            <div class="about-layout">
+                <!-- Left Side - Video and Info -->
+                <div class="about-left">
+                    <div class="modern-video-card">
+                        <div class="video-wrapper">
+                            <div class="youtube-facade" data-video-id="Nk1ab2OskJ4" data-start-time="2"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Our Story</h3>
+                            <p>See how we became Newmarket's trusted choice</p>
+                            <div class="video-stats">
+                                <div class="stat-item likes">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/>
+                                    </svg>
+                                    <span>1.8K Likes</span>
+                                </div>
+                                <div class="stat-item views">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                    </svg>
+                                    <span>45K Views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="company-story">
+                        <h3>Your Trusted Newmarket Appliance Repair Experts</h3>
+                        <p>Since 2019, we've grown from one tech to a team of certified pros in Newmarket, committed to fixing residential appliances and solving urgent repair stress.</p>
+                        <p>We built our business around same-day response, clear pricing, and quality fixes. Our techs provide reliable warranty coverage with satisfaction on every Newmarket service call.</p>
+                    </div>
+                </div>
+
+                <!-- Right Side - Stats and Features -->
+                <div class="about-right">
+                    <div class="experience-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">5+</div>
+                            <div class="stat-text">Years in Business</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">5,200+</div>
+                            <div class="stat-text">Repairs Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">98%</div>
+                            <div class="stat-text">Customer Satisfaction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">Fast</div>
+                            <div class="stat-text">Response Time</div>
+                        </div>
+                    </div>
+
+                    <div class="service-features">
+                        <h4>What Sets Us Apart</h4>
+                        <ul>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#4CAF50">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                Same-day service in Newmarket
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#4CAF50">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                Well water system specialists
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#4CAF50">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                90-day warranty on all repairs
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#4CAF50">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                Licensed & insured technicians
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#4CAF50">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                All major brands serviced
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#4CAF50">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                Transparent pricing, no hidden fees
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section - Premium Design -->
+    <section class="testimonials-section-premium">
+        <div class="container">
+            <div class="testimonials-header-premium">
+                <span class="testimonials-badge-premium">VIDEO TESTIMONIALS</span>
+                <h2>What Do Customers Say About Our Service?</h2>
+                <p class="section-subtitle">Real reviews from real customers in Newmarket and York Region</p>
+            </div>
+
+            <div class="testimonials-grid-premium">
+                <div class="testimonial-card-premium">
+                    <div class="verified-badge-premium">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#4CAF50">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        <span>Verified Review</span>
+                    </div>
+                    <div class="testimonial-video-wrapper-premium">
+                        <div class="youtube-facade" data-video-id="lrCX_mXG1nc"></div>
+                    </div>
+                    <div class="testimonial-content-premium">
+                        <div class="rating-stars-premium">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text-premium">"Quick response, professional service, and my fridge was fixed the same day!"</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card-premium">
+                    <div class="verified-badge-premium">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#4CAF50">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        <span>Verified Review</span>
+                    </div>
+                    <div class="testimonial-video-wrapper-premium">
+                        <div class="youtube-facade" data-video-id="-u4mEmLB6gI"></div>
+                    </div>
+                    <div class="testimonial-content-premium">
+                        <div class="rating-stars-premium">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text-premium">"Fair pricing and excellent quality work! The technician explained everything clearly."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems Section - Premium Design -->
+    <section class="common-problems-premium">
+        <div class="container">
+            <div class="problems-header">
+                <span class="problems-badge">NEWMARKET-SPECIFIC ISSUES</span>
+                <h2>What Are the Top 5 Appliance Problems in Newmarket?</h2>
+                <p class="section-subtitle">Learn how to fix urgent issues: well water damage, new construction failures, commercial equipment, growing family needs, and seasonal temperature extremes.</p>
+            </div>
+
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">💧</div>
+                    <h3>How to Fix Well Water System Damage in Rural Newmarket Properties?</h3>
+                    <p><strong>Newmarket Challenge:</strong> Rural Newmarket properties on well water face severe hard water issues causing urgent stress: sediment buildup in dishwashers, washing machine inlet valve failures, premature appliance breakdown, and mineral deposits that reduce efficiency. <strong>What Causes This:</strong> Well water contains high mineral content (calcium, magnesium, iron) that accumulates in appliances. <strong>How to Fix It:</strong> Professional descaling, sediment filter installation, water softener integration, component replacement, and regular maintenance programs. <strong>Cost: $200-$450.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">🏗️</div>
+                    <h3>New Construction Builder Appliance Failures in Stonehaven & Summerhill</h3>
+                    <p><strong>Newmarket Challenge:</strong> New Stonehaven and Summerhill Estates developments feature builder-grade appliances that fail within warranty period. Homeowners struggle with warranty coordination, builder delays, and defective appliances disrupting new home life. <strong>Our Solution:</strong> Direct builder coordination, warranty documentation expertise, fast diagnosis to prove manufacturer defects, temporary solutions during warranty processing, and replacement recommendations when needed. We understand new construction timelines and work with major builders. <strong>Typical Cost: $200-$380 (often covered by warranty).</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">🍽️</div>
+                    <h3>How to Repair Historic Main Street Commercial Restaurant Equipment?</h3>
+                    <p><strong>Newmarket Challenge:</strong> Main Street downtown businesses operate in heritage buildings with older commercial appliances, space constraints, and unique installation challenges. Restaurant owners face urgent pressure when equipment fails - every hour of downtime costs revenue. <strong>What Makes This Complex:</strong> Limited access, older building codes, heritage preservation requirements, commercial-grade equipment needs. <strong>How to Fix It:</strong> We service commercial refrigerators, dishwashers, ovens, and ranges with minimal business disruption. Emergency service available for critical failures. <strong>Cost: $250-$600.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Growing Family Appliance Upgrades and Energy-Efficient Solutions</h3>
+                    <p><strong>Newmarket Challenge:</strong> Young families in newer Newmarket neighborhoods (Woodland Hill, Armitage) outgrow builder appliances quickly. Small dishwashers can't handle family loads, standard washers take multiple cycles, and older appliances increase energy bills. <strong>When to Repair vs Replace:</strong> If appliance is under 8 years old and repair costs less than 50% of replacement, repair makes sense. <strong>Our Approach:</strong> Honest assessment, energy-efficient upgrade recommendations, capacity-appropriate suggestions for growing families, and extended warranty options. <strong>Typical Repair: $200-$450.</strong></p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">🌡️</div>
+                    <h3>Seasonal Temperature Swings Affecting Garage Fridges and Outdoor Appliances</h3>
+                    <p><strong>Newmarket Challenge:</strong> York Region experiences extreme temperature swings (-25°C winter to +35°C summer). Garage refrigerators and freezers fail when ambient temperatures exceed operating ranges. Outdoor kitchens and garage appliances stop working in extreme cold or overheat in summer. <strong>What Causes Failures:</strong> Most appliances are rated for 10-38°C. Below/above this range, compressors fail, thermostats malfunction, and efficiency plummets. <strong>How to Fix It:</strong> Climate-appropriate appliance recommendations, garage heater kits for winter, insulation improvements, thermostat calibration, and seasonal maintenance. <strong>Cost: $180-$350.</strong></p>
+                </div>
+            </div>
+
+            <div class="emergency-cta-box">
+                <h3>Newmarket Appliance Repair Experts</h3>
+                <p>Samsung, LG, Whirlpool, GE, and all major brands. Well water solutions, new construction warranty coordination, commercial equipment. Same-day service available, 90-day warranty.</p>
+                <a href="tel:4377476737" class="emergency-phone-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    Call <a href="tel:4377476737">437-747-6737</a> Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section - BMAD Optimized -->
+    <section class="booking-section-bmad" id="book">
+        <div class="container">
+            <!-- Header with urgency -->
+            <div class="booking-header-bmad">
+                <span class="booking-badge">⚡ SAME-DAY SERVICE</span>
+                <h2 class="section-title">Book Your Appliance Repair in 60 Seconds</h2>
+                <p class="booking-subtitle">Online booking or call <a href="tel:4377476737" class="booking-phone-inline">437-747-6737</a> — We respond in under 5 minutes</p>
+            </div>
+
+            <div class="booking-content-bmad">
+                <!-- Workiz CRM Booking Integration -->
+                <div class="booking-form-bmad">
+                    <iframe src='https://online-booking.workiz.com/?ac=176dd5d1ce4f69e999d5930a80c1e0109e51c6c46573321e62fe8a71623f0ebb' width="100%" height="750px" style='border:none; border-radius: 12px;'></iframe>
+                    <p class="form-note">✓ Free service call with any repair • ✓ $40 off on any appliance repair service</p>
+                </div>
+
+                <!-- Trust signals + CTA -->
+                <div class="booking-trust-sidebar">
+                    <div class="trust-sidebar-header">
+                        <h3>Why Choose Nika?</h3>
+                    </div>
+                    <div class="trust-sidebar-benefits">
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div class="benefit-text">
+                                <strong>Free Service Call</strong>
+                                <span>With any repair completed</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">💰</span>
+                            <div class="benefit-text">
+                                <strong>$40 Off Today</strong>
+                                <span>On any appliance repair service</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">⚡</span>
+                            <div class="benefit-text">
+                                <strong>Same-Day Service</strong>
+                                <span>Available 7 days a week</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">🛡️</span>
+                            <div class="benefit-text">
+                                <strong>90-Day Warranty</strong>
+                                <span>On all repairs guaranteed</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">👨‍🔧</span>
+                            <div class="benefit-text">
+                                <strong>Licensed & Insured</strong>
+                                <span>All technicians certified</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">💵</span>
+                            <div class="benefit-text">
+                                <strong>Upfront Pricing</strong>
+                                <span>No hidden fees ever</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trust-sidebar-cta">
+                        <a href="tel:4377476737" class="cta-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            Call <a href="tel:4377476737">437-747-6737</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section - Premium Design -->
+    <section class="areas-section-premium" id="areas">
+        <div class="container">
+            <div class="areas-header-premium">
+                <span class="areas-badge-premium">NEWMARKET SERVICE AREAS</span>
+                <h2>What Neighborhoods in Newmarket Do You Service?</h2>
+                <p class="section-subtitle">Complete coverage across all Newmarket neighborhoods and surrounding York Region</p>
+            </div>
+
+            <div class="newmarket-neighborhoods" style="background: white; padding: 2rem; border-radius: 12px; margin-bottom: 3rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <h3 style="margin-bottom: 1.5rem; color: #333; font-size: 1.5rem;">Newmarket Neighborhoods We Serve:</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #2196F3;">
+                        <strong style="color: #2196F3;">Stonehaven</strong>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">New construction specialist</p>
+                    </div>
+                    <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #2196F3;">
+                        <strong style="color: #2196F3;">Summerhill Estates</strong>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">Builder warranty experts</p>
+                    </div>
+                    <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #2196F3;">
+                        <strong style="color: #2196F3;">Woodland Hill</strong>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">Family home specialists</p>
+                    </div>
+                    <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #2196F3;">
+                        <strong style="color: #2196F3;">Armitage</strong>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">Fast service area</p>
+                    </div>
+                    <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #2196F3;">
+                        <strong style="color: #2196F3;">Gorham-College Manor</strong>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">Established neighborhood</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="areas-grid-premium">
+                <a href="../locations/ajax" class="area-item-premium"><span class="area-name-premium">Ajax</span></a>
+                <a href="../locations/aurora" class="area-item-premium"><span class="area-name-premium">Aurora</span></a>
+                <a href="../locations/agincourt" class="area-item-premium"><span class="area-name-premium">Agincourt</span></a>
+                <a href="../locations/bayview-glen" class="area-item-premium"><span class="area-name-premium">Bayview Glen</span></a>
+                <a href="../locations/berczy-village" class="area-item-premium"><span class="area-name-premium">Berczy Village</span></a>
+                <a href="../locations/beverley-glen" class="area-item-premium"><span class="area-name-premium">Beverley Glen</span></a>
+                <a href="../locations/bradford" class="area-item-premium"><span class="area-name-premium">Bradford</span></a>
+                <a href="../locations/beverley-acres" class="area-item-premium"><span class="area-name-premium">Beverley Acres</span></a>
+                <a href="../locations/brampton" class="area-item-premium"><span class="area-name-premium">Brampton</span></a>
+                <a href="../locations/cachet" class="area-item-premium"><span class="area-name-premium">Cachet</span></a>
+                <a href="../locations/cathedraltown" class="area-item-premium"><span class="area-name-premium">Cathedraltown</span></a>
+                <a href="../locations/concord" class="area-item-premium"><span class="area-name-premium">Concord</span></a>
+                <a href="../locations/don-valley-village" class="area-item-premium"><span class="area-name-premium">Don Valley Village</span></a>
+                <a href="../locations/elgin-mills" class="area-item-premium"><span class="area-name-premium">Elgin Mills</span></a>
+                <a href="../locations/east-gwillimbury" class="area-item-premium"><span class="area-name-premium">East Gwillimbury</span></a>
+                <a href="../locations/east-york" class="area-item-premium"><span class="area-name-premium">East York</span></a>
+                <a href="../locations/etobicoke" class="area-item-premium"><span class="area-name-premium">Etobicoke</span></a>
+                <a href="../locations/greensborough" class="area-item-premium"><span class="area-name-premium">Greensborough</span></a>
+                <a href="../locations/gta" class="area-item-premium"><span class="area-name-premium">GTA</span></a>
+                <a href="../locations/gormley" class="area-item-premium"><span class="area-name-premium">Gormley</span></a>
+                <a href="../locations/hillcrest-village" class="area-item-premium"><span class="area-name-premium">Hillcrest village</span></a>
+                <a href="../locations/innisfil" class="area-item-premium"><span class="area-name-premium">Innisfil</span></a>
+                <a href="../locations/king-city" class="area-item-premium"><span class="area-name-premium">King City</span></a>
+                <a href="../locations/kleinburg" class="area-item-premium"><span class="area-name-premium">Kleinburg</span></a>
+                <a href="../locations/holland-landing" class="area-item-premium"><span class="area-name-premium">Holland Landing</span></a>
+                <a href="../locations/langstaff" class="area-item-premium"><span class="area-name-premium">Langstaff</span></a>
+                <a href="../locations/lamoreaux" class="area-item-premium"><span class="area-name-premium">Lamoreaux</span></a>
+                <a href="../locations/maple" class="area-item-premium"><span class="area-name-premium">Maple</span></a>
+                <a href="../locations/markham" class="area-item-premium"><span class="area-name-premium">Markham</span></a>
+                <a href="../locations/mount-albert" class="area-item-premium"><span class="area-name-premium">Mount Albert</span></a>
+                <a href="../locations/milliken" class="area-item-premium"><span class="area-name-premium">Milliken</span></a>
+                <a href="../locations/mississauga" class="area-item-premium"><span class="area-name-premium">Mississauga</span></a>
+                <a href="../locations/newmarket" class="area-item-premium"><span class="area-name-premium">Newmarket</span></a>
+                <a href="../locations/north-york" class="area-item-premium"><span class="area-name-premium">North York</span></a>
+                <a href="../locations/oak-ridges" class="area-item-premium"><span class="area-name-premium">Oak-Ridges</span></a>
+                <a href="../locations/oakville" class="area-item-premium"><span class="area-name-premium">Oakville</span></a>
+                <a href="../locations/oshawa" class="area-item-premium"><span class="area-name-premium">Oshawa</span></a>
+                <a href="../locations/pickering" class="area-item-premium"><span class="area-name-premium">Pickering</span></a>
+                <a href="../locations/richmond-hill" class="area-item-premium"><span class="area-name-premium">Richmond Hill</span></a>
+                <a href="../locations/richvale" class="area-item-premium"><span class="area-name-premium">Richvale</span></a>
+                <a href="../locations/raymerville-markville-east" class="area-item-premium"><span class="area-name-premium">Raymerville Markville East</span></a>
+                <a href="../locations/steeles" class="area-item-premium"><span class="area-name-premium">Steeles</span></a>
+                <a href="../locations/scarborough" class="area-item-premium"><span class="area-name-premium">Scarborough</span></a>
+                <a href="../locations/schomberg" class="area-item-premium"><span class="area-name-premium">Schomberg</span></a>
+                <a href="../locations/stouffville" class="area-item-premium"><span class="area-name-premium">Stouffville</span></a>
+                <a href="../locations/thornhill" class="area-item-premium"><span class="area-name-premium">Thornhill</span></a>
+                <a href="../locations/toronto" class="area-item-premium"><span class="area-name-premium">Toronto</span></a>
+                <a href="../locations/unionville" class="area-item-premium"><span class="area-name-premium">Unionville</span></a>
+                <a href="../locations/uxbridge" class="area-item-premium"><span class="area-name-premium">Uxbridge</span></a>
+                <a href="../locations/vaughan" class="area-item-premium"><span class="area-name-premium">Vaughan</span></a>
+                <a href="../locations/whitby" class="area-item-premium"><span class="area-name-premium">Whitby</span></a>
+                <a href="../locations/woodbridge" class="area-item-premium"><span class="area-name-premium">Woodbridge</span></a>
+                <a href="../locations/wismer-commons" class="area-item-premium"><span class="area-name-premium">Wismer Commons</span></a>
+                <a href="../locations/yongehurst" class="area-item-premium"><span class="area-name-premium">Yongehurst</span></a>
+                <a href="../locations/burlington" class="area-item-premium"><span class="area-name-premium">Burlington</span></a>
+                <a href="../locations/milton" class="area-item-premium"><span class="area-name-premium">Milton</span></a>
+                <a href="../locations/georgetown" class="area-item-premium"><span class="area-name-premium">Georgetown</span></a>
+                <a href="../locations/halton-hills" class="area-item-premium"><span class="area-name-premium">Halton Hills</span></a>
+            </div>
+
+            <div class="areas-features-premium">
+                <div class="area-feature-premium">
+                    <div class="feature-icon-premium">⚡</div>
+                    <h3>Fast Response</h3>
+                    <p>Quick arrival in your area</p>
+                </div>
+                <div class="area-feature-premium">
+                    <div class="feature-icon-premium">🏆</div>
+                    <h3>5-Star Service</h3>
+                    <p>Top-rated in every neighborhood</p>
+                </div>
+                <div class="area-feature-premium">
+                    <div class="feature-icon-premium">📅</div>
+                    <h3>7 Days Service</h3>
+                    <p>Including weekends & holidays</p>
+                </div>
+                <div class="area-feature-premium">
+                    <div class="feature-icon-premium">🛡️</div>
+                    <h3>Full Warranty</h3>
+                    <p>90 days parts & labor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How Does Your Appliance Repair Process Work?</h2>
+            <p class="section-subtitle">Simple 3-step process to get your appliances working like new</p>
+
+            <div class="steps-container">
+                <div class="step-item step-1">
+                    <div class="step-number">
+                        <span class="step-text">STEP</span>
+                        <span class="step-digit">1</span>
+                    </div>
+                    <h3 class="step-title">Book Service</h3>
+                    <p class="step-description">Call or book online. We'll schedule fast service when available.</p>
+                </div>
+
+                <div class="step-item step-2">
+                    <div class="step-number">
+                        <span class="step-text">STEP</span>
+                        <span class="step-digit">2</span>
+                    </div>
+                    <h3 class="step-title">Expert Diagnosis</h3>
+                    <p class="step-description">Our licensed technician arrives on time and diagnoses the issue.</p>
+                </div>
+
+                <div class="step-item step-3">
+                    <div class="step-number">
+                        <span class="step-text">STEP</span>
+                        <span class="step-digit">3</span>
+                    </div>
+                    <h3 class="step-title">Fast Repair</h3>
+                    <p class="step-description">We fix it right the first time with genuine parts and 90-day warranty.</p>
+                </div>
+            </div>
+
+            <div class="progress-note">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="progress-text">Most repairs completed in under 2 hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Newmarket Appliance Repair FAQ: Your Questions Answered</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you service homes with well water systems in Newmarket?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes! We specialize in well water-related appliance issues</strong> common in rural Newmarket properties. Hard water causes sediment buildup, mineral deposits in dishwashers and washing machines, and premature appliance failure. We provide industrial descaling, water softener integration recommendations, sediment filter installation, and component replacement. Our technicians understand how well water affects appliance performance and lifespan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Can you coordinate warranty repairs with builders in new Stonehaven developments?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Absolutely. We work directly with major builders in Stonehaven and Summerhill Estates</strong> on warranty coordination. We document appliance issues with detailed reports, communicate directly with builder warranty departments, and ensure proper warranty coverage is applied. Our experience with new construction means we understand builder timelines and can expedite warranty claims for faster resolution.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>What appliances work best with Newmarket's hard water?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>For hard water areas in Newmarket, we recommend appliances with self-cleaning features and stainless steel interiors.</strong> Bosch, Miele, and high-end LG dishwashers handle hard water better than budget models. However, <strong>water softener installation is the best solution</strong> - it extends appliance life by 3-5 years, improves cleaning performance, reduces energy consumption, and eliminates mineral buildup. We can recommend quality water treatment systems.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you repair commercial restaurant equipment on Main Street?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes. We service commercial appliances for Main Street Newmarket restaurants and businesses,</strong> including commercial refrigerators, walk-in coolers, commercial dishwashers, ovens, and ranges. We understand downtown heritage building constraints (limited access, older electrical systems) and work efficiently to minimize business downtime. Emergency service available for critical equipment failures that impact business operations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Are same-day repairs available in all Newmarket neighborhoods?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes! We provide same-day service throughout Newmarket</strong> including Stonehaven, Summerhill Estates, Woodland Hill, Armitage, and Gorham-College Manor. Call <a href="tel:4377476737" style="color: #2196F3; font-weight: bold;">437-747-6737</a> before noon for same-day availability. We stock common parts for Samsung, LG, Whirlpool, and GE appliances on our service trucks for faster repairs without waiting for parts delivery.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Can you service garage refrigerators that face extreme temperatures?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes, we specialize in garage and outdoor appliance issues unique to York Region's climate.</strong> Newmarket experiences extreme temperature swings (-25°C winter to +35°C summer). Most refrigerators are rated for 10-38°C ambient temperatures. We can install garage heater kits for winter protection, recommend climate-appropriate models, calibrate thermostats for temperature extremes, and provide seasonal maintenance to prevent failures.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Do you offer energy-efficient appliance recommendations for new homes?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Absolutely. We provide honest repair vs. replace assessments</strong> and recommend energy-efficient upgrades when appropriate. For growing families in Woodland Hill and Armitage, we suggest larger capacity Energy Star appliances that reduce cycle frequency and energy costs. We'll calculate payback periods comparing repair costs to energy savings from new efficient models. Our goal is helping you make the smartest financial decision.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Can you help troubleshoot appliances affected by well water sediment?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Yes, well water sediment troubleshooting is one of our Newmarket specialties.</strong> Sediment causes clogged dishwasher spray arms, washing machine inlet valve failures, and reduced water flow. We perform complete sediment inspections, clean affected components, install inline sediment filters (5-micron recommended), and provide water testing referrals. Regular maintenance every 6-12 months prevents sediment-related failures.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Is it worth it to fix an appliance?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most appliances are worth repairing if they're less than 10 years old and the repair cost is less than 50% of replacement cost. Our technicians provide honest assessments and will tell you if replacement makes more sense.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>Which is better repair or replace?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Generally, repair if: the appliance is less than 8 years old, repair costs less than 50% of new. Replace if: it's over 15 years old, repairs are frequent, or energy efficiency is poor.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>What is the warranty on your appliance repair services?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a comprehensive 90-day warranty on all repairs. This covers both parts and labor. If the same issue occurs within 90 days, we'll fix it free of charge.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>What is the best way to maintain my appliances?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Regular cleaning, following manufacturer guidelines, not overloading, and scheduling annual maintenance checks. We offer maintenance services to keep your appliances running efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+                        <span>What should I do if my appliance breaks down?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>First, unplug the appliance for safety. Check basic issues like power supply or circuit breakers. If the problem persists, call us at <a href="tel:4377476737">437-747-6737</a> for same-day service. Don't attempt complex repairs yourself.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Nika Appliance Repair</h3>
+                    <p>Your trusted appliance repair experts in Newmarket and throughout York Region. Same-day service, 90-day warranty, licensed technicians.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61566827177107" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/nikaappliancerepair/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@NikaApplianceRepair" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../services/refrigerator-repair">Refrigerator Repair</a></li>
+                        <li><a href="../services/dishwasher-repair">Dishwasher Repair</a></li>
+                        <li><a href="../services/washer-repair">Washer Repair</a></li>
+                        <li><a href="../services/dryer-repair">Dryer Repair</a></li>
+                        <li><a href="../services/oven-repair">Oven Repair</a></li>
+                        <li><a href="../services/stove-repair">Stove Repair</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="../locations/richmond-hill">Richmond Hill</a></li>
+                        <li><a href="../locations/markham">Markham</a></li>
+                        <li><a href="../locations/vaughan">Vaughan</a></li>
+                        <li><a href="../locations/aurora">Aurora</a></li>
+                        <li><a href="../locations/newmarket">Newmarket</a></li>
+                        <li><a href="../locations/thornhill">Thornhill</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:4377476737">437-747-6737</a></li>
+                        <li><a href="mailto:care@niappliancerepair.ca">care@niappliancerepair.ca</a></li>
+                        <li>Serving Newmarket, ON</li>
+                        <li>L3X, L3Y postal codes</li>
+                        <li>Mon-Fri: 8am-8pm</li>
+                        <li>Sat-Sun: 9am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nika Appliance Repair. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy-policy">Privacy Policy</a>
+                    <a href="../terms-of-service">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- YouTube Facade Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const facades = document.querySelectorAll('.youtube-facade');
+
+            facades.forEach(facade => {
+                const videoId = facade.dataset.videoId;
+                const startTime = facade.dataset.startTime || 0;
+
+                // Create thumbnail
+                const thumbnail = document.createElement('img');
+                thumbnail.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+                thumbnail.alt = 'Video thumbnail';
+                thumbnail.loading = 'lazy';
+
+                // Create play button
+                const playButton = document.createElement('div');
+                playButton.className = 'youtube-play-button';
+                playButton.innerHTML = `
+                    <svg viewBox="0 0 68 48">
+                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                    </svg>
+                `;
+
+                facade.appendChild(thumbnail);
+                facade.appendChild(playButton);
+
+                // Load video on click
+                facade.addEventListener('click', function() {
+                    const iframe = document.createElement('iframe');
+                    iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startTime}`);
+                    iframe.setAttribute('frameborder', '0');
+                    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                    iframe.setAttribute('allowfullscreen', '');
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.position = 'absolute';
+                    iframe.style.top = '0';
+                    iframe.style.left = '0';
+
+                    facade.innerHTML = '';
+                    facade.appendChild(iframe);
+                });
+            });
+        });
+    </script>
+
+    <!-- FAQ Accordion Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+                    // Close all other FAQs
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        if (item !== faqItem) {
+                            item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                            item.querySelector('.faq-answer').style.maxHeight = null;
+                            item.querySelector('.faq-icon').textContent = '+';
+                        }
+                    });
+
+                    // Toggle current FAQ
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    const answer = faqItem.querySelector('.faq-answer');
+                    const icon = this.querySelector('.faq-icon');
+
+                    if (!isExpanded) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.textContent = '−';
+                    } else {
+                        answer.style.maxHeight = null;
+                        icon.textContent = '+';
+                    }
+                });
+
+                // Keyboard support
+                question.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        // Countdown timer functionality
+        function startCountdown() {
+            const storedEndTime = localStorage.getItem('countdownEndTime');
+            let endTime;
+
+            if (storedEndTime) {
+                endTime = parseInt(storedEndTime, 10);
+                if (endTime <= Date.now()) {
+                    endTime = Date.now() + 15 * 60 * 1000;
+                    localStorage.setItem('countdownEndTime', endTime.toString());
+                }
+            } else {
+                endTime = Date.now() + 15 * 60 * 1000;
+                localStorage.setItem('countdownEndTime', endTime.toString());
+            }
+
+            function updateTimer() {
+                const now = Date.now();
+                const distance = endTime - now;
+
+                if (distance < 0) {
+                    endTime = Date.now() + 15 * 60 * 1000;
+                    localStorage.setItem('countdownEndTime', endTime.toString());
+                    return;
+                }
+
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                const minutesElement = document.getElementById('timer-minutes');
+                const secondsElement = document.getElementById('timer-seconds');
+
+                if (minutesElement) {
+                    minutesElement.textContent = minutes.toString().padStart(2, '0');
+                }
+                if (secondsElement) {
+                    secondsElement.textContent = seconds.toString().padStart(2, '0');
+                }
+            }
+
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        // Start countdown when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', startCountdown);
+        } else {
+            startCountdown();
+        }
+    </script>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const nav = document.querySelector('.header-nav');
+            const btn = document.querySelector('.mobile-menu-btn');
+            const body = document.body;
+
+            if (nav && btn) {
+                const isOpen = nav.classList.contains('menu-open');
+
+                if (isOpen) {
+                    nav.classList.remove('menu-open');
+                    btn.setAttribute('aria-expanded', 'false');
+                    body.style.overflow = '';
+                } else {
+                    nav.classList.add('menu-open');
+                    btn.setAttribute('aria-expanded', 'true');
+                    body.style.overflow = 'hidden';
+                }
+            }
+        }
+
+        // Close menu on link click
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.header-nav .nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const nav = document.querySelector('.header-nav');
+                    const btn = document.querySelector('.mobile-menu-btn');
+                    if (nav && nav.classList.contains('menu-open')) {
+                        nav.classList.remove('menu-open');
+                        btn.setAttribute('aria-expanded', 'false');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <footer class="seo-footer-premium">
+        <div class="container">
+            <!-- Trust Badges Row -->
+            <div class="footer-trust-badges">
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⭐</div>
+                    <div class="badge-text">
+                        <strong>4.9/5 Rating</strong>
+                        <span>5,200+ Reviews</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🏆</div>
+                    <div class="badge-text">
+                        <strong>Licensed & Insured</strong>
+                        <span>Since 2017</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🛡️</div>
+                    <div class="badge-text">
+                        <strong>90-Day Warranty</strong>
+                        <span>Parts & Labor</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⚡</div>
+                    <div class="badge-text">
+                        <strong>Same-Day Service</strong>
+                        <span>7 Days a Week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Footer Content -->
+            <div class="footer-main-content">
+                <!-- Column 1: Services -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="../services/refrigerator-repair">Refrigerator Repair</a></li>
+                        <li><a href="../services/washer-repair">Washer Repair</a></li>
+                        <li><a href="../services/dryer-repair">Dryer Repair</a></li>
+                        <li><a href="../services/dishwasher-repair">Dishwasher Repair</a></li>
+                        <li><a href="../services/oven-repair">Oven Repair</a></li>
+                        <li><a href="../services/stove-repair">Stove Repair</a></li>
+                        <li><a href="../services/range-repair">Range Repair</a></li>
+                        <li><a href="../services/freezer-repair">Freezer Repair</a></li>
+                        <li><a href="../services/microwave-repair">Microwave Repair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Top Service Areas -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Top Service Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="../locations/toronto">Toronto</a></li>
+                        <li><a href="../locations/mississauga">Mississauga</a></li>
+                        <li><a href="../locations/brampton">Brampton</a></li>
+                        <li><a href="../locations/markham">Markham</a></li>
+                        <li><a href="../locations/vaughan">Vaughan</a></li>
+                        <li><a href="../locations/richmond-hill">Richmond Hill</a></li>
+                        <li><a href="../locations/oakville">Oakville</a></li>
+                        <li><a href="../locations/burlington">Burlington</a></li>
+                        <li><a href="../locations/oshawa">Oshawa</a></li>
+                        <li><a href="../locations/ajax">Ajax</a></li>
+                        <li><a href="../locations/pickering">Pickering</a></li>
+                        <li><a href="../locations/milton">Milton</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../about">About Us</a></li>
+                        <li><a href="../#testimonials">Customer Reviews</a></li>
+                        <li><a href="../#faq">FAQ</a></li>
+                        <li><a href="../book">Book Online</a></li>
+                        <li><a href="../#areas">Service Areas</a></li>
+                        <li><a href="../privacy">Privacy Policy</a></li>
+                        <li><a href="../terms">Terms of Service</a></li>
+                        <li><a href="../sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-column footer-column-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact-box">
+                        <p class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <a href="tel:4377476737" class="contact-link">(437) 747-6737</a>
+                        </p>
+                        <p class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <a href="mailto:care@niappliancerepair.ca" class="contact-link">care@niappliancerepair.ca</a>
+                        </p>
+                        <p class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>60 Walter Tunny Cresent<br>East Gwillimbury, ON L9N 0R3</span>
+                        </p>
+                        <p class="contact-item">
+                            <strong>📅 Service Hours:</strong><br>
+                            Mon-Fri: 8 AM - 8 PM<br>
+                            Sat: 9 AM - 6 PM<br>
+                            Sun: 10 AM - 5 PM
+                        </p>
+                    </div>
+
+                    <!-- Call to Action Button -->
+                    <a href="tel:4377476737" class="footer-cta-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        Call Now for Same-Day Service
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © <span id="current-year-footer">2025</span> Nika Appliance Repair. All Rights Reserved.
+                        <span class="separator">|</span>
+                        Licensed & Insured Appliance Repair Company Serving Toronto & GTA
+                    </p>
+                    <div class="footer-social-links">
+                        <span class="footer-tagline">Trusted by 5,200+ Happy Customers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Section Layout Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .screen-size-indicator {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen-size-indicator" id="screenSize"></div>
+
+    <h1 style="text-align: center; margin-bottom: 2rem;">Booking Layout Test</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 3rem;">
+        Resize your browser to see responsive behavior<br>
+        <strong>Desktop/Laptop (>900px):</strong> 2 columns (форма слева, sidebar справа)<br>
+        <strong>Tablet/Mobile (≤900px):</strong> 1 column (все вертикально)
+    </p>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-section-bmad" id="book">
+        <div class="container">
+            <div class="booking-header-bmad">
+                <span class="booking-badge">⚡ SAME-DAY SERVICE</span>
+                <h2 class="section-title">Book Your Appliance Repair in 60 Seconds</h2>
+                <p class="booking-subtitle">Online booking or call <a href="tel:4377476737" class="booking-phone-inline">437-747-6737</a> — We respond in under 5 minutes</p>
+            </div>
+
+            <div class="booking-content-bmad">
+                <!-- Left: Booking Form -->
+                <div class="booking-form-bmad">
+                    <iframe src='https://online-booking.workiz.com/?ac=176dd5d1ce4f69e999d5930a80c1e0109e51c6c46573321e62fe8a71623f0ebb' width="100%" height="750px" style='border:none; border-radius: 12px;'></iframe>
+                    <p class="form-note">✓ Free service call with any repair • ✓ $40 off on any appliance repair service</p>
+                </div>
+
+                <!-- Right: Trust Sidebar -->
+                <div class="booking-trust-sidebar">
+                    <div class="trust-sidebar-header">
+                        <h3>Why Choose Nika?</h3>
+                    </div>
+                    <div class="trust-sidebar-benefits">
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <div class="benefit-text">
+                                <strong>Free Service Call</strong>
+                                <span>With any repair completed</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">💰</span>
+                            <div class="benefit-text">
+                                <strong>$40 Off Today</strong>
+                                <span>On any appliance repair service</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">⚡</span>
+                            <div class="benefit-text">
+                                <strong>Same-Day Service</strong>
+                                <span>Available 7 days a week</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">🛡️</span>
+                            <div class="benefit-text">
+                                <strong>90-Day Warranty</strong>
+                                <span>On all repairs guaranteed</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">👨‍🔧</span>
+                            <div class="benefit-text">
+                                <strong>Licensed & Insured</strong>
+                                <span>All technicians certified</span>
+                            </div>
+                        </div>
+                        <div class="trust-benefit-item">
+                            <span class="benefit-icon">💵</span>
+                            <div class="benefit-text">
+                                <strong>Upfront Pricing</strong>
+                                <span>No hidden fees ever</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trust-sidebar-cta">
+                        <a href="tel:4377476737" class="cta-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            Call 437-747-6737
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Show current screen size
+        function updateScreenSize() {
+            const width = window.innerWidth;
+            const indicator = document.getElementById('screenSize');
+
+            if (width > 1400) {
+                indicator.textContent = `Large Desktop: ${width}px (2 columns, wider)`;
+                indicator.style.background = '#4CAF50';
+            } else if (width > 900) {
+                indicator.textContent = `Desktop/Laptop: ${width}px (2 columns)`;
+                indicator.style.background = '#2196F3';
+            } else if (width > 768) {
+                indicator.textContent = `Tablet: ${width}px (1 column)`;
+                indicator.style.background = '#FF9800';
+            } else {
+                indicator.textContent = `Mobile: ${width}px (1 column)`;
+                indicator.style.background = '#F44336';
+            }
+        }
+
+        updateScreenSize();
+        window.addEventListener('resize', updateScreenSize);
+    </script>
+</body>
+</html>
