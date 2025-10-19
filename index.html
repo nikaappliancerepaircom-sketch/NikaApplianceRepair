@@ -406,13 +406,7 @@
         <div class="header-container">
             <!-- Logo & Brand -->
             <div class="header-logo">
-                <a href="#" aria-label="Nika Appliance Repair - Home">
-                    <div class="logo-icon">🔧</div>
-                    <div class="logo-text">
-                        <span class="logo-name">NIKA</span>
-                        <span class="logo-tagline">Appliance Repair</span>
-                    </div>
-                </a>
+                <a href="#" aria-label="Nika Appliance Repair - Home">NIKA Appliance Repair</a>
             </div>
 
             <!-- Main Navigation -->
@@ -427,7 +421,7 @@
             <!-- Trust Badge (Desktop Only) -->
             <div class="header-trust" aria-label="Customer rating">
                 <div class="trust-stars">⭐⭐⭐⭐⭐</div>
-                <div class="trust-rating">4.9 <span class="trust-reviews">(520+)</span></div>
+                <div class="trust-rating">4.9 <span class="trust-reviews">(5,200+)</span></div>
             </div>
 
             <!-- CTA Buttons -->
@@ -503,28 +497,14 @@
         color: inherit;
     }
 
-    .logo-icon {
-        font-size: 32px;
-        line-height: 1;
-    }
-
-    .logo-text {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.2;
-    }
-
-    .logo-name {
-        font-size: 24px;
-        font-weight: 800;
+    /* Logo - Simple Single Line */
+    .header-logo a {
+        font-family: 'Fredoka', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
         color: #2196F3;
-        letter-spacing: 0.5px;
-    }
-
-    .logo-tagline {
-        font-size: 12px;
-        font-weight: 500;
-        color: #666;
+        text-decoration: none;
+        white-space: nowrap;
     }
 
     /* Navigation */
@@ -616,14 +596,14 @@
     }
 
     .cta-book {
-        background: #2196F3;
+        background: linear-gradient(135deg, #27AE60 0%, #229954 100%);
         color: white;
     }
 
     .cta-book:hover {
-        background: #1976D2;
+        background: #229954;
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(33,150,243,0.3);
+        box-shadow: 0 4px 12px rgba(39,174,96,0.3);
     }
 
     /* Mobile Menu Button */
