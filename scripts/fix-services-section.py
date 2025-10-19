@@ -47,11 +47,22 @@ def get_page_category(file_path):
 def fix_service_links_in_content(content, category):
     """Fix service headings to be links"""
 
-    # Pattern to match service headings: <h3>Service Name</h3>
-    # Only match if not already a link
-    pattern = r'<h3>([^<]*(?:Refrigerator|Dishwasher|Washer|Washing Machine|Dryer|Oven|Stove|Range|Microwave|Freezer)[^<]*Repair?)</h3>'
+    # Pattern 1: Match service headings that are already links (to update styling)
+    pattern_existing = r'<h3><a href="([^"]*)" style="[^"]*">([^<]*(?:Refrigerator|Dishwasher|Washer|Washing Machine|Dryer|Oven|Stove|Range|Microwave|Freezer)[^<]*Repair?)</a></h3>'
 
-    def replace_heading(match):
+    # Pattern 2: Match service headings without links
+    pattern_new = r'<h3>([^<]*(?:Refrigerator|Dishwasher|Washer|Washing Machine|Dryer|Oven|Stove|Range|Microwave|Freezer)[^<]*Repair?)</h3>'
+
+    def replace_existing_link(match):
+        """Update existing links with proper gradient styling"""
+        old_href = match.group(1)
+        service_name = match.group(2).strip()
+
+        gradient_style = 'background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none;'
+        return f'<h3><a href="{old_href}" style="{gradient_style}">{service_name}</a></h3>'
+
+    def replace_new_heading(match):
+        """Add links to headings without links"""
         service_name = match.group(1).strip()
 
         # Find the matching service slug
@@ -71,11 +82,15 @@ def fix_service_links_in_content(content, category):
         else:
             href = f'../services/{service_slug}'
 
-        # Return h3 with link
-        return f'<h3><a href="{href}" style="color: inherit; text-decoration: none;">{service_name}</a></h3>'
+        # Return h3 with link (preserve gradient styling)
+        gradient_style = 'background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none;'
+        return f'<h3><a href="{href}" style="{gradient_style}">{service_name}</a></h3>'
 
-    # Replace all matching headings
-    content = re.sub(pattern, replace_heading, content, flags=re.IGNORECASE)
+    # First update existing links
+    content = re.sub(pattern_existing, replace_existing_link, content, flags=re.IGNORECASE)
+
+    # Then add links to headings without links
+    content = re.sub(pattern_new, replace_new_heading, content, flags=re.IGNORECASE)
 
     return content
 
