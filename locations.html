@@ -25,10 +25,10 @@
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "Toronto",
+        "streetAddress": "60 Walter Tunny Cresent",
+        "addressLocality": "East Gwillimbury",
         "addressRegion": "ON",
-        "postalCode": "",
+        "postalCode": "L9N 0R3",
         "addressCountry": "CA"
       },
       "geo": {
@@ -55,38 +55,14 @@
         "https://www.instagram.com/nikaappliancerepair"
       ],
       "areaServed": [
-        {
-          "@type": "City",
-          "name": "Toronto"
-        },
-        {
-          "@type": "City",
-          "name": "Mississauga"
-        },
-        {
-          "@type": "City",
-          "name": "Brampton"
-        },
-        {
-          "@type": "City",
-          "name": "Markham"
-        },
-        {
-          "@type": "City",
-          "name": "Vaughan"
-        },
-        {
-          "@type": "City",
-          "name": "Richmond Hill"
-        },
-        {
-          "@type": "City",
-          "name": "Oakville"
-        },
-        {
-          "@type": "City",
-          "name": "Burlington"
-        }
+        {"@type": "City", "name": "Toronto"},
+        {"@type": "City", "name": "Mississauga"},
+        {"@type": "City", "name": "Brampton"},
+        {"@type": "City", "name": "Markham"},
+        {"@type": "City", "name": "Vaughan"},
+        {"@type": "City", "name": "Richmond Hill"},
+        {"@type": "City", "name": "Oakville"},
+        {"@type": "City", "name": "Burlington"}
       ],
       "serviceArea": {
         "@type": "GeoCircle",
@@ -100,107 +76,8 @@
     }
     </script>
 
-    <!-- Additional Schema for Mississauga -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Nika Appliance Repair - Mississauga",
-      "telephone": "437-747-6737",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mississauga",
-        "addressRegion": "ON",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 43.5890,
-        "longitude": -79.6441
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Mississauga"
-      }
-    }
-    </script>
-
-    <!-- Additional Schema for Brampton -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Nika Appliance Repair - Brampton",
-      "telephone": "437-747-6737",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Brampton",
-        "addressRegion": "ON",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 43.7315,
-        "longitude": -79.7624
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Brampton"
-      }
-    }
-    </script>
-
-    <!-- Additional Schema for Markham -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Nika Appliance Repair - Markham",
-      "telephone": "437-747-6737",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Markham",
-        "addressRegion": "ON",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 43.8561,
-        "longitude": -79.3370
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Markham"
-      }
-    }
-    </script>
-
-    <!-- Additional Schema for Vaughan -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Nika Appliance Repair - Vaughan",
-      "telephone": "437-747-6737",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Vaughan",
-        "addressRegion": "ON",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 43.8371,
-        "longitude": -79.5080
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Vaughan"
-      }
-    }
-    </script>
-
-    <link rel="stylesheet" href="css/hero-image-mobile-fix.css">
+    <!-- Countdown Timer CSS -->
+    <link rel="stylesheet" href="css/countdown-horizontal.css">
 
     <style>
         * {
@@ -222,109 +99,207 @@
             padding: 0 20px;
         }
 
+        /* Skip to content for accessibility */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            z-index: 10000;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .skip-to-content:focus {
+            top: 10px;
+            left: 10px;
+        }
+
         /* Hero Section */
         .hero-locations {
             background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
             color: white;
             padding: 80px 0 60px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-locations::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-locations .container {
+            position: relative;
+            z-index: 2;
         }
 
         .hero-locations h1 {
             font-family: 'Fredoka', cursive, -apple-system, system-ui;
-            font-size: clamp(32px, 5vw, 48px);
-            font-weight: 800;
+            font-size: clamp(28px, 5vw, 48px);
+            font-weight: 700;
             margin-bottom: 20px;
+            line-height: 1.2;
         }
 
         .hero-locations p {
             font-size: clamp(16px, 2.5vw, 20px);
             max-width: 800px;
-            margin: 0 auto 15px;
+            margin: 0 auto 20px;
             opacity: 0.95;
+            line-height: 1.6;
         }
 
         .service-radius-badge {
             display: inline-block;
             background: rgba(255, 255, 255, 0.2);
             border: 2px solid white;
-            padding: 10px 20px;
-            border-radius: 25px;
+            padding: 12px 24px;
+            border-radius: 30px;
             font-weight: 600;
-            font-size: 18px;
-            margin-top: 15px;
+            font-size: 16px;
+            margin-top: 10px;
+            backdrop-filter: blur(10px);
         }
 
-        /* Locations Section */
+        /* Locations Grid Section */
         .locations-section {
             padding: 60px 0;
+            background: #f5f7fa;
         }
 
         .section-title {
             font-family: 'Fredoka', cursive, -apple-system, system-ui;
             text-align: center;
-            font-size: clamp(28px, 4vw, 36px);
+            font-size: clamp(28px, 4vw, 40px);
             margin-bottom: 15px;
-            color: #2196F3;
+            color: #1976D2;
+            font-weight: 700;
         }
 
         .section-subtitle {
             text-align: center;
-            font-size: 18px;
+            font-size: clamp(16px, 2vw, 18px);
             color: #666;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
+        /* Search Filter */
+        .location-search {
+            max-width: 500px;
+            margin: 0 auto 40px;
+            position: relative;
+        }
+
+        .location-search input {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            outline: none;
+            transition: all 0.3s;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .location-search input:focus {
+            border-color: #2196F3;
+            box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.1);
+        }
+
+        .location-search svg {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        /* Locations Grid */
         .locations-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
             margin-top: 40px;
         }
 
         .location-card {
             background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: all 0.3s;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             text-decoration: none;
             color: inherit;
-            display: block;
+            display: flex;
+            flex-direction: column;
             border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .location-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2196F3, #1976D2);
+            transform: scaleX(0);
+            transition: transform 0.3s;
         }
 
         .location-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            box-shadow: 0 12px 24px rgba(33, 150, 243, 0.15);
             border-color: #2196F3;
+        }
+
+        .location-card:hover::before {
+            transform: scaleX(1);
         }
 
         .location-icon {
             font-size: 48px;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+            line-height: 1;
         }
 
         .location-card h2 {
             font-family: 'Fredoka', cursive, -apple-system, system-ui;
             font-size: 24px;
-            margin-bottom: 10px;
-            color: #2196F3;
+            margin-bottom: 8px;
+            color: #1976D2;
+            font-weight: 600;
         }
 
         .location-neighborhoods {
             font-size: 13px;
             color: #999;
             font-weight: 500;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             font-style: italic;
         }
 
         .location-card p {
             color: #666;
-            margin-bottom: 15px;
-            line-height: 1.6;
+            margin-bottom: 20px;
+            line-height: 1.7;
             font-size: 15px;
+            flex: 1;
         }
 
         .location-cta {
@@ -333,6 +308,7 @@
             gap: 8px;
             color: #2196F3;
             font-weight: 600;
+            font-size: 15px;
             transition: gap 0.3s;
         }
 
@@ -340,182 +316,128 @@
             gap: 12px;
         }
 
-        /* Service Times Section */
-        .service-times-section {
+        /* Service Info Section */
+        .service-info-section {
             background: white;
             padding: 60px 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
             margin-top: 40px;
         }
 
-        .service-times-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .time-card {
-            background: linear-gradient(135deg, #f0f7ff 0%, #e3f2fd 100%);
-            padding: 25px;
-            border-radius: 10px;
-            border-left: 4px solid #2196F3;
-        }
-
-        .time-card h3 {
-            font-family: 'Fredoka', cursive, -apple-system, system-ui;
-            color: #2196F3;
-            font-size: 20px;
-            margin-bottom: 8px;
-        }
-
-        .time-card .response-time {
-            font-size: 28px;
-            font-weight: 800;
-            color: #FF9800;
-            margin-bottom: 5px;
-        }
-
-        .time-card p {
-            color: #666;
-            font-size: 14px;
-        }
-
-        /* Service Area Map Section */
-        .map-section {
-            padding: 60px 0;
-        }
-
-        .map-content {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .map-placeholder {
-            background: linear-gradient(135deg, #e3f2fd 0%, #f0f7ff 100%);
-            border: 2px dashed #2196F3;
-            border-radius: 10px;
-            padding: 60px 20px;
+        .info-card {
             text-align: center;
-            margin-top: 20px;
+            padding: 30px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #f0f7ff 0%, #e3f2fd 100%);
+            border: 2px solid #e3f2fd;
+            transition: all 0.3s;
         }
 
-        .map-placeholder svg {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 20px;
-            opacity: 0.7;
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(33, 150, 243, 0.15);
         }
 
-        .coverage-areas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 30px;
+        .info-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
         }
 
-        .coverage-item {
-            background: #f0f7ff;
-            padding: 15px;
-            border-radius: 8px;
-            font-weight: 500;
-            color: #2196F3;
-        }
-
-        /* FAQ Section */
-        .faq-section {
-            background: white;
-            padding: 60px 0;
-            margin-top: 40px;
-        }
-
-        .faq-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background: #f8f9fa;
-            padding: 25px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #2196F3;
-        }
-
-        .faq-item h3 {
-            font-family: 'Fredoka', cursive, -apple-system, system-ui;
-            color: #2196F3;
-            font-size: 20px;
+        .info-card h3 {
+            font-family: 'Fredoka', cursive;
+            color: #1976D2;
+            font-size: 22px;
             margin-bottom: 12px;
+            font-weight: 600;
         }
 
-        .faq-item p {
+        .info-card p {
             color: #666;
-            line-height: 1.7;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .info-highlight {
+            font-size: 32px;
+            font-weight: 700;
+            color: #FF9800;
+            display: block;
+            margin: 8px 0;
         }
 
         /* Coverage Section */
         .coverage-section {
             background: #f8f9fa;
             padding: 60px 0;
-            margin-top: 40px;
         }
 
-        .coverage-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .coverage-content h2 {
-            font-family: 'Fredoka', cursive, -apple-system, system-ui;
-            font-size: clamp(28px, 4vw, 36px);
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .coverage-content p {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .coverage-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 15px;
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
         .coverage-badge {
             background: white;
-            color: #2196F3;
-            padding: 10px 20px;
-            border-radius: 25px;
+            color: #1976D2;
+            padding: 16px 20px;
+            border-radius: 12px;
             font-weight: 600;
+            text-align: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            font-size: 15px;
+        }
+
+        .coverage-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(33, 150, 243, 0.2);
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+            color: white;
         }
 
         /* CTA Section */
         .cta-section {
             background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
             color: white;
-            padding: 60px 0;
+            padding: 80px 0;
             text-align: center;
-            margin-top: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .cta-section .container {
+            position: relative;
+            z-index: 2;
         }
 
         .cta-section h2 {
-            font-family: 'Fredoka', cursive, -apple-system, system-ui;
-            font-size: clamp(28px, 4vw, 36px);
+            font-family: 'Fredoka', cursive;
+            font-size: clamp(28px, 4vw, 40px);
             margin-bottom: 20px;
+            font-weight: 700;
         }
 
         .cta-section p {
-            font-size: 18px;
-            margin-bottom: 30px;
+            font-size: clamp(16px, 2vw, 20px);
+            margin-bottom: 35px;
             opacity: 0.95;
         }
 
@@ -530,25 +452,27 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            padding: 16px 32px;
+            padding: 18px 36px;
             background: white;
             color: #27AE60;
             font-weight: 600;
             font-size: 18px;
-            border-radius: 8px;
+            border-radius: 50px;
             text-decoration: none;
             transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
         }
 
         .cta-button.secondary {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.15);
             color: white;
             border: 2px solid white;
+            backdrop-filter: blur(10px);
         }
 
         .cta-button.secondary:hover {
@@ -556,17 +480,45 @@
             color: #27AE60;
         }
 
-        /* Responsive */
+        /* No results message */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            display: none;
+        }
+
+        .no-results.show {
+            display: block;
+        }
+
+        .no-results-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+
+        .no-results h3 {
+            font-family: 'Fredoka', cursive;
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .no-results p {
+            color: #999;
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
             .hero-locations {
                 padding: 60px 0 40px;
             }
 
             .locations-section,
-            .service-times-section,
-            .map-section,
-            .faq-section,
-            .coverage-section {
+            .service-info-section,
+            .coverage-section,
+            .cta-section {
                 padding: 40px 0;
             }
 
@@ -575,17 +527,9 @@
                 gap: 20px;
             }
 
-            .service-times-grid,
-            .coverage-areas {
+            .info-grid,
+            .coverage-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .map-content {
-                padding: 25px 15px;
-            }
-
-            .cta-section {
-                padding: 40px 0;
             }
 
             .cta-buttons {
@@ -595,19 +539,64 @@
 
             .cta-button {
                 width: 100%;
-                max-width: 300px;
+                max-width: 320px;
                 justify-content: center;
+            }
+
+            .location-card {
+                padding: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-radius-badge {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+            .location-card {
+                padding: 20px;
+            }
+
+            .location-icon {
+                font-size: 40px;
+            }
+
+            .location-card h2 {
+                font-size: 20px;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .hero-locations,
+            .cta-section,
+            .mobile-bottom-cta,
+            .countdown-section {
+                display: none;
+            }
+
+            .location-card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
             }
         }
     </style>
-    <!-- Countdown Timer Horizontal Layout -->
-    <link rel="stylesheet" href="css/countdown-horizontal.css">
 </head>
 <body>
     <!-- Accessibility Skip Link -->
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-    <!-- SEO-Optimized Header for Homepage -->
+    <!-- SEO-Optimized Header -->
     <header class="site-header" role="banner">
         <div class="header-container">
             <!-- Logo & Brand -->
@@ -674,9 +663,7 @@
     </div>
 
     <style>
-    /* ========== SEO-OPTIMIZED HEADER STYLES ========== */
-
-    /* Header Container */
+    /* ========== HEADER STYLES ========== */
     .site-header {
         background: #ffffff;
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -696,16 +683,6 @@
         gap: 20px;
     }
 
-    /* Logo */
-    .header-logo a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        text-decoration: none;
-        color: inherit;
-    }
-
-    /* Logo - Simple Single Line */
     .header-logo a {
         font-family: 'Fredoka', sans-serif;
         font-size: 1.5rem;
@@ -715,7 +692,6 @@
         white-space: nowrap;
     }
 
-    /* Navigation */
     .header-nav {
         flex: 1;
         display: flex;
@@ -743,7 +719,6 @@
         color: #2196F3;
     }
 
-    /* Trust Badge */
     .header-trust {
         display: flex;
         flex-direction: column;
@@ -772,7 +747,6 @@
         color: #666;
     }
 
-    /* CTA Buttons */
     .header-cta {
         display: flex;
         gap: 10px;
@@ -798,9 +772,9 @@
     }
 
     .cta-phone:hover {
-        background: #45a049;
+        background: #6A1B9A;
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(76,175,80,0.3);
+        box-shadow: 0 4px 12px rgba(123,31,162,0.3);
     }
 
     .cta-book {
@@ -814,7 +788,6 @@
         box-shadow: 0 4px 12px rgba(39,174,96,0.3);
     }
 
-    /* Mobile Menu Button */
     .mobile-menu-btn {
         display: none;
         flex-direction: column;
@@ -845,7 +818,6 @@
         transform: rotate(-45deg) translateY(-8px);
     }
 
-    /* Mobile Bottom CTA */
     .mobile-bottom-cta {
         display: none;
         position: fixed;
@@ -879,43 +851,20 @@
         background: #7B1FA2;
     }
 
-    .mobile-cta-call:hover {
-        background: #6A1B9A;
-    }
-
     .mobile-cta-book {
         background: #2196F3;
-    }
-
-    .mobile-cta-book:hover {
-        background: #1976D2;
     }
 
     .mobile-cta-btn:active {
         transform: scale(0.95);
     }
 
-    /* ========== RESPONSIVE BREAKPOINTS ========== */
-
-    /* Large Desktop */
-    @media (min-width: 1400px) {
-        .header-container {
-            padding: 16px 40px;
-        }
-
-        .nav-list {
-            gap: 40px;
-        }
-    }
-
-    /* Desktop to Tablet */
     @media (max-width: 1200px) {
         .header-trust {
             display: none;
         }
     }
 
-    /* Tablet */
     @media (max-width: 968px) {
         .header-nav {
             display: none;
@@ -966,121 +915,18 @@
             padding-bottom: 70px;
         }
     }
-
-    /* Mobile */
-    @media (max-width: 768px) {
-        .header-container {
-            padding: 10px 16px;
-        }
-
-        .logo-icon {
-            font-size: 28px;
-        }
-
-        .logo-name {
-            font-size: 20px;
-        }
-
-        .logo-tagline {
-            font-size: 11px;
-        }
-    }
-
-    /* Small Mobile */
-    @media (max-width: 480px) {
-        .logo-icon {
-            font-size: 24px;
-        }
-
-        .logo-name {
-            font-size: 18px;
-        }
-
-        .logo-tagline {
-            font-size: 10px;
-        }
-
-        .mobile-cta-btn {
-            font-size: 12.5px;
-            padding: 11px 10px;
-        }
-    }
-
-    /* Accessibility */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #2196F3;
-        color: white;
-        padding: 10px 20px;
-        z-index: 10000;
-        text-decoration: none;
-        border-radius: 4px;
-    }
-
-    .skip-to-content:focus {
-        top: 10px;
-        left: 10px;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-        * {
-            animation-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-        }
-    }
     </style>
-
-    <script>
-    // Mobile menu toggle
-    function toggleMenu() {
-        const nav = document.querySelector('.header-nav');
-        const btn = document.querySelector('.mobile-menu-btn');
-        const body = document.body;
-
-        if (nav && btn) {
-            const isOpen = nav.classList.contains('menu-open');
-
-            if (isOpen) {
-                nav.classList.remove('menu-open');
-                btn.setAttribute('aria-expanded', 'false');
-                body.style.overflow = '';
-            } else {
-                nav.classList.add('menu-open');
-                btn.setAttribute('aria-expanded', 'true');
-                body.style.overflow = 'hidden';
-            }
-        }
-    }
-
-    // Close menu on link click
-    document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = document.querySelectorAll('.header-nav .nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                const nav = document.querySelector('.header-nav');
-                const btn = document.querySelector('.mobile-menu-btn');
-                if (nav && nav.classList.contains('menu-open')) {
-                    nav.classList.remove('menu-open');
-                    btn.setAttribute('aria-expanded', 'false');
-                    document.body.style.overflow = '';
-                }
-            });
-        });
-    });
-    </script>
 
     <!-- Hero Section -->
     <section class="hero-locations" id="main-content">
         <div class="container">
             <h1>Professional Appliance Repair Across Greater Toronto Area</h1>
-            <p>Expert technicians serving Toronto, Mississauga, Brampton, Markham, Vaughan, and surrounding communities. Fast response times, local knowledge, same-day service available.</p>
-            <div class="service-radius-badge">50km Service Radius from Toronto</div>
+            <p>Expert technicians serving Toronto, Mississauga, Brampton, Markham, Vaughan, Richmond Hill, and 16 more GTA communities. Fast response times, local knowledge, same-day service available.</p>
+            <div class="service-radius-badge">🗺️ 50km Service Radius from Toronto</div>
         </div>
     </section>
 
-    <!-- Promo Banner Section with Countdown Timer -->
+    <!-- Countdown Timer Section -->
     <section class="countdown-section">
         <div class="container">
             <h2 class="countdown-title">Book Online & Save $40 on Any Service</h2>
@@ -1095,7 +941,7 @@
                     <div class="timer-label">SECONDS</div>
                 </div>
             </div>
-            <a href="#book" class="countdown-cta">
+            <a href="book" class="countdown-cta">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
                     <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
                 </svg>
@@ -1104,327 +950,323 @@
         </div>
     </section>
 
-    <!-- Main Locations Grid -->
+    <style>
+    .countdown-section {
+        background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        color: white;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .countdown-title {
+        font-family: 'Fredoka', cursive;
+        font-size: clamp(24px, 4vw, 32px);
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .countdown-label {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        opacity: 0.9;
+        margin-bottom: 20px;
+    }
+
+    .timer-value {
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        line-height: 1;
+        font-family: 'Fredoka', cursive;
+    }
+
+    .timer-label {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-top: 8px;
+        opacity: 0.9;
+    }
+
+    .countdown-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: white;
+        color: #dc2626;
+        padding: 16px 32px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 25px;
+        transition: all 0.3s;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .countdown-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    </style>
+
+    <!-- Main Locations Section -->
     <section class="locations-section">
         <div class="container">
             <h2 class="section-title">Our Service Locations</h2>
-            <p class="section-subtitle">Providing expert appliance repair services throughout the GTA with neighborhood-specific expertise</p>
-            <div class="locations-grid">
+            <p class="section-subtitle">Comprehensive appliance repair coverage across 22 GTA communities with local expertise in every neighborhood</p>
+
+            <!-- Search Filter -->
+            <div class="location-search">
+                <input
+                    type="text"
+                    id="locationSearch"
+                    placeholder="Search for your city or neighborhood..."
+                    aria-label="Search locations"
+                >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+            </div>
+
+            <div class="locations-grid" id="locationsGrid">
                 <!-- Toronto -->
-                <a href="locations/toronto" class="location-card">
+                <a href="locations/toronto" class="location-card" data-city="Toronto" data-keywords="downtown north york scarborough etobicoke beaches">
                     <div class="location-icon">🏙️</div>
                     <h2>Toronto Appliance Repair</h2>
                     <div class="location-neighborhoods">Downtown • North York • Scarborough • Etobicoke</div>
-                    <p>Fast appliance repair throughout Toronto. Our technicians understand the unique challenges of downtown condos, heritage homes in The Beaches, and family residences in North York. We specialize in high-rise appliance access, hard water solutions for Scarborough, and quick response times across all Toronto neighborhoods. Same-day service available with warranty-backed repairs.</p>
-                    <span class="location-cta">View Toronto Details →</span>
+                    <p>Fast appliance repair throughout Toronto. Our technicians understand the unique challenges of downtown condos, heritage homes, and family residences. Same-day service available with warranty-backed repairs.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Mississauga -->
-                <a href="locations/mississauga" class="location-card">
+                <a href="locations/mississauga" class="location-card" data-city="Mississauga" data-keywords="streetsville port credit meadowvale">
                     <div class="location-icon">🏘️</div>
                     <h2>Mississauga Appliance Repair</h2>
                     <div class="location-neighborhoods">Streetsville • Port Credit • Meadowvale</div>
-                    <p>Expert appliance repair service in Mississauga. We serve Streetsville's growing communities, waterfront condos in Port Credit, and family neighborhoods in Meadowvale. Our technicians are experienced with hard water issues common in Mississauga, condo appliance restrictions, and high-end brands popular in this area. Fast response time with upfront pricing and 90-day warranty.</p>
-                    <span class="location-cta">View Mississauga Details →</span>
+                    <p>Expert appliance repair service in Mississauga. We serve Streetsville, waterfront Port Credit condos, and Meadowvale families. Fast response with upfront pricing and 90-day warranty.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Brampton -->
-                <a href="locations/brampton" class="location-card">
+                <a href="locations/brampton" class="location-card" data-city="Brampton" data-keywords="bramalea gore heart lake">
                     <div class="location-icon">🏡</div>
                     <h2>Brampton Appliance Repair</h2>
                     <div class="location-neighborhoods">Bramalea • Gore • Heart Lake</div>
-                    <p>Professional appliance repair in Brampton neighborhoods. Serving established Bramalea communities, growing Gore developments, and Heart Lake residential areas. Our certified technicians understand new home appliances, builder warranty work, and the specific needs of Brampton's diverse housing from townhomes to detached properties. Quick response and transparent pricing guaranteed for all Brampton residents.</p>
-                    <span class="location-cta">View Brampton Details →</span>
+                    <p>Professional appliance repair in Brampton. Serving Bramalea, Gore developments, and Heart Lake areas. Quick response and transparent pricing for all Brampton residents.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Markham -->
-                <a href="locations/markham" class="location-card">
+                <a href="locations/markham" class="location-card" data-city="Markham" data-keywords="unionville thornhill cornell">
                     <div class="location-icon">🏠</div>
                     <h2>Markham Appliance Repair</h2>
                     <div class="location-neighborhoods">Unionville • Thornhill • Cornell</div>
-                    <p>Reliable appliance repair service in Markham. Specializing in historic Unionville homes, established Thornhill properties, and newer Cornell developments. Our technicians are experts in high-end luxury appliances, European brands, and smart home appliances popular in Markham. We provide white-glove service with warranty-backed repairs and same-day appointments available throughout Markham communities.</p>
-                    <span class="location-cta">View Markham Details →</span>
+                    <p>Reliable appliance service in Markham. Experts in high-end luxury appliances, European brands, and smart home appliances. White-glove service with warranty-backed repairs.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Vaughan -->
-                <a href="locations/vaughan" class="location-card">
+                <a href="locations/vaughan" class="location-card" data-city="Vaughan" data-keywords="woodbridge maple concord">
                     <div class="location-icon">🏘️</div>
                     <h2>Vaughan Appliance Repair</h2>
                     <div class="location-neighborhoods">Woodbridge • Maple • Concord</div>
-                    <p>Fast appliance repair throughout Vaughan. Serving Woodbridge's established neighborhoods, Maple's growing communities, and Concord's modern developments. Our technicians understand the area's luxury homes, builder-grade appliances, and premium brands. We offer emergency service, evening appointments, and expertise with all major brands including Bosch, Miele, and Sub-Zero popular in Vaughan residences.</p>
-                    <span class="location-cta">View Vaughan Details →</span>
+                    <p>Fast appliance repair throughout Vaughan. Serving Woodbridge, Maple, and Concord. Expertise with Bosch, Miele, and Sub-Zero. Emergency service and evening appointments available.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Richmond Hill -->
-                <a href="locations/richmond-hill" class="location-card">
+                <a href="locations/richmond-hill" class="location-card" data-city="Richmond Hill" data-keywords="oak ridges bayview hill centre">
                     <div class="location-icon">🏡</div>
                     <h2>Richmond Hill Appliance Repair</h2>
                     <div class="location-neighborhoods">Oak Ridges • Richmond Hill Centre • Bayview Hill</div>
-                    <p>Expert repair service in Richmond Hill neighborhoods. From luxury estates in Oak Ridges to high-rise condos in Richmond Hill Centre and upscale Bayview Hill homes. Our technicians specialize in premium European appliances, built-in units, and smart appliances. We provide same-day service, professional diagnostics, and comprehensive repairs backed by our 90-day warranty throughout Richmond Hill.</p>
-                    <span class="location-cta">View Richmond Hill Details →</span>
+                    <p>Expert repair in Richmond Hill. From luxury Oak Ridges estates to high-rise condos. Specialists in premium European appliances with same-day service and 90-day warranty.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Oakville -->
-                <a href="locations/oakville" class="location-card">
+                <a href="locations/oakville" class="location-card" data-city="Oakville" data-keywords="old oakville glen abbey bronte">
                     <div class="location-icon">🏠</div>
                     <h2>Oakville Appliance Repair</h2>
                     <div class="location-neighborhoods">Old Oakville • Glen Abbey • Bronte</div>
-                    <p>Professional luxury appliance service in Oakville. Serving prestigious Old Oakville estates, Glen Abbey's golf course community, and waterfront Bronte properties. Our technicians are specialists in high-end brands like Sub-Zero, Wolf, Thermador, and Miele. We offer white-glove service, discreet appointments, and expert repairs for luxury homes. Same-day service available with upfront pricing.</p>
-                    <span class="location-cta">View Oakville Details →</span>
+                    <p>Professional luxury appliance service. Specialists in Sub-Zero, Wolf, Thermador, and Miele. White-glove service for prestigious Oakville estates and waterfront properties.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Burlington -->
-                <a href="locations/burlington" class="location-card">
+                <a href="locations/burlington" class="location-card" data-city="Burlington" data-keywords="downtown aldershot orchard">
                     <div class="location-icon">🏘️</div>
                     <h2>Burlington Appliance Repair</h2>
                     <div class="location-neighborhoods">Downtown Burlington • Aldershot • Orchard</div>
-                    <p>Trusted appliance repair in Burlington communities. Serving downtown Burlington's heritage homes, established Aldershot neighborhoods, and family-friendly Orchard areas. Our expert team understands Burlington's mix of older homes and new developments, providing professional service for all appliance types and ages. Fast response times, honest pricing, and quality repairs backed by warranty throughout Burlington.</p>
-                    <span class="location-cta">View Burlington Details →</span>
+                    <p>Trusted appliance repair in Burlington. Serving heritage homes and new developments. Fast response times, honest pricing, and quality repairs backed by warranty.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Oshawa -->
-                <a href="locations/oshawa" class="location-card">
+                <a href="locations/oshawa" class="location-card" data-city="Oshawa" data-keywords="downtown samac taunton">
                     <div class="location-icon">🏡</div>
                     <h2>Oshawa Appliance Repair</h2>
                     <div class="location-neighborhoods">Downtown Oshawa • Samac • Taunton</div>
-                    <p>Reliable appliance service in Oshawa. Covering downtown Oshawa, established Samac communities, and northern Taunton developments. Our technicians provide affordable rates and quick turnaround times for Oshawa residents. We service all major appliance brands with transparent pricing, no hidden fees, and comprehensive warranty. Weekend and evening appointments available throughout Oshawa for your convenience.</p>
-                    <span class="location-cta">View Oshawa Details →</span>
+                    <p>Reliable appliance service in Oshawa. Affordable rates with transparent pricing and no hidden fees. Weekend and evening appointments available throughout Oshawa.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Ajax -->
-                <a href="locations/ajax" class="location-card">
+                <a href="locations/ajax" class="location-card" data-city="Ajax" data-keywords="ajax central pickering village westney heights">
                     <div class="location-icon">🏠</div>
                     <h2>Ajax Appliance Repair</h2>
                     <div class="location-neighborhoods">Ajax Central • Pickering Village • Westney Heights</div>
-                    <p>Expert appliance repair in Ajax communities. Serving Ajax Central's established homes, Pickering Village neighborhoods, and growing Westney Heights area. Our technicians understand new home appliances and builder warranties common in Ajax. We offer comprehensive service for all appliance types including washers, dryers, refrigerators, and dishwashers. Weekend service available with fast response times throughout Ajax.</p>
-                    <span class="location-cta">View Ajax Details →</span>
+                    <p>Expert appliance repair in Ajax. Comprehensive service for all appliances including washers, dryers, refrigerators, and dishwashers. Weekend service with fast response times.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Pickering -->
-                <a href="locations/pickering" class="location-card">
+                <a href="locations/pickering" class="location-card" data-city="Pickering" data-keywords="city centre rouge park dunbarton">
                     <div class="location-icon">🏘️</div>
                     <h2>Pickering Appliance Repair</h2>
                     <div class="location-neighborhoods">City Centre • Rouge Park • Dunbarton</div>
-                    <p>Professional repair service in Pickering. From City Centre condos to Rouge Park communities and established Dunbarton neighborhoods. Our certified technicians provide fast response times and quality repairs for Pickering residents. We specialize in both modern and older appliances with transparent diagnostics, upfront pricing, and comprehensive warranty. Same-day service available throughout Pickering communities.</p>
-                    <span class="location-cta">View Pickering Details →</span>
+                    <p>Professional repair service in Pickering. Fast response with transparent diagnostics, upfront pricing, and comprehensive warranty. Same-day service available.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Milton -->
-                <a href="locations/milton" class="location-card">
+                <a href="locations/milton" class="location-card" data-city="Milton" data-keywords="old milton dempsey timberlea">
                     <div class="location-icon">🏡</div>
                     <h2>Milton Appliance Repair</h2>
                     <div class="location-neighborhoods">Old Milton • Dempsey • Timberlea</div>
-                    <p>Trusted appliance repair in Milton's growing communities. Serving historic Old Milton, established Dempsey neighborhoods, and newer Timberlea developments. We specialize in new home appliances, builder warranty repairs, and Tarion-covered issues. Our technicians understand Milton's rapid growth and provide expert service for both brand-new and established homes. Fast response with quality repairs and comprehensive warranty coverage.</p>
-                    <span class="location-cta">View Milton Details →</span>
+                    <p>Trusted repair in Milton's growing communities. Specialists in new home appliances, builder warranties, and Tarion-covered issues. Fast response with quality repairs.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- North York -->
-                <a href="locations/north-york" class="location-card">
+                <a href="locations/north-york" class="location-card" data-city="North York" data-keywords="willowdale bayview village don mills">
                     <div class="location-icon">🏙️</div>
                     <h2>North York Appliance Repair</h2>
                     <div class="location-neighborhoods">Willowdale • Bayview Village • Don Mills</div>
-                    <p>Expert appliance repair in North York. Serving Willowdale condos, luxury Bayview Village homes, and established Don Mills properties. Our technicians specialize in high-rise appliance access, premium brands, and modern smart appliances. Same-day service with warranty-backed repairs across all North York neighborhoods.</p>
-                    <span class="location-cta">View North York Details →</span>
+                    <p>Expert repair in North York. Specialists in high-rise appliance access, premium brands, and smart appliances. Same-day service with warranty-backed repairs.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Scarborough -->
-                <a href="locations/scarborough" class="location-card">
+                <a href="locations/scarborough" class="location-card" data-city="Scarborough" data-keywords="agincourt rouge malvern">
                     <div class="location-icon">🏘️</div>
                     <h2>Scarborough Appliance Repair</h2>
                     <div class="location-neighborhoods">Agincourt • Rouge • Malvern</div>
-                    <p>Professional appliance service in Scarborough. Covering Agincourt, Rouge Park, and Malvern areas. Our technicians understand hard water issues common in Scarborough and provide expert repairs for all major appliance brands. Fast response times and affordable rates with quality service guaranteed.</p>
-                    <span class="location-cta">View Scarborough Details →</span>
+                    <p>Professional service in Scarborough. Understanding hard water issues and providing expert repairs. Fast response times and affordable rates with quality guaranteed.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Etobicoke -->
-                <a href="locations/etobicoke" class="location-card">
+                <a href="locations/etobicoke" class="location-card" data-city="Etobicoke" data-keywords="islington rexdale long branch">
                     <div class="location-icon">🏡</div>
                     <h2>Etobicoke Appliance Repair</h2>
                     <div class="location-neighborhoods">Islington • Rexdale • Long Branch</div>
-                    <p>Reliable appliance repair throughout Etobicoke. Serving Islington village, Rexdale communities, and waterfront Long Branch. Our expert team handles all appliance types from budget to luxury brands. Same-day service available with upfront pricing and comprehensive warranty.</p>
-                    <span class="location-cta">View Etobicoke Details →</span>
+                    <p>Reliable repair throughout Etobicoke. Serving Islington village, Rexdale, and waterfront Long Branch. All appliance types from budget to luxury brands.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Whitby -->
-                <a href="locations/whitby" class="location-card">
+                <a href="locations/whitby" class="location-card" data-city="Whitby" data-keywords="downtown whitby brooklin pringle creek">
                     <div class="location-icon">🏠</div>
                     <h2>Whitby Appliance Repair</h2>
                     <div class="location-neighborhoods">Downtown Whitby • Brooklin • Pringle Creek</div>
-                    <p>Fast appliance repair in Whitby communities. Covering downtown Whitby, growing Brooklin area, and family-friendly Pringle Creek. Our technicians provide expert service for new construction and established homes. Weekend appointments available with quality repairs and warranty.</p>
-                    <span class="location-cta">View Whitby Details →</span>
+                    <p>Fast repair in Whitby communities. Expert service for new construction and established homes. Weekend appointments with quality repairs and warranty.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Aurora -->
-                <a href="locations/aurora" class="location-card">
+                <a href="locations/aurora" class="location-card" data-city="Aurora" data-keywords="aurora heights bayview northeast town centre">
                     <div class="location-icon">🏘️</div>
                     <h2>Aurora Appliance Repair</h2>
                     <div class="location-neighborhoods">Aurora Heights • Bayview Northeast • Town Centre</div>
-                    <p>Expert appliance service in Aurora. Serving Aurora Heights estates, Bayview Northeast communities, and historic Town Centre. Our technicians specialize in luxury appliances and provide white-glove service. Same-day appointments with professional diagnostics and warranty-backed repairs.</p>
-                    <span class="location-cta">View Aurora Details →</span>
+                    <p>Expert service in Aurora. Specialists in luxury appliances with white-glove service. Same-day appointments with professional diagnostics and warranty-backed repairs.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Newmarket -->
-                <a href="locations/newmarket" class="location-card">
+                <a href="locations/newmarket" class="location-card" data-city="Newmarket" data-keywords="stonehaven summerhill downtown newmarket">
                     <div class="location-icon">🏡</div>
                     <h2>Newmarket Appliance Repair</h2>
                     <div class="location-neighborhoods">Stonehaven • Summerhill • Downtown Newmarket</div>
-                    <p>Professional appliance repair in Newmarket. Covering Stonehaven estates, Summerhill communities, and historic downtown. Our team provides expert service for all appliance brands with fast response times. Evening and weekend appointments available throughout Newmarket.</p>
-                    <span class="location-cta">View Newmarket Details →</span>
+                    <p>Professional repair in Newmarket. Expert service for all brands with fast response. Evening and weekend appointments available throughout Newmarket.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Stouffville -->
-                <a href="locations/stouffville" class="location-card">
+                <a href="locations/stouffville" class="location-card" data-city="Stouffville" data-keywords="old stouffville ballantrae lemonville">
                     <div class="location-icon">🏠</div>
                     <h2>Stouffville Appliance Repair</h2>
                     <div class="location-neighborhoods">Old Stouffville • Ballantrae • Lemonville</div>
-                    <p>Trusted appliance repair in Stouffville. Serving Old Stouffville heritage homes, Ballantrae estates, and Lemonville communities. Our technicians understand the area's mix of rural and suburban properties. Quality repairs with transparent pricing and comprehensive warranty.</p>
-                    <span class="location-cta">View Stouffville Details →</span>
+                    <p>Trusted repair in Stouffville. Understanding the area's mix of rural and suburban properties. Quality repairs with transparent pricing and warranty.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Caledon -->
-                <a href="locations/caledon" class="location-card">
+                <a href="locations/caledon" class="location-card" data-city="Caledon" data-keywords="bolton caledon east inglewood">
                     <div class="location-icon">🏡</div>
                     <h2>Caledon Appliance Repair</h2>
                     <div class="location-neighborhoods">Bolton • Caledon East • Inglewood</div>
-                    <p>Reliable appliance service in Caledon. Covering Bolton communities, Caledon East, and rural Inglewood areas. Our experienced team travels throughout Caledon providing expert repairs for all appliance types. Same-day service available with no hidden travel fees.</p>
-                    <span class="location-cta">View Caledon Details →</span>
+                    <p>Reliable service throughout Caledon. Covering Bolton, Caledon East, and rural areas. Expert repairs with no hidden travel fees.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- Halton Hills -->
-                <a href="locations/halton-hills" class="location-card">
+                <a href="locations/halton-hills" class="location-card" data-city="Halton Hills" data-keywords="georgetown acton glen williams">
                     <div class="location-icon">🏘️</div>
                     <h2>Halton Hills Appliance Repair</h2>
                     <div class="location-neighborhoods">Georgetown • Acton • Glen Williams</div>
-                    <p>Expert appliance repair in Halton Hills. Serving Georgetown's growing communities, historic Acton, and charming Glen Williams. Our technicians provide professional service for all major appliance brands. Weekend appointments with upfront pricing and quality warranty-backed repairs.</p>
-                    <span class="location-cta">View Halton Hills Details →</span>
+                    <p>Expert repair in Halton Hills. Serving Georgetown, historic Acton, and Glen Williams. Weekend appointments with quality warranty-backed repairs.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
 
                 <!-- East Gwillimbury -->
-                <a href="locations/east-gwillimbury" class="location-card">
+                <a href="locations/east-gwillimbury" class="location-card" data-city="East Gwillimbury" data-keywords="holland landing mount albert sharon">
                     <div class="location-icon">🏡</div>
                     <h2>East Gwillimbury Appliance Repair</h2>
                     <div class="location-neighborhoods">Holland Landing • Mount Albert • Sharon</div>
-                    <p>Professional appliance service in East Gwillimbury. Covering Holland Landing, Mount Albert, and Sharon communities. Our experienced technicians provide expert repairs for all appliance types with fast response times. Same-day service available with transparent pricing and comprehensive warranty throughout East Gwillimbury.</p>
-                    <span class="location-cta">View East Gwillimbury Details →</span>
+                    <p>Professional service in East Gwillimbury. Expert repairs for all appliances with fast response. Same-day service with transparent pricing and warranty.</p>
+                    <span class="location-cta">View Details →</span>
                 </a>
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults">
+                <div class="no-results-icon">🔍</div>
+                <h3>No locations found</h3>
+                <p>Try searching for a different city or neighborhood</p>
             </div>
         </div>
     </section>
 
-    <!-- Fast Service Times Section -->
-    <section class="service-times-section">
+    <!-- Service Info Section -->
+    <section class="service-info-section">
         <div class="container">
             <h2 class="section-title">Fast Response Times Across GTA</h2>
             <p class="section-subtitle">Our local presence means faster service for you</p>
-            <div class="service-times-grid">
-                <div class="time-card">
-                    <h3>Toronto</h3>
-                    <div class="response-time">30-60 min</div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">⚡</div>
+                    <h3>Toronto Core</h3>
+                    <span class="info-highlight">30-60 min</span>
                     <p>Downtown, North York, Scarborough, Etobicoke - fastest response in the core</p>
                 </div>
-                <div class="time-card">
+                <div class="info-card">
+                    <div class="info-icon">🚗</div>
                     <h3>Mississauga & Brampton</h3>
-                    <div class="response-time">45-90 min</div>
-                    <p>All neighborhoods including Streetsville, Port Credit, Bramalea, Heart Lake</p>
+                    <span class="info-highlight">45-90 min</span>
+                    <p>All neighborhoods with same-day service available</p>
                 </div>
-                <div class="time-card">
-                    <h3>Markham & Richmond Hill</h3>
-                    <div class="response-time">60-90 min</div>
-                    <p>Unionville, Thornhill, Cornell, Oak Ridges - full coverage</p>
+                <div class="info-card">
+                    <div class="info-icon">🏃</div>
+                    <h3>Markham & Vaughan</h3>
+                    <span class="info-highlight">60-90 min</span>
+                    <p>Full coverage with priority service options</p>
                 </div>
-                <div class="time-card">
-                    <h3>Vaughan</h3>
-                    <div class="response-time">60-90 min</div>
-                    <p>Woodbridge, Maple, Concord - priority service available</p>
-                </div>
-                <div class="time-card">
-                    <h3>Oakville & Burlington</h3>
-                    <div class="response-time">90-120 min</div>
-                    <p>Complete coverage including waterfront and Glen Abbey</p>
-                </div>
-                <div class="time-card">
-                    <h3>Ajax, Pickering, Oshawa</h3>
-                    <div class="response-time">90-120 min</div>
-                    <p>Durham Region - same-day service guaranteed</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Area Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <div class="map-content">
-                <h2 class="section-title">Our 50km Service Area Coverage</h2>
-                <div class="map-placeholder">
-                    <svg viewBox="0 0 24 24" fill="#2196F3" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                    </svg>
-                    <h3 style="color: #2196F3; margin-bottom: 10px;">Complete GTA Coverage</h3>
-                    <p style="color: #666;">50km radius from Toronto covering all major GTA cities and neighborhoods</p>
-                </div>
-                <div class="coverage-areas">
-                    <div class="coverage-item">Toronto</div>
-                    <div class="coverage-item">North York</div>
-                    <div class="coverage-item">Scarborough</div>
-                    <div class="coverage-item">Etobicoke</div>
-                    <div class="coverage-item">Mississauga</div>
-                    <div class="coverage-item">Brampton</div>
-                    <div class="coverage-item">Markham</div>
-                    <div class="coverage-item">Vaughan</div>
-                    <div class="coverage-item">Richmond Hill</div>
-                    <div class="coverage-item">Oakville</div>
-                    <div class="coverage-item">Burlington</div>
-                    <div class="coverage-item">Oshawa</div>
-                    <div class="coverage-item">Ajax</div>
-                    <div class="coverage-item">Pickering</div>
-                    <div class="coverage-item">Milton</div>
-                    <div class="coverage-item">Whitby</div>
-                    <div class="coverage-item">Aurora</div>
-                    <div class="coverage-item">Newmarket</div>
-                    <div class="coverage-item">Stouffville</div>
-                    <div class="coverage-item">Caledon</div>
-                    <div class="coverage-item">Halton Hills</div>
-                    <div class="coverage-item">East Gwillimbury</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <div class="faq-container">
-                <h2 class="section-title">Service Area Questions</h2>
-
-                <div class="faq-item">
-                    <h3>What areas does Nika Appliance Repair service?</h3>
-                    <p>We provide professional appliance repair throughout the Greater Toronto Area with a 50km service radius from downtown Toronto. This includes all major cities: Toronto (Downtown, North York, Scarborough, Etobicoke), Mississauga, Brampton, Markham, Vaughan, Richmond Hill, Oakville, Burlington, Ajax, Pickering, Oshawa, and Milton. We serve hundreds of neighborhoods across these cities with fast response times.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>How quickly can you get to my location?</h3>
-                    <p>Response times vary by location. Toronto core areas typically receive service within 30-60 minutes. Mississauga, Brampton, Markham, and Vaughan usually have 45-90 minute response times. Oakville, Burlington, and Durham Region (Ajax, Pickering, Oshawa) typically see 90-120 minute responses. We offer same-day service across all our service areas and can often accommodate emergency requests.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Do you charge extra for certain neighborhoods or cities?</h3>
-                    <p>Our service call fee is consistent across all GTA locations within our 50km service radius. We believe in transparent, upfront pricing regardless of whether you're in downtown Toronto, Mississauga, Brampton, or any other city we serve. There are no hidden travel fees or neighborhood surcharges. You'll know the cost before we begin any repair work.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Can you service my neighborhood specifically?</h3>
-                    <p>Yes! We provide comprehensive coverage throughout all GTA neighborhoods. Whether you're in Port Credit, Bramalea, Unionville, Woodbridge, Glen Abbey, Aldershot, or any other community within our service area, we have experienced technicians ready to help. Call us at 437-747-6737 to confirm service availability in your specific neighborhood.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Do you offer weekend and evening service in all areas?</h3>
-                    <p>Yes, we provide 7-day-a-week service across all GTA locations we serve. Weekend appointments are available throughout Toronto, Mississauga, Brampton, Markham, Vaughan, Richmond Hill, Oakville, Burlington, and Durham Region. Evening appointments can also be arranged in most areas. We understand appliance emergencies don't only happen during business hours.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What if I'm just outside your main service area?</h3>
-                    <p>We may still be able to help! While our primary 50km service radius covers most of the GTA, we occasionally travel to nearby areas. Contact us at 437-747-6737 with your location, and we'll let you know if we can accommodate your repair needs. We're committed to helping as many GTA residents as possible.</p>
+                <div class="info-card">
+                    <div class="info-icon">🛡️</div>
+                    <h3>90-Day Warranty</h3>
+                    <span class="info-highlight">100%</span>
+                    <p>All repairs backed by comprehensive parts & labor warranty</p>
                 </div>
             </div>
         </div>
@@ -1433,22 +1275,31 @@
     <!-- Coverage Section -->
     <section class="coverage-section">
         <div class="container">
-            <div class="coverage-content">
-                <h2>Why Choose Nika for Your Appliance Repair?</h2>
-                <p>Local expertise meets professional service across the entire GTA</p>
-                <p><strong>Every service includes:</strong></p>
-                <div class="coverage-list">
-                    <span class="coverage-badge">Same-Day Service Available</span>
-                    <span class="coverage-badge">90-Day Parts & Labor Warranty</span>
-                    <span class="coverage-badge">Certified Technicians</span>
-                    <span class="coverage-badge">All Major Brands</span>
-                    <span class="coverage-badge">Upfront Pricing</span>
-                    <span class="coverage-badge">Weekend Appointments</span>
-                    <span class="coverage-badge">Emergency Service</span>
-                    <span class="coverage-badge">Licensed & Insured</span>
-                    <span class="coverage-badge">Local Knowledge</span>
-                    <span class="coverage-badge">Fast Response Times</span>
-                </div>
+            <h2 class="section-title">Complete GTA Coverage</h2>
+            <p class="section-subtitle">50km service radius covering all major GTA cities and neighborhoods</p>
+            <div class="coverage-grid">
+                <div class="coverage-badge">Toronto</div>
+                <div class="coverage-badge">North York</div>
+                <div class="coverage-badge">Scarborough</div>
+                <div class="coverage-badge">Etobicoke</div>
+                <div class="coverage-badge">Mississauga</div>
+                <div class="coverage-badge">Brampton</div>
+                <div class="coverage-badge">Markham</div>
+                <div class="coverage-badge">Vaughan</div>
+                <div class="coverage-badge">Richmond Hill</div>
+                <div class="coverage-badge">Oakville</div>
+                <div class="coverage-badge">Burlington</div>
+                <div class="coverage-badge">Oshawa</div>
+                <div class="coverage-badge">Ajax</div>
+                <div class="coverage-badge">Pickering</div>
+                <div class="coverage-badge">Milton</div>
+                <div class="coverage-badge">Whitby</div>
+                <div class="coverage-badge">Aurora</div>
+                <div class="coverage-badge">Newmarket</div>
+                <div class="coverage-badge">Stouffville</div>
+                <div class="coverage-badge">Caledon</div>
+                <div class="coverage-badge">Halton Hills</div>
+                <div class="coverage-badge">East Gwillimbury</div>
             </div>
         </div>
     </section>
@@ -1457,7 +1308,7 @@
     <section class="cta-section">
         <div class="container">
             <h2>Book Appliance Repair in Your Area Today</h2>
-            <p>Available 7 days a week • Fast response time • No hidden fees • Serving all GTA neighborhoods</p>
+            <p>Available 7 days a week with fast response times and no hidden fees</p>
             <div class="cta-buttons">
                 <a href="tel:4377476737" class="cta-button">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -1475,9 +1326,7 @@
         </div>
     </section>
 
-    
-    </script>
-
+    <!-- Footer -->
     <footer class="seo-footer-premium">
         <div class="container">
             <!-- Trust Badges Row -->
@@ -1564,10 +1413,8 @@
                     <h4 class="footer-heading">Company</h4>
                     <ul class="footer-links">
                         <li><a href="about">About Us</a></li>
-                        <li><a href="#testimonials">Customer Reviews</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="blog">Blog</a></li>
                         <li><a href="book">Book Online</a></li>
-                        <li><a href="#areas">Service Areas</a></li>
                         <li><a href="privacy">Privacy Policy</a></li>
                         <li><a href="terms">Terms of Service</a></li>
                         <li><a href="sitemap.xml">Sitemap</a></li>
@@ -1597,7 +1444,7 @@
                             <span>60 Walter Tunny Cresent<br>East Gwillimbury, ON L9N 0R3</span>
                         </p>
                         <p class="contact-item">
-                            <strong>📅 Service Hours:</strong><br>
+                            <strong>Service Hours:</strong><br>
                             Mon-Fri: 8 AM - 8 PM<br>
                             Sat: 9 AM - 6 PM<br>
                             Sun: 10 AM - 5 PM
@@ -1631,8 +1478,7 @@
     </footer>
 
     <style>
-    /* ========== SEO-OPTIMIZED FOOTER STYLES ========== */
-
+    /* ========== FOOTER STYLES ========== */
     .seo-footer-premium {
         position: relative;
         background: linear-gradient(135deg, #1976D2 0%, #2196F3 50%, #1565C0 100%);
@@ -1659,7 +1505,6 @@
         z-index: 2;
     }
 
-    /* Trust Badges Row */
     .footer-trust-badges {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1700,7 +1545,6 @@
         color: rgba(255, 255, 255, 0.9);
     }
 
-    /* Main Footer Content */
     .footer-main-content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1731,10 +1575,6 @@
         gap: 0.75rem;
     }
 
-    .footer-links li {
-        line-height: 1.6;
-    }
-
     .footer-links a {
         color: rgba(255, 255, 255, 0.9);
         text-decoration: none;
@@ -1748,7 +1588,6 @@
         transform: translateX(4px);
     }
 
-    /* Contact Column */
     .footer-column-contact {
         background: rgba(255, 255, 255, 0.1);
         padding: 1.5rem;
@@ -1781,7 +1620,6 @@
         opacity: 0.8;
     }
 
-    /* CTA Button */
     .footer-cta-button {
         display: inline-flex;
         align-items: center;
@@ -1805,7 +1643,6 @@
         box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
     }
 
-    /* Footer Bottom */
     .footer-bottom {
         padding-top: 2rem;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -1830,19 +1667,12 @@
         opacity: 0.5;
     }
 
-    .footer-social-links {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
     .footer-tagline {
         font-size: 0.9rem;
         color: rgba(255, 255, 255, 0.9);
         font-weight: 600;
     }
 
-    /* Responsive Design */
     @media (max-width: 968px) {
         .seo-footer-premium {
             padding: 3rem 0 1.5rem;
@@ -1884,54 +1714,6 @@
             grid-template-columns: 1fr;
             gap: 2rem;
         }
-
-        .footer-heading {
-            font-size: 1.1rem;
-        }
-
-        .badge-text strong {
-            font-size: 0.95rem;
-        }
-
-        .badge-text span {
-            font-size: 0.8rem;
-        }
-
-        .footer-cta-button {
-            width: 100%;
-            padding: 0.875rem 1.25rem;
-            font-size: 0.95rem;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .seo-footer-premium {
-            padding: 2rem 0 1rem;
-        }
-
-        .footer-trust-badges {
-            margin-bottom: 2rem;
-        }
-
-        .badge-icon {
-            font-size: 2rem;
-        }
-
-        .footer-links a {
-            font-size: 0.9rem;
-        }
-
-        .contact-item {
-            font-size: 0.875rem;
-        }
-    }
-
-    /* Accessibility */
-    @media (prefers-reduced-motion: reduce) {
-        .footer-links a,
-        .footer-cta-button {
-            transition: none;
-        }
     }
     </style>
 
@@ -1939,8 +1721,86 @@
     <script src="js/countdown-timer.js" defer></script>
 
     <script>
-    // Set current year in footer
-    document.getElementById('current-year-footer').textContent = new Date().getFullYear();
+    // Mobile menu toggle
+    function toggleMenu() {
+        const nav = document.querySelector('.header-nav');
+        const btn = document.querySelector('.mobile-menu-btn');
+        const body = document.body;
+
+        if (nav && btn) {
+            const isOpen = nav.classList.contains('menu-open');
+
+            if (isOpen) {
+                nav.classList.remove('menu-open');
+                btn.setAttribute('aria-expanded', 'false');
+                body.style.overflow = '';
+            } else {
+                nav.classList.add('menu-open');
+                btn.setAttribute('aria-expanded', 'true');
+                body.style.overflow = 'hidden';
+            }
+        }
+    }
+
+    // Close menu on link click
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.header-nav .nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const nav = document.querySelector('.header-nav');
+                const btn = document.querySelector('.mobile-menu-btn');
+                if (nav && nav.classList.contains('menu-open')) {
+                    nav.classList.remove('menu-open');
+                    btn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Location search filter
+        const searchInput = document.getElementById('locationSearch');
+        const locationCards = document.querySelectorAll('.location-card');
+        const noResults = document.getElementById('noResults');
+
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase().trim();
+                let visibleCount = 0;
+
+                locationCards.forEach(card => {
+                    const city = card.getAttribute('data-city').toLowerCase();
+                    const keywords = card.getAttribute('data-keywords').toLowerCase();
+                    const title = card.querySelector('h2').textContent.toLowerCase();
+                    const neighborhoods = card.querySelector('.location-neighborhoods').textContent.toLowerCase();
+
+                    const isMatch = city.includes(searchTerm) ||
+                                  keywords.includes(searchTerm) ||
+                                  title.includes(searchTerm) ||
+                                  neighborhoods.includes(searchTerm);
+
+                    if (isMatch || searchTerm === '') {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // Show/hide no results message
+                if (visibleCount === 0 && searchTerm !== '') {
+                    noResults.classList.add('show');
+                } else {
+                    noResults.classList.remove('show');
+                }
+            });
+        }
+
+        // Set current year in footer
+        const yearElement = document.getElementById('current-year-footer');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+    });
     </script>
 </body>
 </html>
