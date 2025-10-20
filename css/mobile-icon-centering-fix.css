@@ -1,0 +1,250 @@
+/* =====================================================
+   MOBILE ICON CENTERING FIX
+   Ensures all icons in "Why Choose Nika" and feature
+   sections are properly centered on mobile devices
+   ===================================================== */
+
+/* Fix benefit icons (Why Choose Nika section) */
+.benefit-icon,
+.feature-icon {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Mobile-specific icon centering - All breakpoints */
+@media (max-width: 768px) {
+    /* Benefit/Feature Icons */
+    .benefit-icon,
+    .feature-icon,
+    .service-icon,
+    .trust-icon,
+    .why-choose-icon {
+        text-align: center !important;
+        margin: 0 auto !important;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    /* Benefit cards container */
+    .benefit-card,
+    .feature-card,
+    .service-card {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* Areas features (different type of icons) */
+    .area-feature,
+    .areas-features .feature-icon {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Trust benefit items (sidebar icons) */
+    .trust-benefit-item {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        text-align: left !important;
+    }
+
+    .trust-benefit-item .benefit-icon {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+        margin-right: 1rem !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* Extra small mobile (320px) */
+@media (max-width: 320px) {
+    .benefit-icon,
+    .feature-icon {
+        font-size: 2.5rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .benefit-card,
+    .feature-card {
+        padding: 1rem !important;
+    }
+}
+
+/* Small mobile (375px) */
+@media (max-width: 375px) {
+    .benefit-icon,
+    .feature-icon {
+        font-size: 2.75rem !important;
+        margin-bottom: 0.875rem !important;
+    }
+}
+
+/* Medium mobile (414px) */
+@media (max-width: 414px) {
+    .benefit-icon,
+    .feature-icon {
+        font-size: 3rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* Tablet portrait (768px) */
+@media (max-width: 768px) {
+    /* Benefits grid - ensure proper spacing */
+    .benefits-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        text-align: center !important;
+    }
+
+    /* Feature icons in lists */
+    .features-list {
+        text-align: left !important;
+        padding-left: 0 !important;
+    }
+
+    .features-list li {
+        display: flex !important;
+        align-items: center !important;
+        text-align: left !important;
+    }
+
+    .features-list .feature-icon {
+        display: inline-flex !important;
+        width: auto !important;
+        margin-right: 0.5rem !important;
+        margin-left: 0 !important;
+        flex-shrink: 0 !important;
+    }
+}
+
+/* Desktop - ensure no changes to desktop layout */
+@media (min-width: 769px) {
+    .benefit-icon,
+    .feature-icon {
+        /* Desktop keeps original centering */
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+}
+
+/* Ensure icons in hero features are centered on mobile */
+@media (max-width: 768px) {
+    .hero-features {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 0.5rem !important;
+    }
+
+    .hero-features span,
+    .hero-feature {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+
+/* Fix for any inline icons */
+@media (max-width: 768px) {
+    span.benefit-icon,
+    span.feature-icon {
+        display: inline-block !important;
+        text-align: center !important;
+    }
+
+    /* If icon is inside a heading or paragraph */
+    h3 .benefit-icon,
+    h3 .feature-icon,
+    p .benefit-icon,
+    p .feature-icon {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin: 0 0.25rem !important;
+    }
+}
+
+/* Service page specific icons */
+@media (max-width: 768px) {
+    .service-hero .feature-icon,
+    .service-benefits .benefit-icon {
+        text-align: center !important;
+        margin: 0 auto 1rem auto !important;
+        display: block !important;
+    }
+}
+
+/* Location page specific icons */
+@media (max-width: 768px) {
+    .location-hero .feature-icon,
+    .location-benefits .benefit-icon {
+        text-align: center !important;
+        margin: 0 auto 1rem auto !important;
+        display: block !important;
+    }
+}
+
+/* Brand page specific icons */
+@media (max-width: 768px) {
+    .brand-hero .feature-icon,
+    .brand-benefits .benefit-icon {
+        text-align: center !important;
+        margin: 0 auto 1rem auto !important;
+        display: block !important;
+    }
+}
+
+/* Index page specific icons */
+@media (max-width: 768px) {
+    .index-hero .feature-icon,
+    .index-benefits .benefit-icon {
+        text-align: center !important;
+        margin: 0 auto 1rem auto !important;
+        display: block !important;
+    }
+}
+
+/* Ensure text within cards is also centered on mobile */
+@media (max-width: 768px) {
+    .benefit-card h3,
+    .feature-card h3 {
+        text-align: center !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .benefit-card p,
+    .feature-card p {
+        text-align: center !important;
+    }
+}
+
+/* Fix for checkmark icons in feature lists */
+@media (max-width: 768px) {
+    .features-list li .feature-icon {
+        width: 20px !important;
+        height: 20px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-right: 0.5rem !important;
+    }
+}

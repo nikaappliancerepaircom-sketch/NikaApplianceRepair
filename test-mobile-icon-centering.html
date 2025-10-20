@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Icon Centering Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-icon-centering-fix.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-header {
+            background: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 10px 10px 0 0;
+        }
+        .device-info {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 9999;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .benefits-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .benefit-card {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .benefit-card h3 {
+            color: #2196F3;
+            margin-bottom: 0.75rem;
+        }
+        .test-info {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="device-info">
+        Screen: <span id="screenWidth">-</span>px
+    </div>
+
+    <h1 style="text-align: center; color: #2196F3;">Mobile Icon Centering Test</h1>
+
+    <div class="test-info">
+        <strong>Test Instructions:</strong>
+        <ul>
+            <li>Resize your browser window to test different mobile breakpoints</li>
+            <li>Check that icons are centered at: 320px, 375px, 414px, 768px</li>
+            <li>Verify desktop layout (768px+) remains unchanged</li>
+        </ul>
+    </div>
+
+    <!-- Test Section 1: Why Choose Nika -->
+    <div class="test-section">
+        <div class="test-header">
+            <h2>Test 1: Why Choose Nika Icons (Benefit Cards)</h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">⚡</div>
+                <h3>Lightning Fast Response</h3>
+                <p>45-minute average arrival time. Same-day service for 95% of calls.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🏆</div>
+                <h3>Certified Experts</h3>
+                <p>Factory-trained, licensed, and insured technicians.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💰</div>
+                <h3>Transparent Pricing</h3>
+                <p>No hidden fees, no surprises. Get exact quotes before we start.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🔧</div>
+                <h3>Genuine Parts Only</h3>
+                <p>OEM and high-quality parts that last.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🛡️</div>
+                <h3>90-Day Guarantee</h3>
+                <p>Industry-leading warranty on all repairs.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🏠</div>
+                <h3>All Brands Welcome</h3>
+                <p>Samsung, LG, Whirlpool, GE - we fix them all.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Test Section 2: Feature Icons -->
+    <div class="test-section">
+        <div class="test-header">
+            <h2>Test 2: Feature Icons (List Format)</h2>
+        </div>
+        <ul class="features-list" style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 1rem;"><span class="feature-icon">✓</span> Licensed, bonded & insured technicians</li>
+            <li style="margin-bottom: 1rem;"><span class="feature-icon">✓</span> Same-day service available</li>
+            <li style="margin-bottom: 1rem;"><span class="feature-icon">✓</span> 90-day warranty on all repairs</li>
+            <li style="margin-bottom: 1rem;"><span class="feature-icon">✓</span> Upfront pricing - no hidden fees</li>
+            <li style="margin-bottom: 1rem;"><span class="feature-icon">✓</span> Factory-authorized for major brands</li>
+            <li style="margin-bottom: 1rem;"><span class="feature-icon">✓</span> Emergency service available 24/7</li>
+        </ul>
+    </div>
+
+    <!-- Test Section 3: Areas Features -->
+    <div class="test-section">
+        <div class="test-header">
+            <h2>Test 3: Areas Feature Icons</h2>
+        </div>
+        <div class="areas-features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            <div class="area-feature" style="text-align: center;">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Response</h3>
+                <p>Quick service in your area</p>
+            </div>
+            <div class="area-feature" style="text-align: center;">
+                <div class="feature-icon">🏆</div>
+                <h3>Expert Technicians</h3>
+                <p>Certified and experienced</p>
+            </div>
+            <div class="area-feature" style="text-align: center;">
+                <div class="feature-icon">📅</div>
+                <h3>Same-Day Service</h3>
+                <p>Available 7 days a week</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Test Results Checklist -->
+    <div class="test-section">
+        <div class="test-header">
+            <h2>Test Checklist</h2>
+        </div>
+        <div style="font-family: monospace; font-size: 14px;">
+            <h3>Mobile Breakpoints:</h3>
+            <ul>
+                <li>[ ] 320px - iPhone SE (icons centered)</li>
+                <li>[ ] 375px - iPhone 8 (icons centered)</li>
+                <li>[ ] 414px - iPhone Plus (icons centered)</li>
+                <li>[ ] 768px - iPad (icons centered)</li>
+            </ul>
+
+            <h3>Desktop:</h3>
+            <ul>
+                <li>[ ] 769px+ - Desktop (layout unchanged, icons centered)</li>
+            </ul>
+
+            <h3>Visual Checks:</h3>
+            <ul>
+                <li>[ ] Icons are horizontally centered in cards</li>
+                <li>[ ] Text below icons is centered</li>
+                <li>[ ] Cards are properly spaced</li>
+                <li>[ ] No horizontal scrolling</li>
+                <li>[ ] List icons remain left-aligned</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Display current screen width
+        function updateScreenWidth() {
+            document.getElementById('screenWidth').textContent = window.innerWidth;
+        }
+
+        updateScreenWidth();
+        window.addEventListener('resize', updateScreenWidth);
+    </script>
+</body>
+</html>
