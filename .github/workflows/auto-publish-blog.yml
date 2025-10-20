@@ -1,0 +1,64 @@
+# Automatic Blog Post Publishing
+# Publishes 5 posts per day from drafts folder
+# Updates sitemap.xml and blog index automatically
+
+name: Auto-Publish Blog Posts
+
+on:
+  schedule:
+    # Run every day at 9:00 AM EST (2:00 PM UTC)
+    - cron: '0 14 * * *'
+
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  publish-posts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Publish draft posts
+        run: |
+          python scripts/auto-publish-posts.py --count 5
+
+      - name: Update sitemap
+        run: |
+          python scripts/update-sitemap.py
+
+      - name: Update blog index
+        run: |
+          python scripts/update-blog-index.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+
+          # Check if there are changes
+          if git diff --staged --quiet; then
+            echo "No posts to publish today"
+          else
+            git commit -m "Auto-publish: Daily blog posts + sitemap update
+
+            - Published 5 new blog posts
+            - Updated sitemap.xml with new URLs
+            - Updated blog index page
+
+            🤖 Automated by GitHub Actions"
+            git push
+          fi
+
+      - name: Verify deployment
+        run: |
+          echo "✅ Blog posts published successfully!"
+          echo "Vercel will automatically deploy changes..."
