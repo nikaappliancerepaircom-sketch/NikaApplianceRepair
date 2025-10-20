@@ -9,6 +9,14 @@
     {
       "source": "/locations/:slug",
       "destination": "/locations/:slug.html"
+    },
+    {
+      "source": "/brands/:slug",
+      "destination": "/brands/:slug.html"
+    },
+    {
+      "source": "/blog/:category/:slug",
+      "destination": "/blog/:category/:slug.html"
     }
   ],
   "headers": [
