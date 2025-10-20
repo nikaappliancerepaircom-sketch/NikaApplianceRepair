@@ -4,12 +4,11 @@
 
 ```
 /includes/
-  ├── header.html           - Unified header HTML
-  ├── header-styles.css     - Header styling (if exists)
-  ├── footer.html           - Unified footer HTML
-  ├── countdown-timer.html  - Unified countdown timer template
-  ├── include-loader.js     - JavaScript loader with caching
-  └── README.md             - This file
+  ├── header.html          - Unified header HTML
+  ├── header-styles.css    - Header styling
+  ├── footer.html          - Unified footer HTML
+  ├── include-loader.js    - JavaScript loader with caching
+  └── README.md            - This file
 ```
 
 ## 🎯 How It Works
@@ -96,17 +95,15 @@ Then refresh page to see changes immediately.
 
 ### ✅ Completed:
 - [x] Created header.html
-- [x] Created header-styles.css (if exists)
+- [x] Created header-styles.css
 - [x] Created footer.html
-- [x] Created countdown-timer.html (unified timer template)
 - [x] Created include-loader.js
-- [x] Updated all 50 pages with unified countdown timer
 - [x] Updated Mississauga page (test)
 
 ### 🚧 TODO:
-- [ ] Update remaining location pages to use header/footer includes
-- [ ] Update service pages to use header/footer includes
-- [ ] Update homepage to use header/footer includes
+- [ ] Update remaining 11 location pages
+- [ ] Update 9 service pages
+- [ ] Update homepage
 - [ ] Test all pages
 
 ## 🎨 Header Features
@@ -165,44 +162,17 @@ Then refresh page to see changes immediately.
 2. Verify all links use absolute paths (`/services/...`)
 3. Check if target pages exist
 
-## ⏱️ Countdown Timer Component
-
-### Usage
-
-The `countdown-timer.html` file contains the unified countdown timer used across all 50 pages.
-
-**To use on a new page:**
-
-1. Copy HTML from `countdown-timer.html`
-2. Update the link href:
-   - Homepage: `#book`
-   - Other pages: `../book.html`
-3. Ensure these files are loaded:
-   ```html
-   <link rel="stylesheet" href="../css/countdown-horizontal.css">
-   <script src="../js/countdown-timer.js" defer></script>
-   ```
-
-**Important:**
-- Do NOT change timer value (14:45)
-- Do NOT change label casing (UPPERCASE)
-- Timer syncs across pages via localStorage
-
-**Documentation:**
-- See `COUNTDOWN-TIMER-UNIFICATION-REPORT.md` in root directory
-- See `TIMER-QUICK-GUIDE.md` for quick reference
-
 ## 📝 Next Steps
 
-1. Update all 12 location pages to use header/footer includes
-2. Update 9 service pages to use header/footer includes
-3. Update homepage to use header/footer includes
+1. Update all 12 location pages to use includes
+2. Update 9 service pages to use includes
+3. Update homepage to use includes
 4. Test all pages (desktop + mobile)
 5. Deploy to production
 6. Monitor for issues
 
 ---
 
-**Last Updated:** 2025-10-20
-**Version:** 1.1
-**Status:** Countdown timer unified across all pages. Ready for deployment.
+**Last Updated:** 2025-10-14
+**Version:** 1.0
+**Status:** Ready for deployment
