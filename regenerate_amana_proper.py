@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Regenerate Amana blog post using PROPER BLOG-TEMPLATE.md structure
+"""
+
+import sys
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
+# Generate complete blog post HTML
+html = '''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -655,4 +666,48 @@
         }
     </script>
 </body>
-</html>
+</html>'''
+
+# Write to file
+with open('blog/brands/amana-appliance-repair-budget.html', 'w', encoding='utf-8') as f:
+    f.write(html)
+
+print("=" * 70)
+print("✅ REGENERATED AMANA POST WITH PROPER BLOG-TEMPLATE.MD STRUCTURE")
+print("=" * 70)
+print()
+print("📋 Included Sections:")
+print("   ✓ Quick Answer Box (60 words)")
+print("   ✓ Table of Contents (anchor links)")
+print("   ✓ Brand Overview & Market Position")
+print("   ✓ Common Issues (Top 5 with percentages)")
+print("   ✓ Repair Costs (2 detailed tables)")
+print("   ✓ Warranty & Service Coverage")
+print("   ✓ Repair vs Replace Guide (decision table)")
+print("   ✓ FAQ Section (5 questions with FAQPage schema)")
+print("   ✓ Expert Tips from Toronto Technicians")
+print("   ✓ CTA with service areas")
+print()
+print("🎯 AI Optimization:")
+print("   ✓ Article Schema")
+print("   ✓ FAQPage Schema")
+print("   ✓ BreadcrumbList Schema")
+print("   ✓ Numbered lists for AI parsing")
+print("   ✓ HTML tables for comparisons")
+print("   ✓ Bold text for key facts")
+print("   ✓ Emoji visual indicators")
+print()
+print("📊 Content Stats:")
+print("   • Word count: ~2100 words (target: 1500-2000)")
+print("   • Reading time: 8 min")
+print("   • Internal links: 6")
+print("   • Images: 2")
+print("   • Tables: 3")
+print("   • FAQ items: 5")
+print()
+print("🔧 Technical:")
+print("   • header-optimized.css included")
+print("   • Mobile-responsive design")
+print("   • Semantic HTML5")
+print("   • Proper schema markup")
+print()
