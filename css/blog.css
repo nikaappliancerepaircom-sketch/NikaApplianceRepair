@@ -1,10 +1,19 @@
 /* ========== BLOG STYLES - AI-OPTIMIZED ========== */
 
+/* Body Background */
+body {
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
 /* Container */
 .blog-container {
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 /* Breadcrumbs */
