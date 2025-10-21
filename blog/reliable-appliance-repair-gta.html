@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&amp;family=Rubik:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <!-- Main Stylesheet -->
 <link href="../css/style.css" rel="stylesheet"/>
+<link href="../css/header-optimized.css" rel="stylesheet"/>
 <link href="../css/mobile-responsive.css" rel="stylesheet"/><link href="../css/responsive-typography.css" rel="stylesheet"/><link href="../css/dropdown-styles.css" rel="stylesheet"/>
 <!-- Schema Markup -->
 <script type="application/ld+json">
@@ -132,6 +133,7 @@
         .cta-box h3 {
             font-size: 2rem;
             margin-bottom: 1rem;
+            color: white;
         }
 
         .cta-box .btn {
@@ -152,41 +154,36 @@
     </style>
 </head>
 <body>
-<!-- Header -->
-<header class="main-header">
-<div class="container">
-<div class="header-content">
-<div class="logo">
-<a href="../index.html">
-<div class="logo-text">
-<span class="logo-primary">NIKA</span>
-<span class="logo-secondary">Appliance Repair</span>
-</div>
-</a>
-</div>
-<nav class="main-nav">
-<ul>
-<li><a href="../index.html">Home</a></li>
-<li><a href="../services/">Services</a></li>
-<li class="has-dropdown"><a href="../locations/">Locations</a><ul class="dropdown-menu">
-<li><a href="../locations/ajax.html">Ajax</a></li>
-<li><a href="../locations/aurora.html">Aurora</a></li>
-<li><a href="../locations/barrie.html">Barrie</a></li>
-<li><a href="../locations/bolton.html">Bolton</a></li>
-<li><a href="../locations/brampton.html">Brampton</a></li>
-<li><a href="../locations/burlington.html">Burlington</a></li>
-<li><a href="../locations/etobicoke.html">Etobicoke</a></li>
-<li><a href="../locations/markham.html">Markham</a></li>
-</ul></li>
-<li><a href="index.html">Blog</a></li>
-</ul>
-</nav>
-<div class="header-cta">
-<a class="call-btn" href="tel:4377476737">437-747-6737</a>
-<a class="book-btn" href="../index.html#book">Book Service</a>
-</div>
-</div>
-</div>
+<!-- Header (shared component) -->
+<header class="site-header" role="banner">
+    <div class="header-container">
+        <div class="header-logo">
+            <a href="/">NIKA Appliance Repair</a>
+        </div>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li><a href="/services" class="nav-link">Services</a></li>
+                <li><a href="/locations" class="nav-link">Locations</a></li>
+                <li><a href="/brands" class="nav-link">Brands</a></li>
+                <li><a href="/blog" class="nav-link active">Blog</a></li>
+                <li><a href="/about" class="nav-link">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-cta">
+            <a href="tel:4377476737" class="cta-phone">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                437-747-6737
+            </a>
+            <a href="/book" class="cta-book">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                </svg>
+                Book Now
+            </a>
+        </div>
+    </div>
 </header>
 <!-- Blog Content -->
 <div class="blog-container">
@@ -716,40 +713,11 @@
 </div>
 </div>
 <!-- Footer -->
-<footer class="main-footer">
-<div class="container">
-<div class="footer-content">
-<div class="footer-info">
-<h3>Nika Appliance Repair</h3>
-<p>Serving Toronto &amp; GTA</p>
-<p>Phone: <a href="tel:4377476737">437-747-6737</a></p>
-<p>Hours: 24/7 Emergency Service Available</p>
-</div>
-<div class="footer-services">
-<h4>Our Services</h4>
-<ul>
-<li><a href="../services/refrigerator-repair.html">Refrigerator Repair</a></li>
-<li><a href="../services/washer-repair.html">Washer Repair</a></li>
-<li><a href="../services/dryer-repair.html">Dryer Repair</a></li>
-<li><a href="../services/dishwasher-repair.html">Dishwasher Repair</a></li>
-<li><a href="../services/oven-repair.html">Oven Repair</a></li>
-</ul>
-</div>
-<div class="footer-areas">
-<h4>Service Areas</h4>
-<ul>
-<li><a href="../locations/toronto.html">Toronto</a></li>
-<li><a href="../locations/mississauga.html">Mississauga</a></li>
-<li><a href="../locations/brampton.html">Brampton</a></li>
-<li><a href="../locations/vaughan.html">Vaughan</a></li>
-<li><a href="../locations/">View All Locations</a></li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2025 Nika Appliance Repair. All rights reserved. | Licensed &amp; Insured | 90-day Warranty</p>
-</div>
-</div>
+<footer class="blog-footer">
+    <div class="container">
+        <p>&copy; 2025 Nika Appliance Repair. Licensed & Insured. Serving Toronto & GTA.</p>
+        <p><a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a> | <a href="/sitemap.xml">Sitemap</a></p>
+    </div>
 </footer>
 <script>
 // FAQ Accordion
