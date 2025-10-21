@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+"""
+Regenerate Amana blog post with CORRECT CSS structure from first blog post
+"""
+
+html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -726,4 +731,17 @@
         });
     </script>
 </body>
-</html>
+</html>"""
+
+# Write the file
+output_path = 'blog/brands/amana-appliance-repair-budget.html'
+with open(output_path, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print(f"✅ Regenerated {output_path} with CORRECT CSS structure!")
+print("   - Uses <article class='blog-post'>")
+print("   - Includes breadcrumbs navigation")
+print("   - Uses .article-header not .post-hero")
+print("   - Uses .article-content not .post-content")
+print("   - Uses .comparison-table not .pricing-table")
+print("   - Total: 2,726 words with proper Amana content")
