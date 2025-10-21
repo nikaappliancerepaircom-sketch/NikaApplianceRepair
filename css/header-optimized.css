@@ -4,8 +4,7 @@
     .site-header {
         background: #ffffff;
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        position: sticky;
-        top: 0;
+        position: relative;
         z-index: 1000;
         width: 100%;
     }
@@ -117,14 +116,14 @@
     }
 
     .cta-phone {
-        background: #7B1FA2;
+        background: linear-gradient(135deg, #7B1FA2 0%, #6A1B9A 100%);
         color: white;
     }
 
     .cta-phone:hover {
-        background: #45a049;
+        background: linear-gradient(135deg, #6A1B9A 0%, #4A148C 100%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(76,175,80,0.3);
+        box-shadow: 0 4px 12px rgba(123,31,162,0.3);
     }
 
     .cta-book {
@@ -133,7 +132,7 @@
     }
 
     .cta-book:hover {
-        background: #229954;
+        background: linear-gradient(135deg, #229954 0%, #1E8449 100%);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(39,174,96,0.3);
     }
