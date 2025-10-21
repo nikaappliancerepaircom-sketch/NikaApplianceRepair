@@ -1,4 +1,81 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Update blog.html to show only published posts
+"""
+
+import os
+import sys
+import glob
+import re
+
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
+def get_published_posts():
+    """Get all published blog posts"""
+    published = []
+
+    categories = ['brands', 'maintenance', 'cost-pricing', 'location', 'seasonal', 'troubleshooting']
+
+    for category in categories:
+        category_dir = f'blog/{category}'
+        if os.path.exists(category_dir):
+            posts = glob.glob(f'{category_dir}/*.html')
+            for post in posts:
+                filename = os.path.basename(post)
+                slug = filename.replace('.html', '')
+
+                # Read post to get metadata
+                with open(post, 'r', encoding='utf-8') as f:
+                    content = f.read()
+
+                # Extract title
+                h1_match = re.search(r'<h1>(.*?)</h1>', content)
+                title = h1_match.group(1) if h1_match else slug.replace('-', ' ').title()
+
+                # Extract meta description
+                meta_match = re.search(r'<meta name="description" content="(.*?)"', content)
+                description = meta_match.group(1) if meta_match else ""
+
+                published.append({
+                    'category': category,
+                    'slug': slug,
+                    'title': title,
+                    'description': description[:150] + '...' if len(description) > 150 else description,
+                    'url': f'/blog/{category}/{slug}'
+                })
+
+    return published
+
+def generate_blog_html(posts):
+    """Generate blog.html with published posts"""
+
+    # Category icons
+    category_icons = {
+        'troubleshooting': '🔧',
+        'maintenance': '🛠️',
+        'brands': '🏷️',
+        'cost-pricing': '💰',
+        'seasonal': '🌤️',
+        'location': '📍'
+    }
+
+    # Category names
+    category_names = {
+        'troubleshooting': 'Troubleshooting',
+        'maintenance': 'Maintenance',
+        'brands': 'Brands',
+        'cost-pricing': 'Cost & Pricing',
+        'seasonal': 'Seasonal',
+        'location': 'Location'
+    }
+
+    # Featured post (first one)
+    featured = posts[0] if posts else None
+
+    # Generate HTML
+    html = '''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -259,39 +336,53 @@
     <main class="blog-main">
         <!-- Categories -->
         <nav class="blog-categories">
-            <button class="category-filter active" data-category="all">📚 All Posts</button>
-            <button class="category-filter" data-category="maintenance">🛠️ Maintenance</button>
-            <button class="category-filter" data-category="cost-pricing">💰 Cost & Pricing</button>
-            <button class="category-filter" data-category="brands">🏷️ Brands</button>
-            <button class="category-filter" data-category="seasonal">🌤️ Seasonal</button>
-            <button class="category-filter" data-category="location">📍 Location</button>
-        </nav>
+            <button class="category-filter active" data-category="all">📚 All Posts</button>'''
 
-        <!-- Featured Post -->
+    # Add category buttons
+    categories_used = set(post['category'] for post in posts)
+    for cat in ['troubleshooting', 'maintenance', 'cost-pricing', 'brands', 'seasonal', 'location']:
+        if cat in categories_used:
+            icon = category_icons.get(cat, '📄')
+            name = category_names.get(cat, cat.title())
+            html += f'\n            <button class="category-filter" data-category="{cat}">{icon} {name}</button>'
+
+    html += '\n        </nav>\n\n'
+
+    # Featured post
+    if featured:
+        icon = category_icons.get(featured['category'], '📄')
+        html += f'''        <!-- Featured Post -->
         <article class="featured-post">
-            <div class="featured-image">🏷️</div>
+            <div class="featured-image">{icon}</div>
             <div class="featured-content">
                 <span class="featured-badge">⚡ Featured</span>
-                <h2>Amana Appliance Repair Costs Toronto</h2>
+                <h2>{featured['title']}</h2>
                 <div class="featured-meta">
                     <span>January 21, 2025</span>
                     <span>•</span>
                     <span>7 min read</span>
                 </div>
-                <p>Amana appliance repair: affordable costs, Whirlpool-made. Toronto budget service. Value brand. 2025.</p>
-                <a href="/blog/brands/amana-appliance-repair-budget" class="read-more">Read Full Guide →</a>
+                <p>{featured['description']}</p>
+                <a href="{featured['url']}" class="read-more">Read Full Guide →</a>
             </div>
         </article>
 
-        <!-- Posts Grid -->
-        <div class="posts-grid">
+'''
 
-            <a href="/blog/brands/amana-appliance-repair-budget" class="post-card" data-category="brands">
-                <div class="post-image">🏷️</div>
+    # Posts grid
+    html += '        <!-- Posts Grid -->\n'
+    html += '        <div class="posts-grid">\n\n'
+
+    for post in posts:
+        icon = category_icons.get(post['category'], '📄')
+        cat_name = category_names.get(post['category'], post['category'].title())
+
+        html += f'''            <a href="{post['url']}" class="post-card" data-category="{post['category']}">
+                <div class="post-image">{icon}</div>
                 <div class="post-content">
-                    <span class="post-category">Brands</span>
-                    <h3>Amana Appliance Repair Costs Toronto</h3>
-                    <p>Amana appliance repair: affordable costs, Whirlpool-made. Toronto budget service. Value brand. 2025.</p>
+                    <span class="post-category">{cat_name}</span>
+                    <h3>{post['title']}</h3>
+                    <p>{post['description']}</p>
                     <div class="post-meta">
                         <span>Jan 21, 2025</span>
                         <span>7 min read</span>
@@ -299,124 +390,9 @@
                 </div>
             </a>
 
-            <a href="/blog/maintenance/appliance-energy-efficiency-toronto" class="post-card" data-category="maintenance">
-                <div class="post-image">🛠️</div>
-                <div class="post-content">
-                    <span class="post-category">Maintenance</span>
-                    <h3>Save $300/Year on Appliance Energy Bills</h3>
-                    <p>Energy-efficient appliance use: settings, maintenance, upgrades. Toronto Hydro tips. Reduce bills 30%. Guide 2025.</p>
-                    <div class="post-meta">
-                        <span>Jan 21, 2025</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
+'''
 
-            <a href="/blog/maintenance/appliance-filter-replacement-schedule" class="post-card" data-category="maintenance">
-                <div class="post-image">🛠️</div>
-                <div class="post-content">
-                    <span class="post-category">Maintenance</span>
-                    <h3>Appliance Filter Replacement Schedule Toronto</h3>
-                    <p>Appliance Filter Replacement Schedule Toronto - Expert guide for Toronto homeowners. DIY tips, maintenance schedule, cost savings. Same-day service av...</p>
-                    <div class="post-meta">
-                        <span>Jan 21, 2025</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/blog/maintenance/appliance-lifespan-toronto" class="post-card" data-category="maintenance">
-                <div class="post-image">🛠️</div>
-                <div class="post-content">
-                    <span class="post-category">Maintenance</span>
-                    <h3>Appliance Lifespan by Brand & Type</h3>
-                    <p>Appliance lifespan: fridge 10-15 years, washer 8-12 years. Toronto replacement timeline. Plan upgrades. 2025.</p>
-                    <div class="post-meta">
-                        <span>Jan 21, 2025</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/blog/maintenance/appliance-maintenance-schedule-toronto" class="post-card" data-category="maintenance">
-                <div class="post-image">🛠️</div>
-                <div class="post-content">
-                    <span class="post-category">Maintenance</span>
-                    <h3>Complete Appliance Maintenance Checklist</h3>
-                    <p>Annual appliance maintenance: monthly, quarterly, yearly tasks. Toronto homeowner guide. Save $500/year. 2025.</p>
-                    <div class="post-meta">
-                        <span>Jan 21, 2025</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/blog/cost-pricing/appliance-repair-cost-toronto-2025" class="post-card" data-category="cost-pricing">
-                <div class="post-image">💰</div>
-                <div class="post-content">
-                    <span class="post-category">Cost & Pricing</span>
-                    <h3>How Much Does Appliance Repair Cost in Toronto?</h3>
-                    <p>Toronto appliance repair costs: service call $75-$100, labor $80-$120/hr. Complete pricing guide all appliances. 2025.</p>
-                    <div class="post-meta">
-                        <span>Jan 21, 2025</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/blog/cost-pricing/appliance-repair-financing-toronto" class="post-card" data-category="cost-pricing">
-                <div class="post-image">💰</div>
-                <div class="post-content">
-                    <span class="post-category">Cost & Pricing</span>
-                    <h3>Payment Plans for Appliance Repair</h3>
-                    <p>Appliance repair financing Toronto: payment plans, credit options. Afford major repairs. Guide 2025.</p>
-                    <div class="post-meta">
-                        <span>Jan 21, 2025</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/blog/cost-pricing/appliance-warranty-guide-toronto" class="post-card" data-category="cost-pricing">
-                <div class="post-image">💰</div>
-                <div class="post-content">
-                    <span class="post-category">Cost & Pricing</span>
-                    <h3>Understanding Appliance Warranties in Toronto</h3>
-                    <p>Appliance warranty: manufacturer coverage, extended warranty worth it? Toronto warranty guide. Save money. 2025.</p>
-                    <div class="post-meta">
-                        <span>Jan 21, 2025</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/blog/location/appliance-repair-north-york" class="post-card" data-category="location">
-                <div class="post-image">📍</div>
-                <div class="post-content">
-                    <span class="post-category">Location</span>
-                    <h3>North York Appliance Repair Service</h3>
-                    <p>North York appliance repair: all neighborhoods, same-day service. Toronto coverage. Call 437-747-6737. 2025.</p>
-                    <div class="post-meta">
-                        <span>Jan 21, 2025</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/blog/seasonal/back-to-school-dorm-appliance-tips" class="post-card" data-category="seasonal">
-                <div class="post-image">🌤️</div>
-                <div class="post-content">
-                    <span class="post-category">Seasonal</span>
-                    <h3>Student Dorm Appliance Care Guide</h3>
-                    <p>Dorm appliance tips: mini fridge, microwave care. Toronto student guide. Save money. 2025.</p>
-                    <div class="post-meta">
-                        <span>Jan 21, 2025</span>
-                        <span>7 min read</span>
-                    </div>
-                </div>
-            </a>
-
-        </div>
+    html += '''        </div>
     </main>
 
     <script>
@@ -444,4 +420,55 @@
         });
     </script>
 </body>
-</html>
+</html>'''
+
+    return html
+
+def main():
+    print("=" * 70)
+    print("📝 UPDATING BLOG.HTML WITH PUBLISHED POSTS")
+    print("=" * 70)
+    print()
+
+    # Get published posts
+    posts = get_published_posts()
+    print(f"✅ Found {len(posts)} published posts")
+    print()
+
+    if not posts:
+        print("❌ No published posts found!")
+        return
+
+    # Show posts by category
+    categories = {}
+    for post in posts:
+        if post['category'] not in categories:
+            categories[post['category']] = []
+        categories[post['category']].append(post['title'][:50] + '...')
+
+    for cat, titles in sorted(categories.items()):
+        print(f"{cat.upper()}: {len(titles)} posts")
+        for title in titles:
+            print(f"  • {title}")
+
+    print()
+
+    # Generate HTML
+    html = generate_blog_html(posts)
+
+    # Write file
+    with open('blog.html', 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    print("=" * 70)
+    print(f"✅ Updated blog.html with {len(posts)} published posts")
+    print("=" * 70)
+    print()
+    print("Next steps:")
+    print("1. Review blog.html in browser")
+    print("2. git add blog.html")
+    print("3. git commit -m 'Update blog.html to show only published posts'")
+    print("4. git push")
+
+if __name__ == "__main__":
+    main()
