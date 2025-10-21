@@ -180,7 +180,7 @@
 
         .cta-box {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            color: white !important;
             padding: 3rem;
             border-radius: 16px;
             text-align: center;
@@ -202,24 +202,25 @@
             pointer-events: none;
         }
 
+        .cta-box * {
+            color: white !important;
+            position: relative;
+            z-index: 1;
+        }
+
         .cta-box h3 {
             font-size: 2rem;
             margin-bottom: 1rem;
-            color: white !important;
             font-weight: 700;
-            position: relative;
-            z-index: 1;
         }
 
         .cta-box p {
-            color: rgba(255, 255, 255, 0.95);
-            position: relative;
-            z-index: 1;
+            color: rgba(255, 255, 255, 0.95) !important;
         }
 
         .cta-box .btn {
-            background: white;
-            color: #667eea;
+            background: white !important;
+            color: #667eea !important;
             padding: 1rem 2.5rem;
             border-radius: 10px;
             text-decoration: none;
@@ -229,12 +230,22 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
             position: relative;
-            z-index: 1;
+            z-index: 2;
         }
 
         .cta-box .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            color: #667eea !important;
+        }
+
+        .cta-box a {
+            color: white !important;
+            z-index: 2;
+        }
+
+        .cta-box a.btn {
+            color: #667eea !important;
         }
 
         /* Tables */
@@ -261,6 +272,33 @@
             background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
             background-size: 25px 25px;
             pointer-events: none;
+        }
+
+        /* Blog Footer */
+        .blog-footer {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-footer p {
+            margin: 0.75rem 0;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .blog-footer a {
+            color: #93c5fd;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .blog-footer a:hover {
+            color: #60a5fa;
+            text-decoration: underline;
         }
     </style>
 </head>
