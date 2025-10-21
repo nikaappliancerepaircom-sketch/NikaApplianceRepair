@@ -820,3 +820,241 @@
         line-height: 1.6;
     }
 }
+
+/* ========== ADDITIONAL BLOG POST STYLES ========== */
+
+/* Blog post container */
+.blog-post {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background: white;
+}
+
+/* Post hero */
+.post-hero {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 2rem;
+}
+
+.post-hero h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.post-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* Featured image */
+.post-featured-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.post-featured-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Post content */
+.post-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.post-content h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 2.5rem 0 1.25rem;
+    padding-top: 1rem;
+}
+
+.post-content h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin: 2rem 0 1rem;
+}
+
+.post-content p {
+    margin-bottom: 1.25rem;
+}
+
+.post-content ul,
+.post-content ol {
+    margin: 1.25rem 0;
+    padding-left: 2rem;
+}
+
+.post-content li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.post-content ul li ul,
+.post-content ol li ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-content strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* Content images */
+.content-image {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.content-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* Pricing tables */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pricing-table thead {
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    color: white;
+}
+
+.pricing-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pricing-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.pricing-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.pricing-table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.pricing-table td {
+    padding: 1rem;
+}
+
+.pricing-table td:first-child {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* Post CTA */
+.post-cta {
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.post-cta h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1976D2;
+    margin-bottom: 1rem;
+}
+
+.post-cta h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1976D2;
+    margin: 1.5rem 0 1rem;
+    text-align: left;
+}
+
+.post-cta p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.post-cta ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.post-cta ul li {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 1rem;
+    }
+
+    .post-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .post-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .pricing-table {
+        font-size: 0.85rem;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .post-cta {
+        padding: 1.5rem;
+    }
+}
