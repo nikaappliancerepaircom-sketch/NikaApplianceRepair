@@ -17,7 +17,13 @@
 <!-- Main Stylesheet -->
 <link href="../css/style.css" rel="stylesheet"/>
 <link href="../css/header-optimized.css" rel="stylesheet"/>
-<link href="../css/mobile-responsive.css" rel="stylesheet"/><link href="../css/responsive-typography.css" rel="stylesheet"/><link href="../css/dropdown-styles.css" rel="stylesheet"/>
+<link href="../css/mobile-responsive.css" rel="stylesheet"/>
+<link href="../css/responsive-typography.css" rel="stylesheet"/>
+<link href="../css/dropdown-styles.css" rel="stylesheet"/>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<!-- Premium Blog Styles -->
+<link rel="stylesheet" href="../css/blog-premium.css"/>
 <!-- Schema Markup -->
 <script type="application/ld+json">
     {
@@ -303,6 +309,9 @@
     </style>
 </head>
 <body>
+<!-- Reading Progress Bar -->
+<div class="reading-progress" id="progressBar"></div>
+
 <!-- Header (shared component) -->
 <header class="site-header" role="banner">
     <div class="header-container">
@@ -889,6 +898,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+});
+
+// Reading Progress Bar
+window.addEventListener('scroll', function() {
+    const progressBar = document.getElementById('progressBar');
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight - windowHeight;
+    const scrolled = (window.scrollY / documentHeight) * 100;
+    progressBar.style.width = scrolled + '%';
 });
 </script></body>
 </html>
