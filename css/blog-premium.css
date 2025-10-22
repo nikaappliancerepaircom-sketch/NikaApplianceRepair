@@ -628,16 +628,112 @@ tbody tr:last-child td {
 
 /* ========== RESPONSIVE DESIGN ========== */
 
+/* Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+    .blog-wrapper {
+        max-width: 1600px;
+        grid-template-columns: 1fr 320px;
+        gap: 4rem;
+    }
+
+    .blog-content {
+        font-size: 19px;
+    }
+
+    .blog-header {
+        padding: 4rem 4rem 2.5rem;
+    }
+
+    .comparison-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop to Tablet (1200px-1400px) */
 @media (max-width: 1200px) {
     .blog-wrapper {
         grid-template-columns: 1fr;
+        max-width: 900px;
     }
 
     .blog-sidebar {
         display: none;
     }
+
+    .comparison-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
 }
 
+/* Tablet (768px-1200px) */
+@media (max-width: 968px) {
+    .blog-wrapper {
+        padding: 0 1.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .blog-header {
+        padding: 2.5rem 2rem 2rem;
+    }
+
+    .blog-content {
+        padding: 2.5rem 2rem;
+        font-size: 17px;
+    }
+
+    .blog-title {
+        font-size: 2rem;
+    }
+
+    .blog-content h2 {
+        font-size: 1.875rem;
+        margin-top: 3rem;
+    }
+
+    .blog-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .comparison-card {
+        padding: 1.75rem;
+    }
+
+    .schedule-section {
+        padding: 1.75rem;
+    }
+
+    .info-box {
+        padding: 1.5rem;
+    }
+
+    .cta-box {
+        padding: 3rem 2rem;
+    }
+
+    .cta-box h3 {
+        font-size: 2rem;
+    }
+
+    .social-share {
+        padding: 1.25rem 2rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 1rem 0.875rem;
+    }
+}
+
+/* Mobile (480px-768px) */
 @media (max-width: 768px) {
     .blog-wrapper {
         padding: 0 1rem;
@@ -650,62 +746,393 @@ tbody tr:last-child td {
 
     .blog-content {
         padding: 2rem 1.5rem;
-        font-size: 17px;
+        font-size: 16px;
+    }
+
+    .blog-content p {
+        max-width: 100%;
     }
 
     .blog-title {
         font-size: 1.75rem;
+        line-height: 1.3;
     }
 
     .blog-content h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
     }
 
     .blog-content h3 {
-        font-size: 1.375rem;
+        font-size: 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .blog-meta-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .comparison-grid {
+        gap: 1.25rem;
+    }
+
+    .comparison-card {
+        padding: 1.5rem;
+    }
+
+    .comparison-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .comparison-card ul {
+        font-size: 0.95rem;
+    }
+
+    .schedule-section {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .schedule-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .schedule-section ul {
+        font-size: 0.95rem;
+    }
+
+    .info-box {
+        padding: 1.25rem;
+        margin: 1.25rem 0;
+    }
+
+    .info-box h3 {
+        font-size: 1.125rem;
+    }
+
+    .info-box ul {
+        font-size: 0.95rem;
+    }
+
+    .tip-box {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .tip-box strong {
+        font-size: 1.1rem;
     }
 
     .cta-box {
         padding: 2.5rem 1.5rem;
+        margin: 2.5rem 0;
     }
 
     .cta-box h3 {
         font-size: 1.75rem;
     }
 
-    .social-share {
-        padding: 1rem 1.5rem;
-    }
-
-    table {
-        font-size: 0.875rem;
-    }
-
-    th, td {
-        padding: 0.875rem 0.75rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .blog-title {
-        font-size: 1.5rem;
-    }
-
-    .blog-content {
-        font-size: 16px;
-        padding: 1.5rem 1rem;
-    }
-
-    .blog-content h2 {
-        font-size: 1.5rem;
-    }
-
-    .blog-content h3 {
-        font-size: 1.25rem;
+    .cta-box p {
+        font-size: 1rem;
     }
 
     .cta-box .btn {
         padding: 1rem 2rem;
         font-size: 1rem;
+    }
+
+    .social-share {
+        padding: 1rem 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .share-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 0.875rem;
+    }
+
+    table {
+        font-size: 0.875rem;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    th, td {
+        padding: 0.875rem 0.75rem;
+        min-width: 100px;
+    }
+
+    .blog-footer {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* Small Mobile (320px-480px) */
+@media (max-width: 480px) {
+    .blog-wrapper {
+        padding: 0 0.75rem;
+        margin: 0.75rem auto;
+    }
+
+    .blog-header {
+        padding: 1.5rem 1rem 1.25rem;
+    }
+
+    .blog-content {
+        font-size: 15px;
+        padding: 1.5rem 1rem;
+        line-height: 1.7;
+    }
+
+    .blog-title {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .blog-meta {
+        font-size: 0.875rem;
+        gap: 1rem;
+    }
+
+    .blog-category {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .reading-time {
+        font-size: 0.8rem;
+    }
+
+    .blog-content h2 {
+        font-size: 1.375rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .blog-content h2::after {
+        width: 60px;
+        height: 3px;
+    }
+
+    .blog-content h3 {
+        font-size: 1.125rem;
+        margin-top: 1.75rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .blog-content ul,
+    .blog-content ol {
+        margin-left: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .blog-content li {
+        margin-bottom: 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    .comparison-grid {
+        gap: 1rem;
+    }
+
+    .comparison-card {
+        padding: 1.25rem;
+    }
+
+    .comparison-card h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .comparison-card ul {
+        font-size: 0.9rem;
+        padding-left: 1.25rem;
+    }
+
+    .comparison-card li {
+        margin-bottom: 0.5rem;
+    }
+
+    .comparison-card .card-footer {
+        font-size: 0.875rem;
+        padding-top: 0.875rem;
+        margin-top: 0.875rem;
+    }
+
+    .schedule-section {
+        padding: 1.25rem;
+        margin: 1.25rem 0;
+    }
+
+    .schedule-section h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .schedule-section ul {
+        font-size: 0.9rem;
+        padding-left: 1.25rem;
+    }
+
+    .schedule-section li {
+        margin-bottom: 0.5rem;
+    }
+
+    .info-box {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .info-box h3 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .info-box p {
+        font-size: 0.9rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .info-box ul {
+        font-size: 0.9rem;
+        padding-left: 1.25rem;
+    }
+
+    .info-box li {
+        margin-bottom: 0.5rem;
+    }
+
+    .tip-box {
+        padding: 1.25rem;
+        margin: 1.5rem 0;
+    }
+
+    .tip-box::before {
+        font-size: 2rem;
+        top: 0.75rem;
+        right: 0.75rem;
+    }
+
+    .tip-box strong {
+        font-size: 1rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .tip-box p {
+        font-size: 0.9rem;
+    }
+
+    .cta-box {
+        padding: 2rem 1.25rem;
+        margin: 2rem 0;
+    }
+
+    .cta-box h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .cta-box p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-box .btn {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.95rem;
+        gap: 0.5rem;
+    }
+
+    .social-share {
+        padding: 0.875rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .share-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 0.8rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+        margin: 2rem 0;
+    }
+
+    th, td {
+        padding: 0.75rem 0.625rem;
+        min-width: 90px;
+    }
+
+    th {
+        font-size: 0.8rem;
+    }
+
+    .blog-footer {
+        padding: 2.5rem 1rem;
+    }
+
+    .blog-footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Mobile (max 360px) */
+@media (max-width: 360px) {
+    .blog-content {
+        font-size: 14px;
+    }
+
+    .blog-title {
+        font-size: 1.375rem;
+    }
+
+    .blog-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .blog-content h3 {
+        font-size: 1rem;
+    }
+
+    .comparison-card h3,
+    .schedule-section h3 {
+        font-size: 1rem;
+    }
+
+    .cta-box h3 {
+        font-size: 1.375rem;
+    }
+
+    .cta-box .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+    .blog-header {
+        padding: 1.5rem 2rem 1.25rem;
+    }
+
+    .blog-content {
+        padding: 1.5rem 2rem;
+    }
+
+    .cta-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .schedule-section,
+    .info-box,
+    .tip-box {
+        padding: 1.25rem;
     }
 }
