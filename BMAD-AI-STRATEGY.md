@@ -57,7 +57,7 @@
 
 ## 🏗️ BMAD Content Architecture
 
-### Every Blog Post Structure
+### Every Blog Post Structure (OPTIMIZED FOR SPEED)
 
 ```
 1. META LAYER (15+ optimization tags)
@@ -67,36 +67,38 @@
    - Apple meta (Siri)
    - Microsoft meta (Copilot)
 
-2. SCHEMA LAYER (7+ structured data types)
+2. SCHEMA LAYER (5-7 structured data types)
    - Article Schema (all AI)
-   - FAQPage Schema (voice + AI)
+   - FAQPage Schema (10-12 Q&A - voice + AI)
    - HowTo Schema (Google Assistant, Alexa)
    - LocalBusiness Schema (near me searches)
    - BreadcrumbList Schema (navigation)
-   - VideoObject Schema (multimedia AI)
-   - SpecialAnnouncement Schema (emergency)
 
-3. CONTENT LAYER (2000-2500 words)
-   - Direct answer first (60 words)
-   - Question-based H2/H3 headings
-   - 10-15 FAQ items
+3. CONTENT LAYER (2500-3000 words MAX)
+   - Direct answer first (40-60 words)
+   - Question-based H2/H3 headings (5-7 sections)
+   - 10-12 FAQ items (not 15)
    - Natural conversational tone
    - Local Toronto/GTA context
    - Multiple formats (lists, tables, steps)
 
-4. MULTIMEDIA LAYER
-   - 6-8 optimized images
+4. VISUAL LAYER
+   - 4-6 optimized images (not 6-8)
    - Alt text with keywords
-   - Video transcripts
-   - Infographics
-   - Diagrams
+   - Premium blog design components
 
 5. INTERACTIVE LAYER
-   - Cost calculators
-   - Decision trees
-   - Emergency checkers
-   - Comparison tools
+   - Comparison grids (DIY vs Pro)
+   - Info boxes (Toronto-specific)
+   - CTA buttons
 ```
+
+**SPEED OPTIMIZATION:**
+- 3000 words MAX (not 10,000)
+- 10-12 FAQs (not 15)
+- 5-7 sections (not 10)
+- Focus on quality over quantity
+- Faster creation = more posts published
 
 ---
 
@@ -530,12 +532,20 @@ Examples:
 - [ ] 100% original writing
 - [ ] Unique Toronto/GTA angles
 - [ ] Original examples and scenarios
-- [ ] Proprietary statistics/data
-- [ ] Custom visuals and diagrams
+- [ ] Proprietary statistics/data (5,200+ repairs)
 - [ ] Unique expert insights
 - [ ] Original FAQ questions/answers
 - [ ] No competitor content copied
 - [ ] No generic AI-generated text
+
+**SPEED CHECKLIST (3000 words format):**
+- [ ] 2500-3000 words total
+- [ ] 10-12 FAQ items
+- [ ] 5-7 main H2 sections
+- [ ] 3-4 comparison/info boxes
+- [ ] All required schema markup
+- [ ] Mobile-responsive
+- [ ] Fast page load
 
 ---
 
