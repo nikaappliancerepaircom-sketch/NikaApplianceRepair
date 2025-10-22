@@ -73,6 +73,7 @@ body::before {
     gap: 3rem;
     position: relative;
     z-index: 1;
+    overflow-x: hidden;
 }
 
 /* Main Content */
@@ -82,6 +83,7 @@ body::before {
     box-shadow: var(--card-shadow);
     overflow: hidden;
     transition: var(--transition);
+    max-width: 100%;
 }
 
 .blog-main:hover {
@@ -132,12 +134,15 @@ body::before {
 
 .blog-title {
     font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.25;
+    line-height: 1.3;
     color: var(--primary-blue);
     margin: 0 0 1rem 0;
     font-weight: 700;
     letter-spacing: -0.02em;
     font-family: 'Fredoka', -apple-system, BlinkMacSystemFont, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .blog-meta {
@@ -212,6 +217,8 @@ body::before {
     position: relative;
     padding-bottom: 1rem;
     font-family: 'Fredoka', -apple-system, BlinkMacSystemFont, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .blog-content h2::after {
@@ -232,6 +239,8 @@ body::before {
     margin-bottom: 1.25rem;
     font-weight: 600;
     font-family: 'Fredoka', -apple-system, BlinkMacSystemFont, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .blog-content strong {
@@ -754,8 +763,9 @@ tbody tr:last-child td {
     }
 
     .blog-title {
-        font-size: 1.75rem;
-        line-height: 1.3;
+        font-size: 1.5rem;
+        line-height: 1.35;
+        word-break: break-word;
     }
 
     .blog-content h2 {
@@ -890,8 +900,9 @@ tbody tr:last-child td {
     }
 
     .blog-title {
-        font-size: 1.5rem;
-        line-height: 1.25;
+        font-size: 1.375rem;
+        line-height: 1.35;
+        word-break: break-word;
     }
 
     .blog-meta {
@@ -1090,7 +1101,8 @@ tbody tr:last-child td {
     }
 
     .blog-title {
-        font-size: 1.375rem;
+        font-size: 1.25rem;
+        word-break: break-word;
     }
 
     .blog-content h2 {
