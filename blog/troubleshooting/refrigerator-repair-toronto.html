@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refrigerator Repair Toronto: Professional Fridge Fixes</title>
     <meta name="description" content="Refrigerator not cooling? Professional fridge repair in Toronto. Compressor, thermostat, and seal repairs. 90-day warranty. Same-day service.">
     <meta name="keywords" content="refrigerator repair Toronto, fridge repair GTA, compressor repair, thermostat replacement, fridge not cooling, ice maker repair, water dispenser repair, same-day service">
@@ -43,500 +45,7 @@
     <!-- Header Styles -->
     <link rel="stylesheet" href="../../css/header-optimized.css">
 
-    <style>
-        /* Reading Progress Bar */
-        .reading-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-            z-index: 9999;
-            transition: width 0.1s ease;
-        }
-
-        /* Color Sections */
-        .section-green {
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(22, 163, 74, 0.04) 100%);
-            border-left: 4px solid #22c55e;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .section-blue {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(37, 99, 235, 0.04) 100%);
-            border-left: 4px solid #3b82f6;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .section-red {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(220, 38, 38, 0.04) 100%);
-            border-left: 4px solid #ef4444;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .section-title i {
-            font-size: 1.75rem;
-        }
-
-        /* Timeline Visual */
-        .lifespan-timeline {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin: 2rem 0;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .timeline-marker {
-            text-align: center;
-            flex: 1;
-            min-width: 120px;
-        }
-
-        .marker-circle {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 600;
-            margin: 0 auto 0.5rem;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-        }
-
-        .marker-label {
-            font-size: 0.875rem;
-            font-weight: 500;
-        }
-
-        .timeline-line {
-            flex: 1;
-            height: 3px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-            min-width: 40px;
-            margin: 0 1rem;
-        }
-
-        /* Cost Table */
-        .cost-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-        }
-
-        .cost-table thead {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .cost-table th,
-        .cost-table td {
-            padding: 1.25rem;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .cost-table tbody tr:hover {
-            background-color: rgba(102, 126, 234, 0.05);
-        }
-
-        /* CTA Buttons */
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1.25rem 2.5rem;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.125rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-            border: none;
-            cursor: pointer;
-            margin: 0.5rem;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
-            color: white;
-            text-decoration: none;
-        }
-
-        .cta-button-secondary {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-        }
-
-        .cta-button-secondary:hover {
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
-        }
-
-        /* Brand Logos Section */
-        .brand-logos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 2rem;
-            align-items: center;
-            margin: 2rem 0;
-            padding: 2rem;
-            background: rgba(102, 126, 234, 0.05);
-            border-radius: 12px;
-        }
-
-        .brand-logo {
-            text-align: center;
-            padding: 1rem;
-            border-radius: 8px;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .brand-logo:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            transform: translateY(-2px);
-        }
-
-        .brand-logo-name {
-            font-size: 0.95rem;
-            font-weight: 600;
-            margin-top: 0.75rem;
-            color: #1f2937;
-        }
-
-        /* Trust Signals */
-        .trust-signals {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-            padding: 2rem;
-            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.05) 100%);
-            border-radius: 12px;
-            border: 2px solid rgba(34, 197, 94, 0.2);
-        }
-
-        .trust-signal-item {
-            text-align: center;
-        }
-
-        .signal-icon {
-            font-size: 2.5rem;
-            color: #22c55e;
-            margin-bottom: 0.75rem;
-        }
-
-        .signal-number {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #1f2937;
-            margin-bottom: 0.5rem;
-        }
-
-        .signal-label {
-            font-size: 0.95rem;
-            color: #6b7280;
-        }
-
-        /* FAQ Section */
-        .faq-container {
-            margin: 3rem 0;
-        }
-
-        .faq-item {
-            margin-bottom: 1.5rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .faq-item:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .faq-question {
-            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-            padding: 1.25rem;
-            cursor: pointer;
-            font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
-
-        .faq-question:hover {
-            background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
-        }
-
-        .faq-icon {
-            font-size: 1.25rem;
-            color: #667eea;
-            transition: transform 0.3s ease;
-        }
-
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            padding: 1.25rem;
-            display: none;
-            background: white;
-            line-height: 1.8;
-            color: #4b5563;
-        }
-
-        .faq-item.active .faq-answer {
-            display: block;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 3rem 2rem;
-            border-radius: 12px;
-            margin-bottom: 3rem;
-            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2);
-        }
-
-        .hero-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .hero-subtitle {
-            font-size: 1.25rem;
-            margin-bottom: 1.5rem;
-            opacity: 0.95;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        /* Problem List */
-        .problem-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .problem-card {
-            background: white;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .problem-card:hover {
-            border-color: #667eea;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
-            transform: translateY(-2px);
-        }
-
-        .problem-icon {
-            font-size: 2rem;
-            color: #667eea;
-            margin-bottom: 1rem;
-        }
-
-        .problem-title {
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            color: #1f2937;
-        }
-
-        .problem-percentage {
-            font-size: 0.875rem;
-            color: #6b7280;
-            font-style: italic;
-        }
-
-        /* Maintenance Checklist */
-        .maintenance-checklist {
-            list-style: none;
-            padding: 0;
-            margin: 1.5rem 0;
-        }
-
-        .maintenance-item {
-            padding: 1rem;
-            margin-bottom: 0.75rem;
-            background: white;
-            border-left: 4px solid #22c55e;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .maintenance-check {
-            font-size: 1.25rem;
-            color: #22c55e;
-            font-weight: bold;
-        }
-
-        .maintenance-text {
-            flex: 1;
-            color: #4b5563;
-        }
-
-        /* Diagnostic Steps */
-        .diagnostic-steps {
-            counter-reset: step-counter;
-            list-style: none;
-            padding: 0;
-            margin: 2rem 0;
-        }
-
-        .diagnostic-step {
-            counter-increment: step-counter;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            background: white;
-            border-left: 4px solid #3b82f6;
-            border-radius: 4px;
-            position: relative;
-        }
-
-        .diagnostic-step::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: -2rem;
-            width: 2.5rem;
-            height: 2.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1rem;
-            top: 1.5rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 1.75rem;
-            }
-
-            .lifespan-timeline {
-                flex-direction: column;
-            }
-
-            .timeline-line {
-                height: 60px;
-                min-width: 3px;
-                margin: 1rem 0;
-            }
-
-            .diagnostic-step::before {
-                position: static;
-                margin-right: 1rem;
-                display: inline-flex;
-                margin-bottom: 0.75rem;
-            }
-
-            .diagnostic-step {
-                padding-left: 1rem;
-            }
-
-            .hero-cta {
-                flex-direction: column;
-            }
-
-            .cta-button {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-
-        /* Footer Premium Styles */
-        .seo-footer-premium {
-            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-            color: white;
-            padding: 3rem 0 1.5rem;
-            margin-top: 4rem;
-        }
-
-        .seo-footer-premium .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .footer-trust-badges {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .trust-badge-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .badge-icon {
-            font-size: 2rem;
-            color: #667eea;
-        }
-
-        .badge-text strong {
-            display: block;
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .badge-text span {
-            font-size: 0.875rem;
-            opacity: 0.8;
-        }
-
-        .content-wrapper {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-    </style>
+    
 
     <!-- Structured Data - Article Schema -->
     <script type="application/ld+json">
@@ -828,31 +337,52 @@
         ]
     }
     </script>
+
 </head>
 <body>
-    <div class="blog-wrapper">
-        <!-- Reading Progress Bar -->
-        <div class="reading-progress" id="readingProgress"></div>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="progressBar"></div>
 
-        <!-- Header Navigation -->
-        <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="/">Nika Appliance Repair</a>
-                </div>
-                <nav class="main-nav">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/services.html" class="nav-link">Services</a>
-                    <a href="/blog.html" class="nav-link">Blog</a>
-                    <a href="#contact" class="nav-link cta">Call Now</a>
-                </nav>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/">Nika Appliance Repair</a>
             </div>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone">
+                    <i class="fas fa-phone"></i> (437) 747-6737
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="content-wrapper">
+    <!-- Main Blog Content -->
+    <div class="blog-wrapper">
+        <main class="blog-main">
+            <article class="blog-content">
+<div class="blog-wrapper">
+        
+        <!-- Header Navigation -->
+        
+            <article class="blog-content">
         <!-- Hero Section -->
         <section class="hero-section">
             <h1 class="hero-title">Refrigerator Repair Toronto: Professional Fridge Fixes</h1>
@@ -1395,131 +925,8 @@
 
             <p>Don't let a broken refrigerator spoil your food and empty your wallet. Call Nika Appliance Repair today for same-day expert service. Your fridge will be cooling again by tonight.</p>
         </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="seo-footer-premium">
-        <div class="container">
-            <div class="footer-trust-badges">
-                <div class="trust-badge-item">
-                    <div class="badge-icon"><i class="fas fa-star"></i></div>
-                    <div class="badge-text">
-                        <strong>5,200+ Reviews</strong>
-                        <span>Average 4.9/5 stars</span>
-                    </div>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon"><i class="fas fa-lock"></i></div>
-                    <div class="badge-text">
-                        <strong>90-Day Warranty</strong>
-                        <span>Parts & labor guaranteed</span>
-                    </div>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon"><i class="fas fa-bolt"></i></div>
-                    <div class="badge-text">
-                        <strong>Same-Day Service</strong>
-                        <span>Available 6 days/week</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-main-content">
-                <div class="footer-contact-box">
-                    <div class="footer-heading">Contact Us</div>
-                    <div class="contact-item">
-                        <a href="tel:+1-647-XXX-XXXX" class="contact-link">+1-647-XXX-XXXX</a>
-                    </div>
-                    <div class="contact-item">
-                        <a href="mailto:info@niappliancerepair.ca" class="contact-link">info@niappliancerepair.ca</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Hours:</strong> Mon-Sat 7am-9pm, Sun by appointment
-                    </div>
-                </div>
-
-                <div>
-                    <div class="footer-heading">Services</div>
-                    <ul class="footer-links">
-                        <li><a href="/services.html">All Services</a></li>
-                        <li><a href="/services.html#refrigerator">Refrigerator Repair</a></li>
-                        <li><a href="/services.html#dishwasher">Dishwasher Repair</a></li>
-                        <li><a href="/services.html#washer">Washer Repair</a></li>
-                        <li><a href="/services.html#dryer">Dryer Repair</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <div class="footer-heading">Company</div>
-                    <ul class="footer-links">
-                        <li><a href="/about.html">About Us</a></li>
-                        <li><a href="/blog.html">Blog</a></li>
-                        <li><a href="/locations.html">Service Areas</a></li>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Terms of Service</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <div class="footer-heading">Follow Us</div>
-                    <ul class="footer-links">
-                        <li><a href="https://facebook.com/NikaAppliance" target="_blank">Facebook</a></li>
-                        <li><a href="https://instagram.com/NikaAppliance" target="_blank">Instagram</a></li>
-                        <li><a href="https://google.com/maps/search/Nika+Appliance+Repair" target="_blank">Google Maps</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem;">
-                <p style="margin: 0; opacity: 0.8;">
-                    &copy; 2025 Nika Appliance Repair. All rights reserved. |
-                    <a href="#privacy" style="color: #93c5fd; text-decoration: none;">Privacy</a> |
-                    <a href="#terms" style="color: #93c5fd; text-decoration: none;">Terms</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Reading Progress Bar
-        function updateReadingProgress() {
-            const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = window.scrollY;
-            const scrollPercent = (scrolled / docHeight) * 100;
-            document.getElementById('readingProgress').style.width = scrollPercent + '%';
-        }
-
-        window.addEventListener('scroll', updateReadingProgress);
-
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
-                // Close other items
-                faqItems.forEach(otherItem => {
-                    if (otherItem !== item) {
-                        otherItem.classList.remove('active');
-                    }
-                });
-                // Toggle current item
-                item.classList.toggle('active');
-            });
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && document.querySelector(href)) {
-                    e.preventDefault();
-                    document.querySelector(href).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+            </article>
+        </main>
     </div>
 </body>
 </html>

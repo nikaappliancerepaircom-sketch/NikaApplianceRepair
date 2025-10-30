@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung Appliance Repair Toronto: Fast, Affordable Service</title>
     <meta name="description" content="Samsung appliance repair in Toronto. Refrigerator, washer, dishwasher repairs by certified technicians. 90-day warranty. Same-day service.">
     <meta name="keywords" content="Samsung appliance repair Toronto, Samsung refrigerator repair, Samsung washer repair, Samsung dryer repair, Samsung dishwasher repair">
@@ -12,410 +14,54 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Nika Appliance Repair">
     <meta name="canonical" href="https://nikaappliancerepair.com/blog/troubleshooting/samsung-appliance-repair.html">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        .reading-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background: linear-gradient(to right, #1a73e8, #34a853);
-            width: 0%;
-            z-index: 1000;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-
-        header {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .breadcrumb {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .breadcrumb a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #1a3a52;
-            margin-bottom: 15px;
-            line-height: 1.2;
-        }
-
-        .meta-info {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-
-        .samsung-badge {
-            display: inline-block;
-            background: #1a73e8;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 13px;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        .hero-section {
-            background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .hero-section h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-
-        .hero-section p {
-            font-size: 1.1em;
-            line-height: 1.8;
-        }
-
-        section {
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: 2em;
-            color: #1a3a52;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #34a853;
-        }
-
-        .section-green h2 {
-            border-bottom-color: #34a853;
-        }
-
-        .section-blue h2 {
-            border-bottom-color: #1a73e8;
-        }
-
-        h3 {
-            font-size: 1.4em;
-            color: #2c5aa0;
-            margin-top: 25px;
-            margin-bottom: 12px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        .problem-item {
-            background: #f0f7ff;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-left: 4px solid #1a73e8;
-            border-radius: 4px;
-        }
-
-        .advantage-item {
-            background: #f0fdf4;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-left: 4px solid #34a853;
-            border-radius: 4px;
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .comparison-table th {
-            background: #1a73e8;
-            color: white;
-            padding: 15px;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        .comparison-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .comparison-table tr:hover {
-            background: #f5f5f5;
-        }
-
-        .highlight {
-            background: #fff3cd;
-            padding: 20px;
-            border-radius: 6px;
-            margin: 20px 0;
-            border-left: 4px solid #ffc107;
-        }
-
-        .highlight strong {
-            color: #856404;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #34a853;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            margin: 10px 10px 10px 0;
-            transition: background 0.3s ease;
-            cursor: pointer;
-            border: none;
-            font-size: 1em;
-        }
-
-        .cta-button:hover {
-            background: #2d8645;
-        }
-
-        .cta-button.secondary {
-            background: #1a73e8;
-        }
-
-        .cta-button.secondary:hover {
-            background: #155db3;
-        }
-
-        .cta-section {
-            background: #f0fdf4;
-            padding: 40px;
-            border-radius: 8px;
-            text-align: center;
-            margin: 40px 0;
-            border: 2px solid #34a853;
-        }
-
-        .cta-section h3 {
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-
-        .faq-item {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            margin-bottom: 15px;
-            overflow: hidden;
-        }
-
-        .faq-question {
-            background: #f0f7ff;
-            padding: 15px;
-            cursor: pointer;
-            font-weight: 600;
-            color: #1a3a52;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            user-select: none;
-        }
-
-        .faq-question:hover {
-            background: #e8f0ff;
-        }
-
-        .faq-toggle {
-            font-size: 1.5em;
-            transition: transform 0.3s ease;
-        }
-
-        .faq-item.active .faq-toggle {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            padding: 0 15px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-
-        .faq-item.active .faq-answer {
-            padding: 15px;
-            max-height: 1000px;
-        }
-
-        .models-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .model-card {
-            background: #f9f9f9;
-            border: 2px solid #1a73e8;
-            padding: 20px;
-            border-radius: 6px;
-            text-align: center;
-        }
-
-        .model-card h4 {
-            color: #1a3a52;
-            margin-bottom: 10px;
-        }
-
-        .model-card p {
-            font-size: 0.95em;
-            margin-bottom: 0;
-        }
-
-        .stat-box {
-            display: inline-block;
-            background: #1a73e8;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 6px;
-            margin: 10px 10px 10px 0;
-            font-weight: 600;
-        }
-
-        .ice-maker-visual {
-            background: #e3f2fd;
-            padding: 20px;
-            border-radius: 6px;
-            margin: 20px 0;
-            text-align: center;
-            border: 2px dashed #1a73e8;
-        }
-
-        .ice-maker-visual p {
-            margin: 5px 0;
-            font-size: 0.95em;
-        }
-
-        footer {
-            background: #f0f7ff;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-            border-top: 2px solid #ddd;
-            margin-top: 40px;
-        }
-
-        .warning-box {
-            background: #ffebee;
-            border-left: 4px solid #d32f2f;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
-        .warning-box strong {
-            color: #d32f2f;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.8em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            h3 {
-                font-size: 1.2em;
-            }
-
-            .comparison-table {
-                font-size: 0.9em;
-            }
-
-            .comparison-table th,
-            .comparison-table td {
-                padding: 8px;
-            }
-
-            .models-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    
     <!-- Premium Blog Styles -->
     <link rel="stylesheet" href="../../css/blog-premium.css">
 
     <!-- Header Styles -->
     <link rel="stylesheet" href="../../css/header-optimized.css">
+
 </head>
 <body>
-    <div class="blog-wrapper">
-        <div class="reading-progress" id="readingProgress"></div>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="progressBar"></div>
 
-    <div class="container">
-        <header>
-            <nav class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
-                    <meta itemprop="position" content="1">
-                </span>
-                <span>/</span>
-                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="/blog" itemprop="item"><span itemprop="name">Blog</span></a>
-                    <meta itemprop="position" content="2">
-                </span>
-                <span>/</span>
-                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a href="/blog/troubleshooting" itemprop="item"><span itemprop="name">Troubleshooting</span></a>
-                    <meta itemprop="position" content="3">
-                </span>
-                <span>/</span>
-                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <span itemprop="name">Samsung Appliance Repair</span>
-                    <meta itemprop="position" content="4">
-                </span>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/">Nika Appliance Repair</a>
+            </div>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
+                </ul>
             </nav>
 
-            <span class="samsung-badge">Expert Samsung Repair</span>
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone">
+                    <i class="fas fa-phone"></i> (437) 747-6737
+                </a>
+            </div>
 
-            <h1>Samsung Appliance Repair Toronto: Fast, Affordable Service</h1>
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Blog Content -->
+    <div class="blog-wrapper">
+        <main class="blog-main">
+            <article class="blog-content">
+<h1>Samsung Appliance Repair Toronto: Fast, Affordable Service</h1>
 
             <div class="meta-info">
                 <strong>Published:</strong> October 30, 2025 | <strong>Reading Time:</strong> 12 minutes
@@ -1054,38 +700,8 @@
             }
         }
         </script>
-
-        <footer>
-            <p>&copy; 2025 Nika Appliance Repair. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a> | <a href="/contact">Contact Us</a></p>
-        </footer>
-    </div>
-
-    <script>
-        // Reading Progress Bar
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            document.getElementById('readingProgress').style.width = scrollPercent + '%';
-        });
-
-        // FAQ Toggle Functionality
-        function toggleFAQ(element) {
-            const faqItem = element.parentElement;
-            faqItem.classList.toggle('active');
-        }
-
-        // Close FAQ when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.faq-question')) {
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    if (item !== e.target.closest('.faq-item')) {
-                        item.classList.remove('active');
-                    }
-                });
-            }
-        });
-    </script>
+            </article>
+        </main>
     </div>
 </body>
 </html>

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Avoid Expensive Oven Repairs: Maintenance Guide for Toronto</title>
     <meta name="description" content="Complete oven and stove maintenance guide. Safe cleaning prevents heating element damage. Gas stove ventilation and leak checks. Save $50 maintenance vs $300+ repair costs.">
     <meta name="keywords" content="oven maintenance, avoid oven repairs, stove maintenance, electric stove care, gas stove safety, heating element protection">
@@ -226,187 +228,48 @@
     }
     </script>
 
-    <style>
-        .dos-donts {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .do-column {
-            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-            border-left: 4px solid #16a34a;
-            padding: 1.5rem;
-            border-radius: 8px;
-        }
-
-        .dont-column {
-            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-            border-left: 4px solid #dc2626;
-            padding: 1.5rem;
-            border-radius: 8px;
-        }
-
-        .do-column h3, .dont-column h3 {
-            margin-top: 0;
-            font-size: 1.2rem;
-        }
-
-        .do-column h3 {
-            color: #166534;
-        }
-
-        .dont-column h3 {
-            color: #7f1d1d;
-        }
-
-        .do-column ul, .dont-column ul {
-            margin: 1rem 0;
-            padding-left: 1.5rem;
-        }
-
-        .do-column li {
-            color: #166534;
-            margin: 0.5rem 0;
-        }
-
-        .dont-column li {
-            color: #7f1d1d;
-            margin: 0.5rem 0;
-        }
-
-        .maintenance-tasks {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .task-card {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .task-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .task-card h3 {
-            margin-top: 0;
-            color: #1a202c;
-            font-size: 1.05rem;
-        }
-
-        .frequency {
-            background: #edf2f7;
-            color: #2c5aa0;
-            padding: 0.5rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 0.75rem;
-        }
-
-        .task-card p {
-            margin: 0.75rem 0 0 0;
-            color: #4a5568;
-            font-size: 0.9rem;
-        }
-
-        .safety-alert {
-            background: #fff5f5;
-            border-left: 4px solid #fc8181;
-            padding: 1.5rem;
-            border-radius: 6px;
-            margin: 1.5rem 0;
-        }
-
-        .safety-alert strong {
-            color: #c53030;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .cost-comparison {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .cost-box {
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 1.5rem;
-            text-align: center;
-        }
-
-        .cost-box.save {
-            border-color: #48bb78;
-            background: rgba(72, 187, 120, 0.05);
-        }
-
-        .cost-box.expensive {
-            border-color: #f56565;
-            background: rgba(245, 101, 101, 0.05);
-        }
-
-        .cost-box h3 {
-            margin: 0 0 1rem 0;
-            color: #1a202c;
-        }
-
-        .cost-amount {
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 1rem 0;
-        }
-
-        .save .cost-amount {
-            color: #48bb78;
-        }
-
-        .expensive .cost-amount {
-            color: #f56565;
-        }
-
-        .stove-type-section {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-        }
-
-        .stove-type-section h4 {
-            margin-top: 0;
-            color: #1a202c;
-        }
-
-        @media (max-width: 768px) {
-            .dos-donts,
-            .cost-comparison,
-            .maintenance-tasks {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <!-- Header content will be pulled from header template -->
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="progressBar"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/">Nika Appliance Repair</a>
+            </div>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone">
+                    <i class="fas fa-phone"></i> (437) 747-6737
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
     </header>
 
-    <main>
-        <article class="blog-article premium-blog">
-            <div class="article-header">
-                <div class="container">
+    <!-- Main Blog Content -->
+    <div class="blog-wrapper">
+        <main class="blog-main">
+            <article class="blog-content">
+<div class="article-header">
+                
                     <h1>How to Avoid Expensive Oven Repairs: Maintenance Guide for Toronto</h1>
                     <p class="article-excerpt">Complete oven and stove maintenance guide to prevent costly repairs. Safe cleaning methods, heating element protection, gas stove safety, and professional service guidance. Save money with preventive care.</p>
 
@@ -777,12 +640,8 @@
                     <p><strong>Remember:</strong> $50-$100 annual maintenance investment prevents $300-$600 repair costs. The ROI is immediate and substantial.</p>
                     <p><strong>Serving Toronto and surrounding areas.</strong> Call (437) 747-6737 for professional oven inspection, gas stove safety check, or if you're experiencing performance issues. Our technicians ensure your cooking appliances remain safe and efficient for years to come.</p>
                 </section>
-            </div>
-        </article>
-    </main>
-
-    <footer>
-        <!-- Footer content will be pulled from footer template -->
-    </footer>
+            </article>
+        </main>
+    </div>
 </body>
 </html>

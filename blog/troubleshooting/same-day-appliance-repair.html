@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Same-Day Appliance Repair: Emergency Service for Toronto Homes</title>
     <meta name="description" content="Same-day appliance repair in Toronto. Emergency service available 24/7. Refrigerator, washer, dryer repairs with 90-day warranty.">
     <meta name="keywords" content="same-day appliance repair, emergency appliance repair, Toronto, 24/7 service, refrigerator repair, washer repair">
@@ -13,428 +15,54 @@
     <meta name="author" content="Nika Appliance Repair">
     <meta name="publish_date" content="2025-10-30">
     <link rel="canonical" href="https://nikaappliancerepair.com/blog/troubleshooting/same-day-appliance-repair.html">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        .reading-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background: linear-gradient(to right, #e74c3c, #e67e22);
-            width: 0;
-            z-index: 1000;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-            background-color: white;
-        }
-
-        .breadcrumb {
-            padding: 20px 0;
-            font-size: 14px;
-            color: #666;
-        }
-
-        .breadcrumb a {
-            color: #e74c3c;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #e74c3c 0%, #e67e22 100%);
-            color: white;
-            padding: 60px 40px;
-            border-radius: 8px;
-            margin: 30px 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero-subtitle {
-            font-size: 18px;
-            margin-bottom: 30px;
-            opacity: 0.95;
-        }
-
-        .hero-ctas {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .cta-btn {
-            padding: 16px 32px;
-            font-size: 16px;
-            font-weight: 600;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cta-btn-primary {
-            background-color: white;
-            color: #e74c3c;
-        }
-
-        .cta-btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .cta-btn-secondary {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 2px solid white;
-        }
-
-        .cta-btn-secondary:hover {
-            background-color: white;
-            color: #e74c3c;
-        }
-
-        .content {
-            padding: 40px 0;
-        }
-
-        .section {
-            margin: 50px 0;
-        }
-
-        h2 {
-            font-size: 32px;
-            color: #e74c3c;
-            margin-bottom: 25px;
-            border-bottom: 3px solid #e67e22;
-            padding-bottom: 15px;
-        }
-
-        h3 {
-            font-size: 22px;
-            color: #333;
-            margin: 25px 0 15px 0;
-        }
-
-        p {
-            margin-bottom: 16px;
-            font-size: 16px;
-            line-height: 1.8;
-        }
-
-        .intro-text {
-            font-size: 18px;
-            line-height: 1.9;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .highlight-box {
-            background-color: #fff3cd;
-            border-left: 4px solid #e67e22;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 4px;
-        }
-
-        .highlight-box strong {
-            color: #e74c3c;
-        }
-
-        .emergency-list {
-            background-color: #fff5f5;
-            border-left: 4px solid #e74c3c;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 4px;
-        }
-
-        .emergency-list ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .emergency-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid #ffe5e5;
-        }
-
-        .emergency-list li:last-child {
-            border-bottom: none;
-        }
-
-        .emergency-list li:before {
-            content: "🚨 ";
-            margin-right: 10px;
-            font-weight: bold;
-        }
-
-        .service-card {
-            background-color: #f9f9f9;
-            border: 2px solid #e67e22;
-            padding: 25px;
-            margin: 20px 0;
-            border-radius: 6px;
-        }
-
-        .service-card h4 {
-            color: #e74c3c;
-            margin-bottom: 12px;
-            font-size: 18px;
-        }
-
-        .timer-visual {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #e74c3c 0%, #e67e22 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 8px;
-            margin: 30px 0;
-            text-align: center;
-        }
-
-        .timer-number {
-            font-size: 48px;
-            font-weight: bold;
-            margin: 0 15px;
-        }
-
-        .timer-text {
-            font-size: 18px;
-        }
-
-        .two-column {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin: 30px 0;
-        }
-
-        .pricing-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-        }
-
-        .pricing-table th {
-            background-color: #e74c3c;
-            color: white;
-            padding: 15px;
-            text-align: left;
-        }
-
-        .pricing-table td {
-            padding: 15px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .pricing-table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .faq-section {
-            margin: 50px 0;
-        }
-
-        .faq-item {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            margin: 15px 0;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .faq-question {
-            background-color: #f0f0f0;
-            padding: 18px;
-            cursor: pointer;
-            font-weight: 600;
-            color: #e74c3c;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
-
-        .faq-question:hover {
-            background-color: #e8e8e8;
-        }
-
-        .faq-answer {
-            padding: 20px;
-            display: none;
-            line-height: 1.8;
-        }
-
-        .faq-answer.active {
-            display: block;
-        }
-
-        .trust-badges {
-            display: flex;
-            gap: 20px;
-            margin: 30px 0;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .badge {
-            background-color: #f9f9f9;
-            border: 2px solid #e67e22;
-            padding: 20px;
-            text-align: center;
-            border-radius: 6px;
-            flex: 1;
-            min-width: 150px;
-        }
-
-        .badge-icon {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .badge-text {
-            font-weight: 600;
-            color: #333;
-            font-size: 14px;
-        }
-
-        .cta-section {
-            background: linear-gradient(135deg, #e74c3c 0%, #e67e22 100%);
-            color: white;
-            padding: 50px 40px;
-            border-radius: 8px;
-            margin: 50px 0;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            color: white;
-            border-bottom: 3px solid white;
-        }
-
-        .cta-section p {
-            color: rgba(255, 255, 255, 0.95);
-            margin-bottom: 25px;
-        }
-
-        .howto-section {
-            background-color: #f9f9f9;
-            padding: 25px;
-            border-radius: 6px;
-            margin: 25px 0;
-        }
-
-        .howto-step {
-            margin: 20px 0;
-            padding-left: 35px;
-            position: relative;
-        }
-
-        .howto-step:before {
-            content: attr(data-step);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background-color: #e74c3c;
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            .two-column {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-ctas {
-                flex-direction: column;
-            }
-
-            .cta-btn {
-                width: 100%;
-            }
-
-            h2 {
-                font-size: 24px;
-            }
-        }
-    </style>
+    
     <!-- Premium Blog Styles -->
     <link rel="stylesheet" href="../../css/blog-premium.css">
 
     <!-- Header Styles -->
     <link rel="stylesheet" href="../../css/header-optimized.css">
+
 </head>
 <body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="progressBar"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/">Nika Appliance Repair</a>
+            </div>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone">
+                    <i class="fas fa-phone"></i> (437) 747-6737
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Blog Content -->
     <div class="blog-wrapper">
-        <div class="reading-progress"></div>
-
-    <div class="container">
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-            <span itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="https://nikaappliancerepair.com" itemprop="item">Home</a>
-                <meta itemprop="position" content="1">
-            </span>
-            /
-            <span itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="https://nikaappliancerepair.com/blog" itemprop="item">Blog</a>
-                <meta itemprop="position" content="2">
-            </span>
-            /
-            <span itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <a href="https://nikaappliancerepair.com/blog/troubleshooting" itemprop="item">Troubleshooting</a>
-                <meta itemprop="position" content="3">
-            </span>
-            /
-            <span itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement">
-                <span itemprop="item">Same-Day Appliance Repair</span>
-                <meta itemprop="position" content="4">
-            </span>
-        </nav>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Same-Day Appliance Repair: Emergency Service for Toronto Homes</h1>
+        <main class="blog-main">
+            <article class="blog-content">
+<h1>Same-Day Appliance Repair: Emergency Service for Toronto Homes</h1>
             <p class="hero-subtitle">Your appliance breaks at the worst possible time. Your refrigerator stops working on a Friday night. Your washing machine floods your basement. Your oven fails during dinner preparations. These aren't minor inconveniences—they're emergencies that demand immediate professional attention. At Nika Appliance Repair, we understand the panic and disruption a broken appliance creates. That's why we provide same-day emergency repair service available 24 hours a day, 7 days a week, 365 days a year. Our certified technicians respond within 2-4 hours in most cases, bringing expert knowledge and quality parts to restore your appliance and your peace of mind.</p>
             <div class="hero-ctas">
                 <button class="cta-btn cta-btn-primary" onclick="window.location.href='tel:+14165551234'">📞 Call Now - Emergency Service</button>
@@ -1036,7 +664,7 @@
     }
     </script>
 
-    <!-- Reading Progress Bar Script -->
+    
     <script>
     window.addEventListener('scroll', function() {
         var scrollTop = window.scrollY;
@@ -1057,6 +685,11 @@
         });
     });
     </script>
+    </div>
+</body>
+</html>
+            </article>
+        </main>
     </div>
 </body>
 </html>

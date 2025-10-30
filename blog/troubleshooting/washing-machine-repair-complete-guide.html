@@ -3,493 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Washing machine not draining? Professional repair in Toronto. Drum seal, motor, pump fixes. Same-day service. 90-day warranty.">
     <meta name="keywords" content="washing machine repair Toronto, drum seal replacement, washing machine not draining, washer repair">
     <title>Washing Machine Repair: Common Problems & Solutions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }
-
-        .progress-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background: linear-gradient(to right, #0066cc, #00cc66, #ff3333);
-            width: 0%;
-            z-index: 1000;
-            transition: width 0.2s ease;
-        }
-
-        header {
-            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .hero-subtitle {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            opacity: 0.95;
-        }
-
-        .trust-signals {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-
-        .trust-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .trust-item strong {
-            font-size: 1.2em;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .hero-section {
-            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
-            color: white;
-            padding: 50px 30px;
-            border-radius: 8px 8px 0 0;
-            margin: -40px -20px 40px -20px;
-        }
-
-        .hero-section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .hero-section p {
-            font-size: 1.05em;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .emergency-banner {
-            background: #ff3333;
-            color: white;
-            padding: 20px;
-            border-radius: 6px;
-            margin: 20px 0;
-            font-weight: 600;
-            text-align: center;
-            border-left: 5px solid #cc0000;
-        }
-
-        .section-header {
-            margin-top: 40px;
-            margin-bottom: 25px;
-            border-bottom: 3px solid #0066cc;
-            padding-bottom: 10px;
-        }
-
-        .section-header h2 {
-            font-size: 1.8em;
-            color: #0066cc;
-        }
-
-        .section-header.water {
-            border-bottom: 3px solid #00aa66;
-        }
-
-        .section-header.water h2 {
-            color: #00aa66;
-        }
-
-        .section-header.diy {
-            border-bottom: 3px solid #009944;
-        }
-
-        .section-header.diy h2 {
-            color: #009944;
-        }
-
-        .colored-box {
-            padding: 25px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 5px solid;
-        }
-
-        .blue-box {
-            background: #e6f0ff;
-            border-left-color: #0066cc;
-        }
-
-        .green-box {
-            background: #e6f5f0;
-            border-left-color: #00aa66;
-        }
-
-        .red-box {
-            background: #ffe6e6;
-            border-left-color: #ff3333;
-        }
-
-        .problem-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 25px 0;
-        }
-
-        .problem-card {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 6px;
-            border-left: 4px solid #0066cc;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .problem-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0,102,204,0.15);
-        }
-
-        .problem-card h3 {
-            color: #0066cc;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
-        .problem-card .percentage {
-            background: #0066cc;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.9em;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        .cost-box {
-            background: #fff3cd;
-            padding: 20px;
-            border-radius: 6px;
-            margin: 20px 0;
-            border-left: 5px solid #ffc107;
-        }
-
-        .cost-box h4 {
-            color: #856404;
-            margin-bottom: 10px;
-        }
-
-        .cost-box p {
-            color: #856404;
-            margin: 8px 0;
-        }
-
-        .maintenance-checklist {
-            background: #e8f5e9;
-            padding: 25px;
-            border-radius: 6px;
-            margin: 20px 0;
-        }
-
-        .maintenance-checklist h4 {
-            color: #2e7d32;
-            margin-bottom: 15px;
-        }
-
-        .checklist-item {
-            padding: 10px 0;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-
-        .checklist-item::before {
-            content: "✓";
-            color: #2e7d32;
-            font-weight: bold;
-            font-size: 1.2em;
-            flex-shrink: 0;
-        }
-
-        .diagram-placeholder {
-            background: linear-gradient(135deg, #f0f4f8 0%, #d9e4f0 100%);
-            border: 2px dashed #0066cc;
-            padding: 40px;
-            border-radius: 6px;
-            margin: 20px 0;
-            text-align: center;
-            color: #0066cc;
-            font-weight: 600;
-        }
-
-        .faq-section {
-            margin-top: 50px;
-        }
-
-        .faq-item {
-            border: 1px solid #ddd;
-            margin: 15px 0;
-            border-radius: 6px;
-            overflow: hidden;
-        }
-
-        .faq-question {
-            background: #f8f9fa;
-            padding: 20px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            color: #0066cc;
-            transition: background 0.3s;
-        }
-
-        .faq-question:hover {
-            background: #e9f0f8;
-        }
-
-        .faq-question::after {
-            content: "▼";
-            font-size: 0.8em;
-            transition: transform 0.3s;
-        }
-
-        .faq-item.active .faq-question::after {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            padding: 20px;
-            display: none;
-            background: white;
-            border-top: 1px solid #ddd;
-        }
-
-        .faq-item.active .faq-answer {
-            display: block;
-        }
-
-        .cta-section {
-            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 8px;
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .cta-section h3 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .cta-btn {
-            padding: 15px 30px;
-            font-size: 1em;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cta-btn.primary {
-            background: #ff3333;
-            color: white;
-        }
-
-        .cta-btn.primary:hover {
-            background: #cc0000;
-            transform: scale(1.05);
-        }
-
-        .cta-btn.secondary {
-            background: white;
-            color: #0066cc;
-        }
-
-        .cta-btn.secondary:hover {
-            background: #f0f4f8;
-        }
-
-        .warranty-badge {
-            background: #e8f5e9;
-            border: 2px solid #4caf50;
-            padding: 15px;
-            border-radius: 6px;
-            margin: 20px 0;
-            text-align: center;
-            color: #2e7d32;
-            font-weight: 600;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background: #0066cc;
-            color: white;
-            font-weight: 600;
-        }
-
-        tr:hover {
-            background: #f8f9fa;
-        }
-
-        .breadcrumb {
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 4px;
-            margin-bottom: 30px;
-            font-size: 0.95em;
-        }
-
-        .breadcrumb a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .breadcrumb span {
-            margin: 0 8px;
-            color: #666;
-        }
-
-        p {
-            margin: 15px 0;
-            line-height: 1.8;
-        }
-
-        h3 {
-            margin-top: 25px;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        h4 {
-            margin-top: 20px;
-            margin-bottom: 12px;
-            color: #0066cc;
-        }
-
-        ul, ol {
-            margin: 15px 0 15px 30px;
-        }
-
-        li {
-            margin: 10px 0;
-            line-height: 1.7;
-        }
-
-        strong {
-            color: #0066cc;
-            font-weight: 600;
-        }
-
-        .intro-section {
-            background: #f0f4f8;
-            padding: 25px;
-            border-radius: 6px;
-            margin: 20px 0;
-            border-left: 5px solid #0066cc;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-
-            .problem-list {
-                grid-template-columns: 1fr;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-            }
-
-            .cta-btn {
-                width: 100%;
-            }
-
-            .trust-signals {
-                gap: 20px;
-            }
-        }
-    </style>
+    
     <!-- Premium Blog Styles -->
     <link rel="stylesheet" href="../../css/blog-premium.css">
 
     <!-- Header Styles -->
     <link rel="stylesheet" href="../../css/header-optimized.css">
+
 </head>
 <body>
-    <div class="blog-wrapper">
-        <div class="progress-bar" id="progressBar"></div>
-
-    <!-- Breadcrumb -->
-    <div class="breadcrumb">
-        <a href="/">Home</a>
-        <span>/</span>
-        <a href="/blog">Blog</a>
-        <span>/</span>
-        <a href="/blog/troubleshooting">Troubleshooting</a>
-        <span>/</span>
-        <span>Washing Machine Repair</span>
-    </div>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="progressBar"></div>
 
     <!-- Header -->
-    <header>
-        <h1>Washing Machine Repair: Common Problems & Solutions</h1>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/">Nika Appliance Repair</a>
+            </div>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone">
+                    <i class="fas fa-phone"></i> (437) 747-6737
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Blog Content -->
+    <div class="blog-wrapper">
+        <main class="blog-main">
+            <article class="blog-content">
+<h1>Washing Machine Repair: Common Problems & Solutions</h1>
         <p class="hero-subtitle">Professional Toronto appliance repair with same-day service and 90-day warranty</p>
         <div class="trust-signals">
             <div class="trust-item">
@@ -507,7 +73,7 @@
         </div>
     </header>
 
-    <div class="container">
+    
         <!-- Hero Section -->
         <div class="hero-section">
             <h2>Your Washing Machine Is Broken—Now What?</h2>
@@ -1165,6 +731,11 @@
             });
         });
     </script>
+    </div>
+</body>
+</html>
+            </article>
+        </main>
     </div>
 </body>
 </html>

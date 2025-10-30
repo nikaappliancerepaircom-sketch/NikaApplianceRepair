@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stove Repair Toronto: Gas & Electric Stove Fixes</title>
     <meta name="description" content="Stove burner not working? Gas and electric stove repair in Toronto. Same-day service for igniter, coil, and valve repairs.">
     <meta name="keywords" content="stove repair Toronto, gas stove repair, electric stove repair, stove burner repair, appliance repair Toronto">
@@ -10,446 +12,54 @@
     <meta property="og:description" content="Professional stove repair services in Toronto. Expert gas and electric stove repairs with same-day service available.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://nikaappliancerepair.com/blog/troubleshooting/stove-repair-toronto.html">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f9f9f9;
-        }
-
-        .progress-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background: linear-gradient(to right, #e74c3c, #3498db, #27ae60);
-            width: 0%;
-            z-index: 1000;
-            transition: width 0.3s ease;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-
-        header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            line-height: 1.2;
-        }
-
-        .meta-info {
-            font-size: 0.95em;
-            opacity: 0.9;
-            margin-bottom: 20px;
-        }
-
-        .meta-info span {
-            margin-right: 20px;
-        }
-
-        .breadcrumbs {
-            background: #ecf0f1;
-            padding: 12px 30px;
-            font-size: 0.9em;
-            color: #7f8c8d;
-        }
-
-        .breadcrumbs a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        .breadcrumbs a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 40px 40px;
-        }
-
-        section {
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: 1.8em;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #3498db;
-        }
-
-        h3 {
-            font-size: 1.3em;
-            color: #34495e;
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            line-height: 1.8;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
-            padding: 40px;
-            border-left: 5px solid #e74c3c;
-            margin-bottom: 40px;
-            border-radius: 5px;
-        }
-
-        .hero p {
-            font-size: 1.1em;
-            color: #2c3e50;
-            line-height: 1.8;
-        }
-
-        .comparison-box {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .comparison-item {
-            border: 2px solid #3498db;
-            padding: 20px;
-            border-radius: 5px;
-            background: #ecf7ff;
-        }
-
-        .comparison-item.gas {
-            border-color: #e74c3c;
-            background: #ffe8e8;
-        }
-
-        .comparison-item h4 {
-            font-size: 1.2em;
-            margin-bottom: 15px;
-            color: #2c3e50;
-        }
-
-        .comparison-item ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .comparison-item li {
-            padding-left: 25px;
-            position: relative;
-            margin-bottom: 8px;
-            line-height: 1.6;
-        }
-
-        .comparison-item li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #27ae60;
-            font-weight: bold;
-        }
-
-        .safety-warning {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-        }
-
-        .safety-warning h4 {
-            color: #856404;
-            margin-bottom: 10px;
-        }
-
-        .safety-warning p {
-            color: #856404;
-            margin-bottom: 10px;
-        }
-
-        .safety-critical {
-            background: #f8d7da;
-            border-left: 5px solid #dc3545;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-            color: #721c24;
-        }
-
-        .safety-critical h4 {
-            color: #721c24;
-            margin-bottom: 10px;
-        }
-
-        .cost-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 30px 0;
-            background: white;
-        }
-
-        .cost-table th {
-            background: #34495e;
-            color: white;
-            padding: 12px;
-            text-align: left;
-        }
-
-        .cost-table td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .cost-table tr:hover {
-            background: #f5f5f5;
-        }
-
-        .cost-table tr:nth-child(even) {
-            background: #f9f9f9;
-        }
-
-        .cta-buttons {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin: 30px 0;
-        }
-
-        .cta-button {
-            padding: 15px 25px;
-            text-align: center;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            font-size: 1em;
-        }
-
-        .cta-primary {
-            background: #27ae60;
-            color: white;
-        }
-
-        .cta-primary:hover {
-            background: #229954;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
-        }
-
-        .cta-secondary {
-            background: #e74c3c;
-            color: white;
-        }
-
-        .cta-secondary:hover {
-            background: #c0392b;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
-        }
-
-        .cta-tertiary {
-            background: #3498db;
-            color: white;
-        }
-
-        .cta-tertiary:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-        }
-
-        .faq-item {
-            background: #f9f9f9;
-            border-left: 4px solid #3498db;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-
-        .faq-item h4 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-item h4:hover {
-            color: #3498db;
-        }
-
-        .faq-item p {
-            color: #555;
-            line-height: 1.7;
-        }
-
-        .certification-badge {
-            display: inline-block;
-            background: white;
-            border: 2px solid #2c3e50;
-            padding: 15px 20px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .certification-badge img {
-            max-width: 80px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .certification-badge p {
-            font-size: 0.9em;
-            color: #2c3e50;
-            font-weight: bold;
-        }
-
-        .section-highlight {
-            background: #ecf7ff;
-            padding: 25px;
-            border-radius: 5px;
-            margin: 25px 0;
-            border-left: 5px solid #3498db;
-        }
-
-        .section-highlight h4 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-
-        ul, ol {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .timeline {
-            position: relative;
-            padding: 20px 0;
-        }
-
-        .timeline-item {
-            margin-bottom: 25px;
-            padding-left: 40px;
-            position: relative;
-        }
-
-        .timeline-item:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            background: #27ae60;
-            border-radius: 50%;
-            border: 3px solid white;
-            box-shadow: 0 0 0 2px #27ae60;
-        }
-
-        .timeline-item h4 {
-            color: #2c3e50;
-            margin-bottom: 8px;
-        }
-
-        .timeline-item p {
-            color: #555;
-            margin-bottom: 0;
-        }
-
-        .brand-logos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .brand-logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            background: #f9f9f9;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            font-weight: bold;
-            color: #2c3e50;
-            text-align: center;
-            font-size: 0.95em;
-        }
-
-        footer {
-            background: #2c3e50;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-
-            main {
-                padding: 25px 20px;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            .comparison-box {
-                grid-template-columns: 1fr;
-            }
-
-            .cta-buttons {
-                grid-template-columns: 1fr;
-            }
-
-            .brand-logos {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        .word-count {
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
-    </style>
+    
     <!-- Premium Blog Styles -->
     <link rel="stylesheet" href="../../css/blog-premium.css">
 
     <!-- Header Styles -->
     <link rel="stylesheet" href="../../css/header-optimized.css">
+
 </head>
 <body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="progressBar"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/">Nika Appliance Repair</a>
+            </div>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone">
+                    <i class="fas fa-phone"></i> (437) 747-6737
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Blog Content -->
     <div class="blog-wrapper">
+        <main class="blog-main">
+            <article class="blog-content">
+<div class="blog-wrapper">
         <div class="progress-bar" id="progressBar"></div>
 
     <!-- SCHEMA MARKUP -->
@@ -706,7 +316,7 @@
         <a href="/">Home</a> / <a href="/blog">Blog</a> / <a href="/blog/troubleshooting">Troubleshooting</a> / Stove Repair Toronto
     </div>
 
-    <div class="container">
+    
         <header>
             <h1>Stove Repair Toronto: Gas & Electric Stove Fixes</h1>
             <div class="meta-info">
@@ -717,6 +327,7 @@
         </header>
 
         <main>
+            <article class="blog-content">
             <!-- HERO SECTION -->
             <div class="hero">
                 <p>Is your stove refusing to heat up? Are burners sparking but not igniting? A broken stove doesn't just disrupt your kitchen routine—it's a genuine cooking emergency. In Toronto, where busy schedules demand reliable appliances, a non-functioning stove can derail meal planning and family gatherings. Whether you're dealing with a gas igniter that won't spark or an electric coil that's burned out, knowing your options for repair is essential. This comprehensive guide walks you through common stove problems, safety considerations, and how to get your cooking back on track with professional Toronto appliance repair services that offer same-day emergency support.</p>
@@ -1064,36 +675,8 @@
                     <a href="#quote-form" class="cta-button cta-tertiary">Request Online Quote</a>
                 </div>
             </section>
+            </article>
         </main>
-
-        <footer>
-            <p>&copy; 2025 Nika Appliance Repair. All rights reserved. Licensed, insured, and TSSA certified.</p>
-            <p>Serving Toronto, Ontario with professional appliance repair services.</p>
-        </footer>
-    </div>
-
-    <script>
-        // Reading progress bar
-        window.addEventListener('scroll', function() {
-            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (window.scrollY / windowHeight) * 100;
-            document.getElementById('progressBar').style.width = scrolled + '%';
-        });
-
-        // FAQ accordion functionality
-        document.querySelectorAll('.faq-item h4').forEach(function(header) {
-            header.addEventListener('click', function() {
-                const answer = this.nextElementSibling;
-                if (answer.style.display === 'none' || answer.style.display === '') {
-                    answer.style.display = 'block';
-                    this.innerHTML += ' <span style="font-size: 0.8em;">▼</span>';
-                } else {
-                    answer.style.display = 'none';
-                    this.innerHTML = this.innerHTML.replace(' <span style="font-size: 0.8em;">▼</span>', '');
-                }
-            });
-        });
-    </script>
     </div>
 </body>
 </html>
