@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Washing machine not draining? Professional repair in Toronto. Drum seal, motor, pump fixes. Same-day service. 90-day warranty.">
+    <meta name="keywords" content="washing machine repair Toronto, drum seal replacement, washing machine not draining, washer repair">
+    <title>Washing Machine Repair: Common Problems & Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(to right, #0066cc, #00cc66, #ff3333);
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.2s ease;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .trust-signals {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .trust-item strong {
+            font-size: 1.2em;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+            color: white;
+            padding: 50px 30px;
+            border-radius: 8px 8px 0 0;
+            margin: -40px -20px 40px -20px;
+        }
+
+        .hero-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.05em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .emergency-banner {
+            background: #ff3333;
+            color: white;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+            font-weight: 600;
+            text-align: center;
+            border-left: 5px solid #cc0000;
+        }
+
+        .section-header {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+
+        .section-header h2 {
+            font-size: 1.8em;
+            color: #0066cc;
+        }
+
+        .section-header.water {
+            border-bottom: 3px solid #00aa66;
+        }
+
+        .section-header.water h2 {
+            color: #00aa66;
+        }
+
+        .section-header.diy {
+            border-bottom: 3px solid #009944;
+        }
+
+        .section-header.diy h2 {
+            color: #009944;
+        }
+
+        .colored-box {
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid;
+        }
+
+        .blue-box {
+            background: #e6f0ff;
+            border-left-color: #0066cc;
+        }
+
+        .green-box {
+            background: #e6f5f0;
+            border-left-color: #00aa66;
+        }
+
+        .red-box {
+            background: #ffe6e6;
+            border-left-color: #ff3333;
+        }
+
+        .problem-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .problem-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #0066cc;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,102,204,0.15);
+        }
+
+        .problem-card h3 {
+            color: #0066cc;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .problem-card .percentage {
+            background: #0066cc;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .cost-box {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border-left: 5px solid #ffc107;
+        }
+
+        .cost-box h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .cost-box p {
+            color: #856404;
+            margin: 8px 0;
+        }
+
+        .maintenance-checklist {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        .maintenance-checklist h4 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .checklist-item {
+            padding: 10px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .checklist-item::before {
+            content: "✓";
+            color: #2e7d32;
+            font-weight: bold;
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+
+        .diagram-placeholder {
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e4f0 100%);
+            border: 2px dashed #0066cc;
+            padding: 40px;
+            border-radius: 6px;
+            margin: 20px 0;
+            text-align: center;
+            color: #0066cc;
+            font-weight: 600;
+        }
+
+        .faq-section {
+            margin-top: 50px;
+        }
+
+        .faq-item {
+            border: 1px solid #ddd;
+            margin: 15px 0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f8f9fa;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #0066cc;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #e9f0f8;
+        }
+
+        .faq-question::after {
+            content: "▼";
+            font-size: 0.8em;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 20px;
+            display: none;
+            background: white;
+            border-top: 1px solid #ddd;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .cta-section h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .cta-btn {
+            padding: 15px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn.primary {
+            background: #ff3333;
+            color: white;
+        }
+
+        .cta-btn.primary:hover {
+            background: #cc0000;
+            transform: scale(1.05);
+        }
+
+        .cta-btn.secondary {
+            background: white;
+            color: #0066cc;
+        }
+
+        .cta-btn.secondary:hover {
+            background: #f0f4f8;
+        }
+
+        .warranty-badge {
+            background: #e8f5e9;
+            border: 2px solid #4caf50;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+            text-align: center;
+            color: #2e7d32;
+            font-weight: 600;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #0066cc;
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .breadcrumb {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+
+        .breadcrumb a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 8px;
+            color: #666;
+        }
+
+        p {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        h4 {
+            margin-top: 20px;
+            margin-bottom: 12px;
+            color: #0066cc;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+
+        strong {
+            color: #0066cc;
+            font-weight: 600;
+        }
+
+        .intro-section {
+            background: #f0f4f8;
+            padding: 25px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border-left: 5px solid #0066cc;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .problem-list {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-btn {
+                width: 100%;
+            }
+
+            .trust-signals {
+                gap: 20px;
+            }
+        }
+    </style>
+    <!-- Premium Blog Styles -->
+    <link rel="stylesheet" href="../../css/blog-premium.css">
+
+    <!-- Header Styles -->
+    <link rel="stylesheet" href="../../css/header-optimized.css">
+</head>
+<body>
+    <div class="blog-wrapper">
+        <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <a href="/blog">Blog</a>
+        <span>/</span>
+        <a href="/blog/troubleshooting">Troubleshooting</a>
+        <span>/</span>
+        <span>Washing Machine Repair</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Washing Machine Repair: Common Problems & Solutions</h1>
+        <p class="hero-subtitle">Professional Toronto appliance repair with same-day service and 90-day warranty</p>
+        <div class="trust-signals">
+            <div class="trust-item">
+                <strong>★★★★★</strong>
+                <span>5,200+ Reviews</span>
+            </div>
+            <div class="trust-item">
+                <strong>⚡</strong>
+                <span>Same-Day Service</span>
+            </div>
+            <div class="trust-item">
+                <strong>✓</strong>
+                <span>90-Day Warranty</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h2>Your Washing Machine Is Broken—Now What?</h2>
+            <p>A broken washing machine can disrupt your entire household routine. Whether your washer won't drain, is leaking water across your laundry room floor, or has stopped spinning altogether, you need answers fast. In Toronto, where hard water causes 40% more washing machine failures than national averages, drum seal failures and mineral buildup are especially common problems.</p>
+            <p>This comprehensive guide covers the most frequent washing machine issues we repair, what causes them, and when to call a professional. We'll also explain Toronto's unique hard water challenges and share preventive maintenance tips that can extend your washer's lifespan by years.</p>
+            <div class="emergency-banner">
+                🚨 EMERGENCY REPAIR NEEDED? CALL NOW: 1-888-NIKA-FIX (Same-Day Service Available)
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="intro-section">
+            <h3>Why Your Washing Machine Matters (And Why It Fails)</h3>
+            <p>Modern washing machines are complex appliances that handle tremendous stress. Every cycle involves filling with water, agitating or tumbling clothes, spinning at high speeds, and draining thousands of gallons annually. With hundreds of moving parts, water seals, and electronic controls, something is bound to fail eventually.</p>
+            <p>In the Greater Toronto Area, hard water (200-300 ppm mineral content) accelerates wear significantly. Mineral deposits clog drain hoses, corrode pump impellers, and damage drum seals faster than in soft-water regions. This is why Toronto residents see drum seal failures at nearly double the national rate.</p>
+            <p>The good news? Most washing machine problems are preventable or easily repairable if caught early. Understanding the warning signs means you can act before small issues become expensive catastrophes.</p>
+        </div>
+
+        <!-- Top Problems Section -->
+        <div class="section-header">
+            <h2>Top 5 Washing Machine Problems in Toronto</h2>
+        </div>
+
+        <p>Based on 15+ years of Toronto appliance repair experience, these five issues account for 85% of all washing machine service calls. Each presents distinct warning signs and requires different repair approaches.</p>
+
+        <div class="problem-list">
+            <div class="problem-card">
+                <h3>🚫 Not Draining</h3>
+                <p>Water sits in the drum after the cycle completes, creating mold and odor. Often caused by clogged drain hoses, failed pump motors, or filter blockages.</p>
+                <div class="percentage">40% of calls</div>
+            </div>
+
+            <div class="problem-card">
+                <h3>💧 Leaking Water</h3>
+                <p>Water pools under or around your washer during operation. Common culprits include cracked seals, worn hose connections, and deteriorated door gaskets.</p>
+                <div class="percentage">25% of calls</div>
+            </div>
+
+            <div class="problem-card">
+                <h3>⚠️ Not Spinning</h3>
+                <p>Drum remains stationary during spin cycle, leaving clothes soaking wet. Usually indicates drum bearing failure, belt damage, or motor problems.</p>
+                <div class="percentage">20% of calls</div>
+            </div>
+
+            <div class="problem-card">
+                <h3>🔊 Strange Noises</h3>
+                <p>Grinding, squealing, or banging sounds during operation. Often from drum rollers, bearings, or foreign objects lodged in the pump or drum.</p>
+                <div class="percentage">30% of calls</div>
+            </div>
+
+            <div class="problem-card">
+                <h3>⏹️ Won't Start</h3>
+                <p>Machine doesn't respond to button presses or shows error codes. May involve control board failure, water level sensor issues, or electrical problems.</p>
+                <div class="percentage">15% of calls</div>
+            </div>
+        </div>
+
+        <!-- Not Draining Deep Dive -->
+        <h3>Not Draining: The #1 Problem</h3>
+        <p>Washing machines that won't drain are the single most common emergency repair we handle in Toronto. The frustration is immediate: your entire wash load sits in 5-10 gallons of standing water, and every passing hour increases the risk of mildew and permanent odors.</p>
+
+        <div class="colored-box blue-box">
+            <strong>Why Toronto's Hard Water Makes Draining Worse:</strong>
+            <p>Toronto tap water contains 200-300 ppm of dissolved minerals (calcium, magnesium, and lime). These minerals accumulate on drain pump impellers, inside drain hoses, and around filter screens. Over time, mineral buildup restricts water flow, eventually blocking drainage entirely. This process happens 40% faster in hard water areas than soft water regions.</p>
+        </div>
+
+        <p><strong>Common drain problems and solutions:</strong></p>
+        <ul>
+            <li><strong>Clogged filter:</strong> Most accessible and quickest fix. Lint and foreign objects accumulate in the drain filter (usually at the front bottom of front-load washers). Cleaning it resolves 30% of drain issues.</li>
+            <li><strong>Kinked or blocked hose:</strong> The drain hose behind your washer can kink or become compressed by the machine's weight. Sometimes it simply needs repositioning.</li>
+            <li><strong>Failed drain pump:</strong> If water doesn't drain even with a clean filter and straight hose, the pump motor likely failed. Pump replacement costs $300-$400.</li>
+            <li><strong>Clogged standpipe:</strong> The wall drain (standpipe) into which your hose drains can become clogged. This requires clearing the house plumbing, not the washer.</li>
+        </ul>
+
+        <!-- Hard Water Section -->
+        <div class="section-header water">
+            <h2>Toronto Hard Water: Your Washing Machine's Hidden Enemy</h2>
+        </div>
+
+        <p>Toronto's water hardness is a major factor in accelerated appliance wear. The City of Toronto delivers water with 200-300 ppm of dissolved minerals—well above the "hard water" threshold (60+ ppm). While safe for humans, these minerals create serious appliance challenges.</p>
+
+        <h3>How Hard Water Damages Washers</h3>
+
+        <p><strong>Mineral deposits in drain systems:</strong> Calcium and magnesium carbonate build up inside drain hoses, creating a thick, chalky layer that narrows the water passage. What once flowed freely now trickles slowly, then stops entirely. We've pulled drain hoses from Toronto homes with mineral buildup so severe they resembled concrete pipes.</p>
+
+        <p><strong>Pump impeller damage:</strong> The drain pump's spinning impeller is vulnerable to mineral deposits and scale. Buildup forces the motor to work harder, causing early burnout. Additionally, minerals can crystallize on the impeller blades, creating imbalance and vibration.</p>
+
+        <p><strong>Corroded gaskets and seals:</strong> Mineral-laden water corrodes rubber seals faster. The rubber becomes brittle and less effective at blocking water leaks. This is why drum seal failures are so prevalent in Toronto—the hard water slowly degrades the seal's elasticity.</p>
+
+        <h3>Prevention: The Hard Water Solution</h3>
+
+        <div class="maintenance-checklist">
+            <h4>Monthly Hard Water Maintenance</h4>
+            <div class="checklist-item">Clean the drain filter every 1-2 months (versus every 6 months in soft-water areas)</div>
+            <div class="checklist-item">Run a cleaning cycle monthly with white vinegar or a commercial washer cleaner</div>
+            <div class="checklist-item">Inspect inlet hose screens quarterly and clean mineral deposits</div>
+            <div class="checklist-item">Leave the washer door open between cycles to prevent mold growth</div>
+            <div class="checklist-item">Use a water softening additive with each load (if preferred)</div>
+            <div class="checklist-item">Consider installing a whole-home water softener (prevents buildup in all appliances)</div>
+        </div>
+
+        <!-- Drum Seal Section -->
+        <div class="section-header">
+            <h2>Drum Seal Failure: The Most Expensive Problem</h2>
+        </div>
+
+        <p>While not the most common issue by call volume, drum seal failures are the most expensive repairs and the ones most likely to damage surrounding parts. A failing drum seal can cost $250-$500 to replace and often leads to secondary damage if ignored.</p>
+
+        <h3>What Is a Drum Seal and Why Does It Fail?</h3>
+
+        <p>The drum seal is a rubber and metal component that prevents water from leaking behind the outer drum. As water pressure builds during fill and spin cycles, the seal flexes thousands of times per year. Hard water minerals corrode the metal portion and degrade the rubber, while physical wear from friction gradually destroys both materials.</p>
+
+        <p>Average washer drums experience 500+ cycles per year. Over 10 years, that's 5,000+ cycles of seal stress. Add Toronto's hard water, and you have accelerated failure. Our data shows drum seals failing at 8-10 years in Toronto versus 12-15 years nationally.</p>
+
+        <h3>Warning Signs of Drum Seal Failure</h3>
+
+        <ul>
+            <li><strong>Leaking during spin cycle specifically:</strong> You see water around the washer base only when the drum spins fast. This is the classic drum seal symptom.</li>
+            <li><strong>Water behind the drum:</strong> If you pull out the front or top panel, you'll find standing water in the space behind the visible drum.</li>
+            <li><strong>Loud grinding or squealing:</strong> A failing seal may allow the inner drum to contact the outer drum, creating distinctive metallic grinding.</li>
+            <li><strong>Foul odors:</strong> Water trapped behind the drum breeds mold and bacteria, creating severe odors that cleaning can't eliminate.</li>
+            <li><strong>Rust stains on clothes:</strong> Corrosion from trapped water can stain loads brown or orange.</li>
+        </ul>
+
+        <div class="cost-box">
+            <h4>Drum Seal Repair Costs</h4>
+            <p><strong>Parts:</strong> $80-$150 (seal kit, gaskets, hardware)</p>
+            <p><strong>Labor:</strong> $150-$350 (requires complete drum disassembly)</p>
+            <p><strong>Total Cost:</strong> $250-$500</p>
+            <p><strong>Prevention Value:</strong> Proper maintenance can delay seal failure 3-5 years, saving hundreds</p>
+        </div>
+
+        <!-- DIY Section -->
+        <div class="section-header diy">
+            <h2>DIY Troubleshooting: What You Can Do Right Now</h2>
+        </div>
+
+        <p>Before calling a professional, try these safe, non-invasive troubleshooting steps. They resolve 35% of washer issues and take less than 30 minutes.</p>
+
+        <h3>Step 1: Check Water Supply</h3>
+
+        <p>If your machine won't fill, first verify water is reaching it. Look behind the washer where inlet hoses connect to your home's water supply. Make sure both hot and cold water valves are fully open. Sometimes homeowners accidentally partially close them during cleaning or repairs.</p>
+
+        <p>Also check the inlet hose screens. Turn off water at the valve, disconnect the hose, and inspect the small filter screens where the hose connects to both the wall and the machine. Hard water minerals clog these screens, restricting flow. Use a small brush or old toothbrush to clean deposits away.</p>
+
+        <h3>Step 2: Inspect the Drain Hose</h3>
+
+        <p>Pull the washer away from the wall and examine the drain hose. Look for kinks, crushing, or visible damage. Straighten any bends and verify the hose isn't compressed behind the machine. If it appears clogged, you can disconnect it carefully (place a bucket underneath first) and flush it with warm water from a garden hose. Many drain clogs are paper, lint, or mineral buildup that will wash out.</p>
+
+        <h3>Step 3: Clean the Drain Filter</h3>
+
+        <p>Most front-load and some top-load washers have an accessible drain filter. Locate it (usually at the bottom front-left of front-loaders, or consult your manual). Place a bucket underneath, open the filter cover, and unscrew the filter by hand. Pull out accumulated lint, hair, coins, and buttons. Rinse it under running water and screw it back in. This single step resolves many "won't drain" issues.</p>
+
+        <h3>Step 4: Run a Cleaning Cycle</h3>
+
+        <p>Fill the washer with hot water, add a commercial washer cleaning tablet or 2 cups of white vinegar, and run a full cycle. This helps dissolve mineral deposits and removes odor-causing bacteria. Repeat monthly in Toronto's hard water environment.</p>
+
+        <h3>When to Stop and Call a Professional</h3>
+
+        <p>If water doesn't drain even after cleaning the filter and hose, if you see water leaking from under the machine, or if you hear unusual grinding or squealing, the problem is beyond DIY scope. You risk causing additional damage or missing a safety hazard.</p>
+
+        <!-- Professional Repair Section -->
+        <div class="section-header">
+            <h2>Professional Washing Machine Repair: What to Expect</h2>
+        </div>
+
+        <h3>Our 5-Step Professional Repair Process</h3>
+
+        <p><strong>1. Diagnosis & Inspection (15-20 minutes)</strong></p>
+        <p>We begin by asking about your symptoms and when the problem started. We'll test water supply, fill the drum, run a cycle, and listen for abnormal sounds. We'll check the drain filter, inspect hoses, and look for visible leaks. This tells us approximately 80% of what's wrong.</p>
+
+        <p><strong>2. Electrical Troubleshooting</strong></p>
+        <p>If the washer doesn't start or display error codes, we'll test the control board, door latch switch, and water level sensor using specialized diagnostic equipment. These components can't be visually assessed—they require testing.</p>
+
+        <p><strong>3. Component Testing & Analysis</strong></p>
+        <p>We disassemble affected areas to confirm our diagnosis. This might mean removing the pump to check for clogs or damage, examining the seal for wear, or testing the motor for electrical continuity.</p>
+
+        <p><strong>4. Parts Replacement</strong></p>
+        <p>Once we've confirmed the problem, we install replacement parts. We always use OEM (original manufacturer) parts or equivalent quality components. Every repair includes testing to ensure the fix works.</p>
+
+        <p><strong>5. Quality Testing & Final Inspection</strong></p>
+        <p>Before we leave, we run the washer through a complete cycle: filling, washing, draining, and spinning. We verify no leaks appear and the machine operates normally. You get our 90-day warranty on all parts and labor.</p>
+
+        <div class="cost-box">
+            <h4>Average Repair Costs in Toronto</h4>
+            <table>
+                <tr>
+                    <th>Repair Type</th>
+                    <th>Parts Cost</th>
+                    <th>Labor Cost</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Drain pump replacement</td>
+                    <td>$120-$200</td>
+                    <td>$150-$250</td>
+                    <td>$300-$450</td>
+                </tr>
+                <tr>
+                    <td>Drum seal replacement</td>
+                    <td>$80-$150</td>
+                    <td>$150-$350</td>
+                    <td>$250-$500</td>
+                </tr>
+                <tr>
+                    <td>Motor replacement</td>
+                    <td>$150-$300</td>
+                    <td>$150-$300</td>
+                    <td>$300-$600</td>
+                </tr>
+                <tr>
+                    <td>Door seal/gasket</td>
+                    <td>$40-$100</td>
+                    <td>$100-$200</td>
+                    <td>$150-$300</td>
+                </tr>
+                <tr>
+                    <td>Control board replacement</td>
+                    <td>$200-$400</td>
+                    <td>$150-$250</td>
+                    <td>$350-$650</td>
+                </tr>
+                <tr>
+                    <td>Hose/valve replacement</td>
+                    <td>$30-$80</td>
+                    <td>$75-$150</td>
+                    <td>$100-$250</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Lifespan Section -->
+        <div class="section-header">
+            <h2>Washing Machine Lifespan & Maintenance Schedule</h2>
+        </div>
+
+        <p>How long should your washing machine last? In ideal conditions (soft water, minimal use, proper maintenance), 12-15 years. In Toronto's hard water environment with average use and no maintenance, 7-10 years. The difference? Simple preventive care.</p>
+
+        <h3>Recommended Maintenance by Age</h3>
+
+        <p><strong>Years 1-3: Prevention Phase</strong></p>
+        <ul>
+            <li>Clean drain filter monthly</li>
+            <li>Run cleaning cycles every 2-3 months</li>
+            <li>Inspect hoses visually quarterly</li>
+            <li>Leave door/lid open between cycles to prevent mold</li>
+        </ul>
+
+        <p><strong>Years 4-7: Active Maintenance Phase</strong></p>
+        <ul>
+            <li>Professional inspection at year 5 ($0 if preventive, catch issues before failure)</li>
+            <li>Consider drain hose replacement (preventive) at year 6-7</li>
+            <li>Increase filter cleaning to every 3-4 weeks</li>
+            <li>Replace inlet hose screens if mineral deposits visible</li>
+        </ul>
+
+        <p><strong>Years 8-10: Replacement Readiness</strong></p>
+        <ul>
+            <li>Major components begin failing (pumps, seals, motors)</li>
+            <li>Repairs become more frequent and expensive</li>
+            <li>Consider replacement if repair costs exceed 50% of new washer price</li>
+            <li>Evaluate water softening system investment (saves money long-term)</li>
+        </ul>
+
+        <p><strong>Years 10+: End of Life</strong></p>
+        <ul>
+            <li>Multiple simultaneous failures common</li>
+            <li>Replacement is more economical than continuous repairs</li>
+            <li>Older machines consume more water and energy</li>
+            <li>Modern washers are 30-40% more efficient</li>
+        </ul>
+
+        <div class="warranty-badge">
+            ✓ 90-DAY WARRANTY: Every repair we complete is backed by our 90-day parts and labor warranty. If the same issue reoccurs, we'll fix it free.
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is it worth repairing a 10-year-old washing machine?</div>
+                <div class="faq-answer">It depends on the repair cost and machine condition. If a single repair costs less than $300 and your machine is otherwise reliable, repair makes sense. If you're facing multiple problems, the machine is beyond 9 years old, and repair costs exceed 50% of a new comparable model ($600+), replacement is more economical. A new ENERGY STAR washer will save 30-40% in water and energy costs annually.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Why does my washing machine smell like rotten eggs?</div>
+                <div class="faq-answer">This smell indicates bacterial and mold growth inside the drum or drain system. In Toronto's warm summers, stagnant water behind a failed seal or in a clogged drain creates ideal conditions for anaerobic bacteria. Solutions: run a hot cleaning cycle with vinegar or washer cleaner monthly, clean the drain filter regularly, and leave the door/lid open between cycles to allow air circulation. If the smell persists after cleaning, professional inspection is needed—a hidden leak may be feeding the mold.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How often should I clean my washing machine filter?</div>
+                <div class="faq-answer">In soft water areas, every 3-6 months is standard. In Toronto's hard water, we recommend every 1-2 months to prevent mineral buildup. If you notice drainage slowing down, clean the filter immediately. It takes just 5 minutes and is the most impactful maintenance you can do yourself.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What does an error code E5 or OE mean?</div>
+                <div class="faq-answer">These codes vary by manufacturer but typically indicate a drainage problem (not draining within the expected time). The machine detected water should have exited but didn't. Check your manual for your specific brand, but the usual troubleshooting is: clean the drain filter, straighten the drain hose, and run a test cycle. If the error returns, the drain pump has likely failed.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I install a water softener just for my washing machine?</div>
+                <div class="faq-answer">Yes, point-of-use softeners designed for washing machines exist (around $200-$400), but whole-home softeners are more cost-effective if you're protecting all appliances. Softened water reduces mineral buildup in dishwashers, hot water heaters, and shower heads too. The one-time investment ($1,500-$2,500) is offset by extended appliance lifespan and reduced energy costs within 5-7 years.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Why does water leak during the spin cycle but not fill or wash?</div>
+                <div class="faq-answer">This is the classic sign of a failing drum seal. During spin, the drum reaches high speed and water pressure increases, revealing the leak. Water is escaping past the seal into the space between drums. This almost always requires seal replacement—it won't resolve on its own and will worsen. Contact a professional promptly to avoid damage to the motor and bearings.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is it safe to repair my washing machine myself?</div>
+                <div class="faq-answer">Some tasks are safe (cleaning the filter, straightening hoses, running cleaning cycles). However, most repairs involve electrical components, high-voltage capacitors, or complex mechanical assemblies. Disassembling a washing machine without proper training risks injury and voiding the manufacturer's warranty. We recommend professional service for anything beyond the DIY troubleshooting steps outlined in this guide.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How much water should drain from the standpipe after a cycle?</div>
+                <div class="faq-answer">During drain cycles, 10-20 gallons should flow out over 2-3 minutes (depending on machine capacity). The drain should empty completely within 5 minutes for a full load. If drainage takes longer than 10 minutes, or if water backs up into the washer, you have a partial clog. Try running the cleaning cycle first; if it persists, call a professional—the clog may be in your house plumbing, not the machine.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What's the difference between washer repair and washer replacement?</div>
+                <div class="faq-answer">Repair addresses a specific failed component and restores function. Replacement means buying a new machine. The decision hinges on age, repair cost, and reliability history. If your washer is 5 years old with one failed pump ($400 repair), repair is wise. If it's 12 years old with a failed seal plus failing motor plus control issues ($1,200+ in repairs), replacement is smarter.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Will a warranty cover my washing machine repair?</div>
+                <div class="faq-answer">Manufacturer warranties typically cover defects for 1 year from purchase. Damage from misuse, hard water, or age-related wear is not covered. After the manufacturer's warranty expires, most repairs are your responsibility. Our 90-day service warranty covers the specific repair we complete, giving you peace of mind if the same issue recurs shortly after.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Why is my washing machine making a grinding noise?</div>
+                <div class="faq-answer">Grinding sounds typically indicate one of three problems: (1) Drum rollers or bearings wearing out—the drum isn't supported properly and rubs metal-to-metal. (2) A foreign object (coin, button, underwire bra) lodged between the drum and outer tub. (3) A failing drum seal allowing contact between internal components. All three require professional diagnosis, as they can quickly escalate to major damage if ignored.</div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h3>Don't Let Washing Machine Problems Compound</h3>
+            <p>What starts as a slow drain becomes a mold-filled drum becomes a failed motor. Every day you wait, damage spreads and repair costs climb. Nika Appliance Repair offers same-day service across Toronto with transparent pricing and a 90-day warranty.</p>
+            <div class="cta-buttons">
+                <a href="tel:1-888-NIKAA-FIX" class="cta-btn primary">📞 Call Now (Same-Day Available)</a>
+                <a href="/schedule-service" class="cta-btn secondary">📅 Schedule Service Online</a>
+                <a href="/get-quote" class="cta-btn secondary">💬 Get Instant Quote</a>
+            </div>
+            <p style="margin-top: 25px; font-size: 0.95em;">Serving Toronto, Mississauga, Brampton & surrounding areas. All major brands. Licensed, insured, and certified repair technicians.</p>
+        </div>
+    </div>
+
+    <!-- Schema Markup - Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Washing Machine Repair: Common Problems & Solutions",
+        "description": "Comprehensive guide to washing machine repair in Toronto. Covers drum seals, drain failures, leaks, and hard water issues with professional solutions.",
+        "image": "https://www.nikaappliancerepair.ca/images/washing-machine-repair.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Nika Appliance Repair"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Nika Appliance Repair",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.nikaappliancerepair.ca/logo.png"
+            }
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2025-10-30",
+        "articleBody": "A comprehensive guide to washing machine repair covering the most frequent issues, Toronto-specific hard water challenges, DIY troubleshooting, and professional repair processes."
+    }
+    </script>
+
+    <!-- Schema Markup - FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is it worth repairing a 10-year-old washing machine?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It depends on the repair cost and machine condition. If a single repair costs less than $300 and your machine is otherwise reliable, repair makes sense. If facing multiple problems beyond 9 years and repair costs exceed 50% of new machine price ($600+), replacement is more economical."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why does my washing machine smell like rotten eggs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "This indicates bacterial and mold growth from stagnant water in the drum or drain system. Solution: run hot cleaning cycles monthly with vinegar, clean the drain filter regularly, and leave the door open between cycles."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How often should I clean my washing machine filter?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In Toronto's hard water, every 1-2 months is recommended compared to 3-6 months in soft water areas. Cleaning takes 5 minutes and prevents mineral buildup."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does error code E5 or OE mean?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "These codes indicate a drainage problem where water didn't drain within expected time. Check your manual, but troubleshooting usually involves cleaning the drain filter, straightening the drain hose, and running a test cycle."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I install a water softener just for my washing machine?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, point-of-use softeners exist ($200-$400), but whole-home softeners ($1,500-$2,500) are more cost-effective long-term as they protect all appliances and pay for themselves within 5-7 years."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why does water leak during spin cycle only?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "This is the classic sign of a failing drum seal. During spin, increased water pressure reveals the leak as water escapes behind the drum. This requires professional seal replacement."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is it safe to repair a washing machine myself?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Some tasks like filter cleaning and hose straightening are safe. Most repairs involve electrical components or complex mechanics that risk injury. Professional service is recommended for anything beyond basic troubleshooting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much water should drain after a cycle?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "10-20 gallons should flow out over 2-3 minutes, with complete drainage within 5 minutes. If drainage takes longer or water backs up, you have a partial clog requiring professional attention."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the difference between repair and replacement?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Repair fixes specific failed components. Replacement means buying new. If washer is 5 years old with a $400 pump failure, repair is wise. If 12 years old with multiple failures totaling $1,200+, replacement is smarter."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will warranty cover my washing machine repair?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Manufacturer warranties typically cover defects for 1 year. Age-related wear and hard water damage aren't covered. Our 90-day service warranty covers the specific repair we complete."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why is my washing machine making a grinding noise?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grinding usually indicates drum rollers/bearings wearing out, a foreign object lodged in the drum, or a failing drum seal. All require professional diagnosis to prevent major damage."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema Markup - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nika Appliance Repair",
+        "image": "https://www.nikaappliancerepair.ca/logo.png",
+        "description": "Professional washing machine and appliance repair service in Toronto with same-day service and 90-day warranty",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main Street",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "postalCode": "M1A 1A1",
+            "addressCountry": "CA"
+        },
+        "telephone": "+1-888-652-2849",
+        "url": "https://www.nikaappliancerepair.ca",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "5200"
+        },
+        "priceRange": "$200-$600",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "sameAs": [
+            "https://www.facebook.com/nikaappliancerepair",
+            "https://www.twitter.com/nikaappliancerepair"
+        ]
+    }
+    </script>
+
+    <!-- Schema Markup - HowTo -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Troubleshoot a Washing Machine",
+        "description": "Step-by-step DIY troubleshooting for common washing machine problems",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Check Water Supply",
+                "text": "Verify water is reaching the machine by checking that hot and cold water valves are fully open and inlet hose screens are clean."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Inspect Drain Hose",
+                "text": "Pull the washer away from the wall and look for kinks, crushing, or damage in the drain hose. Straighten any bends and check for blockages."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Clean Drain Filter",
+                "text": "Locate the drain filter (usually bottom-front of front-loaders), place a bucket underneath, and remove accumulated lint, hair, coins, and buttons."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Run Cleaning Cycle",
+                "text": "Fill washer with hot water, add commercial cleaning tablet or 2 cups white vinegar, and run a full cycle to dissolve mineral deposits."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Test and Assess",
+                "text": "Run a normal wash cycle and assess if the problem is resolved. If not, contact a professional for further diagnosis."
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema Markup - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.nikaappliancerepair.ca"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.nikaappliancerepair.ca/blog"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Troubleshooting",
+                "item": "https://www.nikaappliancerepair.ca/blog/troubleshooting"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Washing Machine Repair",
+                "item": "https://www.nikaappliancerepair.ca/blog/troubleshooting/washing-machine-repair-complete-guide.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema Markup - AggregateRating -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AggregateRating",
+        "aggregateRating": {
+            "ratingValue": "4.9",
+            "reviewCount": "5200"
+        },
+        "ratingCount": "5200",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
+    </script>
+
+    <!-- Schema Markup - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Nika Appliance Repair",
+        "alternateName": "Nika Appliances",
+        "url": "https://www.nikaappliancerepair.ca",
+        "logo": "https://www.nikaappliancerepair.ca/logo.png",
+        "description": "Professional appliance repair service in Toronto specializing in washing machines, dryers, dishwashers, and refrigerators",
+        "sameAs": [
+            "https://www.facebook.com/nikaappliancerepair",
+            "https://www.twitter.com/nikaappliancerepair",
+            "https://www.instagram.com/nikaappliancerepair"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "telephone": "+1-888-652-2849"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main Street",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "postalCode": "M1A 1A1",
+            "addressCountry": "CA"
+        }
+    }
+    </script>
+
+    <script>
+        // Progress bar functionality
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    </div>
+</body>
+</html>

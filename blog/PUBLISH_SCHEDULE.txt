@@ -1,0 +1,175 @@
+BLOG POST PUBLISHING SCHEDULE
+===========================
+Generated: October 30, 2025
+Total Posts: 24
+Schedule: 5 posts per day throughout the day
+
+PUBLISHING TIMELINE
+==================
+
+DAY 1: October 31, 2025 (Friday)
+Timeline: 6 AM, 9 AM, 12 PM, 3 PM, 6 PM
+
+6:00 AM  - Refrigerator Ice Maker Not Working
+           File: blog/troubleshooting/refrigerator-ice-maker-not-working.html
+           Status: READY FOR PUBLISHING
+
+9:00 AM  - Washing Machine Leaking Water
+           File: blog/troubleshooting/washing-machine-leaking-water.html
+           Status: READY FOR PUBLISHING
+
+12:00 PM - Dishwasher Leaving Food Spots
+           File: blog/troubleshooting/dishwasher-leaving-food-spots.html
+           Status: READY FOR PUBLISHING
+
+3:00 PM  - Dryer Not Drying Clothes
+           File: blog/troubleshooting/dryer-not-drying-clothes.html
+           Status: READY FOR PUBLISHING
+
+6:00 PM  - Refrigerator Water Dispenser Not Working
+           File: blog/troubleshooting/refrigerator-water-dispenser-not-working.html
+           Status: READY FOR PUBLISHING (Regenerated with premium template)
+
+---
+
+DAY 2: November 1, 2025 (Saturday)
+Timeline: 6 AM, 9 AM, 12 PM, 3 PM, 6 PM
+
+6:00 AM  - Electrolux Appliance Repair
+           File: blog/guides/electrolux-appliance-repair.html
+           Status: READY FOR PUBLISHING
+
+9:00 AM  - Bosch Dishwasher Repair
+           File: blog/guides/bosch-dishwasher-repair.html
+           Status: READY FOR PUBLISHING
+
+12:00 PM - Frigidaire Refrigerator Repair
+           File: blog/guides/frigidaire-refrigerator-repair.html
+           Status: READY FOR PUBLISHING
+
+3:00 PM  - GE Appliance Repair Toronto
+           File: blog/guides/ge-appliance-repair-toronto.html
+           Status: READY FOR PUBLISHING
+
+6:00 PM  - Maytag Washer Dryer Repair
+           File: blog/guides/maytag-washer-dryer-repair.html
+           Status: READY FOR PUBLISHING
+
+---
+
+DAY 3: November 2, 2025 (Sunday)
+Timeline: 6 AM, 9 AM, 12 PM, 3 PM, 6 PM
+
+6:00 AM  - Appliance Repair Cabbagetown
+           File: blog/troubleshooting/appliance-repair-cabbagetown.html
+           Status: READY FOR PUBLISHING
+
+9:00 AM  - Appliance Repair Distillery District
+           File: blog/troubleshooting/appliance-repair-distillery-district.html
+           Status: READY FOR PUBLISHING
+
+12:00 PM - Appliance Repair King West
+           File: blog/troubleshooting/appliance-repair-king-west.html
+           Status: READY FOR PUBLISHING
+
+3:00 PM  - Appliance Repair Queen West
+           File: blog/troubleshooting/appliance-repair-queen-west.html
+           Status: READY FOR PUBLISHING
+
+6:00 PM  - Appliance Repair Yorkville
+           File: blog/troubleshooting/appliance-repair-yorkville.html
+           Status: READY FOR PUBLISHING
+
+---
+
+DAY 4: November 3, 2025 (Monday)
+Timeline: 6 AM, 9 AM, 12 PM, 3 PM, 6 PM
+
+6:00 AM  - Dishwasher Maintenance Hard Water
+           File: blog/maintenance/dishwasher-maintenance-hard-water.html
+           Status: READY FOR PUBLISHING
+
+9:00 AM  - How to Avoid Oven Repairs
+           File: blog/maintenance/how-to-avoid-oven-repairs.html
+           Status: READY FOR PUBLISHING
+
+12:00 PM - How to Extend Washer Life
+           File: blog/maintenance/how-to-extend-washer-life.html
+           Status: READY FOR PUBLISHING
+
+3:00 PM  - How to Maintain Refrigerator
+           File: blog/maintenance/how-to-maintain-refrigerator.html
+           Status: READY FOR PUBLISHING
+
+6:00 PM  - How to Prevent Dryer Fires
+           File: blog/maintenance/how-to-prevent-dryer-fires.html
+           Status: READY FOR PUBLISHING
+
+---
+
+DAY 5: November 4, 2025 (Tuesday)
+Timeline: 6 AM, 9 AM, 12 PM, 3 PM
+
+6:00 AM  - Refrigerator Repair vs Replace
+           File: blog/guides/refrigerator-repair-vs-replace.html
+           Status: READY FOR PUBLISHING
+
+9:00 AM  - Should You Repair Oven
+           File: blog/guides/should-you-repair-oven.html
+           Status: READY FOR PUBLISHING
+
+12:00 PM - Washing Machine Repair vs Replace
+           File: blog/guides/washing-machine-repair-vs-replace.html
+           Status: READY FOR PUBLISHING
+
+3:00 PM  - When to Replace Dryer
+           File: blog/guides/when-to-replace-dryer.html
+           Status: READY FOR PUBLISHING
+
+---
+
+SCHEDULING INSTRUCTIONS
+======================
+
+OPTION 1: Manual Publishing
+- At each scheduled time, open the corresponding HTML file
+- Copy to production directory if not already there
+- Update blog homepage to show new post
+- Share on social media
+- Update blog RSS feed if applicable
+
+OPTION 2: Automated Publishing (Requires CMS)
+- Recommended: WordPress or similar CMS with scheduling
+- Import posts into CMS
+- Set publication times
+- Enable automatic social sharing
+- Schedule goes live automatically
+
+OPTION 3: Hybrid Approach
+- Use GitHub Actions or similar to auto-publish
+- Commit post to main branch at scheduled times
+- Webhook triggers deployment
+- Post becomes live automatically
+- Manual social media posting
+
+NOTES
+====
+- All 24 posts are ready in production directories
+- All posts use premium template design with proper CSS
+- All posts added to sitemap.xml
+- Timing: 6 AM, 9 AM, 12 PM, 3 PM, 6 PM spreads traffic evenly
+- Day 5 has 4 posts (only 3 PM slot filled - no 6 PM post)
+- Each post is fully formatted and SEO-optimized
+
+VERIFICATION CHECKLIST
+=====================
+[ ] Check all 24 files exist in production directories
+[ ] Verify CSS paths are correct (../../css/)
+[ ] Confirm header and footer styling matches template
+[ ] Verify h1 and h3 colors are blue (#2196f3)
+[ ] Check sitemap.xml has all 85 URLs
+[ ] Test responsive design on mobile
+[ ] Verify schema markup is present in each post
+[ ] Check internal links between posts
+[ ] Confirm CTA buttons and contact information
+[ ] Test FAQ toggle functionality

@@ -1,0 +1,176 @@
+/* Header Optimized CSS - Nika Appliance Repair */
+/* Responsive header with trust signals */
+
+.site-header {
+    background: #ffffff;
+    color: #333;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.header-logo a {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.header-nav {
+    flex: 1;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #2196f3;
+}
+
+.header-trust {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.trust-stars {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+.trust-rating {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.trust-reviews {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    color: #666;
+}
+
+.header-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-phone, .cta-book {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.cta-phone {
+    background: linear-gradient(135deg, #27AE60 0%, #229954 100%);
+    color: white;
+}
+
+.cta-book {
+    background: #2196f3;
+    color: white;
+}
+
+.cta-phone:hover, .cta-book:hover {
+    transform: translateY(-2px);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.menu-bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s;
+}
+
+/* Mobile Styles */
+@media (max-width: 1024px) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-trust {
+        display: none;
+    }
+
+    .header-cta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cta-phone, .cta-book {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .header-nav.menu-open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #2d3748;
+        padding: 1rem;
+    }
+
+    .header-nav.menu-open .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    .header-logo a {
+        font-size: 1.25rem;
+    }
+
+    .header-cta {
+        display: none;
+    }
+}
