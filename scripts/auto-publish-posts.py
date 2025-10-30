@@ -38,7 +38,7 @@ def get_post_metadata(filepath):
 
     return metadata
 
-def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False):
+def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False, day=None):
     """
     Publish specified number of posts from drafts
 
@@ -46,6 +46,7 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False):
         count: Number of posts to publish
         drafts_folder: Path to drafts folder
         dry_run: If True, don't actually move files
+        day: If specified (e.g., 'day-1'), publish from that day's folder
     """
     base_dir = Path(__file__).parent.parent
     drafts_path = base_dir / drafts_folder
@@ -56,8 +57,20 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False):
         drafts_path.mkdir(parents=True, exist_ok=True)
         return []
 
-    # Get all draft posts
-    draft_posts = list(drafts_path.glob('*.html'))
+    # If day is specified, use day folder; otherwise get all .html files
+    if day:
+        day_path = drafts_path / day
+        if not day_path.exists():
+            print(f"[ERROR] Day folder not found: {day_path}")
+            return []
+        draft_posts = list(day_path.glob('*.html'))
+    else:
+        # Get all draft posts (excluding backup files and non-HTML files)
+        draft_posts = []
+        for root, dirs, files in os.walk(drafts_path):
+            for file in files:
+                if file.endswith('.html') and not file.endswith('.backup'):
+                    draft_posts.append(Path(root) / file)
 
     if not draft_posts:
         print(f"[INFO] No draft posts found in {drafts_folder}")
@@ -116,7 +129,7 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False):
         })
 
     print(f"\n{'='*70}")
-    print(f"✅ Published {len(published)} posts successfully!")
+    print(f"[OK] Published {len(published)} posts successfully!")
     print(f"{'='*70}\n")
 
     # Save published posts log
@@ -137,16 +150,18 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False):
 
 def main():
     parser = argparse.ArgumentParser(description='Auto-publish blog posts from drafts')
-    parser.add_argument('--count', type=int, default=5, help='Number of posts to publish (default: 5)')
+    parser.add_argument('--count', type=int, default=1, help='Number of posts to publish (default: 1 - for Vercel automation)')
     parser.add_argument('--dry-run', action='store_true', help='Show what would be published without actually moving files')
     parser.add_argument('--drafts-folder', default='blog/_drafts', help='Path to drafts folder')
+    parser.add_argument('--day', default=None, help='Publish from specific day folder (e.g., day-1, day-2)')
 
     args = parser.parse_args()
 
     published = publish_posts(
         count=args.count,
         drafts_folder=args.drafts_folder,
-        dry_run=args.dry_run
+        dry_run=args.dry_run,
+        day=args.day
     )
 
     if args.dry_run:

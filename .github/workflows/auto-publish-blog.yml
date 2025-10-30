@@ -1,15 +1,47 @@
-# Automatic Blog Post Publishing
+# Automatic Blog Post Publishing for Vercel
 # Publishes 5 posts per day from drafts folder
-# Updates sitemap.xml and blog index automatically
+# Commits changes to GitHub, Vercel auto-deploys
+# Runs 5 times per day at: 6 AM, 9 AM, 12 PM, 3 PM, 6 PM UTC
 
 name: Auto-Publish Blog Posts
 
 on:
   schedule:
-    # Run every day at 9:00 AM EST (2:00 PM UTC)
-    - cron: '0 14 * * *'
+    # Day 1: October 31 - Publish 5 posts at 6 AM, 9 AM, 12 PM, 3 PM, 6 PM UTC
+    - cron: '0 6 31 10 *'    # 6:00 AM UTC Oct 31
+    - cron: '0 9 31 10 *'    # 9:00 AM UTC Oct 31
+    - cron: '0 12 31 10 *'   # 12:00 PM UTC Oct 31
+    - cron: '0 15 31 10 *'   # 3:00 PM UTC Oct 31
+    - cron: '0 18 31 10 *'   # 6:00 PM UTC Oct 31
 
-  workflow_dispatch:  # Allow manual triggering
+    # Day 2: November 1 - Publish 5 posts at same times
+    - cron: '0 6 1 11 *'     # 6:00 AM UTC Nov 1
+    - cron: '0 9 1 11 *'     # 9:00 AM UTC Nov 1
+    - cron: '0 12 1 11 *'    # 12:00 PM UTC Nov 1
+    - cron: '0 15 1 11 *'    # 3:00 PM UTC Nov 1
+    - cron: '0 18 1 11 *'    # 6:00 PM UTC Nov 1
+
+    # Day 3: November 2
+    - cron: '0 6 2 11 *'
+    - cron: '0 9 2 11 *'
+    - cron: '0 12 2 11 *'
+    - cron: '0 15 2 11 *'
+    - cron: '0 18 2 11 *'
+
+    # Day 4: November 3
+    - cron: '0 6 3 11 *'
+    - cron: '0 9 3 11 *'
+    - cron: '0 12 3 11 *'
+    - cron: '0 15 3 11 *'
+    - cron: '0 18 3 11 *'
+
+    # Day 5: November 4 (only 4 posts, so 4 slots)
+    - cron: '0 6 4 11 *'
+    - cron: '0 9 4 11 *'
+    - cron: '0 12 4 11 *'
+    - cron: '0 15 4 11 *'
+
+  workflow_dispatch:  # Allow manual triggering from GitHub UI
 
 jobs:
   publish-posts:
@@ -26,9 +58,28 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Determine which day folder to use
+        id: day-calc
+        run: |
+          # Calculate which day based on current date (Oct 31 - Nov 4)
+          TODAY=$(date +%d)
+          if [ $TODAY -eq 31 ]; then
+            echo "day=day-1" >> $GITHUB_OUTPUT
+          elif [ $TODAY -eq 01 ]; then
+            echo "day=day-2" >> $GITHUB_OUTPUT
+          elif [ $TODAY -eq 02 ]; then
+            echo "day=day-3" >> $GITHUB_OUTPUT
+          elif [ $TODAY -eq 03 ]; then
+            echo "day=day-4" >> $GITHUB_OUTPUT
+          elif [ $TODAY -eq 04 ]; then
+            echo "day=day-5" >> $GITHUB_OUTPUT
+          else
+            echo "day=day-1" >> $GITHUB_OUTPUT
+          fi
+
       - name: Publish draft posts
         run: |
-          python scripts/auto-publish-posts.py --count 5
+          python scripts/auto-publish-posts.py --count 1 --day ${{ steps.day-calc.outputs.day }}
 
       - name: Update sitemap
         run: |
@@ -38,27 +89,44 @@ jobs:
         run: |
           python scripts/update-blog-index.py
 
-      - name: Commit and push changes
+      - name: Commit and push changes to GitHub
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions@github.com"
+          git config --local user.name "GitHub Actions Bot"
           git add -A
 
           # Check if there are changes
           if git diff --staged --quiet; then
-            echo "No posts to publish today"
+            echo "[INFO] No changes to commit"
+            exit 0
           else
-            git commit -m "Auto-publish: Daily blog posts + sitemap update
+            git commit -m "Auto-publish: Blog post published
 
-            - Published 5 new blog posts
-            - Updated sitemap.xml with new URLs
-            - Updated blog index page
+            - Timestamp: $(date)
+            - Day: ${{ steps.day-calc.outputs.day }}
+            - Source: GitHub Actions
 
-            🤖 Automated by GitHub Actions"
+            Vercel will auto-deploy this commit."
             git push
+            echo "[SUCCESS] Changes pushed to GitHub"
           fi
 
-      - name: Verify deployment
-        run: |
-          echo "✅ Blog posts published successfully!"
-          echo "Vercel will automatically deploy changes..."
+      - name: Notify on Slack (Optional)
+        if: always()
+        uses: slackapi/slack-github-action@v1
+        with:
+          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          payload: |
+            {
+              "text": "Blog post published - Check Vercel deployment",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Blog Auto-Publishing*\nDay: ${{ steps.day-calc.outputs.day }}\nStatus: Posted"
+                  }
+                }
+              ]
+            }
+        continue-on-error: true
