@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Nika Appliance Repair Toronto | Expert Repair Tips & Guides</title>
+    <meta name="description" content="Nika Appliance Repair blog - expert guides, troubleshooting tips, and maintenance advice for all major appliances in Toronto.">
+    <meta name="keywords" content="appliance repair, maintenance tips, troubleshooting guide, dishwasher, washer, dryer, refrigerator">
+    <link rel="canonical" href="https://nikaappliancerepair.com/blog/">
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="Blog - Nika Appliance Repair">
+    <meta property="og:description" content="Expert appliance repair guides, troubleshooting tips, and maintenance advice.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nikaappliancerepair.com/blog/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #f7fafc;
+        }
+
+        /* Header */
+        .seo-header {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+
+        .seo-header .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .seo-header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .seo-header h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .seo-header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        /* Blog Container */
+        .blog-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            margin-bottom: 4rem;
+        }
+
+        /* Filter Tabs */
+        .blog-filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-label {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .filter-button {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #cbd5e0;
+            background: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .filter-button:hover,
+        .filter-button.active {
+            background: #2d3748;
+            color: white;
+            border-color: #2d3748;
+        }
+
+        /* Archive Stats */
+        .archive-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #718096;
+            margin-top: 0.5rem;
+        }
+
+        /* Blog Posts Grid */
+        .blog-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .blog-post-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-post-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+        }
+
+        .post-card-header {
+            padding: 2rem 1.5rem 1rem;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .post-category {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-category.maintenance {
+            background: #bee3f8;
+            color: #2c5282;
+        }
+
+        .post-category.troubleshooting {
+            background: #fed7d7;
+            color: #742a2a;
+        }
+
+        .post-category.guides {
+            background: #c6f6d5;
+            color: #22543d;
+        }
+
+        .post-card-header h3 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+            line-height: 1.4;
+        }
+
+        .post-card-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #718096;
+            margin-top: 0.75rem;
+        }
+
+        .post-card-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .post-card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .post-card-description {
+            font-size: 0.95rem;
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .post-card-footer {
+            padding: 0 1.5rem 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: auto;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: #2d3748;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            background: #edf2f7;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .read-more:hover {
+            background: #2d3748;
+            color: white;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            background: white;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .empty-state-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        /* Footer */
+        .seo-footer-premium {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .seo-footer-premium .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-trust-badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .trust-badge-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .badge-icon {
+            font-size: 2rem;
+        }
+
+        .badge-text strong {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .badge-text span {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        .footer-main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-heading {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .blog-posts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .seo-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .blog-filters {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .archive-stats {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="seo-header">
+        <div class="container">
+            <h1><a href="/">Nika Appliance Repair</a></h1>
+            <p>Expert Blog - Maintenance Tips, Troubleshooting Guides & Expert Advice</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="blog-container">
+        <!-- Archive Stats -->
+        <div class="archive-stats">
+            <div class="stat-item">
+                <div class="stat-number">57</div>
+                <div class="stat-label">Total Posts</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Maintenance</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">43</div>
+                <div class="stat-label">Troubleshooting</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">9</div>
+                <div class="stat-label">Guides</div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="blog-filters">
+            <span class="filter-label">Filter by category:</span>
+            <button class="filter-button active" onclick="filterPosts('all')">All Posts</button>
+            <button class="filter-button" onclick="filterPosts('maintenance')">Maintenance</button>
+            <button class="filter-button" onclick="filterPosts('troubleshooting')">Troubleshooting</button>
+            <button class="filter-button" onclick="filterPosts('guides')">Guides</button>
+        </div>
+
+        <!-- Blog Posts Grid -->
+        <div class="blog-posts-grid" id="postsContainer">
+            <!-- Posts will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="seo-footer-premium">
+        <div class="container">
+            <div class="footer-trust-badges">
+                <div class="trust-badge-item">
+                    <div class="badge-icon"><i class="fas fa-award"></i></div>
+                    <div class="badge-text">
+                        <strong>Licensed & Insured</strong>
+                        <span>Certified appliance repair specialists</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon"><i class="fas fa-star"></i></div>
+                    <div class="badge-text">
+                        <strong>5-Star Rated</strong>
+                        <span>Trusted by 1000+ customers</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon"><i class="fas fa-headset"></i></div>
+                    <div class="badge-text">
+                        <strong>24/7 Support</strong>
+                        <span>Emergency repair available</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon"><i class="fas fa-tools"></i></div>
+                    <div class="badge-text">
+                        <strong>All Brands</strong>
+                        <span>We repair all major appliances</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-main-content">
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services/dishwasher-repair">Dishwasher Repair</a></li>
+                        <li><a href="/services/washer-repair">Washer Repair</a></li>
+                        <li><a href="/services/dryer-repair">Dryer Repair</a></li>
+                        <li><a href="/services/refrigerator-repair">Refrigerator Repair</a></li>
+                        <li><a href="/services/oven-repair">Oven Repair</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Locations</h4>
+                    <ul class="footer-links">
+                        <li><a href="/locations/toronto">Toronto</a></li>
+                        <li><a href="/locations/mississauga">Mississauga</a></li>
+                        <li><a href="/locations/brampton">Brampton</a></li>
+                        <li><a href="/locations/oakville">Oakville</a></li>
+                        <li><a href="/locations">All Locations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/book">Book Service</a></li>
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nika Appliance Repair. All rights reserved. | <a href="/" style="color: inherit;">Toronto's Trusted Appliance Repair Experts</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Blog posts data - generated from directory
+        const posts = [
+            // Maintenance Posts
+            {title: "Dishwasher Maintenance: Toronto Hard Water Spotting", category: "maintenance", url: "/blog/maintenance/dishwasher-maintenance-hard-water.html", description: "Toronto hard water causes spotting and damage. Complete maintenance guide with solutions."},
+            {title: "How to Maintain Your Refrigerator for Longevity", category: "maintenance", url: "/blog/maintenance/how-to-maintain-refrigerator.html", description: "Expert tips to extend your refrigerator's lifespan and keep it running efficiently."},
+            {title: "How to Extend Your Washer's Lifespan: Complete Guide", category: "maintenance", url: "/blog/maintenance/how-to-extend-washer-life.html", description: "Learn preventive maintenance techniques to maximize your washing machine's life."},
+            {title: "How to Prevent Dryer Fires: Safety Guide", category: "maintenance", url: "/blog/maintenance/how-to-prevent-dryer-fires.html", description: "Critical safety information about dryer maintenance and fire prevention."},
+            {title: "How to Avoid Expensive Oven Repairs", category: "maintenance", url: "/blog/maintenance/how-to-avoid-oven-repairs.html", description: "Preventive maintenance tips to keep your oven working properly."},
+
+            // Troubleshooting Posts
+            {title: "Appliance Repair Cabbagetown: Expert Service", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-cabbagetown.html", description: "Expert appliance repair service for Cabbagetown residents."},
+            {title: "Appliance Repair Distillery District: Professional Help", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-distillery-district.html", description: "Quick and reliable appliance repair in Distillery District."},
+            {title: "Dishwasher Not Cleaning Properly: Solutions", category: "troubleshooting", url: "/blog/troubleshooting/dishwasher-not-cleaning.html", description: "Troubleshoot why your dishwasher isn't cleaning and fix it quickly."},
+            {title: "Dryer Not Heating: Causes & Solutions", category: "troubleshooting", url: "/blog/troubleshooting/dryer-not-heating.html", description: "Diagnose and fix dryer heating issues."},
+            {title: "Oven Not Heating: Complete Troubleshooting", category: "troubleshooting", url: "/blog/troubleshooting/oven-not-heating.html", description: "Fix your oven heating problems with expert guidance."},
+            {title: "Refrigerator Not Cooling Toronto: Expert Repair", category: "troubleshooting", url: "/blog/troubleshooting/refrigerator-not-cooling-toronto.html", description: "Quick solutions for refrigerator cooling issues in Toronto."},
+            {title: "Washer Won't Drain: How to Fix", category: "troubleshooting", url: "/blog/troubleshooting/washer-wont-drain.html", description: "Troubleshoot and fix your washing machine drainage problems."},
+            {title: "Refrigerator Ice Maker Not Working", category: "troubleshooting", url: "/blog/troubleshooting/refrigerator-ice-maker-not-working.html", description: "Diagnose ice maker issues and get solutions."},
+            {title: "Washing Machine Leaking Water: Solutions", category: "troubleshooting", url: "/blog/troubleshooting/washing-machine-leaking-water.html", description: "Find and fix the source of your washing machine leak."},
+            {title: "Dryer Not Drying Clothes: Complete Guide", category: "troubleshooting", url: "/blog/troubleshooting/dryer-not-drying-clothes.html", description: "Solutions for dryer performance issues."},
+            {title: "Dishwasher Leaving Food Spots: How to Fix", category: "troubleshooting", url: "/blog/troubleshooting/dishwasher-leaving-food-spots.html", description: "Fix food spots and residue left by your dishwasher."},
+            {title: "Appliance Repair King West: Professional Service", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-king-west.html", description: "Expert repairs for King West residents."},
+            {title: "Appliance Repair Queen West: Quick Solutions", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-queen-west.html", description: "Reliable appliance repair in Queen West."},
+            {title: "Best Appliance Repair Near Me", category: "troubleshooting", url: "/blog/troubleshooting/best-appliance-repair-near-me.html", description: "Find the best local appliance repair services."},
+            {title: "Emergency Appliance Repair 24/7 Available", category: "troubleshooting", url: "/blog/troubleshooting/emergency-appliance-repair-24-7.html", description: "Emergency repair services when you need them most."},
+
+            // Guides Posts
+            {title: "Bosch Dishwasher Repair Toronto Guide", category: "guides", url: "/blog/guides/bosch-dishwasher-repair.html", description: "Expert guide to Bosch dishwasher repair and troubleshooting."},
+            {title: "Frigidaire Refrigerator Repair Guide", category: "guides", url: "/blog/guides/frigidaire-refrigerator-repair.html", description: "Complete Frigidaire refrigerator repair guide."},
+            {title: "GE Appliance Repair Toronto: Expert Guide", category: "guides", url: "/blog/guides/ge-appliance-repair-toronto.html", description: "Professional guide for GE appliance repairs."},
+            {title: "Maytag Washer & Dryer Repair Guide", category: "guides", url: "/blog/guides/maytag-washer-dryer-repair.html", description: "Expert Maytag washer and dryer repair instructions."},
+            {title: "Electrolux Appliance Repair Guide", category: "guides", url: "/blog/guides/electrolux-appliance-repair.html", description: "Complete guide to Electrolux appliance repairs."},
+            {title: "Refrigerator Repair vs Replace: Decision Guide", category: "guides", url: "/blog/guides/refrigerator-repair-vs-replace.html", description: "Help deciding whether to repair or replace your refrigerator."},
+            {title: "Should You Repair Your Oven? Expert Advice", category: "guides", url: "/blog/guides/should-you-repair-oven.html", description: "Guidance on oven repair vs replacement decisions."},
+            {title: "Washing Machine Repair vs Replace: Guide", category: "guides", url: "/blog/guides/washing-machine-repair-vs-replace.html", description: "Expert advice on washer repair or replacement."},
+            {title: "When to Replace Your Dryer: Expert Guide", category: "guides", url: "/blog/guides/when-to-replace-dryer.html", description: "Learn when it's time to replace your dryer."}
+        ];
+
+        // Extend with additional posts if needed
+        const additionalPosts = [
+            {title: "Appliance Repair Grande Prairie", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-grande-prairie.html", description: "Professional appliance repair in Grande Prairie area."},
+            {title: "Appliance Repair Yorkville", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-yorkville.html", description: "Expert repairs for Yorkville residents."},
+            {title: "Appliance Repair Avenue Road", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-avenue-road.html", description: "Professional service in Avenue Road area."},
+            {title: "Appliance Repair Bloor West", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-bloor-west.html", description: "Reliable repairs in Bloor West neighbourhood."},
+            {title: "Appliance Repair Downtown Toronto", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-downtown-toronto.html", description: "Expert service in downtown Toronto."},
+            {title: "Appliance Repair East Toronto", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-east-toronto.html", description: "Professional repairs in East Toronto."},
+            {title: "Appliance Repair Forest Hill", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-forest-hill.html", description: "Expert service for Forest Hill residents."},
+            {title: "Appliance Repair Leslieville", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-leslieville.html", description: "Quick appliance repairs in Leslieville."},
+            {title: "Appliance Repair Little Italy", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-little-italy.html", description: "Reliable service in Little Italy neighbourhood."},
+            {title: "Appliance Repair Parkdale", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-parkdale.html", description: "Expert repairs serving Parkdale area."},
+            {title: "Appliance Repair Rosedale", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-rosedale.html", description: "Professional service in Rosedale."},
+            {title: "Appliance Repair Riverdale", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-riverdale.html", description: "Expert repairs for Riverdale residents."},
+            {title: "Appliance Repair Kensington Market", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-kensington-market.html", description: "Quick repairs in Kensington Market."},
+            {title: "Appliance Repair Chinatown", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-chinatown.html", description: "Reliable service in Chinatown."},
+            {title: "Appliance Repair Ossington", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-ossington.html", description: "Expert repairs in Ossington area."},
+            {title: "Appliance Repair Spadina", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-spadina.html", description: "Professional service along Spadina."},
+            {title: "Appliance Repair Bathurst", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-bathurst.html", description: "Expert repairs in Bathurst area."},
+            {title: "Appliance Repair Christie Station", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-christie-station.html", description: "Quick service near Christie Station."},
+            {title: "Appliance Repair Dundas West", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-dundas-west.html", description: "Reliable repairs in Dundas West."},
+            {title: "Appliance Repair Bloor East", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-bloor-east.html", description: "Expert service in Bloor East area."},
+            {title: "Appliance Repair Wellesley", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-wellesley.html", description: "Professional repairs in Wellesley area."},
+            {title: "Appliance Repair College Street", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-college-street.html", description: "Quick repairs on College Street."},
+            {title: "Appliance Repair University Avenue", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-university-avenue.html", description: "Expert service near University Avenue."}
+        ];
+
+        // Combine all posts
+        const allPosts = posts.concat(additionalPosts);
+
+        // Filter and display posts
+        function filterPosts(category) {
+            // Update button states
+            document.querySelectorAll('.filter-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Filter posts
+            const filtered = category === 'all' ? allPosts : allPosts.filter(p => p.category === category);
+
+            // Display posts
+            displayPosts(filtered);
+        }
+
+        function displayPosts(postsToDisplay) {
+            const container = document.getElementById('postsContainer');
+
+            if (postsToDisplay.length === 0) {
+                container.innerHTML = '<div class="empty-state"><div class="empty-state-icon"><i class="fas fa-inbox"></i></div><h3>No posts found</h3><p>Try adjusting your filters</p></div>';
+                return;
+            }
+
+            container.innerHTML = postsToDisplay.map(post => `
+                <div class="blog-post-card">
+                    <div class="post-card-header">
+                        <span class="post-category ${post.category}">${post.category}</span>
+                        <h3>${post.title}</h3>
+                        <div class="post-card-meta">
+                            <span><i class="fas fa-calendar"></i> Published</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                    </div>
+                    <div class="post-card-body">
+                        <p class="post-card-description">${post.description}</p>
+                    </div>
+                    <div class="post-card-footer">
+                        <a href="${post.url}" class="read-more">Read More <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i></a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Load all posts on page load
+        window.addEventListener('load', () => {
+            displayPosts(allPosts);
+        });
+    </script>
+</body>
+</html>
