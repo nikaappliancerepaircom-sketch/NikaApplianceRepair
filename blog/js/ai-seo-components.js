@@ -115,7 +115,9 @@ const AUTHORS = {
         repairCount: '1,800+',
         successRate: '98%',
         email: 'sarah@nikaappliancerepair.com',
-        bio: 'Sarah has 12 years of experience repairing major appliances across Toronto. She specializes in diagnosing complex cooling system failures and has a 98% first-visit fix rate.'
+        bio: 'Sarah has 12 years of experience repairing major appliances across Toronto. She specializes in diagnosing complex cooling system failures and has a 98% first-visit fix rate.',
+        phone: '647-557-6342',
+        location: 'Toronto, ON'
     },
     'michael-toronto': {
         name: 'Michael Toronto',
@@ -126,7 +128,35 @@ const AUTHORS = {
         repairCount: '1,500+',
         successRate: '96%',
         email: 'michael@nikaappliancerepair.com',
-        bio: 'Michael specializes in dishwasher repairs and hard water solutions across the GTA. He has extensive experience with Toronto\'s water conditions.'
+        bio: 'Michael specializes in dishwasher repairs and hard water solutions across the GTA. He has extensive experience with Toronto\'s water conditions.',
+        phone: '647-557-6342',
+        location: 'Toronto, ON'
+    },
+    'james-wilson': {
+        name: 'James Wilson',
+        title: 'Washer & Dryer Specialist',
+        experience: '14 years',
+        certifications: ['Maytag Certified', 'GE Certified', 'Speed Queen Certified'],
+        specialties: ['Washing Machines', 'Dryers', 'Laundry Systems'],
+        repairCount: '2,200+',
+        successRate: '97%',
+        email: 'james@nikaappliancerepair.com',
+        bio: 'James has 14 years of experience specializing in washer and dryer repairs across Toronto. He has extensive knowledge of both front-load and top-load systems and can diagnose complex drainage and heating issues.',
+        phone: '647-557-6342',
+        location: 'Toronto, ON'
+    },
+    'david-martinez': {
+        name: 'David Martinez',
+        title: 'Oven & Stove Expert',
+        experience: '11 years',
+        certifications: ['Wolf Certified', 'Viking Certified', 'Thermador Certified'],
+        specialties: ['Ovens', 'Stoves', 'Ranges', 'Cooktops'],
+        repairCount: '1,600+',
+        successRate: '96%',
+        email: 'david@nikaappliancerepair.com',
+        bio: 'David has 11 years of experience repairing ovens, stoves, and ranges across Toronto. He specializes in gas and electric cooking appliances and has expertise in diagnosing heating element failures and control board issues.',
+        phone: '647-557-6342',
+        location: 'Toronto, ON'
     },
     'expert-team': {
         name: 'Nika Expert Team',
@@ -137,7 +167,9 @@ const AUTHORS = {
         repairCount: '5,000+',
         successRate: '97%',
         email: 'info@nikaappliancerepair.com',
-        bio: 'Our team of certified technicians has over 15 years of combined experience repairing all major appliances across Toronto and the GTA.'
+        bio: 'Our team of certified technicians has over 15 years of combined experience repairing all major appliances across Toronto and the GTA.',
+        phone: '647-557-6342',
+        location: 'Toronto, ON'
     }
 };
 
