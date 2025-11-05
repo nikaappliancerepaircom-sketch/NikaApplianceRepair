@@ -615,3 +615,30 @@ p {
         font-size: clamp(1.125rem, 2.5vw, 1.5rem);
     }
 }
+
+/* ============================================
+   PRICING TABLE RESPONSIVE DISPLAY
+   Hide mobile cards on desktop, hide table on mobile
+   ============================================ */
+
+/* Desktop: Show table, hide mobile cards */
+@media (min-width: 769px) {
+    .pricing-mobile-cards {
+        display: none !important;
+    }
+
+    .pricing-table {
+        display: table !important;
+    }
+}
+
+/* Mobile: Hide table, show mobile cards */
+@media (max-width: 768px) {
+    .pricing-table {
+        display: none !important;
+    }
+
+    .pricing-mobile-cards {
+        display: block !important;
+    }
+}
