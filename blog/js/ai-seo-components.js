@@ -147,11 +147,6 @@ function createAuthorBox(authorSlug = 'expert-team') {
 
     return `
         <div class="author-box-ai">
-            <div class="author-avatar">
-                <img src="/images/authors/${authorSlug}.jpg"
-                     alt="${author.name}"
-                     onerror="this.src='/images/authors/default.jpg'">
-            </div>
             <div class="author-info">
                 <h3 class="author-name">${author.name}</h3>
                 <p class="author-title">${author.title}</p>
