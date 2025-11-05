@@ -177,10 +177,15 @@ function createAuthorBox(authorSlug = 'expert-team') {
     const author = AUTHORS[authorSlug];
     if (!author) return '';
 
+    // Determine the profile link based on author slug
+    const profileLink = authorSlug === 'expert-team'
+        ? '/team.html'
+        : `/team/${authorSlug}.html`;
+
     return `
         <div class="author-box-ai">
             <div class="author-info">
-                <h3 class="author-name">${author.name}</h3>
+                <h3 class="author-name"><a href="${profileLink}" class="author-name-link">${author.name}</a></h3>
                 <p class="author-title">${author.title}</p>
                 <ul class="author-credentials">
                     <li><i class="fas fa-check-circle"></i> ${author.experience} experience in Toronto</li>
@@ -191,6 +196,7 @@ function createAuthorBox(authorSlug = 'expert-team') {
                 <p class="author-bio">${author.bio}</p>
                 <div class="author-contact">
                     <a href="mailto:${author.email}"><i class="fas fa-envelope"></i> ${author.email}</a>
+                    <a href="${profileLink}" class="view-profile-btn"><i class="fas fa-user"></i> View Full Profile</a>
                 </div>
             </div>
         </div>
