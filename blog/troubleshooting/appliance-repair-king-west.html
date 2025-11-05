@@ -146,6 +146,61 @@
     <meta property="og:url" content="/blog/appliance-repair-king-west.html">
     <meta property="article:published_time" content="2025-10-03">
     <meta property="article:modified_time" content="2025-10-03">
+
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Appliance Repair King West: Downtown Toronto Service | Nika Appliance Repair",
+      "author": {
+            "@type": "Person",
+            "name": "Nika Expert Team",
+            "jobTitle": "Certified Repair Specialists"
+      },
+      "publisher": {
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair",
+            "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://nikaappliancerepair.com/images/logo.png"
+            }
+      },
+      "datePublished": "2025-10-15",
+      "dateModified": "2025-10-15",
+      "image": "https://nikaappliancerepair.com/images/blog-default.jpg",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://nikaappliancerepair.com/blog/troubleshooting/appliance-repair-king-west.html"
+      }
+}
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+            {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://nikaappliancerepair.com"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": "https://nikaappliancerepair.com/blog"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Troubleshooting",
+                  "item": "https://nikaappliancerepair.com/blog/troubleshooting"
+            }
+      ]
+}
+    </script>
+    <link rel="stylesheet" href="/blog/css/ai-seo-styles.css">
 </head>
 <body>
     <div class="reading-progress" id="progressBar"></div>
@@ -465,5 +520,35 @@
             });
         }
     </script>
+
+    <!-- AI SEO Components -->
+    <script src="/blog/js/ai-seo-components.js"></script>
+    <script src="/blog/js/blog-ai-seo-config.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const config = BLOG_AI_SEO_CONFIG['appliance-repair-king-west'];
+            if (config) {
+                initializeAIComponents({
+                    article: {
+                        title: document.querySelector('h1')?.textContent || '',
+                        author: config.author,
+                        publishDate: config.publishDate
+                    },
+                    breadcrumbs: [
+                        { name: 'Home', url: 'https://nikaappliancerepair.com' },
+                        { name: 'Blog', url: 'https://nikaappliancerepair.com/blog' }
+                    ],
+                    faqs: config.faqs || [],
+                    components: {
+                        directAnswer: config.directAnswer,
+                        atAGlance: config.atAGlance,
+                        author: config.author,
+                        experience: config.experience
+                    }
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>

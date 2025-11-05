@@ -189,6 +189,61 @@
     <meta property="og:url" content="/blog/how-to-avoid-oven-repairs.html">
     <meta property="article:published_time" content="2025-10-05">
     <meta property="article:modified_time" content="2025-10-05">
+
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to Avoid Expensive Oven Repairs: Maintenance Guide for Toronto",
+      "author": {
+            "@type": "Person",
+            "name": "Nika Expert Team",
+            "jobTitle": "Certified Repair Specialists"
+      },
+      "publisher": {
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair",
+            "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://nikaappliancerepair.com/images/logo.png"
+            }
+      },
+      "datePublished": "2025-10-23",
+      "dateModified": "2025-10-23",
+      "image": "https://nikaappliancerepair.com/images/blog-default.jpg",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://nikaappliancerepair.com/blog/maintenance/how-to-avoid-oven-repairs.html"
+      }
+}
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+            {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://nikaappliancerepair.com"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": "https://nikaappliancerepair.com/blog"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Maintenance",
+                  "item": "https://nikaappliancerepair.com/blog/maintenance"
+            }
+      ]
+}
+    </script>
+    <link rel="stylesheet" href="/blog/css/ai-seo-styles.css">
 </head>
 <body>
     <!-- Reading Progress Bar -->
@@ -814,5 +869,35 @@
             });
         }
     </script>
+
+    <!-- AI SEO Components -->
+    <script src="/blog/js/ai-seo-components.js"></script>
+    <script src="/blog/js/blog-ai-seo-config.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const config = BLOG_AI_SEO_CONFIG['how-to-avoid-oven-repairs'];
+            if (config) {
+                initializeAIComponents({
+                    article: {
+                        title: document.querySelector('h1')?.textContent || '',
+                        author: config.author,
+                        publishDate: config.publishDate
+                    },
+                    breadcrumbs: [
+                        { name: 'Home', url: 'https://nikaappliancerepair.com' },
+                        { name: 'Blog', url: 'https://nikaappliancerepair.com/blog' }
+                    ],
+                    faqs: config.faqs || [],
+                    components: {
+                        directAnswer: config.directAnswer,
+                        atAGlance: config.atAGlance,
+                        author: config.author,
+                        experience: config.experience
+                    }
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>

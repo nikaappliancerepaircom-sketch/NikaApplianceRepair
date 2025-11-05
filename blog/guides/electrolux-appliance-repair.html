@@ -147,6 +147,61 @@
     <meta property="og:url" content="/blog/electrolux-appliance-repair.html">
     <meta property="article:published_time" content="2025-10-28">
     <meta property="article:modified_time" content="2025-10-28">
+
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Electrolux Appliance Repair: Washer, Dryer, Refrigerator Service",
+      "author": {
+            "@type": "Person",
+            "name": "Nika Expert Team",
+            "jobTitle": "Certified Repair Specialists"
+      },
+      "publisher": {
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair",
+            "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://nikaappliancerepair.com/images/logo.png"
+            }
+      },
+      "datePublished": "2025-10-15",
+      "dateModified": "2025-10-15",
+      "image": "https://nikaappliancerepair.com/images/blog-default.jpg",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://nikaappliancerepair.com/blog/guides/electrolux-appliance-repair.html"
+      }
+}
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+            {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://nikaappliancerepair.com"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": "https://nikaappliancerepair.com/blog"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Guides",
+                  "item": "https://nikaappliancerepair.com/blog/guides"
+            }
+      ]
+}
+    </script>
+    <link rel="stylesheet" href="/blog/css/ai-seo-styles.css">
 </head>
 <body>
     <div class="reading-progress" id="progressBar"></div>
@@ -396,6 +451,36 @@
     <p>Don't let Electrolux appliance problems disrupt your household across multiple categories. Contact Nika Appliance Repair for expert diagnosis and affordable multi-appliance service. Our certified Electrolux specialists bring brand-specific expertise, competitive pricing, and comprehensive warranty protection. With 30-50% savings versus manufacturer support and our 90-day guarantee, you'll trust us with all your Electrolux appliances.</p>
 
     <p>Schedule your Electrolux appliance repair today. Call now for immediate service or book online. Emergency water leak and cooling failure service is available 24/7. Let us become your trusted Electrolux service partner for many years to come.</p>
+
+
+    <!-- AI SEO Components -->
+    <script src="/blog/js/ai-seo-components.js"></script>
+    <script src="/blog/js/blog-ai-seo-config.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const config = BLOG_AI_SEO_CONFIG['electrolux-appliance-repair'];
+            if (config) {
+                initializeAIComponents({
+                    article: {
+                        title: document.querySelector('h1')?.textContent || '',
+                        author: config.author,
+                        publishDate: config.publishDate
+                    },
+                    breadcrumbs: [
+                        { name: 'Home', url: 'https://nikaappliancerepair.com' },
+                        { name: 'Blog', url: 'https://nikaappliancerepair.com/blog' }
+                    ],
+                    faqs: config.faqs || [],
+                    components: {
+                        directAnswer: config.directAnswer,
+                        atAGlance: config.atAGlance,
+                        author: config.author,
+                        experience: config.experience
+                    }
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
