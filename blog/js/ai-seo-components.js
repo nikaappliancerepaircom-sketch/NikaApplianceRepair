@@ -114,7 +114,7 @@ const AUTHORS = {
         specialties: ['Refrigerators', 'Cooling Systems'],
         repairCount: '1,800+',
         successRate: '98%',
-        email: 'sarah@nikarepair.com',
+        email: 'sarah@nikaappliancerepair.com',
         bio: 'Sarah has 12 years of experience repairing major appliances across Toronto. She specializes in diagnosing complex cooling system failures and has a 98% first-visit fix rate.'
     },
     'michael-toronto': {
@@ -125,7 +125,7 @@ const AUTHORS = {
         specialties: ['Dishwashers', 'Hard Water Solutions'],
         repairCount: '1,500+',
         successRate: '96%',
-        email: 'michael@nikarepair.com',
+        email: 'michael@nikaappliancerepair.com',
         bio: 'Michael specializes in dishwasher repairs and hard water solutions across the GTA. He has extensive experience with Toronto\'s water conditions.'
     },
     'expert-team': {
@@ -136,7 +136,7 @@ const AUTHORS = {
         specialties: ['All Appliances'],
         repairCount: '5,000+',
         successRate: '97%',
-        email: 'info@nikarepair.com',
+        email: 'info@nikaappliancerepair.com',
         bio: 'Our team of certified technicians has over 15 years of combined experience repairing all major appliances across Toronto and the GTA.'
     }
 };
