@@ -417,3 +417,201 @@ a.call-btn-large:visited {
     color: white !important;
     text-decoration: none !important;
 }
+
+/* ============================================
+   UNIFIED TYPOGRAPHY SYSTEM
+   Responsive heading sizes with consistent styling
+   ============================================ */
+
+/* Global Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-bold);
+    line-height: var(--leading-tight);
+    color: var(--text-primary);
+    margin-bottom: var(--space-4);
+}
+
+/* H1 - Main Page Title */
+h1 {
+    font-size: clamp(2rem, 5vw + 1rem, 3.5rem); /* 32px - 63px */
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-6);
+}
+
+/* H2 - Section Titles */
+h2 {
+    font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem); /* 24px - 45px */
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4);
+}
+
+/* H3 - Subsection Titles */
+h3 {
+    font-size: clamp(1.25rem, 2.5vw + 0.5rem, 2rem); /* 20px - 36px */
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-3);
+}
+
+/* H4 - Minor Headings */
+h4 {
+    font-size: clamp(1.125rem, 2vw + 0.25rem, 1.5rem); /* 18px - 27px */
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-3);
+}
+
+/* H5 & H6 - Rarely Used */
+h5 {
+    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem); /* 16px - 20px */
+    color: var(--text-primary);
+}
+
+h6 {
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1rem); /* 14px - 16px */
+    color: var(--text-primary);
+}
+
+/* Body Text */
+body {
+    font-family: var(--font-body);
+    font-size: clamp(0.875rem, 1vw + 0.25rem, 1.125rem); /* 14px - 18px */
+    line-height: 1.7;
+    color: var(--text-body);
+}
+
+/* Paragraph */
+p {
+    margin-bottom: var(--space-4);
+    line-height: 1.7;
+}
+
+/* ============================================
+   HEADING UTILITY CLASSES
+   For overriding default styles when needed
+   ============================================ */
+
+/* Hero Title - Large, white text on colored background */
+.hero-title {
+    color: var(--white) !important;
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+}
+
+/* Section Title - Used for major sections */
+.section-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    text-align: center;
+    margin-bottom: var(--space-8);
+}
+
+/* Section Title Light - On colored backgrounds */
+.section-title-light {
+    color: var(--white) !important;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    text-align: center;
+    margin-bottom: var(--space-8);
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+}
+
+/* Highlight Colors */
+.highlight-yellow {
+    color: var(--primary-yellow);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-blue {
+    color: var(--primary-blue);
+}
+
+/* Text without gradient (for dark backgrounds) */
+.text-no-gradient {
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+    color: inherit !important;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 968px) {
+    h1 {
+        font-size: clamp(1.75rem, 4vw + 1rem, 3rem);
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 3vw + 0.5rem, 2.25rem);
+    }
+
+    h3 {
+        font-size: clamp(1.25rem, 2.5vw + 0.5rem, 1.875rem);
+    }
+
+    body {
+        font-size: clamp(0.875rem, 1vw + 0.25rem, 1rem);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        margin-bottom: var(--space-4);
+    }
+
+    h2 {
+        font-size: clamp(1.25rem, 3.5vw, 2rem);
+    }
+
+    h3 {
+        font-size: clamp(1.125rem, 3vw, 1.75rem);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .section-title,
+    .section-title-light {
+        font-size: clamp(1.5rem, 3.5vw, 2rem);
+        margin-bottom: var(--space-6);
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: clamp(1.5rem, 3.5vw, 2rem);
+    }
+
+    h2 {
+        font-size: clamp(1.25rem, 3vw, 1.75rem);
+    }
+
+    h3 {
+        font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    }
+}
