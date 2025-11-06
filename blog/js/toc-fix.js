@@ -17,6 +17,7 @@
         addIDsToHeadings();
         fixStickyTOC();
         smoothScrollToAnchors();
+        fixRelatedPostLinks();
     }
 
     /**
@@ -28,41 +29,35 @@
         if (!mainContent) return;
 
         const headings = mainContent.querySelectorAll('h2, h3');
-        let h2Index = 0;
-        let h3Index = 0;
+        let subsectionIndex = 0;
 
         headings.forEach((heading) => {
             // Skip if already has an ID
             if (heading.id) return;
 
-            // Generate ID from text content
-            let id = heading.textContent
-                .toLowerCase()
-                .trim()
-                .replace(/[^\w\s-]/g, '') // Remove special characters
-                .replace(/\s+/g, '-') // Replace spaces with hyphens
-                .replace(/--+/g, '-'); // Replace multiple hyphens with single
+            // For H3 headings, use subsection-X to match TOC links
+            if (heading.tagName === 'H3') {
+                heading.id = `subsection-${subsectionIndex}`;
+                subsectionIndex++;
+            } else {
+                // For H2, generate ID from text content
+                let id = heading.textContent
+                    .toLowerCase()
+                    .trim()
+                    .replace(/[^\w\s-]/g, '') // Remove special characters
+                    .replace(/\s+/g, '-') // Replace spaces with hyphens
+                    .replace(/--+/g, '-'); // Replace multiple hyphens with single
 
-            // If empty or just numbers, use generic ID
-            if (!id || /^\d+$/.test(id)) {
-                if (heading.tagName === 'H2') {
-                    id = `section-${h2Index}`;
-                    h2Index++;
-                } else {
-                    id = `subsection-${h3Index}`;
-                    h3Index++;
+                // Ensure uniqueness
+                let finalId = id;
+                let counter = 1;
+                while (document.getElementById(finalId)) {
+                    finalId = `${id}-${counter}`;
+                    counter++;
                 }
-            }
 
-            // Ensure uniqueness
-            let finalId = id;
-            let counter = 1;
-            while (document.getElementById(finalId)) {
-                finalId = `${id}-${counter}`;
-                counter++;
+                heading.id = finalId;
             }
-
-            heading.id = finalId;
         });
     }
 
@@ -185,5 +180,52 @@
             ticking = true;
         }
     });
+
+    /**
+     * Fix Related Posts links to work with both local files and web server
+     * Ensures links work correctly regardless of how the site is accessed
+     */
+    function fixRelatedPostLinks() {
+        const relatedLinks = document.querySelectorAll('.related-post a');
+        const isFileProtocol = window.location.protocol === 'file:';
+
+        relatedLinks.forEach(link => {
+            let href = link.getAttribute('href');
+
+            // Only process links that start with /blog/
+            if (!href || !href.startsWith('/blog/')) return;
+
+            // For file:// protocol, we need relative paths
+            // For http/https, we need to ensure paths are correct
+            if (isFileProtocol) {
+                // Convert /blog/category/file.html to relative path
+                const currentPath = window.location.pathname;
+                const currentParts = currentPath.split('/').filter(p => p && p !== 'C:');
+
+                // Extract target file information
+                // href is like "/blog/maintenance/file.html"
+                const targetParts = href.substring(1).split('/'); // Remove leading slash
+
+                if (targetParts.length >= 3) {
+                    const targetCategory = targetParts[1]; // 'maintenance', 'guides', etc.
+                    const targetFile = targetParts[2]; // filename
+
+                    // Determine current category from URL
+                    const blogIndex = currentParts.indexOf('blog');
+                    const currentCategory = blogIndex >= 0 && currentParts[blogIndex + 1] ? currentParts[blogIndex + 1] : null;
+
+                    if (currentCategory === targetCategory) {
+                        // Same directory
+                        link.setAttribute('href', targetFile);
+                    } else if (currentCategory) {
+                        // Different directory
+                        link.setAttribute('href', `../${targetCategory}/${targetFile}`);
+                    }
+                }
+            }
+            // For web servers, keep the absolute path as-is
+            // They should work correctly with proper server configuration
+        });
+    }
 
 })();
