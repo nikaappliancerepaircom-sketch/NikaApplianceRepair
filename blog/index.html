@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Nika Appliance Repair Toronto | Expert Repair Tips & Guides</title>
-    <meta name="description" content="Nika Appliance Repair blog - expert guides, troubleshooting tips, and maintenance advice for all major appliances in Toronto.">
-    <meta name="keywords" content="appliance repair, maintenance tips, troubleshooting guide, dishwasher, washer, dryer, refrigerator">
+    <title>Blog Archive - Nika Appliance Repair Toronto | 67 Expert Guides & Tips</title>
+    <meta name="description" content="Browse 67 expert appliance repair guides, maintenance tips, and troubleshooting articles. Professional advice for Toronto homeowners.">
+    <meta name="keywords" content="appliance repair blog, maintenance guides, troubleshooting tips, Toronto, refrigerator, washer, dryer, dishwasher">
     <link rel="canonical" href="https://nikaappliancerepair.com/blog/">
 
     <!-- OpenGraph Tags -->
-    <meta property="og:title" content="Blog - Nika Appliance Repair">
-    <meta property="og:description" content="Expert appliance repair guides, troubleshooting tips, and maintenance advice.">
+    <meta property="og:title" content="Blog Archive - Nika Appliance Repair">
+    <meta property="og:description" content="67 expert appliance repair guides and troubleshooting tips for Toronto homeowners.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nikaappliancerepair.com/blog/">
 
@@ -29,587 +29,652 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --primary-orange: #FF6B35;
+            --primary-dark: #E85A2A;
+            --primary-light: #FF8C61;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --bg-white: #ffffff;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
         body {
             font-family: 'Rubik', sans-serif;
             line-height: 1.6;
-            color: #2d3748;
-            background: #f7fafc;
+            color: var(--text-dark);
+            background: var(--bg-light);
         }
 
-        /* Header */
-        .seo-header {
-            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+        /* Header Hero */
+        .blog-hero {
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-dark) 100%);
             color: white;
-            padding: 2rem 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 3rem;
+            padding: 4rem 0 3rem;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
         }
 
-        .seo-header .container {
+        .blog-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: rgba(255,255,255,0.05);
+            transform: skewX(-15deg);
+            transform-origin: top;
+        }
+
+        .blog-hero .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .blog-hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        /* Main Container */
+        .main-container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 2rem;
         }
 
-        .seo-header a {
-            color: white;
-            text-decoration: none;
+        /* Stats Section */
+        .stats-section {
+            transform: translateY(-2rem);
+            margin-bottom: 2rem;
         }
 
-        .seo-header h1 {
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-number {
             font-family: 'Fredoka', sans-serif;
-            font-size: 2rem;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+            line-height: 1;
             margin-bottom: 0.5rem;
         }
 
-        .seo-header p {
-            opacity: 0.9;
-            font-size: 1.1rem;
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-weight: 500;
         }
 
-        /* Blog Container */
-        .blog-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            margin-bottom: 4rem;
+        /* Search & Filter Section */
+        .controls-section {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 3rem;
         }
 
-        /* Filter Tabs */
-        .blog-filters {
-            display: flex;
-            gap: 1rem;
+        .search-box {
             margin-bottom: 2rem;
-            flex-wrap: wrap;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+            max-width: 600px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-orange);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+        }
+
+        .filter-section {
+            display: flex;
             align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
         }
 
         .filter-label {
             font-weight: 600;
-            color: #2196F3;
+            color: var(--text-dark);
             font-family: 'Fredoka', sans-serif;
         }
 
-        .filter-button {
+        .filter-buttons {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
             padding: 0.75rem 1.5rem;
-            border: 2px solid #2196F3;
-            background: white;
-            color: #2196F3;
+            border: 2px solid var(--primary-orange);
+            background: var(--bg-white);
+            color: var(--primary-orange);
             border-radius: 25px;
             cursor: pointer;
             font-size: 0.95rem;
-            transition: all 0.3s;
             font-weight: 600;
             font-family: 'Fredoka', sans-serif;
+            transition: all 0.3s ease;
         }
 
-        .filter-button:hover,
-        .filter-button.active {
-            background: #2196F3;
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-orange);
             color: white;
-            border-color: #2196F3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
         }
 
-        /* Archive Stats */
-        .archive-stats {
+        .filter-btn .count {
+            opacity: 0.7;
+            font-size: 0.85rem;
+            margin-left: 0.25rem;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #2196F3;
-            font-family: 'Fredoka', sans-serif;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            color: #2d3748;
-            margin-top: 0.5rem;
-            font-weight: 500;
-        }
-
-        /* Blog Posts Grid */
-        .blog-posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
             gap: 2rem;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
         }
 
-        .blog-post-card {
-            background: white;
-            border-radius: 8px;
+        .blog-card {
+            background: var(--bg-white);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: all 0.3s;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
+            border: 1px solid #e2e8f0;
         }
 
-        .blog-post-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+        .blog-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
         }
 
-        .post-card-header {
-            padding: 2rem 1.5rem 1rem;
-            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-            border-bottom: 3px solid #2196F3;
+        .card-header {
+            padding: 1.5rem 1.5rem 1rem;
         }
 
-        .post-category {
+        .category-badge {
             display: inline-block;
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
             font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
-            padding: 0.35rem 0.75rem;
-            border-radius: 4px;
-            margin-bottom: 0.75rem;
-        }
-
-        .post-category.maintenance {
-            background: #bee3f8;
-            color: #2c5282;
-        }
-
-        .post-category.troubleshooting {
-            background: #fed7d7;
-            color: #742a2a;
-        }
-
-        .post-category.guides {
-            background: #c6f6d5;
-            color: #22543d;
-        }
-
-        .post-card-header h3 {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: #2196F3;
-            line-height: 1.4;
-        }
-
-        .post-card-meta {
-            display: flex;
-            gap: 1rem;
-            font-size: 0.85rem;
-            color: #718096;
-            margin-top: 0.75rem;
-        }
-
-        .post-card-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-        }
-
-        .post-card-body {
-            padding: 1.5rem;
-            flex-grow: 1;
-        }
-
-        .post-card-description {
-            font-size: 0.95rem;
-            color: #4a5568;
-            line-height: 1.6;
+            letter-spacing: 0.5px;
             margin-bottom: 1rem;
         }
 
-        .post-card-footer {
+        .category-badge.guides {
+            background: #D4F1F4;
+            color: #0E7490;
+        }
+
+        .category-badge.maintenance {
+            background: #FEE2D5;
+            color: #C05621;
+        }
+
+        .category-badge.troubleshooting {
+            background: #FFE4E1;
+            color: #C53030;
+        }
+
+        .card-header h3 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .card-header h3 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .card-header h3 a:hover {
+            color: var(--primary-orange);
+        }
+
+        .card-description {
             padding: 0 1.5rem 1.5rem;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            padding: 1rem 1.5rem;
             border-top: 1px solid #e2e8f0;
-            margin-top: auto;
+            background: #fafafa;
         }
 
         .read-more {
-            display: inline-block;
-            color: #2196F3;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-orange);
+            font-weight: 600;
+            font-size: 0.95rem;
             text-decoration: none;
-            font-weight: 700;
-            padding: 0.75rem 1.5rem;
-            background: #E3F2FD;
-            border-radius: 4px;
-            transition: all 0.3s;
-            font-family: 'Fredoka', sans-serif;
+            transition: all 0.2s;
         }
 
         .read-more:hover {
-            background: #2196F3;
-            color: white;
+            gap: 0.75rem;
+        }
+
+        .read-more i {
+            font-size: 0.85rem;
         }
 
         /* Empty State */
         .empty-state {
             text-align: center;
-            padding: 3rem;
-            background: white;
-            border-radius: 8px;
-            margin: 2rem 0;
+            padding: 4rem 2rem;
+            background: var(--bg-white);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
         }
 
-        .empty-state-icon {
-            font-size: 3rem;
+        .empty-state i {
+            font-size: 4rem;
+            color: var(--primary-orange);
             margin-bottom: 1rem;
             opacity: 0.5;
         }
 
+        .empty-state h3 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .empty-state p {
+            color: var(--text-light);
+        }
+
         /* Footer */
-        .seo-footer-premium {
-            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+        .blog-footer {
+            background: var(--text-dark);
             color: white;
-            padding: 3rem 0 1.5rem;
-            margin-top: 4rem;
+            padding: 3rem 0;
+            text-align: center;
         }
 
-        .seo-footer-premium .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .footer-trust-badges {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .trust-badge-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .badge-icon {
-            font-size: 2rem;
-        }
-
-        .badge-text strong {
-            display: block;
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .badge-text span {
-            font-size: 0.875rem;
-            opacity: 0.8;
-        }
-
-        .footer-main-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-heading {
-            font-size: 1.125rem;
-            margin-bottom: 1rem;
+        .blog-footer a {
+            color: var(--primary-light);
+            text-decoration: none;
             font-weight: 600;
         }
 
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-links a {
-            color: rgba(255,255,255,0.8);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            opacity: 0.8;
+        .blog-footer a:hover {
+            color: var(--primary-orange);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .blog-posts-grid {
+            .blog-hero h1 {
+                font-size: 2rem;
+            }
+
+            .blog-hero p {
+                font-size: 1rem;
+            }
+
+            .blog-grid {
                 grid-template-columns: 1fr;
             }
 
-            .seo-header h1 {
-                font-size: 1.5rem;
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .blog-filters {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .archive-stats {
-                grid-template-columns: repeat(3, 1fr);
+            .stat-number {
+                font-size: 2.5rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="seo-header">
+    <!-- Hero Section -->
+    <header class="blog-hero">
         <div class="container">
-            <h1><a href="/">Nika Appliance Repair</a></h1>
-            <p>Expert Blog - Maintenance Tips, Troubleshooting Guides & Expert Advice</p>
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fas fa-tools"></i> Expert Knowledge Base</span>
+                <h1>Appliance Repair Blog</h1>
+                <p>67 comprehensive guides, maintenance tips, and troubleshooting solutions for Toronto homeowners. Professional advice from certified technicians.</p>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="blog-container">
-        <!-- Archive Stats -->
-        <div class="archive-stats">
-            <div class="stat-item">
-                <div class="stat-number">57</div>
-                <div class="stat-label">Total Posts</div>
+    <main class="main-container">
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalPosts">67</div>
+                    <div class="stat-label">Total Articles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="guidesCount">14</div>
+                    <div class="stat-label">Expert Guides</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="maintenanceCount">7</div>
+                    <div class="stat-label">Maintenance Tips</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="troubleshootingCount">46</div>
+                    <div class="stat-label">Troubleshooting</div>
+                </div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">5</div>
-                <div class="stat-label">Maintenance</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">43</div>
-                <div class="stat-label">Troubleshooting</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">9</div>
-                <div class="stat-label">Guides</div>
-            </div>
-        </div>
+        </section>
 
-        <!-- Filters -->
-        <div class="blog-filters">
-            <span class="filter-label">Filter by category:</span>
-            <button class="filter-button active" onclick="filterPosts('all')">All Posts</button>
-            <button class="filter-button" onclick="filterPosts('maintenance')">Maintenance</button>
-            <button class="filter-button" onclick="filterPosts('troubleshooting')">Troubleshooting</button>
-            <button class="filter-button" onclick="filterPosts('guides')">Guides</button>
-        </div>
+        <!-- Search & Filter Controls -->
+        <section class="controls-section">
+            <!-- Search Box -->
+            <div class="search-box">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="search-input"
+                        placeholder="Search articles by title or topic..."
+                        aria-label="Search blog posts"
+                    >
+                </div>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="filter-section">
+                <span class="filter-label"><i class="fas fa-filter"></i> Filter by:</span>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">
+                        All Articles <span class="count">(67)</span>
+                    </button>
+                    <button class="filter-btn" data-category="guides">
+                        <i class="fas fa-book"></i> Guides <span class="count">(14)</span>
+                    </button>
+                    <button class="filter-btn" data-category="maintenance">
+                        <i class="fas fa-wrench"></i> Maintenance <span class="count">(7)</span>
+                    </button>
+                    <button class="filter-btn" data-category="troubleshooting">
+                        <i class="fas fa-tools"></i> Troubleshooting <span class="count">(46)</span>
+                    </button>
+                </div>
+            </div>
+        </section>
 
         <!-- Blog Posts Grid -->
-        <div class="blog-posts-grid" id="postsContainer">
-            <!-- Posts will be loaded here by JavaScript -->
+        <section id="blogGrid" class="blog-grid">
+            <!-- Posts will be inserted here by JavaScript -->
+        </section>
+
+        <!-- Empty State (hidden by default) -->
+        <div id="emptyState" class="empty-state" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h3>No articles found</h3>
+            <p>Try adjusting your search or filter to find what you're looking for.</p>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="seo-footer-premium">
+    <footer class="blog-footer">
         <div class="container">
-            <div class="footer-trust-badges">
-                <div class="trust-badge-item">
-                    <div class="badge-icon"><i class="fas fa-award"></i></div>
-                    <div class="badge-text">
-                        <strong>Licensed & Insured</strong>
-                        <span>Certified appliance repair specialists</span>
-                    </div>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon"><i class="fas fa-star"></i></div>
-                    <div class="badge-text">
-                        <strong>5-Star Rated</strong>
-                        <span>Trusted by 1000+ customers</span>
-                    </div>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon"><i class="fas fa-headset"></i></div>
-                    <div class="badge-text">
-                        <strong>24/7 Support</strong>
-                        <span>Emergency repair available</span>
-                    </div>
-                </div>
-                <div class="trust-badge-item">
-                    <div class="badge-icon"><i class="fas fa-tools"></i></div>
-                    <div class="badge-text">
-                        <strong>All Brands</strong>
-                        <span>We repair all major appliances</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-main-content">
-                <div>
-                    <h4 class="footer-heading">Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="/services/dishwasher-repair">Dishwasher Repair</a></li>
-                        <li><a href="/services/washer-repair">Washer Repair</a></li>
-                        <li><a href="/services/dryer-repair">Dryer Repair</a></li>
-                        <li><a href="/services/refrigerator-repair">Refrigerator Repair</a></li>
-                        <li><a href="/services/oven-repair">Oven Repair</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="footer-heading">Locations</h4>
-                    <ul class="footer-links">
-                        <li><a href="/locations/toronto">Toronto</a></li>
-                        <li><a href="/locations/mississauga">Mississauga</a></li>
-                        <li><a href="/locations/brampton">Brampton</a></li>
-                        <li><a href="/locations/oakville">Oakville</a></li>
-                        <li><a href="/locations">All Locations</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="footer-heading">Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/book">Book Service</a></li>
-                        <li><a href="/">Home</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Nika Appliance Repair. All rights reserved. | <a href="/" style="color: inherit;">Toronto's Trusted Appliance Repair Experts</a></p>
-            </div>
+            <p>&copy; 2025 <a href="../index.html">Nika Appliance Repair Toronto</a>. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">Professional appliance repair services across the GTA</p>
         </div>
     </footer>
 
     <script>
-        // Blog posts data - generated from directory
-        const posts = [
-            // Maintenance Posts
-            {title: "Dishwasher Maintenance: Toronto Hard Water Spotting", category: "maintenance", url: "/blog/maintenance/dishwasher-maintenance-hard-water.html", description: "Toronto hard water causes spotting and damage. Complete maintenance guide with solutions."},
-            {title: "How to Maintain Your Refrigerator for Longevity", category: "maintenance", url: "/blog/maintenance/how-to-maintain-refrigerator.html", description: "Expert tips to extend your refrigerator's lifespan and keep it running efficiently."},
-            {title: "How to Extend Your Washer's Lifespan: Complete Guide", category: "maintenance", url: "/blog/maintenance/how-to-extend-washer-life.html", description: "Learn preventive maintenance techniques to maximize your washing machine's life."},
-            {title: "How to Prevent Dryer Fires: Safety Guide", category: "maintenance", url: "/blog/maintenance/how-to-prevent-dryer-fires.html", description: "Critical safety information about dryer maintenance and fire prevention."},
-            {title: "How to Avoid Expensive Oven Repairs", category: "maintenance", url: "/blog/maintenance/how-to-avoid-oven-repairs.html", description: "Preventive maintenance tips to keep your oven working properly."},
+        // Blog posts data
+        const blogPosts = [
+            // GUIDES
+            {title: "LG Refrigerator Repair Toronto: Complete Guide to Common Issues & Fixes", desc: "Expert LG refrigerator repair guide for Toronto. Linear compressor failures, ice maker problems, cooling issues. Professional repair $150-$650.", category: "guides", path: "guides/lg-refrigerator-repair-toronto.html"},
+            {title: "Dishwasher Repair vs Replace Toronto: 2025 Cost Comparison Guide", desc: "Should you repair or replace your dishwasher? Complete Toronto cost analysis. Repair $120-$450, replace $500-$1,800. Decision framework, lifespan data", category: "guides", path: "guides/dishwasher-repair-vs-replace-toronto.html"},
+            {title: "Gas Range Repair & Safety Guide Toronto: Regulations, Enbridge, Common Issues", desc: "Complete gas range repair and safety guide for Toronto. Enbridge gas regulations, TSSA compliance, common repairs $120-480.", category: "guides", path: "guides/gas-range-repair-safety-toronto.html"},
+            {title: "Dishwasher Hard Water Solutions for Toronto Homes (2025 Guide)", desc: "Complete guide to solving dishwasher hard water problems in Toronto. Learn about Toronto's water hardness levels (200-300 ppm), white film solutions", category: "guides", path: "guides/dishwasher-hard-water-solutions-toronto.html"},
+            {title: "Oven Temperature Calibration Guide: DIY Testing & Professional Service (2025)", desc: "Complete oven temperature calibration guide. Learn DIY testing methods, step-by-step calibration process, when to call professionals, and cost breakdown", category: "guides", path: "guides/oven-temperature-calibration-guide.html"},
+            {title: "Bosch Dishwasher Repair Toronto: Premium Appliance", desc: "Expert Bosch dishwasher repair in Toronto. Specializing in control board issues, spray arm problems & hard water solutions. Same-day service.", category: "guides", path: "guides/bosch-dishwasher-repair.html"},
+            {title: "Electrolux Appliance Repair: Washer, Dryer, Refrigerator", desc: "Professional Electrolux appliance repair in Toronto. Expert service for washers, dryers, refrigerators. Motor, seal, compressor specialists. 30-50% below replacement cost", category: "guides", path: "guides/electrolux-appliance-repair.html"},
+            {title: "Frigidaire Refrigerator Repair Toronto: Expert Service", desc: "Expert Frigidaire refrigerator repair in Toronto. Specializing in ice maker fixes, compressor issues & door seals. Same-day service available.", category: "guides", path: "guides/frigidaire-refrigerator-repair.html"},
+            {title: "GE Appliance Repair Toronto: Expert Service for All", desc: "Expert GE appliance repair in Toronto. Same-day service for General Electric refrigerators, washers, dryers & dishwashers. 90-day warranty.", category: "guides", path: "guides/ge-appliance-repair-toronto.html"},
+            {title: "Maytag Washer & Dryer Repair Toronto: Professional", desc: "Expert Maytag washer and dryer repair in Toronto. Same-day service for transmission problems, motor issues & more. 90-day warranty.", category: "guides", path: "guides/maytag-washer-dryer-repair.html"},
+            {title: "Refrigerator Repair vs Replace: Cost Analysis & Decision", desc: "Expert refrigerator repair vs replace cost analysis. Apply the 50% rule: repair if less than 50% replacement cost. Compare $200-$600 repair vs $800-$3,500 replacement", category: "guides", path: "guides/refrigerator-repair-vs-replace.html"},
+            {title: "Should You Repair Your Oven? Safety-First Decision", desc: "Oven repair safety guide: gas vs electric considerations. Compare $150-$600 repair vs $800-$3,500 replacement. Safety-first decision criteria for gas models", category: "guides", path: "guides/should-you-repair-oven.html"},
+            {title: "Washing Machine Repair or Replace? Hard Water Impact", desc: "Toronto washing machine repair vs replace guide. Hard water reduces lifespan 40%. Compare $150-$500 repair vs $600-$2,000 replacement costs.", category: "guides", path: "guides/washing-machine-repair-vs-replace.html"},
+            {title: "When to Replace Your Dryer: Cost vs Energy Efficiency", desc: "Expert dryer replacement guide with heat pump dryer ROI analysis. Compare $100-$450 repair vs $500-$2,500 replacement. Calculate energy savings", category: "guides", path: "guides/when-to-replace-dryer.html"},
 
-            // Troubleshooting Posts
-            {title: "Appliance Repair Cabbagetown: Expert Service", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-cabbagetown.html", description: "Expert appliance repair service for Cabbagetown residents."},
-            {title: "Appliance Repair Distillery District: Professional Help", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-distillery-district.html", description: "Quick and reliable appliance repair in Distillery District."},
-            {title: "Dishwasher Not Cleaning Properly: Solutions", category: "troubleshooting", url: "/blog/troubleshooting/dishwasher-not-cleaning.html", description: "Troubleshoot why your dishwasher isn't cleaning and fix it quickly."},
-            {title: "Dryer Not Heating: Causes & Solutions", category: "troubleshooting", url: "/blog/troubleshooting/dryer-not-heating.html", description: "Diagnose and fix dryer heating issues."},
-            {title: "Oven Not Heating: Complete Troubleshooting", category: "troubleshooting", url: "/blog/troubleshooting/oven-not-heating.html", description: "Fix your oven heating problems with expert guidance."},
-            {title: "Refrigerator Not Cooling Toronto: Expert Repair", category: "troubleshooting", url: "/blog/troubleshooting/refrigerator-not-cooling-toronto.html", description: "Quick solutions for refrigerator cooling issues in Toronto."},
-            {title: "Washer Won't Drain: How to Fix", category: "troubleshooting", url: "/blog/troubleshooting/washer-wont-drain.html", description: "Troubleshoot and fix your washing machine drainage problems."},
-            {title: "Refrigerator Ice Maker Not Working", category: "troubleshooting", url: "/blog/troubleshooting/refrigerator-ice-maker-not-working.html", description: "Diagnose ice maker issues and get solutions."},
-            {title: "Washing Machine Leaking Water: Solutions", category: "troubleshooting", url: "/blog/troubleshooting/washing-machine-leaking-water.html", description: "Find and fix the source of your washing machine leak."},
-            {title: "Dryer Not Drying Clothes: Complete Guide", category: "troubleshooting", url: "/blog/troubleshooting/dryer-not-drying-clothes.html", description: "Solutions for dryer performance issues."},
-            {title: "Dishwasher Leaving Food Spots: How to Fix", category: "troubleshooting", url: "/blog/troubleshooting/dishwasher-leaving-food-spots.html", description: "Fix food spots and residue left by your dishwasher."},
-            {title: "Appliance Repair King West: Professional Service", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-king-west.html", description: "Expert repairs for King West residents."},
-            {title: "Appliance Repair Queen West: Quick Solutions", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-queen-west.html", description: "Reliable appliance repair in Queen West."},
-            {title: "Best Appliance Repair Near Me", category: "troubleshooting", url: "/blog/troubleshooting/best-appliance-repair-near-me.html", description: "Find the best local appliance repair services."},
-            {title: "Emergency Appliance Repair 24/7 Available", category: "troubleshooting", url: "/blog/troubleshooting/emergency-appliance-repair-24-7.html", description: "Emergency repair services when you need them most."},
+            // MAINTENANCE
+            {title: "Winter Appliance Maintenance Toronto: Prevent Freezing Damage (2025)", desc: "Essential winter appliance maintenance for Toronto. Protect against -20°C temperatures, prevent freezing damage, garage storage tips. Save $200-$800 in repairs", category: "maintenance", path: "maintenance/winter-appliance-maintenance-toronto.html"},
+            {title: "Dryer Vent Cleaning & Fire Prevention: Toronto Homeowner's Guide", desc: "Critical dryer vent cleaning guide for Toronto homes. Prevent 15,000+ annual dryer fires. Professional cleaning $150-$250 every 12 months. DIY safety tips", category: "maintenance", path: "maintenance/dryer-vent-cleaning-fire-prevention.html"},
+            {title: "Dishwasher Maintenance: Toronto Hard Water Spotting", desc: "Toronto hard water (200-300 ppm) causes dishwasher spotting, clogs, and damage. Complete maintenance guide: filter cleaning, rinse aid, descaling. Prevent $300-$800 repairs", category: "maintenance", path: "maintenance/dishwasher-maintenance-hard-water.html"},
+            {title: "How to Avoid Oven Repairs: Preventive Maintenance", desc: "Prevent costly oven repairs with professional maintenance guide. Clean heating elements, calibrate temperature, replace seals. Avoid $300-$600 repairs annually", category: "maintenance", path: "maintenance/how-to-avoid-oven-repairs.html"},
+            {title: "How to Extend Washer Life: Maintenance Tips", desc: "Extend washing machine lifespan to 14+ years with expert maintenance. Clean filters, use proper detergent, prevent hard water damage. Save $600-$2,000 on early replacement", category: "maintenance", path: "maintenance/how-to-extend-washer-life.html"},
+            {title: "How to Maintain Refrigerator: Prevent Costly Repairs", desc: "Professional refrigerator maintenance guide. Clean coils quarterly, check door seals, monitor temperature. Extend lifespan to 15+ years, prevent $400-$800 repairs", category: "maintenance", path: "maintenance/how-to-maintain-refrigerator.html"},
+            {title: "How to Prevent Dryer Fires: Safety Maintenance", desc: "Dryer fire prevention essentials. Clean lint trap daily, vent system annually, avoid overloading. Prevent 15,000+ annual residential fires", category: "maintenance", path: "maintenance/how-to-prevent-dryer-fires.html"},
 
-            // Guides Posts
-            {title: "Bosch Dishwasher Repair Toronto Guide", category: "guides", url: "/blog/guides/bosch-dishwasher-repair.html", description: "Expert guide to Bosch dishwasher repair and troubleshooting."},
-            {title: "Frigidaire Refrigerator Repair Guide", category: "guides", url: "/blog/guides/frigidaire-refrigerator-repair.html", description: "Complete Frigidaire refrigerator repair guide."},
-            {title: "GE Appliance Repair Toronto: Expert Guide", category: "guides", url: "/blog/guides/ge-appliance-repair-toronto.html", description: "Professional guide for GE appliance repairs."},
-            {title: "Maytag Washer & Dryer Repair Guide", category: "guides", url: "/blog/guides/maytag-washer-dryer-repair.html", description: "Expert Maytag washer and dryer repair instructions."},
-            {title: "Electrolux Appliance Repair Guide", category: "guides", url: "/blog/guides/electrolux-appliance-repair.html", description: "Complete guide to Electrolux appliance repairs."},
-            {title: "Refrigerator Repair vs Replace: Decision Guide", category: "guides", url: "/blog/guides/refrigerator-repair-vs-replace.html", description: "Help deciding whether to repair or replace your refrigerator."},
-            {title: "Should You Repair Your Oven? Expert Advice", category: "guides", url: "/blog/guides/should-you-repair-oven.html", description: "Guidance on oven repair vs replacement decisions."},
-            {title: "Washing Machine Repair vs Replace: Guide", category: "guides", url: "/blog/guides/washing-machine-repair-vs-replace.html", description: "Expert advice on washer repair or replacement."},
-            {title: "When to Replace Your Dryer: Expert Guide", category: "guides", url: "/blog/guides/when-to-replace-dryer.html", description: "Learn when it's time to replace your dryer."}
+            // TROUBLESHOOTING
+            {title: "Front-Load Washer Problems Toronto: Mold, Leaks, Drain Issues (2025)", desc: "Complete front-load washer troubleshooting for Toronto. Fix mold on gaskets, leak problems, won't drain issues. Professional solutions $120-$350", category: "troubleshooting", path: "troubleshooting/front-load-washer-problems-toronto.html"},
+            {title: "Refrigerator Compressor Failure Diagnosis & Repair: Complete Guide", desc: "Expert refrigerator compressor failure diagnosis. Identify clicking, humming, warm temps. Repair costs $300-$650 vs $800-$3,500 replacement", category: "troubleshooting", path: "troubleshooting/refrigerator-compressor-failure-diagnosis.html"},
+            {title: "Smart Appliance Troubleshooting Guide: WiFi, Connectivity & App Issues", desc: "Comprehensive smart appliance troubleshooting. Fix WiFi connectivity, app problems, software glitches for Samsung, LG, GE, Whirlpool smart models", category: "troubleshooting", path: "troubleshooting/smart-appliance-troubleshooting-guide.html"},
+            {title: "Best Appliance Repair Near Me: Toronto Service Guide", desc: "Find the best appliance repair service in Toronto. Compare same-day service, warranty coverage, pricing. Expert technicians for all major brands", category: "troubleshooting", path: "troubleshooting/best-appliance-repair-near-me.html"},
+            {title: "Dishwasher Leaving Food Spots: Hard Water Solutions", desc: "Fix dishwasher food spots and white film. Toronto hard water solutions, rinse aid tips, filter cleaning. Repair costs $120-$300", category: "troubleshooting", path: "troubleshooting/dishwasher-leaving-food-spots.html"},
+            {title: "Dishwasher Not Cleaning: Troubleshooting Guide", desc: "Expert troubleshooting for dishwasher not cleaning properly. Check spray arms, filters, water temperature. DIY fixes and professional repair options", category: "troubleshooting", path: "troubleshooting/dishwasher-not-cleaning.html"},
+            {title: "Dishwasher Repair Toronto: Common Issues & Solutions", desc: "Professional dishwasher repair in Toronto. Fix drainage problems, cleaning issues, leaks. Same-day service. Repair costs $120-$450", category: "troubleshooting", path: "troubleshooting/dishwasher-repair-toronto.html"},
+            {title: "Dryer Making Noise: Diagnosis & Repair Guide", desc: "Fix noisy dryer problems. Diagnose drum rollers, belt issues, motor problems. Repair costs $100-$350. DIY troubleshooting steps", category: "troubleshooting", path: "troubleshooting/dryer-making-noise.html"},
+            {title: "Dryer Not Drying Clothes: Complete Troubleshooting", desc: "Troubleshoot dryer not drying properly. Check vent blockage, heating element, thermostat. Repair costs $150-$400", category: "troubleshooting", path: "troubleshooting/dryer-not-drying-clothes.html"},
+            {title: "Dryer Not Heating: Diagnostic & Repair Guide", desc: "Fix dryer not heating issues. Test heating element, thermal fuse, thermostat. Electric vs gas dryer repairs. Costs $150-$350", category: "troubleshooting", path: "troubleshooting/dryer-not-heating.html"},
+            {title: "Dryer Repair Toronto: Expert Service", desc: "Professional dryer repair in Toronto. Fix heating, drum, noise issues. Same-day service available. Repair costs $100-$450", category: "troubleshooting", path: "troubleshooting/dryer-repair-toronto.html"},
+            {title: "Emergency Appliance Repair 24/7: Toronto Service", desc: "24/7 emergency appliance repair in Toronto. Same-day service for refrigerators, washers, dryers. After-hours availability", category: "troubleshooting", path: "troubleshooting/emergency-appliance-repair-24-7.html"},
+            {title: "Freezer Not Freezing: Troubleshooting & Repair", desc: "Fix freezer not freezing properly. Check temperature settings, door seals, defrost system. Repair costs $200-$500", category: "troubleshooting", path: "troubleshooting/freezer-not-freezing.html"},
+            {title: "Freezer Repair Guide: Common Problems & Solutions", desc: "Complete freezer repair guide. Fix ice buildup, temperature issues, frost problems. DIY steps and professional repair options", category: "troubleshooting", path: "troubleshooting/freezer-repair-guide.html"},
+            {title: "Garbage Disposal Jammed: Quick Fix Guide", desc: "Fix jammed garbage disposal safely. Reset button, Allen wrench method, blade clearing. Prevent future jams", category: "troubleshooting", path: "troubleshooting/garbage-disposal-jammed.html"},
+            {title: "Garbage Disposal Repair: Complete Guide", desc: "Professional garbage disposal repair guide. Fix leaks, jams, motor issues. Repair vs replace analysis. Costs $100-$350", category: "troubleshooting", path: "troubleshooting/garbage-disposal-repair.html"},
+            {title: "Ice Maker Not Working: Troubleshooting Guide", desc: "Fix ice maker not working. Check water supply, freezer temperature, ice maker assembly. Repair costs $150-$450", category: "troubleshooting", path: "troubleshooting/ice-maker-not-working.html"},
+            {title: "Ice Maker Repair: Common Issues & Solutions", desc: "Expert ice maker repair guide. Fix water flow, ice production, dispensing problems. DIY fixes and professional service", category: "troubleshooting", path: "troubleshooting/ice-maker-repair.html"},
+            {title: "LG Appliance Repair Service: Expert Solutions", desc: "Professional LG appliance repair. Washers, dryers, refrigerators, dishwashers. Same-day service in Toronto. 90-day warranty", category: "troubleshooting", path: "troubleshooting/lg-appliance-repair-service.html"},
+            {title: "Microwave Not Heating: Troubleshooting Guide", desc: "Fix microwave not heating food. Check magnetron, diode, capacitor. Safety tips and repair costs $100-$300", category: "troubleshooting", path: "troubleshooting/microwave-not-heating.html"},
+            {title: "Microwave Repair Toronto: Professional Service", desc: "Expert microwave repair in Toronto. Fix heating, turntable, door issues. Same-day service. Repair costs $100-$350", category: "troubleshooting", path: "troubleshooting/microwave-repair-toronto.html"},
+            {title: "Oven Door Won't Close: Repair Guide", desc: "Fix oven door that won't close properly. Check hinges, door gasket, latch. Repair costs $80-$250", category: "troubleshooting", path: "troubleshooting/oven-door-wont-close.html"},
+            {title: "Oven Not Heating: Complete Troubleshooting", desc: "Troubleshoot oven not heating. Test bake element, thermostat, control board. Electric vs gas oven repairs. Costs $150-$500", category: "troubleshooting", path: "troubleshooting/oven-not-heating.html"},
+            {title: "Oven Repair Toronto: Expert Service", desc: "Professional oven repair in Toronto. Gas and electric oven specialists. Same-day service. Repair costs $150-$600", category: "troubleshooting", path: "troubleshooting/oven-repair-toronto.html"},
+            {title: "Refrigerator Door Seal Replacement Guide", desc: "Replace refrigerator door seal gasket. Stop warm air leaks, improve efficiency. DIY installation steps. Costs $50-$200", category: "troubleshooting", path: "troubleshooting/refrigerator-door-seal-replacement.html"},
+            {title: "Refrigerator Ice Maker Not Working: Fix Guide", desc: "Fix refrigerator ice maker problems. Water supply, freezer temp, ice maker module testing. Repair costs $150-$450", category: "troubleshooting", path: "troubleshooting/refrigerator-ice-maker-not-working.html"},
+            {title: "Refrigerator Not Cooling Toronto: Emergency Repair", desc: "Emergency refrigerator not cooling repair in Toronto. Same-day service. Check compressor, evaporator, condenser. Costs $200-$650", category: "troubleshooting", path: "troubleshooting/refrigerator-not-cooling-toronto.html"},
+            {title: "Refrigerator Repair Toronto: Professional Service", desc: "Expert refrigerator repair in Toronto. All brands, same-day service. Fix cooling, ice maker, water dispenser issues. 90-day warranty", category: "troubleshooting", path: "troubleshooting/refrigerator-repair-toronto.html"},
+            {title: "Refrigerator Water Dispenser Not Working: Fix", desc: "Fix refrigerator water dispenser problems. Check water supply, filter, dispenser switch. Repair costs $100-$300", category: "troubleshooting", path: "troubleshooting/refrigerator-water-dispenser-not-working.html"},
+            {title: "Same Day Appliance Repair: Toronto Emergency Service", desc: "Same-day appliance repair in Toronto. Emergency service for all major appliances. Quick response, professional technicians", category: "troubleshooting", path: "troubleshooting/same-day-appliance-repair.html"},
+            {title: "Samsung Appliance Repair: Expert Service", desc: "Professional Samsung appliance repair. Washers, dryers, refrigerators, dishwashers. Same-day service. 90-day warranty", category: "troubleshooting", path: "troubleshooting/samsung-appliance-repair.html"},
+            {title: "Stove Burner Not Working: Troubleshooting Guide", desc: "Fix stove burner not working. Electric coil and gas burner repairs. Test igniter, element, control switch. Costs $100-$300", category: "troubleshooting", path: "troubleshooting/stove-burner-not-working.html"},
+            {title: "Stove Repair Toronto: Gas & Electric Specialists", desc: "Expert stove and range repair in Toronto. Gas and electric specialists. Same-day service. Repair costs $120-$500", category: "troubleshooting", path: "troubleshooting/stove-repair-toronto.html"},
+            {title: "Washer Won't Drain: Complete Fix Guide", desc: "Fix washer that won't drain water. Check drain pump, hose, filter. DIY troubleshooting steps. Repair costs $120-$350", category: "troubleshooting", path: "troubleshooting/washer-wont-drain.html"},
+            {title: "Washing Machine Leaking: Diagnostic Guide", desc: "Fix washing machine leaking water. Check hoses, door seal, pump. Front-load vs top-load issues. Repair costs $100-$400", category: "troubleshooting", path: "troubleshooting/washing-machine-leaking.html"},
+            {title: "Washing Machine Leaking Water: Emergency Fix", desc: "Emergency washing machine leak repair. Identify leak source, temporary fixes, professional repair. Costs $100-$400", category: "troubleshooting", path: "troubleshooting/washing-machine-leaking-water.html"},
+            {title: "Washing Machine Repair Complete Guide", desc: "Complete washing machine repair guide. Fix drainage, spinning, leak issues. All washer types. DIY and professional solutions", category: "troubleshooting", path: "troubleshooting/washing-machine-repair-complete-guide.html"},
+            {title: "Water Heater Repair Toronto: Professional Service", desc: "Expert water heater repair in Toronto. Gas and electric specialists. Same-day emergency service. Repair costs $150-$600", category: "troubleshooting", path: "troubleshooting/water-heater-repair-toronto.html"},
+            {title: "Whirlpool Customer Service Repair: Expert Support", desc: "Professional Whirlpool appliance repair service. Washers, dryers, refrigerators, dishwashers. Same-day service. 90-day warranty", category: "troubleshooting", path: "troubleshooting/whirlpool-customer-service-repair.html"},
+            {title: "Appliance Repair Cabbagetown: Local Toronto Service", desc: "Professional appliance repair in Cabbagetown Toronto. Same-day service for all major appliances. Local technicians", category: "troubleshooting", path: "troubleshooting/appliance-repair-cabbagetown.html"},
+            {title: "Appliance Repair Distillery District: Toronto Service", desc: "Expert appliance repair in Distillery District Toronto. All brands, same-day service. Refrigerators, washers, dryers", category: "troubleshooting", path: "troubleshooting/appliance-repair-distillery-district.html"},
+            {title: "Appliance Repair Grande Prairie: Professional Service", desc: "Professional appliance repair in Grande Prairie. All major brands and appliances. Same-day service available", category: "troubleshooting", path: "troubleshooting/appliance-repair-grande-prairie.html"},
+            {title: "Appliance Repair King West: Toronto Local Service", desc: "Local appliance repair in King West Toronto. Same-day service for refrigerators, washers, dryers, dishwashers", category: "troubleshooting", path: "troubleshooting/appliance-repair-king-west.html"},
+            {title: "Appliance Repair Peterborough: Expert Service", desc: "Expert appliance repair in Peterborough. All brands, same-day service. Professional technicians", category: "troubleshooting", path: "troubleshooting/appliance-repair-peterborough.html"},
+            {title: "Appliance Repair Queen West: Toronto Service", desc: "Professional appliance repair in Queen West Toronto. Same-day service for all major appliances", category: "troubleshooting", path: "troubleshooting/appliance-repair-queen-west.html"},
+            {title: "Mobile Appliance Repair Whitehorse: On-Site Service", desc: "Mobile appliance repair in Whitehorse. On-site service for all major appliances. Quick response times", category: "troubleshooting", path: "troubleshooting/mobile-appliance-repair-whitehorse.html"}
         ];
 
-        // Extend with additional posts if needed
-        const additionalPosts = [
-            {title: "Appliance Repair Grande Prairie", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-grande-prairie.html", description: "Professional appliance repair in Grande Prairie area."},
-            {title: "Appliance Repair Yorkville", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-yorkville.html", description: "Expert repairs for Yorkville residents."},
-            {title: "Appliance Repair Avenue Road", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-avenue-road.html", description: "Professional service in Avenue Road area."},
-            {title: "Appliance Repair Bloor West", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-bloor-west.html", description: "Reliable repairs in Bloor West neighbourhood."},
-            {title: "Appliance Repair Downtown Toronto", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-downtown-toronto.html", description: "Expert service in downtown Toronto."},
-            {title: "Appliance Repair East Toronto", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-east-toronto.html", description: "Professional repairs in East Toronto."},
-            {title: "Appliance Repair Forest Hill", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-forest-hill.html", description: "Expert service for Forest Hill residents."},
-            {title: "Appliance Repair Leslieville", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-leslieville.html", description: "Quick appliance repairs in Leslieville."},
-            {title: "Appliance Repair Little Italy", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-little-italy.html", description: "Reliable service in Little Italy neighbourhood."},
-            {title: "Appliance Repair Parkdale", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-parkdale.html", description: "Expert repairs serving Parkdale area."},
-            {title: "Appliance Repair Rosedale", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-rosedale.html", description: "Professional service in Rosedale."},
-            {title: "Appliance Repair Riverdale", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-riverdale.html", description: "Expert repairs for Riverdale residents."},
-            {title: "Appliance Repair Kensington Market", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-kensington-market.html", description: "Quick repairs in Kensington Market."},
-            {title: "Appliance Repair Chinatown", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-chinatown.html", description: "Reliable service in Chinatown."},
-            {title: "Appliance Repair Ossington", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-ossington.html", description: "Expert repairs in Ossington area."},
-            {title: "Appliance Repair Spadina", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-spadina.html", description: "Professional service along Spadina."},
-            {title: "Appliance Repair Bathurst", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-bathurst.html", description: "Expert repairs in Bathurst area."},
-            {title: "Appliance Repair Christie Station", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-christie-station.html", description: "Quick service near Christie Station."},
-            {title: "Appliance Repair Dundas West", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-dundas-west.html", description: "Reliable repairs in Dundas West."},
-            {title: "Appliance Repair Bloor East", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-bloor-east.html", description: "Expert service in Bloor East area."},
-            {title: "Appliance Repair Wellesley", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-wellesley.html", description: "Professional repairs in Wellesley area."},
-            {title: "Appliance Repair College Street", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-college-street.html", description: "Quick repairs on College Street."},
-            {title: "Appliance Repair University Avenue", category: "troubleshooting", url: "/blog/troubleshooting/appliance-repair-university-avenue.html", description: "Expert service near University Avenue."}
-        ];
+        // State management
+        let currentCategory = 'all';
+        let searchTerm = '';
 
-        // Combine all posts
-        const allPosts = posts.concat(additionalPosts);
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderBlogGrid();
+            updateStats();
+            setupEventListeners();
+        });
 
-        // Filter and display posts
-        function filterPosts(category) {
-            // Update button states
-            document.querySelectorAll('.filter-button').forEach(btn => {
-                btn.classList.remove('active');
+        // Render blog grid
+        function renderBlogGrid() {
+            const gridElement = document.getElementById('blogGrid');
+            const emptyState = document.getElementById('emptyState');
+
+            const filteredPosts = blogPosts.filter(post => {
+                const matchesCategory = currentCategory === 'all' || post.category === currentCategory;
+                const matchesSearch = searchTerm === '' ||
+                    post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    post.desc.toLowerCase().includes(searchTerm.toLowerCase());
+                return matchesCategory && matchesSearch;
             });
-            event.target.classList.add('active');
 
-            // Filter posts
-            const filtered = category === 'all' ? allPosts : allPosts.filter(p => p.category === category);
-
-            // Display posts
-            displayPosts(filtered);
-        }
-
-        function displayPosts(postsToDisplay) {
-            const container = document.getElementById('postsContainer');
-
-            if (postsToDisplay.length === 0) {
-                container.innerHTML = '<div class="empty-state"><div class="empty-state-icon"><i class="fas fa-inbox"></i></div><h3>No posts found</h3><p>Try adjusting your filters</p></div>';
+            if (filteredPosts.length === 0) {
+                gridElement.style.display = 'none';
+                emptyState.style.display = 'block';
                 return;
             }
 
-            container.innerHTML = postsToDisplay.map(post => `
-                <div class="blog-post-card">
-                    <div class="post-card-header">
-                        <span class="post-category ${post.category}">${post.category}</span>
-                        <h3>${post.title}</h3>
-                        <div class="post-card-meta">
-                            <span><i class="fas fa-calendar"></i> Published</span>
-                            <span><i class="fas fa-clock"></i> 5 min read</span>
-                        </div>
+            gridElement.style.display = 'grid';
+            emptyState.style.display = 'none';
+
+            gridElement.innerHTML = filteredPosts.map(post => `
+                <article class="blog-card">
+                    <div class="card-header">
+                        <span class="category-badge ${post.category}">${post.category}</span>
+                        <h3><a href="${post.path}">${post.title}</a></h3>
                     </div>
-                    <div class="post-card-body">
-                        <p class="post-card-description">${post.description}</p>
+                    <div class="card-description">
+                        ${post.desc}
                     </div>
-                    <div class="post-card-footer">
-                        <a href="${post.url}" class="read-more">Read More <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i></a>
+                    <div class="card-footer">
+                        <a href="${post.path}" class="read-more">
+                            Read Full Article <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                </div>
+                </article>
             `).join('');
         }
 
-        // Load all posts on page load
-        window.addEventListener('load', () => {
-            displayPosts(allPosts);
-        });
+        // Update statistics
+        function updateStats() {
+            const guides = blogPosts.filter(p => p.category === 'guides').length;
+            const maintenance = blogPosts.filter(p => p.category === 'maintenance').length;
+            const troubleshooting = blogPosts.filter(p => p.category === 'troubleshooting').length;
+
+            document.getElementById('totalPosts').textContent = blogPosts.length;
+            document.getElementById('guidesCount').textContent = guides;
+            document.getElementById('maintenanceCount').textContent = maintenance;
+            document.getElementById('troubleshootingCount').textContent = troubleshooting;
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Filter buttons
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active state
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Update category
+                    currentCategory = this.dataset.category;
+                    renderBlogGrid();
+                });
+            });
+
+            // Search input
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', function(e) {
+                searchTerm = e.target.value;
+                renderBlogGrid();
+            });
+        }
     </script>
 </body>
 </html>
