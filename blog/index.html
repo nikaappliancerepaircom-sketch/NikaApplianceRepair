@@ -30,12 +30,14 @@
         }
 
         :root {
-            --primary-orange: #FF6B35;
-            --primary-dark: #E85A2A;
-            --primary-light: #FF8C61;
-            --text-dark: #2d3748;
-            --text-light: #718096;
-            --bg-light: #f7fafc;
+            /* Brand Colors - Nika Design System */
+            --primary-blue: #2196F3;
+            --primary-blue-dark: #1976D2;
+            --primary-blue-light: #42A5F5;
+            --primary-yellow: #FFD600;
+            --text-dark: #212529;
+            --text-light: #6c757d;
+            --bg-light: #f8f9fa;
             --bg-white: #ffffff;
             --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
             --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
@@ -51,7 +53,7 @@
 
         /* Header Hero */
         .blog-hero {
-            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--primary-dark) 100%);
+            background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
             color: white;
             padding: 4rem 0 3rem;
             box-shadow: var(--shadow-lg);
@@ -146,7 +148,7 @@
             font-family: 'Fredoka', sans-serif;
             font-size: 3rem;
             font-weight: 700;
-            color: var(--primary-orange);
+            color: var(--primary-blue);
             line-height: 1;
             margin-bottom: 0.5rem;
         }
@@ -186,8 +188,8 @@
 
         .search-input:focus {
             outline: none;
-            border-color: var(--primary-orange);
-            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
         }
 
         .search-icon {
@@ -219,9 +221,9 @@
 
         .filter-btn {
             padding: 0.75rem 1.5rem;
-            border: 2px solid var(--primary-orange);
+            border: 2px solid var(--primary-blue);
             background: var(--bg-white);
-            color: var(--primary-orange);
+            color: var(--primary-blue);
             border-radius: 25px;
             cursor: pointer;
             font-size: 0.95rem;
@@ -232,10 +234,10 @@
 
         .filter-btn:hover,
         .filter-btn.active {
-            background: var(--primary-orange);
+            background: var(--primary-blue);
             color: white;
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
+            box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
         }
 
         .filter-btn .count {
@@ -266,7 +268,7 @@
         .blog-card:hover {
             transform: translateY(-6px);
             box-shadow: var(--shadow-lg);
-            border-color: var(--primary-light);
+            border-color: var(--primary-blue-light);
         }
 
         .card-header {
@@ -314,7 +316,7 @@
         }
 
         .card-header h3 a:hover {
-            color: var(--primary-orange);
+            color: var(--primary-blue);
         }
 
         .card-description {
@@ -335,7 +337,7 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--primary-orange);
+            color: var(--primary-blue);
             font-weight: 600;
             font-size: 0.95rem;
             text-decoration: none;
@@ -361,7 +363,7 @@
 
         .empty-state i {
             font-size: 4rem;
-            color: var(--primary-orange);
+            color: var(--primary-blue);
             margin-bottom: 1rem;
             opacity: 0.5;
         }
@@ -386,13 +388,13 @@
         }
 
         .blog-footer a {
-            color: var(--primary-light);
+            color: var(--primary-blue-light);
             text-decoration: none;
             font-weight: 600;
         }
 
         .blog-footer a:hover {
-            color: var(--primary-orange);
+            color: var(--primary-blue);
         }
 
         /* Responsive */
