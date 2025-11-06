@@ -11,17 +11,179 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Optimized font loading -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome for icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/header-optimized.css">
-    <link rel="stylesheet" href="../../css/footer-styles.css">
+    <!-- Premium Blog Styles -->
     <link rel="stylesheet" href="../css/blog-premium.css">
-    <link rel="stylesheet" href="../css/ai-seo-styles.css">
+
+    <!-- Header Styles -->
+    <link rel="stylesheet" href="../../css/header-optimized.css">
+
+    <!-- Footer Styles -->
+    <style>
+        /* Footer Premium Styles */
+        .seo-footer-premium {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .seo-footer-premium .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-trust-badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .trust-badge-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .badge-icon {
+            font-size: 2rem;
+        }
+
+        .badge-text strong {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .badge-text span {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        .footer-main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-heading {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact-box {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .contact-link {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+
+        .footer-cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .footer-cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .copyright {
+            font-size: 0.875rem;
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        .separator {
+            margin: 0 0.5rem;
+        }
+
+        .footer-tagline {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .footer-trust-badges {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 
     <!-- Schema.org markup for Article -->
     <script type="application/ld+json">
@@ -32,10 +194,10 @@
         "description": "Complete winter appliance maintenance guide for Toronto homes. Protect your appliances from harsh Canadian winters with expert maintenance tips, cost-saving strategies, and preventive care schedules.",
         "image": "https://nikaappliancerepair.com/images/blog/winter-appliance-maintenance-toronto.jpg",
         "author": {
-            "@type": "Organization",
-            "@id": "https://nikaappliancerepair.com/#organization",
-            "name": "Nika Appliance Repair Expert Team",
-            "url": "https://nikaappliancerepair.com/team"
+            "@type": "Person",
+            "name": "James Wilson",
+            "jobTitle": "Washer & Dryer Specialist",
+            "url": "https://nikaappliancerepair.com/team/james-wilson.html"
         },
         "publisher": {
             "@type": "Organization",
@@ -93,1353 +255,1240 @@
     <link rel="icon" type="image/png" href="../../images/favicon.png">
 </head>
 <body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="progressBar"></div>
+
     <!-- Header -->
     <header class="site-header">
         <div class="header-container">
-            <div class="logo">
-                <a href="../../index.html">
-                    <img src="../../images/nika-logo.png" alt="Nika Appliance Repair Logo">
-                </a>
+            <div class="header-logo">
+                <a href="/">Nika Appliance Repair</a>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../services.html">Services</a></li>
-                    <li><a href="../../about.html">About</a></li>
-                    <li><a href="../index.html" class="active">Blog</a></li>
-                    <li><a href="../../contact.html">Contact</a></li>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
-            <div class="header-cta">
-                <a href="tel:+14168271960" class="cta-phone">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>(416) 827-1960</span>
-                </a>
-                <a href="../../contact.html" class="cta-button">Book Repair</a>
+
+            <div class="header-trust">
+                <div class="trust-stars">⭐⭐⭐⭐⭐</div>
+                <div class="trust-rating">4.9/5</div>
+                <div class="trust-reviews">5,200+ Reviews</div>
             </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone">
+                    <i class="fas fa-phone"></i> (437) 747-6737
+                </a>
+                <a href="/book" class="cta-book">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
             </button>
         </div>
     </header>
 
-    <main class="blog-post-page">
-        <div class="container">
-            <article class="blog-post">
-                <div class="blog-content">
-                    <!-- Breadcrumb -->
-                    <nav class="breadcrumb" aria-label="Breadcrumb">
-                        <a href="../../index.html">Home</a> &gt;
-                        <a href="../index.html">Blog</a> &gt;
-                        <a href="../maintenance/">Maintenance</a> &gt;
-                        <span>Winter Appliance Maintenance Guide</span>
-                    </nav>
+    <!-- Main Blog Content -->
+    <div class="blog-wrapper">
+        <main class="blog-main">
+            <!-- Blog Header -->
+            <header class="blog-header">
+                <div class="blog-meta-top">
+                    <span class="blog-category">
+                        <i class="fas fa-snowflake"></i> Maintenance Guide
+                    </span>
+                    <span class="reading-time">
+                        <i class="far fa-clock"></i> 12 min read
+                    </span>
+                </div>
 
-                    <!-- Article Header -->
-                    <header class="post-header">
-                        <div class="post-meta">
-                            <span class="category">Maintenance Guide</span>
-                            <time datetime="2025-01-15">January 15, 2025</time>
-                            <span class="read-time"><i class="far fa-clock"></i> 12 min read</span>
+                <h1 class="blog-title">Winter Appliance Maintenance Guide for Toronto Homes: Protect Your Investment in Harsh Canadian Winters</h1>
+
+                <div class="blog-meta">
+                    <span class="meta-item">
+                        <i class="far fa-calendar"></i> January 15, 2025
+                    </span>
+                    <span class="meta-item">
+                        <i class="far fa-user"></i> <a href="../../team/james-wilson.html">James Wilson</a>
+                    </span>
+                </div>
+            </header>
+
+            <!-- Social Share -->
+            <div class="social-share">
+                <a href="#" class="share-btn facebook" aria-label="Share on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="share-btn twitter" aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="share-btn linkedin" aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="share-btn email" aria-label="Share via Email">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Blog Content -->
+            <article class="blog-content">
+                <p class="post-excerpt">Toronto's extreme winter temperatures (-20°C to 5°C) can wreak havoc on your home appliances. Learn essential maintenance strategies to prevent costly breakdowns, reduce energy bills by up to 30%, and extend appliance lifespan through Canada's harshest season.</p>
+
+                <!-- Direct Answer Box -->
+                <div class="direct-answer-box">
+                    <h2>Quick Answer</h2>
+                    <p><strong>Toronto's winter temperatures (averaging -20°C to 5°C) significantly impact appliance performance and longevity. Essential winter maintenance includes: 1) Cleaning refrigerator coils quarterly (improves efficiency by 25%), 2) Checking washer hoses for cold-induced brittleness, 3) Inspecting dryer vents for ice blockage, 4) Testing oven seals and igniters before holiday cooking, 5) Running dishwashers monthly even if unused, and 6) Maintaining proper humidity levels (30-50%) to prevent static and moisture issues. Professional fall inspections cost $150-250 but can prevent $800-2,500 in winter emergency repairs.</strong></p>
+                </div>
+
+                <!-- At-a-Glance Box -->
+                <div class="at-a-glance-box">
+                    <h2><i class="fas fa-snowflake"></i> Winter Maintenance At-a-Glance</h2>
+                    <div class="glance-grid">
+                        <div class="glance-item">
+                            <i class="fas fa-wind"></i>
+                            <h3>Dryer Vent Cleaning</h3>
+                            <p><strong>Cost:</strong> $120-180<br>
+                            <strong>Frequency:</strong> Every 3-6 months<br>
+                            <strong>Winter Impact:</strong> Ice blockage increases fire risk 3x</p>
                         </div>
-                        <h1>Winter Appliance Maintenance Guide for Toronto Homes: Protect Your Investment in Harsh Canadian Winters</h1>
-                        <p class="post-excerpt">Toronto's extreme winter temperatures (-20°C to 5°C) can wreak havoc on your home appliances. Learn essential maintenance strategies to prevent costly breakdowns, reduce energy bills by up to 30%, and extend appliance lifespan through Canada's harshest season.</p>
-                    </header>
-
-                    <!-- Hero Image -->
-                    <div class="blog-hero-image">
-                        <img src="../images/winter-appliance-maintenance-toronto-hero.png" alt="Toronto home appliances covered in frost and ice during harsh Canadian winter showing need for preventive maintenance" loading="eager">
-                    </div>
-
-                    <!-- Direct Answer Box -->
-                    <div class="direct-answer-box">
-                        <h2>Quick Answer</h2>
-                        <p><strong>Toronto's winter temperatures (averaging -20°C to 5°C) significantly impact appliance performance and longevity. Essential winter maintenance includes: 1) Cleaning refrigerator coils quarterly (improves efficiency by 25%), 2) Checking washer hoses for cold-induced brittleness, 3) Inspecting dryer vents for ice blockage, 4) Testing oven seals and igniters before holiday cooking, 5) Running dishwashers monthly even if unused, and 6) Maintaining proper humidity levels (30-50%) to prevent static and moisture issues. Professional fall inspections cost $150-250 but can prevent $800-2,500 in winter emergency repairs.</strong></p>
-                    </div>
-
-                    <!-- At-a-Glance Box -->
-                    <div class="at-a-glance-box">
-                        <h2><i class="fas fa-snowflake"></i> Winter Maintenance At-a-Glance</h2>
-                        <div class="glance-grid">
-                            <div class="glance-item">
-                                <i class="fas fa-wind"></i>
-                                <h3>Dryer Vent Cleaning</h3>
-                                <p><strong>Cost:</strong> $120-180<br>
-                                <strong>Frequency:</strong> Every 3-6 months<br>
-                                <strong>Winter Impact:</strong> Ice blockage increases fire risk 3x</p>
-                            </div>
-                            <div class="glance-item">
-                                <i class="fas fa-temperature-low"></i>
-                                <h3>Refrigerator Coils</h3>
-                                <p><strong>Cost:</strong> DIY $0 / Pro $80-120<br>
-                                <strong>Frequency:</strong> Quarterly in winter<br>
-                                <strong>Benefit:</strong> 25% efficiency improvement</p>
-                            </div>
-                            <div class="glance-item">
-                                <i class="fas fa-water"></i>
-                                <h3>Washer Hose Check</h3>
-                                <p><strong>Cost:</strong> Hoses $25-40 each<br>
-                                <strong>Frequency:</strong> Annual inspection<br>
-                                <strong>Risk:</strong> Cold causes rubber brittleness</p>
-                            </div>
-                            <div class="glance-item">
-                                <i class="fas fa-fire"></i>
-                                <h3>Gas Range Inspection</h3>
-                                <p><strong>Cost:</strong> $150-220 professional<br>
-                                <strong>Frequency:</strong> Annual pre-winter<br>
-                                <strong>Safety:</strong> TSSA-certified required</p>
-                            </div>
-                            <div class="glance-item">
-                                <i class="fas fa-tint"></i>
-                                <h3>Dishwasher Seals</h3>
-                                <p><strong>Cost:</strong> Seal replacement $120-180<br>
-                                <strong>Frequency:</strong> Check bi-annually<br>
-                                <strong>Issue:</strong> Dry winter air cracks seals</p>
-                            </div>
-                            <div class="glance-item">
-                                <i class="fas fa-clipboard-check"></i>
-                                <h3>Pre-Winter Inspection</h3>
-                                <p><strong>Cost:</strong> $150-250 all appliances<br>
-                                <strong>Timing:</strong> October-November<br>
-                                <strong>Savings:</strong> Prevents $800-2,500 repairs</p>
-                            </div>
+                        <div class="glance-item">
+                            <i class="fas fa-temperature-low"></i>
+                            <h3>Refrigerator Coils</h3>
+                            <p><strong>Cost:</strong> DIY $0 / Pro $80-120<br>
+                            <strong>Frequency:</strong> Quarterly in winter<br>
+                            <strong>Benefit:</strong> 25% efficiency improvement</p>
                         </div>
-                    </div>
-
-                    <!-- Main Content -->
-                    <section class="content-section">
-                        <h2 id="why-winter-matters">Why Winter Maintenance Matters in Toronto</h2>
-
-                        <p>Toronto experiences some of Canada's most dramatic seasonal temperature swings, with winter temperatures ranging from -20°C during cold snaps to brief thaws around 5°C. These extreme conditions create unique challenges for home appliances that were often designed and tested in more moderate climates.</p>
-
-                        <h3>The Toronto Winter Impact on Appliances</h3>
-                        <p>Our service data from over 2,800 Toronto-area repairs reveals that <strong>appliance failures increase by 47% during winter months (December-February)</strong> compared to summer. Here's why:</p>
-
-                        <ul>
-                            <li><strong>Temperature Fluctuations:</strong> Furnace rooms can swing 15-20°C as heating cycles on and off, causing metal expansion/contraction that stresses components</li>
-                            <li><strong>Dry Air:</strong> Indoor humidity drops to 15-25% (vs. ideal 30-50%), causing rubber seals to crack and electronics to fail from static discharge</li>
-                            <li><strong>Increased Load:</strong> Dishwashers run 40% more during holiday season; ovens work harder at higher temperatures; dryers run longer as outdoor line-drying becomes impossible</li>
-                            <li><strong>Ventilation Issues:</strong> Dryer and range hood vents can accumulate ice, causing dangerous backdrafts and carbon monoxide risks</li>
-                            <li><strong>Water Line Stress:</strong> Cold water supply lines (especially in exterior walls or unheated garages) can freeze, damaging washer/dishwasher inlet valves</li>
-                        </ul>
-
-                        <div class="info-box">
-                            <h3><i class="fas fa-chart-line"></i> Winter Failure Statistics</h3>
-                            <p>Analysis of 2,847 Toronto appliance repairs (2022-2024):</p>
-                            <ul>
-                                <li><strong>Dryer fires:</strong> 3.2x more common December-February due to lint/ice combinations</li>
-                                <li><strong>Refrigerator compressor failures:</strong> Increase 38% when coils aren't cleaned before winter</li>
-                                <li><strong>Washer floods:</strong> Peak in January/February from cold-damaged hoses and frozen drain lines</li>
-                                <li><strong>Oven failures:</strong> Spike 52% during November-December holiday cooking period</li>
-                                <li><strong>Dishwasher leaks:</strong> Increase 29% in winter from dried-out door seals</li>
-                            </ul>
+                        <div class="glance-item">
+                            <i class="fas fa-water"></i>
+                            <h3>Washer Hose Check</h3>
+                            <p><strong>Cost:</strong> Hoses $25-40 each<br>
+                            <strong>Frequency:</strong> Annual inspection<br>
+                            <strong>Risk:</strong> Cold causes rubber brittleness</p>
                         </div>
-
-                        <h3>Cost of Winter Neglect</h3>
-                        <p>The average cost of winter appliance emergencies in Toronto:</p>
-
-                        <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Emergency Scenario</th>
-                                    <th>Typical Cause</th>
-                                    <th>Repair Cost</th>
-                                    <th>Prevention Cost</th>
-                                    <th>Savings</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Dryer fire damage</td>
-                                    <td>Ice-blocked vent + lint buildup</td>
-                                    <td>$2,500-8,000+</td>
-                                    <td>$120-180 cleaning</td>
-                                    <td>$2,380-7,880</td>
-                                </tr>
-                                <tr>
-                                    <td>Washer flood</td>
-                                    <td>Cold-cracked supply hose</td>
-                                    <td>$800-3,500</td>
-                                    <td>$50-80 hose replacement</td>
-                                    <td>$750-3,450</td>
-                                </tr>
-                                <tr>
-                                    <td>Refrigerator failure</td>
-                                    <td>Dirty coils + winter strain</td>
-                                    <td>$450-1,200</td>
-                                    <td>$0-120 coil cleaning</td>
-                                    <td>$450-1,080</td>
-                                </tr>
-                                <tr>
-                                    <td>Oven breakdown (holidays)</td>
-                                    <td>Igniter failure during turkey</td>
-                                    <td>$280-450 emergency</td>
-                                    <td>$150-220 inspection</td>
-                                    <td>$130-300</td>
-                                </tr>
-                                <tr>
-                                    <td>Dishwasher leak</td>
-                                    <td>Dried-out door seal</td>
-                                    <td>$180-350</td>
-                                    <td>$25-40 seal treatment</td>
-                                    <td>$155-325</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="glance-item">
+                            <i class="fas fa-fire"></i>
+                            <h3>Gas Range Inspection</h3>
+                            <p><strong>Cost:</strong> $150-220 professional<br>
+                            <strong>Frequency:</strong> Annual pre-winter<br>
+                            <strong>Safety:</strong> TSSA-certified required</p>
                         </div>
-
-                        <p><strong>Key Finding:</strong> A comprehensive pre-winter inspection ($150-250 for all major appliances) typically prevents $800-2,500 in emergency winter repairs. That's a return on investment of 320-1,000%.</p>
-                    </section>
-
-                    <section class="content-section">
-                        <h2 id="refrigerator-maintenance">Refrigerator & Freezer Winter Maintenance</h2>
-
-                        <p>Refrigerators work harder in winter despite lower ambient temperatures, because Toronto's dry winter air causes them to cycle more frequently to maintain humidity levels. Here's your winter maintenance checklist:</p>
-
-                        <h3>Critical Winter Tasks for Refrigerators</h3>
-
-<!-- Content Image -->
-<div class="content-image">
-    <img src="../images/winter-appliance-maintenance-toronto-2.png" alt="Technician performing winter maintenance inspection on refrigerator coils and dryer vent in Toronto basement laundry room" loading="lazy">
-    <p class="image-caption">Professional winter maintenance includes cleaning refrigerator coils, inspecting dryer vents for ice blockage, and checking washer hoses for cold-weather brittleness. Toronto's extreme temperature swings require quarterly attention to prevent costly winter breakdowns.</p>
-</div>
-
-                        <h4>1. Clean Condenser Coils (Quarterly in Winter)</h4>
-                        <p>Dirty coils are the #1 cause of winter refrigerator failures. In heated homes, dust accumulates faster and coils must work harder to dissipate heat.</p>
-
-                        <p><strong>How to Clean Coils:</strong></p>
-                        <ol>
-                            <li>Unplug refrigerator for safety</li>
-                            <li>Locate coils (usually rear panel or bottom front grille)</li>
-                            <li>Use coil brush ($8-15 at hardware stores) or vacuum with brush attachment</li>
-                            <li>Work gently to avoid bending coil fins</li>
-                            <li>Clean surrounding floor area to prevent re-contamination</li>
-                            <li>Plug back in and verify normal operation</li>
-                        </ol>
-
-                        <p><strong>DIY vs. Professional:</strong></p>
-                        <ul>
-                            <li><strong>DIY:</strong> Free (if you own tools) - 30 minutes</li>
-                            <li><strong>Professional:</strong> $80-120 - includes inspection of compressor, fans, seals, and temperature calibration</li>
-                        </ul>
-
-                        <div class="info-box">
-                            <h3><i class="fas fa-lightbulb"></i> Pro Tip: Winter Coil Cleaning Schedule</h3>
-                            <p>For Toronto homes with forced-air heating (which circulates more dust), clean refrigerator coils:</p>
-                            <ul>
-                                <li><strong>October:</strong> Pre-winter deep clean</li>
-                                <li><strong>January:</strong> Mid-winter maintenance</li>
-                                <li><strong>March:</strong> End-of-winter cleaning before spring</li>
-                            </ul>
-                            <p>This quarterly schedule improves efficiency by 20-25% and extends compressor life by 3-5 years.</p>
+                        <div class="glance-item">
+                            <i class="fas fa-tint"></i>
+                            <h3>Dishwasher Seals</h3>
+                            <p><strong>Cost:</strong> Seal replacement $120-180<br>
+                            <strong>Frequency:</strong> Check bi-annually<br>
+                            <strong>Issue:</strong> Dry winter air cracks seals</p>
                         </div>
-
-                        <h4>2. Check and Adjust Temperature Settings</h4>
-                        <p>Winter temperature fluctuations in garage or basement locations require adjustment:</p>
-
-                        <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Location Type</th>
-                                    <th>Recommended Fridge Temp</th>
-                                    <th>Recommended Freezer Temp</th>
-                                    <th>Winter Adjustment</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Heated basement</td>
-                                    <td>3-4°C (37-39°F)</td>
-                                    <td>-18°C (0°F)</td>
-                                    <td>None needed</td>
-                                </tr>
-                                <tr>
-                                    <td>Unheated basement</td>
-                                    <td>2-3°C (35-37°F)</td>
-                                    <td>-20°C (-4°F)</td>
-                                    <td>Lower 1-2°C in winter</td>
-                                </tr>
-                                <tr>
-                                    <td>Garage (heated)</td>
-                                    <td>3-4°C (37-39°F)</td>
-                                    <td>-18°C (0°F)</td>
-                                    <td>Monitor during cold snaps</td>
-                                </tr>
-                                <tr>
-                                    <td>Garage (unheated)</td>
-                                    <td>Not recommended</td>
-                                    <td>-20°C (-4°F)</td>
-                                    <td>Freezer-only OK; fridge will fail</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </div>
-
-                        <p><strong>Important:</strong> Most refrigerators aren't designed to operate when ambient temperature drops below 10°C (50°F). In unheated garages, only dedicated "garage-ready" models should be used.</p>
-
-                        <h4>3. Inspect Door Seals (Gaskets)</h4>
-                        <p>Dry winter air (15-25% humidity) causes rubber gaskets to dry out and crack. Test seal integrity:</p>
-
-                        <p><strong>Dollar Bill Test:</strong></p>
-                        <ol>
-                            <li>Place a dollar bill halfway in the door</li>
-                            <li>Close the door on the bill</li>
-                            <li>Try to pull the bill out</li>
-                            <li>You should feel resistance; if it slides out easily, the seal is compromised</li>
-                            <li>Test all four sides of each door</li>
-                        </ol>
-
-                        <p><strong>Seal Maintenance:</strong></p>
-                        <ul>
-                            <li>Clean gaskets monthly with warm water and mild dish soap</li>
-                            <li>Apply thin coat of petroleum jelly to keep rubber supple (especially in winter)</li>
-                            <li>Replace gaskets if cracked, torn, or failing dollar bill test</li>
-                            <li>Replacement cost: $80-180 per door (DIY: $40-90 for parts)</li>
-                        </ul>
-
-                        <h4>4. Defrost Freezer if Not Frost-Free</h4>
-                        <p>Manual-defrost freezers should be defrosted when ice buildup exceeds 6mm (1/4 inch). Winter's dry air can actually increase frost buildup from frequent door openings.</p>
-
-                        <h4>5. Stock Strategically for Winter Storms</h4>
-                        <p>Toronto can experience ice storms causing multi-day power outages. Winter-specific guidance:</p>
-
-                        <ul>
-                            <li>Keep freezer 75%+ full (frozen items maintain cold longer)</li>
-                            <li>Use frozen water bottles to fill empty space</li>
-                            <li>Have freezer thermometer ($5-12) to monitor temperature during outages</li>
-                            <li>Keep refrigerator thermometer to ensure 4°C or below</li>
-                            <li>During storms, avoid opening doors (food stays cold 4 hours in fridge, 24-48 hours in full freezer)</li>
-                        </ul>
-                    </section>
-
-                    <section class="content-section">
-                        <h2 id="washer-dryer-maintenance">Washer & Dryer Winter Maintenance</h2>
-
-                        <p>Laundry appliances face unique winter challenges in Toronto, from frozen water lines to ice-blocked dryer vents. Winter maintenance is critical for both safety and performance.</p>
-
-                        <h3>Washing Machine Winter Checklist</h3>
-
-                        <h4>1. Inspect Water Supply Hoses</h4>
-                        <p>Cold temperatures make rubber hoses brittle, increasing burst risk by 300% according to insurance industry data.</p>
-
-                        <p><strong>Inspection Points:</strong></p>
-                        <ul>
-                            <li>Check for bulges, cracks, or brittleness (especially near connections)</li>
-                            <li>Look for rust stains or moisture at connection points</li>
-                            <li>Verify hoses aren't kinked or under tension</li>
-                            <li>Confirm hoses are dated (they should be replaced every 3-5 years)</li>
-                            <li>Consider upgrading to stainless steel braided hoses ($25-40 each, last 8-10 years)</li>
-                        </ul>
-
-                        <p><strong>Winter Hose Protection:</strong></p>
-                        <ul>
-                            <li>If washer is in unheated garage or basement, insulate supply lines with foam pipe insulation ($8-15 for 6 feet)</li>
-                            <li>During extreme cold (-15°C or colder), run a small cold-water load every 2-3 days to prevent line freezing</li>
-                            <li>For vacation properties or extended absences, shut off water supply and drain hoses</li>
-                        </ul>
-
-                        <div class="warning-box">
-                            <h3><i class="fas fa-exclamation-triangle"></i> Washer Flood Prevention</h3>
-                            <p>A burst washer hose releases 2-4 gallons per minute. In a typical 8-hour absence, this causes 1,000-2,000 gallons of flooding—costing $2,000-8,000 in water damage.</p>
-                            <p><strong>Prevention Strategy:</strong></p>
-                            <ul>
-                                <li>Install automatic shut-off system like FloodStop ($180-280 installed)</li>
-                                <li>Replace hoses every 3-5 years regardless of appearance</li>
-                                <li>Turn off water supply when away for 48+ hours</li>
-                                <li>Install water leak detector near washer ($25-60)</li>
-                            </ul>
-                        </div>
-
-                        <h4>2. Clean Washer Drum and Gasket</h4>
-                        <p>Toronto's hard water (200-300 ppm) combined with cold-water washing (more common in winter to save energy) increases detergent buildup and mold risk.</p>
-
-                        <p><strong>Monthly Cleaning Procedure:</strong></p>
-                        <ol>
-                            <li>Run hot water cycle with 2 cups white vinegar (no clothes)</li>
-                            <li>Sprinkle 1/2 cup baking soda in drum, run another hot cycle</li>
-                            <li>Wipe door gasket with vinegar solution to remove mold/mildew</li>
-                            <li>Leave door and detergent dispenser open between loads to air out</li>
-                        </ol>
-
-                        <h4>3. Check Drain Hose and Pump Filter</h4>
-                        <p>Cold temperatures can cause drain lines to freeze, especially if washer drains into floor drain or exterior standpipe.</p>
-
-                        <p><strong>Winter Drain Maintenance:</strong></p>
-                        <ul>
-                            <li>Ensure drain hose isn't kinked or frozen</li>
-                            <li>Clean pump filter every 3 months (removes lint, coins, small objects)</li>
-                            <li>For floor drains, ensure trap has water (pour 1 cup monthly to prevent sewer gas)</li>
-                            <li>Insulate drain line if it runs through unheated space</li>
-                        </ul>
-
-                        <h3>Dryer Winter Maintenance (Critical Safety)</h3>
-
-                        <h4>1. Clean Lint Trap and Exhaust Vent (Most Important)</h4>
-                        <p>Winter dryer vent cleaning is the single most important appliance safety task in Toronto. Here's why:</p>
-
-                        <ul>
-                            <li>Dryers run 40-60% more in winter (no outdoor line drying)</li>
-                            <li>Cold exterior air causes moisture to condense in vent, freezing and blocking airflow</li>
-                            <li>Ice blockage + lint buildup = fire risk increases 3x in winter</li>
-                            <li>Toronto Fire Services reports dryer fires peak December-February</li>
-                        </ul>
-
-                        <p><strong>Comprehensive Vent Cleaning Procedure:</strong></p>
-
-                        <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Task</th>
-                                    <th>Frequency</th>
-                                    <th>DIY/Pro</th>
-                                    <th>Cost</th>
-                                    <th>Importance</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Clean lint trap</td>
-                                    <td>After every load</td>
-                                    <td>DIY</td>
-                                    <td>$0</td>
-                                    <td>Critical</td>
-                                </tr>
-                                <tr>
-                                    <td>Vacuum lint trap housing</td>
-                                    <td>Monthly</td>
-                                    <td>DIY</td>
-                                    <td>$0</td>
-                                    <td>High</td>
-                                </tr>
-                                <tr>
-                                    <td>Clean dryer interior</td>
-                                    <td>Annually</td>
-                                    <td>DIY or Pro</td>
-                                    <td>$0-80</td>
-                                    <td>High</td>
-                                </tr>
-                                <tr>
-                                    <td>Clean exhaust vent duct</td>
-                                    <td>Every 6-12 months</td>
-                                    <td>Professional</td>
-                                    <td>$120-180</td>
-                                    <td>Critical</td>
-                                </tr>
-                                <tr>
-                                    <td>Inspect exterior vent flap</td>
-                                    <td>Monthly in winter</td>
-                                    <td>DIY</td>
-                                    <td>$0</td>
-                                    <td>High</td>
-                                </tr>
-                                <tr>
-                                    <td>Remove ice from exterior vent</td>
-                                    <td>As needed (below -10°C)</td>
-                                    <td>DIY</td>
-                                    <td>$0</td>
-                                    <td>Critical</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </div>
-
-                        <p><strong>Winter Vent Inspection Signs:</strong></p>
-                        <ul>
-                            <li>Clothes taking longer than 45-60 minutes to dry</li>
-                            <li>Dryer exterior becoming very hot to touch</li>
-                            <li>Burning smell during operation</li>
-                            <li>Excessive lint around dryer area</li>
-                            <li>Humidity or moisture in laundry room</li>
-                            <li>Exterior vent flap not opening during operation</li>
-                        </ul>
-
-                        <div class="warning-box">
-                            <h3><i class="fas fa-fire"></i> Dryer Fire Prevention</h3>
-                            <p><strong>CRITICAL WINTER SAFETY:</strong> Toronto experiences a 280% increase in dryer fires during January-February compared to summer months.</p>
-                            <p><strong>Mandatory Actions:</strong></p>
-                            <ul>
-                                <li>Schedule professional vent cleaning every 6-12 months ($120-180)</li>
-                                <li>Check exterior vent monthly for ice blockage in winter</li>
-                                <li>Never run dryer when away from home</li>
-                                <li>Install dryer-specific fire extinguisher in laundry room</li>
-                                <li>Replace plastic or foil vent ducts with rigid metal (required by code)</li>
-                            </ul>
-                        </div>
-
-                        <h4>2. Inspect Dryer Drum and Seals</h4>
-                        <p>Dry winter air can cause drum seals to crack, reducing efficiency and potentially causing squeaking.</p>
-
-                        <p><strong>Drum Maintenance:</strong></p>
-                        <ul>
-                            <li>Vacuum around drum and under lint trap housing monthly</li>
-                            <li>Check drum for rough spots or sharp edges (can snag clothes)</li>
-                            <li>Inspect rear felt seal for wear (should be replaced every 5-7 years)</li>
-                            <li>Listen for unusual noises (squeaking, grinding, thumping)</li>
-                        </ul>
-
-                        <h4>3. Verify Proper Airflow and Timing</h4>
-                        <p>Test dryer efficiency to catch ice blockage early:</p>
-
-                        <p><strong>Simple Performance Test:</strong></p>
-                        <ol>
-                            <li>Dry a standard medium load of towels on normal heat</li>
-                            <li>Time should be 45-60 minutes for complete drying</li>
-                            <li>If taking 75+ minutes, vent is likely partially blocked</li>
-                            <li>Check exterior vent during operation—should feel strong warm airflow</li>
-                        </ol>
-                    </section>
-
-                    <section class="content-section">
-                        <h2 id="dishwasher-maintenance">Dishwasher Winter Maintenance</h2>
-
-                        <p>Dishwashers experience 40% higher usage during Toronto's winter holiday season (November-January), making pre-winter maintenance essential.</p>
-
-                        <h3>Critical Dishwasher Winter Tasks</h3>
-
-                        <h4>1. Inspect and Maintain Door Seal</h4>
-                        <p>Toronto's dry winter air (15-25% humidity) causes rubber door gaskets to dry out, crack, and leak.</p>
-
-                        <p><strong>Door Seal Maintenance:</strong></p>
-                        <ul>
-                            <li>Clean seal monthly with warm water and mild detergent</li>
-                            <li>Check for cracks, brittleness, or warping</li>
-                            <li>Apply thin layer of petroleum jelly or silicone spray to keep rubber supple</li>
-                            <li>Run hand around entire seal perimeter to check for gaps</li>
-                            <li>Replace seal if damaged (cost: $80-180 installed)</li>
-                        </ul>
-
-                        <h4>2. Clean Filter and Spray Arms</h4>
-                        <p>Toronto's hard water (200-300 ppm) causes mineral buildup that worsens in winter when water is coldest.</p>
-
-                        <p><strong>Monthly Cleaning Procedure:</strong></p>
-                        <ol>
-                            <li>Remove bottom rack to access filter assembly</li>
-                            <li>Twist and lift filter (consult manual for your model)</li>
-                            <li>Rinse under hot water, use soft brush for stubborn debris</li>
-                            <li>Remove spray arms (usually twist to unlock)</li>
-                            <li>Clear holes with toothpick or small wire</li>
-                            <li>Soak in white vinegar for 15 minutes if mineral buildup present</li>
-                            <li>Reassemble all components</li>
-                        </ol>
-
-                        <h4>3. Run Cleaning Cycle</h4>
-                        <p>Hard water and increased usage require monthly deep cleaning in winter:</p>
-
-                        <ul>
-                            <li>Remove all dishes and racks</li>
-                            <li>Place dishwasher-safe bowl with 2 cups white vinegar on bottom rack</li>
-                            <li>Run hot water cycle (vinegar removes grease and mineral deposits)</li>
-                            <li>Sprinkle 1 cup baking soda on bottom, run short hot cycle (deodorizes and brightens)</li>
-                            <li>Wipe door edges and seals with vinegar solution</li>
-                        </ul>
-
-                        <h4>4. Check Water Inlet Valve and Hoses</h4>
-                        <p>Similar to washers, dishwasher water lines can freeze in unheated areas:</p>
-
-                        <ul>
-                            <li>Inspect hose under sink for leaks or brittleness</li>
-                            <li>Ensure connections are tight (but not over-tightened)</li>
-                            <li>Check inlet valve screen for debris or mineral buildup</li>
-                            <li>If dishwasher is in cottage or rarely-used space, shut off water supply in winter</li>
-                        </ul>
-
-                        <h4>5. Test Heating Element</h4>
-                        <p>Cold inlet water (Toronto water is coldest December-February) puts extra strain on heating element:</p>
-
-                        <p><strong>Heating Element Test:</strong></p>
-                        <ul>
-                            <li>Run normal cycle and carefully open door during dry cycle</li>
-                            <li>Should feel significant heat radiating from interior</li>
-                            <li>Dishes should be hot to touch at end of cycle</li>
-                            <li>If water isn't heating or drying poorly, element may need replacement ($150-280 installed)</li>
-                        </ul>
-
-                        <h4>6. Use Monthly Even If Not Needed</h4>
-                        <p><strong>Important:</strong> If dishwasher sits unused for 2+ weeks in winter, seals dry out and plumbing traps lose water.</p>
-
-                        <p><strong>Minimum Use Protocol:</strong></p>
-                        <ul>
-                            <li>Run a full hot cycle at least once per month, even if empty</li>
-                            <li>Add 1/4 cup white vinegar to maintain seals and prevent odors</li>
-                            <li>This prevents seal cracking and keeps pump seals lubricated</li>
-                            <li>Cost of running empty cycle: ~$0.50 in water/energy vs. $180-350 to repair dried-out seals</li>
-                        </ul>
-                    </section>
-
-                    <section class="content-section">
-                        <h2 id="range-oven-maintenance">Range & Oven Winter Maintenance</h2>
-
-                        <p>Ovens and ranges work harder during Toronto's winter holiday season, with usage increasing 60% from November through December. Pre-season maintenance prevents breakdowns during critical cooking times.</p>
-
-                        <h3>Gas Range Winter Safety (TSSA Requirements)</h3>
-
-                        <div class="warning-box">
-                            <h3><i class="fas fa-exclamation-triangle"></i> CRITICAL: Toronto Gas Safety Regulations</h3>
-                            <p><strong>All gas appliance work in Ontario is regulated by the Technical Standards and Safety Authority (TSSA).</strong></p>
-                            <ul>
-                                <li><strong>Only TSSA-certified gas fitters</strong> can legally work on gas connections, lines, or burner assemblies</li>
-                                <li><strong>Annual inspections are recommended</strong> for gas ranges, especially before heavy winter use</li>
-                                <li><strong>Carbon monoxide detectors are mandatory</strong> in all Ontario homes with gas appliances</li>
-                                <li><strong>If you smell gas:</strong> Leave immediately, call 911 and Enbridge Gas (1-866-763-5427)</li>
-                            </ul>
-                            <p><strong>DIY Limitations:</strong> You can clean burners and check igniters, but NEVER work on gas lines, regulators, or install/remove gas appliances without certification.</p>
-                        </div>
-
-                        <h4>1. Clean Burners and Igniters (Gas Ranges)</h4>
-                        <p>Food debris and grease buildup prevents proper ignition, especially problematic in winter when heavy cooking is common.</p>
-
-                        <p><strong>Safe Cleaning Procedure:</strong></p>
-                        <ol>
-                            <li>Turn off range at circuit breaker for safety</li>
-                            <li>Remove burner grates and caps</li>
-                            <li>Wash grates and caps in hot soapy water, rinse thoroughly</li>
-                            <li>Use soft brush to clean burner ports (small holes where flames emerge)</li>
-                            <li>Wipe igniters gently with dry cloth (moisture causes weak spark)</li>
-                            <li>Ensure all components are completely dry before reassembling</li>
-                            <li>Test each burner for proper ignition and flame pattern</li>
-                        </ol>
-
-                        <p><strong>Proper Flame Indicators:</strong></p>
-                        <ul>
-                            <li>Flames should be blue with small yellow tips</li>
-                            <li>Flame height should be 1/2 to 3/4 inch</li>
-                            <li>Yellow or orange flames indicate incomplete combustion—call TSSA technician</li>
-                            <li>Flames should form even ring pattern around burner</li>
-                        </ul>
-
-                        <h4>2. Inspect Oven Door Seal</h4>
-                        <p>Like dishwashers and refrigerators, oven door gaskets suffer from dry winter air.</p>
-
-                        <p><strong>Seal Inspection and Maintenance:</strong></p>
-                        <ul>
-                            <li>Close door and look for light visible around edges</li>
-                            <li>Check gasket for cracks, gaps, or brittleness</li>
-                            <li>Oven should reach set temperature in 12-15 minutes (if longer, seal may be faulty)</li>
-                            <li>Clean seal with damp cloth (avoid harsh chemicals)</li>
-                            <li>Replacement cost: $80-180 (DIY: $40-80 for parts)</li>
-                        </ul>
-
-                        <h4>3. Calibrate Oven Temperature</h4>
-                        <p>Ovens can drift 15-25°F from accurate temperature over time, problematic for holiday baking.</p>
-
-                        <p><strong>Temperature Calibration Test:</strong></p>
-                        <ol>
-                            <li>Purchase oven thermometer ($8-20 at kitchen stores)</li>
-                            <li>Place thermometer in center of oven</li>
-                            <li>Set oven to 350°F (175°C)</li>
-                            <li>Allow 20 minutes to preheat fully</li>
-                            <li>Check thermometer reading</li>
-                            <li>If off by more than 10°F (5°C), oven needs calibration</li>
-                        </ol>
-
-                        <p><strong>Professional Calibration:</strong> Included in standard range inspection ($150-220). Can often be adjusted via control panel settings (consult manual) or by adjusting thermostat screw.</p>
-
-                        <h4>4. Clean Oven Interior</h4>
-                        <p>Built-up grease and food residue increase fire risk and smoke production during heavy winter cooking.</p>
-
-                        <p><strong>Pre-Holiday Deep Clean:</strong></p>
-                        <ul>
-                            <li>Remove oven racks, soak in hot soapy water</li>
-                            <li>If self-cleaning: Run self-clean cycle (ventilate well, can create smoke/odors)</li>
-                            <li>If manual cleaning: Use oven-safe cleaner or baking soda paste</li>
-                            <li>Clean door glass inside and out</li>
-                            <li>Wipe down control panel and exterior</li>
-                        </ul>
-
-                        <h4>5. Test All Functions</h4>
-                        <p>Don't wait until Thanksgiving to discover your oven doesn't work. Test in October/November:</p>
-
-                        <ul>
-                            <li>Test bake, broil, and convection functions</li>
-                            <li>Verify oven light works (easy to overlook)</li>
-                            <li>Check timer and temperature probe (if equipped)</li>
-                            <li>For gas ovens, ensure igniter glows and lights within 90 seconds</li>
-                            <li>For electric ranges, verify all heating elements work on all burners</li>
-                        </ul>
-
-                        <h4>6. Annual Gas Safety Inspection</h4>
-                        <p>TSSA-certified technicians should inspect gas ranges annually, ideally in October before heavy winter use.</p>
-
-                        <p><strong>Professional Inspection Includes:</strong></p>
-                        <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Inspection Component</th>
-                                    <th>What's Checked</th>
-                                    <th>Why It Matters</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Gas connections</td>
-                                    <td>Leak test with specialized equipment</td>
-                                    <td>Prevents gas leaks and carbon monoxide poisoning</td>
-                                </tr>
-                                <tr>
-                                    <td>Burner flames</td>
-                                    <td>Color, pattern, and stability</td>
-                                    <td>Ensures complete combustion (incomplete = CO risk)</td>
-                                </tr>
-                                <tr>
-                                    <td>Igniters</td>
-                                    <td>Spark strength and timing</td>
-                                    <td>Prevents gas buildup from delayed ignition</td>
-                                </tr>
-                                <tr>
-                                    <td>Ventilation</td>
-                                    <td>Range hood and exhaust function</td>
-                                    <td>Removes combustion byproducts</td>
-                                </tr>
-                                <tr>
-                                    <td>Safety shut-offs</td>
-                                    <td>Flame failure devices</td>
-                                    <td>Automatically stops gas flow if flame goes out</td>
-                                </tr>
-                                <tr>
-                                    <td>Temperature accuracy</td>
-                                    <td>Calibration and thermostat</td>
-                                    <td>Proper cooking temperatures</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </div>
-
-                        <p><strong>Cost:</strong> $150-220 for comprehensive inspection and minor adjustments. Major repairs (igniters, valves, thermostats) are additional but often identified before they fail completely.</p>
-                    </section>
-
-                    <section class="content-section">
-                        <h2 id="winter-maintenance-schedule">Complete Toronto Winter Maintenance Schedule</h2>
-
-                        <p>To make winter appliance maintenance manageable, follow this month-by-month schedule designed specifically for Toronto's climate:</p>
-
-                        <h3>October: Pre-Winter Deep Preparation</h3>
-                        <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Appliance</th>
-                                    <th>Tasks</th>
-                                    <th>DIY/Pro</th>
-                                    <th>Cost</th>
-                                    <th>Time</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>All appliances</td>
-                                    <td>Schedule professional inspection package</td>
-                                    <td>Professional</td>
-                                    <td>$150-250</td>
-                                    <td>2-3 hours</td>
-                                </tr>
-                                <tr>
-                                    <td>Refrigerator</td>
-                                    <td>Deep clean coils, check seals, calibrate temperature</td>
-                                    <td>DIY or Pro</td>
-                                    <td>$0-120</td>
-                                    <td>45 min</td>
-                                </tr>
-                                <tr>
-                                    <td>Washer</td>
-                                    <td>Inspect hoses, clean drum, check drain</td>
-                                    <td>DIY</td>
-                                    <td>$0-80</td>
-                                    <td>30 min</td>
-                                </tr>
-                                <tr>
-                                    <td>Dryer</td>
-                                    <td>Professional vent cleaning, inspect seals</td>
-                                    <td>Professional</td>
-                                    <td>$120-180</td>
-                                    <td>1 hour</td>
-                                </tr>
-                                <tr>
-                                    <td>Dishwasher</td>
-                                    <td>Clean filter/spray arms, treat door seal</td>
-                                    <td>DIY</td>
-                                    <td>$0-15</td>
-                                    <td>30 min</td>
-                                </tr>
-                                <tr>
-                                    <td>Range/Oven</td>
-                                    <td>Gas safety inspection (TSSA), clean, calibrate</td>
-                                    <td>Professional</td>
-                                    <td>$150-220</td>
-                                    <td>1-1.5 hours</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </div>
-
-                        <h3>November-January: Active Winter Monitoring</h3>
-                        <p><strong>Weekly Tasks:</strong></p>
-                        <ul>
-                            <li>Check dryer exterior vent for ice buildup (especially below -10°C)</li>
-                            <li>Monitor appliance sounds/performance for changes</li>
-                            <li>Ensure proper humidity levels (30-50%) to protect seals</li>
-                        </ul>
-
-                        <p><strong>Monthly Tasks:</strong></p>
-                        <ul>
-                            <li>Clean lint trap housing and inspect dryer vent</li>
-                            <li>Run dishwasher and washer cleaning cycles</li>
-                            <li>Clean dishwasher filter and spray arms</li>
-                            <li>Check all door seals (fridge, dishwasher, oven)</li>
-                            <li>Vacuum refrigerator coils (if in high-dust area)</li>
-                        </ul>
-
-                        <h3>January: Mid-Winter Maintenance Check</h3>
-                        <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Appliance</th>
-                                    <th>Mid-Winter Tasks</th>
-                                    <th>Why Now</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Refrigerator</td>
-                                    <td>Clean coils again, check temperature accuracy</td>
-                                    <td>Coldest month increases workload</td>
-                                </tr>
-                                <tr>
-                                    <td>Washer</td>
-                                    <td>Re-inspect hoses (peak failure period)</td>
-                                    <td>January sees most cold-related hose failures</td>
-                                </tr>
-                                <tr>
-                                    <td>Dryer</td>
-                                    <td>Check vent performance, remove any ice</td>
-                                    <td>Mid-winter ice accumulation peaks</td>
-                                </tr>
-                                <tr>
-                                    <td>Dishwasher</td>
-                                    <td>Deep clean and seal treatment</td>
-                                    <td>Post-holiday heavy use requires refresh</td>
-                                </tr>
-                                <tr>
-                                    <td>All appliances</td>
-                                    <td>Check humidity levels, treat dry air</td>
-                                    <td>January = driest indoor air (15-20% typical)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </div>
-
-                        <h3>February-March: End-of-Winter Assessment</h3>
-                        <p><strong>Tasks:</strong></p>
-                        <ul>
-                            <li>Assess any damage or wear from winter months</li>
-                            <li>Schedule repairs before spring rush (March-April = peak season)</li>
-                            <li>Clean dryer vent again before spring (lint + winter moisture = buildup)</li>
-                            <li>Final refrigerator coil cleaning before warmer months</li>
-                            <li>Check all hoses and seals; replace anything showing wear</li>
-                        </ul>
-
-                        <div class="info-box">
-                            <h3><i class="fas fa-calendar-check"></i> Money-Saving Maintenance Bundle</h3>
-                            <p><strong>Nika Appliance Repair Pre-Winter Package:</strong></p>
-                            <p>We offer a comprehensive pre-winter inspection of all major appliances (refrigerator, washer, dryer, dishwasher, range) for a flat rate of <strong>$250-350</strong> (depending on home size and number of appliances).</p>
-                            <p><strong>Package includes:</strong></p>
-                            <ul>
-                                <li>Complete safety and performance inspection of all appliances</li>
-                                <li>Dryer vent cleaning and ice blockage assessment</li>
-                                <li>Refrigerator coil cleaning and temperature calibration</li>
-                                <li>Gas range safety inspection (TSSA-certified technician)</li>
-                                <li>All minor adjustments and calibrations</li>
-                                <li>Written report of findings and recommendations</li>
-                                <li>Priority scheduling if winter repairs needed</li>
-                            </ul>
-                            <p><strong>Savings:</strong> Individual service calls would cost $450-650+. Bundle saves $150-300 and prevents costly emergency repairs.</p>
-                            <p><strong>Book by October 15 to guarantee pre-winter completion.</strong></p>
-                        </div>
-                    </section>
-
-                    <section class="content-section">
-                        <h2 id="humidity-temperature">Managing Indoor Humidity and Temperature</h2>
-
-                        <p>Toronto's winter humidity levels drop to 15-25% indoors (vs. ideal 30-50%), creating unique challenges for appliance performance and longevity.</p>
-
-                        <h3>Why Winter Humidity Matters</h3>
-                        <p>Extremely dry air affects appliances in several ways:</p>
-
-                        <ul>
-                            <li><strong>Rubber components:</strong> Seals, gaskets, and hoses become brittle and crack</li>
-                            <li><strong>Static electricity:</strong> Can damage electronic control boards (especially dishwashers and washing machines)</li>
-                            <li><strong>Adhesives:</strong> Door seals and insulation can separate from appliance bodies</li>
-                            <li><strong>Wood components:</strong> Cutting boards, drawer inserts, and handles can crack</li>
-                        </ul>
-
-                        <h3>Optimal Humidity for Appliances</h3>
-                        <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Humidity Level</th>
-                                    <th>Effect on Appliances</th>
-                                    <th>Effect on Home</th>
-                                    <th>Recommendation</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Below 20%</td>
-                                    <td>Rapid seal deterioration, static damage risk</td>
-                                    <td>Dry skin, respiratory issues</td>
-                                    <td>Too low—increase immediately</td>
-                                </tr>
-                                <tr>
-                                    <td>20-30%</td>
-                                    <td>Acceptable but seals still at risk</td>
-                                    <td>Somewhat dry</td>
-                                    <td>Low end—consider increasing</td>
-                                </tr>
-                                <tr>
-                                    <td>30-50%</td>
-                                    <td>Ideal—seals remain supple, no static</td>
-                                    <td>Comfortable and healthy</td>
-                                    <td>Target range</td>
-                                </tr>
-                                <tr>
-                                    <td>50-60%</td>
-                                    <td>No issues for appliances</td>
-                                    <td>Slightly humid but acceptable</td>
-                                    <td>High end but OK</td>
-                                </tr>
-                                <tr>
-                                    <td>Above 60%</td>
-                                    <td>Mold risk in washers, odor issues</td>
-                                    <td>Mold, mildew, comfort issues</td>
-                                    <td>Too high—reduce immediately</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </div>
-
-                        <h3>Increasing Winter Humidity Safely</h3>
-                        <p><strong>Methods and Costs:</strong></p>
-
-                        <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Method</th>
-                                    <th>Initial Cost</th>
-                                    <th>Operating Cost</th>
-                                    <th>Effectiveness</th>
-                                    <th>Maintenance</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Whole-home humidifier</td>
-                                    <td>$400-1,200 installed</td>
-                                    <td>$3-8/month</td>
-                                    <td>Excellent</td>
-                                    <td>Annual filter change</td>
-                                </tr>
-                                <tr>
-                                    <td>Console humidifier</td>
-                                    <td>$100-300</td>
-                                    <td>$10-20/month</td>
-                                    <td>Good (1-2 rooms)</td>
-                                    <td>Weekly cleaning</td>
-                                </tr>
-                                <tr>
-                                    <td>Tabletop humidifier</td>
-                                    <td>$30-100</td>
-                                    <td>$5-12/month</td>
-                                    <td>Fair (small area)</td>
-                                    <td>Daily refilling</td>
-                                </tr>
-                                <tr>
-                                    <td>Plants</td>
-                                    <td>$10-50 per plant</td>
-                                    <td>Minimal</td>
-                                    <td>Minimal impact</td>
-                                    <td>Regular watering</td>
-                                </tr>
-                                <tr>
-                                    <td>Air-drying laundry</td>
-                                    <td>$20-40 (drying rack)</td>
-                                    <td>$0</td>
-                                    <td>Moderate</td>
-                                    <td>None</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </div>
-
-                        <p><strong>Best Practice for Toronto Homes:</strong> Whole-home humidifier installed on furnace is most effective and efficient. Initial investment ($400-1,200) pays back in reduced appliance wear and lower heating costs (humid air feels warmer).</p>
-
-                        <h3>Temperature Management for Appliance Rooms</h3>
-                        <p>Appliances in unheated or poorly-heated spaces face additional winter challenges:</p>
-
-                        <p><strong>Basement Laundry Rooms:</strong></p>
-                        <ul>
-                            <li>Maintain minimum 10°C (50°F) to prevent frozen pipes</li>
-                            <li>Insulate water supply lines in exterior walls</li>
-                            <li>Consider space heater for severe cold snaps (below -20°C)</li>
-                            <li>Keep washer/dryer 3+ inches from cold exterior walls</li>
-                        </ul>
-
-                        <p><strong>Garage Locations (Not Recommended):</strong></p>
-                        <ul>
-                            <li>Only "garage-ready" refrigerators/freezers should be used</li>
-                            <li>Standard refrigerators fail when ambient drops below 10°C</li>
-                            <li>Washers, dryers, and dishwashers should never be in unheated garages</li>
-                            <li>If you must have appliances in garage, install dedicated heating</li>
-                        </ul>
-                    </section>
-
-                    <section class="content-section">
-                        <h2 id="emergency-prep">Winter Emergency Preparedness</h2>
-
-                        <p>Toronto experiences 1-3 significant winter storms each year that can cause multi-day power outages. Proper appliance emergency preparation protects both your appliances and food supplies.</p>
-
-                        <h3>Power Outage Preparation</h3>
-
-                        <h4>Before the Storm</h4>
-                        <ul>
-                            <li><strong>Refrigerator/Freezer:</strong>
-                                <ul>
-                                    <li>Lower temperature settings (2°C for fridge, -20°C for freezer)</li>
-                                    <li>Fill freezer to 75%+ capacity (frozen items maintain cold longer)</li>
-                                    <li>Use frozen water bottles to fill empty space</li>
-                                    <li>Locate coolers and ice packs</li>
-                                    <li>Have appliance thermometers installed</li>
-                                </ul>
-                            </li>
-                            <li><strong>All Appliances:</strong>
-                                <ul>
-                                    <li>Complete any in-progress loads (washer, dryer, dishwasher)</li>
-                                    <li>Unplug appliances to protect from power surges when electricity returns</li>
-                                    <li>Turn off water supply to washer and dishwasher if extended outage expected</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <h4>During the Outage</h4>
-                        <ul>
-                            <li><strong>Do NOT open refrigerator or freezer doors</strong> (each opening raises temperature 5-10°C)</li>
-                            <li>Refrigerator stays cold 4 hours with door closed</li>
-                            <li>Full freezer stays frozen 48 hours (half-full: 24 hours)</li>
-                            <li>Monitor temperatures with appliance thermometers</li>
-                            <li>Move critical items to coolers if outage exceeds safe time</li>
-                            <li>In winter, you can use outdoor snow/cold as temporary refrigeration (in sealed containers to prevent animal access)</li>
-                        </ul>
-
-                        <h4>After Power Returns</h4>
-                        <ul>
-                            <li>Wait 5-10 minutes before plugging in appliances (allows electrical system to stabilize)</li>
-                            <li>Check refrigerator temperature—discard food if above 4°C for 2+ hours</li>
-                            <li>Check freezer—food with ice crystals is safe to refreeze; thawed food should be cooked within 24 hours or discarded</li>
-                            <li>Run all appliances through test cycles to ensure proper function</li>
-                            <li>Monitor for unusual sounds or performance in following days</li>
-                        </ul>
-
-                        <h3>Winter Storm Emergency Kit for Appliances</h3>
-                        <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Item</th>
-                                    <th>Purpose</th>
-                                    <th>Cost</th>
-                                    <th>Where to Store</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Appliance thermometers (2-3)</td>
-                                    <td>Monitor fridge/freezer temps during outage</td>
-                                    <td>$15-35</td>
-                                    <td>Keep in fridge/freezer</td>
-                                </tr>
-                                <tr>
-                                    <td>Coolers with ice packs</td>
-                                    <td>Transfer critical items during extended outage</td>
-                                    <td>$30-80</td>
-                                    <td>Basement or garage</td>
-                                </tr>
-                                <tr>
-                                    <td>Battery-powered radio</td>
-                                    <td>Monitor storm and outage updates</td>
-                                    <td>$20-50</td>
-                                    <td>Emergency kit</td>
-                                </tr>
-                                <tr>
-                                    <td>Flashlights/headlamps</td>
-                                    <td>Inspect appliances without opening doors</td>
-                                    <td>$15-40</td>
-                                    <td>Emergency kit</td>
-                                </tr>
-                                <tr>
-                                    <td>Surge protectors (heavy-duty)</td>
-                                    <td>Protect appliances from power surge damage</td>
-                                    <td>$25-60 each</td>
-                                    <td>Installed on appliances</td>
-                                </tr>
-                                <tr>
-                                    <td>Frozen water bottles (6-8)</td>
-                                    <td>Fill freezer space, use in coolers</td>
-                                    <td>$5-15</td>
-                                    <td>In freezer</td>
-                                </tr>
-                                <tr>
-                                    <td>Emergency contact list</td>
-                                    <td>Repair services, Enbridge, Toronto Hydro</td>
-                                    <td>$0</td>
-                                    <td>On refrigerator</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </div>
-
-                        <h3>Critical Emergency Contacts for Toronto</h3>
-                        <p>Keep these numbers accessible during winter storms:</p>
-
-                        <ul>
-                            <li><strong>Toronto Hydro (Power Outages):</strong> 416-542-8000</li>
-                            <li><strong>Enbridge Gas (Gas Emergency):</strong> 1-866-763-5427</li>
-                            <li><strong>Toronto Fire Services (Emergency):</strong> 911</li>
-                            <li><strong>Nika Appliance Repair (24/7 Emergency):</strong> (416) 827-1960</li>
-                            <li><strong>Toronto Water (Frozen Pipes):</strong> 416-392-2453</li>
-                            <li><strong>TSSA (Gas Safety Concerns):</strong> 1-877-682-8772</li>
-                        </ul>
-
-                        <div class="warning-box">
-                            <h3><i class="fas fa-exclamation-triangle"></i> Carbon Monoxide Warning</h3>
-                            <p><strong>NEVER use gas ranges or ovens for home heating during power outages.</strong></p>
-                            <p>This creates deadly carbon monoxide (CO) levels. Every year, Toronto emergency services respond to CO poisoning incidents during winter storms.</p>
-                            <p><strong>Safe Heating Alternatives:</strong></p>
-                            <ul>
-                                <li>Properly vented propane or kerosene heaters (outdoor combustion air)</li>
-                                <li>Electric space heaters with generator backup</li>
-                                <li>Fireplace with open damper and chimney inspection</li>
-                                <li>Move to designated warming center (City of Toronto opens several during storms)</li>
-                            </ul>
-                            <p><strong>CO Detector Batteries:</strong> Test monthly and replace batteries twice per year (fall and spring time changes).</p>
-                        </div>
-                    </section>
-
-                    <!-- FAQ Section -->
-                    <section class="faq-section">
-                        <h2 id="faq">Frequently Asked Questions</h2>
-
-                        <div class="faq-item">
-                            <h3>How much does professional winter appliance maintenance cost in Toronto?</h3>
-                            <p>Individual service calls range from $80-250 per appliance depending on complexity. A comprehensive pre-winter package covering all major appliances (refrigerator, washer, dryer, dishwasher, and range/oven) typically costs $250-350 total—a savings of $150-300 compared to individual appointments. This investment prevents an average of $800-2,500 in winter emergency repairs.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>When should I schedule pre-winter appliance maintenance?</h3>
-                            <p>Book services in October to ensure completion before winter's heavy usage period. Many Toronto households wait until November, causing scheduling delays and potentially missing the pre-holiday window. October appointments also allow time to address any issues discovered before you need your appliances for holiday cooking and entertaining.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>Can I skip winter maintenance if my appliances are new?</h3>
-                            <p>While newer appliances (under 3 years) typically need less maintenance, Toronto's winter conditions affect all ages. Even new appliances benefit from dryer vent cleaning, refrigerator coil cleaning, and seal protection. New gas ranges should still receive annual safety inspections as required by TSSA. Consider maintenance insurance protection during the warranty period to establish baseline performance data.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>Why does my dryer take longer to dry clothes in winter?</h3>
-                            <p>Three winter-specific factors cause this: 1) Ice accumulation in exterior vent restricts airflow (most common), 2) Cold exterior air reduces dryer efficiency by 15-25%, and 3) Lint buildup combines with moisture to form partial blockage. Professional vent cleaning ($120-180) typically resolves the issue. During extreme cold (below -15°C), expect 10-15% longer dry times even with clean vents.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>How often should I clean dryer vents in Toronto winters?</h3>
-                            <p>Toronto winters require more frequent dryer vent maintenance than other seasons. Professional cleaning every 6 months (fall and spring) is recommended for typical households. Increase to every 3-4 months if you: have large family (5+ loads weekly), own pets that shed, use dryer daily, have vent run longer than 25 feet, or have vent with multiple bends/elbows. Monthly visual checks of exterior vent for ice blockage are essential.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>Should I turn off water to my washer and dishwasher when traveling in winter?</h3>
-                            <p>Yes, absolutely. For any absence of 48+ hours during winter months, shut off water supply valves to washer and dishwasher. Cold temperatures can cause hose failures, and a burst hose releases 2-4 gallons per minute—causing $2,000-8,000 in water damage during even a weekend trip. Also unplug appliances to protect from power surge damage, and adjust thermostat to minimum 15°C to prevent pipe freezing.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>Why do door seals crack more in winter?</h3>
-                            <p>Toronto's winter indoor humidity drops to 15-25% (vs. ideal 30-50%), causing rubber gaskets to lose moisture and become brittle. Heated homes accelerate this drying effect. Refrigerator, dishwasher, and oven door seals are most vulnerable. Monthly treatment with petroleum jelly or silicone spray keeps rubber supple and prevents cracking. Whole-home humidifiers maintaining 30-50% humidity significantly extend seal life.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>Is it safe to keep my refrigerator in an unheated garage during Toronto winters?</h3>
-                            <p>Standard refrigerators will fail when ambient temperature drops below 10°C (50°F)—a common occurrence in Toronto garages November through March. Only "garage-ready" refrigerators with specialized heating elements and insulation should be used in unheated spaces. Even these struggle below -15°C. For standard refrigerators, maintain garage temperature minimum 10°C with space heater, or move refrigerator to heated space for winter months. Never place washers, dryers, or dishwashers in unheated areas.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>What should I do if my washer hoses freeze?</h3>
-                            <p>If hoses are frozen (no water flow when taps turned on): 1) Turn off water supply immediately, 2) Unplug washer, 3) DO NOT try to force washing machine to run, 4) Apply warm (not hot) towels to frozen sections, or use hair dryer on low setting, 5) Once thawed, inspect carefully for cracks or bulges, 6) Replace any damaged hoses before using washer again. Frozen hoses indicate your laundry room is too cold—must insulate pipes and/or add heating to prevent future freezing and potential burst hoses.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>Do I need a professional inspection every year?</h3>
-                            <p>For most Toronto households, annual professional inspections provide best value—detecting issues before they become expensive failures. Focus professional attention on: gas ranges (annual TSSA inspection legally recommended), dryer vent cleaning (every 6-12 months mandatory for fire safety), and refrigerators over 8 years old. Washers and dishwashers can often be maintained DIY until age 5-7, then benefit from professional assessment. Comprehensive fall inspection ($150-250 for all appliances) prevents average $800-2,500 in winter emergency repairs.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>Why does my dishwasher have more problems in winter?</h3>
-                            <p>Three winter factors affect dishwashers: 1) Toronto's cold water inlet temperature drops from ~18°C in summer to ~4°C in winter, forcing heating element to work 3-4x harder, 2) Dry winter air (15-25% humidity) causes door seals to crack and leak, and 3) Holiday season usage increases 40-60%, stressing components. Monthly seal treatment with petroleum jelly, bi-weekly filter cleaning, and ensuring 49-60°C water temperature at end of cycle prevents most winter issues.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>How cold is too cold for appliances?</h3>
-                            <p>Temperature thresholds vary by appliance: <strong>Refrigerators:</strong> Below 10°C ambient causes failure in standard models. <strong>Washers/Dishwashers:</strong> Below 10°C risks frozen water lines and inlet valves. <strong>Dryers:</strong> Function to -20°C but efficiency drops 25%+. <strong>Gas Ranges:</strong> Function to -40°C but should be in heated space for safety. General rule: maintain minimum 10°C (50°F) in any space containing appliances, with proper humidity (30-50%) for seal protection.</p>
-                        </div>
-
-                        <div class="faq-item">
-                            <h3>What are signs my appliances aren't handling winter well?</h3>
-                            <p>Watch for these winter-specific warning signs: <strong>Refrigerator:</strong> Running constantly, frost buildup in fresh food section, temperature fluctuations. <strong>Washer:</strong> Longer fill times, water not draining completely, unusual noises. <strong>Dryer:</strong> Extended dry times (75+ minutes), very hot exterior, lint around appliance, humidity in laundry room. <strong>Dishwasher:</strong> Water pooling at door bottom, poor drying results, extended cycle times. <strong>Range/Oven:</strong> Yellow flames (gas), uneven heating, temperature inaccuracy. Any of these symptoms warrant professional inspection to prevent complete failure during Toronto's coldest months.</p>
-                        </div>
-                    </section>
-
-                    <!-- Author Box -->
-                    <div class="author-box">
-                        <div class="author-image">
-                            <img src="../../images/team/expert-team.jpg" alt="Nika Appliance Repair Expert Team">
-                        </div>
-                        <div class="author-info">
-                            <h3>Written by Nika Appliance Repair Expert Team</h3>
-                            <p class="author-credentials">Combined 75+ Years Experience | Toronto Appliance Service Specialists</p>
-                            <p class="author-bio">This comprehensive guide was created by our team of specialized technicians: James Wilson (Washer/Dryer Specialist), David Martinez (TSSA-Certified Gas Specialist), Michael Toronto (Refrigeration Expert), and Sarah Chen (Dishwasher Specialist). Our collective experience spans 75+ years serving Toronto-area homeowners, with deep expertise in how Canada's harsh winters affect appliance performance. We've completed over 15,000 winter maintenance visits and emergency repairs across the GTA.</p>
-                            <p class="author-service-area"><strong>Service Area:</strong> Toronto, North York, Scarborough, Etobicoke, York, East York, and surrounding GTA communities</p>
-                            <a href="../../team.html" class="author-link">Meet Our Full Expert Team</a>
-                        </div>
-                    </div>
-
-                    <!-- Call to Action -->
-                    <div class="cta-box">
-                        <h3>Schedule Your Pre-Winter Appliance Inspection</h3>
-                        <p>Don't wait until winter emergency strikes. Our comprehensive pre-winter maintenance package ($250-350) covers all major appliances and prevents costly breakdowns during Toronto's harshest months.</p>
-                        <div class="cta-buttons">
-                            <a href="../../contact.html" class="btn-primary">Book Pre-Winter Package</a>
-                            <a href="tel:+14168271960" class="btn-secondary">Call (416) 827-1960</a>
-                        </div>
-                        <p class="cta-note"><strong>October Special:</strong> Book before October 15 and receive priority scheduling plus 10% off winter emergency service calls if needed.</p>
-                    </div>
-
-                    <!-- Related Posts -->
-                    <div class="related-posts">
-                        <h3>Related Articles</h3>
-                        <div class="related-grid">
-                            <a href="../troubleshooting/front-load-washer-problems-toronto.html" class="related-post">
-                                <i class="fas fa-soap"></i>
-                                <h4>Front-Load Washer Problems</h4>
-                                <p>Solve mold, leaks, and bearing failures</p>
-                            </a>
-                            <a href="../guides/gas-range-repair-safety-toronto.html" class="related-post">
-                                <i class="fas fa-fire"></i>
-                                <h4>Gas Range Repair & Safety</h4>
-                                <p>Toronto regulations and TSSA requirements</p>
-                            </a>
-                            <a href="../guides/dishwasher-repair-vs-replace-toronto.html" class="related-post">
-                                <i class="fas fa-utensils"></i>
-                                <h4>Dishwasher: Repair or Replace?</h4>
-                                <p>Cost analysis and decision guide</p>
-                            </a>
+                        <div class="glance-item">
+                            <i class="fas fa-clipboard-check"></i>
+                            <h3>Pre-Winter Inspection</h3>
+                            <p><strong>Cost:</strong> $150-250 all appliances<br>
+                            <strong>Timing:</strong> October-November<br>
+                            <strong>Savings:</strong> Prevents $800-2,500 repairs</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Sidebar -->
-                <aside class="blog-sidebar">
-                    <div class="sidebar-widget sticky-sidebar">
-                        <h3><i class="fas fa-list"></i> Table of Contents</h3>
-                        <nav class="toc">
-                            <ul>
-                                <li><a href="#why-winter-matters">Why Winter Maintenance Matters</a></li>
-                                <li><a href="#refrigerator-maintenance">Refrigerator & Freezer Winter Care</a></li>
-                                <li><a href="#washer-dryer-maintenance">Washer & Dryer Winter Safety</a></li>
-                                <li><a href="#dishwasher-maintenance">Dishwasher Winter Maintenance</a></li>
-                                <li><a href="#range-oven-maintenance">Range & Oven Winter Care</a></li>
-                                <li><a href="#winter-maintenance-schedule">Complete Maintenance Schedule</a></li>
-                                <li><a href="#humidity-temperature">Humidity & Temperature Management</a></li>
-                                <li><a href="#emergency-prep">Winter Emergency Preparedness</a></li>
-                                <li><a href="#faq">Frequently Asked Questions</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                <h2 id="why-winter-matters">Why Winter Maintenance Matters in Toronto</h2>
 
-                    <div class="sidebar-widget">
-                        <h3><i class="fas fa-wrench"></i> Related Posts</h3>
-                        <ul class="related-links">
-                            <li><a href="../troubleshooting/front-load-washer-problems-toronto.html">Front-Load Washer Problems</a></li>
-                            <li><a href="../guides/gas-range-repair-safety-toronto.html">Gas Range Repair & Safety</a></li>
-                            <li><a href="../guides/dishwasher-repair-vs-replace-toronto.html">Dishwasher: Repair or Replace?</a></li>
+                <p>Toronto experiences some of Canada's most dramatic seasonal temperature swings, with winter temperatures ranging from -20°C during cold snaps to brief thaws around 5°C. These extreme conditions create unique challenges for home appliances that were often designed and tested in more moderate climates.</p>
+
+                <h3>The Toronto Winter Impact on Appliances</h3>
+                <p>Our service data from over 2,800 Toronto-area repairs reveals that <strong>appliance failures increase by 47% during winter months (December-February)</strong> compared to summer. Here's why:</p>
+
+                <ul>
+                    <li><strong>Temperature Fluctuations:</strong> Furnace rooms can swing 15-20°C as heating cycles on and off, causing metal expansion/contraction that stresses components</li>
+                    <li><strong>Dry Air:</strong> Indoor humidity drops to 15-25% (vs. ideal 30-50%), causing rubber seals to crack and electronics to fail from static discharge</li>
+                    <li><strong>Increased Load:</strong> Dishwashers run 40% more during holiday season; ovens work harder at higher temperatures; dryers run longer as outdoor line-drying becomes impossible</li>
+                    <li><strong>Ventilation Issues:</strong> Dryer and range hood vents can accumulate ice, causing dangerous backdrafts and carbon monoxide risks</li>
+                    <li><strong>Water Line Stress:</strong> Cold water supply lines (especially in exterior walls or unheated garages) can freeze, damaging washer/dishwasher inlet valves</li>
+                </ul>
+
+                <div class="info-box">
+                    <h3><i class="fas fa-chart-line"></i> Winter Failure Statistics</h3>
+                    <p>Analysis of 2,847 Toronto appliance repairs (2022-2024):</p>
+                    <ul>
+                        <li><strong>Dryer fires:</strong> 3.2x more common December-February due to lint/ice combinations</li>
+                        <li><strong>Refrigerator compressor failures:</strong> Increase 38% when coils aren't cleaned before winter</li>
+                        <li><strong>Washer floods:</strong> Peak in January/February from cold-damaged hoses and frozen drain lines</li>
+                        <li><strong>Oven failures:</strong> Spike 52% during November-December holiday cooking period</li>
+                        <li><strong>Dishwasher leaks:</strong> Increase 29% in winter from dried-out door seals</li>
+                    </ul>
+                </div>
+
+                <h3>Cost of Winter Neglect</h3>
+                <p>The average cost of winter appliance emergencies in Toronto:</p>
+
+                <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Emergency Scenario</th>
+                            <th>Typical Cause</th>
+                            <th>Repair Cost</th>
+                            <th>Prevention Cost</th>
+                            <th>Savings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dryer fire damage</td>
+                            <td>Ice-blocked vent + lint buildup</td>
+                            <td>$2,500-8,000+</td>
+                            <td>$120-180 cleaning</td>
+                            <td>$2,380-7,880</td>
+                        </tr>
+                        <tr>
+                            <td>Washer flood</td>
+                            <td>Cold-cracked supply hose</td>
+                            <td>$800-3,500</td>
+                            <td>$50-80 hose replacement</td>
+                            <td>$750-3,450</td>
+                        </tr>
+                        <tr>
+                            <td>Refrigerator failure</td>
+                            <td>Dirty coils + winter strain</td>
+                            <td>$450-1,200</td>
+                            <td>$0-120 coil cleaning</td>
+                            <td>$450-1,080</td>
+                        </tr>
+                        <tr>
+                            <td>Oven breakdown (holidays)</td>
+                            <td>Igniter failure during turkey</td>
+                            <td>$280-450 emergency</td>
+                            <td>$150-220 inspection</td>
+                            <td>$130-300</td>
+                        </tr>
+                        <tr>
+                            <td>Dishwasher leak</td>
+                            <td>Dried-out door seal</td>
+                            <td>$180-350</td>
+                            <td>$25-40 seal treatment</td>
+                            <td>$155-325</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <p><strong>Key Finding:</strong> A comprehensive pre-winter inspection ($150-250 for all major appliances) typically prevents $800-2,500 in emergency winter repairs. That's a return on investment of 320-1,000%.</p>
+
+                <h2 id="refrigerator-maintenance">Refrigerator & Freezer Winter Maintenance</h2>
+
+                <p>Refrigerators work harder in winter despite lower ambient temperatures, because Toronto's dry winter air causes them to cycle more frequently to maintain humidity levels. Here's your winter maintenance checklist:</p>
+
+                <h3>Critical Winter Tasks for Refrigerators</h3>
+
+                <h4>1. Clean Condenser Coils (Quarterly in Winter)</h4>
+                <p>Dirty coils are the #1 cause of winter refrigerator failures. In heated homes, dust accumulates faster and coils must work harder to dissipate heat.</p>
+
+                <p><strong>How to Clean Coils:</strong></p>
+                <ol>
+                    <li>Unplug refrigerator for safety</li>
+                    <li>Locate coils (usually rear panel or bottom front grille)</li>
+                    <li>Use coil brush ($8-15 at hardware stores) or vacuum with brush attachment</li>
+                    <li>Work gently to avoid bending coil fins</li>
+                    <li>Clean surrounding floor area to prevent re-contamination</li>
+                    <li>Plug back in and verify normal operation</li>
+                </ol>
+
+                <p><strong>DIY vs. Professional:</strong></p>
+                <ul>
+                    <li><strong>DIY:</strong> Free (if you own tools) - 30 minutes</li>
+                    <li><strong>Professional:</strong> $80-120 - includes inspection of compressor, fans, seals, and temperature calibration</li>
+                </ul>
+
+                <div class="info-box">
+                    <h3><i class="fas fa-lightbulb"></i> Pro Tip: Winter Coil Cleaning Schedule</h3>
+                    <p>For Toronto homes with forced-air heating (which circulates more dust), clean refrigerator coils:</p>
+                    <ul>
+                        <li><strong>October:</strong> Pre-winter deep clean</li>
+                        <li><strong>January:</strong> Mid-winter maintenance</li>
+                        <li><strong>March:</strong> End-of-winter cleaning before spring</li>
+                    </ul>
+                    <p>This quarterly schedule improves efficiency by 20-25% and extends compressor life by 3-5 years.</p>
+                </div>
+
+                <h4>2. Check and Adjust Temperature Settings</h4>
+                <p>Winter temperature fluctuations in garage or basement locations require adjustment:</p>
+
+                <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Location Type</th>
+                            <th>Recommended Fridge Temp</th>
+                            <th>Recommended Freezer Temp</th>
+                            <th>Winter Adjustment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Heated basement</td>
+                            <td>3-4°C (37-39°F)</td>
+                            <td>-18°C (0°F)</td>
+                            <td>None needed</td>
+                        </tr>
+                        <tr>
+                            <td>Unheated basement</td>
+                            <td>2-3°C (35-37°F)</td>
+                            <td>-20°C (-4°F)</td>
+                            <td>Lower 1-2°C in winter</td>
+                        </tr>
+                        <tr>
+                            <td>Garage (heated)</td>
+                            <td>3-4°C (37-39°F)</td>
+                            <td>-18°C (0°F)</td>
+                            <td>Monitor during cold snaps</td>
+                        </tr>
+                        <tr>
+                            <td>Garage (unheated)</td>
+                            <td>Not recommended</td>
+                            <td>-20°C (-4°F)</td>
+                            <td>Freezer-only OK; fridge will fail</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <p><strong>Important:</strong> Most refrigerators aren't designed to operate when ambient temperature drops below 10°C (50°F). In unheated garages, only dedicated "garage-ready" models should be used.</p>
+
+                <h4>3. Inspect Door Seals (Gaskets)</h4>
+                <p>Dry winter air (15-25% humidity) causes rubber gaskets to dry out and crack. Test seal integrity:</p>
+
+                <p><strong>Dollar Bill Test:</strong></p>
+                <ol>
+                    <li>Place a dollar bill halfway in the door</li>
+                    <li>Close the door on the bill</li>
+                    <li>Try to pull the bill out</li>
+                    <li>You should feel resistance; if it slides out easily, the seal is compromised</li>
+                    <li>Test all four sides of each door</li>
+                </ol>
+
+                <p><strong>Seal Maintenance:</strong></p>
+                <ul>
+                    <li>Clean gaskets monthly with warm water and mild dish soap</li>
+                    <li>Apply thin coat of petroleum jelly to keep rubber supple (especially in winter)</li>
+                    <li>Replace gaskets if cracked, torn, or failing dollar bill test</li>
+                    <li>Replacement cost: $80-180 per door (DIY: $40-90 for parts)</li>
+                </ul>
+
+                <h4>4. Defrost Freezer if Not Frost-Free</h4>
+                <p>Manual-defrost freezers should be defrosted when ice buildup exceeds 6mm (1/4 inch). Winter's dry air can actually increase frost buildup from frequent door openings.</p>
+
+                <h4>5. Stock Strategically for Winter Storms</h4>
+                <p>Toronto can experience ice storms causing multi-day power outages. Winter-specific guidance:</p>
+
+                <ul>
+                    <li>Keep freezer 75%+ full (frozen items maintain cold longer)</li>
+                    <li>Use frozen water bottles to fill empty space</li>
+                    <li>Have freezer thermometer ($5-12) to monitor temperature during outages</li>
+                    <li>Keep refrigerator thermometer to ensure 4°C or below</li>
+                    <li>During storms, avoid opening doors (food stays cold 4 hours in fridge, 24-48 hours in full freezer)</li>
+                </ul>
+
+                <h2 id="washer-dryer-maintenance">Washer & Dryer Winter Maintenance</h2>
+
+                <p>Laundry appliances face unique winter challenges in Toronto, from frozen water lines to ice-blocked dryer vents. Winter maintenance is critical for both safety and performance.</p>
+
+                <h3>Washing Machine Winter Checklist</h3>
+
+                <h4>1. Inspect Water Supply Hoses</h4>
+                <p>Cold temperatures make rubber hoses brittle, increasing burst risk by 300% according to insurance industry data.</p>
+
+                <p><strong>Inspection Points:</strong></p>
+                <ul>
+                    <li>Check for bulges, cracks, or brittleness (especially near connections)</li>
+                    <li>Look for rust stains or moisture at connection points</li>
+                    <li>Verify hoses aren't kinked or under tension</li>
+                    <li>Confirm hoses are dated (they should be replaced every 3-5 years)</li>
+                    <li>Consider upgrading to stainless steel braided hoses ($25-40 each, last 8-10 years)</li>
+                </ul>
+
+                <p><strong>Winter Hose Protection:</strong></p>
+                <ul>
+                    <li>If washer is in unheated garage or basement, insulate supply lines with foam pipe insulation ($8-15 for 6 feet)</li>
+                    <li>During extreme cold (-15°C or colder), run a small cold-water load every 2-3 days to prevent line freezing</li>
+                    <li>For vacation properties or extended absences, shut off water supply and drain hoses</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Washer Flood Prevention</h3>
+                    <p>A burst washer hose releases 2-4 gallons per minute. In a typical 8-hour absence, this causes 1,000-2,000 gallons of flooding—costing $2,000-8,000 in water damage.</p>
+                    <p><strong>Prevention Strategy:</strong></p>
+                    <ul>
+                        <li>Install automatic shut-off system like FloodStop ($180-280 installed)</li>
+                        <li>Replace hoses every 3-5 years regardless of appearance</li>
+                        <li>Turn off water supply when away for 48+ hours</li>
+                        <li>Install water leak detector near washer ($25-60)</li>
+                    </ul>
+                </div>
+
+                <h4>2. Clean Washer Drum and Gasket</h4>
+                <p>Toronto's hard water (200-300 ppm) combined with cold-water washing (more common in winter to save energy) increases detergent buildup and mold risk.</p>
+
+                <p><strong>Monthly Cleaning Procedure:</strong></p>
+                <ol>
+                    <li>Run hot water cycle with 2 cups white vinegar (no clothes)</li>
+                    <li>Sprinkle 1/2 cup baking soda in drum, run another hot cycle</li>
+                    <li>Wipe door gasket with vinegar solution to remove mold/mildew</li>
+                    <li>Leave door and detergent dispenser open between loads to air out</li>
+                </ol>
+
+                <h4>3. Check Drain Hose and Pump Filter</h4>
+                <p>Cold temperatures can cause drain lines to freeze, especially if washer drains into floor drain or exterior standpipe.</p>
+
+                <p><strong>Winter Drain Maintenance:</strong></p>
+                <ul>
+                    <li>Ensure drain hose isn't kinked or frozen</li>
+                    <li>Clean pump filter every 3 months (removes lint, coins, small objects)</li>
+                    <li>For floor drains, ensure trap has water (pour 1 cup monthly to prevent sewer gas)</li>
+                    <li>Insulate drain line if it runs through unheated space</li>
+                </ul>
+
+                <h3>Dryer Winter Maintenance (Critical Safety)</h3>
+
+                <h4>1. Clean Lint Trap and Exhaust Vent (Most Important)</h4>
+                <p>Winter dryer vent cleaning is the single most important appliance safety task in Toronto. Here's why:</p>
+
+                <ul>
+                    <li>Dryers run 40-60% more in winter (no outdoor line drying)</li>
+                    <li>Cold exterior air causes moisture to condense in vent, freezing and blocking airflow</li>
+                    <li>Ice blockage + lint buildup = fire risk increases 3x in winter</li>
+                    <li>Toronto Fire Services reports dryer fires peak December-February</li>
+                </ul>
+
+                <p><strong>Comprehensive Vent Cleaning Procedure:</strong></p>
+
+                <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Frequency</th>
+                            <th>DIY/Pro</th>
+                            <th>Cost</th>
+                            <th>Importance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clean lint trap</td>
+                            <td>After every load</td>
+                            <td>DIY</td>
+                            <td>$0</td>
+                            <td>Critical</td>
+                        </tr>
+                        <tr>
+                            <td>Vacuum lint trap housing</td>
+                            <td>Monthly</td>
+                            <td>DIY</td>
+                            <td>$0</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Clean dryer interior</td>
+                            <td>Annually</td>
+                            <td>DIY or Pro</td>
+                            <td>$0-80</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Clean exhaust vent duct</td>
+                            <td>Every 6-12 months</td>
+                            <td>Professional</td>
+                            <td>$120-180</td>
+                            <td>Critical</td>
+                        </tr>
+                        <tr>
+                            <td>Inspect exterior vent flap</td>
+                            <td>Monthly in winter</td>
+                            <td>DIY</td>
+                            <td>$0</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Remove ice from exterior vent</td>
+                            <td>As needed (below -10°C)</td>
+                            <td>DIY</td>
+                            <td>$0</td>
+                            <td>Critical</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <p><strong>Winter Vent Inspection Signs:</strong></p>
+                <ul>
+                    <li>Clothes taking longer than 45-60 minutes to dry</li>
+                    <li>Dryer exterior becoming very hot to touch</li>
+                    <li>Burning smell during operation</li>
+                    <li>Excessive lint around dryer area</li>
+                    <li>Humidity or moisture in laundry room</li>
+                    <li>Exterior vent flap not opening during operation</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h3><i class="fas fa-fire"></i> Dryer Fire Prevention</h3>
+                    <p><strong>CRITICAL WINTER SAFETY:</strong> Toronto experiences a 280% increase in dryer fires during January-February compared to summer months.</p>
+                    <p><strong>Mandatory Actions:</strong></p>
+                    <ul>
+                        <li>Schedule professional vent cleaning every 6-12 months ($120-180)</li>
+                        <li>Check exterior vent monthly for ice blockage in winter</li>
+                        <li>Never run dryer when away from home</li>
+                        <li>Install dryer-specific fire extinguisher in laundry room</li>
+                        <li>Replace plastic or foil vent ducts with rigid metal (required by code)</li>
+                    </ul>
+                </div>
+
+                <h4>2. Inspect Dryer Drum and Seals</h4>
+                <p>Dry winter air can cause drum seals to crack, reducing efficiency and potentially causing squeaking.</p>
+
+                <p><strong>Drum Maintenance:</strong></p>
+                <ul>
+                    <li>Vacuum around drum and under lint trap housing monthly</li>
+                    <li>Check drum for rough spots or sharp edges (can snag clothes)</li>
+                    <li>Inspect rear felt seal for wear (should be replaced every 5-7 years)</li>
+                    <li>Listen for unusual noises (squeaking, grinding, thumping)</li>
+                </ul>
+
+                <h4>3. Verify Proper Airflow and Timing</h4>
+                <p>Test dryer efficiency to catch ice blockage early:</p>
+
+                <p><strong>Simple Performance Test:</strong></p>
+                <ol>
+                    <li>Dry a standard medium load of towels on normal heat</li>
+                    <li>Time should be 45-60 minutes for complete drying</li>
+                    <li>If taking 75+ minutes, vent is likely partially blocked</li>
+                    <li>Check exterior vent during operation—should feel strong warm airflow</li>
+                </ol>
+
+                <h2 id="dishwasher-maintenance">Dishwasher Winter Maintenance</h2>
+
+                <p>Dishwashers experience 40% higher usage during Toronto's winter holiday season (November-January), making pre-winter maintenance essential.</p>
+
+                <h3>Critical Dishwasher Winter Tasks</h3>
+
+                <h4>1. Inspect and Maintain Door Seal</h4>
+                <p>Toronto's dry winter air (15-25% humidity) causes rubber door gaskets to dry out, crack, and leak.</p>
+
+                <p><strong>Door Seal Maintenance:</strong></p>
+                <ul>
+                    <li>Clean seal monthly with warm water and mild detergent</li>
+                    <li>Check for cracks, brittleness, or warping</li>
+                    <li>Apply thin layer of petroleum jelly or silicone spray to keep rubber supple</li>
+                    <li>Run hand around entire seal perimeter to check for gaps</li>
+                    <li>Replace seal if damaged (cost: $80-180 installed)</li>
+                </ul>
+
+                <h4>2. Clean Filter and Spray Arms</h4>
+                <p>Toronto's hard water (200-300 ppm) causes mineral buildup that worsens in winter when water is coldest.</p>
+
+                <p><strong>Monthly Cleaning Procedure:</strong></p>
+                <ol>
+                    <li>Remove bottom rack to access filter assembly</li>
+                    <li>Twist and lift filter (consult manual for your model)</li>
+                    <li>Rinse under hot water, use soft brush for stubborn debris</li>
+                    <li>Remove spray arms (usually twist to unlock)</li>
+                    <li>Clear holes with toothpick or small wire</li>
+                    <li>Soak in white vinegar for 15 minutes if mineral buildup present</li>
+                    <li>Reassemble all components</li>
+                </ol>
+
+                <h4>3. Run Cleaning Cycle</h4>
+                <p>Hard water and increased usage require monthly deep cleaning in winter:</p>
+
+                <ul>
+                    <li>Remove all dishes and racks</li>
+                    <li>Place dishwasher-safe bowl with 2 cups white vinegar on bottom rack</li>
+                    <li>Run hot water cycle (vinegar removes grease and mineral deposits)</li>
+                    <li>Sprinkle 1 cup baking soda on bottom, run short hot cycle (deodorizes and brightens)</li>
+                    <li>Wipe door edges and seals with vinegar solution</li>
+                </ul>
+
+                <h4>4. Check Water Inlet Valve and Hoses</h4>
+                <p>Similar to washers, dishwasher water lines can freeze in unheated areas:</p>
+
+                <ul>
+                    <li>Inspect hose under sink for leaks or brittleness</li>
+                    <li>Ensure connections are tight (but not over-tightened)</li>
+                    <li>Check inlet valve screen for debris or mineral buildup</li>
+                    <li>If dishwasher is in cottage or rarely-used space, shut off water supply in winter</li>
+                </ul>
+
+                <h4>5. Test Heating Element</h4>
+                <p>Cold inlet water (Toronto water is coldest December-February) puts extra strain on heating element:</p>
+
+                <p><strong>Heating Element Test:</strong></p>
+                <ul>
+                    <li>Run normal cycle and carefully open door during dry cycle</li>
+                    <li>Should feel significant heat radiating from interior</li>
+                    <li>Dishes should be hot to touch at end of cycle</li>
+                    <li>If water isn't heating or drying poorly, element may need replacement ($150-280 installed)</li>
+                </ul>
+
+                <h4>6. Use Monthly Even If Not Needed</h4>
+                <p><strong>Important:</strong> If dishwasher sits unused for 2+ weeks in winter, seals dry out and plumbing traps lose water.</p>
+
+                <p><strong>Minimum Use Protocol:</strong></p>
+                <ul>
+                    <li>Run a full hot cycle at least once per month, even if empty</li>
+                    <li>Add 1/4 cup white vinegar to maintain seals and prevent odors</li>
+                    <li>This prevents seal cracking and keeps pump seals lubricated</li>
+                    <li>Cost of running empty cycle: ~$0.50 in water/energy vs. $180-350 to repair dried-out seals</li>
+                </ul>
+
+                <h2 id="range-oven-maintenance">Range & Oven Winter Maintenance</h2>
+
+                <p>Ovens and ranges work harder during Toronto's winter holiday season, with usage increasing 60% from November through December. Pre-season maintenance prevents breakdowns during critical cooking times.</p>
+
+                <h3>Gas Range Winter Safety (TSSA Requirements)</h3>
+
+                <div class="warning-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> CRITICAL: Toronto Gas Safety Regulations</h3>
+                    <p><strong>All gas appliance work in Ontario is regulated by the Technical Standards and Safety Authority (TSSA).</strong></p>
+                    <ul>
+                        <li><strong>Only TSSA-certified gas fitters</strong> can legally work on gas connections, lines, or burner assemblies</li>
+                        <li><strong>Annual inspections are recommended</strong> for gas ranges, especially before heavy winter use</li>
+                        <li><strong>Carbon monoxide detectors are mandatory</strong> in all Ontario homes with gas appliances</li>
+                        <li><strong>If you smell gas:</strong> Leave immediately, call 911 and Enbridge Gas (1-866-763-5427)</li>
+                    </ul>
+                    <p><strong>DIY Limitations:</strong> You can clean burners and check igniters, but NEVER work on gas lines, regulators, or install/remove gas appliances without certification.</p>
+                </div>
+
+                <h4>1. Clean Burners and Igniters (Gas Ranges)</h4>
+                <p>Food debris and grease buildup prevents proper ignition, especially problematic in winter when heavy cooking is common.</p>
+
+                <p><strong>Safe Cleaning Procedure:</strong></p>
+                <ol>
+                    <li>Turn off range at circuit breaker for safety</li>
+                    <li>Remove burner grates and caps</li>
+                    <li>Wash grates and caps in hot soapy water, rinse thoroughly</li>
+                    <li>Use soft brush to clean burner ports (small holes where flames emerge)</li>
+                    <li>Wipe igniters gently with dry cloth (moisture causes weak spark)</li>
+                    <li>Ensure all components are completely dry before reassembling</li>
+                    <li>Test each burner for proper ignition and flame pattern</li>
+                </ol>
+
+                <p><strong>Proper Flame Indicators:</strong></p>
+                <ul>
+                    <li>Flames should be blue with small yellow tips</li>
+                    <li>Flame height should be 1/2 to 3/4 inch</li>
+                    <li>Yellow or orange flames indicate incomplete combustion—call TSSA technician</li>
+                    <li>Flames should form even ring pattern around burner</li>
+                </ul>
+
+                <h4>2. Inspect Oven Door Seal</h4>
+                <p>Like dishwashers and refrigerators, oven door gaskets suffer from dry winter air.</p>
+
+                <p><strong>Seal Inspection and Maintenance:</strong></p>
+                <ul>
+                    <li>Close door and look for light visible around edges</li>
+                    <li>Check gasket for cracks, gaps, or brittleness</li>
+                    <li>Oven should reach set temperature in 12-15 minutes (if longer, seal may be faulty)</li>
+                    <li>Clean seal with damp cloth (avoid harsh chemicals)</li>
+                    <li>Replacement cost: $80-180 (DIY: $40-80 for parts)</li>
+                </ul>
+
+                <h4>3. Calibrate Oven Temperature</h4>
+                <p>Ovens can drift 15-25°F from accurate temperature over time, problematic for holiday baking.</p>
+
+                <p><strong>Temperature Calibration Test:</strong></p>
+                <ol>
+                    <li>Purchase oven thermometer ($8-20 at kitchen stores)</li>
+                    <li>Place thermometer in center of oven</li>
+                    <li>Set oven to 350°F (175°C)</li>
+                    <li>Allow 20 minutes to preheat fully</li>
+                    <li>Check thermometer reading</li>
+                    <li>If off by more than 10°F (5°C), oven needs calibration</li>
+                </ol>
+
+                <p><strong>Professional Calibration:</strong> Included in standard range inspection ($150-220). Can often be adjusted via control panel settings (consult manual) or by adjusting thermostat screw.</p>
+
+                <h4>4. Clean Oven Interior</h4>
+                <p>Built-up grease and food residue increase fire risk and smoke production during heavy winter cooking.</p>
+
+                <p><strong>Pre-Holiday Deep Clean:</strong></p>
+                <ul>
+                    <li>Remove oven racks, soak in hot soapy water</li>
+                    <li>If self-cleaning: Run self-clean cycle (ventilate well, can create smoke/odors)</li>
+                    <li>If manual cleaning: Use oven-safe cleaner or baking soda paste</li>
+                    <li>Clean door glass inside and out</li>
+                    <li>Wipe down control panel and exterior</li>
+                </ul>
+
+                <h4>5. Test All Functions</h4>
+                <p>Don't wait until Thanksgiving to discover your oven doesn't work. Test in October/November:</p>
+
+                <ul>
+                    <li>Test bake, broil, and convection functions</li>
+                    <li>Verify oven light works (easy to overlook)</li>
+                    <li>Check timer and temperature probe (if equipped)</li>
+                    <li>For gas ovens, ensure igniter glows and lights within 90 seconds</li>
+                    <li>For electric ranges, verify all heating elements work on all burners</li>
+                </ul>
+
+                <h4>6. Annual Gas Safety Inspection</h4>
+                <p>TSSA-certified technicians should inspect gas ranges annually, ideally in October before heavy winter use.</p>
+
+                <p><strong>Professional Inspection Includes:</strong></p>
+                <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Inspection Component</th>
+                            <th>What's Checked</th>
+                            <th>Why It Matters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gas connections</td>
+                            <td>Leak test with specialized equipment</td>
+                            <td>Prevents gas leaks and carbon monoxide poisoning</td>
+                        </tr>
+                        <tr>
+                            <td>Burner flames</td>
+                            <td>Color, pattern, and stability</td>
+                            <td>Ensures complete combustion (incomplete = CO risk)</td>
+                        </tr>
+                        <tr>
+                            <td>Igniters</td>
+                            <td>Spark strength and timing</td>
+                            <td>Prevents gas buildup from delayed ignition</td>
+                        </tr>
+                        <tr>
+                            <td>Ventilation</td>
+                            <td>Range hood and exhaust function</td>
+                            <td>Removes combustion byproducts</td>
+                        </tr>
+                        <tr>
+                            <td>Safety shut-offs</td>
+                            <td>Flame failure devices</td>
+                            <td>Automatically stops gas flow if flame goes out</td>
+                        </tr>
+                        <tr>
+                            <td>Temperature accuracy</td>
+                            <td>Calibration and thermostat</td>
+                            <td>Proper cooking temperatures</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <p><strong>Cost:</strong> $150-220 for comprehensive inspection and minor adjustments. Major repairs (igniters, valves, thermostats) are additional but often identified before they fail completely.</p>
+
+                <h2 id="winter-maintenance-schedule">Complete Toronto Winter Maintenance Schedule</h2>
+
+                <p>To make winter appliance maintenance manageable, follow this month-by-month schedule designed specifically for Toronto's climate:</p>
+
+                <h3>October: Pre-Winter Deep Preparation</h3>
+                <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Appliance</th>
+                            <th>Tasks</th>
+                            <th>DIY/Pro</th>
+                            <th>Cost</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>All appliances</td>
+                            <td>Schedule professional inspection package</td>
+                            <td>Professional</td>
+                            <td>$150-250</td>
+                            <td>2-3 hours</td>
+                        </tr>
+                        <tr>
+                            <td>Refrigerator</td>
+                            <td>Deep clean coils, check seals, calibrate temperature</td>
+                            <td>DIY or Pro</td>
+                            <td>$0-120</td>
+                            <td>45 min</td>
+                        </tr>
+                        <tr>
+                            <td>Washer</td>
+                            <td>Inspect hoses, clean drum, check drain</td>
+                            <td>DIY</td>
+                            <td>$0-80</td>
+                            <td>30 min</td>
+                        </tr>
+                        <tr>
+                            <td>Dryer</td>
+                            <td>Professional vent cleaning, inspect seals</td>
+                            <td>Professional</td>
+                            <td>$120-180</td>
+                            <td>1 hour</td>
+                        </tr>
+                        <tr>
+                            <td>Dishwasher</td>
+                            <td>Clean filter/spray arms, treat door seal</td>
+                            <td>DIY</td>
+                            <td>$0-15</td>
+                            <td>30 min</td>
+                        </tr>
+                        <tr>
+                            <td>Range/Oven</td>
+                            <td>Gas safety inspection (TSSA), clean, calibrate</td>
+                            <td>Professional</td>
+                            <td>$150-220</td>
+                            <td>1-1.5 hours</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <h3>November-January: Active Winter Monitoring</h3>
+                <p><strong>Weekly Tasks:</strong></p>
+                <ul>
+                    <li>Check dryer exterior vent for ice buildup (especially below -10°C)</li>
+                    <li>Monitor appliance sounds/performance for changes</li>
+                    <li>Ensure proper humidity levels (30-50%) to protect seals</li>
+                </ul>
+
+                <p><strong>Monthly Tasks:</strong></p>
+                <ul>
+                    <li>Clean lint trap housing and inspect dryer vent</li>
+                    <li>Run dishwasher and washer cleaning cycles</li>
+                    <li>Clean dishwasher filter and spray arms</li>
+                    <li>Check all door seals (fridge, dishwasher, oven)</li>
+                    <li>Vacuum refrigerator coils (if in high-dust area)</li>
+                </ul>
+
+                <h3>January: Mid-Winter Maintenance Check</h3>
+                <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Appliance</th>
+                            <th>Mid-Winter Tasks</th>
+                            <th>Why Now</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Refrigerator</td>
+                            <td>Clean coils again, check temperature accuracy</td>
+                            <td>Coldest month increases workload</td>
+                        </tr>
+                        <tr>
+                            <td>Washer</td>
+                            <td>Re-inspect hoses (peak failure period)</td>
+                            <td>January sees most cold-related hose failures</td>
+                        </tr>
+                        <tr>
+                            <td>Dryer</td>
+                            <td>Check vent performance, remove any ice</td>
+                            <td>Mid-winter ice accumulation peaks</td>
+                        </tr>
+                        <tr>
+                            <td>Dishwasher</td>
+                            <td>Deep clean and seal treatment</td>
+                            <td>Post-holiday heavy use requires refresh</td>
+                        </tr>
+                        <tr>
+                            <td>All appliances</td>
+                            <td>Check humidity levels, treat dry air</td>
+                            <td>January = driest indoor air (15-20% typical)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <h3>February-March: End-of-Winter Assessment</h3>
+                <p><strong>Tasks:</strong></p>
+                <ul>
+                    <li>Assess any damage or wear from winter months</li>
+                    <li>Schedule repairs before spring rush (March-April = peak season)</li>
+                    <li>Clean dryer vent again before spring (lint + winter moisture = buildup)</li>
+                    <li>Final refrigerator coil cleaning before warmer months</li>
+                    <li>Check all hoses and seals; replace anything showing wear</li>
+                </ul>
+
+                <div class="cta-box">
+                    <h3>Schedule Your Pre-Winter Appliance Inspection</h3>
+                    <p>Don't wait until winter emergency strikes. Our comprehensive pre-winter maintenance package ($250-350) covers all major appliances and prevents costly breakdowns during Toronto's harshest months.</p>
+                    <a href="tel:4377476737" class="btn">
+                        <i class="fas fa-phone"></i> Call (437) 747-6737
+                    </a>
+                </div>
+
+                <h2 id="humidity-temperature">Managing Indoor Humidity and Temperature</h2>
+
+                <p>Toronto's winter humidity levels drop to 15-25% indoors (vs. ideal 30-50%), creating unique challenges for appliance performance and longevity.</p>
+
+                <h3>Why Winter Humidity Matters</h3>
+                <p>Extremely dry air affects appliances in several ways:</p>
+
+                <ul>
+                    <li><strong>Rubber components:</strong> Seals, gaskets, and hoses become brittle and crack</li>
+                    <li><strong>Static electricity:</strong> Can damage electronic control boards (especially dishwashers and washing machines)</li>
+                    <li><strong>Adhesives:</strong> Door seals and insulation can separate from appliance bodies</li>
+                    <li><strong>Wood components:</strong> Cutting boards, drawer inserts, and handles can crack</li>
+                </ul>
+
+                <h3>Optimal Humidity for Appliances</h3>
+                <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Humidity Level</th>
+                            <th>Effect on Appliances</th>
+                            <th>Effect on Home</th>
+                            <th>Recommendation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Below 20%</td>
+                            <td>Rapid seal deterioration, static damage risk</td>
+                            <td>Dry skin, respiratory issues</td>
+                            <td>Too low—increase immediately</td>
+                        </tr>
+                        <tr>
+                            <td>20-30%</td>
+                            <td>Acceptable but seals still at risk</td>
+                            <td>Somewhat dry</td>
+                            <td>Low end—consider increasing</td>
+                        </tr>
+                        <tr>
+                            <td>30-50%</td>
+                            <td>Ideal—seals remain supple, no static</td>
+                            <td>Comfortable and healthy</td>
+                            <td>Target range</td>
+                        </tr>
+                        <tr>
+                            <td>50-60%</td>
+                            <td>No issues for appliances</td>
+                            <td>Slightly humid but acceptable</td>
+                            <td>High end but OK</td>
+                        </tr>
+                        <tr>
+                            <td>Above 60%</td>
+                            <td>Mold risk in washers, odor issues</td>
+                            <td>Mold, mildew, comfort issues</td>
+                            <td>Too high—reduce immediately</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <h2 id="emergency-prep">Winter Emergency Preparedness</h2>
+
+                <p>Toronto experiences 1-3 significant winter storms each year that can cause multi-day power outages. Proper appliance emergency preparation protects both your appliances and food supplies.</p>
+
+                <h3>Power Outage Preparation</h3>
+
+                <h4>Before the Storm</h4>
+                <ul>
+                    <li><strong>Refrigerator/Freezer:</strong>
+                        <ul>
+                            <li>Lower temperature settings (2°C for fridge, -20°C for freezer)</li>
+                            <li>Fill freezer to 75%+ capacity (frozen items maintain cold longer)</li>
+                            <li>Use frozen water bottles to fill empty space</li>
+                            <li>Locate coolers and ice packs</li>
+                            <li>Have appliance thermometers installed</li>
                         </ul>
-                    </div>
+                    </li>
+                    <li><strong>All Appliances:</strong>
+                        <ul>
+                            <li>Complete any in-progress loads (washer, dryer, dishwasher)</li>
+                            <li>Unplug appliances to protect from power surges when electricity returns</li>
+                            <li>Turn off water supply to washer and dishwasher if extended outage expected</li>
+                        </ul>
+                    </li>
+                </ul>
 
-                    <div class="sidebar-widget cta-widget">
-                        <h3><i class="fas fa-phone-alt"></i> Need Help?</h3>
-                        <p>Toronto's trusted appliance repair experts</p>
-                        <a href="tel:+14168271960" class="sidebar-cta-btn">(416) 827-1960</a>
-                        <a href="../../contact.html" class="sidebar-cta-link">Schedule Pre-Winter Inspection</a>
+                <h4>During the Outage</h4>
+                <ul>
+                    <li><strong>Do NOT open refrigerator or freezer doors</strong> (each opening raises temperature 5-10°C)</li>
+                    <li>Refrigerator stays cold 4 hours with door closed</li>
+                    <li>Full freezer stays frozen 48 hours (half-full: 24 hours)</li>
+                    <li>Monitor temperatures with appliance thermometers</li>
+                    <li>Move critical items to coolers if outage exceeds safe time</li>
+                    <li>In winter, you can use outdoor snow/cold as temporary refrigeration (in sealed containers to prevent animal access)</li>
+                </ul>
+
+                <h4>After Power Returns</h4>
+                <ul>
+                    <li>Wait 5-10 minutes before plugging in appliances (allows electrical system to stabilize)</li>
+                    <li>Check refrigerator temperature—discard food if above 4°C for 2+ hours</li>
+                    <li>Check freezer—food with ice crystals is safe to refreeze; thawed food should be cooked within 24 hours or discarded</li>
+                    <li>Run all appliances through test cycles to ensure proper function</li>
+                    <li>Monitor for unusual sounds or performance in following days</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Carbon Monoxide Warning</h3>
+                    <p><strong>NEVER use gas ranges or ovens for home heating during power outages.</strong></p>
+                    <p>This creates deadly carbon monoxide (CO) levels. Every year, Toronto emergency services respond to CO poisoning incidents during winter storms.</p>
+                    <p><strong>Safe Heating Alternatives:</strong></p>
+                    <ul>
+                        <li>Properly vented propane or kerosene heaters (outdoor combustion air)</li>
+                        <li>Electric space heaters with generator backup</li>
+                        <li>Fireplace with open damper and chimney inspection</li>
+                        <li>Move to designated warming center (City of Toronto opens several during storms)</li>
+                    </ul>
+                    <p><strong>CO Detector Batteries:</strong> Test monthly and replace batteries twice per year (fall and spring time changes).</p>
+                </div>
+
+                <!-- FAQ Section -->
+                <h2 id="faq">Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <h3>How much does professional winter appliance maintenance cost in Toronto?</h3>
+                    <p>Individual service calls range from $80-250 per appliance depending on complexity. A comprehensive pre-winter package covering all major appliances (refrigerator, washer, dryer, dishwasher, and range/oven) typically costs $250-350 total—a savings of $150-300 compared to individual appointments. This investment prevents an average of $800-2,500 in winter emergency repairs.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>When should I schedule pre-winter appliance maintenance?</h3>
+                    <p>Book services in October to ensure completion before winter's heavy usage period. Many Toronto households wait until November, causing scheduling delays and potentially missing the pre-holiday window. October appointments also allow time to address any issues discovered before you need your appliances for holiday cooking and entertaining.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I skip winter maintenance if my appliances are new?</h3>
+                    <p>While newer appliances (under 3 years) typically need less maintenance, Toronto's winter conditions affect all ages. Even new appliances benefit from dryer vent cleaning, refrigerator coil cleaning, and seal protection. New gas ranges should still receive annual safety inspections as required by TSSA. Consider maintenance insurance protection during the warranty period to establish baseline performance data.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Why does my dryer take longer to dry clothes in winter?</h3>
+                    <p>Three winter-specific factors cause this: 1) Ice accumulation in exterior vent restricts airflow (most common), 2) Cold exterior air reduces dryer efficiency by 15-25%, and 3) Lint buildup combines with moisture to form partial blockage. Professional vent cleaning ($120-180) typically resolves the issue. During extreme cold (below -15°C), expect 10-15% longer dry times even with clean vents.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How often should I clean dryer vents in Toronto winters?</h3>
+                    <p>Toronto winters require more frequent dryer vent maintenance than other seasons. Professional cleaning every 6 months (fall and spring) is recommended for typical households. Increase to every 3-4 months if you: have large family (5+ loads weekly), own pets that shed, use dryer daily, have vent run longer than 25 feet, or have vent with multiple bends/elbows. Monthly visual checks of exterior vent for ice blockage are essential.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Should I turn off water to my washer and dishwasher when traveling in winter?</h3>
+                    <p>Yes, absolutely. For any absence of 48+ hours during winter months, shut off water supply valves to washer and dishwasher. Cold temperatures can cause hose failures, and a burst hose releases 2-4 gallons per minute—causing $2,000-8,000 in water damage during even a weekend trip. Also unplug appliances to protect from power surge damage, and adjust thermostat to minimum 15°C to prevent pipe freezing.</p>
+                </div>
+
+                <!-- Author Profile Section -->
+                <div class="author-profile">
+                    <div class="author-profile-header">
+                        <img src="../../images/authors/james-wilson.jpg" alt="James Wilson - Washer & Dryer Specialist" class="author-photo">
+                        <div class="author-details">
+                            <h3>Written by <a href="../../team/james-wilson.html">James Wilson</a></h3>
+                            <p class="author-title">Washer & Dryer Specialist</p>
+                            <p class="author-credentials">20+ Years Experience | Toronto Appliance Expert</p>
+                        </div>
                     </div>
-                </aside>
+                    <div class="author-bio">
+                        <p>James Wilson is a certified washer and dryer specialist with over 20 years of experience serving Toronto homeowners. He specializes in laundry appliance maintenance, winter-proofing strategies, and dryer vent safety. James has completed over 5,000 winter maintenance inspections across the GTA and is passionate about educating homeowners on preventive care that saves money and extends appliance life. His expertise in cold-weather appliance challenges makes him an invaluable resource for Toronto residents preparing for harsh Canadian winters.</p>
+                        <a href="../../team/james-wilson.html" class="author-link">View Full Profile →</a>
+                    </div>
+                </div>
+
+                <div class="cta-box">
+                    <h3>Need Professional Winter Appliance Maintenance?</h3>
+                    <p>We're here to help! Same-day service available 7 days a week across the Greater Toronto Area.</p>
+                    <a href="tel:4377476737" class="btn">
+                        <i class="fas fa-phone"></i> Call (437) 747-6737
+                    </a>
+                </div>
             </article>
-        </div>
-    </main>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+            <!-- Table of Contents -->
+            <div class="toc-widget">
+                <h3>Table of Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#why-winter-matters">Why Winter Maintenance Matters</a></li>
+                    <li><a href="#refrigerator-maintenance">Refrigerator & Freezer Winter Care</a></li>
+                    <li><a href="#washer-dryer-maintenance">Washer & Dryer Winter Safety</a></li>
+                    <li><a href="#dishwasher-maintenance">Dishwasher Winter Maintenance</a></li>
+                    <li><a href="#range-oven-maintenance">Range & Oven Winter Care</a></li>
+                    <li><a href="#winter-maintenance-schedule">Complete Maintenance Schedule</a></li>
+                    <li><a href="#humidity-temperature">Humidity & Temperature Management</a></li>
+                    <li><a href="#emergency-prep">Winter Emergency Preparedness</a></li>
+                    <li><a href="#faq">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="related-widget">
+                <h3>Related Posts</h3>
+                <div class="related-post">
+                    <a href="../troubleshooting/front-load-washer-problems-toronto.html">Front-Load Washer Problems</a>
+                    <div class="related-post-meta">
+                        <i class="far fa-calendar"></i> Jan 10, 2025
+                    </div>
+                </div>
+                <div class="related-post">
+                    <a href="../guides/gas-range-repair-safety-toronto.html">Gas Range Repair & Safety</a>
+                    <div class="related-post-meta">
+                        <i class="far fa-calendar"></i> Jan 8, 2025
+                    </div>
+                </div>
+                <div class="related-post">
+                    <a href="../guides/dishwasher-repair-vs-replace-toronto.html">Dishwasher: Repair or Replace?</a>
+                    <div class="related-post-meta">
+                        <i class="far fa-calendar"></i> Jan 5, 2025
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
 
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Nika Appliance Repair</h3>
-                <p>Toronto's trusted appliance repair service since 2008. Expert technicians, fair pricing, same-day service available.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <footer class="seo-footer-premium">
+        <div class="container">
+            <!-- Trust Badges Row -->
+            <div class="footer-trust-badges">
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⭐</div>
+                    <div class="badge-text">
+                        <strong>4.9/5 Rating</strong>
+                        <span>5,200+ Reviews</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🏆</div>
+                    <div class="badge-text">
+                        <strong>Licensed & Insured</strong>
+                        <span>Since 2017</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🛡️</div>
+                    <div class="badge-text">
+                        <strong>90-Day Warranty</strong>
+                        <span>Parts & Labor</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⚡</div>
+                    <div class="badge-text">
+                        <strong>Same-Day Service</strong>
+                        <span>7 Days a Week</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-section">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="../../services.html#refrigerator">Refrigerator Repair</a></li>
-                    <li><a href="../../services.html#washer">Washer Repair</a></li>
-                    <li><a href="../../services.html#dryer">Dryer Repair</a></li>
-                    <li><a href="../../services.html#dishwasher">Dishwasher Repair</a></li>
-                    <li><a href="../../services.html#oven">Oven/Range Repair</a></li>
-                </ul>
+            <!-- Main Footer Content -->
+            <div class="footer-main-content">
+                <!-- Column 1: Services -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services/refrigerator-repair">Refrigerator Repair</a></li>
+                        <li><a href="/services/dishwasher-repair">Dishwasher Repair</a></li>
+                        <li><a href="/services/washer-repair">Washer Repair</a></li>
+                        <li><a href="/services/dryer-repair">Dryer Repair</a></li>
+                        <li><a href="/services/oven-repair">Oven Repair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Locations -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Service Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="/locations/mississauga">Mississauga</a></li>
+                        <li><a href="/locations/brampton">Brampton</a></li>
+                        <li><a href="/locations/markham">Markham</a></li>
+                        <li><a href="/locations/vaughan">Vaughan</a></li>
+                        <li><a href="/locations/oakville">Oakville</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/reviews">Customer Reviews</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/book">Book Online</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-column footer-column-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact-box">
+                        <p class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:4377476737" class="contact-link">(437) 747-6737</a>
+                        </p>
+                        <p class="contact-item">
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:care@niappliancerepair.ca" class="contact-link">care@niappliancerepair.ca</a>
+                        </p>
+                        <p class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Serving Toronto & GTA</span>
+                        </p>
+                    </div>
+
+                    <a href="tel:4377476737" class="footer-cta-button">
+                        <i class="fas fa-phone"></i>
+                        Call for Same-Day Service
+                    </a>
+                </div>
             </div>
 
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="../../about.html">About Us</a></li>
-                    <li><a href="../index.html">Blog</a></li>
-                    <li><a href="../../contact.html">Contact</a></li>
-                    <li><a href="../../service-areas.html">Service Areas</a></li>
-                </ul>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2025 Nika Appliance Repair. All Rights Reserved.
+                        <span class="separator">|</span>
+                        Licensed & Insured
+                    </p>
+                    <div class="footer-social-links">
+                        <span class="footer-tagline">Trusted by 5,200+ Happy Customers</span>
+                    </div>
+                </div>
             </div>
-
-            <div class="footer-section">
-                <h4>Contact Info</h4>
-                <ul class="contact-info">
-                    <li><i class="fas fa-phone"></i> (416) 827-1960</li>
-                    <li><i class="fas fa-envelope"></i> info@nikaappliancerepair.com</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Serving Greater Toronto Area</li>
-                    <li><i class="fas fa-clock"></i> Mon-Sat: 8am-8pm<br>Sun: 9am-6pm</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2025 Nika Appliance Repair. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="../../js/main.js"></script>
+    <!-- Scripts -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', function() {
+            const progressBar = document.getElementById('progressBar');
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight - windowHeight;
+            const scrolled = (window.scrollY / documentHeight) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const mainNav = document.getElementById('mainNav');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', function() {
+                const isOpen = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isOpen);
+                mainNav.classList.toggle('menu-open');
+            });
+        }
+
+        // Update year
+        const yearElement = document.getElementById('current-year-footer');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+    </script>
     <script src="../js/responsive-tables.js"></script>
     <script src="../js/toc.js"></script>
 </body>
