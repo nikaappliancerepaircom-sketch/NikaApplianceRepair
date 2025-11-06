@@ -156,183 +156,172 @@
     </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="../../index.html">
-                    <img src="../../images/nika-logo.png" alt="Nika Appliance Repair">
-                </a>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="progressBar"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/">Nika Appliance Repair</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../services.html">Services</a></li>
-                    <li><a href="../../about.html">About</a></li>
-                    <li><a href="../index.html">Blog</a></li>
-                    <li><a href="../../contact.html">Contact</a></li>
+
+            <nav class="header-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/services" class="nav-link">Services</a></li>
+                    <li><a href="/locations" class="nav-link">Locations</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/blog" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
+
+            <div class="header-trust">
+                <div class="trust-stars">⭐⭐⭐⭐⭐</div>
+                <div class="trust-rating">4.9/5</div>
+                <div class="trust-reviews">5,200+ Reviews</div>
+            </div>
+
+            <div class="header-cta">
+                <a href="tel:4377476737" class="cta-phone">
+                    <i class="fas fa-phone"></i> (437) 747-6737
+                </a>
+                <a href="/book" class="cta-book">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
         </div>
     </header>
 
-    <main>
-        <article class="blog-post">
-            <div class="container">
-                <div class="post-header">
-                    <h1>Dishwasher Hard Water Solutions for Toronto Homes (2025 Guide)</h1>
-                    <div class="post-meta">
-                        <span class="post-date">January 15, 2025</span>
-                        <span class="read-time">11 min read</span>
-                        <span class="post-category">Dishwasher Guides</span>
-                    </div>
+    <!-- Main Blog Content -->
+    <div class="blog-wrapper">
+        <main class="blog-main">
+            <!-- Blog Header -->
+            <header class="blog-header">
+                <div class="blog-meta-top">
+                    <span class="blog-category">
+                        <i class="fas fa-wrench"></i> Dishwasher Guides
+                    </span>
+                    <span class="reading-time">
+                        <i class="far fa-clock"></i> 11 min read
+                    </span>
                 </div>
 
-                <!-- Hero Image -->
-                <div class="blog-hero-image">
-                    <img src="../images/dishwasher-hard-water-solutions-toronto-hero.png" alt="Toronto dishwasher showing hard water mineral deposits and white film on dishes" loading="eager">
+                <h1 class="blog-title">Dishwasher Hard Water Solutions for Toronto Homes (2025 Guide)</h1>
+
+                <div class="blog-meta">
+                    <span class="meta-item">
+                        <i class="far fa-calendar"></i> January 15, 2025
+                    </span>
+                    <span class="meta-item">
+                        <i class="far fa-user"></i> <a href="../../about/michael-toronto.html">Michael Toronto</a>
+                    </span>
                 </div>
+            </header>
+
+            <!-- Social Share -->
+            <div class="social-share">
+                <a href="#" class="share-btn facebook" aria-label="Share on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="share-btn twitter" aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="share-btn linkedin" aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="share-btn email" aria-label="Share via Email">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Blog Content -->
+            <article class="blog-content">
 
                 <!-- Direct Answer Box -->
-                <div class="direct-answer-box">
-                    <h2>Quick Answer</h2>
-                    <p>Toronto's hard water (200-300 ppm) causes white film, cloudy glasses, and mineral buildup in dishwashers. The most effective solution combines three approaches: using maximum rinse aid settings, switching to powder detergent with water softeners, and monthly citric acid cleaning cycles. This costs approximately $22/month and prevents 95% of hard water problems without expensive water softener installations.</p>
+                <div class="tip-box">
+                    <strong>💡 Quick Answer:</strong> Toronto's hard water (200-300 ppm) causes white film, cloudy glasses, and mineral buildup in dishwashers. The most effective solution combines three approaches: using maximum rinse aid settings, switching to powder detergent with water softeners, and monthly citric acid cleaning cycles. This costs approximately $22/month and prevents 95% of hard water problems without expensive water softener installations.
                 </div>
 
-                <!-- At-a-Glance Summary -->
-                <div class="at-a-glance-box">
-                    <h2>At-a-Glance: Toronto Hard Water Solutions</h2>
-                    <div class="glance-grid">
-                        <div class="glance-item">
-                            <h3>Toronto Water Hardness</h3>
-                            <p>200-300 ppm (very hard)</p>
-                        </div>
-                        <div class="glance-item">
-                            <h3>Monthly Solution Cost</h3>
-                            <p>$22 (rinse aid + cleaner + detergent)</p>
-                        </div>
-                        <div class="glance-item">
-                            <h3>Cleaning Frequency</h3>
-                            <p>Monthly deep clean, weekly filter check</p>
-                        </div>
-                        <div class="glance-item">
-                            <h3>Water Softener Cost</h3>
-                            <p>$1,500-$3,500 (whole-home system)</p>
-                        </div>
-                        <div class="glance-item">
-                            <h3>Best Detergent Type</h3>
-                            <p>Powder with built-in softeners</p>
-                        </div>
-                        <div class="glance-item">
-                            <h3>Damage Prevention</h3>
-                            <p>Extends lifespan by 40-60%</p>
-                        </div>
-                    </div>
-                </div>
+                <h2>Understanding Toronto's Hard Water</h2>
+                <p>Toronto's water supply presents unique challenges for dishwasher owners. The city's water hardness ranges from 200 to 300 parts per million (ppm), placing it firmly in the "very hard" category. This high mineral content, primarily calcium and magnesium, comes from the bedrock and soil these minerals pass through before reaching your tap.</p>
 
-                <!-- Table of Contents -->
-                <nav class="table-of-contents">
-                    <h2>Table of Contents</h2>
+                <h3>Toronto Water Hardness by Area</h3>
+                <p>Water hardness varies significantly across Toronto neighborhoods:</p>
+                <ul>
+                    <li><strong>North York and Scarborough:</strong> 280-300 ppm (highest hardness)</li>
+                    <li><strong>Downtown Core:</strong> 220-250 ppm (moderate-high hardness)</li>
+                    <li><strong>Etobicoke:</strong> 200-240 ppm (moderate hardness)</li>
+                    <li><strong>East York:</strong> 240-270 ppm (high hardness)</li>
+                </ul>
+
+                <div class="info-box">
+                    <h4>Understanding PPM Measurements</h4>
+                    <p>Water hardness is measured in parts per million (ppm) or grains per gallon (gpg):</p>
                     <ul>
-                        <li><a href="#understanding-toronto-water">Understanding Toronto's Hard Water</a></li>
-                        <li><a href="#common-problems">Common Hard Water Dishwasher Problems</a></li>
-                        <li><a href="#detergent-solutions">Detergent and Rinse Aid Solutions</a></li>
-                        <li><a href="#cleaning-maintenance">Cleaning and Maintenance Routines</a></li>
-                        <li><a href="#water-softener-options">Water Softener Options</a></li>
-                        <li><a href="#cost-analysis">Cost Analysis and Comparison</a></li>
-                        <li><a href="#prevention-tips">Long-Term Prevention Tips</a></li>
-                        <li><a href="#professional-help">When to Call Professionals</a></li>
-                        <li><a href="#faq">Frequently Asked Questions</a></li>
+                        <li><strong>Soft:</strong> 0-60 ppm (0-3.5 gpg)</li>
+                        <li><strong>Slightly Hard:</strong> 61-120 ppm (3.5-7 gpg)</li>
+                        <li><strong>Moderately Hard:</strong> 121-180 ppm (7-10.5 gpg)</li>
+                        <li><strong>Hard:</strong> 181-250 ppm (10.5-14.5 gpg)</li>
+                        <li><strong>Very Hard:</strong> 251+ ppm (14.5+ gpg)</li>
                     </ul>
-                </nav>
-
-                <!-- Author Box -->
-                <div class="author-box">
-                    <img src="../../images/authors/michael-toronto.jpg" alt="Michael Toronto" class="author-image">
-                    <div class="author-info">
-                        <h3><a href="../../about/michael-toronto.html">Michael Toronto</a></h3>
-                        <p class="author-title">Senior Dishwasher Specialist</p>
-                        <p class="author-bio">Senior dishwasher specialist with over 12 years of experience. Michael has serviced over 3,000 dishwashers in Toronto homes and specializes in hard water solutions and water quality issues.</p>
-                    </div>
                 </div>
 
-                <!-- Main Content -->
-                <div class="post-content">
-                    <section id="understanding-toronto-water">
-                        <h2>Understanding Toronto's Hard Water</h2>
-                        <p>Toronto's water supply presents unique challenges for dishwasher owners. The city's water hardness ranges from 200 to 300 parts per million (ppm), placing it firmly in the "very hard" category. This high mineral content, primarily calcium and magnesium, comes from the bedrock and soil these minerals pass through before reaching your tap.</p>
+                <h3>How Hard Water Affects Your Dishwasher</h3>
+                <p>Hard water minerals interact with dishwasher detergent and heat in several problematic ways:</p>
 
-                        <h3>Toronto Water Hardness by Area</h3>
-                        <p>Water hardness varies significantly across Toronto neighborhoods:</p>
-                        <ul>
-                            <li><strong>North York and Scarborough:</strong> 280-300 ppm (highest hardness)</li>
-                            <li><strong>Downtown Core:</strong> 220-250 ppm (moderate-high hardness)</li>
-                            <li><strong>Etobicoke:</strong> 200-240 ppm (moderate hardness)</li>
-                            <li><strong>East York:</strong> 240-270 ppm (high hardness)</li>
-                        </ul>
+                <p><strong>Chemical Reactions:</strong> Calcium and magnesium bind with soap molecules, reducing cleaning effectiveness. This process requires more detergent to achieve the same cleaning power, creating a cycle of increased chemical use and residue buildup.</p>
 
-                        <div class="info-box">
-                            <h4>Understanding PPM Measurements</h4>
-                            <p>Water hardness is measured in parts per million (ppm) or grains per gallon (gpg):</p>
-                            <ul>
-                                <li><strong>Soft:</strong> 0-60 ppm (0-3.5 gpg)</li>
-                                <li><strong>Slightly Hard:</strong> 61-120 ppm (3.5-7 gpg)</li>
-                                <li><strong>Moderately Hard:</strong> 121-180 ppm (7-10.5 gpg)</li>
-                                <li><strong>Hard:</strong> 181-250 ppm (10.5-14.5 gpg)</li>
-                                <li><strong>Very Hard:</strong> 251+ ppm (14.5+ gpg)</li>
-                            </ul>
-                        </div>
+                <p><strong>Thermal Deposits:</strong> The dishwasher's heating element accelerates mineral precipitation. As water heats to 140-160°F during wash cycles, dissolved minerals crystallize and deposit on dishes, interior surfaces, and mechanical components.</p>
 
-                        <h3>How Hard Water Affects Your Dishwasher</h3>
-                        <p>Hard water minerals interact with dishwasher detergent and heat in several problematic ways:</p>
+                <p><strong>Evaporation Residue:</strong> During the drying cycle, water evaporates but minerals remain, leaving the characteristic white film that Toronto residents know too well. This film becomes increasingly difficult to remove with each wash cycle.</p>
 
-                        <p><strong>Chemical Reactions:</strong> Calcium and magnesium bind with soap molecules, reducing cleaning effectiveness. This process requires more detergent to achieve the same cleaning power, creating a cycle of increased chemical use and residue buildup.</p>
+                <h2>Common Hard Water Dishwasher Problems</h2>
 
-                        <p><strong>Thermal Deposits:</strong> The dishwasher's heating element accelerates mineral precipitation. As water heats to 140-160°F during wash cycles, dissolved minerals crystallize and deposit on dishes, interior surfaces, and mechanical components.</p>
+                <h3>1. White Film and Cloudy Glasses</h3>
+<p>The most visible hard water problem is the chalky white film that coats dishes and glassware. This residue consists of calcium carbonate and magnesium deposits that weren't rinsed away during the cycle.</p>
 
-                        <p><strong>Evaporation Residue:</strong> During the drying cycle, water evaporates but minerals remain, leaving the characteristic white film that Toronto residents know too well. This film becomes increasingly difficult to remove with each wash cycle.</p>
-                    </section>
+<p><strong>Why It Happens:</strong> Hard water minerals react with alkaline detergents to form insoluble compounds. These compounds don't dissolve in water and instead deposit on dish surfaces. The problem intensifies with inadequate rinse aid, which normally helps water sheet off dishes rather than forming droplets.</p>
 
-                    <section id="common-problems">
-                        <h2>Common Hard Water Dishwasher Problems</h2>
-
-                        <h3>1. White Film and Cloudy Glasses</h3>
-                        <p>The most visible hard water problem is the chalky white film that coats dishes and glassware. This residue consists of calcium carbonate and magnesium deposits that weren't rinsed away during the cycle.</p>
-
-                        <p><strong>Why It Happens:</strong> Hard water minerals react with alkaline detergents to form insoluble compounds. These compounds don't dissolve in water and instead deposit on dish surfaces. The problem intensifies with inadequate rinse aid, which normally helps water sheet off dishes rather than forming droplets.</p>
-
-                        <div class="warning-box">
+<div class="warning-box">
                             <h4>Permanent Etching Warning</h4>
                             <p>White film can become permanent etching on glassware if left untreated for months. Etching occurs when alkaline water chemically corrodes glass surfaces, creating microscopic pits that cannot be removed. Once etching occurs, glasses must be replaced. Prevention through proper rinse aid use and water softening is essential.</p>
-                        </div>
+</div>
 
-                        <h3>2. Mineral Buildup in Spray Arms</h3>
-                        <p>Spray arm clogs are a critical hard water issue that progressively worsens dishwasher performance. Toronto's high mineral content means spray arm holes can become completely blocked within 6-12 months without proper maintenance.</p>
+<h3>2. Mineral Buildup in Spray Arms</h3>
+<p>Spray arm clogs are a critical hard water issue that progressively worsens dishwasher performance. Toronto's high mineral content means spray arm holes can become completely blocked within 6-12 months without proper maintenance.</p>
 
-                        <p><strong>Signs of Spray Arm Buildup:</strong></p>
-                        <ul>
+<p><strong>Signs of Spray Arm Buildup:</strong></p>
+<ul>
                             <li>Reduced water pressure during cycles</li>
                             <li>Dishes in certain rack positions remain dirty</li>
                             <li>Visible white deposits on spray arm nozzles</li>
                             <li>Unusual sounds during wash cycles</li>
                             <li>Extended cycle times</li>
-                        </ul>
+</ul>
 
-                        <h3>3. Heating Element Scaling</h3>
-                        <p>The heating element bears the brunt of hard water damage. Operating at temperatures up to 180°F, it becomes a prime location for mineral crystallization. Scale buildup acts as insulation, forcing the element to work harder and consume more energy.</p>
+<h3>3. Heating Element Scaling</h3>
+<p>The heating element bears the brunt of hard water damage. Operating at temperatures up to 180°F, it becomes a prime location for mineral crystallization. Scale buildup acts as insulation, forcing the element to work harder and consume more energy.</p>
 
-                        <p><strong>Consequences of Scaling:</strong></p>
-                        <ul>
+<p><strong>Consequences of Scaling:</strong></p>
+<ul>
                             <li>20-30% increase in energy consumption</li>
                             <li>Longer heating times extending cycle duration</li>
                             <li>Reduced water temperature affecting cleaning effectiveness</li>
                             <li>Premature element failure (4-5 years vs 8-10 years normal lifespan)</li>
                             <li>Increased risk of element burnout</li>
-                        </ul>
+</ul>
 
-                        <h3>4. Pump and Valve Problems</h3>
-                        <p>Hard water minerals infiltrate moving parts, causing mechanical failures. The drain pump, circulation pump, and inlet valve are particularly vulnerable. Mineral deposits increase friction, wear down seals, and create leaks.</p>
+<h3>4. Pump and Valve Problems</h3>
+<p>Hard water minerals infiltrate moving parts, causing mechanical failures. The drain pump, circulation pump, and inlet valve are particularly vulnerable. Mineral deposits increase friction, wear down seals, and create leaks.</p>
 
-                        <div class="cost-table">
+<div class="cost-table">
                             <h4>Hard Water Damage Repair Costs (Toronto Average)</h4>
                             <div class="table-wrapper">
                             <table>
@@ -378,195 +367,195 @@
                                 </tbody>
                             </table>
                             </div>
-                        </div>
-                    </section>
+</div>
+                    
 
-                    <section id="detergent-solutions">
-                        <h2>Detergent and Rinse Aid Solutions</h2>
+                    
+<h2>Detergent and Rinse Aid Solutions</h2>
 
                         <!-- Content Image -->
-                        <div class="content-image">
+<div class="content-image">
                             <img src="../images/dishwasher-hard-water-solutions-toronto-2.png" alt="Comparison of dishwasher detergents, rinse aids, and water softening products for hard water treatment" loading="lazy">
                             <p class="image-caption">Essential products for combating hard water in Toronto dishwashers: specialized detergents, rinse aids, and citric acid treatments</p>
-                        </div>
+</div>
 
-                        <h3>Choosing the Right Detergent for Hard Water</h3>
-                        <p>Detergent selection makes an enormous difference in hard water performance. Toronto residents should avoid gel detergents and favor powder formulations specifically designed for hard water conditions.</p>
+<h3>Choosing the Right Detergent for Hard Water</h3>
+<p>Detergent selection makes an enormous difference in hard water performance. Toronto residents should avoid gel detergents and favor powder formulations specifically designed for hard water conditions.</p>
 
-                        <p><strong>Why Powder Works Best:</strong> Powder detergents contain higher concentrations of water-softening agents, including phosphates and citric acid. These compounds bind to calcium and magnesium ions before they can form deposits. Powder also dissolves more completely at lower temperatures, reducing residue formation.</p>
+<p><strong>Why Powder Works Best:</strong> Powder detergents contain higher concentrations of water-softening agents, including phosphates and citric acid. These compounds bind to calcium and magnesium ions before they can form deposits. Powder also dissolves more completely at lower temperatures, reducing residue formation.</p>
 
-                        <h4>Recommended Detergents for Toronto Hard Water</h4>
-                        <ul>
+<h4>Recommended Detergents for Toronto Hard Water</h4>
+<ul>
                             <li><strong>Finish Quantum Max:</strong> Contains triple-action formula with built-in water softeners ($18-$24 for 60 tablets)</li>
                             <li><strong>Cascade Platinum Plus:</strong> Premium formula with hard water protection ($16-$22 for 50 pods)</li>
                             <li><strong>Seventh Generation Powder:</strong> Eco-friendly option with citric acid ($12-$15 for 75 oz)</li>
                             <li><strong>Lemi Shine Powder:</strong> Specifically formulated for hard water ($10-$14 for 45 oz)</li>
-                        </ul>
+</ul>
 
-                        <div class="info-box">
+<div class="info-box">
                             <h4>Detergent Dosing in Hard Water</h4>
                             <p>Use the manufacturer's recommended amount for hard water (usually the maximum line). More is not better—excess detergent combines with minerals to create more residue. If you see suds remaining after the final rinse, you're using too much.</p>
-                        </div>
+</div>
 
-                        <h3>The Critical Role of Rinse Aid</h3>
-                        <p>Rinse aid is not optional in Toronto's hard water conditions—it's essential. Rinse aid contains surfactants that break water's surface tension, causing it to sheet off dishes rather than forming droplets. This prevents mineral deposits from drying onto surfaces.</p>
+<h3>The Critical Role of Rinse Aid</h3>
+<p>Rinse aid is not optional in Toronto's hard water conditions—it's essential. Rinse aid contains surfactants that break water's surface tension, causing it to sheet off dishes rather than forming droplets. This prevents mineral deposits from drying onto surfaces.</p>
 
-                        <p><strong>Proper Rinse Aid Usage:</strong></p>
-                        <ul>
+<p><strong>Proper Rinse Aid Usage:</strong></p>
+<ul>
                             <li>Set dispenser to maximum setting (usually 5)</li>
                             <li>Refill monthly or when indicator light appears</li>
                             <li>Use quality brands (Finish Jet-Dry, Cascade Power Dry)</li>
                             <li>Never skip rinse aid to save money—it prevents costly repairs</li>
                             <li>Consider using liquid rinse aid plus solid rinse aid baskets for extra protection</li>
-                        </ul>
+</ul>
 
-                        <h3>Adding Citric Acid to Your Routine</h3>
-                        <p>Citric acid is a natural chelating agent that binds to hard water minerals, preventing deposit formation. Adding citric acid to your dishwasher routine provides continuous protection against scaling.</p>
+<h3>Adding Citric Acid to Your Routine</h3>
+<p>Citric acid is a natural chelating agent that binds to hard water minerals, preventing deposit formation. Adding citric acid to your dishwasher routine provides continuous protection against scaling.</p>
 
-                        <p><strong>Application Methods:</strong></p>
-                        <ul>
+<p><strong>Application Methods:</strong></p>
+<ul>
                             <li><strong>Monthly Treatment:</strong> Add 1/4 cup citric acid to detergent dispenser, run empty hot cycle</li>
                             <li><strong>Weekly Addition:</strong> Add 1 tablespoon citric acid to each regular wash load</li>
                             <li><strong>Commercial Products:</strong> Lemi Shine or Finish Hard Water Booster contain pre-measured citric acid</li>
-                        </ul>
-                    </section>
+</ul>
+                    
 
-                    <section id="cleaning-maintenance">
-                        <h2>Cleaning and Maintenance Routines</h2>
+                    
+<h2>Cleaning and Maintenance Routines</h2>
 
-                        <h3>Weekly Maintenance Tasks</h3>
-                        <p>Consistent weekly maintenance prevents mineral buildup from becoming severe. These quick tasks take 5-10 minutes but save hours of deep cleaning later.</p>
+<h3>Weekly Maintenance Tasks</h3>
+<p>Consistent weekly maintenance prevents mineral buildup from becoming severe. These quick tasks take 5-10 minutes but save hours of deep cleaning later.</p>
 
-                        <p><strong>Weekly Checklist:</strong></p>
-                        <ol>
+<p><strong>Weekly Checklist:</strong></p>
+<ol>
                             <li><strong>Filter Inspection:</strong> Remove and rinse the filter under hot water. Check for mineral deposits and food debris. Soak in vinegar solution if white buildup is visible.</li>
                             <li><strong>Door Gasket Wipe:</strong> Wipe door gasket with vinegar-dampened cloth to remove mineral film and prevent mold growth.</li>
                             <li><strong>Dispenser Check:</strong> Inspect detergent and rinse aid dispensers for residue buildup. Clean with warm water and soft brush.</li>
                             <li><strong>Spray Arm Visual:</strong> Look for visible clogs or deposits on spray arm holes. Quick rinse if needed.</li>
-                        </ol>
+</ol>
 
-                        <h3>Monthly Deep Cleaning</h3>
-                        <p>Monthly deep cleaning removes accumulated minerals that weekly maintenance misses. This comprehensive process restores dishwasher performance and extends component lifespan.</p>
+<h3>Monthly Deep Cleaning</h3>
+<p>Monthly deep cleaning removes accumulated minerals that weekly maintenance misses. This comprehensive process restores dishwasher performance and extends component lifespan.</p>
 
-                        <p><strong>Complete Monthly Cleaning Procedure:</strong></p>
+<p><strong>Complete Monthly Cleaning Procedure:</strong></p>
 
-                        <p><strong>Step 1: Vinegar Cycle</strong></p>
-                        <ul>
+<p><strong>Step 1: Vinegar Cycle</strong></p>
+<ul>
                             <li>Remove all dishes and racks</li>
                             <li>Place 2 cups white vinegar in dishwasher-safe container on bottom rack</li>
                             <li>Run hottest, longest cycle available</li>
                             <li>Vinegar dissolves mineral deposits throughout the system</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Step 2: Baking Soda Cycle</strong></p>
-                        <ul>
+<p><strong>Step 2: Baking Soda Cycle</strong></p>
+<ul>
                             <li>Sprinkle 1 cup baking soda across bottom of dishwasher</li>
                             <li>Run short hot cycle</li>
                             <li>Baking soda neutralizes odors and removes remaining stains</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Step 3: Manual Component Cleaning</strong></p>
-                        <ul>
+<p><strong>Step 3: Manual Component Cleaning</strong></p>
+<ul>
                             <li>Remove spray arms by twisting counterclockwise</li>
                             <li>Soak spray arms in vinegar solution for 30 minutes</li>
                             <li>Use toothpick or small wire to clear each spray hole</li>
                             <li>Scrub spray arms with soft brush</li>
                             <li>Clean under filter housing with small brush and vinegar</li>
                             <li>Wipe door edges, gasket, and handle with vinegar cloth</li>
-                        </ul>
+</ul>
 
-                        <div class="warning-box">
+<div class="warning-box">
                             <h4>Never Use These Cleaners</h4>
                             <p>Avoid using bleach, ammonia, or abrasive cleaners in your dishwasher. These damage rubber gaskets, corrode metal components, and can react with detergent residue to create toxic fumes. Stick to vinegar, citric acid, and commercial dishwasher cleaners.</p>
-                        </div>
+</div>
 
-                        <h3>Quarterly Professional Descaling</h3>
-                        <p>For severe hard water buildup, quarterly professional descaling provides deep cleaning that home methods cannot achieve. Professional technicians use specialized descaling solutions and equipment to remove deposits from inaccessible areas.</p>
+<h3>Quarterly Professional Descaling</h3>
+<p>For severe hard water buildup, quarterly professional descaling provides deep cleaning that home methods cannot achieve. Professional technicians use specialized descaling solutions and equipment to remove deposits from inaccessible areas.</p>
 
-                        <p><strong>Professional Service Includes:</strong></p>
-                        <ul>
+<p><strong>Professional Service Includes:</strong></p>
+<ul>
                             <li>Complete disassembly of spray system</li>
                             <li>Industrial-strength descaling treatment</li>
                             <li>Pump and valve inspection</li>
                             <li>Heating element condition check</li>
                             <li>Filter system deep cleaning</li>
                             <li>Seal and gasket lubrication</li>
-                        </ul>
+</ul>
 
-                        <p>Professional descaling costs $120-$180 in Toronto but can prevent $500+ in repair costs annually.</p>
-                    </section>
+<p>Professional descaling costs $120-$180 in Toronto but can prevent $500+ in repair costs annually.</p>
+                    
 
-                    <section id="water-softener-options">
-                        <h2>Water Softener Options</h2>
+                    
+<h2>Water Softener Options</h2>
 
-                        <h3>Whole-Home Water Softener Systems</h3>
-                        <p>Whole-home water softeners provide comprehensive hard water solutions for your entire property. These systems use ion exchange technology to remove calcium and magnesium before water enters your home's plumbing.</p>
+<h3>Whole-Home Water Softener Systems</h3>
+<p>Whole-home water softeners provide comprehensive hard water solutions for your entire property. These systems use ion exchange technology to remove calcium and magnesium before water enters your home's plumbing.</p>
 
-                        <p><strong>How They Work:</strong> Water softeners contain resin beads charged with sodium ions. As hard water passes through, calcium and magnesium ions exchange places with sodium ions. The softened water then flows to all fixtures, including your dishwasher.</p>
+<p><strong>How They Work:</strong> Water softeners contain resin beads charged with sodium ions. As hard water passes through, calcium and magnesium ions exchange places with sodium ions. The softened water then flows to all fixtures, including your dishwasher.</p>
 
-                        <h4>Installation Costs (Toronto Average)</h4>
-                        <ul>
+<h4>Installation Costs (Toronto Average)</h4>
+<ul>
                             <li><strong>Basic Salt-Based System:</strong> $1,500-$2,200 (suitable for Toronto water)</li>
                             <li><strong>High-Efficiency System:</strong> $2,200-$2,800 (reduced salt usage)</li>
                             <li><strong>Premium Dual-Tank System:</strong> $2,800-$3,500 (continuous soft water)</li>
                             <li><strong>Installation Labor:</strong> $300-$600 (plumber required)</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Ongoing Costs:</strong></p>
-                        <ul>
+<p><strong>Ongoing Costs:</strong></p>
+<ul>
                             <li>Salt: $8-$15/month (40-80 pounds depending on usage)</li>
                             <li>Maintenance: $100-$150 annually (resin cleaning, valve service)</li>
                             <li>Water usage: Additional 25-50 gallons daily for regeneration</li>
-                        </ul>
+</ul>
 
-                        <div class="info-box">
+<div class="info-box">
                             <h4>Benefits Beyond Dishwashing</h4>
                             <p>Whole-home water softeners benefit all water-using appliances and fixtures: washing machines last longer, water heaters operate more efficiently, shower doors stay cleaner, and soap works better throughout your home. Calculate total household benefits when considering cost.</p>
-                        </div>
+</div>
 
-                        <h3>Portable Dishwasher Water Softeners</h3>
-                        <p>Portable water softeners connect directly to your dishwasher's water supply, treating only dishwasher water. These compact units provide targeted hard water treatment without whole-home installation.</p>
+<h3>Portable Dishwasher Water Softeners</h3>
+<p>Portable water softeners connect directly to your dishwasher's water supply, treating only dishwasher water. These compact units provide targeted hard water treatment without whole-home installation.</p>
 
-                        <p><strong>Popular Models:</strong></p>
-                        <ul>
+<p><strong>Popular Models:</strong></p>
+<ul>
                             <li><strong>On The Go Portable Softener:</strong> $40-$60 (16,000 grain capacity)</li>
                             <li><strong>Watts Premier Inline Softener:</strong> $80-$120 (premium filtration)</li>
                             <li><strong>Culligan Portable Softener:</strong> $100-$150 (high capacity)</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Advantages:</strong></p>
-                        <ul>
+<p><strong>Advantages:</strong></p>
+<ul>
                             <li>Low upfront cost ($40-$150 vs $1,500-$3,500)</li>
                             <li>DIY installation in 30 minutes</li>
                             <li>Portable for moving or rental properties</li>
                             <li>Minimal maintenance (regenerate monthly)</li>
                             <li>No professional plumber required</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Limitations:</strong></p>
-                        <ul>
+<p><strong>Limitations:</strong></p>
+<ul>
                             <li>Treats dishwasher only (other fixtures remain hard water)</li>
                             <li>Requires monthly regeneration with salt</li>
                             <li>Lower capacity than whole-home systems</li>
                             <li>May reduce water pressure slightly</li>
-                        </ul>
+</ul>
 
-                        <h3>Electronic Descalers and Magnetic Systems</h3>
-                        <p>Electronic descalers and magnetic water conditioners claim to reduce hard water problems without salt or chemicals. These devices generate electromagnetic fields that theoretically alter mineral crystal structure.</p>
+<h3>Electronic Descalers and Magnetic Systems</h3>
+<p>Electronic descalers and magnetic water conditioners claim to reduce hard water problems without salt or chemicals. These devices generate electromagnetic fields that theoretically alter mineral crystal structure.</p>
 
-                        <div class="warning-box">
+<div class="warning-box">
                             <h4>Scientific Evidence Warning</h4>
                             <p>Electronic descalers and magnetic systems lack consistent scientific evidence supporting their effectiveness. Independent testing shows minimal impact on hard water problems. The Water Quality Association does not certify these devices. For Toronto's very hard water, stick to proven ion-exchange softeners or chemical treatments.</p>
-                        </div>
-                    </section>
+</div>
+                    
 
-                    <section id="cost-analysis">
-                        <h2>Cost Analysis and Comparison</h2>
+                    
+<h2>Cost Analysis and Comparison</h2>
 
-                        <h3>Total Cost of Ownership Comparison</h3>
-                        <p>Comparing different hard water solutions requires examining both initial investment and ongoing costs over a 5-year period. This analysis helps Toronto homeowners choose the most cost-effective solution for their situation.</p>
+<h3>Total Cost of Ownership Comparison</h3>
+<p>Comparing different hard water solutions requires examining both initial investment and ongoing costs over a 5-year period. This analysis helps Toronto homeowners choose the most cost-effective solution for their situation.</p>
 
-                        <div class="cost-table">
+<div class="cost-table">
                             <h4>5-Year Cost Comparison (Toronto Home)</h4>
                             <div class="table-wrapper">
                             <table>
@@ -625,108 +614,108 @@
                                 </tbody>
                             </table>
                             </div>
-                        </div>
+</div>
 
-                        <h3>Hidden Costs of No Treatment</h3>
-                        <p>The "free" option of doing nothing carries substantial hidden costs that appear gradually over time. Toronto homeowners without hard water treatment face these expenses:</p>
+<h3>Hidden Costs of No Treatment</h3>
+<p>The "free" option of doing nothing carries substantial hidden costs that appear gradually over time. Toronto homeowners without hard water treatment face these expenses:</p>
 
-                        <ul>
+<ul>
                             <li><strong>Reduced Dishwasher Lifespan:</strong> 6-8 years vs 10-12 years (replacement cost $600-$1,200)</li>
                             <li><strong>Increased Energy Bills:</strong> 20-30% higher heating costs ($40-$60/year)</li>
                             <li><strong>Component Failures:</strong> Spray arms, pumps, valves averaging $300-$600 in repairs</li>
                             <li><strong>Detergent Waste:</strong> Using 25-40% more detergent for same cleaning results</li>
                             <li><strong>Glassware Replacement:</strong> Permanent etching requiring new glasses ($100-$300)</li>
                             <li><strong>Rewashing Cycles:</strong> Running additional cycles wastes water and electricity ($50-$80/year)</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Estimated 5-Year Cost of No Treatment:</strong> $1,200-$2,500 in premature replacements, repairs, and efficiency losses.</p>
+<p><strong>Estimated 5-Year Cost of No Treatment:</strong> $1,200-$2,500 in premature replacements, repairs, and efficiency losses.</p>
 
-                        <h3>Best Value Solution for Most Toronto Homes</h3>
-                        <p>For most Toronto households, the optimal solution combines portable dishwasher softeners with proper maintenance:</p>
+<h3>Best Value Solution for Most Toronto Homes</h3>
+<p>For most Toronto households, the optimal solution combines portable dishwasher softeners with proper maintenance:</p>
 
-                        <p><strong>Complete Protection Program:</strong></p>
-                        <ul>
+<p><strong>Complete Protection Program:</strong></p>
+<ul>
                             <li>Portable dishwasher water softener: $80 initial</li>
                             <li>Quality rinse aid: $8/month</li>
                             <li>Monthly citric acid cleaning: $2/month</li>
                             <li>Hard water detergent: $12/month</li>
                             <li><strong>Total: $80 initial + $264/year = $1,400 over 5 years</strong></li>
-                        </ul>
+</ul>
 
-                        <p>This program prevents 90% of hard water damage at one-third the cost of whole-home softener systems, making it ideal for dishwasher-focused protection.</p>
-                    </section>
+<p>This program prevents 90% of hard water damage at one-third the cost of whole-home softener systems, making it ideal for dishwasher-focused protection.</p>
+                    
 
-                    <section id="prevention-tips">
-                        <h2>Long-Term Prevention Tips</h2>
+                    
+<h2>Long-Term Prevention Tips</h2>
 
-                        <h3>Optimize Water Temperature</h3>
-                        <p>Water temperature significantly affects hard water problems. Toronto's hard water requires careful temperature management to balance cleaning effectiveness with mineral precipitation.</p>
+<h3>Optimize Water Temperature</h3>
+<p>Water temperature significantly affects hard water problems. Toronto's hard water requires careful temperature management to balance cleaning effectiveness with mineral precipitation.</p>
 
-                        <p><strong>Temperature Guidelines:</strong></p>
-                        <ul>
+<p><strong>Temperature Guidelines:</strong></p>
+<ul>
                             <li><strong>Water Heater Setting:</strong> 120-125°F (prevents excessive scaling)</li>
                             <li><strong>Dishwasher Boost Heating:</strong> Use built-in heater to reach 140°F during wash</li>
                             <li><strong>Sanitize Cycle:</strong> Limit to monthly use (165°F increases mineral deposits)</li>
                             <li><strong>Air Dry Option:</strong> Use heated dry sparingly to reduce mineral baking</li>
-                        </ul>
+</ul>
 
-                        <h3>Loading Strategies for Hard Water</h3>
-                        <p>Proper loading becomes more critical in hard water conditions. Strategic placement ensures maximum rinse aid contact and optimal water drainage.</p>
+<h3>Loading Strategies for Hard Water</h3>
+<p>Proper loading becomes more critical in hard water conditions. Strategic placement ensures maximum rinse aid contact and optimal water drainage.</p>
 
-                        <ul>
+<ul>
                             <li><strong>Angle Glasses Downward:</strong> Prevents water pooling and mineral spotting</li>
                             <li><strong>Space Items Widely:</strong> Allows better rinse aid circulation</li>
                             <li><strong>Avoid Overcrowding:</strong> Ensures complete rinsing on all surfaces</li>
                             <li><strong>Place Glasses on Top Rack:</strong> Less heat exposure reduces mineral baking</li>
                             <li><strong>Use Tines Properly:</strong> Keeps items from blocking spray patterns</li>
-                        </ul>
+</ul>
 
-                        <h3>Pre-Rinse Considerations</h3>
-                        <p>In hard water areas, pre-rinsing strategy affects final results. While modern dishwashers don't require pre-rinsing, Toronto's hard water creates special circumstances.</p>
+<h3>Pre-Rinse Considerations</h3>
+<p>In hard water areas, pre-rinsing strategy affects final results. While modern dishwashers don't require pre-rinsing, Toronto's hard water creates special circumstances.</p>
 
-                        <p><strong>Best Practice:</strong> Scrape food debris but avoid hot water pre-rinsing. Hot pre-rinsing depletes hot water tank, forcing dishwasher to use cooler water that doesn't dissolve detergent or minerals effectively. Cold water pre-rinsing is acceptable for heavily soiled items.</p>
+<p><strong>Best Practice:</strong> Scrape food debris but avoid hot water pre-rinsing. Hot pre-rinsing depletes hot water tank, forcing dishwasher to use cooler water that doesn't dissolve detergent or minerals effectively. Cold water pre-rinsing is acceptable for heavily soiled items.</p>
 
-                        <h3>Seasonal Adjustments</h3>
-                        <p>Toronto's water hardness fluctuates seasonally, requiring strategy adjustments throughout the year.</p>
+<h3>Seasonal Adjustments</h3>
+<p>Toronto's water hardness fluctuates seasonally, requiring strategy adjustments throughout the year.</p>
 
-                        <p><strong>Winter (December-February):</strong></p>
-                        <ul>
+<p><strong>Winter (December-February):</strong></p>
+<ul>
                             <li>Hardness increases 10-15% due to road salt runoff and treatment processes</li>
                             <li>Increase rinse aid to maximum setting</li>
                             <li>Clean spray arms every 2 weeks instead of monthly</li>
                             <li>Consider adding citric acid boost to each load</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Spring (March-May):</strong></p>
-                        <ul>
+<p><strong>Spring (March-May):</strong></p>
+<ul>
                             <li>Hardness peaks due to snowmelt and runoff</li>
                             <li>Schedule professional descaling service</li>
                             <li>Inspect and clean filter weekly</li>
                             <li>Replace water softener resin if using portable unit</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Summer (June-August):</strong></p>
-                        <ul>
+<p><strong>Summer (June-August):</strong></p>
+<ul>
                             <li>Hardness moderates slightly</li>
                             <li>Standard monthly maintenance sufficient</li>
                             <li>Good time for deep component cleaning</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Fall (September-November):</strong></p>
-                        <ul>
+<p><strong>Fall (September-November):</strong></p>
+<ul>
                             <li>Hardness begins increasing</li>
                             <li>Prepare for winter by checking all seals and gaskets</li>
                             <li>Stock up on rinse aid and cleaning supplies</li>
-                        </ul>
-                    </section>
+</ul>
+                    
 
-                    <section id="professional-help">
-                        <h2>When to Call Professionals</h2>
+                    
+<h2>When to Call Professionals</h2>
 
-                        <h3>Signs You Need Professional Service</h3>
-                        <p>While regular maintenance handles most hard water issues, certain problems require professional expertise. Recognize these warning signs:</p>
+<h3>Signs You Need Professional Service</h3>
+<p>While regular maintenance handles most hard water issues, certain problems require professional expertise. Recognize these warning signs:</p>
 
-                        <ul>
+<ul>
                             <li><strong>Persistent Poor Cleaning:</strong> Dishes remain dirty despite proper detergent and loading</li>
                             <li><strong>Extended Cycle Times:</strong> Cycles taking 30+ minutes longer than normal</li>
                             <li><strong>Unusual Noises:</strong> Grinding, squealing, or loud humming during operation</li>
@@ -735,13 +724,13 @@
                             <li><strong>Error Codes:</strong> Digital displays showing persistent error messages</li>
                             <li><strong>Visible Corrosion:</strong> Rust or white corrosion on interior components</li>
                             <li><strong>Heating Problems:</strong> Dishes cold after cycle or no steam during operation</li>
-                        </ul>
+</ul>
 
-                        <h3>Professional Descaling Service</h3>
-                        <p>Professional descaling goes beyond home cleaning methods, using industrial-strength solutions and specialized equipment. Toronto technicians familiar with local hard water conditions provide thorough treatment.</p>
+<h3>Professional Descaling Service</h3>
+<p>Professional descaling goes beyond home cleaning methods, using industrial-strength solutions and specialized equipment. Toronto technicians familiar with local hard water conditions provide thorough treatment.</p>
 
-                        <p><strong>Service Includes:</strong></p>
-                        <ul>
+<p><strong>Service Includes:</strong></p>
+<ul>
                             <li>Complete system disassembly for access to all components</li>
                             <li>Professional-grade descaling chemicals (stronger than consumer products)</li>
                             <li>High-pressure flushing of spray system</li>
@@ -750,177 +739,482 @@
                             <li>Valve cleaning and testing</li>
                             <li>Seal and gasket conditioning</li>
                             <li>Reassembly and performance testing</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Toronto Service Costs:</strong></p>
-                        <ul>
+<p><strong>Toronto Service Costs:</strong></p>
+<ul>
                             <li>Standard Descaling: $120-$150</li>
                             <li>Deep Descaling with Component Cleaning: $180-$220</li>
                             <li>Descaling + Minor Repairs: $250-$350</li>
-                        </ul>
+</ul>
 
-                        <h3>Choosing a Toronto Dishwasher Technician</h3>
-                        <p>Select technicians experienced with Toronto's specific hard water challenges. Not all appliance repair services understand the nuances of hard water damage.</p>
+<h3>Choosing a Toronto Dishwasher Technician</h3>
+<p>Select technicians experienced with Toronto's specific hard water challenges. Not all appliance repair services understand the nuances of hard water damage.</p>
 
-                        <p><strong>Questions to Ask:</strong></p>
-                        <ul>
+<p><strong>Questions to Ask:</strong></p>
+<ul>
                             <li>Do you regularly service dishwashers in hard water areas?</li>
                             <li>What descaling solutions do you use?</li>
                             <li>Can you test water hardness during the service call?</li>
                             <li>Do you provide recommendations for ongoing prevention?</li>
                             <li>What's included in your descaling service?</li>
                             <li>Do you offer maintenance plans for hard water conditions?</li>
-                        </ul>
+</ul>
 
-                        <div class="info-box">
+<div class="info-box">
                             <h4>Nika Appliance Repair Hard Water Services</h4>
                             <p>Nika Appliance Repair specializes in dishwasher hard water problems across Toronto. Our technicians service 200+ hard water dishwashers monthly and provide comprehensive descaling, component inspection, and prevention consultation. We understand Toronto's unique water conditions and offer maintenance plans specifically designed for local hardness levels.</p>
                             <p><strong>Schedule Service:</strong> <a href="../../contact.html">(647) 490-0999</a></p>
-                        </div>
+</div>
 
-                        <h3>Emergency vs Routine Service</h3>
-                        <p>Understand when to schedule emergency service versus routine maintenance calls:</p>
+<h3>Emergency vs Routine Service</h3>
+<p>Understand when to schedule emergency service versus routine maintenance calls:</p>
 
-                        <p><strong>Emergency Service Needed:</strong></p>
-                        <ul>
+<p><strong>Emergency Service Needed:</strong></p>
+<ul>
                             <li>Water leaking continuously</li>
                             <li>Electrical burning smell</li>
                             <li>Dishwasher won't turn off</li>
                             <li>Door won't close/latch</li>
                             <li>Sparking or smoking</li>
-                        </ul>
+</ul>
 
-                        <p><strong>Schedule Routine Appointment:</strong></p>
-                        <ul>
+<p><strong>Schedule Routine Appointment:</strong></p>
+<ul>
                             <li>Poor cleaning results</li>
                             <li>Mineral buildup visible</li>
                             <li>Preventive descaling</li>
                             <li>Minor noise issues</li>
                             <li>Consultation on water softening options</li>
-                        </ul>
-                    </section>
+</ul>
+                    
 
                     <!-- FAQ Section -->
-                    <section id="faq">
-                        <h2>Frequently Asked Questions</h2>
+                    
+<h2>Frequently Asked Questions</h2>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>How hard is Toronto's water compared to other cities?</h3>
                             <p>Toronto's water hardness ranges from 200-300 ppm (parts per million), classified as "very hard" water. This is significantly harder than cities like Vancouver (20-40 ppm) but softer than Calgary (350-400 ppm). The hardness varies by neighborhood, with areas like North York and Scarborough often experiencing higher levels.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>What causes the white film on dishes after dishwasher cycles?</h3>
                             <p>White film on dishes is caused by calcium and magnesium minerals in hard water that don't dissolve properly during the wash cycle. These minerals leave a chalky residue when water evaporates. The film becomes worse with higher water temperatures and inadequate rinse aid usage.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>Should I use powder or gel detergent in hard water areas?</h3>
                             <p>For Toronto's hard water, powder detergents with built-in water softeners work best. They contain more phosphates and enzymes that combat mineral deposits. Gel detergents can leave residue, while pods may not dissolve completely in hard water conditions.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>How often should I clean my dishwasher in hard water conditions?</h3>
                             <p>In Toronto's hard water conditions, perform monthly deep cleans using citric acid or vinegar. Check and clean spray arms every 2-3 weeks, inspect the filter weekly, and run a cleaning cycle with dishwasher cleaner monthly. Annual professional descaling is recommended for heavy users.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>Is a whole-home water softener worth it for dishwasher problems?</h3>
                             <p>A whole-home water softener costs $1,500-$3,500 installed and provides benefits beyond dishwashing. It's worth it if you have multiple hard water issues (shower buildup, laundry problems, pipe scaling). For dishwasher-only concerns, portable dishwasher softeners ($40-$80) or rinse aid solutions are more cost-effective.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>Can hard water damage my dishwasher over time?</h3>
                             <p>Yes, hard water causes significant long-term damage. Mineral buildup clogs spray arms, blocks the heating element, damages pumps, and reduces efficiency. A dishwasher in hard water conditions may last 6-8 years versus 10-12 years in soft water areas without proper maintenance.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>What's the best rinse aid for Toronto hard water?</h3>
                             <p>For Toronto's hard water, use rinse aids with high surfactant content like Finish Jet-Dry Ultra or Cascade Power Dry. Set your dispenser to maximum (5) and refill monthly. Avoid cheap alternatives that lack water-repelling agents necessary for hard water conditions.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>How do I remove existing mineral buildup from my dishwasher?</h3>
                             <p>Remove mineral buildup by running an empty cycle with 2 cups of white vinegar in the bottom, followed by a cycle with 1 cup of baking soda. For heavy buildup, use citric acid (1/4 cup) on a hot cycle. Manually scrub spray arms and gaskets with vinegar solution and an old toothbrush.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>Will using more detergent help with hard water?</h3>
                             <p>No, using more detergent worsens hard water problems. Excess detergent combines with minerals to create more residue. Instead, use the recommended amount of hard water-specific detergent, increase rinse aid, and adjust water temperature settings for optimal results.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>Can I test my home's water hardness myself?</h3>
                             <p>Yes, test strips cost $10-$15 and provide accurate readings. Collect water in a clean cup, dip the strip for 1 second, wait 15 seconds, and compare to the color chart. Toronto residents typically see readings of 200-300 ppm (very hard). Free testing is often available from water softener companies.</p>
-                        </div>
+</div>
 
-                        <div class="faq-item">
+<div class="faq-item">
                             <h3>What's the most cost-effective solution for dishwasher hard water?</h3>
                             <p>The most cost-effective solution combines three elements: quality rinse aid ($8/month), citric acid cleaning ($2/month), and hard water detergent ($12/month). This $22/month approach prevents 95% of hard water problems without expensive water softener systems.</p>
-                        </div>
-                    </section>
+</div>
+                    
 
-                    <!-- Related Posts -->
-                    <section class="related-posts">
-                        <h2>Related Articles</h2>
-                        <div class="related-posts-grid">
-                            <a href="dishwasher-not-draining-solutions.html" class="related-post-card">
-                                <h3>Complete Guide: Dishwasher Not Draining (Fix It Yourself)</h3>
-                                <p>Step-by-step solutions for dishwasher drainage problems, from simple clogs to pump failures.</p>
-                            </a>
-                            <a href="dishwasher-cleaning-tablets-guide.html" class="related-post-card">
-                                <h3>Dishwasher Cleaning Tablets: Complete Guide</h3>
-                                <p>Everything about dishwasher cleaning tablets, maintenance schedules, and cost comparisons.</p>
-                            </a>
-                            <a href="appliance-lifespan-guide-toronto.html" class="related-post-card">
-                                <h3>Appliance Lifespan Guide for Toronto Homes</h3>
-                                <p>Expected lifespans for all major appliances and factors affecting durability in Toronto.</p>
-                            </a>
-                        </div>
-                    </section>
+                <div class="cta-box">
+                    <h3>Need Help with Hard Water Dishwasher Problems?</h3>
+                    <p>Nika Appliance Repair specializes in hard water solutions for Toronto dishwashers. Our technicians provide professional descaling, component inspection, and prevention consultation.</p>
+                    <a href="tel:4377476737" class="btn">
+                        <i class="fas fa-phone"></i> Call (437) 747-6737
+                    </a>
+                </div>
 
-                    <!-- Call to Action -->
-                    <div class="cta-box">
-                        <h2>Need Help with Hard Water Dishwasher Problems?</h2>
-                        <p>Nika Appliance Repair specializes in hard water solutions for Toronto dishwashers. Our technicians provide professional descaling, component inspection, and prevention consultation.</p>
-                        <a href="../../contact.html" class="cta-button">Schedule Service: (647) 490-0999</a>
-                        <p class="cta-subtext">Same-day service available • All major brands • Hard water specialists</p>
+                <!-- Author Profile Section -->
+                <div class="author-profile">
+                    <h3>About the Author</h3>
+                    <div class="author-card">
+                        <img src="../../images/authors/michael-toronto.jpg" alt="Michael Toronto" class="author-image">
+<div class="author-details">
+                            <h4><a href="../../about/michael-toronto.html">Michael Toronto</a></h4>
+                            <p class="author-title">Senior Dishwasher Specialist</p>
+                            <p class="author-bio">Senior dishwasher specialist with over 12 years of experience. Michael has serviced over 3,000 dishwashers in Toronto homes and specializes in hard water solutions and water quality issues.</p>
+</div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+            <!-- Table of Contents -->
+            <div class="toc-widget">
+                <h3>Table of Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#understanding-toronto-water">Understanding Toronto's Hard Water</a></li>
+                    <li><a href="#common-problems">Common Hard Water Problems</a></li>
+                    <li><a href="#detergent-solutions">Detergent and Rinse Aid Solutions</a></li>
+                    <li><a href="#cleaning-maintenance">Cleaning and Maintenance</a></li>
+                    <li><a href="#water-softener-options">Water Softener Options</a></li>
+                    <li><a href="#cost-analysis">Cost Analysis</a></li>
+                    <li><a href="#prevention-tips">Prevention Tips</a></li>
+                    <li><a href="#professional-help">When to Call Professionals</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="related-widget">
+                <h3>Related Posts</h3>
+                <div class="related-post">
+                    <a href="dishwasher-repair-vs-replace-toronto.html">Dishwasher Repair vs Replace Guide</a>
+                    <div class="related-post-meta">
+                        <i class="far fa-calendar"></i> Jan 15, 2025
+                    </div>
+                </div>
+                <div class="related-post">
+                    <a href="../troubleshooting/front-load-washer-problems-toronto.html">Front Load Washer Problems</a>
+                    <div class="related-post-meta">
+                        <i class="far fa-calendar"></i> Jan 15, 2025
+                    </div>
+                </div>
+                <div class="related-post">
+                    <a href="../maintenance/winter-appliance-maintenance-toronto.html">Winter Appliance Maintenance</a>
+                    <div class="related-post-meta">
+                        <i class="far fa-calendar"></i> Jan 15, 2025
                     </div>
                 </div>
             </div>
-        </article>
-    </main>
+        </aside>
+    </div>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="seo-footer-premium">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Nika Appliance Repair</h3>
-                    <p>Professional appliance repair services across Toronto and the GTA.</p>
+            <!-- Trust Badges Row -->
+            <div class="footer-trust-badges">
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⭐</div>
+                    <div class="badge-text">
+                        <strong>4.9/5 Rating</strong>
+                        <span>5,200+ Reviews</span>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="../../services.html">Services</a></li>
-                        <li><a href="../../about.html">About Us</a></li>
-                        <li><a href="../index.html">Blog</a></li>
-                        <li><a href="../../contact.html">Contact</a></li>
-                    </ul>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🏆</div>
+                    <div class="badge-text">
+                        <strong>Licensed & Insured</strong>
+                        <span>Since 2017</span>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p>Phone: (647) 490-0999</p>
-                    <p>Email: info@nikaappliancerepair.com</p>
-                    <p>Serving Toronto and GTA</p>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">🛡️</div>
+                    <div class="badge-text">
+                        <strong>90-Day Warranty</strong>
+                        <span>Parts & Labor</span>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="badge-icon">⚡</div>
+                    <div class="badge-text">
+                        <strong>Same-Day Service</strong>
+                        <span>7 Days a Week</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- Main Footer Content -->
+            <div class="footer-main-content">
+                <!-- Column 1: Services -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services/refrigerator-repair">Refrigerator Repair</a></li>
+                        <li><a href="/services/dishwasher-repair">Dishwasher Repair</a></li>
+                        <li><a href="/services/washer-repair">Washer Repair</a></li>
+                        <li><a href="/services/dryer-repair">Dryer Repair</a></li>
+                        <li><a href="/services/oven-repair">Oven Repair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Locations -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Service Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="/locations/mississauga">Mississauga</a></li>
+                        <li><a href="/locations/brampton">Brampton</a></li>
+                        <li><a href="/locations/markham">Markham</a></li>
+                        <li><a href="/locations/vaughan">Vaughan</a></li>
+                        <li><a href="/locations/oakville">Oakville</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/reviews">Customer Reviews</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/book">Book Online</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-column footer-column-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <div class="footer-contact-box">
+                        <p class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:4377476737" class="contact-link">(437) 747-6737</a>
+</p>
+                        <p class="contact-item">
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:care@niappliancerepair.ca" class="contact-link">care@niappliancerepair.ca</a>
+</p>
+                        <p class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Serving Toronto & GTA</span>
+</p>
+                    </div>
+
+                    <a href="tel:4377476737" class="footer-cta-button">
+                        <i class="fas fa-phone"></i>
+                        Call for Same-Day Service
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2025 Nika Appliance Repair. All rights reserved.</p>
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2025 Nika Appliance Repair. All Rights Reserved.
+                        <span class="separator">|</span>
+                        Licensed & Insured
+                    </p>
+                    <div class="footer-social-links">
+                        <span class="footer-tagline">Trusted by 5,200+ Happy Customers</span>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="../../js/main.js"></script>
+    <!-- Footer Styles -->
+    <style>
+        /* Footer Premium Styles */
+        .seo-footer-premium {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .seo-footer-premium .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-trust-badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .trust-badge-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .badge-icon {
+            font-size: 2rem;
+        }
+
+        .badge-text strong {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .badge-text span {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        .footer-main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-heading {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact-box {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .contact-link {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
+
+        .footer-cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .footer-cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .copyright {
+            font-size: 0.875rem;
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        .separator {
+            margin: 0 0.5rem;
+        }
+
+        .footer-tagline {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .footer-trust-badges {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', function() {
+            const progressBar = document.getElementById('progressBar');
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight - windowHeight;
+            const scrolled = (window.scrollY / documentHeight) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const mainNav = document.getElementById('mainNav');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', function() {
+                const isOpen = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isOpen);
+                mainNav.classList.toggle('menu-open');
+            });
+        }
+    </script>
+    <script src="../js/toc.js"></script>
     <script src="../../js/responsive-tables.js"></script>
 </body>
 </html>
