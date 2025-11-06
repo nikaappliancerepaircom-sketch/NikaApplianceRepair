@@ -1,5 +1,6 @@
 /* Premium Blog CSS - Nika Appliance Repair */
 /* Modern, responsive blog design with animations */
+/* PERFORMANCE OPTIMIZED: Reduced reflows, GPU acceleration */
 
 :root {
     --primary-color: #2196f3;
@@ -11,6 +12,17 @@
     --white: #fff;
     --shadow: 0 2px 8px rgba(0,0,0,0.1);
     --radius: 8px;
+}
+
+/* PERFORMANCE: Font optimization with font-display */
+@font-face {
+    font-family: 'Fredoka';
+    font-display: swap; /* Prevents FOIT (Flash of Invisible Text) */
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-display: swap; /* Prevents FOIT (Flash of Invisible Text) */
 }
 
 /* Base Styles */
@@ -45,6 +57,9 @@ body {
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--accent-color));
     width: 0%;
     transition: width 0.1s ease;
+    /* PERFORMANCE: GPU acceleration */
+    will-change: width;
+    transform: translateZ(0);
 }
 
 /* Blog Wrapper */
@@ -737,4 +752,37 @@ body {
 .blog-main,
 .blog-content {
     overflow-x: hidden;
+}
+
+/* PERFORMANCE: CLS Prevention - Reserve space for images */
+img {
+    max-width: 100%;
+    height: auto;
+    /* Prevent CLS by reserving space */
+    aspect-ratio: attr(width) / attr(height);
+}
+
+/* PERFORMANCE: Contain layout shifts */
+.blog-sidebar {
+    content-visibility: auto; /* Optimize off-screen rendering */
+}
+
+/* PERFORMANCE: Reduce paint complexity */
+.share-btn,
+.footer-cta-button,
+.cta-box .btn {
+    /* Use GPU-accelerated transforms instead of top/margin animations */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* PERFORMANCE: Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
