@@ -415,70 +415,53 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Need Expert Washer or Dryer Repair?</h2>
-            <p>James is ready to get your laundry room working again today</p>
+            <h2>Need Appliance Repair Today?</h2>
+            <p>Same-day service available • 90-day warranty • Certified technicians</p>
             <div class="cta-buttons">
-                <a href="tel:6475576342" class="cta-button primary">
-                    <i class="fas fa-phone"></i> Call James: 647-557-6342
+                <a href="tel:4377476737" class="cta-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    Call 437-747-6737
                 </a>
-                <a href="../contact.html" class="cta-button secondary">
-                    <i class="fas fa-envelope"></i> Request Service
+                <a href="../book" class="cta-button secondary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                    Book Online
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Nika Appliance Repair</h3>
-                    <p>Toronto's trusted appliance repair experts since 2017. Professional, reliable service for all major appliances.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../services.html">Services</a></li>
-                        <li><a href="../locations.html">Locations</a></li>
-                        <li><a href="../about.html">About</a></li>
-                        <li><a href="../team.html">Team</a></li>
-                        <li><a href="../blog/index.html">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="../services/refrigerator-repair.html">Refrigerator Repair</a></li>
-                        <li><a href="../services/dishwasher-repair.html">Dishwasher Repair</a></li>
-                        <li><a href="../services/washer-repair.html">Washer Repair</a></li>
-                        <li><a href="../services/dryer-repair.html">Dryer Repair</a></li>
-                        <li><a href="../services/oven-repair.html">Oven Repair</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-phone"></i> <a href="tel:6475576342">647-557-6342</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@nikaappliancerepair.com">info@nikaappliancerepair.com</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Serving Toronto & GTA</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Nika Appliance Repair. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Sticky CTA Button -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="tel:4377476737" class="sticky-cta-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            Call Now
+        </a>
+    </div>
 
     <!-- Mobile Menu Script -->
     <script src="../js/mobile-menu.js"></script>
+
+    <script>
+        // Sticky CTA Button
+        window.addEventListener('scroll', () => {
+            const stickyCta = document.getElementById('stickyCta');
+            if (window.scrollY > 500) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        });
+    </script>
+
+    <!-- Unified Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="/includes/footer-loader.js"></script>
 
     <style>
         /* Expert Profile Page Styles */
