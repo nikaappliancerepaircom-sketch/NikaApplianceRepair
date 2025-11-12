@@ -641,7 +641,8 @@
             gridElement.style.display = 'grid';
             emptyState.style.display = 'none';
 
-            gridElement.innerHTML = filteredPosts.map(post => `
+            // Reverse to show newest posts first
+            gridElement.innerHTML = filteredPosts.reverse().map(post => `
                 <article class="blog-card">
                     <div class="card-header">
                         <span class="category-badge ${post.category}">${post.category}</span>
@@ -669,6 +670,15 @@
             document.getElementById('guidesCount').textContent = guides;
             document.getElementById('maintenanceCount').textContent = maintenance;
             document.getElementById('troubleshootingCount').textContent = troubleshooting;
+
+            // Update filter button counts
+            const filterButtons = document.querySelectorAll('.filter-btn .count');
+            if (filterButtons.length >= 4) {
+                filterButtons[0].textContent = `(${blogPosts.length})`;
+                filterButtons[1].textContent = `(${guides})`;
+                filterButtons[2].textContent = `(${maintenance})`;
+                filterButtons[3].textContent = `(${troubleshooting})`;
+            }
         }
 
         // Setup event listeners
