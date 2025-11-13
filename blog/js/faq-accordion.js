@@ -3,9 +3,14 @@
  * Makes FAQ items expandable/collapsible on click
  */
 
-document.addEventListener('DOMContentLoaded', function() {
+function initFaqAccordion() {
     // Find all FAQ items
     const faqItems = document.querySelectorAll('.faq-item');
+
+    if (faqItems.length === 0) {
+        console.warn('No FAQ items found on this page');
+        return;
+    }
 
     // Add click handler to each FAQ heading
     faqItems.forEach((item) => {
@@ -63,4 +68,14 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(item, { attributes: true, attributeFilter: ['class'] });
         }
     });
-});
+}
+
+// Initialize FAQ accordion
+// Check if DOM is already loaded before adding event listener
+if (document.readyState === 'loading') {
+    // DOM is still loading, wait for DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', initFaqAccordion);
+} else {
+    // DOM is already loaded, initialize immediately
+    initFaqAccordion();
+}
