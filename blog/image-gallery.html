@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Image Gallery - Nika Appliance Repair</title>
+    <meta name="description" content="Professional gallery of appliance repair photos and technical diagnostics. Visual guides for common appliance issues.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Premium Blog Styles -->
+    <link rel="stylesheet" href="css/blog-premium.css">
+    <link rel="stylesheet" href="css/header-optimized.css">
+
+    <style>
+        .gallery-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .gallery-header h1 {
+            font-size: 2.5rem;
+            color: #1a202c;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .gallery-header p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item-content {
+            padding: 1.5rem;
+        }
+
+        .gallery-item-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-item-desc {
+            font-size: 0.95rem;
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-item-link {
+            display: inline-block;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .gallery-item-link:hover {
+            color: #1d4ed8;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .gallery-container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-optimized">
+        <div class="header-top">
+            <div class="container">
+                <div class="top-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i> 24/7 Appliance Repair Service
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">
+                        <span>NIKA</span> Appliance Repair
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/blog/" class="nav-link active">Blog</a>
+                    <a href="/#services" class="nav-link">Services</a>
+                    <a href="/#contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Content -->
+    <main>
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h1>Professional Appliance Repair Gallery</h1>
+                <p>Visual guides and professional diagnostic photography showcasing common appliance repair issues and solutions.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/clothes-dryer-lint-hazard.webp" type="image/webp">
+                        <source srcset="/blog-images/clothes-dryer-lint-hazard.png" type="image/png">
+                        <img src="/blog-images/clothes-dryer-lint-hazard.png" alt="Clothes dryer lint hazard prevention">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Dryer Lint Fire Hazard</div>
+                        <div class="gallery-item-desc">Understanding lint accumulation and fire prevention in clothes dryers.</div>
+                        <a href="/blog/guides/dryer-vent-cleaning-fire-prevention.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/washing-machine-filter.webp" type="image/webp">
+                        <source srcset="/blog-images/washing-machine-filter.png" type="image/png">
+                        <img src="/blog-images/washing-machine-filter.png" alt="Washing machine filter maintenance">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Filter Maintenance Guide</div>
+                        <div class="gallery-item-desc">Proper cleaning and maintenance of washing machine filters for optimal performance.</div>
+                        <a href="/blog/guides/washing-machine-filter-maintenance-guide.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/refrigerator-temperature.webp" type="image/webp">
+                        <source srcset="/blog-images/refrigerator-temperature.png" type="image/png">
+                        <img src="/blog-images/refrigerator-temperature.png" alt="Refrigerator temperature diagnosis">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Temperature Control Issues</div>
+                        <div class="gallery-item-desc">Diagnosing and fixing refrigerator temperature problems and cooling failures.</div>
+                        <a href="/blog/guides/refrigerator-repair-vs-replace.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/dishwasher-spray-arm.webp" type="image/webp">
+                        <source srcset="/blog-images/dishwasher-spray-arm.png" type="image/png">
+                        <img src="/blog-images/dishwasher-spray-arm.png" alt="Dishwasher hard water deposits">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Hard Water Solutions</div>
+                        <div class="gallery-item-desc">Addressing mineral deposits and hard water buildup in dishwashers.</div>
+                        <a href="/blog/guides/dishwasher-hard-water-solutions-toronto.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/oven-calibration.webp" type="image/webp">
+                        <source srcset="/blog-images/oven-calibration.png" type="image/png">
+                        <img src="/blog-images/oven-calibration.png" alt="Oven temperature calibration">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Oven Calibration</div>
+                        <div class="gallery-item-desc">Complete guide to testing and calibrating oven temperatures accurately.</div>
+                        <a href="/blog/guides/oven-temperature-calibration-guide.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/washing-machine-agitator.webp" type="image/webp">
+                        <source srcset="/blog-images/washing-machine-agitator.png" type="image/png">
+                        <img src="/blog-images/washing-machine-agitator.png" alt="Washing machine agitator repair">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Agitator Assembly Repair</div>
+                        <div class="gallery-item-desc">Diagnosing and repairing washing machine motor coupling and agitator failures.</div>
+                        <a href="/blog/troubleshooting/washing-machine-repair-complete-guide.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/ice-maker-assembly.webp" type="image/webp">
+                        <source srcset="/blog-images/ice-maker-assembly.png" type="image/png">
+                        <img src="/blog-images/ice-maker-assembly.png" alt="Refrigerator ice maker repair">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Ice Maker Repair</div>
+                        <div class="gallery-item-desc">Understanding ice maker assembly components and water inlet valve diagnostics.</div>
+                        <a href="/blog/troubleshooting/refrigerator-ice-maker-not-working.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/gas-range-igniter.webp" type="image/webp">
+                        <source srcset="/blog-images/gas-range-igniter.png" type="image/png">
+                        <img src="/blog-images/gas-range-igniter.png" alt="Gas range igniter spark test">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Gas Range Safety</div>
+                        <div class="gallery-item-desc">Testing and diagnosing gas range igniter systems for safety and functionality.</div>
+                        <a href="/blog/guides/gas-range-repair-safety-toronto.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/freezer-frost.webp" type="image/webp">
+                        <source srcset="/blog-images/freezer-frost.png" type="image/png">
+                        <img src="/blog-images/freezer-frost.png" alt="Freezer frost buildup">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Frost Buildup Solutions</div>
+                        <div class="gallery-item-desc">Addressing excessive ice and frost accumulation in freezer compartments.</div>
+                        <a href="/blog/troubleshooting/freezer-frost-buildup-ice-problems.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/dishwasher-drain.webp" type="image/webp">
+                        <source srcset="/blog-images/dishwasher-drain.png" type="image/png">
+                        <img src="/blog-images/dishwasher-drain.png" alt="Dishwasher drainage problem">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Drain Blockage Repair</div>
+                        <div class="gallery-item-desc">Diagnosing and fixing dishwasher drain hose blockages and water backup issues.</div>
+                        <a href="/blog/troubleshooting/dishwasher-water-not-draining-completely.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 11 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/microwave-arcing.webp" type="image/webp">
+                        <source srcset="/blog-images/microwave-arcing.png" type="image/png">
+                        <img src="/blog-images/microwave-arcing.png" alt="Microwave arcing hazard">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Microwave Safety</div>
+                        <div class="gallery-item-desc">Understanding microwave arcing hazards and prevention for safe operation.</div>
+                        <a href="/blog/troubleshooting/microwave-sparking-arcing-safety.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 12 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/washer-belt.webp" type="image/webp">
+                        <source srcset="/blog-images/washer-belt.png" type="image/png">
+                        <img src="/blog-images/washer-belt.png" alt="Washing machine belt failure">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Belt Drive Repair</div>
+                        <div class="gallery-item-desc">Diagnosing broken drive belts and pulley system failures in washing machines.</div>
+                        <a href="/blog/troubleshooting/washer-drum-not-spinning-repair.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 13 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/garbage-disposal.webp" type="image/webp">
+                        <source srcset="/blog-images/garbage-disposal.png" type="image/png">
+                        <img src="/blog-images/garbage-disposal.png" alt="Garbage disposal mechanism">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Disposal Mechanism</div>
+                        <div class="gallery-item-desc">Understanding garbage disposal grinding mechanisms and internal failures.</div>
+                        <a href="/blog/troubleshooting/garbage-disposal-repair.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 14 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/electric-stove.webp" type="image/webp">
+                        <source srcset="/blog-images/electric-stove.png" type="image/png">
+                        <img src="/blog-images/electric-stove.png" alt="Electric stove burner failure">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Stove Burner Repair</div>
+                        <div class="gallery-item-desc">Replacing burned out electric coil burner elements and heating failure diagnosis.</div>
+                        <a href="/blog/troubleshooting/electric-stove-burner-not-heating.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Item 15 -->
+                <div class="gallery-item">
+                    <picture>
+                        <source srcset="/blog-images/compressor-diagnosis.webp" type="image/webp">
+                        <source srcset="/blog-images/compressor-diagnosis.png" type="image/png">
+                        <img src="/blog-images/compressor-diagnosis.png" alt="Refrigerator compressor diagnosis">
+                    </picture>
+                    <div class="gallery-item-content">
+                        <div class="gallery-item-title">Compressor Diagnostics</div>
+                        <div class="gallery-item-desc">Professional compressor noise diagnosis and vibration damage assessment.</div>
+                        <a href="/blog/troubleshooting/refrigerator-compressor-noise-diagnosis.html" class="gallery-item-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="seo-footer-premium">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NIKA Appliance Repair</h3>
+                    <p>Professional appliance repair and maintenance services for Toronto and the Greater Toronto Area.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/blog/image-gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Available 24/7 for emergency repairs</p>
+                    <p>&copy; 2025 Nika Appliance Repair. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

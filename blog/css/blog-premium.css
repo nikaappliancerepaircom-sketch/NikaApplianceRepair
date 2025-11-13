@@ -786,3 +786,33 @@ img {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* Feature Image Section */
+.blog-feature-image {
+    width: 100%;
+    margin: 2rem 0 3rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.blog-feature-image picture {
+    display: block;
+    width: 100%;
+}
+
+.blog-feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Responsive feature image */
+@media (max-width: 768px) {
+    .blog-feature-image {
+        margin: 1.5rem 0 2rem;
+        border-radius: 8px;
+    }
+}
