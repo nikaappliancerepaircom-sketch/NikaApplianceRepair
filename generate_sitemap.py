@@ -28,7 +28,6 @@ def generate_sitemap():
         ('/brands', '0.9', 'weekly', today),
         ('/book', '0.95', 'weekly', today),
         ('/team', '0.85', 'monthly', today),
-        ('/optimizations', '0.7', 'monthly', today),
         ('/blog/', '0.95', 'daily', today),
     ]
 
@@ -170,6 +169,7 @@ def generate_sitemap():
     print(f"  Services: {service_count}")
     print(f"  Locations: {location_count}")
     print(f"  Blog posts: {len(html_files)}")
+    print(f"  TOTAL: {len(static_pages) + service_count + location_count + len(html_files)} URLs")
     print(f"{'='*60}")
     print(f"\nAll URLs use clean format (no .html extension)")
     print(f"Submit to Google Search Console: https://search.google.com/search-console")
