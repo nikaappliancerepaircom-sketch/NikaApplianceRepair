@@ -6,7 +6,7 @@
     <title>Blog - Nika Appliance Repair Toronto</title>
     <meta name="description" content="Expert appliance repair guides, maintenance tips, and troubleshooting solutions for Toronto homeowners">
 
-    <!-- Google Fonts - Same as main site -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,16 +18,29 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Rubik', sans-serif;
-            background: #f8f9fa;
-            color: #333;
+        :root {
+            --cool-blue-primary: #2193b0;
+            --cool-blue-secondary: #6dd5ed;
+            --cool-blue-dark: #1a7a91;
+            --charcoal: #2C3E50;
+            --pure-white: #FFFFFF;
+            --off-white: #F8FAFB;
+            --light-gray: #F5F7FA;
+            --medium-gray: #E0E7ED;
+            --dark-gray: #6B7C8C;
         }
 
-        /* Hero Section - Cool Blues Gradient like main page */
+        body {
+            font-family: 'Rubik', sans-serif;
+            background: var(--light-gray);
+            color: var(--charcoal);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
         .hero-section {
-            background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
-            padding: 80px 20px 60px;
+            background: linear-gradient(135deg, var(--cool-blue-primary) 0%, var(--cool-blue-secondary) 100%);
+            padding: 100px 20px 80px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -41,65 +54,98 @@
             right: 0;
             bottom: 0;
             background:
-                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 40%),
-                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
-            z-index: 1;
+                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+            pointer-events: none;
         }
 
         .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--pure-white);
         }
 
         .hero-title {
             font-family: 'Fredoka', sans-serif;
-            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-size: clamp(2.5rem, 6vw, 4rem);
             font-weight: 700;
-            color: #fff;
-            margin-bottom: 16px;
+            color: var(--pure-white);
+            margin-bottom: 20px;
+            line-height: 1.2;
         }
 
         .hero-subtitle {
-            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
             color: rgba(255, 255, 255, 0.95);
             margin-bottom: 40px;
+            line-height: 1.6;
         }
 
-        /* Search & Filter Section */
-        .search-filter {
+        /* Search & Filter Container */
+        .controls-section {
             max-width: 1200px;
-            margin: -30px auto 40px;
+            margin: -50px auto 60px;
             padding: 0 20px;
             position: relative;
             z-index: 10;
         }
 
-        .search-box {
-            background: #fff;
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        .controls-card {
+            background: var(--pure-white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Search Box */
+        .search-wrapper {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: var(--dark-gray);
+            pointer-events: none;
         }
 
         .search-input {
             width: 100%;
-            padding: 16px 24px;
+            padding: 18px 24px 18px 56px;
             font-size: 16px;
             font-family: 'Rubik', sans-serif;
-            border: 2px solid #e0e7ed;
-            border-radius: 12px;
+            border: 2px solid var(--medium-gray);
+            border-radius: 14px;
             outline: none;
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--off-white);
         }
 
         .search-input:focus {
-            border-color: #2193b0;
-            box-shadow: 0 0 0 4px rgba(33, 147, 176, 0.1);
+            border-color: var(--cool-blue-primary);
+            background: var(--pure-white);
+            box-shadow: 0 0 0 4px rgba(33, 147, 176, 0.08);
         }
 
+        /* Category Pills */
         .category-filters {
             display: flex;
             gap: 12px;
@@ -108,117 +154,165 @@
         }
 
         .category-btn {
-            padding: 12px 24px;
+            padding: 14px 28px;
             font-family: 'Rubik', sans-serif;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
-            border: 2px solid #e0e7ed;
-            background: #fff;
-            color: #6B7C8C;
-            border-radius: 30px;
+            border: 2px solid var(--medium-gray);
+            background: var(--off-white);
+            color: var(--dark-gray);
+            border-radius: 50px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--cool-blue-primary) 0%, var(--cool-blue-secondary) 100%);
+            opacity: 0;
+            transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .category-btn span {
+            position: relative;
+            z-index: 1;
         }
 
         .category-btn:hover {
-            border-color: #2193b0;
-            color: #2193b0;
+            border-color: var(--cool-blue-primary);
+            color: var(--cool-blue-primary);
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(33, 147, 176, 0.15);
         }
 
         .category-btn.active {
-            background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
-            color: #fff;
             border-color: transparent;
+            color: var(--pure-white);
+            box-shadow: 0 4px 16px rgba(33, 147, 176, 0.3);
         }
 
-        /* Blog Stats */
+        .category-btn.active::before {
+            opacity: 1;
+        }
+
+        /* Stats */
         .blog-stats {
             text-align: center;
-            padding: 20px;
+            padding: 0 20px 30px;
             max-width: 1200px;
-            margin: 0 auto 40px;
+            margin: 0 auto;
         }
 
         .stats-text {
-            font-family: 'Rubik', sans-serif;
             font-size: 16px;
-            color: #6B7C8C;
+            color: var(--dark-gray);
         }
 
         .stats-count {
-            font-weight: 600;
-            color: #2193b0;
+            font-weight: 700;
+            color: var(--cool-blue-primary);
+            font-size: 18px;
         }
 
         /* Blog Grid */
         .blog-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px 80px;
+            padding: 0 20px 100px;
         }
 
         .blog-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 30px;
+            gap: 32px;
         }
 
+        /* Card Styles - Optimized for smooth animations */
         .blog-card {
-            background: #fff;
-            border-radius: 16px;
+            background: var(--pure-white);
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
             cursor: pointer;
+            position: relative;
+            /* Hardware acceleration for smooth animations */
+            will-change: transform;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .blog-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(33, 147, 176, 0.2);
+            transform: translateY(-12px) translateZ(0);
+            box-shadow: 0 24px 48px rgba(33, 147, 176, 0.16);
+        }
+
+        .card-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--medium-gray) 100%);
         }
 
         .card-image {
             width: 100%;
-            height: 220px;
+            height: 100%;
             object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
         }
 
-        .card-content {
-            padding: 24px;
+        .blog-card:hover .card-image {
+            transform: scale(1.08);
         }
 
-        .card-category {
-            display: inline-block;
-            padding: 6px 16px;
+        .card-category-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            padding: 8px 18px;
             font-size: 12px;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
-            color: #fff;
-            border-radius: 20px;
-            margin-bottom: 12px;
+            letter-spacing: 0.8px;
+            background: linear-gradient(135deg, var(--cool-blue-primary) 0%, var(--cool-blue-secondary) 100%);
+            color: var(--pure-white);
+            border-radius: 30px;
+            box-shadow: 0 4px 12px rgba(33, 147, 176, 0.3);
+            z-index: 2;
+        }
+
+        .card-content {
+            padding: 28px;
         }
 
         .card-title {
             font-family: 'Fredoka', sans-serif;
-            font-size: 20px;
+            font-size: 21px;
             font-weight: 600;
-            color: #2C3E50;
-            margin-bottom: 12px;
+            color: var(--charcoal);
+            margin-bottom: 14px;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
+            min-height: 58px;
         }
 
         .card-excerpt {
-            font-size: 14px;
-            color: #6B7C8C;
-            line-height: 1.6;
-            margin-bottom: 16px;
+            font-size: 15px;
+            color: var(--dark-gray);
+            line-height: 1.7;
+            margin-bottom: 20px;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
@@ -229,95 +323,246 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 16px;
-            border-top: 1px solid #e0e7ed;
+            padding-top: 20px;
+            border-top: 1px solid var(--medium-gray);
         }
 
-        .card-date, .card-read-time {
-            font-size: 13px;
-            color: #6B7C8C;
+        .card-date {
+            font-size: 14px;
+            color: var(--dark-gray);
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .card-read-time {
-            font-weight: 500;
-            color: #2193b0;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--cool-blue-primary);
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
+        /* No Results */
         .no-results {
             text-align: center;
-            padding: 60px 20px;
-            color: #6B7C8C;
+            padding: 80px 20px;
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
         }
 
         .no-results-icon {
-            font-size: 64px;
-            margin-bottom: 20px;
-            opacity: 0.3;
+            font-size: 80px;
+            margin-bottom: 24px;
+            opacity: 0.4;
+        }
+
+        .no-results-title {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 28px;
+            color: var(--charcoal);
+            margin-bottom: 12px;
         }
 
         .no-results-text {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 24px;
-            color: #2C3E50;
-            margin-bottom: 8px;
+            font-size: 16px;
+            color: var(--dark-gray);
         }
 
-        /* Responsive */
+        /* Loading State */
+        .blog-grid.loading .blog-card {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        /* Fade in animation for cards */
+        .blog-card {
+            animation: cardFadeIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes cardFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stagger animation delay for cards */
+        .blog-card:nth-child(1) { animation-delay: 0.05s; }
+        .blog-card:nth-child(2) { animation-delay: 0.1s; }
+        .blog-card:nth-child(3) { animation-delay: 0.15s; }
+        .blog-card:nth-child(4) { animation-delay: 0.2s; }
+        .blog-card:nth-child(5) { animation-delay: 0.25s; }
+        .blog-card:nth-child(6) { animation-delay: 0.3s; }
+        .blog-card:nth-child(n+7) { animation-delay: 0.35s; }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .blog-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 28px;
+            }
+        }
+
         @media (max-width: 768px) {
             .hero-section {
-                padding: 60px 20px 40px;
+                padding: 80px 20px 60px;
             }
 
-            .search-box {
-                padding: 20px;
+            .controls-card {
+                padding: 30px 24px;
             }
 
             .category-filters {
-                gap: 8px;
+                gap: 10px;
             }
 
             .category-btn {
-                padding: 10px 18px;
-                font-size: 13px;
+                padding: 12px 22px;
+                font-size: 14px;
             }
 
             .blog-grid {
                 grid-template-columns: 1fr;
                 gap: 24px;
             }
+
+            .card-content {
+                padding: 24px;
+            }
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 60px 16px 40px;
+            }
+
+            .controls-section {
+                padding: 0 16px;
+                margin: -40px auto 40px;
+            }
+
+            .controls-card {
+                padding: 24px 20px;
+            }
+
+            .search-input {
+                padding: 16px 20px 16px 50px;
+                font-size: 15px;
+            }
+
             .category-btn {
-                flex: 1;
-                min-width: calc(50% - 4px);
+                flex: 1 1 calc(50% - 6px);
+                min-width: 0;
+                padding: 12px 16px;
+                font-size: 13px;
+            }
+
+            .blog-container {
+                padding: 0 16px 80px;
+            }
+
+            .card-image-wrapper {
+                height: 200px;
+            }
+
+            .card-title {
+                font-size: 19px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .hero-section,
+            .controls-section,
+            .blog-stats {
+                display: none;
+            }
+
+            .blog-card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid var(--medium-gray);
+            }
+        }
+
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .blog-card:hover {
+                transform: none;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .search-input {
+                border-width: 3px;
+            }
+
+            .category-btn {
+                border-width: 3px;
+            }
+
+            .blog-card {
+                border: 2px solid var(--charcoal);
             }
         }
     </style>
 </head>
 <body>
     <!-- Hero Section -->
-    <div class="hero-section">
+    <section class="hero-section">
         <div class="hero-content">
+            <div class="hero-badge">📚 Knowledge Base</div>
             <h1 class="hero-title">Appliance Repair Blog</h1>
             <p class="hero-subtitle">Expert guides, maintenance tips, and troubleshooting solutions for Toronto homeowners</p>
         </div>
-    </div>
+    </section>
 
-    <!-- Search & Filter -->
-    <div class="search-filter">
-        <div class="search-box">
-            <input type="text"
-                   class="search-input"
-                   id="searchInput"
-                   placeholder="Search articles...">
+    <!-- Search & Filter Controls -->
+    <div class="controls-section">
+        <div class="controls-card">
+            <div class="search-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text"
+                       class="search-input"
+                       id="searchInput"
+                       placeholder="Search articles by title, category, or topic..."
+                       aria-label="Search articles">
+            </div>
 
-            <div class="category-filters">
-                <button class="category-btn active" data-category="all">All Articles</button>
-                <button class="category-btn" data-category="repair">Repair Guides</button>
-                <button class="category-btn" data-category="maintenance">Maintenance</button>
-                <button class="category-btn" data-category="troubleshooting">Troubleshooting</button>
-                <button class="category-btn" data-category="brands">Brand Guides</button>
+            <div class="category-filters" role="group" aria-label="Filter by category">
+                <button class="category-btn active" data-category="all" aria-pressed="true">
+                    <span>All Articles</span>
+                </button>
+                <button class="category-btn" data-category="repair" aria-pressed="false">
+                    <span>Repair Guides</span>
+                </button>
+                <button class="category-btn" data-category="maintenance" aria-pressed="false">
+                    <span>Maintenance</span>
+                </button>
+                <button class="category-btn" data-category="troubleshooting" aria-pressed="false">
+                    <span>Troubleshooting</span>
+                </button>
+                <button class="category-btn" data-category="brands" aria-pressed="false">
+                    <span>Brand Guides</span>
+                </button>
             </div>
         </div>
     </div>
@@ -329,11 +574,12 @@
 
     <!-- Blog Grid -->
     <div class="blog-container">
-        <div class="blog-grid" id="blogGrid"></div>
-        <div class="no-results" id="noResults" style="display: none;">
+        <div class="blog-grid" id="blogGrid" role="list"></div>
+
+        <div class="no-results" id="noResults" style="display: none;" role="status">
             <div class="no-results-icon">🔍</div>
-            <p class="no-results-text">No articles found</p>
-            <p>Try adjusting your search or filter</p>
+            <h2 class="no-results-title">No articles found</h2>
+            <p class="no-results-text">Try adjusting your search or filter to find what you're looking for</p>
         </div>
     </div>
 
@@ -446,24 +692,26 @@
             noResults.style.display = 'none';
             resultsCount.textContent = posts.length;
 
-            blogGrid.innerHTML = posts.map(post => {
+            blogGrid.innerHTML = posts.map((post, index) => {
                 const slug = post.url.split('/').pop().replace('.html', '');
                 const imagePath = `images/${slug}-hero.webp`;
 
                 return `
-                    <article class="blog-card" onclick="window.location.href='${post.url}'">
-                        <img src="${imagePath}"
-                             alt="${post.title}"
-                             class="card-image"
-                             loading="lazy"
-                             onerror="this.src='images/dishwasher-repair-hero.webp'">
+                    <article class="blog-card" onclick="window.location.href='${post.url}'" role="listitem">
+                        <div class="card-image-wrapper">
+                            <img src="${imagePath}"
+                                 alt="${post.title}"
+                                 class="card-image"
+                                 loading="lazy"
+                                 onerror="this.src='images/dishwasher-repair-hero.webp'">
+                            <span class="card-category-badge">${post.category}</span>
+                        </div>
                         <div class="card-content">
-                            <span class="card-category">${post.category}</span>
                             <h3 class="card-title">${post.title}</h3>
                             <p class="card-excerpt">${post.excerpt}</p>
                             <div class="card-meta">
-                                <span class="card-date">${formatDate(post.date)}</span>
-                                <span class="card-read-time">${post.readTime}</span>
+                                <span class="card-date">📅 ${formatDate(post.date)}</span>
+                                <span class="card-read-time">⏱️ ${post.readTime}</span>
                             </div>
                         </div>
                     </article>
@@ -498,24 +746,41 @@
             renderBlogPosts(filtered);
         }
 
-        // Category filter
+        // Category filter with smooth transitions
         categoryButtons.forEach(btn => {
             btn.addEventListener('click', () => {
-                categoryButtons.forEach(b => b.classList.remove('active'));
+                // Update active state
+                categoryButtons.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-pressed', 'false');
+                });
                 btn.classList.add('active');
+                btn.setAttribute('aria-pressed', 'true');
+
                 currentCategory = btn.dataset.category;
                 filterPosts();
             });
         });
 
-        // Search
+        // Search with debounce for better performance
+        let searchTimeout;
         searchInput.addEventListener('input', (e) => {
-            searchTerm = e.target.value;
-            filterPosts();
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                searchTerm = e.target.value;
+                filterPosts();
+            }, 300);
         });
 
         // Initial render
         renderBlogPosts(blogPosts);
+
+        // Accessibility: keyboard navigation for cards
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && e.target.classList.contains('blog-card')) {
+                e.target.click();
+            }
+        });
     </script>
 </body>
 </html>
