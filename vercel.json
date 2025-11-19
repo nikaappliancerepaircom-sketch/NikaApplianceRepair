@@ -3,6 +3,28 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/blog/:category/:slug.html",
+      "destination": "/blog/:category/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/services/:slug.html",
+      "destination": "/services/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/locations/:slug.html",
+      "destination": "/locations/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/brands/:slug.html",
+      "destination": "/brands/:slug",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/services/:slug",
