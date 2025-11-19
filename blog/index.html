@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* === БАЗОВЫЕ СТИЛИ === */
         * {
             margin: 0;
             padding: 0;
@@ -26,76 +25,76 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0a0a0a;
+            background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
             color: #fff;
             overflow-x: hidden;
             min-height: 100vh;
+            position: relative;
         }
 
-        /* === АНИМИРОВАННЫЙ ФОН === */
-        #canvas-bg {
+        /* Simple animated background */
+        body::before {
+            content: '';
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
             z-index: -1;
-            background: radial-gradient(circle at 20% 50%, rgba(33, 150, 243, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 80%, rgba(255, 214, 0, 0.08) 0%, transparent 50%),
-                        linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
+            pointer-events: none;
         }
 
-        /* === КОНТЕЙНЕР === */
         .container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
-        /* === HEADER === */
+        /* Header */
         header {
             text-align: center;
-            margin-bottom: 60px;
-            padding-top: 40px;
+            margin-bottom: 50px;
+            padding-top: 30px;
         }
 
         .back-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #888;
+            color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             font-size: 0.9rem;
             margin-bottom: 20px;
-            transition: color 0.3s;
+            transition: color 0.2s;
         }
 
         .back-link:hover {
-            color: #2196F3;
+            color: #fff;
         }
 
         header h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 800;
             margin-bottom: 15px;
-            letter-spacing: -2px;
-            background: linear-gradient(135deg, #ffffff 0%, #2196F3 50%, #FFD600 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            letter-spacing: -1px;
+            color: #fff;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
         }
 
         header p {
             font-size: 1.2rem;
-            color: #888;
+            color: rgba(255, 255, 255, 0.9);
             max-width: 700px;
-            margin: 0 auto 30px;
+            margin: 0 auto 25px;
         }
 
         .stats {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 25px;
             flex-wrap: wrap;
         }
 
@@ -103,150 +102,121 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: #666;
+            color: rgba(255, 255, 255, 0.85);
             font-size: 0.9rem;
         }
 
-        .stat-item i {
-            color: #2196F3;
-        }
-
-        /* === ФИЛЬТРЫ === */
+        /* Filters */
         .filters-section {
             margin-bottom: 40px;
         }
 
         .search-box {
             max-width: 600px;
-            margin: 0 auto 30px;
+            margin: 0 auto 25px;
             position: relative;
         }
 
         .search-input {
             width: 100%;
-            padding: 16px 50px 16px 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            color: #fff;
+            padding: 14px 50px 14px 18px;
+            background: rgba(255, 255, 255, 0.95);
+            border: 2px solid transparent;
+            border-radius: 10px;
+            color: #333;
             font-size: 1rem;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s;
+            transition: all 0.2s;
         }
 
         .search-input:focus {
             outline: none;
-            background: rgba(255, 255, 255, 0.08);
-            border-color: #2196F3;
-            box-shadow: 0 0 20px rgba(33, 150, 243, 0.2);
+            background: #fff;
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
 
         .search-input::placeholder {
-            color: #666;
+            color: #999;
         }
 
         .search-icon {
             position: absolute;
-            right: 20px;
+            right: 18px;
             top: 50%;
             transform: translateY(-50%);
-            color: #666;
+            color: #999;
         }
 
         .filter-controls {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 12px;
             flex-wrap: wrap;
             margin-bottom: 20px;
         }
 
         .filter-btn {
-            padding: 10px 24px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 22px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 25px;
-            color: #888;
+            color: #fff;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.2s;
             font-size: 0.9rem;
             font-weight: 500;
-            backdrop-filter: blur(10px);
         }
 
         .filter-btn:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
-            color: #fff;
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
         }
 
         .filter-btn.active {
-            background: linear-gradient(135deg, #2196F3, #1976D2);
-            border-color: #2196F3;
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+            background: #fff;
+            border-color: #fff;
+            color: #2193b0;
         }
 
         .results-info {
             text-align: center;
-            color: #666;
+            color: rgba(255, 255, 255, 0.9);
             font-size: 0.9rem;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .results-count {
-            color: #2196F3;
-            font-weight: 600;
+            color: #fff;
+            font-weight: 700;
         }
 
-        /* === СЕТКА СТАТЕЙ === */
+        /* Blog Grid */
         .blog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
         }
 
-        /* === КАРТОЧКА СТАТЬИ (GLASS EFFECT) === */
+        /* Blog Card - OPTIMIZED */
         .blog-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
+            background: #fff;
+            border-radius: 14px;
             overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            backdrop-filter: blur(10px);
-            position: relative;
-        }
-
-        .blog-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #2196F3, #FFD600);
-            opacity: 0;
-            transition: opacity 0.3s;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
 
         .blog-card:hover {
-            transform: translateY(-8px);
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(33, 150, 243, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
-                        0 0 30px rgba(33, 150, 243, 0.1);
-        }
-
-        .blog-card:hover::before {
-            opacity: 1;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
         }
 
         .card-image {
             width: 100%;
-            height: 220px;
+            height: 200px;
             object-fit: cover;
-            transition: transform 0.4s;
+            transition: transform 0.3s;
         }
 
         .blog-card:hover .card-image {
@@ -254,40 +224,40 @@
         }
 
         .card-content {
-            padding: 25px;
+            padding: 22px;
         }
 
         .card-category {
             display: inline-block;
-            padding: 6px 14px;
-            background: rgba(33, 150, 243, 0.15);
-            border: 1px solid rgba(33, 150, 243, 0.3);
+            padding: 5px 12px;
+            background: rgba(33, 147, 176, 0.1);
+            border: 1px solid rgba(33, 147, 176, 0.3);
             border-radius: 6px;
-            color: #2196F3;
+            color: #2193b0;
             font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .card-category.maintenance {
-            background: rgba(76, 175, 80, 0.15);
+            background: rgba(76, 175, 80, 0.1);
             border-color: rgba(76, 175, 80, 0.3);
             color: #4CAF50;
         }
 
         .card-category.troubleshooting {
-            background: rgba(255, 152, 0, 0.15);
+            background: rgba(255, 152, 0, 0.1);
             border-color: rgba(255, 152, 0, 0.3);
             color: #FF9800;
         }
 
         .card-title {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 700;
-            color: #fff;
-            margin-bottom: 12px;
+            color: #222;
+            margin-bottom: 10px;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -296,12 +266,12 @@
         }
 
         .card-excerpt {
-            color: #999;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
+            color: #666;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            margin-bottom: 18px;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -310,43 +280,36 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 12px;
+            border-top: 1px solid #eee;
         }
 
-        .card-date {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: #666;
-            font-size: 0.85rem;
-        }
-
+        .card-date,
         .card-read-time {
             display: flex;
             align-items: center;
-            gap: 6px;
-            color: #666;
-            font-size: 0.85rem;
+            gap: 5px;
+            color: #999;
+            font-size: 0.82rem;
         }
 
         .read-more {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            color: #2196F3;
+            gap: 6px;
+            color: #2193b0;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
-            margin-top: 15px;
-            transition: gap 0.3s;
+            margin-top: 12px;
+            transition: gap 0.2s;
         }
 
         .read-more:hover {
-            gap: 12px;
+            gap: 10px;
         }
 
-        /* === NO RESULTS === */
+        /* No Results */
         .no-results {
             text-align: center;
             padding: 80px 20px;
@@ -359,24 +322,33 @@
 
         .no-results i {
             font-size: 4rem;
-            color: #333;
+            color: rgba(255, 255, 255, 0.4);
             margin-bottom: 20px;
         }
 
         .no-results h3 {
             font-size: 1.8rem;
-            color: #666;
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 10px;
         }
 
         .no-results p {
-            color: #888;
+            color: rgba(255, 255, 255, 0.7);
         }
 
-        /* === RESPONSIVE === */
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
 
             .blog-grid {
@@ -384,30 +356,14 @@
                 gap: 20px;
             }
 
-            .filter-controls {
-                gap: 10px;
-            }
-
             .filter-btn {
                 padding: 8px 16px;
                 font-size: 0.85rem;
             }
         }
-
-        /* === FOOTER === */
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            color: #666;
-            font-size: 0.9rem;
-        }
     </style>
 </head>
 <body>
-    <!-- Animated Background -->
-    <div id="canvas-bg"></div>
-
     <!-- Header -->
     <header>
         <div class="container">
@@ -490,46 +446,93 @@
     </footer>
 
     <script>
-        // Blog posts data
+        // Blog posts data - ALL 84 posts with correct categories and .html links
         const blogPosts = [
-            // Guides
-            {category: 'guides', title: 'Bosch Dishwasher Repair Guide', url: 'guides/bosch-dishwasher-repair', excerpt: 'Complete guide to Bosch dishwasher problems, repairs, and maintenance for Toronto homeowners.', date: '2025-01-15', readTime: '12 min'},
-            {category: 'guides', title: 'Dishwasher Hard Water Solutions', url: 'guides/dishwasher-hard-water-solutions-toronto', excerpt: 'Combat Toronto hard water problems in dishwashers with expert maintenance and prevention tips.', date: '2025-01-14', readTime: '10 min'},
-            {category: 'guides', title: 'Dishwasher Repair vs Replace', url: 'guides/dishwasher-repair-vs-replace-toronto', excerpt: 'Expert guide to deciding whether to repair or replace your Toronto dishwasher.', date: '2025-01-13', readTime: '8 min'},
-            {category: 'guides', title: 'Electrolux Appliance Repair', url: 'guides/electrolux-appliance-repair', excerpt: 'Professional Electrolux appliance repair solutions for Toronto homes.', date: '2025-01-12', readTime: '11 min'},
-            {category: 'guides', title: 'Frigidaire Refrigerator Repair', url: 'guides/frigidaire-refrigerator-repair', excerpt: 'Common Frigidaire refrigerator problems and professional repair solutions.', date: '2025-01-11', readTime: '13 min'},
-            {category: 'guides', title: 'GE Appliance Repair Toronto', url: 'guides/ge-appliance-repair-toronto', excerpt: 'Expert GE appliance repair services and troubleshooting for Toronto residents.', date: '2025-01-10', readTime: '10 min'},
-            {category: 'guides', title: 'LG Refrigerator Repair Toronto', url: 'guides/lg-refrigerator-repair-toronto', excerpt: 'Complete LG refrigerator repair guide including common issues and solutions.', date: '2025-01-09', readTime: '12 min'},
-            {category: 'guides', title: 'Maytag Washer & Dryer Repair', url: 'guides/maytag-washer-dryer-repair', excerpt: 'Professional Maytag washer and dryer repair guide for Toronto homeowners.', date: '2025-01-08', readTime: '11 min'},
-            {category: 'guides', title: 'Oven Temperature Calibration', url: 'guides/oven-temperature-calibration-guide', excerpt: 'Step-by-step guide to calibrating your oven temperature for perfect cooking.', date: '2025-01-07', readTime: '9 min'},
-            {category: 'guides', title: 'Refrigerator Repair vs Replace', url: 'guides/refrigerator-repair-vs-replace', excerpt: 'Make the right decision: repair or replace your refrigerator with expert advice.', date: '2025-01-06', readTime: '10 min'},
-            {category: 'guides', title: 'Should You Repair Your Oven?', url: 'guides/should-you-repair-oven', excerpt: 'Expert analysis on when to repair vs replace your oven in Toronto.', date: '2025-01-05', readTime: '8 min'},
-            {category: 'guides', title: 'Washing Machine Repair vs Replace', url: 'guides/washing-machine-repair-vs-replace', excerpt: 'Cost-benefit analysis of washing machine repair vs replacement options.', date: '2025-01-04', readTime: '9 min'},
-            {category: 'guides', title: 'When to Replace Your Dryer', url: 'guides/when-to-replace-dryer', excerpt: 'Know when it\'s time to replace your dryer with this comprehensive guide.', date: '2025-01-03', readTime: '7 min'},
-
-            // Maintenance
-            {category: 'maintenance', title: 'Dishwasher Hard Water Maintenance', url: 'maintenance/dishwasher-maintenance-hard-water', excerpt: 'Prevent hard water damage with regular dishwasher maintenance tips.', date: '2025-01-02', readTime: '8 min'},
-            {category: 'maintenance', title: 'Dryer Vent Cleaning & Fire Prevention', url: 'maintenance/dryer-vent-cleaning-fire-prevention', excerpt: 'Essential dryer vent cleaning to prevent fires and improve efficiency.', date: '2025-01-01', readTime: '10 min'},
-            {category: 'maintenance', title: 'How to Avoid Oven Repairs', url: 'maintenance/how-to-avoid-oven-repairs', excerpt: 'Preventive maintenance tips to keep your oven running smoothly.', date: '2024-12-31', readTime: '7 min'},
-            {category: 'maintenance', title: 'Extend Washer Lifespan', url: 'maintenance/how-to-extend-washer-life', excerpt: 'Proven tips to extend your washing machine life and avoid costly repairs.', date: '2024-12-30', readTime: '9 min'},
-            {category: 'maintenance', title: 'Refrigerator Maintenance Guide', url: 'maintenance/how-to-maintain-refrigerator', excerpt: 'Complete refrigerator maintenance checklist for Toronto homeowners.', date: '2024-12-29', readTime: '11 min'},
-            {category: 'maintenance', title: 'Prevent Dryer Fires', url: 'maintenance/how-to-prevent-dryer-fires', excerpt: 'Critical safety tips to prevent dryer fires in your Toronto home.', date: '2024-12-28', readTime: '8 min'},
-            {category: 'maintenance', title: 'Microwave Door Seal Replacement', url: 'maintenance/microwave-door-seal-replacement-guide', excerpt: 'DIY guide to replacing your microwave door seal safely and effectively.', date: '2024-12-27', readTime: '6 min'},
-            {category: 'maintenance', title: 'Range Hood Filter Cleaning', url: 'maintenance/range-hood-filter-cleaning-maintenance', excerpt: 'Keep your kitchen air clean with proper range hood filter maintenance.', date: '2024-12-26', readTime: '5 min'},
-            {category: 'maintenance', title: 'Winter Appliance Maintenance', url: 'maintenance/winter-appliance-maintenance-toronto', excerpt: 'Prepare your appliances for Toronto winters with this maintenance guide.', date: '2024-12-25', readTime: '10 min'},
-
-            // Troubleshooting (showing first 20 for brevity)
-            {category: 'troubleshooting', title: 'Dishwasher Not Cleaning', url: 'troubleshooting/dishwasher-not-cleaning', excerpt: 'Fix common dishwasher cleaning problems with expert troubleshooting tips.', date: '2024-12-24', readTime: '9 min'},
-            {category: 'troubleshooting', title: 'Dryer Not Heating', url: 'troubleshooting/dryer-not-heating', excerpt: 'Diagnose and fix dryer heating issues with professional repair advice.', date: '2024-12-23', readTime: '11 min'},
-            {category: 'troubleshooting', title: 'Refrigerator Not Cooling', url: 'troubleshooting/refrigerator-not-cooling-toronto', excerpt: 'Emergency troubleshooting for refrigerator cooling problems in Toronto.', date: '2024-12-22', readTime: '10 min'},
-            {category: 'troubleshooting', title: 'Washing Machine Leaking', url: 'troubleshooting/washing-machine-leaking', excerpt: 'Stop washing machine leaks with expert troubleshooting and repair tips.', date: '2024-12-21', readTime: '12 min'},
-            {category: 'troubleshooting', title: 'Oven Not Heating', url: 'troubleshooting/oven-not-heating', excerpt: 'Common causes and solutions for oven heating problems.', date: '2024-12-20', readTime: '10 min'},
-            {category: 'troubleshooting', title: 'Ice Maker Not Working', url: 'troubleshooting/ice-maker-not-working', excerpt: 'Troubleshoot and fix ice maker problems with this comprehensive guide.', date: '2024-12-19', readTime: '8 min'},
-            {category: 'troubleshooting', title: 'Garbage Disposal Jammed', url: 'troubleshooting/garbage-disposal-jammed', excerpt: 'Safely unjam your garbage disposal with step-by-step instructions.', date: '2024-12-18', readTime: '6 min'},
-            {category: 'troubleshooting', title: 'Microwave Not Heating', url: 'troubleshooting/microwave-not-heating', excerpt: 'Diagnose microwave heating issues and learn when to call a professional.', date: '2024-12-17', readTime: '7 min'},
-            {category: 'troubleshooting', title: 'Freezer Not Freezing', url: 'troubleshooting/freezer-not-freezing', excerpt: 'Fix freezer temperature problems before food spoils.', date: '2024-12-16', readTime: '9 min'},
-            {category: 'troubleshooting', title: 'Washer Won\'t Drain', url: 'troubleshooting/washer-wont-drain', excerpt: 'Clear washing machine drain clogs and restore proper function.', date: '2024-12-15', readTime: '8 min'},
-        ];
+    {category: 'guides', title: 'Bosch Dishwasher Repair Toronto: Premium Appliance Specialists', url: 'guides/bosch-dishwasher-repair.html', excerpt: 'Expert bosch dishwasher repair toronto: premium appliance specialists solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-15', readTime: '7 min'},
+    {category: 'guides', title: 'Dishwasher Hard Water Solutions for Toronto Homes (2025 Guide)', url: 'guides/dishwasher-hard-water-solutions-toronto.html', excerpt: 'Complete guide to dishwasher hard water solutions for toronto homes (2025 guide) with step-by-step instructions.', date: '2025-01-14', readTime: '8 min'},
+    {category: 'guides', title: 'Dishwasher Repair vs Replace Toronto: 2025 Cost Comparison Guide', url: 'guides/dishwasher-repair-vs-replace-toronto.html', excerpt: 'Expert dishwasher repair vs replace toronto: 2025 cost comparison guide solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-13', readTime: '9 min'},
+    {category: 'guides', title: 'Electrolux Appliance Repair: Washer, Dryer, Refrigerator Service', url: 'guides/electrolux-appliance-repair.html', excerpt: 'Expert electrolux appliance repair: washer, dryer, refrigerator service solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-12', readTime: '10 min'},
+    {category: 'guides', title: 'Frigidaire Refrigerator Repair Toronto: Expert Service & Ice Maker Solutions', url: 'guides/frigidaire-refrigerator-repair.html', excerpt: 'Expert frigidaire refrigerator repair toronto: expert service & ice maker solutions solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-11', readTime: '11 min'},
+    {category: 'guides', title: 'Gas Range Repair & Safety Guide Toronto: Regulations, Enbridge, Common Issues', url: 'guides/gas-range-repair-safety-toronto.html', excerpt: 'Expert gas range repair & safety guide toronto: regulations, enbridge, common issues solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-10', readTime: '12 min'},
+    {category: 'guides', title: 'GE Appliance Repair Toronto: Expert Service for All Models | Nika Repair', url: 'guides/ge-appliance-repair-toronto.html', excerpt: 'Expert ge appliance repair toronto: expert service for all models | nika repair solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-09', readTime: '7 min'},
+    {category: 'guides', title: 'LG Refrigerator Repair Toronto: Complete Guide to Common Issues & Fixes', url: 'guides/lg-refrigerator-repair-toronto.html', excerpt: 'Expert lg refrigerator repair toronto: complete guide to common issues & fixes solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-08', readTime: '8 min'},
+    {category: 'guides', title: 'Maytag Washer & Dryer Repair Toronto: Professional Service | Nika Repair', url: 'guides/maytag-washer-dryer-repair.html', excerpt: 'Expert maytag washer & dryer repair toronto: professional service | nika repair solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-07', readTime: '9 min'},
+    {category: 'guides', title: 'Oven Temperature Calibration Guide: DIY Testing & Professional Service (2025)', url: 'guides/oven-temperature-calibration-guide.html', excerpt: 'Complete guide to oven temperature calibration guide: diy testing & professional service (2025) with step-by-step instructions.', date: '2025-01-06', readTime: '10 min'},
+    {category: 'guides', title: 'Refrigerator Repair vs Replace: Cost Analysis & Decision Guide 2025', url: 'guides/refrigerator-repair-vs-replace.html', excerpt: 'Expert refrigerator repair vs replace: cost analysis & decision guide 2025 solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-05', readTime: '11 min'},
+    {category: 'guides', title: 'Should You Repair Your Oven? Safety-First Decision Guide 2025', url: 'guides/should-you-repair-oven.html', excerpt: 'Expert should you repair your oven? safety-first decision guide 2025 solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-04', readTime: '12 min'},
+    {category: 'guides', title: 'Washing Machine Repair or Replace? Hard Water Impact Analysis Toronto', url: 'guides/washing-machine-repair-vs-replace.html', excerpt: 'Expert washing machine repair or replace? hard water impact analysis toronto solutions for Toronto homeowners with professional tips and guidance.', date: '2025-01-03', readTime: '7 min'},
+    {category: 'guides', title: 'When to Replace Your Dryer: Cost vs Energy Efficiency ROI Analysis 2025', url: 'guides/when-to-replace-dryer.html', excerpt: 'Complete guide to when to replace your dryer: cost vs energy efficiency roi analysis 2025 with step-by-step instructions.', date: '2025-01-02', readTime: '8 min'},
+    {category: 'maintenance', title: 'Dishwasher Maintenance: Toronto Hard Water Spotting Prevention Guide', url: 'maintenance/dishwasher-maintenance-hard-water.html', excerpt: 'Essential dishwasher maintenance: toronto hard water spotting prevention guide tips to keep your appliances running smoothly.', date: '2025-01-01', readTime: '9 min'},
+    {category: 'maintenance', title: 'Dryer Vent Cleaning & Fire Prevention: Complete Toronto Safety Guide 2025', url: 'maintenance/dryer-vent-cleaning-fire-prevention.html', excerpt: 'Complete guide to dryer vent cleaning & fire prevention: complete toronto safety guide 2025 with step-by-step instructions.', date: '2024-12-31', readTime: '10 min'},
+    {category: 'maintenance', title: 'How to Avoid Expensive Oven Repairs: Maintenance Guide for Toronto', url: 'maintenance/how-to-avoid-oven-repairs.html', excerpt: 'Expert how to avoid expensive oven repairs: maintenance guide for toronto solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-30', readTime: '11 min'},
+    {category: 'maintenance', title: 'How to Extend Washer Life: Toronto Hard Water Impact & Maintenance', url: 'maintenance/how-to-extend-washer-life.html', excerpt: 'Essential how to extend washer life: toronto hard water impact & maintenance tips to keep your appliances running smoothly.', date: '2024-12-29', readTime: '12 min'},
+    {category: 'maintenance', title: 'How to Maintain Your Refrigerator: Toronto Hard Water Coil Cleaning Guide', url: 'maintenance/how-to-maintain-refrigerator.html', excerpt: 'Complete guide to how to maintain your refrigerator: toronto hard water coil cleaning guide with step-by-step instructions.', date: '2024-12-28', readTime: '7 min'},
+    {category: 'maintenance', title: 'How to Prevent Dryer Fires: Safety Tips & Maintenance Toronto', url: 'maintenance/how-to-prevent-dryer-fires.html', excerpt: 'Essential how to prevent dryer fires: safety tips & maintenance toronto tips to keep your appliances running smoothly.', date: '2024-12-27', readTime: '8 min'},
+    {category: 'maintenance', title: 'Microwave Door Seal Replacement Guide', url: 'maintenance/microwave-door-seal-replacement-guide.html', excerpt: 'Complete guide to microwave door seal replacement guide with step-by-step instructions.', date: '2024-12-26', readTime: '9 min'},
+    {category: 'maintenance', title: 'Range Hood Filter Cleaning and Maintenance', url: 'maintenance/range-hood-filter-cleaning-maintenance.html', excerpt: 'Essential range hood filter cleaning and maintenance tips to keep your appliances running smoothly.', date: '2024-12-25', readTime: '10 min'},
+    {category: 'maintenance', title: 'Winter Appliance Maintenance Guide for Toronto Homes: Protect Your Investment in Harsh Canadian Winters', url: 'maintenance/winter-appliance-maintenance-toronto.html', excerpt: 'Essential winter appliance maintenance guide for toronto homes: protect your investment in harsh canadian winters tips to keep your appliances running smoothly.', date: '2024-12-24', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Appliance Repair Cabbagetown: Expert Service for Victorian Homes', url: 'troubleshooting/appliance-repair-cabbagetown.html', excerpt: 'Expert appliance repair cabbagetown: expert service for victorian homes solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-23', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Appliance Repair Near Distillery District: Quick Response | Nika Appliance Repair', url: 'troubleshooting/appliance-repair-distillery-district.html', excerpt: 'Expert appliance repair near distillery district: quick response | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-22', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Appliance Repair Grande Prairie: Expert Service for Alberta Homes', url: 'troubleshooting/appliance-repair-grande-prairie.html', excerpt: 'Expert appliance repair grande prairie: expert service for alberta homes solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-21', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Appliance Repair King West: Downtown Toronto Service | Nika Appliance Repair', url: 'troubleshooting/appliance-repair-king-west.html', excerpt: 'Expert appliance repair king west: downtown toronto service | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-20', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Appliance Repair Peterborough Ontario: Professional Service', url: 'troubleshooting/appliance-repair-peterborough.html', excerpt: 'Expert appliance repair peterborough ontario: professional service solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-19', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'Appliance Repair Queen West: Local Toronto Technician | Nika Appliance Repair', url: 'troubleshooting/appliance-repair-queen-west.html', excerpt: 'Expert appliance repair queen west: local toronto technician | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-18', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Best Appliance Repair Near Me: How to Choose a Reliable Technician', url: 'troubleshooting/best-appliance-repair-near-me.html', excerpt: 'Expert best appliance repair near me: how to choose a reliable technician solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-17', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Clothes Dryer Fire Hazard Prevention: Complete Safety Guide for Toronto Homeowners', url: 'troubleshooting/clothes-dryer-fire-hazard-prevention.html', excerpt: 'Complete guide to clothes dryer fire hazard prevention: complete safety guide for toronto homeowners with step-by-step instructions.', date: '2024-12-16', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Dishwasher Leaving Food Spots: Toronto\'s Hard Water Problem', url: 'troubleshooting/dishwasher-leaving-food-spots.html', excerpt: 'Complete guide to dishwasher leaving food spots: toronto\'s hard water problem with step-by-step instructions.', date: '2024-12-15', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Dishwasher Not Cleaning Dishes? Toronto Hard Water Solutions 2025', url: 'troubleshooting/dishwasher-not-cleaning.html', excerpt: 'Complete guide to dishwasher not cleaning dishes? toronto hard water solutions 2025 with step-by-step instructions.', date: '2024-12-14', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Dishwasher Repair Toronto: Expert Solutions for Hard Water & Cleaning Problems', url: 'troubleshooting/dishwasher-repair-toronto.html', excerpt: 'Expert dishwasher repair toronto: expert solutions for hard water & cleaning problems solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-13', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'Dishwasher Spray Arm Not Rotating', url: 'troubleshooting/dishwasher-spray-arm-not-rotating-repair.html', excerpt: 'Complete guide to dishwasher spray arm not rotating with step-by-step instructions.', date: '2024-12-12', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Dishwasher Not Draining Completely: Drain Pump & Filter Solutions', url: 'troubleshooting/dishwasher-water-not-draining-completely.html', excerpt: 'Complete guide to dishwasher not draining completely: drain pump & filter solutions with step-by-step instructions.', date: '2024-12-11', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Dryer Making Noise? Toronto Troubleshooting & Repair Guide | 2025', url: 'troubleshooting/dryer-making-noise.html', excerpt: 'Expert dryer making noise? toronto troubleshooting & repair guide | 2025 solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-10', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Dryer Not Drying Clothes: Quick Fixes & Professional Repair', url: 'troubleshooting/dryer-not-drying-clothes.html', excerpt: 'Expert dryer not drying clothes: quick fixes & professional repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-09', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Dryer Not Heating? Toronto Gas & Electric Solutions | 2025 Guide', url: 'troubleshooting/dryer-not-heating.html', excerpt: 'Complete guide to dryer not heating? toronto gas & electric solutions | 2025 guide with step-by-step instructions.', date: '2024-12-08', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Dryer Repair Toronto: Fix Your Clothes Dryer Fast', url: 'troubleshooting/dryer-repair-toronto.html', excerpt: 'Expert dryer repair toronto: fix your clothes dryer fast solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-07', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'Electric Stove Burner Not Heating: Complete Diagnosis & Repair Guide Toronto 2025', url: 'troubleshooting/electric-stove-burner-not-heating.html', excerpt: 'Expert electric stove burner not heating: complete diagnosis & repair guide toronto 2025 solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-06', readTime: '11 min'},
+    {category: 'troubleshooting', title: '24/7 Emergency Appliance Repair Service Toronto', url: 'troubleshooting/emergency-appliance-repair-24-7.html', excerpt: 'Expert 24/7 emergency appliance repair service toronto solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-05', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Freezer Frost Buildup & Ice Problems: Complete Troubleshooting Guide', url: 'troubleshooting/freezer-frost-buildup-ice-problems.html', excerpt: 'Complete guide to freezer frost buildup & ice problems: complete troubleshooting guide with step-by-step instructions.', date: '2024-12-04', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Why Is My Freezer Not Freezing? Toronto Troubleshooting Guide | Nika Appliance Repair', url: 'troubleshooting/freezer-not-freezing.html', excerpt: 'Expert why is my freezer not freezing? toronto troubleshooting guide | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-03', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Freezer Repair Toronto: Common Problems & Solutions', url: 'troubleshooting/freezer-repair-guide.html', excerpt: 'Expert freezer repair toronto: common problems & solutions solutions for Toronto homeowners with professional tips and guidance.', date: '2024-12-02', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Front-Load Washer Problems: Mold, Leaks & Bearing Failure Solutions Toronto', url: 'troubleshooting/front-load-washer-problems-toronto.html', excerpt: 'Complete guide to front-load washer problems: mold, leaks & bearing failure solutions toronto with step-by-step instructions.', date: '2024-12-01', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'Garbage Disposal Grinding Noise Repair: Complete Fix Guide Toronto 2025', url: 'troubleshooting/garbage-disposal-grinding-noise-repair.html', excerpt: 'Expert garbage disposal grinding noise repair: complete fix guide toronto 2025 solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-30', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Garbage Disposal Jammed? Toronto DIY & Professional Solutions | Nika Appliance Repair', url: 'troubleshooting/garbage-disposal-jammed.html', excerpt: 'Expert garbage disposal jammed? toronto diy & professional solutions | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-29', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Garbage Disposal Repair Toronto: Unclog & Fix Common Issues', url: 'troubleshooting/garbage-disposal-repair.html', excerpt: 'Expert garbage disposal repair toronto: unclog & fix common issues solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-28', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Gas Range Igniter Not Working: Complete Safety & Repair Guide', url: 'troubleshooting/gas-range-igniter-not-working.html', excerpt: 'Expert gas range igniter not working: complete safety & repair guide solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-27', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Ice Maker Not Working? Toronto Hard Water Solutions | Nika Appliance Repair', url: 'troubleshooting/ice-maker-not-working.html', excerpt: 'Expert ice maker not working? toronto hard water solutions | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-26', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Ice Maker Repair Toronto: Fix Your Refrigerator\'s Ice Maker', url: 'troubleshooting/ice-maker-repair.html', excerpt: 'Expert ice maker repair toronto: fix your refrigerator\'s ice maker solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-25', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'LG Appliance Repair Service: Expert Technician in Toronto', url: 'troubleshooting/lg-appliance-repair-service.html', excerpt: 'Expert lg appliance repair service: expert technician in toronto solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-24', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Microwave Not Heating? Toronto Quick Fix Guide 2025', url: 'troubleshooting/microwave-not-heating.html', excerpt: 'Complete guide to microwave not heating? toronto quick fix guide 2025 with step-by-step instructions.', date: '2024-11-23', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Microwave Repair Toronto: Quick Fixes for Common Issues', url: 'troubleshooting/microwave-repair-toronto.html', excerpt: 'Expert microwave repair toronto: quick fixes for common issues solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-22', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Microwave Sparking & Arcing Safety Guide: When to Call a Professional', url: 'troubleshooting/microwave-sparking-arcing-safety.html', excerpt: 'Complete guide to microwave sparking & arcing safety guide: when to call a professional with step-by-step instructions.', date: '2024-11-21', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Mobile Appliance Repair in Whitehorse: Expert In-Home Service', url: 'troubleshooting/mobile-appliance-repair-whitehorse.html', excerpt: 'Expert mobile appliance repair in whitehorse: expert in-home service solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-20', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Oven Door Won\'t Close? Toronto Repair Solutions | DIY Hinge Fixes', url: 'troubleshooting/oven-door-wont-close.html', excerpt: 'Expert oven door won\'t close? toronto repair solutions | diy hinge fixes solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-19', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'Oven Not Heating? Toronto Gas & Electric Repair Guide 2025 | Expert Solutions', url: 'troubleshooting/oven-not-heating.html', excerpt: 'Expert oven not heating? toronto gas & electric repair guide 2025 | expert solutions solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-18', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Oven Repair Toronto: Professional Service for Gas & Electric Ovens', url: 'troubleshooting/oven-repair-toronto.html', excerpt: 'Expert oven repair toronto: professional service for gas & electric ovens solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-17', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Oven Temperature Calibration Guide: Fix Inaccurate Cooking Temps', url: 'troubleshooting/oven-temperature-calibration-guide.html', excerpt: 'Complete guide to oven temperature calibration guide: fix inaccurate cooking temps with step-by-step instructions.', date: '2024-11-16', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Refrigerator Compressor Failure: Complete Diagnosis & Repair Guide Toronto 2025', url: 'troubleshooting/refrigerator-compressor-failure-diagnosis.html', excerpt: 'Expert refrigerator compressor failure: complete diagnosis & repair guide toronto 2025 solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-15', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Refrigerator Compressor Noise Diagnosis: Complete Troubleshooting Guide Toronto 2025', url: 'troubleshooting/refrigerator-compressor-noise-diagnosis.html', excerpt: 'Complete guide to refrigerator compressor noise diagnosis: complete troubleshooting guide toronto 2025 with step-by-step instructions.', date: '2024-11-14', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Refrigerator Door Seal Failing? Toronto DIY Replacement Guide | Nika Appliance Repair', url: 'troubleshooting/refrigerator-door-seal-replacement.html', excerpt: 'Expert refrigerator door seal failing? toronto diy replacement guide | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-13', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'Refrigerator Ice Maker Repair Guide: Fix Common Problems', url: 'troubleshooting/refrigerator-ice-maker-repair-guide.html', excerpt: 'Expert refrigerator ice maker repair guide: fix common problems solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-12', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Why Is My Refrigerator Not Cooling? Toronto Troubleshooting Guide | Nika Appliance Repair', url: 'troubleshooting/refrigerator-not-cooling-toronto.html', excerpt: 'Expert why is my refrigerator not cooling? toronto troubleshooting guide | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-11', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Refrigerator Repair Toronto: Professional Fridge Fixes', url: 'troubleshooting/refrigerator-repair-toronto.html', excerpt: 'Expert refrigerator repair toronto: professional fridge fixes solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-10', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Refrigerator Water Dispenser Not Working: Toronto Hard Water Fix', url: 'troubleshooting/refrigerator-water-dispenser-not-working.html', excerpt: 'Complete guide to refrigerator water dispenser not working: toronto hard water fix with step-by-step instructions.', date: '2024-11-09', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Refrigerator Water Dispenser Troubleshooting Guide', url: 'troubleshooting/refrigerator-water-dispenser-troubleshooting-guide.html', excerpt: 'Complete guide to refrigerator water dispenser troubleshooting guide with step-by-step instructions.', date: '2024-11-08', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Same-Day Appliance Repair: Emergency Service for Toronto Homes', url: 'troubleshooting/same-day-appliance-repair.html', excerpt: 'Expert same-day appliance repair: emergency service for toronto homes solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-07', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'Samsung Appliance Repair Toronto: Fast, Affordable Service', url: 'troubleshooting/samsung-appliance-repair.html', excerpt: 'Expert samsung appliance repair toronto: fast, affordable service solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-06', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Smart Appliance Troubleshooting Guide: WiFi, App & Connectivity Issues', url: 'troubleshooting/smart-appliance-troubleshooting-guide.html', excerpt: 'Complete guide to smart appliance troubleshooting guide: wifi, app & connectivity issues with step-by-step instructions.', date: '2024-11-05', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Stove Burner Not Working? Toronto Electric & Gas Solutions 2025 | Expert Repair', url: 'troubleshooting/stove-burner-not-working.html', excerpt: 'Expert stove burner not working? toronto electric & gas solutions 2025 | expert repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-04', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Stove Repair Toronto: Gas & Electric Stove Fixes', url: 'troubleshooting/stove-repair-toronto.html', excerpt: 'Expert stove repair toronto: gas & electric stove fixes solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-03', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Washer Drum Not Spinning: Motor, Belt & Coupling Repair Guide', url: 'troubleshooting/washer-drum-not-spinning-repair.html', excerpt: 'Expert washer drum not spinning: motor, belt & coupling repair guide solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-02', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Washing Machine Won\'t Drain? Toronto Repair Solutions 2025 | Nika Appliance Repair', url: 'troubleshooting/washer-wont-drain.html', excerpt: 'Expert washing machine won\'t drain? toronto repair solutions 2025 | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-11-01', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'Washing Machine Filter Maintenance Guide: Complete Cleaning Instructions for Toronto Homes', url: 'troubleshooting/washing-machine-filter-maintenance-guide.html', excerpt: 'Essential washing machine filter maintenance guide: complete cleaning instructions for toronto homes tips to keep your appliances running smoothly.', date: '2024-10-31', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Washing Machine Leaking Water: Toronto Repair Guide', url: 'troubleshooting/washing-machine-leaking-water.html', excerpt: 'Expert washing machine leaking water: toronto repair guide solutions for Toronto homeowners with professional tips and guidance.', date: '2024-10-30', readTime: '12 min'},
+    {category: 'troubleshooting', title: 'Washing Machine Leaking Water? Toronto Repair Solutions 2025 | Nika Appliance Repair', url: 'troubleshooting/washing-machine-leaking.html', excerpt: 'Expert washing machine leaking water? toronto repair solutions 2025 | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-10-29', readTime: '7 min'},
+    {category: 'troubleshooting', title: 'Washing Machine Not Agitating: Complete Repair Guide', url: 'troubleshooting/washing-machine-not-agitating-repairs.html', excerpt: 'Expert washing machine not agitating: complete repair guide solutions for Toronto homeowners with professional tips and guidance.', date: '2024-10-28', readTime: '8 min'},
+    {category: 'troubleshooting', title: 'Washing Machine Overflow Prevention', url: 'troubleshooting/washing-machine-overflow-prevention-guide.html', excerpt: 'Complete guide to washing machine overflow prevention with step-by-step instructions.', date: '2024-10-27', readTime: '9 min'},
+    {category: 'troubleshooting', title: 'Washing Machine Repair Complete Guide: Expert Solutions for Toronto Homeowners', url: 'troubleshooting/washing-machine-repair-complete-guide.html', excerpt: 'Expert washing machine repair complete guide: expert solutions for toronto homeowners solutions for Toronto homeowners with professional tips and guidance.', date: '2024-10-26', readTime: '10 min'},
+    {category: 'troubleshooting', title: 'Water Heater Repair Toronto: Hot Water Solutions | Nika Appliance Repair', url: 'troubleshooting/water-heater-repair-toronto.html', excerpt: 'Expert water heater repair toronto: hot water solutions | nika appliance repair solutions for Toronto homeowners with professional tips and guidance.', date: '2024-10-25', readTime: '11 min'},
+    {category: 'troubleshooting', title: 'Whirlpool Customer Service Repair Toronto: Expert Guide 2025', url: 'troubleshooting/whirlpool-customer-service-repair.html', excerpt: 'Expert whirlpool customer service repair toronto: expert guide 2025 solutions for Toronto homeowners with professional tips and guidance.', date: '2024-10-24', readTime: '12 min'},
+];
 
         // DOM Elements
         const blogGrid = document.getElementById('blog-grid');
@@ -556,7 +559,7 @@
 
             blogGrid.innerHTML = posts.map(post => `
                 <article class="blog-card">
-                    <img src="images/${post.url.split('/').pop()}-hero.webp"
+                    <img src="images/${post.url.split('/').pop().replace('.html', '')}-hero.webp"
                          alt="${post.title}"
                          class="card-image"
                          onerror="this.src='images/general-appliance-repair-hero.webp'">
