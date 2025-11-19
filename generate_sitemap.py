@@ -39,6 +39,64 @@ def generate_sitemap():
         ET.SubElement(url, 'changefreq').text = changefreq
         ET.SubElement(url, 'priority').text = priority
 
+    # Services pages
+    services_dir = Path("C:\\NikaApplianceRepair\\services")
+    if services_dir.exists():
+        service_files = list(services_dir.glob("*.html"))
+        print(f"Found {len(service_files)} service pages")
+
+        for service_file in service_files:
+            # Skip index page (already in static pages)
+            if service_file.name == 'index.html':
+                continue
+
+            # Convert to clean URL
+            slug = service_file.stem  # filename without .html
+            clean_path = f"/services/{slug}"
+            full_url = base_url + clean_path
+
+            # Get file modification time
+            mtime = datetime.fromtimestamp(service_file.stat().st_mtime)
+            lastmod = mtime.strftime("%Y-%m-%d")
+
+            # Add to sitemap
+            url = ET.SubElement(urlset, 'url')
+            ET.SubElement(url, 'loc').text = full_url
+            ET.SubElement(url, 'lastmod').text = lastmod
+            ET.SubElement(url, 'changefreq').text = 'weekly'
+            ET.SubElement(url, 'priority').text = '0.95'
+
+            print(f"Added service: {clean_path}")
+
+    # Locations pages
+    locations_dir = Path("C:\\NikaApplianceRepair\\locations")
+    if locations_dir.exists():
+        location_files = list(locations_dir.glob("*.html"))
+        print(f"Found {len(location_files)} location pages")
+
+        for location_file in location_files:
+            # Skip index page (already in static pages)
+            if location_file.name == 'index.html':
+                continue
+
+            # Convert to clean URL
+            slug = location_file.stem  # filename without .html
+            clean_path = f"/locations/{slug}"
+            full_url = base_url + clean_path
+
+            # Get file modification time
+            mtime = datetime.fromtimestamp(location_file.stat().st_mtime)
+            lastmod = mtime.strftime("%Y-%m-%d")
+
+            # Add to sitemap
+            url = ET.SubElement(urlset, 'url')
+            ET.SubElement(url, 'loc').text = full_url
+            ET.SubElement(url, 'lastmod').text = lastmod
+            ET.SubElement(url, 'changefreq').text = 'weekly'
+            ET.SubElement(url, 'priority').text = '0.9'
+
+            print(f"Added location: {clean_path}")
+
     # Blog posts (clean URLs without .html)
     blog_dir = Path("C:\\NikaApplianceRepair\\blog")
     html_files = []
@@ -100,11 +158,17 @@ def generate_sitemap():
     with open(sitemap_path, 'w', encoding='utf-8') as f:
         f.write(xml_str)
 
+    # Count totals
+    service_count = len(list(Path("C:\\NikaApplianceRepair\\services").glob("*.html"))) - 1 if Path("C:\\NikaApplianceRepair\\services").exists() else 0
+    location_count = len(list(Path("C:\\NikaApplianceRepair\\locations").glob("*.html"))) - 1 if Path("C:\\NikaApplianceRepair\\locations").exists() else 0
+
     print(f"\n{'='*60}")
     print(f"Sitemap generated successfully!")
     print(f"  Location: {sitemap_path}")
     print(f"  Total URLs: {len(urlset)}")
     print(f"  Static pages: {len(static_pages)}")
+    print(f"  Services: {service_count}")
+    print(f"  Locations: {location_count}")
     print(f"  Blog posts: {len(html_files)}")
     print(f"{'='*60}")
     print(f"\nAll URLs use clean format (no .html extension)")
