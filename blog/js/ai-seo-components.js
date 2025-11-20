@@ -327,8 +327,8 @@ function initializeAIComponents(config) {
     const contentArea = document.querySelector('.blog-content, article');
 
     if (contentArea && config.components) {
-        // Add Direct Answer Box (at the top)
-        if (config.components.directAnswer) {
+        // Add Direct Answer Box (at the top) - check if it already exists
+        if (config.components.directAnswer && !contentArea.querySelector('.direct-answer-box')) {
             const answerBox = createDirectAnswerBox(
                 config.components.directAnswer.question,
                 config.components.directAnswer.answer
@@ -336,8 +336,8 @@ function initializeAIComponents(config) {
             contentArea.insertAdjacentHTML('afterbegin', answerBox);
         }
 
-        // Add At-A-Glance Box
-        if (config.components.atAGlance) {
+        // Add At-A-Glance Box - check if it already exists
+        if (config.components.atAGlance && !contentArea.querySelector('.at-a-glance')) {
             const glanceBox = createAtAGlanceBox(config.components.atAGlance);
             const firstH2 = contentArea.querySelector('h2');
             if (firstH2) {
@@ -345,8 +345,8 @@ function initializeAIComponents(config) {
             }
         }
 
-        // Add Author Box
-        if (config.components.author) {
+        // Add Author Box - check if it already exists
+        if (config.components.author && !contentArea.querySelector('.author-box-ai')) {
             const authorBox = createAuthorBox(config.components.author);
             const firstParagraph = contentArea.querySelector('p');
             if (firstParagraph) {
@@ -354,8 +354,8 @@ function initializeAIComponents(config) {
             }
         }
 
-        // Add Experience Box
-        if (config.components.experience) {
+        // Add Experience Box - check if it already exists
+        if (config.components.experience && !contentArea.querySelector('.experience-box')) {
             const expBox = createExperienceBox(config.components.experience);
             // Insert before FAQ section or at end
             const faqSection = contentArea.querySelector('.faq-section');
@@ -366,8 +366,8 @@ function initializeAIComponents(config) {
             }
         }
 
-        // Add FAQ Section (at the end)
-        if (config.faqs && config.faqs.length > 0) {
+        // Add FAQ Section (at the end) - check if it already exists
+        if (config.faqs && config.faqs.length > 0 && !contentArea.querySelector('.faq-section')) {
             const faqSection = createFAQSection(config.faqs);
             contentArea.insertAdjacentHTML('beforeend', faqSection);
         }
