@@ -759,13 +759,7 @@
 
                 return `
                     <article class="blog-card" onclick="window.location.href='${post.url}'" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
-                        <div class="card-image-wrapper">
-                            <img src="${imagePath}"
-                                 alt="${post.title}"
-                                 class="card-image"
-                                 loading="lazy"
-                                 itemprop="image"
-                                 onerror="this.src='blog/images/dishwasher-repair-hero.webp'">
+                        <div style="padding: 15px 0; border-bottom: 1px solid #e0e0e0;">
                             <span class="card-category-badge">${post.category}</span>
                         </div>
                         <div class="card-content">
