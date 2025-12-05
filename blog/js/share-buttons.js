@@ -109,20 +109,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-
-/**
- * Alternative: Check if DOM is already loaded
- * This handles cases where script loads after DOMContentLoaded fires
- */
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initShareButtons);
-} else {
-    // DOM already loaded, initialize immediately
-    initShareButtons();
-}
-
-function initShareButtons() {
-    // Re-run the initialization if needed
-    const event = new Event('DOMContentLoaded');
-    document.dispatchEvent(event);
-}
