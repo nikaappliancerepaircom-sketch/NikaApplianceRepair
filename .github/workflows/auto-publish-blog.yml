@@ -1,45 +1,16 @@
 # Automatic Blog Post Publishing for Vercel
-# Publishes 5 posts per day from drafts folder
+# Publishes 1 scheduled post per day at 9:00 AM Toronto (14:00 UTC)
+# Posts are scheduled via article:published_time meta tag
 # Commits changes to GitHub, Vercel auto-deploys
-# Runs 5 times per day at: 6 AM, 9 AM, 12 PM, 3 PM, 6 PM UTC
 
 name: Auto-Publish Blog Posts
 
 on:
   schedule:
-    # Day 1: October 31 - Publish 5 posts at 6 AM, 9 AM, 12 PM, 3 PM, 6 PM UTC
-    - cron: '0 6 31 10 *'    # 6:00 AM UTC Oct 31
-    - cron: '0 9 31 10 *'    # 9:00 AM UTC Oct 31
-    - cron: '0 12 31 10 *'   # 12:00 PM UTC Oct 31
-    - cron: '0 15 31 10 *'   # 3:00 PM UTC Oct 31
-    - cron: '0 18 31 10 *'   # 6:00 PM UTC Oct 31
-
-    # Day 2: November 1 - Publish 5 posts at same times
-    - cron: '0 6 1 11 *'     # 6:00 AM UTC Nov 1
-    - cron: '0 9 1 11 *'     # 9:00 AM UTC Nov 1
-    - cron: '0 12 1 11 *'    # 12:00 PM UTC Nov 1
-    - cron: '0 15 1 11 *'    # 3:00 PM UTC Nov 1
-    - cron: '0 18 1 11 *'    # 6:00 PM UTC Nov 1
-
-    # Day 3: November 2
-    - cron: '0 6 2 11 *'
-    - cron: '0 9 2 11 *'
-    - cron: '0 12 2 11 *'
-    - cron: '0 15 2 11 *'
-    - cron: '0 18 2 11 *'
-
-    # Day 4: November 3
-    - cron: '0 6 3 11 *'
-    - cron: '0 9 3 11 *'
-    - cron: '0 12 3 11 *'
-    - cron: '0 15 3 11 *'
-    - cron: '0 18 3 11 *'
-
-    # Day 5: November 4 (only 4 posts, so 4 slots)
-    - cron: '0 6 4 11 *'
-    - cron: '0 9 4 11 *'
-    - cron: '0 12 4 11 *'
-    - cron: '0 15 4 11 *'
+    # Daily at 9:00 AM Toronto = 14:00 UTC
+    # Note: Toronto is EST (UTC-5) in winter, EDT (UTC-4) in summer
+    # Using 14:00 UTC which is 9 AM EST (winter) or 10 AM EDT (summer)
+    - cron: '0 14 * * *'
 
   workflow_dispatch:  # Allow manual triggering from GitHub UI
 
@@ -49,37 +20,24 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Determine which day folder to use
-        id: day-calc
+      - name: Check for scheduled posts
+        id: check-posts
         run: |
-          # Calculate which day based on current date (Oct 31 - Nov 4)
-          TODAY=$(date +%d)
-          if [ $TODAY -eq 31 ]; then
-            echo "day=day-1" >> $GITHUB_OUTPUT
-          elif [ $TODAY -eq 01 ]; then
-            echo "day=day-2" >> $GITHUB_OUTPUT
-          elif [ $TODAY -eq 02 ]; then
-            echo "day=day-3" >> $GITHUB_OUTPUT
-          elif [ $TODAY -eq 03 ]; then
-            echo "day=day-4" >> $GITHUB_OUTPUT
-          elif [ $TODAY -eq 04 ]; then
-            echo "day=day-5" >> $GITHUB_OUTPUT
-          else
-            echo "day=day-1" >> $GITHUB_OUTPUT
-          fi
+          echo "Checking for posts scheduled for today..."
+          python scripts/auto-publish-posts.py --dry-run --count 1
 
-      - name: Publish draft posts
+      - name: Publish scheduled post
         run: |
-          python scripts/auto-publish-posts.py --count 1 --day ${{ steps.day-calc.outputs.day }}
+          python scripts/auto-publish-posts.py --count 1
 
       - name: Update sitemap
         run: |
@@ -97,18 +55,19 @@ jobs:
 
           # Check if there are changes
           if git diff --staged --quiet; then
-            echo "[INFO] No changes to commit"
+            echo "[INFO] No posts scheduled for today or already published"
             exit 0
           else
-            git commit -m "Auto-publish: Blog post published
+            TODAY=$(date +%Y-%m-%d)
+            git commit -m "Auto-publish: Blog post for $TODAY
 
             - Timestamp: $(date)
-            - Day: ${{ steps.day-calc.outputs.day }}
+            - Trigger: Daily schedule (9 AM Toronto)
             - Source: GitHub Actions
 
             Vercel will auto-deploy this commit."
             git push
-            echo "[SUCCESS] Changes pushed to GitHub"
+            echo "[SUCCESS] Changes pushed to GitHub - Vercel will deploy"
           fi
 
       - name: Notify on Slack (Optional)
@@ -124,7 +83,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*Blog Auto-Publishing*\nDay: ${{ steps.day-calc.outputs.day }}\nStatus: Posted"
+                    "text": "*Blog Auto-Publishing*\nDate: $(date +%Y-%m-%d)\nStatus: Posted"
                   }
                 }
               ]

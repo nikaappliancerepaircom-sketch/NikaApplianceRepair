@@ -2,11 +2,13 @@
 """
 Auto-publish blog posts from drafts folder
 Moves posts from /blog/_drafts/ to appropriate category folders
+Supports date-based scheduling via article:published_time meta tag
 """
 import os
 import shutil
 import argparse
 import json
+import re
 from pathlib import Path
 from datetime import datetime
 
@@ -15,14 +17,13 @@ def get_post_metadata(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Extract category from folder structure or meta tags
-    # You can parse HTML meta tags or use folder naming
     metadata = {
         'filepath': filepath,
         'filename': os.path.basename(filepath),
-        'category': 'troubleshooting',  # Default, can be parsed
-        'title': '',  # Parse from <title> tag
-        'date': datetime.now().strftime('%Y-%m-%d')
+        'category': 'troubleshooting',  # Default
+        'title': '',
+        'date': datetime.now().strftime('%Y-%m-%d'),
+        'publish_date': None  # For scheduled publishing
     }
 
     # Parse title
@@ -31,25 +32,34 @@ def get_post_metadata(filepath):
         end = content.find('</title>')
         metadata['title'] = content[start:end]
 
-    # Parse category from file path or meta
-    if 'data-category' in content:
-        # Extract category from HTML
-        pass
+    # Parse scheduled publish date from article:published_time
+    publish_match = re.search(r'<meta property="article:published_time" content="(\d{4}-\d{2}-\d{2})"', content)
+    if publish_match:
+        metadata['publish_date'] = publish_match.group(1)
+        metadata['date'] = publish_match.group(1)
+
+    # Parse category from canonical URL
+    # Format: /blog/troubleshooting/slug or /blog/guides/slug
+    canonical_match = re.search(r'<link rel="canonical" href="[^"]+/blog/([^/]+)/', content)
+    if canonical_match:
+        metadata['category'] = canonical_match.group(1)
 
     return metadata
 
-def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False, day=None):
+def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False, day=None, date_based=True):
     """
-    Publish specified number of posts from drafts
+    Publish posts from drafts based on scheduled publish date
 
     Args:
-        count: Number of posts to publish
+        count: Number of posts to publish (only used if date_based=False)
         drafts_folder: Path to drafts folder
         dry_run: If True, don't actually move files
-        day: If specified (e.g., 'day-1'), publish from that day's folder
+        day: If specified (e.g., 'day-1'), publish from that day's folder (legacy)
+        date_based: If True, publish posts where publish_date <= today
     """
     base_dir = Path(__file__).parent.parent
     drafts_path = base_dir / drafts_folder
+    today = datetime.now().strftime('%Y-%m-%d')
 
     if not drafts_path.exists():
         print(f"[INFO] Drafts folder not found: {drafts_path}")
@@ -65,22 +75,37 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False, day=None
             return []
         draft_posts = list(day_path.glob('*.html'))
     else:
-        # Get all draft posts (excluding backup files and non-HTML files)
+        # Get all draft posts (excluding backup files, schedule file, and non-HTML files)
         draft_posts = []
-        for root, dirs, files in os.walk(drafts_path):
-            for file in files:
-                if file.endswith('.html') and not file.endswith('.backup'):
-                    draft_posts.append(Path(root) / file)
+        for file in drafts_path.glob('*.html'):
+            if not file.name.endswith('.backup') and not file.name.startswith('_'):
+                draft_posts.append(file)
 
     if not draft_posts:
         print(f"[INFO] No draft posts found in {drafts_folder}")
         return []
 
-    # Sort by filename (assuming numbered or dated filenames)
-    draft_posts.sort()
+    # Filter by scheduled publish date if date_based is enabled
+    if date_based:
+        posts_ready = []
+        for post in draft_posts:
+            meta = get_post_metadata(post)
+            publish_date = meta.get('publish_date')
+            if publish_date and publish_date <= today:
+                posts_ready.append((post, publish_date))
+                print(f"[READY] {post.name} (scheduled: {publish_date})")
+            elif publish_date:
+                print(f"[SKIP] {post.name} (scheduled: {publish_date}, today: {today})")
 
-    # Limit to requested count
-    posts_to_publish = draft_posts[:count]
+        # Sort by publish date
+        posts_ready.sort(key=lambda x: x[1])
+        posts_to_publish = [p[0] for p in posts_ready[:count]]
+
+        print(f"\n[INFO] Found {len(posts_ready)} posts ready for today ({today})")
+    else:
+        # Legacy mode: sort by filename and take first N
+        draft_posts.sort()
+        posts_to_publish = draft_posts[:count]
 
     published = []
 
@@ -150,10 +175,11 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False, day=None
 
 def main():
     parser = argparse.ArgumentParser(description='Auto-publish blog posts from drafts')
-    parser.add_argument('--count', type=int, default=1, help='Number of posts to publish (default: 1 - for Vercel automation)')
+    parser.add_argument('--count', type=int, default=1, help='Number of posts to publish per run (default: 1)')
     parser.add_argument('--dry-run', action='store_true', help='Show what would be published without actually moving files')
     parser.add_argument('--drafts-folder', default='blog/_drafts', help='Path to drafts folder')
-    parser.add_argument('--day', default=None, help='Publish from specific day folder (e.g., day-1, day-2)')
+    parser.add_argument('--day', default=None, help='Publish from specific day folder (legacy mode)')
+    parser.add_argument('--no-date-check', action='store_true', help='Disable date-based scheduling')
 
     args = parser.parse_args()
 
@@ -161,7 +187,8 @@ def main():
         count=args.count,
         drafts_folder=args.drafts_folder,
         dry_run=args.dry_run,
-        day=args.day
+        day=args.day,
+        date_based=not args.no_date_check
     )
 
     if args.dry_run:

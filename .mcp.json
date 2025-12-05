@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "wordpress": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "mcp-remote",
+        "https://nappliancerepair.ca/wp-json/mcp/v1/sse?token=ELlkKJBEDa4SLxkT1kxbyCcGg4A3iqkU"
+      ]
+    }
+  }
+}
