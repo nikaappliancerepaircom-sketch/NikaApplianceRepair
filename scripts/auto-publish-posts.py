@@ -20,7 +20,7 @@ def get_post_metadata(filepath):
     metadata = {
         'filepath': filepath,
         'filename': os.path.basename(filepath),
-        'category': 'troubleshooting',  # Default
+        'category': 'posts',  # Default
         'title': '',
         'date': datetime.now().strftime('%Y-%m-%d'),
         'publish_date': None  # For scheduled publishing
@@ -118,6 +118,7 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False, day=None
 
         # Determine destination folder based on category
         category_map = {
+            'posts': 'blog/posts',
             'troubleshooting': 'blog/troubleshooting',
             'maintenance': 'blog/maintenance',
             'guides': 'blog/guides',
@@ -126,8 +127,8 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False, day=None
             'locations': 'blog/locations'
         }
 
-        category = metadata.get('category', 'troubleshooting')
-        dest_folder = base_dir / category_map.get(category, 'blog/troubleshooting')
+        category = metadata.get('category', 'posts')
+        dest_folder = base_dir / category_map.get(category, 'blog/posts')
 
         # Create destination folder if doesn't exist
         dest_folder.mkdir(parents=True, exist_ok=True)
