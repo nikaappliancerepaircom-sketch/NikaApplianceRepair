@@ -72,23 +72,3 @@ jobs:
             git push
             echo "[SUCCESS] Changes pushed to GitHub - Vercel will deploy"
           fi
-
-      - name: Notify on Slack (Optional)
-        if: always()
-        uses: slackapi/slack-github-action@v1
-        with:
-          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          payload: |
-            {
-              "text": "Blog post published - Check Vercel deployment",
-              "blocks": [
-                {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "*Blog Auto-Publishing*\nDate: $(date +%Y-%m-%d)\nStatus: Posted"
-                  }
-                }
-              ]
-            }
-        continue-on-error: true
