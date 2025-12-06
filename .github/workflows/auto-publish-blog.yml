@@ -14,6 +14,9 @@ on:
 
   workflow_dispatch:  # Allow manual triggering from GitHub UI
 
+permissions:
+  contents: write  # Allow pushing commits to repository
+
 jobs:
   publish-posts:
     runs-on: ubuntu-latest
