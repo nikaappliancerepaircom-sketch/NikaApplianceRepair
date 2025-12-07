@@ -50,6 +50,15 @@ jobs:
         run: |
           python scripts/update-blog-index.py
 
+      - name: Generate RSS feed
+        run: |
+          python scripts/generate-rss-feed.py
+
+      - name: Preview GMB post content
+        run: |
+          echo "=== GMB POST PREVIEW ==="
+          python scripts/gmb-auto-post.py --manual --count 1 || echo "No new posts for GMB"
+
       - name: Commit and push changes to GitHub
         run: |
           git config --local user.email "github-actions@github.com"

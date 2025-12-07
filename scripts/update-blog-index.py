@@ -53,6 +53,7 @@ def extract_post_data(filepath):
 def get_category_emoji(category):
     """Get emoji for category"""
     emoji_map = {
+        'posts': '📰',
         'troubleshooting': '🔧',
         'maintenance': '🛠️',
         'guides': '📚',
@@ -104,7 +105,7 @@ def update_blog_index():
 
     # Scan all blog posts
     blog_dir = base_dir / 'blog'
-    blog_categories = ['troubleshooting', 'maintenance', 'guides', 'seasonal', 'brands', 'locations']
+    blog_categories = ['posts', 'troubleshooting', 'maintenance', 'guides', 'seasonal', 'brands', 'locations']
 
     all_posts = []
 

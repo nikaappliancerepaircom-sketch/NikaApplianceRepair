@@ -32,11 +32,27 @@ def get_post_metadata(filepath):
         end = content.find('</title>')
         metadata['title'] = content[start:end]
 
-    # Parse scheduled publish date from article:published_time
+    # Parse scheduled publish date from multiple sources (in order of preference):
+    # 1. article:published_time meta tag
+    # 2. Jekyll front matter date
+    # 3. Schema.org datePublished
+
     publish_match = re.search(r'<meta property="article:published_time" content="(\d{4}-\d{2}-\d{2})"', content)
     if publish_match:
         metadata['publish_date'] = publish_match.group(1)
         metadata['date'] = publish_match.group(1)
+    else:
+        # Check Jekyll front matter date (format: date: YYYY-MM-DD)
+        frontmatter_match = re.search(r'^date:\s*["\']?(\d{4}-\d{2}-\d{2})["\']?', content, re.MULTILINE)
+        if frontmatter_match:
+            metadata['publish_date'] = frontmatter_match.group(1)
+            metadata['date'] = frontmatter_match.group(1)
+        else:
+            # Check Schema.org datePublished
+            schema_match = re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})"', content)
+            if schema_match:
+                metadata['publish_date'] = schema_match.group(1)
+                metadata['date'] = schema_match.group(1)
 
     # Parse category from canonical URL
     # Format: /blog/troubleshooting/slug or /blog/guides/slug

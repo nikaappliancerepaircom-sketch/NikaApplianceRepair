@@ -115,7 +115,7 @@ def generate_sitemap(base_url='https://nikaappliancerepair.com'):
     # 6. Add blog posts from all categories
     print("\n[+] Adding blog posts...")
     blog_dir = base_dir / 'blog'
-    blog_categories = ['troubleshooting', 'maintenance', 'guides', 'seasonal', 'brands', 'locations']
+    blog_categories = ['posts', 'troubleshooting', 'maintenance', 'guides', 'seasonal', 'brands', 'locations']
 
     total_blog_posts = 0
     for category in blog_categories:

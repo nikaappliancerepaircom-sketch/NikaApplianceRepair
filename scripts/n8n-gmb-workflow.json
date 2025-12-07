@@ -1,0 +1,123 @@
+{
+  "name": "Blog to GMB Auto-Poster",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 6
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Check Every 6 Hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "url": "https://nikaappliancerepair.com/feed.xml",
+        "options": {}
+      },
+      "id": "fetch-rss",
+      "name": "Fetch RSS Feed",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [220, 0]
+    },
+    {
+      "parameters": {
+        "mode": "xmlToJson",
+        "options": {}
+      },
+      "id": "parse-xml",
+      "name": "Parse XML",
+      "type": "n8n-nodes-base.xml",
+      "typeVersion": 1,
+      "position": [440, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "check-new",
+              "leftValue": "={{ $json.rss.channel.item[0].pubDate }}",
+              "rightValue": "={{ $now.minus(24, 'hours').toISO() }}",
+              "operator": {
+                "type": "dateTime",
+                "operation": "after"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "check-new-posts",
+      "name": "Is Post New?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [660, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://mybusiness.googleapis.com/v4/accounts/{{GMB_ACCOUNT_ID}}/locations/{{GMB_LOCATION_ID}}/localPosts",
+        "authentication": "oAuth2",
+        "oAuth2": "googleBusinessProfile",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"languageCode\": \"en\",\n  \"summary\": \"🔧 NEW: {{ $json.rss.channel.item[0].title }}\\n\\nRead our latest appliance repair guide!\\n\\n📖 {{ $json.rss.channel.item[0].link }}\",\n  \"callToAction\": {\n    \"actionType\": \"LEARN_MORE\",\n    \"url\": \"{{ $json.rss.channel.item[0].link }}\"\n  },\n  \"topicType\": \"STANDARD\"\n}",
+        "options": {}
+      },
+      "id": "create-gmb-post",
+      "name": "Create GMB Post",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [880, -100]
+    },
+    {
+      "parameters": {
+        "message": "No new posts to share"
+      },
+      "id": "no-new-posts",
+      "name": "No New Posts",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [880, 100]
+    }
+  ],
+  "connections": {
+    "Check Every 6 Hours": {
+      "main": [[{"node": "Fetch RSS Feed", "type": "main", "index": 0}]]
+    },
+    "Fetch RSS Feed": {
+      "main": [[{"node": "Parse XML", "type": "main", "index": 0}]]
+    },
+    "Parse XML": {
+      "main": [[{"node": "Is Post New?", "type": "main", "index": 0}]]
+    },
+    "Is Post New?": {
+      "main": [
+        [{"node": "Create GMB Post", "type": "main", "index": 0}],
+        [{"node": "No New Posts", "type": "main", "index": 0}]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "description": "Automatically posts new blog articles to Google Business Profile. Checks RSS feed every 6 hours and creates a GMB post for new content."
+  }
+}
