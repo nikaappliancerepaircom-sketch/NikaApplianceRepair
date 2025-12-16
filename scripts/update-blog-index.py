@@ -86,18 +86,18 @@ def generate_post_card(category, slug, post_data):
     return card_html
 
 def update_blog_index():
-    """Update blog.html with all published posts"""
+    """Update blog-nika-appliance-repair.html with all published posts"""
     base_dir = Path(__file__).parent.parent
-    blog_index_path = base_dir / 'blog.html'
+    blog_index_path = base_dir / 'blog-nika-appliance-repair.html'
 
     print("=" * 70)
     print("UPDATING BLOG INDEX")
     print("=" * 70)
     print()
 
-    # Read current blog.html
+    # Read current blog index
     if not blog_index_path.exists():
-        print("[ERROR] blog.html not found!")
+        print("[ERROR] blog-nika-appliance-repair.html not found!")
         return False
 
     with open(blog_index_path, 'r', encoding='utf-8') as f:
@@ -114,10 +114,10 @@ def update_blog_index():
         if category_dir.exists():
             category_count = 0
             for post_file in sorted(category_dir.glob('*.html'), reverse=True):  # Newest first
-                post_data = extract_post_data(post_file)
-                post_card_html = generate_post_card(category, post_file.stem, post_data)
-                all_posts.append(post_card_html)
-                category_count += 1
+                post_data = extract_post_data_for_js(post_file, category)
+                if post_data:
+                    all_posts.append(post_data)
+                    category_count += 1
 
             if category_count > 0:
                 print(f"[+] Found {category_count} posts in {category}")
@@ -128,21 +128,29 @@ def update_blog_index():
         print("\n[INFO] No blog posts found to add")
         return True
 
-    # Generate posts grid HTML
-    posts_grid_html = '\n'.join(all_posts)
+    # Sort by date (newest first)
+    all_posts.sort(key=lambda x: x['date'], reverse=True)
 
-    # Find and replace the posts grid section
-    # Looking for: <div class="posts-grid">...</div>
-    # The pattern should match from "<!-- Posts Grid -->" to the closing </div>
-    pattern = r'(<!-- Posts Grid -->\s*<div class="posts-grid">)(.*?)(</div>)'
+    # Generate JavaScript array entries
+    js_entries = []
+    for post in all_posts:
+        # Escape single quotes in title and excerpt
+        title = post['title'].replace("'", "\\'")
+        excerpt = post['excerpt'].replace("'", "\\'")
+        js_entry = f"            {{category: '{post['category']}', title: '{title}', url: '{post['url']}', excerpt: '{excerpt}', date: '{post['date']}', readTime: '{post['readTime']}'}}"
+        js_entries.append(js_entry)
 
-    replacement = rf'\1\n{posts_grid_html}\n        \3'
+    js_array_content = ',\n'.join(js_entries)
+
+    # Find and replace the blogPosts array
+    pattern = r'(const blogPosts = \[)\s*\n.*?\n(\s*\];)'
+
+    replacement = f'\\1\n{js_array_content}\n        \\2'
 
     new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
     if new_content == content:
-        print("\n[WARNING] Could not find posts-grid section to update")
-        print("[ERROR] Pattern not found in blog.html!")
+        print("\n[WARNING] Could not find blogPosts array to update")
         return False
 
     # Write updated content
@@ -155,6 +163,54 @@ def update_blog_index():
     print("=" * 70)
 
     return True
+
+
+def extract_post_data_for_js(filepath, category):
+    """Extract post data for JavaScript array"""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Extract title
+    title = ''
+    if '<title>' in content:
+        start = content.find('<title>') + 7
+        end = content.find('</title>')
+        title = content[start:end].replace(' | Nika Appliance Repair', '').strip()
+
+    if not title:
+        return None
+
+    # Extract meta description
+    excerpt = ''
+    desc_match = re.search(r'name="description"\s+content="([^"]+)"', content)
+    if desc_match:
+        excerpt = desc_match.group(1)[:150] + '...'
+
+    # Extract publish date
+    date = datetime.now().strftime('%Y-%m-%d')
+    date_match = re.search(r'article:published_time"\s+content="(\d{4}-\d{2}-\d{2})"', content)
+    if date_match:
+        date = date_match.group(1)
+    else:
+        schema_match = re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})"', content)
+        if schema_match:
+            date = schema_match.group(1)
+
+    # Calculate reading time
+    word_count = len(re.findall(r'\b\w+\b', content))
+    reading_time = max(1, word_count // 200)
+
+    # Build URL
+    url = f"blog/{category}/{filepath.stem}.html"
+
+    return {
+        'category': category,
+        'title': title,
+        'url': url,
+        'excerpt': excerpt,
+        'date': date,
+        'readTime': f'{reading_time} min'
+    }
 
 def main():
     """Main function"""
