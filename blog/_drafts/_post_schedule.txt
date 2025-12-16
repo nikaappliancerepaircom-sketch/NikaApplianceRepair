@@ -1,14 +1,30 @@
 # Blog Post Publishing Schedule
 # Format: YYYY-MM-DD | filename.html
 # Posts are published daily at 9:00 AM Toronto time
+# GitHub Actions runs automatically - no manual action needed
 
-2025-12-06 | lg-appliance-repair-toronto-complete-guide.html
-2025-12-08 | lg-dishwasher-error-codes-troubleshooting.html
-2025-12-10 | oven-not-heating-evenly-calibration-tips.html
-2025-12-12 | refrigerator-compressor-problems-signs-repair.html
-2025-12-14 | refrigerator-not-cooling-emergency-repair.html
 2025-12-16 | samsung-ice-maker-not-making-ice.html
-2025-12-18 | washer-leaking-from-bottom-common-causes.html
-2025-12-20 | washing-machine-error-codes-brand-guide.html
-2025-12-22 | washing-machine-not-spinning-causes-solutions.html
-2025-12-24 | whirlpool-dishwasher-not-cleaning-dishes.html
+2025-12-17 | fridge-temperature-guide.html
+2025-12-18 | freezer-temperature-settings.html
+2025-12-19 | washer-leaking-from-bottom-common-causes.html
+2025-12-20 | how-to-clean-oven-complete-guide.html
+2025-12-21 | affresh-cleaner-guide.html
+2025-12-22 | washing-machine-error-codes-brand-guide.html
+2025-12-23 | washing-machine-balance-fix.html
+2025-12-24 | dryer-belt-replacement-guide.html
+2025-12-25 | washing-machine-not-spinning-causes-solutions.html
+2025-12-26 | dishwasher-rinse-aid-guide.html
+2025-12-27 | fridge-temperature-1-5-settings.html
+2025-12-28 | dryer-thermal-fuse-guide.html
+2025-12-29 | freezer-defrost-cycle-guide.html
+2025-12-30 | refrigerator-condenser-coils-cleaning.html
+2025-12-31 | whirlpool-dishwasher-not-cleaning-dishes.html
+2026-01-01 | dryer-exhaust-hose-problems.html
+2026-01-02 | oven-door-glass-replacement.html
+2026-01-03 | front-load-washer-door-seal.html
+2026-01-04 | self-cleaning-oven-problems.html
+2026-01-05 | refrigerator-clicking-noise-fix.html
+2026-01-06 | oven-igniter-replacement-guide.html
+2026-01-07 | dishwasher-smells-bad-fix.html
+2026-01-08 | dishwasher-float-switch-repair.html
+2026-01-09 | drain-hose-repair-guide.html
