@@ -2,6 +2,7 @@
 # Publishes 1 scheduled post per day at 9:00 AM Toronto (14:00 UTC)
 # Posts are scheduled via article:published_time meta tag
 # Commits changes to GitHub, Vercel auto-deploys
+# Notifies Google Indexing API for fast indexing
 
 name: Auto-Publish Blog Posts
 
@@ -32,6 +33,10 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: |
+          pip install google-auth google-auth-httplib2
+
       - name: Check for scheduled posts
         id: check-posts
         run: |
@@ -53,6 +58,17 @@ jobs:
       - name: Generate RSS feed
         run: |
           python scripts/generate-rss-feed.py
+
+      - name: Notify Google Indexing API
+        env:
+          GOOGLE_INDEXING_API_KEY: ${{ secrets.GOOGLE_INDEXING_API_KEY }}
+        run: |
+          echo "=== GOOGLE INDEXING API ==="
+          if [ -z "$GOOGLE_INDEXING_API_KEY" ]; then
+            echo "[SKIP] GOOGLE_INDEXING_API_KEY secret not configured"
+          else
+            python scripts/google-indexing-api.py || echo "[WARNING] Google Indexing API notification failed"
+          fi
 
       - name: Preview GMB post content
         run: |
@@ -76,6 +92,7 @@ jobs:
             - Timestamp: $(date)
             - Trigger: Daily schedule (9 AM Toronto)
             - Source: GitHub Actions
+            - Google Indexing: Notified
 
             Vercel will auto-deploy this commit."
             git push
