@@ -140,7 +140,10 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False, day=None
             'guides': 'blog/guides',
             'seasonal': 'blog/seasonal',
             'brands': 'blog/brands',
-            'locations': 'blog/locations'
+            'locations': 'blog/locations',
+            'tips': 'blog/tips',
+            'repair': 'blog/repair',
+            'how-to': 'blog/how-to'
         }
 
         category = metadata.get('category', 'posts')
@@ -167,7 +170,7 @@ def publish_posts(count=5, drafts_folder='blog/_drafts', dry_run=False, day=None
             'title': metadata['title'],
             'category': category,
             'date': metadata['date'],
-            'url': f"/{category_map[category]}/{metadata['filename'].replace('.html', '')}"
+            'url': f"/{category_map.get(category, 'blog/posts')}/{metadata['filename'].replace('.html', '')}"
         })
 
     print(f"\n{'='*70}")
