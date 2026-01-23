@@ -5,8 +5,16 @@
     <link>https://nikaappliancerepair.com/blog</link>
     <description>Expert appliance repair tips, troubleshooting guides, and maintenance advice for Toronto homeowners</description>
     <language>en-ca</language>
-    <lastBuildDate>Thu, 22 Jan 2026 14:19:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jan 2026 14:14:17 +0000</lastBuildDate>
     <atom:link href="https://nikaappliancerepair.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Refrigerator Clicking Noise: Causes, Diagnosis &amp; How to Fix It</title>
+      <link>https://nikaappliancerepair.ca/blog/posts/refrigerator-clicking-noise-fix.html</link>
+      <description>Refrigerator making clicking noises? Learn what causes clicking sounds from the compressor, start relay, or condenser fan, and how to fix the problem.</description>
+      <pubDate>Sat, 10 Jan 2026 09:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://nikaappliancerepair.ca/blog/posts/refrigerator-clicking-noise-fix.html</guid>
+      <enclosure url="https://nikaappliancerepair.ca/blog/images/refrigerator-clicking-noise-fix.webp" type="image/webp"/>
+    </item>
     <item>
       <title>Oven Igniter Replacement Guide: Signs, Testing &amp; DIY Steps</title>
       <link>https://nikaappliancerepair.ca/blog/posts/oven-igniter-replacement-guide.html</link>
@@ -147,13 +155,6 @@
       <description>Learn the ideal freezer temperature (0°F / -18°C) for food safety. Expert guide on freezer settings, dial meanings, and troubleshooting. Toronto appliance repair specialists.</description>
       <pubDate>Thu, 18 Dec 2025 09:00:00 +0000</pubDate>
       <guid isPermaLink="true">https://nikaappliancerepair.com/blog/maintenance/freezer-temperature-settings</guid>
-    </item>
-    <item>
-      <title>Ideal Fridge Temperature: Complete Guide to Refrigerator Settings - Nika Appliance Repair</title>
-      <link>https://nikaappliancerepair.com/blog/maintenance/fridge-temperature-guide</link>
-      <description>Learn the ideal fridge temperature for food safety (35-38°F / 1.7-3.3°C). Expert guide on refrigerator temperature settings, dial meanings, and troubleshooting. Toronto appliance experts.</description>
-      <pubDate>Wed, 17 Dec 2025 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://nikaappliancerepair.com/blog/maintenance/fridge-temperature-guide</guid>
     </item>
   </channel>
 </rss>
