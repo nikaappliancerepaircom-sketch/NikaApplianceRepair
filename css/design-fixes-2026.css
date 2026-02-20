@@ -314,3 +314,39 @@ table caption {
   }
 }
 
+/* =============================================
+   SCROLLBAR FIX — Main page vertical scrollbar
+   no-scrollbars-fix.css applies scrollbar-width:none
+   to ALL elements including html via the * selector.
+   Chrome 121+ honors scrollbar-width, overriding
+   the ::-webkit-scrollbar rules. Fix: explicit
+   html-level override + scrollbar-gutter for CLS.
+   ============================================= */
+
+html {
+  /* Show the main page scrollbar (overrides * { scrollbar-width: none }) */
+  scrollbar-width: thin !important;
+  -ms-overflow-style: auto !important;
+  /* Reserve scrollbar space always → prevents layout shift when content grows */
+  scrollbar-gutter: stable !important;
+  overflow-y: auto !important;
+}
+
+/* Webkit (Chrome, Safari, Edge) */
+html::-webkit-scrollbar {
+  width: 8px !important;
+  display: block !important;
+}
+html::-webkit-scrollbar-track {
+  background: #f0f2f5 !important;
+  display: block !important;
+}
+html::-webkit-scrollbar-thumb {
+  background: #b0bec5 !important;
+  border-radius: 4px !important;
+  display: block !important;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #78909c !important;
+}
+
