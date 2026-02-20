@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- ============================================================ -->
-  <!-- CORE PAGES                                                    -->
-  <!-- ============================================================ -->
   <url>
-    <loc>https://nikaappliancerepair.com/</loc>
+    <loc>https://nikaappliancerepair.com</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/about</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nikaappliancerepair.com/services</loc>
@@ -31,122 +21,14 @@
   <url>
     <loc>https://nikaappliancerepair.com/brands</loc>
     <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/book</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nikaappliancerepair.com/blog-nika-appliance-repair.html</loc>
+    <loc>https://nikaappliancerepair.com/about</loc>
     <lastmod>2026-02-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ============================================================ -->
-  <!-- TEAM PAGES                                                    -->
-  <!-- ============================================================ -->
-  <url>
-    <loc>https://nikaappliancerepair.com/team</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/team/david-martinez</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/team/james-wilson</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/team/michael-toronto</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/team/sarah-chen</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- ============================================================ -->
-  <!-- SERVICE PAGES                                                 -->
-  <!-- ============================================================ -->
-  <url>
-    <loc>https://nikaappliancerepair.com/services/dishwasher-repair</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/services/dryer-repair</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/services/freezer-repair</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/services/microwave-repair</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/services/oven-repair</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/services/range-repair</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/services/refrigerator-repair</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/services/stove-repair</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/services/washer-repair</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- ============================================================ -->
-  <!-- LOCATION PAGES                                               -->
-  <!-- ============================================================ -->
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/toronto</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://nikaappliancerepair.com/locations/ajax</loc>
@@ -263,6 +145,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nikaappliancerepair.com/locations/toronto</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nikaappliancerepair.com/locations/vaughan</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -274,10 +162,60 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- ============================================================ -->
-  <!-- BRAND PAGES                                                   -->
-  <!-- ============================================================ -->
+  <url>
+    <loc>https://nikaappliancerepair.com/services/dishwasher-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/services/dryer-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/services/freezer-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/services/microwave-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/services/oven-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/services/range-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/services/refrigerator-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/services/stove-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/services/washer-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://nikaappliancerepair.com/brands/amana-appliance-repair-toronto</loc>
     <lastmod>2026-02-20</lastmod>
@@ -368,10 +306,66 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- ============================================================ -->
-  <!-- BLOG - TROUBLESHOOTING (59 pages)                            -->
-  <!-- ============================================================ -->
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/dishwasher-float-switch-repair</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/dishwasher-smells-bad-fix</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/drain-hose-repair-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/front-load-washer-door-seal</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/oven-door-glass-replacement</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/oven-igniter-replacement-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/refrigerator-clicking-noise-fix</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/refrigerator-condenser-coils-cleaning</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/self-cleaning-oven-problems</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/posts/whirlpool-dishwasher-not-cleaning-dishes</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://nikaappliancerepair.com/blog/troubleshooting/appliance-repair-cabbagetown</loc>
     <lastmod>2026-02-20</lastmod>
@@ -470,6 +464,12 @@
   </url>
   <url>
     <loc>https://nikaappliancerepair.com/blog/troubleshooting/dryer-repair-toronto</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/troubleshooting/dryer-thermal-fuse-guide</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -697,13 +697,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nikaappliancerepair.com/blog/troubleshooting/washing-machine-leaking</loc>
+    <loc>https://nikaappliancerepair.com/blog/troubleshooting/washing-machine-leaking-water</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nikaappliancerepair.com/blog/troubleshooting/washing-machine-leaking-water</loc>
+    <loc>https://nikaappliancerepair.com/blog/troubleshooting/washing-machine-leaking</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -726,10 +726,90 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- ============================================================ -->
-  <!-- BLOG - GUIDES (14 pages)                                     -->
-  <!-- ============================================================ -->
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/affresh-cleaner-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/dishwasher-maintenance-hard-water</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/dryer-exhaust-hose-problems</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/dryer-vent-cleaning-fire-prevention</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/freezer-temperature-settings</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/fridge-temperature-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-avoid-oven-repairs</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-clean-oven-complete-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-extend-washer-life</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-maintain-refrigerator</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-prevent-dryer-fires</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/microwave-door-seal-replacement-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/range-hood-filter-cleaning-maintenance</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/blog/maintenance/winter-appliance-maintenance-toronto</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://nikaappliancerepair.com/blog/guides/bosch-dishwasher-repair</loc>
     <lastmod>2026-02-20</lastmod>
@@ -814,249 +894,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- ============================================================ -->
-  <!-- BLOG - MAINTENANCE (13 pages)                                -->
-  <!-- ============================================================ -->
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/affresh-cleaner-guide</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/dishwasher-maintenance-hard-water</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/dryer-vent-cleaning-fire-prevention</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/freezer-temperature-settings</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/fridge-temperature-guide</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-avoid-oven-repairs</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-clean-oven-complete-guide</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-extend-washer-life</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-maintain-refrigerator</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/how-to-prevent-dryer-fires</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/microwave-door-seal-replacement-guide</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/range-hood-filter-cleaning-maintenance</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/blog/maintenance/winter-appliance-maintenance-toronto</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ============================================================ -->
-  <!-- SERVICE + LOCATION COMBINATION PAGES                         -->
-  <!-- ============================================================ -->
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dryer-repair-mississauga</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/washer-repair-mississauga</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/refrigerator-repair-mississauga</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/oven-repair-mississauga</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dishwasher-repair-mississauga</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Brampton Service Pages -->
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dryer-repair-brampton</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/washer-repair-brampton</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/refrigerator-repair-brampton</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/oven-repair-brampton</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dishwasher-repair-brampton</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Vaughan Service Pages -->
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dryer-repair-vaughan</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/washer-repair-vaughan</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/refrigerator-repair-vaughan</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/oven-repair-vaughan</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dishwasher-repair-vaughan</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Markham Service Pages -->
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dryer-repair-markham</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/washer-repair-markham</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/refrigerator-repair-markham</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/oven-repair-markham</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dishwasher-repair-markham</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Richmond Hill Service Pages -->
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dryer-repair-richmond-hill</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/washer-repair-richmond-hill</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/refrigerator-repair-richmond-hill</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/oven-repair-richmond-hill</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nikaappliancerepair.com/locations/services/dishwasher-repair-richmond-hill</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>
