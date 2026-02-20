@@ -1,5 +1,12 @@
 {
   "mcpServers": {
+    "gsc": {
+      "command": "node",
+      "args": ["C:/Users/petru/.claude/gsc-mcp-server.mjs"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "C:/Users/petru/.claude/gsc-credentials.json"
+      }
+    },
     "wordpress": {
       "command": "cmd",
       "args": [

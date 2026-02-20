@@ -44,3 +44,6 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
+
+# Terminal Paste Image folder
+.cp-images/
