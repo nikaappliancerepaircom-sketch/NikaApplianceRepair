@@ -199,7 +199,7 @@ Evening
 `https://vercel.com/[PROJECT]/deployments`
 
 **Your Website:**
-`https://www.nikaappliancerepair.ca/blog/`
+`https://www.nikaappliancerepair.com/blog/`
 
 **Google Search Console:**
 `https://search.google.com/search-console/`
