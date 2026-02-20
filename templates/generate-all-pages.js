@@ -72,7 +72,7 @@ function generateLandmarksList(landmarks) {
 // Add location pages
 locationData.locations.forEach(location => {
     sitemapEntries.push(`    <url>
-        <loc>https://nikaappliancerepair.ca/locations/${location.slug}</loc>
+        <loc>https://nikaappliancerepair.com/locations/${location.slug}</loc>
         <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
