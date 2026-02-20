@@ -30,8 +30,8 @@ function replaceText(oldText, newText, pattern = '**/*.html') {
 function updatePhoneNumber(newPhone) {
     processHtmlFiles('**/*.html', (content) => {
         return content
-            .replace(/437-747-6737/g, newPhone)
-            .replace(/4377476737/g, newPhone.replace(/-/g, ''));
+            .replace(/437-524-1053/g, newPhone)
+            .replace(/4375241053/g, newPhone.replace(/-/g, ''));
     });
 }
 

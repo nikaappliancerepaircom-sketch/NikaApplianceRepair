@@ -236,10 +236,10 @@
                 }
                 
                 // Check for phone number
-                if (metaDesc.content.includes('437-747-6737')) {
+                if (metaDesc.content.includes('437-524-1053')) {
                     results.push({status: 'pass', message: 'Meta contains phone number ✓'});
                 } else {
-                    results.push({status: 'fail', message: 'Meta missing phone: 437-747-6737'});
+                    results.push({status: 'fail', message: 'Meta missing phone: 437-524-1053'});
                 }
             }
             
@@ -333,7 +333,7 @@
         
         function checkTechnical(doc, content, results) {
             // Phone number count
-            const phoneCount = (content.match(/437-747-6737/g) || []).length;
+            const phoneCount = (content.match(/437-524-1053/g) || []).length;
             if (phoneCount >= 5) {
                 results.push({status: 'pass', message: `Phone appears ${phoneCount} times ✓`});
             } else {

@@ -58,7 +58,7 @@ const brandContexts = {
     // SEO metadata
     seo: {
       title: "LG Appliance Repair Toronto | Same Day Service | Save $40 - Nika",
-      description: "LG appliance repair Toronto ⚡ Same-day service • 90-day warranty • No hidden fees • 5,200+ happy customers • Licensed & insured. Call 437-747-6737 for $40 OFF!",
+      description: "LG appliance repair Toronto ⚡ Same-day service • 90-day warranty • No hidden fees • 5,200+ happy customers • Licensed & insured. Call 437-524-1053 for $40 OFF!",
       keywords: "LG appliance repair Toronto, LG refrigerator repair, LG washer repair, LG dryer repair, LG dishwasher repair, LG smart thinq repair"
     }
   },
@@ -114,7 +114,7 @@ const brandContexts = {
     
     seo: {
       title: "Samsung Appliance Repair Toronto | Certified Service | Save $40",
-      description: "Samsung appliance repair Toronto 🔧 Certified technicians • Same-day service • 90-day warranty • 5,200+ satisfied customers. Call 437-747-6737!",
+      description: "Samsung appliance repair Toronto 🔧 Certified technicians • Same-day service • 90-day warranty • 5,200+ satisfied customers. Call 437-524-1053!",
       keywords: "Samsung appliance repair Toronto, Samsung refrigerator repair, Samsung washer repair, Samsung dryer repair, Samsung dishwasher repair"
     }
   },

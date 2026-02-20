@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command:*)",
+      "Bash(tasklist:*)",
+      "Bash(reg query \"HKCU\\\\Software\\\\Google\\\\Chrome\\\\NativeMessagingHosts\\\\com.anthropic.claude_browser_extension\")",
+      "Bash(start chrome)",
+      "Bash(taskkill:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "wordpress"
+  ]
+}

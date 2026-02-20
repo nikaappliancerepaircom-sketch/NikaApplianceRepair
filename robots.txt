@@ -406,7 +406,6 @@ Disallow: /
 # SITEMAPS
 # ============================================================
 Sitemap: https://nikaappliancerepair.com/sitemap.xml
-Sitemap: https://nikaappliancerepair.com/sitemap-images.xml
 
 # ============================================================
 # NOTES FOR AI AGENTS:
