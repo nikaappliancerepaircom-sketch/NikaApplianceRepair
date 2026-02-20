@@ -195,7 +195,7 @@ Each page includes:
 **4. CRO Elements**
 - Workiz booking form integration
 - Trust sidebar with benefits
-- Phone number (437-747-6737) clickable throughout
+- Phone number (437-524-1053) clickable throughout
 - Same-day service emphasis
 - 90-day warranty highlighted
 - Transparent pricing
@@ -332,7 +332,7 @@ C:\NikaApplianceRepair\
 - ✅ **Template Consistency:** All pages use proven Richmond Hill structure
 - ✅ **Mobile Responsive:** All pages inherit responsive CSS
 - ✅ **Booking Integration:** Workiz forms on all pages
-- ✅ **Call Tracking:** Phone number consistent (437-747-6737)
+- ✅ **Call Tracking:** Phone number consistent (437-524-1053)
 - ✅ **Performance:** Fast-loading templates (~133 KB average)
 
 ---

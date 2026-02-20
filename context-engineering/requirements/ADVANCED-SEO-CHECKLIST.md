@@ -64,13 +64,13 @@ Calculation: (Keyword Count / Total Words) × 100
 ### Meta Description Advanced
 - [ ] 150-160 characters exactly
 - [ ] Primary keyword in first 100 chars
-- [ ] Include phone: 437-747-6737
+- [ ] Include phone: 437-524-1053
 - [ ] Use action verbs
 - [ ] Include unique value prop
 - [ ] Create urgency
 
 **Template with variations**:
-"Need [service] repair in Toronto? Same-day service, 90-day warranty, licensed technicians. 5,200+ happy customers. Save $40! Call 437-747-6737 now."
+"Need [service] repair in Toronto? Same-day service, 90-day warranty, licensed technicians. 5,200+ happy customers. Save $40! Call 437-524-1053 now."
 
 ### Content Structure for #1 Rankings
 

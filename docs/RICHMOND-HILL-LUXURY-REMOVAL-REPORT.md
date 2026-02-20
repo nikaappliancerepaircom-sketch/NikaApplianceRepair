@@ -37,13 +37,13 @@
 
 **Before:**
 ```html
-<meta name="description" content="Richmond Hill appliance repair experts. Sub-Zero, Wolf, Miele certified. Oak Ridges well water fix. Same-day service. Call 437-747-6737">
+<meta name="description" content="Richmond Hill appliance repair experts. Sub-Zero, Wolf, Miele certified. Oak Ridges well water fix. Same-day service. Call 437-524-1053">
 <meta property="og:title" content="Nika Appliance Repair Richmond Hill | Luxury Appliance Specialists">
 ```
 
 **After:**
 ```html
-<meta name="description" content="Richmond Hill appliance repair experts. Oak Ridges well water fix. Persian & Chinese community experts. Same-day service. Call 437-747-6737">
+<meta name="description" content="Richmond Hill appliance repair experts. Oak Ridges well water fix. Persian & Chinese community experts. Same-day service. Call 437-524-1053">
 <meta property="og:title" content="Nika Appliance Repair Richmond Hill | Same-Day Service">
 ```
 
@@ -307,7 +307,7 @@
 - 90-day warranty
 - 4.9★ rating
 - 5,200+ repairs
-- Phone: 437-747-6737
+- Phone: 437-524-1053
 - Emergency 24/7 service (+$75-150)
 
 ---
@@ -315,7 +315,7 @@
 ## DATA CONSISTENCY CHECK
 
 ### ✅ ALL NUMBERS PRESERVED:
-- Phone: 437-747-6737 ✓
+- Phone: 437-524-1053 ✓
 - Rating: 4.9★ ✓
 - Reviews: 5,200+ ✓
 - Warranty: 90 days ✓

@@ -85,7 +85,7 @@ NikaApplianceRepair/
 5. Create additional pages (services, locations, etc.)
 
 ## 📞 Contact Information
-- Phone: 437-747-6737
+- Phone: 437-524-1053
 - Email: care@niappliancerepair.ca
 - Service Area: Toronto & GTA
 

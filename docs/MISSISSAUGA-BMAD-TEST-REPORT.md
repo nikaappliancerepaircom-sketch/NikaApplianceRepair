@@ -265,7 +265,7 @@ The Mississauga page **FAILS** all three critical deployment gates:
 4. **Unsubstantiated claims:** "#1 choice" (Line 850), "best", "fastest" without proof
 
 **Strengths:**
-✓ Phone number consistent: 437-747-6737
+✓ Phone number consistent: 437-524-1053
 ✓ Service areas consistent
 ✓ No diagnostic pricing conflicts
 ✓ Rating consistent: 4.9★
@@ -425,12 +425,12 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
 ### Line 6: Meta Description
 **Current (148 chars):**
 ```html
-<meta name="description" content="Appliance repair in Mississauga, Ontario. Square One condo specialists, Port Credit waterfront service. Same-day, 90-day warranty. Call 437-747-6737">
+<meta name="description" content="Appliance repair in Mississauga, Ontario. Square One condo specialists, Port Credit waterfront service. Same-day, 90-day warranty. Call 437-524-1053">
 ```
 
 **Fixed (158 chars):**
 ```html
-<meta name="description" content="Appliance repair in Mississauga, Ontario. Square One condo specialists, Port Credit waterfront service. Same-day appointments, 90-day warranty. Call 437-747-6737 today">
+<meta name="description" content="Appliance repair in Mississauga, Ontario. Square One condo specialists, Port Credit waterfront service. Same-day appointments, 90-day warranty. Call 437-524-1053 today">
 ```
 
 ### Line 903: False Manufacturer Claim

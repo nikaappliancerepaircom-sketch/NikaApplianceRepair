@@ -171,7 +171,7 @@ Refrigerator Making Noise? Fix Compressor Sounds Today | Toronto Guide
 
 Change `<meta name="description">` to:
 ```
-Clicking, buzzing or grinding refrigerator? Toronto expert guide: 7 compressor noises diagnosed. Most fixed for $200-400. Same-day repair available. Call 437-747-6737.
+Clicking, buzzing or grinding refrigerator? Toronto expert guide: 7 compressor noises diagnosed. Most fixed for $200-400. Same-day repair available. Call 437-524-1053.
 ```
 
 **Step 2: Fix LG brand page**
@@ -184,7 +184,7 @@ LG Appliance Repair Toronto | Same-Day Service | 90-Day Warranty
 ```
 `<meta description>`:
 ```
-Certified LG repair in Toronto. Fridge, washer, dryer, dishwasher. Same-day booking, 90-day parts warranty. Save $40 on first repair. Call 437-747-6737.
+Certified LG repair in Toronto. Fridge, washer, dryer, dishwasher. Same-day booking, 90-day parts warranty. Save $40 on first repair. Call 437-524-1053.
 ```
 
 **Step 3: Fix Samsung brand page**
@@ -197,7 +197,7 @@ Samsung Appliance Repair Toronto | Certified Tech | Same-Day
 ```
 `<meta description>`:
 ```
-Samsung-certified repair in Toronto. All models: fridge, washer, oven. Same-day service, 90-day warranty. $40 off first repair. Book now: 437-747-6737.
+Samsung-certified repair in Toronto. All models: fridge, washer, oven. Same-day service, 90-day warranty. $40 off first repair. Book now: 437-524-1053.
 ```
 
 **Step 4: Fix Bosch brand page**
@@ -210,18 +210,18 @@ Bosch Appliance Repair Toronto | Authorized Service | $40 Off
 ```
 `<meta description>`:
 ```
-Bosch-authorized repair Toronto. Dishwasher, fridge, oven, washer. Certified techs. Same-day available. 90-day warranty. Save $40 first repair. 437-747-6737.
+Bosch-authorized repair Toronto. Dishwasher, fridge, oven, washer. Certified techs. Same-day available. 90-day warranty. Save $40 first repair. 437-524-1053.
 ```
 
 **Step 5: Fix service pages**
 
 `/services/oven-repair`:
 - Title: `Oven Repair Toronto | Same-Day Service | All Brands | Nika`
-- Desc: `Oven not heating? Toronto's top-rated oven repair service. Gas & electric. All brands. Same-day. 90-day warranty. Certified techs. Call 437-747-6737.`
+- Desc: `Oven not heating? Toronto's top-rated oven repair service. Gas & electric. All brands. Same-day. 90-day warranty. Certified techs. Call 437-524-1053.`
 
 `/services/washer-repair`:
 - Title: `Washer Repair Toronto | Same-Day | All Brands | Nika`
-- Desc: `Washing machine not spinning or leaking? Same-day washer repair in Toronto. All brands: LG, Samsung, Bosch. 90-day warranty. Save $40. Call 437-747-6737.`
+- Desc: `Washing machine not spinning or leaking? Same-day washer repair in Toronto. All brands: LG, Samsung, Bosch. 90-day warranty. Save $40. Call 437-524-1053.`
 
 **Step 6: Verify in browser**
 Open each page → Ctrl+U → check title/meta updated correctly
@@ -345,7 +345,7 @@ Pattern: within content, after diagnosing a problem, add:
 ```html
 <div class="repair-cta">
   <p>Need professional help? <a href="/services/dryer-repair">Our Toronto dryer repair technicians</a>
-  can diagnose and fix this same-day. <a href="tel:4377476737">Call 437-747-6737</a>.</p>
+  can diagnose and fix this same-day. <a href="tel:4375241053">Call 437-524-1053</a>.</p>
 </div>
 ```
 
@@ -422,7 +422,7 @@ PAID (worth it):
 ```
 Name: Nika Appliance Repair
 Address: [actual address - ask client]
-Phone: (437) 747-6737
+Phone: (437) 524-1053
 Website: https://nikaappliancerepair.com
 Email: care@nikaappliancerepair.com
 ```
@@ -632,7 +632,7 @@ Nika Appliance Repair serves the Greater Toronto Area with certified appliance r
 Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, North York, Scarborough
 
 ## Contact
-Phone: (437) 747-6737
+Phone: (437) 524-1053
 Email: care@nikaappliancerepair.com
 Website: https://nikaappliancerepair.com
 
@@ -724,7 +724,7 @@ Allow: /
 File: `C:/NikaApplianceRepair/locations/north-york.html`
 
 Title change: `Appliance Repair North York | Same-Day | All Brands | Nika`
-Description: `North York appliance repair — same-day service in Willowdale, Newtonbrook, Don Mills. All brands. 90-day warranty. Licensed techs. Call 437-747-6737.`
+Description: `North York appliance repair — same-day service in Willowdale, Newtonbrook, Don Mills. All brands. 90-day warranty. Licensed techs. Call 437-524-1053.`
 
 **Commit:** `seo: optimize top 5 location pages with city-specific content`
 

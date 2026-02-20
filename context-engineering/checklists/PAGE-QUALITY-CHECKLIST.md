@@ -8,14 +8,14 @@ This checklist ensures every page meets SEO, marketing, psychological, and conve
 ## ✅ PRE-LAUNCH PAGE CHECKLIST
 
 ### 1. 📱 CONTACT INFORMATION
-- [ ] Phone number 437-747-6737 appears in:
+- [ ] Phone number 437-524-1053 appears in:
   - [ ] Header navigation
   - [ ] Meta description
   - [ ] Hero section
   - [ ] Footer
   - [ ] Floating phone button
   - [ ] All CTAs use tel: links
-- [ ] All phone links use format: `tel:4377476737`
+- [ ] All phone links use format: `tel:4375241053`
 - [ ] Phone number is clickable on mobile
 
 ### 2. 🔍 SEO REQUIREMENTS
@@ -33,7 +33,7 @@ This checklist ensures every page meets SEO, marketing, psychological, and conve
   - [ ] Includes phone number
   - [ ] Has call-to-action
   - [ ] Mentions key benefits (warranty, same-day)
-  - [ ] Example: "Expert fridge repair in Toronto. Same-day service, 90-day warranty. Licensed technicians. Save $40 today! Call 437-747-6737"
+  - [ ] Example: "Expert fridge repair in Toronto. Same-day service, 90-day warranty. Licensed technicians. Save $40 today! Call 437-524-1053"
 
 #### Content Structure
 - [ ] ONE H1 tag only - keyword optimized
@@ -219,7 +219,7 @@ Calculate your page quality score:
 ## 🚦 LAUNCH CRITERIA
 
 **DO NOT LAUNCH IF MISSING:**
-1. Correct phone number (437-747-6737)
+1. Correct phone number (437-524-1053)
 2. Primary keyword in title/H1
 3. Mobile responsive design
 4. At least one CTA above fold

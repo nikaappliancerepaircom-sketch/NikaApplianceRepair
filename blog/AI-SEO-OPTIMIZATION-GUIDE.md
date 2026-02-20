@@ -406,7 +406,7 @@ AI skims content like humans do. If it's not well-structured with schema markup,
      "image": "https://nikaappliancerepair.com/logo.png",
      "@id": "https://nikaappliancerepair.com",
      "url": "https://nikaappliancerepair.com",
-     "telephone": "+14377476737",
+     "telephone": "+14375241053",
      "priceRange": "$$",
      "address": {
        "@type": "PostalAddress",

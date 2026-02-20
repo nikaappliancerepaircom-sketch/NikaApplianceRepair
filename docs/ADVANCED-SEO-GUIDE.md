@@ -149,7 +149,7 @@ replacement or seal repairs fall on the lower end of this range.</p>
   "@type": "HomeAndConstructionBusiness",
   "name": "Nika Appliance Repair",
   "image": "https://nikaappliancerepair.com/logo.png",
-  "telephone": "437-747-6737",
+  "telephone": "437-524-1053",
   "email": "info@nikaappliancerepair.com",
   "address": {
     "@type": "PostalAddress",
@@ -260,7 +260,7 @@ Per 1000 words:
 ```
 Name: Nika Appliance Repair
 Address: Toronto, ON, Canada
-Phone: 437-747-6737
+Phone: 437-524-1053
 ```
 Must be EXACT across all pages and citations
 

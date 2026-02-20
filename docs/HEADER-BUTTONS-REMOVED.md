@@ -21,7 +21,7 @@
     <a class="cta-secondary">CLICK TO CALL US TODAY</a>
 </div>
 <!-- REPLACED WITH: -->
-<p>Call <a href="tel:...">437-747-6737</a> or <a href="#book">book online</a></p>
+<p>Call <a href="tel:...">437-524-1053</a> or <a href="#book">book online</a></p>
 ```
 
 ### 3. Countdown Section (lines 539-544)
@@ -35,17 +35,17 @@
 ### 4. Booking Section (lines 1111-1116)
 ```html
 <!-- REMOVED: .call-btn-large -->
-<a class="call-btn-large">437-747-6737</a>
+<a class="call-btn-large">437-524-1053</a>
 <!-- REPLACED WITH: -->
-<p>...call: <a href="tel:...">437-747-6737</a></p>
+<p>...call: <a href="tel:...">437-524-1053</a></p>
 ```
 
 ### 5. Common Problems Section (lines 1071-1076)
 ```html
 <!-- REMOVED: .emergency-phone-btn -->
-<a class="emergency-phone-btn">437-747-6737</a>
+<a class="emergency-phone-btn">437-524-1053</a>
 <!-- REPLACED WITH: -->
-<p>Call <a href="tel:...">437-747-6737</a> for immediate help.</p>
+<p>Call <a href="tel:...">437-524-1053</a> for immediate help.</p>
 ```
 
 ### CSS Classes Completely Removed:
@@ -64,7 +64,7 @@
 
 ### Simple Text Links (No Button Styling):
 - **Hero Section:**
-  - Text: "Call 437-747-6737 or book online"
+  - Text: "Call 437-524-1053 or book online"
   - Links styled with yellow (#FFD600) underline
 
 - **Countdown Section:**
@@ -73,10 +73,10 @@
 
 - **Booking Section:**
   - Form with `.submit-btn` (only button that remains)
-  - Text link: "call: 437-747-6737"
+  - Text link: "call: 437-524-1053"
 
 - **Common Problems Section:**
-  - Text: "Call 437-747-6737 for immediate help"
+  - Text: "Call 437-524-1053 for immediate help"
   - Inline link with white underline
 
 ---

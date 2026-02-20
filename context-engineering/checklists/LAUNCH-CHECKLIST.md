@@ -4,7 +4,7 @@
 
 ### 1. Content Final Review
 - [ ] All text proofread
-- [ ] Phone: 437-747-6737 verified
+- [ ] Phone: 437-524-1053 verified
 - [ ] Statistics accurate
 - [ ] NO GAS APPLIANCES stated
 - [ ] Links tested
@@ -82,7 +82,7 @@
 
 ## Emergency Contacts
 
-**Issues**: 437-747-6737
+**Issues**: 437-524-1053
 **Developer**: [Contact]
 **Hosting**: [Support]
 **Domain**: [Registrar]

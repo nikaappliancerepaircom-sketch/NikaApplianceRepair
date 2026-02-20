@@ -67,7 +67,7 @@ We have successfully implemented **ALL 15 AI Search parameters** (params 31-45) 
             <strong>Need appliance repair in Toronto?</strong>
             Nika Appliance Repair provides same-day service for
             refrigerators, washers, dryers, dishwashers, ovens, and stoves.
-            Call 437-747-6737 for immediate help. We serve Toronto,
+            Call 437-524-1053 for immediate help. We serve Toronto,
             Mississauga, Brampton, and 60+ GTA areas with licensed,
             insured technicians. Average response time: 45 minutes.
             Pricing: $150-400 per repair with 90-day warranty included.
@@ -222,7 +222,7 @@ Etobicoke & Scarborough | Etobicoke, Scarborough, Agincourt | 35-55 min | ✓ Ye
 
 #### **Param 45: Click-to-Call (tel: links)** ✅
 **All Phone Numbers Now Have tel: Links:**
-- ✅ Line 429: Header phone (437-747-6737)
+- ✅ Line 429: Header phone (437-524-1053)
 - ✅ Line 482: AI Summary Box phone
 - ✅ Line 554: Pricing table note phone
 - ✅ Line 1097: Emergency CTA phone

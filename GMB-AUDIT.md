@@ -15,7 +15,7 @@
 | Category | Appliance repair service | Needs More |
 | Hours | Open 24 hours | ✅ |
 | Website | nappliancerepair.ca | ⚠️ Check |
-| Phone | +1 437-747-6737 | ✅ |
+| Phone | +1 437-524-1053 | ✅ |
 
 ---
 
@@ -158,7 +158,7 @@ Thank you [Name] for the wonderful review! We're glad Igor was able to fix your 
 
 **Template for Negative Review Response:**
 ```
-[Name], we sincerely apologize for your experience. This is not the level of service we strive for. Please contact us directly at 437-747-6737 so we can resolve this immediately. Your satisfaction is our priority.
+[Name], we sincerely apologize for your experience. This is not the level of service we strive for. Please contact us directly at 437-524-1053 so we can resolve this immediately. Your satisfaction is our priority.
 ```
 
 ---

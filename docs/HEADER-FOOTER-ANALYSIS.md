@@ -34,7 +34,7 @@
     </div>
 
     <!-- CTA Buttons -->
-    <a href="tel:" class="cta-phone">437-747-6737</a>
+    <a href="tel:" class="cta-phone">437-524-1053</a>
     <a href="/book" class="cta-book">Book Now</a>  <!-- ЗЕЛЕНАЯ кнопка -->
 </header>
 ```
@@ -76,7 +76,7 @@
     </div>
 
     <!-- CTA Buttons -->
-    <a href="tel:" class="cta-phone">(437) 747-6737</a>
+    <a href="tel:" class="cta-phone">(437) 524-1053</a>
     <a href="book" class="cta-book">Book Now</a>  <!-- СИНЯЯ кнопка -->
 </header>
 ```
@@ -126,7 +126,7 @@
 
         <!-- Column 4: Contact + CTA -->
         <h4>Contact Us</h4>
-        📞 (437) 747-6737
+        📞 (437) 524-1053
         📧 care@niappliancerepair.ca
         📍 60 Walter Tunny Cresent
         📅 Service Hours
@@ -294,8 +294,8 @@ HEADER_TEMPLATE = """
 
         <!-- CTA Buttons -->
         <div class="header-cta">
-            <a href="tel:4377476737" class="cta-phone">
-                (437) 747-6737
+            <a href="tel:4375241053" class="cta-phone">
+                (437) 524-1053
             </a>
             <a href="{book_href}" class="cta-book">Book Now</a>
         </div>
@@ -326,7 +326,7 @@ HEADER_TEMPLATE = """
 ├─────────────────────────────────────────────────────────────┤
 │  NIKA Appliance Repair  │ Services│Locations│About│         │
 │                         │ ⭐⭐⭐⭐⭐ 4.9 (520+)              │
-│                         │ 📞 437-747-6737 │ [Book Now] 🟢 │
+│                         │ 📞 437-524-1053 │ [Book Now] 🟢 │
 └─────────────────────────────────────────────────────────────┘
 
 vs
@@ -336,7 +336,7 @@ vs
 ├─────────────────────────────────────────────────────────────┤
 │ 🔧 NIKA            │ Services│Locations│About│               │
 │    Appliance Repair│ ⭐⭐⭐⭐⭐ 4.9 (5,200+)              │
-│                    │ 📞 (437) 747-6737 │ [Book Now] 🔵  │
+│                    │ 📞 (437) 524-1053 │ [Book Now] 🔵  │
 └─────────────────────────────────────────────────────────────┘
 ```
 

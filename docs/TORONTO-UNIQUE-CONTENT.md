@@ -35,7 +35,7 @@ When your appliances break in Toronto, you need experts who understand this city
 Best Appliance Repair in Toronto
 
 ### Content:
-Looking for reliable appliance repair in Toronto? Nika Appliance Repair delivers expert service to all 158 neighborhoods — Downtown to Scarborough, North York to Etobicoke, and everywhere between. Call **437-747-6737** for rapid response.
+Looking for reliable appliance repair in Toronto? Nika Appliance Repair delivers expert service to all 158 neighborhoods — Downtown to Scarborough, North York to Etobicoke, and everywhere between. Call **437-524-1053** for rapid response.
 
 **Toronto-specific capabilities:**
 - **Century-home specialists:** Certified to work safely in Victorian and Edwardian properties (1880s-1920s) found throughout Cabbagetown, Leslieville, The Annex, and Riverdale — we understand limited amp service, knob-and-tube wiring concerns, and narrow access points
@@ -313,7 +313,7 @@ Toronto winters create specific breakdowns:
 ✅ Parts inventory focused on cold-weather failures
 ✅ Real-time traffic monitoring to avoid snow-related delays
 
-**Emergency contact:** Call **437-747-6737** anytime. We respond fastest during Toronto's coldest periods (typically mid-January through mid-February) when other services are overwhelmed.
+**Emergency contact:** Call **437-524-1053** anytime. We respond fastest during Toronto's coldest periods (typically mid-January through mid-February) when other services are overwhelmed.
 
 **Winter emergency surcharge:** +$75-150 for after-hours service during extreme weather warnings
 
@@ -588,7 +588,7 @@ Humber Bay, Mimico, Long Branch, Alderwood, Rexdale, Kingsway, Islington area
 **How to guarantee same-day service:**
 
 **Option 1 - Phone booking:**
-Call **437-747-6737** before 2:00 PM for same-day appointments. Our dispatch team provides arrival time estimates accounting for Toronto traffic patterns.
+Call **437-524-1053** before 2:00 PM for same-day appointments. Our dispatch team provides arrival time estimates accounting for Toronto traffic patterns.
 
 **Option 2 - Online booking:**
 Book through our website before 12:00 PM (noon) for same-day scheduling.

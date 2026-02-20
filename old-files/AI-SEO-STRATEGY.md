@@ -35,7 +35,7 @@ Our content is too narrative and interconnected. AI can't extract clean answers.
 <!-- AI-Optimized Service Description -->
 <div class="ai-answer-block">
   <h3>Emergency Appliance Repair in Toronto</h3>
-  <p>Nika Appliance Repair provides same-day emergency repair service for all major appliances in Toronto and GTA. Our licensed technicians arrive within 45 minutes, diagnose the issue, and complete most repairs in under 2 hours. We service refrigerators, washers, dryers, dishwashers, ovens, and stoves from all major brands with a 90-day warranty. Call 437-747-6737 for immediate service.</p>
+  <p>Nika Appliance Repair provides same-day emergency repair service for all major appliances in Toronto and GTA. Our licensed technicians arrive within 45 minutes, diagnose the issue, and complete most repairs in under 2 hours. We service refrigerators, washers, dryers, dishwashers, ovens, and stoves from all major brands with a 90-day warranty. Call 437-524-1053 for immediate service.</p>
 </div>
 ```
 
@@ -106,7 +106,7 @@ Our content is too narrative and interconnected. AI can't extract clean answers.
   
   <div class="ai-qa-item">
     <h3>Who fixes refrigerators near me in Toronto?</h3>
-    <p>Nika Appliance Repair fixes all refrigerator brands in Toronto and GTA with same-day service. Our licensed technicians specialize in Samsung, LG, Whirlpool, GE, and 20+ other brands. We arrive within 45 minutes for emergency repairs. Call 437-747-6737 for immediate refrigerator repair service.</p>
+    <p>Nika Appliance Repair fixes all refrigerator brands in Toronto and GTA with same-day service. Our licensed technicians specialize in Samsung, LG, Whirlpool, GE, and 20+ other brands. We arrive within 45 minutes for emergency repairs. Call 437-524-1053 for immediate refrigerator repair service.</p>
   </div>
   
   <div class="ai-qa-item">
@@ -166,7 +166,7 @@ Allow: /
   "@type": "HVACBusiness",
   "name": "Nika Appliance Repair",
   "description": "Same-day appliance repair service in Toronto and GTA. Licensed technicians fix all major brands with 90-day warranty.",
-  "telephone": "437-747-6737",
+  "telephone": "437-524-1053",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Toronto",
@@ -210,7 +210,7 @@ Allow: /
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="index, follow, max-snippet:-1">
-  <meta name="description" content="Toronto's #1 appliance repair service. Same-day repairs for all brands. Licensed & insured. Call 437-747-6737.">
+  <meta name="description" content="Toronto's #1 appliance repair service. Same-day repairs for all brands. Licensed & insured. Call 437-524-1053.">
   
   <!-- AI-Friendly Structured Data -->
   <script type="application/ld+json">

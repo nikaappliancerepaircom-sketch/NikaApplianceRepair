@@ -106,7 +106,7 @@ Example: /services/refrigerator-repair-toronto/
 
 <!-- Dynamic Meta Tags -->
 <title>{Keyword:Appliance} Repair {Location:Toronto} | Save $40 - Nika</title>
-<meta name="description" content="Professional {keyword:appliance} repair in {location:Toronto}. Same-day service, 90-day warranty. Save $40! Call 437-747-6737">
+<meta name="description" content="Professional {keyword:appliance} repair in {location:Toronto}. Same-day service, 90-day warranty. Save $40! Call 437-524-1053">
 
 <!-- Dynamic Content -->
 <script>
@@ -160,7 +160,7 @@ Users from ads want immediate answers:
     
     <!-- 4. Dual CTA -->
     <div class="cta-group">
-        <a href="tel:4377476737" class="cta-call">Call Now: 437-747-6737</a>
+        <a href="tel:4375241053" class="cta-call">Call Now: 437-524-1053</a>
         <a href="#book" class="cta-book">Book Online</a>
     </div>
     

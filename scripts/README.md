@@ -24,7 +24,7 @@ cd C:\NikaApplianceRepair
 # 3. Использовать функции:
 
 # Заменить телефон везде:
-Replace-InAllPages -OldText "437-747-6737" -NewText "555-123-4567"
+Replace-InAllPages -OldText "437-524-1053" -NewText "555-123-4567"
 
 # Заменить текст только в location pages:
 Replace-InLocationPages -OldText "старый текст" -NewText "новый текст"
@@ -101,7 +101,7 @@ nano scripts/bulk-edit.sh
 **PowerShell:**
 ```powershell
 . .\scripts\bulk-edit.ps1
-Replace-InAllPages -OldText "437-747-6737" -NewText "NEW-PHONE"
+Replace-InAllPages -OldText "437-524-1053" -NewText "NEW-PHONE"
 ```
 
 **Node.js:**

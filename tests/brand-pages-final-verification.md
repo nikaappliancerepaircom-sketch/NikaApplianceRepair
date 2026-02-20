@@ -72,7 +72,7 @@ transition: background 0.3s ease;
 - ✅ Navigation: Main navigation menu present
 - ✅ Rating: 5 gold stars (⭐⭐⭐⭐⭐)
 - ✅ Review Score: "4.9 (5,200+)"
-- ✅ Phone: "(437) 747-6737" clickable link
+- ✅ Phone: "(437) 524-1053" clickable link
 - ✅ Book Now: Primary CTA button functional
 - ✅ Mobile Menu: Toggle button present
 
@@ -90,7 +90,7 @@ transition: background 0.3s ease;
 2. ✅ **Top Service Areas** - 12 city links (Toronto, Mississauga, Brampton, etc.)
 3. ✅ **Company Links** - 8 links (About Us, Reviews, FAQ, Privacy, etc.)
 4. ✅ **Contact Information:**
-   - Phone: (437) 747-6737
+   - Phone: (437) 524-1053
    - Email: care@niappliancerepair.ca
    - Address: 60 Walter Tunny Cresent, East Gwillimbury, ON L9N 0R3
    - Service Hours: Mon-Fri 8AM-8PM, Sat 9AM-6PM, Sun 10AM-5PM
@@ -114,7 +114,7 @@ transition: background 0.3s ease;
 1. ✅ "Book Now" (Header - top right)
 2. ✅ "BOOK LG SERVICE NOW" (Hero section)
 3. ✅ "CLICK TO CALL US TODAY" (Hero section)
-4. ✅ "CALL NOW: 437-747-6737" (Multiple sections)
+4. ✅ "CALL NOW: 437-524-1053" (Multiple sections)
 5. ✅ "GET FREE DIAGNOSIS - BOOK NOW" (After problems section)
 6. ✅ "SCHEDULE YOUR LG REPAIR TODAY" (After benefits section)
 7. ✅ "SECURE YOUR DISCOUNT NOW" (Countdown timer section)
@@ -122,7 +122,7 @@ transition: background 0.3s ease;
 
 **Phone Links Verified:**
 - All phone number instances are clickable `tel:` links
-- Format: `tel:4377476737` (proper format for mobile dialing)
+- Format: `tel:4375241053` (proper format for mobile dialing)
 
 ---
 
@@ -198,7 +198,7 @@ transition: background 0.3s ease;
 - Schema.org markup (brand names)
 
 **What Does NOT Need Changing:**
-- Phone number: 437-747-6737 ✅
+- Phone number: 437-524-1053 ✅
 - Review count: 5,200+ ✅
 - Rating: 4.9/5 ✅
 - Service areas: All cities ✅

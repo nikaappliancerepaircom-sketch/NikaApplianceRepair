@@ -72,7 +72,7 @@
 
 ## ⚠️ Important Notes
 
-- Phone number 437-747-6737 verified in all locations
+- Phone number 437-524-1053 verified in all locations
 - NO GAS APPLIANCES policy clearly stated
 - All booking buttons green, call buttons purple
 - Countdown timer functionality preserved

@@ -105,7 +105,7 @@
 **CRITICAL: 0 discrepancies allowed**
 
 1. **Phone number consistency**
-   - Value: 437-747-6737
+   - Value: 437-524-1053
    - Check: SAME number everywhere (header, footer, body, schema)
    - Auto-fix: ✅ Normalize to single format
    - Agent: `data-consistency-agent`
@@ -2015,7 +2015,7 @@ claude-agent parallel-audit index.html
     {
       "param": "phone_consistency",
       "status": "pass",
-      "value": "437-747-6737",
+      "value": "437-524-1053",
       "occurrences": 12,
       "message": "All phone numbers consistent"
     }

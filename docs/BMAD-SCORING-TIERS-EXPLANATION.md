@@ -519,7 +519,7 @@ Voice Search (5 params = 10 pts):
 
 ### **10 Global Numbers:**
 ```
-[ ] Phone: 437-747-6737 SAME everywhere       → MATCH/FAIL
+[ ] Phone: 437-524-1053 SAME everywhere       → MATCH/FAIL
 [ ] Warranty: "90-day" SAME everywhere        → MATCH/FAIL
 [ ] Service areas: SAME list everywhere       → MATCH/FAIL
 [ ] Pricing: SAME ranges everywhere           → MATCH/FAIL

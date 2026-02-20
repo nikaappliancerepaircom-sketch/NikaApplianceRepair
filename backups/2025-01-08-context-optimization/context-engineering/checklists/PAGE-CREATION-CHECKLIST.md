@@ -33,7 +33,7 @@
 - [ ] Images optimized
 
 ### 5. Business Information
-- [ ] Phone: 437-747-6737
+- [ ] Phone: 437-524-1053
 - [ ] Stats: 5,200+ customers
 - [ ] Reviews: 250+
 - [ ] Years: 5+
@@ -81,7 +81,7 @@
 ## Quick Reference
 
 ### Must Include
-✅ Phone: 437-747-6737
+✅ Phone: 437-524-1053
 ✅ Licensed & Insured
 ✅ Same-day service
 ✅ 90-day warranty

@@ -23,7 +23,7 @@
     "https://nikaappliancerepair.ca/images/team.jpg",
     "https://nikaappliancerepair.ca/images/service-van.jpg"
   ],
-  "telephone": "+14377476737",
+  "telephone": "+14375241053",
   "email": "care@nikaappliancerepair.ca",
   "address": {
     "@type": "PostalAddress",
@@ -136,7 +136,7 @@ Every FAQ must work as a standalone answer for AI:
       At Nika Appliance Repair, minor repairs like thermostats or door seals 
       cost $150-$250, while major repairs like compressors or control boards 
       cost $250-$400. We provide upfront quotes with no hidden fees. 
-      Call 437-747-6737 for exact pricing.</p>
+      Call 437-524-1053 for exact pricing.</p>
     </div>
   </div>
 </div>
@@ -203,7 +203,7 @@ Every FAQ must work as a standalone answer for AI:
       <p><strong>Cost:</strong> $150-$350 depending on the issue</p>
       <p><strong>Time:</strong> Most repairs completed same day</p>
       <p><strong>Warranty:</strong> 90 days on all repairs</p>
-      <a href="tel:4377476737">Call 437-747-6737 for Same-Day Service</a>
+      <a href="tel:4375241053">Call 437-524-1053 for Same-Day Service</a>
     </div>
   </div>
 </article>

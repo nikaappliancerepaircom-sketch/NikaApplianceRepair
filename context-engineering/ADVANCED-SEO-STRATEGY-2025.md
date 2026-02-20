@@ -289,7 +289,7 @@ Speed Index: < 3.0s
   "provider": {
     "@type": "LocalBusiness",
     "name": "Nika Appliance Repair",
-    "telephone": "437-747-6737",
+    "telephone": "437-524-1053",
     "priceRange": "$80-$500",
     "address": {
       "@type": "PostalAddress",

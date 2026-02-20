@@ -71,7 +71,7 @@
         <div class="problems-cta">
             <p>[URGENCY STATEMENT]</p>
             <a href="#book">Get Free Diagnosis</a>
-            <a href="tel:">Call Now: 437-747-6737</a>
+            <a href="tel:">Call Now: 437-524-1053</a>
         </div>
     </div>
 </section>

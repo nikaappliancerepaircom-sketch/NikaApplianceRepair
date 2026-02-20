@@ -68,7 +68,7 @@ TIER 8: Performance             (27 params)  - 70% Target     [LOW]
 ### TIER 1: Data Consistency (15 params) - 100% REQUIRED
 
 **What it tests:**
-- Phone: 437-747-6737 (identical everywhere)
+- Phone: 437-524-1053 (identical everywhere)
 - Reviews: 5,200+ (identical everywhere)
 - Rating: 4.9/5 (identical everywhere)
 - Warranty: 90-day (identical everywhere)

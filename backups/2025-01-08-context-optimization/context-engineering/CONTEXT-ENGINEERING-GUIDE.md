@@ -14,9 +14,9 @@
 - All h1, h2, h3 tags use consistent dark blue color (#1A237E)
 
 ## 📞 Contact Information
-**Primary Phone**: 437-747-6737 (Updated across all pages)
-- Format in links: `tel:4377476737`
-- Display format: `437-747-6737`
+**Primary Phone**: 437-524-1053 (Updated across all pages)
+- Format in links: `tel:4375241053`
+- Display format: `437-524-1053`
 - Appears in: Header, Footer, CTAs, Meta descriptions, Hero sections
 
 ## 🎯 Universal Countdown Timer Section
@@ -103,7 +103,7 @@ Located at: `/tools/page-quality-validator.html`
 
 ### Critical Page Requirements
 Every page MUST have:
-1. Phone number 437-747-6737 (header, footer, CTAs)
+1. Phone number 437-524-1053 (header, footer, CTAs)
 2. Mobile responsive design
 3. Page load under 5 seconds
 4. At least one CTA above fold
@@ -181,7 +181,7 @@ Located at: `/docs/MARKETING-PSYCHOLOGY-GUIDE.md`
 
 4. **Final Validation**
    - Use `/tools/page-quality-validator.html` for manual check
-   - Verify all phone numbers are 437-747-6737
+   - Verify all phone numbers are 437-524-1053
    - Test all links and forms
    - Check mobile responsiveness
 

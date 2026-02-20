@@ -73,7 +73,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Nika Appliance Repair",
-  "telephone": "4377476737",
+  "telephone": "4375241053",
   "priceRange": "$$"
 }
 ```
@@ -141,7 +141,7 @@ Crawl-delay: 0
     <h2>Quick Answer: Appliance Repair Toronto</h2>
     <p><strong>Need appliance repair in Toronto?</strong>
     Nika Appliance Repair provides same-day service...
-    Call 437-747-6737. Average response: 45 minutes.
+    Call 437-524-1053. Average response: 45 minutes.
     Pricing: $150-400 with 90-day warranty. 4.9★ from 5,200+ customers.</p>
 </div>
 ```
@@ -647,7 +647,7 @@ p  { font-size: 1.125rem; font-weight: 400; line-height: 1.7; }
 <section class="hero">
     <h1>Same-Day Appliance Repair in Toronto</h1>
     <p>⭐ 4.9/5 • 5,200+ repairs • 90-day warranty</p>
-    <button class="cta-primary">Call Now: 437-747-6737</button>
+    <button class="cta-primary">Call Now: 437-524-1053</button>
     <img src="technician.jpg" alt="Professional technician">
 </section>
 ```
@@ -664,7 +664,7 @@ p  { font-size: 1.125rem; font-weight: 400; line-height: 1.7; }
 **Примеры CTAs:**
 ```html
 <!-- Primary CTA: -->
-<a href="tel:4377476737" class="cta-primary">Call Now</a>
+<a href="tel:4375241053" class="cta-primary">Call Now</a>
 
 <!-- Secondary CTA: -->
 <a href="#book" class="cta-secondary">Book Online</a>
@@ -776,7 +776,7 @@ A - Action:     "Call Now for Same-Day Service"
 
 ### A. Global Numbers (10 параметров)
 ```
-[ ] 1.  Phone SAME everywhere: 437-747-6737 везде одинаково
+[ ] 1.  Phone SAME everywhere: 437-524-1053 везде одинаково
 [ ] 2.  Warranty consistent: "90 days" везде (не "3 months")
 [ ] 3.  Service areas consistent: "60+ areas" везде
 [ ] 4.  Pricing consistent: $150-400 везде
@@ -794,7 +794,7 @@ A - Action:     "Call Now for Same-Day Service"
 grep -n "4.9" index.html  # все рейтинги
 grep -n "5200\|5,200" index.html  # отзывы
 grep -n "90-day\|90 day\|3 month" index.html  # гарантия
-grep -n "437-747-6737\|437 747 6737" index.html  # телефон
+grep -n "437-524-1053\|437 747 6737" index.html  # телефон
 ```
 
 ### B. Factual Accuracy (5 параметров)

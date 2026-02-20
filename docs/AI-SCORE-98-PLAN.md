@@ -50,7 +50,7 @@
 <div class="ai-summary-box" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 2rem; border-left: 5px solid #2196F3; margin: 2rem 0;">
     <div class="container">
         <p style="font-size: 1.1rem; line-height: 1.8; color: #212529; margin: 0;">
-            <strong>Need appliance repair in Toronto?</strong> Nika Appliance Repair provides same-day service for refrigerators, washers, dryers, dishwashers, ovens, and stoves. Call <a href="tel:4377476737" style="color: #2196F3; text-decoration: underline;">437-747-6737</a> for immediate help. We serve Toronto, Mississauga, Brampton, and 60+ GTA areas with licensed, insured technicians. Average response time: 45 minutes. Pricing: $150-400 per repair with 90-day warranty included. Same-day appointments available. 4.9★ rating from 5,200+ customers. All major brands serviced.
+            <strong>Need appliance repair in Toronto?</strong> Nika Appliance Repair provides same-day service for refrigerators, washers, dryers, dishwashers, ovens, and stoves. Call <a href="tel:4375241053" style="color: #2196F3; text-decoration: underline;">437-524-1053</a> for immediate help. We serve Toronto, Mississauga, Brampton, and 60+ GTA areas with licensed, insured technicians. Average response time: 45 minutes. Pricing: $150-400 per repair with 90-day warranty included. Same-day appointments available. 4.9★ rating from 5,200+ customers. All major brands serviced.
         </p>
     </div>
 </div>
@@ -229,7 +229,7 @@ Replace all H2s with question format. Keep the same content, just change heading
             </tbody>
         </table>
         <p style="color: #6c757d; font-size: 0.9rem; margin-top: 1rem;">
-            <strong>Coverage:</strong> We serve 60+ areas across Toronto and the Greater Toronto Area (GTA). For areas not listed, please call 437-747-6737 to confirm service availability.
+            <strong>Coverage:</strong> We serve 60+ areas across Toronto and the Greater Toronto Area (GTA). For areas not listed, please call 437-524-1053 to confirm service availability.
         </p>
     </div>
 </section>
@@ -258,7 +258,7 @@ Replace all H2s with question format. Keep the same content, just change heading
         <span class="faq-icon">+</span>
     </div>
     <div class="faq-answer">
-        <p>Nika Appliance Repair serves Toronto, North York, Scarborough, Mississauga, Brampton, and 60+ GTA areas. Call 437-747-6737 for same-day service. We typically arrive within 45 minutes in most Toronto neighborhoods.</p>
+        <p>Nika Appliance Repair serves Toronto, North York, Scarborough, Mississauga, Brampton, and 60+ GTA areas. Call 437-524-1053 for same-day service. We typically arrive within 45 minutes in most Toronto neighborhoods.</p>
     </div>
 </div>
 
@@ -268,7 +268,7 @@ Replace all H2s with question format. Keep the same content, just change heading
         <span class="faq-icon">+</span>
     </div>
     <div class="faq-answer">
-        <p>Refrigerator repair in Toronto costs $200-400 on average. This includes diagnostic fee, parts, and labor. Most repairs are completed within 1-2 hours and include a 90-day warranty. Call 437-747-6737 for exact pricing.</p>
+        <p>Refrigerator repair in Toronto costs $200-400 on average. This includes diagnostic fee, parts, and labor. Most repairs are completed within 1-2 hours and include a 90-day warranty. Call 437-524-1053 for exact pricing.</p>
     </div>
 </div>
 
@@ -278,7 +278,7 @@ Replace all H2s with question format. Keep the same content, just change heading
         <span class="faq-icon">+</span>
     </div>
     <div class="faq-answer">
-        <p>Yes! We offer same-day appliance repair service in Toronto and GTA. Call 437-747-6737 before 2 PM and we can typically arrive within 45-75 minutes. Same-day service available Monday-Saturday.</p>
+        <p>Yes! We offer same-day appliance repair service in Toronto and GTA. Call 437-524-1053 before 2 PM and we can typically arrive within 45-75 minutes. Same-day service available Monday-Saturday.</p>
     </div>
 </div>
 ```

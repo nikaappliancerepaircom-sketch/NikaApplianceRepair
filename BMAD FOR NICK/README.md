@@ -101,7 +101,7 @@
 ### Critical Checklist (Must Be 100%)
 
 **Data Consistency:**
-- [ ] Phone: 437-747-6737 (8-12 mentions, all clickable)
+- [ ] Phone: 437-524-1053 (8-12 mentions, all clickable)
 - [ ] Reviews: 5,200+ Reviews (not 520+)
 - [ ] Rating: 4.9/5
 - [ ] Warranty: 90-day
@@ -179,7 +179,7 @@ Get-ChildItem -Path "C:\NikaApplianceRepair\locations" -Filter "*.html" |
 Get-ChildItem -Path "C:\NikaApplianceRepair\locations" -Filter "*.html" |
     ForEach-Object {
         $content = Get-Content $_.FullName -Raw
-        $plainPhones = ([regex]::Matches($content, '(?<!href="tel:)\(437\)\s*747-6737') | Measure-Object).Count
+        $plainPhones = ([regex]::Matches($content, '(?<!href="tel:)\(437\)\s*524-1053') | Measure-Object).Count
         if ($plainPhones -gt 0) {
             Write-Host "FAIL: $($_.Name) has $plainPhones unlinked phones"
         }
@@ -225,7 +225,7 @@ All scripts in `C:\NikaApplianceRepair\scripts\`:
 - Category 10 (Data Consistency) must be 100%
 
 ### Q: Can I change the phone number?
-**A:** NO. It must be 437-747-6737 everywhere. Changing it breaks Category 10 (Data Consistency).
+**A:** NO. It must be 437-524-1053 everywhere. Changing it breaks Category 10 (Data Consistency).
 
 ### Q: Can I change the review count?
 **A:** NO. It must be "5,200+ Reviews" everywhere. Changing it breaks Category 10.
@@ -247,7 +247,7 @@ Use `node tools/count-visible-words.js` to check word count (not file size).
 2. ✅ Check if city is luxury or standard
 3. ✅ Use correct brand mentions
 4. ✅ Use correct messaging tone
-5. ✅ Verify phone: 437-747-6737 (8-12 clickable mentions)
+5. ✅ Verify phone: 437-524-1053 (8-12 clickable mentions)
 6. ✅ Verify reviews: 5,200+ Reviews
 7. ✅ Verify warranty: 90-day
 8. ✅ Check word count: 2,000-2,500
@@ -263,7 +263,7 @@ Use `node tools/count-visible-words.js` to check word count (not file size).
 
 ## 📞 DATA TO MEMORIZE
 
-**Phone:** 437-747-6737
+**Phone:** 437-524-1053
 **Reviews:** 5,200+ Reviews
 **Rating:** 4.9/5
 **Warranty:** 90-day

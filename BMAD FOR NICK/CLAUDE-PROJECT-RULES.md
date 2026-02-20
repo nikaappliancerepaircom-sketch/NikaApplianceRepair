@@ -5,7 +5,7 @@ Appliance repair business website serving Toronto and GTA. Focus on residential 
 
 ## Business Data
 - **Company**: Nika Appliance Repair
-- **Phone**: 437-747-6737
+- **Phone**: 437-524-1053
 - **Service Area**: Toronto, Mississauga, Brampton, North York, Scarborough, Etobicoke, Markham, Vaughan, Richmond Hill
 - **Hours**: 24/7 Emergency Service
 - **Rating**: 4.9 ★

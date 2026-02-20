@@ -25,7 +25,7 @@ Successfully implemented a unified header/footer system across **21 pages** (12 
   - Services: 6 service pages
   - Locations: 12 location pages
 - **Desktop CTAs:** 3 conversion buttons
-  - Call: 437-747-6737 (green)
+  - Call: 437-524-1053 (green)
   - Chat: WhatsApp integration (green)
   - Book: Booking form link (blue)
 - **Mobile Sticky Bottom Bar:** 3 buttons (Call, Chat, Book)
@@ -229,7 +229,7 @@ Breakdown:
 
 ### Update Phone Number
 1. Edit `/includes/header.html`
-2. Find `437-747-6737`
+2. Find `437-524-1053`
 3. Replace all instances (4 occurrences)
 4. Save - automatically updates all 21 pages!
 

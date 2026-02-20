@@ -26,7 +26,7 @@
 ### 3. BMAD Tier 1 Auto-Fix
 **Ran auto-fix on all 32 pages:**
 - Fixed hours consistency (standardized to 24/7)
-- Fixed phone number consistency (437-747-6737)
+- Fixed phone number consistency (437-524-1053)
 - Fixed warranty consistency (90-day warranty)
 - Fixed rating consistency (4.9 stars)
 - Fixed review count consistency (5,200+)

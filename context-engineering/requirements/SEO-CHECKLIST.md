@@ -13,12 +13,12 @@
 
 ### Meta Descriptions
 - [ ] 150-160 characters
-- [ ] Include phone: 437-747-6737
+- [ ] Include phone: 437-524-1053
 - [ ] Action-oriented language
 - [ ] Include primary keyword
 - [ ] Mention key benefits
 
-**Template**: Professional [service] repair in Toronto & GTA. Same-day service, 90-day warranty. Licensed & insured. Call 437-747-6737 for immediate help.
+**Template**: Professional [service] repair in Toronto & GTA. Same-day service, 90-day warranty. Licensed & insured. Call 437-524-1053 for immediate help.
 
 ### Headings Structure
 - [ ] ONE H1 per page with primary keyword

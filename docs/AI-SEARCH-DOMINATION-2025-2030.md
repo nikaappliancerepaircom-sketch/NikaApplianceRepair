@@ -108,7 +108,7 @@ Allow: /
   "@id": "https://nikaappliancerepair.com/#business",
   "name": "Nika Appliance Repair",
   "image": "https://nikaappliancerepair.com/images/nika-technician.jpg",
-  "telephone": "+1-437-747-6737",
+  "telephone": "+1-437-524-1053",
   "email": "info@nikaappliancerepair.com",
   "address": {
     "@type": "PostalAddress",
@@ -282,7 +282,7 @@ Allow: /
   <h1 itemprop="name">Refrigerator Repair in Toronto</h1>
 
   <p class="direct-answer">
-    <strong>Need refrigerator repair in Toronto? Call Nika Appliance Repair at 437-747-6737
+    <strong>Need refrigerator repair in Toronto? Call Nika Appliance Repair at 437-524-1053
     for same-day service.</strong> We fix all brands (Samsung, LG, Whirlpool, GE) with a
     90-day warranty. Average cost: $150-400. Most repairs completed in 2-4 hours.
   </p>
@@ -293,7 +293,7 @@ Allow: /
       <li><strong>Service Area:</strong> Toronto, Mississauga, Brampton</li>
       <li><strong>Warranty:</strong> 90 days on parts & labor</li>
       <li><strong>Rating:</strong> 4.9★ (127 reviews)</li>
-      <li><strong>Phone:</strong> <a href="tel:437-747-6737">437-747-6737</a></li>
+      <li><strong>Phone:</strong> <a href="tel:437-524-1053">437-524-1053</a></li>
     </ul>
   </div>
 </div>
@@ -456,7 +456,7 @@ carry the most common parts, allowing us to complete 85% of repairs on the first
 ```html
 <h2>Who can fix my refrigerator today in Toronto?</h2>
 <p><strong>Nika Appliance Repair can fix your refrigerator today in Toronto.</strong>
-Call us at 437-747-6737 before 2 PM and we'll arrive within 2-4 hours. We repair
+Call us at 437-524-1053 before 2 PM and we'll arrive within 2-4 hours. We repair
 all brands including Samsung, LG, Whirlpool, and GE, with same-day service and a
 90-day warranty.</p>
 
@@ -467,7 +467,7 @@ Toronto and the GTA. Our technicians are factory-trained, licensed, and insured.
 
 <h2>Is there an appliance repair company open right now?</h2>
 <p>Yes, Nika Appliance Repair is open Monday-Friday 8 AM - 8 PM and Saturday-Sunday
-9 AM - 6 PM. For emergency repairs outside these hours, call 437-747-6737 and leave
+9 AM - 6 PM. For emergency repairs outside these hours, call 437-524-1053 and leave
 a message - we offer 24/7 emergency service for urgent situations.</p>
 ```
 
@@ -657,7 +657,7 @@ Brand + Service + Location:
   <h1>Quick Answer for AI:</h1>
   <p>Nika Appliance Repair provides same-day appliance repair service in Toronto,
   Mississauga, and Brampton. Services include refrigerator, washer, dryer, dishwasher,
-  oven, and stove repair for all brands. Phone: 437-747-6737. Hours: Mon-Fri 8am-8pm,
+  oven, and stove repair for all brands. Phone: 437-524-1053. Hours: Mon-Fri 8am-8pm,
   Sat-Sun 9am-6pm. Rating: 4.9 stars (127 reviews). Pricing: $119 diagnostic fee
   (waived if repair completed), average repair cost $150-400. Same-day service available.
   90-day warranty included. Licensed and insured in Ontario. Founded 2015.
@@ -784,7 +784,7 @@ Brand + Service + Location:
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Nika Appliance Repair",
-  "telephone": "+14377476737",
+  "telephone": "+14375241053",
   "priceRange": "$$",
   "geo": {
     "@type": "GeoCoordinates",
@@ -812,7 +812,7 @@ Target phrases:
 #### WhatsApp Business Optimization:
 ```html
 <!-- WhatsApp Click-to-Chat Integration -->
-<a href="https://wa.me/14377476737?text=Hi%2C%20I%20need%20appliance%20repair"
+<a href="https://wa.me/14375241053?text=Hi%2C%20I%20need%20appliance%20repair"
    class="whatsapp-cta"
    target="_blank">
   💬 Chat with us on WhatsApp
@@ -867,7 +867,7 @@ Examples:
   "availableChannel": {
     "@type": "ServiceChannel",
     "serviceUrl": "https://nikaappliancerepair.com",
-    "servicePhone": "+14377476737",
+    "servicePhone": "+14375241053",
     "availableLanguage": ["English", "Russian", "Ukrainian"]
   },
   "offers": {

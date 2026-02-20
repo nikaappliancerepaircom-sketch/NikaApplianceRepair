@@ -18,7 +18,7 @@ This document provides step-by-step instructions for Claude AI to test a webpage
 **Service Areas:** Toronto, Mississauga, Brampton, Markham, Vaughan, Richmond Hill, and GTA
 **Founded:** 2017
 **Experience:** 8+ years
-**Phone:** 437-747-6737
+**Phone:** 437-524-1053
 **Rating:** 4.9★ (520+ reviews)
 
 **Key Pages:**
@@ -637,7 +637,7 @@ After completing ALL 292 tests, generate final report:
 Example:
 - ❌ Test 10: Title tag too long (65 chars, should be 50-60)
 - ❌ Test 45: Horizontal scroll on iPhone SE (375px width)
-- ❌ Test 263: Phone number inconsistent (437-747-6737 in header, 4377476737 in footer)
+- ❌ Test 263: Phone number inconsistent (437-524-1053 in header, 4375241053 in footer)
 
 ---
 

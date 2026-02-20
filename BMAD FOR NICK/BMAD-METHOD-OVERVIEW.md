@@ -201,7 +201,7 @@ Focus: Persuasion, trust, authority, reciprocity
 Focus: Same data everywhere, no contradictions
 
 **Key Parameters:**
-- Phone number: 437-747-6737 (EVERYWHERE)
+- Phone number: 437-524-1053 (EVERYWHERE)
 - Reviews: 5,200+ Reviews (EVERYWHERE)
 - Rating: 4.9/5 (EVERYWHERE)
 - Warranty: 90-day (EVERYWHERE)
@@ -254,7 +254,7 @@ Focus: Form design, checkout flow, booking UX
 **Why:** Google penalizes inconsistent data. Users lose trust if phone/pricing/reviews differ across pages.
 
 **Key Requirements:**
-- Phone: 437-747-6737 (everywhere)
+- Phone: 437-524-1053 (everywhere)
 - Reviews: 5,200+ (everywhere)
 - Rating: 4.9/5 (everywhere)
 - Warranty: 90-day (everywhere)
@@ -318,7 +318,7 @@ Each category has weighted importance:
 
 3. **After Writing:**
    - Check word count: `node tools/count-visible-words.js <page.html>`
-   - Verify phone: 437-747-6737 (8-12 mentions)
+   - Verify phone: 437-524-1053 (8-12 mentions)
    - Verify reviews: 5,200+ Reviews
    - Verify warranty: 90-day
    - Check brand consistency (standard vs luxury)
@@ -365,8 +365,8 @@ Each category has weighted importance:
 **Impact:** CRITICAL - poor SEO performance
 
 ### ❌ Issue #3: Phone Numbers Not Clickable
-**Problem:** Plain text phone numbers like "(437) 747-6737" without tel: links
-**Fix:** Wrap in `<a href="tel:4377476737">(437) 747-6737</a>`
+**Problem:** Plain text phone numbers like "(437) 524-1053" without tel: links
+**Fix:** Wrap in `<a href="tel:4375241053">(437) 524-1053</a>`
 **Category:** 1 (SEO-AI) - Voice Search parameter
 **Impact:** CRITICAL - fails voice search optimization
 
@@ -394,7 +394,7 @@ Each category has weighted importance:
 
 ### 1. Data Consistency (Category 10)
 **NEVER change these values:**
-- Phone: 437-747-6737
+- Phone: 437-524-1053
 - Reviews: 5,200+ Reviews
 - Rating: 4.9/5
 - Warranty: 90-day
@@ -439,9 +439,9 @@ node tools/count-visible-words.js locations/city.html
 ### 4. Phone Number (Category 1 + 10)
 **Requirements:**
 - Mentions: 8-12 per page
-- Format: `<a href="tel:4377476737">(437) 747-6737</a>`
+- Format: `<a href="tel:4375241053">(437) 524-1053</a>`
 - Clickable: 100% of mentions must be tel: links
-- Consistent: Same number everywhere (437-747-6737)
+- Consistent: Same number everywhere (437-524-1053)
 
 **Common Locations:**
 - Hero section (2x)
@@ -474,7 +474,7 @@ node tools/count-visible-words.js locations/city.html
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Nika Appliance Repair - [City]",
-  "telephone": "4377476737",
+  "telephone": "4375241053",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
@@ -529,7 +529,7 @@ Before deploying ANY page, verify:
 - [ ] AI crawlers allowed in robots.txt
 
 **Category 10 (Data Consistency) - 100%:**
-- [ ] Phone: 437-747-6737 (everywhere)
+- [ ] Phone: 437-524-1053 (everywhere)
 - [ ] Reviews: 5,200+ Reviews (everywhere)
 - [ ] Rating: 4.9/5 (everywhere)
 - [ ] Warranty: 90-day (everywhere)

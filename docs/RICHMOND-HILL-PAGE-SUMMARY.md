@@ -150,7 +150,7 @@ This adds value for Richmond Hill's largest cultural group (57,600+ Chinese resi
 
 ## Data Consistency Check
 
-**Phone Number:** 437-747-6737 (consistent throughout)
+**Phone Number:** 437-524-1053 (consistent throughout)
 **Warranty:** 90 days (consistent)
 **Response Time:** 30-45 minutes Richmond Hill (consistent)
 **Rating:** 4.9 stars from 5,200+ reviews (consistent)

@@ -21,7 +21,7 @@ I've successfully updated all the buttons on the website to match the vibrant, m
 - **Pulse animation**: On large call buttons
 - **Examples**:
   - "CLICK TO CALL US TODAY"
-  - "CALL NOW: 437-747-6737"
+  - "CALL NOW: 437-524-1053"
   - Phone number CTAs
 
 ## 🚀 Key Improvements:

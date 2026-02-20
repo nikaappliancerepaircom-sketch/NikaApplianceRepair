@@ -21,7 +21,7 @@ Don't let a warm refrigerator spoil your groceries! Our latest guide covers:
 Most fridge issues can be fixed same-day!
 
 📖 Read the full guide on our website
-📞 Emergency repairs: 437-747-6737
+📞 Emergency repairs: 437-524-1053
 
 #RefrigeratorRepair #TorontoAppliances #ApplianceRepairToronto
 ```
@@ -45,7 +45,7 @@ A clogged dryer vent can:
 
 We offer professional dryer vent cleaning across Toronto & GTA.
 
-📞 Book today: 437-747-6737
+📞 Book today: 437-524-1053
 🌐 nappliancerepair.ca
 
 #DryerVentCleaning #TorontoHomes #FirePrevention
@@ -72,7 +72,7 @@ We fix ALL major brands:
 ✅ 90-day warranty on all repairs
 ✅ Licensed & insured technicians
 
-📞 Call now: 437-747-6737
+📞 Call now: 437-524-1053
 💻 Book online: nappliancerepair.ca/booking
 
 *Mention "GMB25" when booking*
@@ -104,7 +104,7 @@ Still having issues? The problem might be:
 
 We diagnose dishwasher problems fast!
 
-📞 437-747-6737
+📞 437-524-1053
 
 #DishwasherRepair #TorontoTips #CleanDishes
 ```
@@ -133,7 +133,7 @@ Markham • Richmond Hill • Oakville
 
 No more waiting days for a repair!
 
-📞 437-747-6737
+📞 437-524-1053
 🌐 nappliancerepair.ca
 
 #SameDayRepair #TorontoAppliances #EmergencyRepair
@@ -161,7 +161,7 @@ Don't ignore these sounds - small issues become expensive repairs!
 
 Free diagnosis with any repair.
 
-📞 437-747-6737
+📞 437-524-1053
 
 #WashingMachineRepair #ApplianceSounds #TorontoRepair
 ```
@@ -190,7 +190,7 @@ What our customers say:
 
 Experience the Nick's difference!
 
-📞 437-747-6737
+📞 437-524-1053
 🌐 nappliancerepair.ca
 
 #TorontoReviews #TrustedRepair #CustomerLove

@@ -61,7 +61,7 @@
 - **Script:** `tests/tier1_critical.py` + `fixers/tier1_fixer.py`
 
 **Example issues fixed:**
-- ❌ Phone: "437-747-6737" vs "4377476737" → ✅ Normalize to "437-747-6737"
+- ❌ Phone: "437-524-1053" vs "4375241053" → ✅ Normalize to "437-524-1053"
 - ❌ Rating: "4.9★" vs "4.9/5" vs "4.9 stars" → ✅ Normalize to "4.9/5"
 - ❌ Missing LocalBusiness schema → ✅ Generate and inject
 
@@ -154,7 +154,7 @@ Edit global business data in `config/business-data.json`:
 
 ```json
 {
-  "phone": "437-747-6737",
+  "phone": "437-524-1053",
   "hours": "Mon-Fri 8-20, Sat 9-18, Sun 10-17",
   "warranty": "90-day",
   "rating": "4.9",
@@ -382,7 +382,7 @@ python tests/tier1_critical.py index.html --verbose
 ```
 
 **Common causes:**
-- Phone number inconsistent (e.g., "437-747-6737" vs "4377476737")
+- Phone number inconsistent (e.g., "437-524-1053" vs "4375241053")
 - Rating varies (e.g., "4.9★" vs "4.8/5")
 - Missing LocalBusiness or AggregateRating schema
 

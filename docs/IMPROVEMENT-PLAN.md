@@ -48,7 +48,7 @@
 <header class="main-header sticky-mobile">
     <div class="header-container">
         <div class="logo">Nika Appliance Repair</div>
-        <a href="tel:4377476737" class="header-cta-mobile">
+        <a href="tel:4375241053" class="header-cta-mobile">
             📞 Call Now
         </a>
     </div>
@@ -68,8 +68,8 @@
 ```html
 <!-- Desktop header with large phone -->
 <div class="header-phone-desktop">
-    <a href="tel:4377476737" class="phone-large">
-        📞 437-747-6737
+    <a href="tel:4375241053" class="phone-large">
+        📞 437-524-1053
     </a>
     <span class="phone-subtext">Available 7 Days/Week</span>
 </div>
@@ -166,7 +166,7 @@ Home | Services ▼ | Locations ▼ | About | Contact
 <!-- Emergency banner in footer -->
 <div class="footer-cta-emergency">
     <h3>🚨 Need Emergency Appliance Repair?</h3>
-    <p>Call now for same-day service: <a href="tel:4377476737">437-747-6737</a></p>
+    <p>Call now for same-day service: <a href="tel:4375241053">437-524-1053</a></p>
     <button class="cta-footer">Schedule Repair Now</button>
 </div>
 ```
@@ -403,7 +403,7 @@ document.addEventListener('mouseout', function(e) {
 <div class="exit-popup">
     <h2>Wait! Don't Let Your Appliance Break Down!</h2>
     <p>Call now and get $40 off your repair today</p>
-    <a href="tel:4377476737" class="cta-urgent">📞 Call 437-747-6737 Now</a>
+    <a href="tel:4375241053" class="cta-urgent">📞 Call 437-524-1053 Now</a>
     <p class="popup-subtext">Offer expires in 15 minutes</p>
 </div>
 ```
@@ -434,7 +434,7 @@ document.addEventListener('mouseout', function(e) {
 ```
 
 ```html
-<a href="tel:4377476737" class="sticky-call-mobile">
+<a href="tel:4375241053" class="sticky-call-mobile">
     📞 Call Now for Fast Service
 </a>
 ```

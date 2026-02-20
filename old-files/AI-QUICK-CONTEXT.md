@@ -3,7 +3,7 @@
 ## 🎯 When Asked About This Project
 
 **Project**: Nika Appliance Repair website for Toronto/GTA market
-**Phone**: 437-747-6737 (use everywhere)
+**Phone**: 437-524-1053 (use everywhere)
 **Status**: ~35% complete, homepage done, needs service/location pages
 **Goal**: Professional, colorful, conversion-focused local service website
 
@@ -11,7 +11,7 @@
 - **Checklist**: Use `PAGE-QUALITY-CHECKLIST.md` when creating pages
 - **Validator**: Run `/tools/page-quality-validator.html` before launch
 - **Min Score**: 90% required, all critical items must pass
-- **Phone**: 437-747-6737 must appear in header, footer, CTAs
+- **Phone**: 437-524-1053 must appear in header, footer, CTAs
 
 ## 🎨 Design Language
 - **Style**: Playful but professional (not corporate)

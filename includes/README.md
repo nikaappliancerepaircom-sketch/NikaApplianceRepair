@@ -66,7 +66,7 @@ Instead of copying header/footer to every page, we load them dynamically:
 
 ### Update Phone Number
 1. Edit `/includes/header.html`
-2. Find `437-747-6737`
+2. Find `437-524-1053`
 3. Replace all instances
 4. Save - automatically updates all pages!
 

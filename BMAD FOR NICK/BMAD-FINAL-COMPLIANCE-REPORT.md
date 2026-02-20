@@ -96,7 +96,7 @@ All 32 location pages now meet BMAD standards for the two most critical categori
 ### ✅ All 15 Parameters PASS on All Pages
 
 #### Global Numbers (10/10) ✅
-268. ✅ Phone SAME everywhere: **437-747-6737** (consistent across all pages)
+268. ✅ Phone SAME everywhere: **437-524-1053** (consistent across all pages)
 269. ✅ Warranty period: **90-day** (consistent)
 270. ✅ Service areas: Neighborhood lists consistent per city
 271. ✅ Pricing: **$150-$450** range consistent
@@ -134,8 +134,8 @@ All 32 location pages now meet BMAD standards for the two most critical categori
 **Date:** 2025-10-17
 
 **Changes:**
-- ✅ Added `tel:4377476737` links to ALL phone number mentions
-- ✅ Wrapped plain text phone numbers: `(437) 747-6737` → `<a href="tel:4377476737">(437) 747-6737</a>`
+- ✅ Added `tel:4375241053` links to ALL phone number mentions
+- ✅ Wrapped plain text phone numbers: `(437) 524-1053` → `<a href="tel:4375241053">(437) 524-1053</a>`
 - ✅ Pages affected: 32 pages
 
 **Result:** Voice Search parameter #45 = 100% ✅
@@ -221,7 +221,7 @@ Get-ChildItem -Path "C:\NikaApplianceRepair\locations" -Filter "*.html" |
 Get-ChildItem -Path "C:\NikaApplianceRepair\locations" -Filter "*.html" |
     ForEach-Object {
         $content = Get-Content $_.FullName -Raw
-        $plainPhones = ([regex]::Matches($content, '(?<!href="tel:)\(437\)\s*747-6737|(?<!href="tel:)437-747-6737(?!")') | Measure-Object).Count
+        $plainPhones = ([regex]::Matches($content, '(?<!href="tel:)\(437\)\s*524-1053|(?<!href="tel:)437-524-1053(?!")') | Measure-Object).Count
         if ($plainPhones -gt 0) {
             Write-Host "FAIL: $($_.Name) has $plainPhones unlinked phones"
         }

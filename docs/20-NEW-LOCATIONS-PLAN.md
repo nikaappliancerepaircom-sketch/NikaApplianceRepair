@@ -41,7 +41,7 @@
 - WebPage schema with mainEntity
 
 ### Что остается одинаковым:
-- Phone: 437-747-6737
+- Phone: 437-524-1053
 - Booking form (Workiz iframe)
 - Trust sidebar ("Why Choose Nika?")
 - Warranty: 90-day
@@ -194,7 +194,7 @@ python tools/bmad-v2/tests/tier2_cro.py locations/etobicoke.html
 2. **Meta Description** (150-160 chars):
    ```
    Fast appliance repair in [City]. [Neighborhoods]. Same-day service.
-   Licensed technicians. 90-day warranty. Call 437-747-6737.
+   Licensed technicians. 90-day warranty. Call 437-524-1053.
    ```
 
 3. **H1 Tag**:
@@ -327,7 +327,7 @@ done
 ### Tier 1: Critical Foundation (100% REQUIRED)
 
 ✅ **Data Consistency:**
-1. Phone: 437-747-6737 (везде одинаково)
+1. Phone: 437-524-1053 (везде одинаково)
 2. Warranty: 90-day (везде одинаково)
 3. Rating: 4.9/5 (везде одинаково)
 4. Business hours: Mon-Fri 8-20, Sat 9-18, Sun 10-17

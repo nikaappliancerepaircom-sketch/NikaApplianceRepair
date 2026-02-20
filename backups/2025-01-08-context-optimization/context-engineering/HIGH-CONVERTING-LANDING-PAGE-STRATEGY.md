@@ -149,7 +149,7 @@
   
   <!-- Trust reinforcement -->
   <div class="form-trust">
-    <p>📞 Or call now: <strong>437-747-6737</strong></p>
+    <p>📞 Or call now: <strong>437-524-1053</strong></p>
     <p>💬 Average response time: <strong>37 seconds</strong></p>
   </div>
 </div>

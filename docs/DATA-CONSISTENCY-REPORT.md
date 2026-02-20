@@ -18,7 +18,7 @@
 
 ### 1. **Phone Number** ✅ CONSISTENT
 ```
-Expected: 437-747-6737
+Expected: 437-524-1053
 Found: 9+ mentions, ALL consistent
 Locations:
 - Line 6: Meta description

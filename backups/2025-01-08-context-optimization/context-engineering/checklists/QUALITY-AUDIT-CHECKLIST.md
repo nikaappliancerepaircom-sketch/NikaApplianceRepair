@@ -17,7 +17,7 @@
 - [ ] Forms usable
 
 ### 3. Content Check
-- [ ] Phone: 437-747-6737
+- [ ] Phone: 437-524-1053
 - [ ] Stats correct (5,200+, etc)
 - [ ] NO GAS mentioned
 - [ ] Spelling correct
@@ -33,7 +33,7 @@
 ## Detailed Audit (30 Minutes)
 
 ### Business Requirements ✓
-- [ ] Phone number: 437-747-6737 (all instances)
+- [ ] Phone number: 437-524-1053 (all instances)
 - [ ] Service areas: 50+ (NOT 60+)
 - [ ] Happy customers: 5,200+
 - [ ] Reviews: 250+

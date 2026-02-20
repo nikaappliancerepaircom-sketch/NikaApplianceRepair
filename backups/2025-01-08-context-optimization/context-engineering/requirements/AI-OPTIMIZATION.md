@@ -84,7 +84,7 @@
 - [ ] Prices included ($150-$400)
 - [ ] Timeline specified (same-day)
 - [ ] Process explained (3 steps)
-- [ ] Contact clear (437-747-6737)
+- [ ] Contact clear (437-524-1053)
 - [ ] Service area defined (50+ areas)
 
 ### Semantic Markup
@@ -104,4 +104,4 @@
 
 ### Voice Search Ready:
 "Hey Google, who fixes appliances near me?"
-"Nika Appliance Repair provides same-day service across Toronto and GTA. Licensed technicians fix all major appliances. Call 437-747-6737."
+"Nika Appliance Repair provides same-day service across Toronto and GTA. Licensed technicians fix all major appliances. Call 437-524-1053."

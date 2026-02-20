@@ -49,8 +49,8 @@
 
         <!-- 4. CTA Buttons -->
         <div class="header-cta">
-            <a href="tel:4377476737" class="cta-phone">
-                (437) 747-6737
+            <a href="tel:4375241053" class="cta-phone">
+                (437) 524-1053
             </a>
             <a href="..." class="cta-book">Book Now</a>
         </div>
@@ -123,7 +123,7 @@
 
         <!-- 3. Contact Info -->
         <div class="footer-contact">
-            Phone: (437) 747-6737
+            Phone: (437) 524-1053
             Email: care@niappliancerepair.ca
         </div>
 

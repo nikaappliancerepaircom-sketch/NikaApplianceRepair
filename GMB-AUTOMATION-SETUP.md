@@ -194,7 +194,7 @@ python scripts/gmb-auto-post.py --dry-run
 
 [Развернутое объяснение]
 
-📞 Нужна помощь? 437-747-6737
+📞 Нужна помощь? 437-524-1053
 
 #ApplianceTips #TorontoHomes
 ```
@@ -206,7 +206,7 @@ python scripts/gmb-auto-post.py --dry-run
 [Детали предложения]
 ⏰ Valid until: [Дата]
 
-📞 Book now: 437-747-6737
+📞 Book now: 437-524-1053
 🌐 nikaappliancerepair.com/book
 
 #ApplianceRepairDeal #Toronto

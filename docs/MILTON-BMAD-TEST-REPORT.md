@@ -43,7 +43,7 @@ The Milton location page demonstrates **strong BMAD v3.1 compliance** with an ov
    - Missing points: 1/3 for length optimization
 
 2. **Meta description too long:** 172 chars (optimal: 150-160)
-   - Current: "Appliance repair in Milton, Ontario. Well water experts, Escarpment climate specialists. Same-day service, 90-day warranty. Save $40 on your first repair! Call 437-747-6737"
+   - Current: "Appliance repair in Milton, Ontario. Well water experts, Escarpment climate specialists. Same-day service, 90-day warranty. Save $40 on your first repair! Call 437-524-1053"
    - Missing points: 1/3 for length optimization
 
 3. **H1 length not optimal:** Missing 1 point
@@ -51,7 +51,7 @@ The Milton location page demonstrates **strong BMAD v3.1 compliance** with an ov
 
 **Recommendations:**
 - Shorten title to 55-58 chars: "Appliance Repair Milton | Well Water Pros | Save $40"
-- Trim meta description to 155 chars: "Milton appliance repair. Well water & Escarpment experts. Same-day service, 90-day warranty. Save $40! Call 437-747-6737"
+- Trim meta description to 155 chars: "Milton appliance repair. Well water & Escarpment experts. Same-day service, 90-day warranty. Save $40! Call 437-524-1053"
 
 ---
 

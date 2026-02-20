@@ -453,7 +453,7 @@ PASS CRITERIA: 15/15 MATCH = ✅ PASS
 
 **Примеры FAIL:**
 ```
-❌ Header: "Call 437-747-6737"
+❌ Header: "Call 437-524-1053"
 ❌ Footer: "Call 437 747 6737"
    → Different format = FAIL
 

@@ -33,8 +33,8 @@
             <div class="trust-reviews">5,200+ Reviews</div>
         </div>
         <div class="header-cta">
-            <a href="tel:4377476737" class="cta-phone">
-                <i class="fas fa-phone"></i> (437) 747-6737
+            <a href="tel:4375241053" class="cta-phone">
+                <i class="fas fa-phone"></i> (437) 524-1053
             </a>
             <a href="/book" class="cta-book">
                 <i class="fas fa-calendar-check"></i> Book Now
@@ -165,8 +165,8 @@
 <div class="cta-box">
     <h3>Ready for Service?</h3>
     <p>Description here</p>
-    <a href="tel:4377476737" class="btn">
-        <i class="fas fa-phone"></i> Call (437) 747-6737
+    <a href="tel:4375241053" class="btn">
+        <i class="fas fa-phone"></i> Call (437) 524-1053
     </a>
 </div>
 ```
@@ -274,7 +274,7 @@
                 <div class="footer-contact-box">
                     <p class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <a href="tel:4377476737" class="contact-link">(437) 747-6737</a>
+                        <a href="tel:4375241053" class="contact-link">(437) 524-1053</a>
                     </p>
                     <p class="contact-item">
                         <i class="far fa-envelope"></i>
@@ -286,7 +286,7 @@
                     </p>
                 </div>
 
-                <a href="tel:4377476737" class="footer-cta-button">
+                <a href="tel:4375241053" class="footer-cta-button">
                     <i class="fas fa-phone"></i>
                     Call for Same-Day Service
                 </a>

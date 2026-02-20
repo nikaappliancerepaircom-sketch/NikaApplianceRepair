@@ -25,7 +25,7 @@
 <!-- Every section needs a complete answer -->
 <div class="ai-answer">
   <h3>How much does appliance repair cost in Toronto?</h3>
-  <p>Appliance repair in Toronto costs $150-$400 on average. Nika Appliance Repair charges $80 for diagnostics (waived with repair), $150-$250 for minor repairs like belts or thermostats, and $250-$400 for major repairs like control boards or compressors. All repairs include a 90-day warranty and same-day service. Call 437-747-6737 for exact pricing.</p>
+  <p>Appliance repair in Toronto costs $150-$400 on average. Nika Appliance Repair charges $80 for diagnostics (waived with repair), $150-$250 for minor repairs like belts or thermostats, and $250-$400 for major repairs like control boards or compressors. All repairs include a 90-day warranty and same-day service. Call 437-524-1053 for exact pricing.</p>
 </div>
 ```
 
@@ -58,7 +58,7 @@ Allow: /
   
   <div class="faq-item">
     <h3>"Hey Google, who fixes appliances near me?"</h3>
-    <p>Nika Appliance Repair provides same-day service across Toronto and GTA. We fix all major appliances within 2 hours. Licensed, insured, with 5,200+ happy customers. Call 437-747-6737.</p>
+    <p>Nika Appliance Repair provides same-day service across Toronto and GTA. We fix all major appliances within 2 hours. Licensed, insured, with 5,200+ happy customers. Call 437-524-1053.</p>
   </div>
   
   <div class="faq-item">
@@ -83,7 +83,7 @@ Every piece of content must work as a standalone answer:
 ### Example Implementation:
 ```html
 <h3>Why is my refrigerator not cooling in Toronto?</h3>
-<p>A refrigerator not cooling in Toronto is often caused by dirty condenser coils, faulty door seals, or compressor issues, especially during humid summers. Nika Appliance Repair diagnoses and fixes all cooling problems within 2 hours for $150-$350. Our licensed technicians carry parts for all major brands and offer same-day service with a 90-day warranty. Call 437-747-6737 for immediate help.</p>
+<p>A refrigerator not cooling in Toronto is often caused by dirty condenser coils, faulty door seals, or compressor issues, especially during humid summers. Nika Appliance Repair diagnoses and fixes all cooling problems within 2 hours for $150-$350. Our licensed technicians carry parts for all major brands and offer same-day service with a 90-day warranty. Call 437-524-1053 for immediate help.</p>
 ```
 
 ## 🔥 Homepage AI Optimization Checklist
@@ -163,7 +163,7 @@ Every piece of content must work as a standalone answer:
 ### For Location Pages:
 ```html
 <h1>Appliance Repair [Neighborhood] - Who Fixes Appliances Near Me?</h1>
-<p>Nika Appliance Repair provides same-day appliance repair service in [Neighborhood], Toronto. Our licensed technicians arrive within 45 minutes to fix refrigerators, washers, dryers, dishwashers, ovens, and stoves from all major brands. With 5,200+ satisfied customers and a 90-day warranty, we're [Neighborhood]'s trusted choice for appliance repair. Call 437-747-6737 for immediate service.</p>
+<p>Nika Appliance Repair provides same-day appliance repair service in [Neighborhood], Toronto. Our licensed technicians arrive within 45 minutes to fix refrigerators, washers, dryers, dishwashers, ovens, and stoves from all major brands. With 5,200+ satisfied customers and a 90-day warranty, we're [Neighborhood]'s trusted choice for appliance repair. Call 437-524-1053 for immediate service.</p>
 ```
 
 ## 🎯 Measuring AI Success

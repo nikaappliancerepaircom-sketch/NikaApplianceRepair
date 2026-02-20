@@ -18,7 +18,7 @@ Use this guide EVERY TIME you:
 ## 📋 MASTER CHECKLIST - CHECK ALL THESE REQUIREMENTS
 
 ### 1. ✅ BUSINESS REQUIREMENTS
-- [ ] Phone number: 437-747-6737 (all instances)
+- [ ] Phone number: 437-524-1053 (all instances)
 - [ ] Service areas: 50+ (NOT 60+)
 - [ ] Happy customers: 5,200+
 - [ ] Reviews: 250+
@@ -229,7 +229,7 @@ Check: `/context-engineering/requirements/IMAGE-OPTIMIZATION-PIPELINE.md`
 ## ⚠️ CRITICAL REMINDERS
 
 1. **ALWAYS CHECK ALL REQUIREMENTS** - No exceptions
-2. **Phone: 437-747-6737** - Never use old number
+2. **Phone: 437-524-1053** - Never use old number
 3. **Statistics must match** - Use exact numbers above
 4. **Test on mobile** - 60% of traffic is mobile
 5. **Test on mobile** - 60% of traffic is mobile

@@ -37,7 +37,7 @@ Changed ONLY Richmond Hill-specific content:
 ```html
 <!-- Meta Tags -->
 <title>Richmond Hill Appliance Repair | Same Day | Save $40</title>
-<meta name="description" content="Richmond Hill appliance repair experts. Oak Ridges well water specialists. Same-day 24/7 service available. Call 437-747-6737 for fast repairs now">
+<meta name="description" content="Richmond Hill appliance repair experts. Oak Ridges well water specialists. Same-day 24/7 service available. Call 437-524-1053 for fast repairs now">
 <link rel="canonical" href="https://nikaappliancerepair.com/locations/richmond-hill">
 
 <!-- H1 Hero -->

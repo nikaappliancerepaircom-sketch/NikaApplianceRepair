@@ -220,7 +220,7 @@ Result: 20/20 CLEAN (100%)
 7. Local landmarks/references
 
 **Content to KEEP (Same Across All Pages):**
-- Phone number: 437-747-6737
+- Phone number: 437-524-1053
 - Review count: 5,200+
 - Rating: 4.9/5
 - Warranty: 90-day

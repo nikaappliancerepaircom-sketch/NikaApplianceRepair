@@ -211,7 +211,7 @@ Conducted comprehensive analysis of the Nika Appliance Repair website to underst
 ### Data Consistency Rules (CRITICAL)
 
 **NEVER CHANGE THESE VALUES:**
-- Phone: 437-747-6737 (8-12 clickable mentions per page)
+- Phone: 437-524-1053 (8-12 clickable mentions per page)
 - Reviews: 5,200+ Reviews
 - Rating: 4.9/5
 - Warranty: 90-day
@@ -264,7 +264,7 @@ Conducted comprehensive analysis of the Nika Appliance Repair website to underst
 ### Category 10 (Data Consistency) - 15 Parameters - MUST BE 100%
 
 **Key Requirements:**
-- Phone: 437-747-6737 (everywhere)
+- Phone: 437-524-1053 (everywhere)
 - Reviews: 5,200+ (everywhere)
 - Rating: 4.9/5 (everywhere)
 - Warranty: 90-day (everywhere)
@@ -413,7 +413,7 @@ python tools/bmad-v2/auto-run.py locations/city.html
 ## 📞 QUICK REFERENCE CARD
 
 **Data to Memorize:**
-- Phone: 437-747-6737
+- Phone: 437-524-1053
 - Reviews: 5,200+ Reviews
 - Rating: 4.9/5
 - Warranty: 90-day

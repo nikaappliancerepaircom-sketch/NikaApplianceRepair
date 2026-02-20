@@ -176,7 +176,7 @@ Our landing pages must address:
     <h3>Don't Let It Get Worse</h3>
     <p>Every hour = More damage + Higher cost</p>
     <button class="cta-final">Reserve Your Spot Now →</button>
-    <p class="or-call">Or Call: <a href="tel:4377476737">437-747-6737</a></p>
+    <p class="or-call">Or Call: <a href="tel:4375241053">437-524-1053</a></p>
   </div>
   
   <!-- Exit Intent Popup Trigger -->

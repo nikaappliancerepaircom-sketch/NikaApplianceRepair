@@ -308,9 +308,9 @@ ELSE:
 ### Global Data (MUST be identical on ALL pages)
 
 **Phone Number:**
-- Primary: 437-747-6737
-- Tel link: `tel:4377476737`
-- Format: `(437) 747-6737` or `437-747-6737`
+- Primary: 437-524-1053
+- Tel link: `tel:4375241053`
+- Format: `(437) 524-1053` or `437-524-1053`
 - Mentions per page: 8-12 clickable links
 
 **Business Info:**
@@ -411,7 +411,7 @@ ELSE:
    - Luxury: 4-6 popular, 4-6 luxury mentions
 
 5. **Check data consistency:**
-   - Phone: 437-747-6737 (everywhere)
+   - Phone: 437-524-1053 (everywhere)
    - Reviews: 5,200+ (everywhere)
    - Warranty: 90-day (everywhere)
    - Pricing: $150-$450 (everywhere)
@@ -421,7 +421,7 @@ ELSE:
 ### When Editing EXISTING Pages:
 
 1. **DO NOT change:**
-   - Phone number (437-747-6737)
+   - Phone number (437-524-1053)
    - Review count (5,200+)
    - Warranty period (90-day)
    - Pricing range ($150-$450)
@@ -501,7 +501,7 @@ ELSE:
 - Parameter #145 (Topical authority): Proper brand expertise signals
 
 **Category 10 (Data Consistency):**
-- Parameter #268 (Phone consistency): Must be 437-747-6737 everywhere
+- Parameter #268 (Phone consistency): Must be 437-524-1053 everywhere
 - Parameter #273 (Review count): Must be 5,200+ everywhere
 - Parameter #270 (Service areas): Brand mentions must match area affluence
 
@@ -511,7 +511,7 @@ ELSE:
 
 **Before Publishing ANY Page:**
 
-- [ ] Phone: 437-747-6737 (8-12 clickable mentions)
+- [ ] Phone: 437-524-1053 (8-12 clickable mentions)
 - [ ] Reviews: 5,200+ Reviews
 - [ ] Rating: 4.9/5
 - [ ] Warranty: 90-day

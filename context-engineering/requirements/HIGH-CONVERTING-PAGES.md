@@ -36,7 +36,7 @@ This means 5-10 out of every 100 visitors should call or book service.
 
 ### Visual Hierarchy (Follow index.html)
 1. **Logo** - Top left (NIKA branding)
-2. **Phone** - Top right (437-747-6737)
+2. **Phone** - Top right (437-524-1053)
 3. **Headline** - Biggest text, dark blue (#1A237E)
 4. **CTAs** - Green book (#4CAF50), Purple call (#7B1FA2)
 5. **Trust elements** - Near CTAs
@@ -103,7 +103,7 @@ This means 5-10 out of every 100 visitors should call or book service.
 - "Book in 30 Seconds"
 
 **Call Now** (Purple buttons):
-- "Call: 437-747-6737"
+- "Call: 437-524-1053"
 - "Speak to Expert Now"
 - "Get Help in 45 Minutes"
 - "Emergency? Call Now"
@@ -164,7 +164,7 @@ This means 5-10 out of every 100 visitors should call or book service.
 ### Mobile CTA Bar
 ```html
 <div class="mobile-cta-bar">
-    <a href="tel:4377476737" class="mobile-call">
+    <a href="tel:4375241053" class="mobile-call">
         <svg><!-- phone icon --></svg>
         Call Now
     </a>
@@ -240,7 +240,7 @@ Track these smaller actions that lead to conversion:
 ## Conversion Checklist
 
 ### Must-Have Elements
-- [ ] Phone visible always (437-747-6737)
+- [ ] Phone visible always (437-524-1053)
 - [ ] CTAs above fold
 - [ ] Trust signals prominent
 - [ ] Social proof displayed

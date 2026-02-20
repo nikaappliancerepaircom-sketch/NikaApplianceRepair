@@ -3,7 +3,7 @@
 ## Above the Fold Requirements
 
 ### Critical Elements
-- [ ] Phone number visible: 437-747-6737
+- [ ] Phone number visible: 437-524-1053
 - [ ] Book Service CTA button
 - [ ] Trust signal (Licensed & Insured)
 - [ ] Value proposition clear
@@ -43,7 +43,7 @@
 - "Get Same-Day Service"
 
 **Call Now**:
-- "Call Now: 437-747-6737"
+- "Call Now: 437-524-1053"
 - "Speak to Expert Now"
 - "Get Immediate Help"
 

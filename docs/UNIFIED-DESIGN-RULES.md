@@ -124,7 +124,7 @@ h1, h2, h3 {
 - `.emergency-phone-btn`
 - `.footer-cta-btn`
 
-**Use for:** "Call Now", "Call 437-747-6737", phone links
+**Use for:** "Call Now", "Call 437-524-1053", phone links
 
 ### Required Button Styles
 ```css
