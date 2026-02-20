@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Same-Day Appliance Repair Toronto · Nika Appliance Repair · 437-524-1053</title>
+  <meta name="description" content="Expert appliance repair in Toronto & GTA. Same-day service, 90-day warranty, no fix no fee. Call 437-524-1053.">
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <style>
+    /* ============================
+       RESET & TOKENS
+       ============================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #2196F3;
+      --blue-mid:   #1976D2;
+      --blue-dark:  #1565C0;
+      --blue-light: #42A5F5;
+      --navy:       #0B1929;
+      --navy-mid:   #0F2640;
+      --yellow:     #FFD600;
+      --green:      #00C853;
+      --white:      #ffffff;
+      --gray-50:    #F7FAFF;
+      --gray-100:   #EEF3FB;
+      --gray-400:   #9BA8C4;
+      --gray-700:   #3D4A6B;
+      --gray-900:   #1A2340;
+      --font-h:     'Fredoka', cursive;
+      --font-b:     'Rubik', sans-serif;
+      --r-sm:  8px;
+      --r-md: 16px;
+      --r-lg: 24px;
+      --r-xl: 32px;
+      --r-full: 999px;
+      --sh-card:  0 4px 24px rgba(21,101,192,.10);
+      --sh-hover: 0 12px 40px rgba(21,101,192,.20);
+      --sh-cta:   0 8px 32px rgba(255,214,0,.38);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: #b0bec5 #f0f2f5;
+    }
+    body {
+      font-family: var(--font-b);
+      color: var(--gray-900);
+      background: var(--white);
+      overflow-x: hidden;
+      line-height: 1.65;
+    }
+    img  { display: block; max-width: 100%; }
+    a    { color: inherit; text-decoration: none; }
+
+    /* ============================
+       STICKY CALL BAR
+       ============================ */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: var(--navy);
+      padding: .7rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      transform: translateY(110%);
+      transition: transform .45s cubic-bezier(.34,1.56,.64,1);
+      box-shadow: 0 -4px 24px rgba(0,0,0,.3);
+    }
+    .sticky-bar.visible { transform: translateY(0); }
+    .sticky-text { font-size: .88rem; color: rgba(255,255,255,.7); }
+    .sticky-text strong { color: #fff; }
+    .sticky-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      background: var(--yellow);
+      color: var(--navy);
+      font-family: var(--font-b);
+      font-weight: 700;
+      font-size: .92rem;
+      padding: .55rem 1.4rem;
+      border-radius: var(--r-full);
+      white-space: nowrap;
+      transition: transform .15s, box-shadow .15s;
+      flex-shrink: 0;
+    }
+    .sticky-btn:hover { transform: scale(1.04); box-shadow: var(--sh-cta); }
+
+    /* ============================
+       HERO
+       ============================ */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      background: var(--navy);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Mesh gradient atmosphere */
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 18% 55%, rgba(33,150,243,.18) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 80% at 82% 25%, rgba(21,101,192,.12) 0%, transparent 55%),
+        radial-gradient(ellipse 45% 45% at 60% 85%, rgba(255,214,0,.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Subtle dot grid */
+    .hero::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 7rem 2.5rem 6rem 6rem;
+      max-width: 660px;
+    }
+
+    /* Available badge */
+    .avail-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(33,150,243,.14);
+      border: 1px solid rgba(33,150,243,.3);
+      color: var(--blue-light);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .35rem 1rem;
+      border-radius: var(--r-full);
+      margin-bottom: 1.6rem;
+      opacity: 0;
+      animation: fadeUp .6s .1s ease forwards;
+    }
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      position: relative;
+      flex-shrink: 0;
+    }
+    .dot::after {
+      content: '';
+      position: absolute; inset: -3px;
+      border-radius: 50%;
+      background: var(--green);
+      opacity: .4;
+      animation: ripple 1.6s ease infinite;
+    }
+    @keyframes ripple {
+      0%,100% { transform: scale(1); opacity: .4; }
+      50%      { transform: scale(2); opacity: 0; }
+    }
+
+    .hero-title {
+      font-family: var(--font-h);
+      font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.13;
+      margin-bottom: 1.2rem;
+      opacity: 0;
+      animation: fadeUp .7s .25s ease forwards;
+    }
+    .hero-title .accent  { color: var(--yellow); }
+    .hero-title .hi-blue { color: var(--blue-light); }
+
+    .hero-sub {
+      font-size: 1.08rem;
+      color: rgba(255,255,255,.62);
+      margin-bottom: 1.9rem;
+      opacity: 0;
+      animation: fadeUp .7s .38s ease forwards;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .65rem;
+      margin-bottom: 2.4rem;
+      opacity: 0;
+      animation: fadeUp .7s .48s ease forwards;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.11);
+      color: rgba(255,255,255,.82);
+      font-size: .83rem;
+      padding: .3rem .85rem;
+      border-radius: var(--r-full);
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      opacity: 0;
+      animation: fadeUp .7s .58s ease forwards;
+    }
+    .btn-yellow {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--yellow); color: var(--navy);
+      font-family: var(--font-b); font-weight: 700; font-size: 1.05rem;
+      padding: 1rem 2.25rem;
+      border-radius: var(--r-full);
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: var(--sh-cta);
+    }
+    .btn-yellow:hover { transform: translateY(-3px); box-shadow: 0 14px 42px rgba(255,214,0,.48); }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: rgba(255,255,255,.08);
+      border: 1.5px solid rgba(255,255,255,.32);
+      color: var(--white);
+      font-family: var(--font-b); font-weight: 600; font-size: 1.05rem;
+      padding: 1rem 2rem;
+      border-radius: var(--r-full);
+      transition: background .2s, border-color .2s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.6); }
+
+    /* Hero image */
+    .hero-img-col {
+      position: relative; z-index: 2;
+      height: 100%;
+      min-height: 100svh;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .hero-img-col img {
+      height: 92vh;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: bottom;
+      opacity: 0;
+      animation: fadeIn 1.1s .25s ease forwards;
+      filter: drop-shadow(0 24px 64px rgba(33,150,243,.28));
+    }
+    /* Blue glow under figure */
+    .hero-img-col::before {
+      content: '';
+      position: absolute; bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 80%; height: 220px;
+      background: radial-gradient(ellipse at center bottom, rgba(33,150,243,.22) 0%, transparent 68%);
+      pointer-events: none;
+    }
+
+    /* Wave divider */
+    .hero-wave {
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      line-height: 0; z-index: 3;
+    }
+    .hero-wave svg { display: block; width: 100%; }
+
+
+    /* ============================
+       SHARED SECTION ELEMENTS
+       ============================ */
+    .tag {
+      display: inline-block;
+      font-size: .73rem; font-weight: 700;
+      letter-spacing: .11em; text-transform: uppercase;
+      padding: .32rem .95rem;
+      border-radius: var(--r-full);
+      margin-bottom: .9rem;
+    }
+    .tag-blue  { background: rgba(33,150,243,.1); color: var(--blue-mid); }
+    .tag-light { background: rgba(255,255,255,.14); color: rgba(255,255,255,.88); }
+
+    .sec-title {
+      font-family: var(--font-h);
+      font-size: clamp(1.75rem, 3vw, 2.6rem);
+      font-weight: 700; line-height: 1.18;
+      margin-bottom: .85rem;
+    }
+    .sec-title.dark  { color: var(--gray-900); }
+    .sec-title.light { color: var(--white); }
+
+    .sec-sub { font-size: 1.02rem; max-width: 540px; }
+    .sec-sub.dark  { color: var(--gray-700); }
+    .sec-sub.light { color: rgba(255,255,255,.65); }
+
+    .sec-head { text-align: center; margin-bottom: 3.5rem; }
+    .sec-head .sec-sub { margin: 0 auto; }
+
+    /* Shared button */
+    .btn-blue {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--blue-mid); color: #fff;
+      font-family: var(--font-b); font-weight: 700; font-size: 1rem;
+      padding: .85rem 2rem; border-radius: var(--r-full);
+      transition: background .2s, transform .2s;
+    }
+    .btn-blue:hover { background: var(--blue-dark); transform: translateY(-2px); }
+
+    /* ============================
+       TRUST BAR (section 2)
+       ============================ */
+    .trust {
+      padding: 4.5rem 2rem;
+      background: var(--white);
+    }
+    .trust-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .trust-card {
+      text-align: center;
+      padding: 2rem 1.25rem;
+      border-radius: var(--r-lg);
+      background: var(--gray-50);
+      border: 1px solid rgba(33,150,243,.08);
+      transition: transform .25s, box-shadow .25s;
+    }
+    .trust-card:hover { transform: translateY(-5px); box-shadow: var(--sh-card); }
+    .trust-num {
+      font-family: var(--font-h);
+      font-size: 2.6rem; font-weight: 700;
+      color: var(--blue-mid);
+      line-height: 1; margin-bottom: .35rem;
+    }
+    .trust-lbl { font-size: .88rem; color: var(--gray-700); font-weight: 500; }
+
+
+    /* ============================
+       SERVICES (section 3)
+       ============================ */
+    .services {
+      padding: 6rem 2rem;
+      background: var(--gray-100);
+    }
+    .svc-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .svc-card {
+      background: var(--white);
+      border-radius: var(--r-lg);
+      padding: 2rem 1.75rem;
+      border: 1px solid rgba(33,150,243,.09);
+      position: relative; overflow: hidden;
+      transition: transform .25s, box-shadow .25s, border-color .25s;
+    }
+    .svc-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--blue) 0%, var(--blue-light) 100%);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform .3s ease;
+    }
+    .svc-card:hover::before  { transform: scaleX(1); }
+    .svc-card:hover { transform: translateY(-6px); box-shadow: var(--sh-hover); border-color: rgba(33,150,243,.18); }
+
+    .svc-icon {
+      width: 54px; height: 54px;
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-mid) 100%);
+      border-radius: var(--r-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; margin-bottom: 1.2rem;
+      transition: transform .25s;
+    }
+    .svc-card:hover .svc-icon { transform: scale(1.1) rotate(-6deg); }
+
+    .svc-name {
+      font-family: var(--font-h); font-size: 1.2rem; font-weight: 600;
+      color: var(--gray-900); margin-bottom: .45rem;
+    }
+    .svc-desc  { font-size: .9rem; color: var(--gray-700); line-height: 1.65; }
+    .svc-price { margin-top: 1rem; font-size: .85rem; font-weight: 600; color: var(--blue-mid); }
+
+
+    /* ============================
+       HOW IT WORKS (section 4)
+       ============================ */
+    .how {
+      padding: 6.5rem 2rem;
+      background: var(--navy);
+      position: relative; overflow: hidden;
+    }
+    .how::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 70% at 50% 50%, rgba(33,150,243,.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .how-inner { max-width: 960px; margin: 0 auto; }
+
+    .steps-row {
+      display: grid;
+      grid-template-columns: 1fr 80px 1fr 80px 1fr;
+      align-items: start;
+      gap: 0;
+    }
+    .step-conn {
+      align-self: flex-start;
+      margin-top: 2rem;
+      height: 2px;
+      background: rgba(33,150,243,.35);
+      position: relative;
+    }
+    .step-conn::after {
+      content: '';
+      position: absolute; top: -4px; right: -1px;
+      width: 10px; height: 10px;
+      border-top: 2px solid rgba(33,150,243,.55);
+      border-right: 2px solid rgba(33,150,243,.55);
+      transform: rotate(45deg);
+    }
+    .step { text-align: center; padding: 0 .75rem; }
+    .step-num {
+      width: 54px; height: 54px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue-mid) 0%, var(--blue) 100%);
+      color: #fff;
+      font-family: var(--font-h); font-size: 1.4rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.2rem;
+      box-shadow: 0 4px 20px rgba(33,150,243,.4);
+    }
+    .step-title { font-family: var(--font-h); font-size: 1.18rem; font-weight: 600; color: #fff; margin-bottom: .5rem; }
+    .step-desc  { font-size: .88rem; color: rgba(255,255,255,.57); line-height: 1.65; }
+
+
+    /* ============================
+       REVIEWS (section 5)
+       ============================ */
+    .reviews {
+      padding: 6rem 2rem;
+      background: var(--white);
+    }
+    .reviews-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .rev-card {
+      background: var(--gray-50);
+      border-radius: var(--r-lg); padding: 2rem;
+      border: 1px solid rgba(33,150,243,.07);
+      transition: transform .25s, box-shadow .25s;
+    }
+    .rev-card:hover { transform: translateY(-5px); box-shadow: var(--sh-card); }
+    .stars { color: #FFA000; font-size: 1.05rem; letter-spacing: .05em; margin-bottom: .9rem; }
+    .rev-text {
+      font-size: .93rem; color: var(--gray-700);
+      line-height: 1.72; margin-bottom: 1.25rem; font-style: italic;
+    }
+    .rev-author  { display: flex; align-items: center; gap: .7rem; }
+    .rev-avatar  {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue-mid), var(--blue-light));
+      color: #fff;
+      font-family: var(--font-h); font-size: 1.1rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .rev-name { font-weight: 600; font-size: .93rem; color: var(--gray-900); }
+    .rev-meta { font-size: .78rem; color: var(--gray-400); }
+
+    .goog-badge {
+      display: flex; align-items: center; gap: 1rem;
+      max-width: fit-content; margin: 2.8rem auto 0;
+      background: var(--gray-50);
+      border: 1px solid rgba(33,150,243,.1);
+      border-radius: var(--r-full);
+      padding: .7rem 1.5rem;
+    }
+    .goog-text { font-size: .88rem; color: var(--gray-700); }
+    .goog-text strong { color: var(--gray-900); }
+
+
+    /* ============================
+       PRICING (section 6)
+       ============================ */
+    .pricing {
+      padding: 6rem 2rem;
+      background: var(--navy-mid);
+      position: relative; overflow: hidden;
+    }
+    .pricing::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 28% 65%, rgba(33,150,243,.13) 0%, transparent 58%);
+      pointer-events: none;
+    }
+    .pricing-inner { max-width: 1100px; margin: 0 auto; }
+
+    .price-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .price-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--r-lg); padding: 2rem; text-align: center;
+      transition: transform .25s, background .25s;
+    }
+    .price-card:hover { transform: translateY(-5px); background: rgba(255,255,255,.09); }
+    .price-card.feat {
+      background: linear-gradient(135deg, rgba(33,150,243,.22) 0%, rgba(21,101,192,.22) 100%);
+      border-color: rgba(33,150,243,.4);
+    }
+    .price-type {
+      font-size: .78rem; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: rgba(255,255,255,.5); margin-bottom: .7rem;
+    }
+    .price-num {
+      font-family: var(--font-h); font-size: 2.1rem; font-weight: 700;
+      color: #fff; margin-bottom: .45rem;
+    }
+    .price-num small { font-size: 1rem; font-weight: 400; color: rgba(255,255,255,.45); }
+    .price-note { font-size: .86rem; color: rgba(255,255,255,.55); }
+
+    .guarantees {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 1.75rem; padding: 2rem;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: var(--r-lg);
+    }
+    .g-item {
+      display: flex; align-items: center; gap: .7rem;
+      color: rgba(255,255,255,.82); font-size: .92rem; font-weight: 500;
+    }
+    .g-ico {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: rgba(33,150,243,.2);
+      display: flex; align-items: center; justify-content: center; font-size: 1.15rem;
+    }
+
+
+    /* ============================
+       FINAL CTA (section 7)
+       ============================ */
+    .cta-final {
+      padding: 7rem 2rem;
+      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 50%, var(--blue-light) 100%);
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cta-final::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .cta-inner { position: relative; max-width: 680px; margin: 0 auto; }
+    .cta-title {
+      font-family: var(--font-h);
+      font-size: clamp(2rem, 4vw, 3.1rem); font-weight: 700;
+      color: #fff; margin-bottom: .9rem;
+    }
+    .cta-sub { font-size: 1.05rem; color: rgba(255,255,255,.78); margin-bottom: 2.5rem; }
+    .cta-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+
+    .btn-white {
+      display: inline-flex; align-items: center; gap: .55rem;
+      background: #fff; color: var(--blue-mid);
+      font-family: var(--font-b); font-weight: 700; font-size: 1.08rem;
+      padding: 1.05rem 2.5rem; border-radius: var(--r-full);
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 8px 28px rgba(0,0,0,.15);
+    }
+    .btn-white:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(0,0,0,.22); }
+
+    .btn-wghost {
+      display: inline-flex; align-items: center; gap: .55rem;
+      background: rgba(255,255,255,.12);
+      border: 2px solid rgba(255,255,255,.65);
+      color: #fff;
+      font-family: var(--font-b); font-weight: 600; font-size: 1.08rem;
+      padding: 1rem 2.25rem; border-radius: var(--r-full);
+      transition: background .2s;
+    }
+    .btn-wghost:hover { background: rgba(255,255,255,.2); }
+
+    .cta-note { margin-top: 1.5rem; font-size: .82rem; color: rgba(255,255,255,.58); }
+    .cta-areas { margin-top: .6rem; font-size: .82rem; color: rgba(255,255,255,.45); }
+
+
+    /* ============================
+       ANIMATIONS
+       ============================ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    /* ============================
+       RESPONSIVE
+       ============================ */
+    @media (max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-content { padding: 5.5rem 2rem 3rem; max-width: 100%; }
+      .hero-img-col { min-height: 420px; }
+      .hero-img-col img { height: 420px; }
+      .trust-grid { grid-template-columns: repeat(2, 1fr); }
+      .svc-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps-row { grid-template-columns: 1fr; gap: 2.5rem; }
+      .step-conn { display: none; }
+      .reviews-grid { grid-template-columns: 1fr 1fr; }
+      .price-cards { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+    }
+
+    @media (max-width: 640px) {
+      .hero-title { font-size: 2.2rem; }
+      .hero-ctas { flex-direction: column; }
+      .btn-yellow, .btn-ghost, .btn-white, .btn-wghost { justify-content: center; }
+      .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+      .svc-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .guarantees { flex-direction: column; align-items: flex-start; }
+      .cta-btns { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     STICKY CALL BAR
+═══════════════════════════════ -->
+<div class="sticky-bar" id="stickyBar">
+  <span class="sticky-text"><strong>🔧 Appliance broken?</strong> Same-day technician available.</span>
+  <a href="tel:4375241053" class="sticky-btn">📞 437-524-1053</a>
+</div>
+
+
+<!-- ═══════════════════════════════
+     1. HERO
+═══════════════════════════════ -->
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="avail-badge">
+      <span class="dot"></span>
+      Available Today &mdash; Same-Day Service
+    </div>
+
+    <h1 class="hero-title">
+      Your Appliance Fixed<br>
+      <span class="accent">Today</span> &mdash;
+      <span class="hi-blue">Guaranteed</span>
+    </h1>
+
+    <p class="hero-sub">
+      Expert appliance repair across Toronto &amp; the GTA. Same-day service,
+      transparent pricing, and a 90-day warranty on every repair.
+    </p>
+
+    <div class="hero-pills">
+      <span class="pill">⭐ 4.9 / 5 Google Rating</span>
+      <span class="pill">🔧 500+ Repairs Done</span>
+      <span class="pill">✅ No Fix, No Fee</span>
+      <span class="pill">📅 Open 7 Days</span>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="tel:4375241053" class="btn-yellow">📞 Call 437-524-1053</a>
+      <a href="/#booking"      class="btn-ghost" >📅 Book Online</a>
+    </div>
+
+  </div>
+
+  <div class="hero-img-col">
+    <img
+      src="assets/images/friendly-technician-character-min.webp"
+      alt="Nika Appliance Repair professional technician"
+      fetchpriority="high"
+      width="800"
+      height="1000"
+    >
+  </div>
+
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 70 L1440 70 L1440 28 C1200 68 840 8 480 42 C240 64 80 18 0 48 Z" fill="white"/>
+    </svg>
+  </div>
+
+</section>
+
+
+<!-- ═══════════════════════════════
+     2. TRUST BAR
+═══════════════════════════════ -->
+<section class="trust">
+  <div class="trust-grid">
+    <div class="trust-card reveal">
+      <div class="trust-num">4.9 ★</div>
+      <div class="trust-lbl">Google Rating</div>
+    </div>
+    <div class="trust-card reveal" style="transition-delay:.1s">
+      <div class="trust-num">500+</div>
+      <div class="trust-lbl">Repairs Completed</div>
+    </div>
+    <div class="trust-card reveal" style="transition-delay:.2s">
+      <div class="trust-num">Same Day</div>
+      <div class="trust-lbl">Service Available</div>
+    </div>
+    <div class="trust-card reveal" style="transition-delay:.3s">
+      <div class="trust-num">90-Day</div>
+      <div class="trust-lbl">Repair Warranty</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     3. SERVICES
+═══════════════════════════════ -->
+<section class="services">
+  <div class="sec-head reveal">
+    <span class="tag tag-blue">What We Repair</span>
+    <h2 class="sec-title dark">All Major Home Appliances</h2>
+    <p class="sec-sub dark">Factory-trained technicians for Samsung, LG, Whirlpool, Bosch, GE, KitchenAid, and more.</p>
+  </div>
+
+  <div class="svc-grid">
+
+    <div class="svc-card reveal">
+      <div class="svc-icon">🧊</div>
+      <div class="svc-name">Refrigerator Repair</div>
+      <div class="svc-desc">Not cooling, leaking water, ice maker issues, strange noises — diagnosed and fixed same day.</div>
+      <div class="svc-price">From $150 CAD</div>
+    </div>
+
+    <div class="svc-card reveal" style="transition-delay:.08s">
+      <div class="svc-icon">👕</div>
+      <div class="svc-name">Washer Repair</div>
+      <div class="svc-desc">Won't drain, won't spin, leaking, vibrating — front-load and top-load models covered.</div>
+      <div class="svc-price">From $150 CAD</div>
+    </div>
+
+    <div class="svc-card reveal" style="transition-delay:.16s">
+      <div class="svc-icon">🌀</div>
+      <div class="svc-name">Dryer Repair</div>
+      <div class="svc-desc">Not heating, takes too long, won't start, squeaking — electric &amp; gas dryers.</div>
+      <div class="svc-price">From $150 CAD</div>
+    </div>
+
+    <div class="svc-card reveal" style="transition-delay:.24s">
+      <div class="svc-icon">🍽️</div>
+      <div class="svc-name">Dishwasher Repair</div>
+      <div class="svc-desc">Not cleaning, won't drain, leaking door, error codes — all brands fixed fast.</div>
+      <div class="svc-price">From $150 CAD</div>
+    </div>
+
+    <div class="svc-card reveal" style="transition-delay:.32s">
+      <div class="svc-icon">🔥</div>
+      <div class="svc-name">Stove &amp; Oven Repair</div>
+      <div class="svc-desc">Burners won't light, oven won't heat, ignition &amp; temperature problems — gas and electric.</div>
+      <div class="svc-price">From $150 CAD</div>
+    </div>
+
+    <div class="svc-card reveal" style="transition-delay:.40s">
+      <div class="svc-icon">❄️</div>
+      <div class="svc-name">Freezer Repair</div>
+      <div class="svc-desc">Not freezing, frost build-up, compressor issues, thermostat problems — sorted today.</div>
+      <div class="svc-price">From $150 CAD</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     4. HOW IT WORKS
+═══════════════════════════════ -->
+<section class="how">
+  <div class="how-inner">
+
+    <div class="sec-head reveal">
+      <span class="tag tag-light">How It Works</span>
+      <h2 class="sec-title light">Fixed in 3 Simple Steps</h2>
+      <p class="sec-sub light">From your first call to a working appliance — fast, easy, no surprises.</p>
+    </div>
+
+    <div class="steps-row">
+
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <div class="step-title">Call or Book Online</div>
+        <div class="step-desc">Describe the problem. We'll confirm same-day availability and give you a 2-hour arrival window.</div>
+      </div>
+
+      <div class="step-conn reveal" style="transition-delay:.18s"></div>
+
+      <div class="step reveal" style="transition-delay:.18s">
+        <div class="step-num">2</div>
+        <div class="step-title">Technician Arrives On Time</div>
+        <div class="step-desc">Your technician diagnoses the issue and presents you an upfront, written quote. No surprises.</div>
+      </div>
+
+      <div class="step-conn reveal" style="transition-delay:.36s"></div>
+
+      <div class="step reveal" style="transition-delay:.36s">
+        <div class="step-num">3</div>
+        <div class="step-title">Appliance Fixed ✓</div>
+        <div class="step-desc">We repair it right the first time. 90-day parts &amp; labour warranty included on every job.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     5. REVIEWS
+═══════════════════════════════ -->
+<section class="reviews">
+  <div class="sec-head reveal">
+    <span class="tag tag-blue">Customer Reviews</span>
+    <h2 class="sec-title dark">What Toronto Homeowners Say</h2>
+    <p class="sec-sub dark">Over 250 five-star reviews from real customers across the GTA.</p>
+  </div>
+
+  <div class="reviews-grid">
+
+    <div class="rev-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="rev-text">"My Samsung fridge stopped cooling on a Sunday. Called Nika and a technician was here by 2pm. Fixed same day — absolutely amazing service!"</p>
+      <div class="rev-author">
+        <div class="rev-avatar">M</div>
+        <div>
+          <div class="rev-name">Maria K.</div>
+          <div class="rev-meta">Toronto · Refrigerator Repair</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rev-card reveal" style="transition-delay:.12s">
+      <div class="stars">★★★★★</div>
+      <p class="rev-text">"Very professional and honest. Diagnosed my LG washer quickly, explained everything clearly, and the price was exactly as quoted. Will use again!"</p>
+      <div class="rev-author">
+        <div class="rev-avatar">D</div>
+        <div>
+          <div class="rev-name">David P.</div>
+          <div class="rev-meta">Vaughan · Washer Repair</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rev-card reveal" style="transition-delay:.24s">
+      <div class="stars">★★★★★</div>
+      <p class="rev-text">"Used Nika twice — dryer and dishwasher. Both times fast, reliable, and fair. They're my go-to for any appliance issue. Highly recommend!"</p>
+      <div class="rev-author">
+        <div class="rev-avatar">S</div>
+        <div>
+          <div class="rev-name">Sarah L.</div>
+          <div class="rev-meta">Richmond Hill · Dryer &amp; Dishwasher</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="goog-badge reveal">
+    <!-- Google wordmark SVG -->
+    <svg width="76" height="26" viewBox="0 0 76 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Google">
+      <text y="22" font-family="Arial, sans-serif" font-size="20" font-weight="700">
+        <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+      </text>
+    </svg>
+    <div class="goog-text"><strong>4.9 / 5</strong> &nbsp;·&nbsp; 250+ Reviews</div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     6. PRICING & GUARANTEE
+═══════════════════════════════ -->
+<section class="pricing">
+  <div class="pricing-inner">
+
+    <div class="sec-head reveal">
+      <span class="tag tag-light">Transparent Pricing</span>
+      <h2 class="sec-title light">No Hidden Fees — Ever</h2>
+      <p class="sec-sub light">You'll know the exact cost before we start. Upfront quotes, zero surprises.</p>
+    </div>
+
+    <div class="price-cards">
+      <div class="price-card reveal">
+        <div class="price-type">Diagnostic Visit</div>
+        <div class="price-num">$80 <small>CAD</small></div>
+        <div class="price-note">Waived when you proceed with repair</div>
+      </div>
+      <div class="price-card feat reveal" style="transition-delay:.12s">
+        <div class="price-type">Minor Repair</div>
+        <div class="price-num">$150–$250 <small>CAD</small></div>
+        <div class="price-note">Thermostats, door seals, belts, filters</div>
+      </div>
+      <div class="price-card reveal" style="transition-delay:.24s">
+        <div class="price-type">Major Repair</div>
+        <div class="price-num">$250–$400 <small>CAD</small></div>
+        <div class="price-note">Compressors, control boards, motors</div>
+      </div>
+    </div>
+
+    <div class="guarantees reveal">
+      <div class="g-item"><div class="g-ico">🛡️</div> 90-Day Parts &amp; Labour Warranty</div>
+      <div class="g-item"><div class="g-ico">✅</div> No Fix, No Fee — Guaranteed</div>
+      <div class="g-item"><div class="g-ico">💬</div> Upfront Quote Before Any Work</div>
+      <div class="g-item"><div class="g-ico">📅</div> Same-Day Availability</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     7. FINAL CTA
+═══════════════════════════════ -->
+<section class="cta-final">
+  <div class="cta-inner reveal">
+    <span class="tag tag-light" style="margin-bottom:1.2rem">Book Today</span>
+    <h2 class="cta-title">Ready to Get Your<br>Appliance Fixed Today?</h2>
+    <p class="cta-sub">
+      Call now or book online — same-day service available across Toronto,
+      Vaughan, Richmond Hill, Markham, Brampton, Mississauga, and the GTA.
+    </p>
+    <div class="cta-btns">
+      <a href="tel:4375241053" class="btn-white">📞 Call 437-524-1053</a>
+      <a href="/#booking"      class="btn-wghost">📅 Book Online</a>
+    </div>
+    <p class="cta-note">Open 7 days a week &nbsp;·&nbsp; Mon–Fri 8am–8pm &nbsp;·&nbsp; Sat 9am–6pm &nbsp;·&nbsp; Sun 10am–5pm</p>
+    <p class="cta-areas">Toronto &nbsp;·&nbsp; Vaughan &nbsp;·&nbsp; Richmond Hill &nbsp;·&nbsp; Markham &nbsp;·&nbsp; Brampton &nbsp;·&nbsp; Mississauga &nbsp;·&nbsp; East Gwillimbury</p>
+  </div>
+</section>
+
+
+<script>
+  // ─── Sticky bar on scroll ───────────────────────
+  const bar = document.getElementById('stickyBar');
+  window.addEventListener('scroll', () => {
+    bar.classList.toggle('visible', window.scrollY > 480);
+  }, { passive: true });
+
+  // ─── Scroll reveal ──────────────────────────────
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.13 });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
