@@ -763,3 +763,20 @@ Description: `North York appliance repair — same-day service in Willowdale, Ne
 3. **193 not indexed — 4 reasons** — Need screenshot from GSC → Pages → Not indexed
 4. **Physical address** — Needed for Local Business schema and citations
 5. **Budget for paid directories** — HomeStars Pro (~$50/month) vs free listing
+
+---
+
+## CSS Рефакторинг (после SEO спринта)
+
+**Проблема:** 40+ CSS файлов в /css/ — накопленный технический долг
+- design-system.css, style.css, styles.css, combined-fixes.css, centering-fixes.css, mobile-strict-fix.css, и ещё 35+
+- Много визуальных багов из-за конфликтующих стилей
+- Тяжёлая загрузка страниц (много HTTP запросов)
+
+**Задача:** CSS аудит + консолидация
+1. Аудит: найти все баги (мобильные, десктоп, выравнивание)
+2. Консолидация: объединить всё в один main.css + отдельный critical.css
+3. Удалить мусорные CSS файлы
+4. Проверить Core Web Vitals после
+
+**Приоритет:** После завершения SEO quick wins (service+location страницы, blog improvements)

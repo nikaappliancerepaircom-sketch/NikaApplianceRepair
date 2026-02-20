@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{SERVICE_NAME} in {CITY_NAME}, ON. Same-day service, 4.7★ rating, 90-day warranty. All brands serviced. Call (437) 524-1053.">
+    <title>{SERVICE_NAME} {CITY_NAME} | Same-Day Service | Nika Appliance Repair</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nikaappliancerepair.com/locations/services/{SERVICE_SLUG}-{CITY_SLUG}">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{SERVICE_NAME} {CITY_NAME} | Same-Day Service | Nika Appliance Repair">
+    <meta property="og:description" content="Expert {SERVICE_NAME} in {CITY_NAME}. 4.7★ rating, 176 reviews, 90-day warranty. Call (437) 524-1053.">
+    <meta property="og:url" content="https://nikaappliancerepair.com/locations/services/{SERVICE_SLUG}-{CITY_SLUG}">
+    <meta property="og:image" content="https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp">
+
+    <!-- Schema: LocalBusiness + AggregateRating -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nika Appliance Repair - {SERVICE_NAME} {CITY_NAME}",
+        "image": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+        "telephone": "+14375241053",
+        "email": "care@niappliancerepair.ca",
+        "url": "https://nikaappliancerepair.com/locations/services/{SERVICE_SLUG}-{CITY_SLUG}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "755 Steeles Ave W #311",
+            "addressLocality": "North York",
+            "addressRegion": "ON",
+            "postalCode": "M2R 3W9",
+            "addressCountry": "CA"
+        },
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "176",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "areaServed": [
+            { "@type": "City", "name": "{CITY_NAME}" },
+            { "@type": "City", "name": "Toronto" }
+        ],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "08:00",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "17:00"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema: Service -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "{SERVICE_TYPE}",
+        "name": "{SERVICE_NAME} in {CITY_NAME}",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair",
+            "telephone": "+14375241053"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "{CITY_NAME}",
+            "containedInPlace": {
+                "@type": "AdministrativeArea",
+                "name": "Ontario"
+            }
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "{SERVICE_NAME} Services {CITY_NAME}",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "{APPLIANCE} Diagnostic",
+                        "description": "Professional {APPLIANCE_LOWER} diagnostic in {CITY_NAME}"
+                    },
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "priceCurrency": "CAD",
+                        "price": "119"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "{APPLIANCE} Repair",
+                        "description": "Complete {APPLIANCE_LOWER} repair in {CITY_NAME} - all brands"
+                    },
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "priceCurrency": "CAD",
+                        "price": "{PRICE_RANGE}"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Schema: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nikaappliancerepair.com/" },
+            { "@type": "ListItem", "position": 2, "name": "{CITY_NAME}", "item": "https://nikaappliancerepair.com/locations/{CITY_SLUG}" },
+            { "@type": "ListItem", "position": 3, "name": "{SERVICE_NAME}", "item": "https://nikaappliancerepair.com/services/{SERVICE_SLUG}" },
+            { "@type": "ListItem", "position": 4, "name": "{SERVICE_NAME} {CITY_NAME}", "item": "https://nikaappliancerepair.com/locations/services/{SERVICE_SLUG}-{CITY_SLUG}" }
+        ]
+    }
+    </script>
+
+    <!-- Schema: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much does {SERVICE_NAME_LOWER} cost in {CITY_NAME}?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most {APPLIANCE_LOWER} repairs in {CITY_NAME} cost between {PRICE_RANGE}. Our $119 diagnostic fee is waived when you proceed with the repair. Call (437) 524-1053 for a free phone estimate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer same-day {APPLIANCE_LOWER} repair in {CITY_NAME}?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We serve all {CITY_NAME} neighbourhoods same-day. Call before 2 PM at (437) 524-1053 and we typically arrive within 2-4 hours, 7 days a week."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What warranty do you offer on {APPLIANCE_LOWER} repairs in {CITY_NAME}?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Every repair includes a 90-day warranty covering both parts and labour. If the same issue returns within 90 days, we fix it free of charge."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which {APPLIANCE_LOWER} brands do you repair in {CITY_NAME}?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We repair all major brands including Samsung, LG, Whirlpool, Maytag, GE, Frigidaire, Kenmore, Bosch, Electrolux, and 90+ more."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/design-system.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive-comprehensive.css">
+    <link rel="stylesheet" href="../../css/countdown-horizontal.css">
+    <link rel="stylesheet" href="../../css/cta-buttons.css">
+    <link rel="stylesheet" href="../../css/mobile-icon-centering-fix.css">
+    <link rel="stylesheet" href="../../css/lighthouse-fixes.css">
+    <link rel="stylesheet" href="../../css/combined-fixes.css">
+
+    <style>
+        * { overflow-x: hidden !important; max-width: 100% !important; }
+        body { line-height: 1.6; overflow-x: hidden; }
+        h1 { font-size: clamp(1.75rem, 4vw + 1rem, 3rem); line-height: 1.3; }
+        h2 { font-size: clamp(1.5rem, 3vw + 0.5rem, 2.25rem); line-height: 1.4; }
+        h3 { font-size: clamp(1.1rem, 2vw + 0.25rem, 1.5rem); line-height: 1.5; }
+        p { font-size: clamp(0.875rem, 1vw + 0.25rem, 1.1rem); line-height: 1.7; }
+        .highlight-yellow { color: #FDD835; }
+        .wow-text { color: #FDD835; }
+        a:hover { opacity: 0.85; transition: opacity 0.3s; }
+        a:focus { outline: 2px solid #2196F3; outline-offset: 2px; }
+
+        /* Breadcrumb */
+        .breadcrumb-nav { background: #f8f9fa; padding: 0.75rem 0; border-bottom: 1px solid #e9ecef; }
+        .breadcrumb-nav .container { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; font-size: 0.875rem; color: #6c757d; }
+        .breadcrumb-nav a { color: #2196F3; text-decoration: none; }
+        .breadcrumb-nav a:hover { text-decoration: underline; }
+        .breadcrumb-sep { color: #adb5bd; }
+
+        /* Intro section */
+        .city-intro-section { background: white; padding: 3rem 0; }
+        .city-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+        @media (max-width: 768px) { .city-intro-grid { grid-template-columns: 1fr; } }
+        .info-box { background: #f0f7ff; border: 1px solid #bbdefb; border-radius: 8px; padding: 1.5rem; }
+        .info-box h3 { color: #1565C0; margin-top: 0; }
+        .info-box ul { padding-left: 1.25rem; margin: 0; }
+        .info-box ul li { margin-bottom: 0.5rem; }
+
+        /* Problems grid */
+        .problems-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .problem-card { background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #2196F3; }
+        .problem-card h3 { margin-top: 0; color: #212529; font-size: 1.1rem; }
+        .problem-card p { color: #495057; margin-bottom: 0; font-size: 0.95rem; }
+
+        /* Brands */
+        .brands-section { background: #f8f9fa; padding: 3rem 0; }
+        .brands-grid { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+        .brand-badge { background: white; border: 1px solid #dee2e6; border-radius: 6px; padding: 0.5rem 1rem; font-weight: 500; color: #495057; font-size: 0.9rem; }
+
+        /* Pricing */
+        .pricing-section { padding: 3rem 0; background: white; }
+        .pricing-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+        .pricing-table th { background: #2196F3; color: white; padding: 1rem; text-align: left; }
+        .pricing-table td { padding: 0.875rem 1rem; border-bottom: 1px solid #e9ecef; color: #495057; }
+        .pricing-table tr:last-child td { border-bottom: none; }
+        .pricing-table tr:nth-child(even) td { background: #f8f9fa; }
+        .price-highlight { font-weight: 700; color: #28a745; }
+
+        /* FAQ */
+        .faq-section { padding: 3rem 0; background: #f8f9fa; }
+        .faq-item { background: white; border-radius: 8px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+        .faq-question { padding: 1.25rem 1.5rem; font-weight: 600; color: #212529; }
+        .faq-answer { padding: 0 1.5rem 1.25rem; color: #495057; }
+
+        /* CTA */
+        .cta-section { background: linear-gradient(135deg, #1565C0 0%, #7B1FA2 100%); color: white; padding: 3rem 0; text-align: center; }
+        .cta-section h2 { color: white; }
+        .cta-section p { color: rgba(255,255,255,0.9); margin-bottom: 2rem; }
+        .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .cta-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: transform 0.2s, opacity 0.2s; }
+        .cta-btn:hover { transform: translateY(-2px); opacity: 0.95; }
+        .cta-btn-primary { background: #FDD835; color: #212529; }
+        .cta-btn-secondary { background: rgba(255,255,255,0.15); color: white; border: 2px solid white; }
+
+        /* Related links */
+        .related-links { padding: 2rem 0; background: white; border-top: 1px solid #e9ecef; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .related-link { display: block; padding: 0.875rem 1rem; background: #f8f9fa; border-radius: 6px; color: #2196F3; text-decoration: none; font-weight: 500; border: 1px solid #e9ecef; transition: background 0.2s; }
+        .related-link:hover { background: #e3f2fd; }
+    </style>
+</head>
+<body>
+    <!-- Unified Header -->
+    <div id="header-placeholder"></div>
+    <script src="/includes/header-loader.js"></script>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="/locations/{CITY_SLUG}">{CITY_NAME}</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="/services/{SERVICE_SLUG}">{SERVICE_NAME}</a>
+            <span class="breadcrumb-sep">›</span>
+            <span>{SERVICE_NAME} {CITY_NAME}</span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section" id="main-content">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Expert <span class="highlight-yellow">{SERVICE_NAME}</span><br>
+                        in {CITY_NAME}, ON<br>
+                        <span class="wow-text">Same-Day Service!</span>
+                    </h1>
+                    <p class="hero-subtitle">⭐ 4.7/5 rating · 176 reviews · 90-day warranty · All brands serviced</p>
+                    <div class="hero-cta-group">
+                        <a href="/book" class="cta-primary cta-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                            Book Service Now
+                        </a>
+                        <a href="tel:4375241053" class="cta-secondary cta-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                            Call (437) 524-1053
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../../assets/images/friendly-technician-character-min.webp" alt="{SERVICE_NAME} Technician {CITY_NAME}" width="400" height="500" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Intro -->
+    <section class="city-intro-section">
+        <div class="container">
+            <div class="city-intro-grid">
+                <div>
+                    <h2>{SERVICE_NAME} Service Across {CITY_NAME}</h2>
+                    <!-- CITY-SPECIFIC CONTENT: Describe the city, common issues, neighbourhoods -->
+                    <p>{CITY_INTRO_PARAGRAPH_1}</p>
+                    <p>{CITY_INTRO_PARAGRAPH_2}</p>
+                    <p>Typical repairs cost <strong>{PRICE_RANGE}</strong>, with the $119 diagnostic fee waived when you proceed with the repair. All work is covered by a 90-day warranty.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Service Snapshot</h3>
+                    <ul>
+                        <li><strong>Area:</strong> All {CITY_NAME} neighbourhoods</li>
+                        <li><strong>Neighbourhoods:</strong> {CITY_NEIGHBOURHOODS}</li>
+                        <li><strong>Response:</strong> 2-4 hours same-day</li>
+                        <li><strong>Hours:</strong> Mon-Fri 8am-8pm, Sat 9am-6pm, Sun 10am-5pm</li>
+                        <li><strong>Brands:</strong> All major brands (90+)</li>
+                        <li><strong>Warranty:</strong> 90-day parts &amp; labour</li>
+                        <li><strong>Cost:</strong> {PRICE_RANGE} typical repair</li>
+                        <li><strong>Phone:</strong> <a href="tel:4375241053">(437) 524-1053</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems -->
+    <section style="background: #f8f9fa; padding: 3rem 0;">
+        <div class="container">
+            <h2 style="text-align:center;">Common {APPLIANCE} Problems We Fix in {CITY_NAME}</h2>
+            <p style="text-align:center; color:#6c757d; max-width:700px; margin:0 auto 1.5rem;">{PROBLEMS_INTRO}</p>
+            <div class="problems-grid">
+                <!-- PROBLEM CARDS: 6 common issues specific to this appliance+city -->
+                <div class="problem-card">
+                    <h3>{PROBLEM_1_TITLE}</h3>
+                    <p>{PROBLEM_1_DESC}</p>
+                </div>
+                <div class="problem-card">
+                    <h3>{PROBLEM_2_TITLE}</h3>
+                    <p>{PROBLEM_2_DESC}</p>
+                </div>
+                <div class="problem-card">
+                    <h3>{PROBLEM_3_TITLE}</h3>
+                    <p>{PROBLEM_3_DESC}</p>
+                </div>
+                <div class="problem-card">
+                    <h3>{PROBLEM_4_TITLE}</h3>
+                    <p>{PROBLEM_4_DESC}</p>
+                </div>
+                <div class="problem-card">
+                    <h3>{PROBLEM_5_TITLE}</h3>
+                    <p>{PROBLEM_5_DESC}</p>
+                </div>
+                <div class="problem-card">
+                    <h3>{PROBLEM_6_TITLE}</h3>
+                    <p>{PROBLEM_6_DESC}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands-section">
+        <div class="container">
+            <h2>{APPLIANCE} Brands We Repair in {CITY_NAME}</h2>
+            <p>Our technicians service all major {APPLIANCE_LOWER} brands popular in {CITY_NAME} homes.</p>
+            <div class="brands-grid">
+                <span class="brand-badge">Samsung</span>
+                <span class="brand-badge">LG</span>
+                <span class="brand-badge">Whirlpool</span>
+                <span class="brand-badge">Maytag</span>
+                <span class="brand-badge">GE</span>
+                <span class="brand-badge">Frigidaire</span>
+                <span class="brand-badge">Kenmore</span>
+                <span class="brand-badge">Bosch</span>
+                <span class="brand-badge">Electrolux</span>
+                <span class="brand-badge">Miele</span>
+                <span class="brand-badge">Speed Queen</span>
+                <span class="brand-badge">KitchenAid</span>
+                <span class="brand-badge">Amana</span>
+                <span class="brand-badge">Blomberg</span>
+                <span class="brand-badge">Fisher &amp; Paykel</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2>{SERVICE_NAME} Cost in {CITY_NAME}</h2>
+            <p>Transparent, upfront pricing — no hidden fees. Diagnostic fee ($119) waived when you proceed with repair.</p>
+            <div style="overflow-x:auto;">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Typical Cost (CAD)</th>
+                            <th>Repair Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- PRICING ROWS: 5-7 common repairs with prices and times -->
+                        <tr>
+                            <td>{REPAIR_1}</td>
+                            <td class="price-highlight">{PRICE_1}</td>
+                            <td>{TIME_1}</td>
+                        </tr>
+                        <tr>
+                            <td>{REPAIR_2}</td>
+                            <td class="price-highlight">{PRICE_2}</td>
+                            <td>{TIME_2}</td>
+                        </tr>
+                        <tr>
+                            <td>{REPAIR_3}</td>
+                            <td class="price-highlight">{PRICE_3}</td>
+                            <td>{TIME_3}</td>
+                        </tr>
+                        <tr>
+                            <td>{REPAIR_4}</td>
+                            <td class="price-highlight">{PRICE_4}</td>
+                            <td>{TIME_4}</td>
+                        </tr>
+                        <tr>
+                            <td>{REPAIR_5}</td>
+                            <td class="price-highlight">{PRICE_5}</td>
+                            <td>{TIME_5}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>{SERVICE_NAME} {CITY_NAME} — FAQ</h2>
+            <!-- FAQ ITEMS: 4-5 questions specific to this appliance+city -->
+            <div class="faq-item">
+                <div class="faq-question">How much does {SERVICE_NAME_LOWER} cost in {CITY_NAME}?</div>
+                <div class="faq-answer">
+                    <p>{FAQ_PRICE_ANSWER}</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer same-day {APPLIANCE_LOWER} repair in {CITY_NAME}?</div>
+                <div class="faq-answer">
+                    <p>Yes. We serve all {CITY_NAME} neighbourhoods same-day including {CITY_NEIGHBOURHOODS}. Call before 2 PM at <a href="tel:4375241053">(437) 524-1053</a> and we typically arrive within 2-4 hours, 7 days a week.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">{FAQ_3_QUESTION}</div>
+                <div class="faq-answer">
+                    <p>{FAQ_3_ANSWER}</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What warranty do you offer on {APPLIANCE_LOWER} repairs in {CITY_NAME}?</div>
+                <div class="faq-answer">
+                    <p>Every repair includes a <strong>90-day warranty</strong> on both parts and labour. If the same issue returns within 90 days, we fix it free of charge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Fix Your {APPLIANCE} in {CITY_NAME}?</h2>
+            <p>Same-day service available 7 days a week. 90-day warranty on every repair. No hidden fees.</p>
+            <div class="cta-group">
+                <a href="/book" class="cta-btn cta-btn-primary">Book Online — Save $40</a>
+                <a href="tel:4375241053" class="cta-btn cta-btn-secondary">Call (437) 524-1053</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="related-links">
+        <div class="container">
+            <h3 style="margin-top:0;">Related Pages</h3>
+            <div class="related-grid">
+                <a href="/services/{SERVICE_SLUG}" class="related-link">{SERVICE_NAME} Toronto</a>
+                <a href="/locations/{CITY_SLUG}" class="related-link">All Appliance Repair in {CITY_NAME}</a>
+                <!-- Add 4-6 other service+location cross-links -->
+                <a href="/locations/services/{SERVICE_SLUG}-mississauga" class="related-link">{SERVICE_NAME} Mississauga</a>
+                <a href="/locations/services/{SERVICE_SLUG}-brampton" class="related-link">{SERVICE_NAME} Brampton</a>
+                <a href="/locations/services/{SERVICE_SLUG}-vaughan" class="related-link">{SERVICE_NAME} Vaughan</a>
+                <a href="/locations/services/{SERVICE_SLUG}-markham" class="related-link">{SERVICE_NAME} Markham</a>
+                <a href="/locations/services/{SERVICE_SLUG}-richmond-hill" class="related-link">{SERVICE_NAME} Richmond Hill</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../../js/main.js" defer></script>
+
+    <!-- Unified Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="/includes/footer-loader.js"></script>
+</body>
+</html>

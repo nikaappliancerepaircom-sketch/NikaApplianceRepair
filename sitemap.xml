@@ -931,4 +931,132 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Brampton Service Pages -->
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/dryer-repair-brampton</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/washer-repair-brampton</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/refrigerator-repair-brampton</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/oven-repair-brampton</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/dishwasher-repair-brampton</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Vaughan Service Pages -->
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/dryer-repair-vaughan</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/washer-repair-vaughan</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/refrigerator-repair-vaughan</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/oven-repair-vaughan</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/dishwasher-repair-vaughan</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Markham Service Pages -->
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/dryer-repair-markham</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/washer-repair-markham</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/refrigerator-repair-markham</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/oven-repair-markham</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/dishwasher-repair-markham</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Richmond Hill Service Pages -->
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/dryer-repair-richmond-hill</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/washer-repair-richmond-hill</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/refrigerator-repair-richmond-hill</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/oven-repair-richmond-hill</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nikaappliancerepair.com/locations/services/dishwasher-repair-richmond-hill</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

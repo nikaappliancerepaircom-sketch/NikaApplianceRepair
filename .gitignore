@@ -47,3 +47,8 @@ __pycache__/
 
 # Terminal Paste Image folder
 .cp-images/
+
+# Screenshot files
+*.png
+*.jpg
+*.jpeg
