@@ -1,0 +1,309 @@
+/* ============================================
+   DESIGN FIXES 2026 — Applied to Homepage + Location Pages
+   ============================================ */
+
+/* Promo Banner (replaces fake countdown) */
+.promo-banner-section {
+  background: linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.promo-banner-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.promo-banner-inner {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.promo-banner-badge {
+  display: inline-block;
+  background: #FFD600;
+  color: #1a1a2e;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.promo-banner-title {
+  font-family: 'Fredoka', cursive;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+.promo-banner-sub {
+  color: rgba(255,255,255,0.8);
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.95rem;
+  margin: 0 0 1.75rem;
+}
+.promo-banner-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #FFD600;
+  color: #1a1a2e;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+.promo-banner-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  color: #1a1a2e;
+  text-decoration: none;
+}
+
+/* Hero CTA group — horizontal on desktop */
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Hero secondary (Call) button — ghost/outline style on blue background */
+.hero-cta-group .cta-secondary,
+a.cta-secondary[href^="tel"] {
+  background: rgba(255,255,255,0.15) !important;
+  background-image: none !important;
+  border: 2px solid rgba(255,255,255,0.8) !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+.hero-cta-group .cta-secondary:hover,
+a.cta-secondary[href^="tel"]:hover {
+  background: rgba(255,255,255,0.25) !important;
+  background-image: none !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Brands CTA row */
+.brands-cta-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+/* On blue brand background, make btn-secondary white ghost style */
+.brands-section-premium .brands-cta-row .btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.8);
+}
+.brands-section-premium .brands-cta-row .btn-secondary:hover {
+  background: rgba(255,255,255,0.15);
+  color: #ffffff;
+}
+.brands-section-premium .brands-cta-row .btn-primary {
+  background: #FFD600;
+  color: #1a1a2e;
+  border: none;
+}
+.brands-section-premium .brands-cta-row .btn-primary:hover {
+  background: #FFC107;
+  color: #1a1a2e;
+}
+
+/* Button base — btn-primary */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1976D2;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: #1565C0;
+  transform: translateY(-1px);
+  color: white;
+  text-decoration: none;
+}
+.btn-primary.btn-lg {
+  padding: 0.95rem 2.25rem;
+  font-size: 1.05rem;
+}
+
+/* Button base — btn-secondary */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #1976D2;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid #1976D2;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background: #E3F2FD;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* Footer Connect With Us heading fix — white on blue background */
+/* Override global h4 gradient text fill that bleeds into footer */
+.footer-social-section h4,
+.footer-social-section .footer-heading,
+footer h4.footer-heading,
+.seo-footer-premium h4 {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-clip: unset !important;
+}
+
+/* Facebook brand color fix */
+.footer-social-grid a[href*="facebook"].social-link {
+  background: #1877F2 !important;
+  border-color: #1877F2 !important;
+}
+.footer-social-grid a[href*="facebook"].social-link:hover {
+  background: #166FE5 !important;
+  border-color: #166FE5 !important;
+}
+
+/* Service card top border — brand blue gradient */
+.service-card::before {
+  background: linear-gradient(135deg, #1976D2, #42A5F5) !important;
+  background-size: unset !important;
+  animation: none !important;
+}
+
+/* Near Me cards — unified brand blue border */
+/* These cards use inline styles, so target by structure */
+.location-intent-section [style*="border-left: 4px solid"] {
+  border-left-color: #2196F3 !important;
+}
+
+/* Pricing table caption — visually hidden but accessible */
+table caption {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* RH hero H1 — fix "Save $40 Today!" span being 2x bigger */
+.hero-section .hero-title .wow-text.rh-save-badge {
+  font-size: 1.05em !important;
+  animation: none !important;
+  display: inline !important;
+  line-height: inherit !important;
+  margin-top: 0 !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2) !important;
+}
+
+/* Brand logo cards — rounded square + larger */
+.brand-logo-card {
+  border-radius: 12px !important;
+}
+
+/* Brand-specific background colors for logo cards */
+.brand-logo-card.logo-samsung {
+  background: rgba(20, 40, 160, 0.75) !important;
+  border-color: rgba(20, 40, 160, 0.5) !important;
+}
+.brand-logo-card.logo-lg {
+  background: rgba(165, 0, 52, 0.75) !important;
+  border-color: rgba(165, 0, 52, 0.5) !important;
+}
+.brand-logo-card.logo-whirlpool {
+  background: rgba(0, 48, 135, 0.75) !important;
+  border-color: rgba(0, 48, 135, 0.5) !important;
+}
+.brand-logo-card.logo-ge {
+  background: rgba(0, 117, 143, 0.75) !important;
+  border-color: rgba(0, 117, 143, 0.5) !important;
+}
+.brand-logo-card.logo-frigidaire {
+  background: rgba(0, 61, 165, 0.75) !important;
+  border-color: rgba(0, 61, 165, 0.5) !important;
+}
+.brand-logo-card.logo-maytag {
+  background: rgba(0, 43, 91, 0.75) !important;
+  border-color: rgba(0, 43, 91, 0.5) !important;
+}
+.brand-logo-card.logo-kitchenaid {
+  background: rgba(200, 16, 46, 0.75) !important;
+  border-color: rgba(200, 16, 46, 0.5) !important;
+}
+.brand-logo-card.logo-bosch {
+  background: rgba(0, 123, 192, 0.75) !important;
+  border-color: rgba(0, 123, 192, 0.5) !important;
+}
+.brand-logo-card.logo-electrolux {
+  background: rgba(43, 95, 165, 0.75) !important;
+  border-color: rgba(43, 95, 165, 0.5) !important;
+}
+.brand-logo-card.logo-kenmore {
+  background: rgba(200, 16, 46, 0.75) !important;
+  border-color: rgba(200, 16, 46, 0.5) !important;
+}
+.brand-logo-card.logo-miele {
+  background: rgba(45, 45, 45, 0.85) !important;
+  border-color: rgba(45, 45, 45, 0.6) !important;
+}
+.brand-logo-card.logo-amana {
+  background: rgba(21, 101, 192, 0.75) !important;
+  border-color: rgba(21, 101, 192, 0.5) !important;
+}
+
+@media (max-width: 768px) {
+  .hero-cta-group {
+    flex-direction: column;
+  }
+  .brands-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .brands-cta-row .btn-primary,
+  .brands-cta-row .btn-secondary {
+    justify-content: center;
+    width: 100%;
+  }
+}

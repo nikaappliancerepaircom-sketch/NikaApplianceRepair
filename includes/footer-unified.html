@@ -556,6 +556,26 @@
         transition: none;
     }
 }
+
+/* FIX 2026: Connect With Us heading — white text override (h4 global rule sets blue gradient) */
+.footer-social-section h4.footer-heading {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background-clip: unset !important;
+}
+
+/* FIX 2026: Facebook brand color */
+.footer-social-grid a[href*="facebook"].social-link {
+    background: #1877F2 !important;
+    border-color: #1877F2 !important;
+}
+.footer-social-grid a[href*="facebook"].social-link:hover {
+    background: #166FE5 !important;
+    border-color: #166FE5 !important;
+}
 </style>
 
 <script>
