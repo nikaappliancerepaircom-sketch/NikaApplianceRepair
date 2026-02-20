@@ -637,6 +637,178 @@
 
 
     /* ============================
+       BOOKING FORM (hero inline)
+       ============================ */
+    .hero-form {
+      margin-top: 2rem;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--r-lg);
+      padding: 1.25rem 1.5rem;
+      opacity: 0;
+      animation: fadeUp .7s .7s ease forwards;
+    }
+    .hero-form-title {
+      font-size: .78rem; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: rgba(255,255,255,.5); margin-bottom: 1rem;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr auto;
+      gap: .65rem;
+      align-items: center;
+    }
+    .form-input {
+      width: 100%; padding: .7rem 1rem;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: var(--r-sm);
+      color: #fff; font-family: var(--font-b); font-size: .9rem;
+      outline: none;
+      transition: border-color .2s, background .2s;
+    }
+    .form-input::placeholder { color: rgba(255,255,255,.4); }
+    .form-input:focus { border-color: rgba(33,150,243,.6); background: rgba(255,255,255,.14); }
+    select.form-input option { color: #111; background: #fff; }
+    .form-submit {
+      padding: .7rem 1.4rem;
+      background: var(--yellow); color: var(--navy);
+      font-family: var(--font-b); font-weight: 700; font-size: .9rem;
+      border: none; border-radius: var(--r-sm); cursor: pointer;
+      white-space: nowrap;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .form-submit:hover { transform: scale(1.04); box-shadow: var(--sh-cta); }
+
+    /* ============================
+       BRANDS
+       ============================ */
+    .brands {
+      padding: 5rem 2rem;
+      background: var(--white);
+    }
+    .brands-wrap { max-width: 1100px; margin: 0 auto; }
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    .brand-chip {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: .5rem; padding: 1.1rem .75rem;
+      border-radius: var(--r-md);
+      color: #fff; font-family: var(--font-h);
+      font-weight: 600; font-size: .95rem;
+      text-align: center;
+      transition: transform .2s, box-shadow .2s;
+      cursor: default;
+    }
+    .brand-chip:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+    .brand-chip .bi { font-size: 1.3rem; }
+    .bc-samsung    { background: rgba(20,40,160,.82); }
+    .bc-lg         { background: rgba(165,0,52,.82); }
+    .bc-whirlpool  { background: rgba(0,48,135,.82); }
+    .bc-ge         { background: rgba(0,117,143,.82); }
+    .bc-bosch      { background: rgba(0,123,192,.82); }
+    .bc-frigidaire { background: rgba(0,61,165,.82); }
+    .bc-maytag     { background: rgba(0,43,91,.82); }
+    .bc-kitchenaid { background: rgba(200,16,46,.82); }
+    .bc-electrolux { background: rgba(43,95,165,.82); }
+    .bc-kenmore    { background: rgba(200,16,46,.75); }
+    .bc-miele      { background: rgba(35,35,35,.92); }
+    .bc-amana      { background: rgba(21,101,192,.82); }
+    .brands-cta { text-align: center; margin-top: 2.5rem; }
+
+    /* ============================
+       LOCATIONS
+       ============================ */
+    .locations {
+      padding: 5.5rem 2rem;
+      background: var(--navy);
+      position: relative; overflow: hidden;
+    }
+    .locations::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 55% at 50% 50%, rgba(33,150,243,.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .loc-inner { max-width: 1100px; margin: 0 auto; }
+    .loc-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .85rem;
+    }
+    .loc-card {
+      display: flex; align-items: center; gap: .6rem;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: var(--r-md); padding: 1.1rem 1rem;
+      color: rgba(255,255,255,.8); font-size: .9rem; font-weight: 500;
+      transition: background .2s, border-color .2s;
+      cursor: default;
+    }
+    .loc-card:hover { background: rgba(33,150,243,.16); border-color: rgba(33,150,243,.35); }
+    .loc-icon { font-size: 1rem; }
+    .loc-cta { text-align: center; margin-top: 2.5rem; }
+
+    /* ============================
+       FAQ
+       ============================ */
+    .faq {
+      padding: 6rem 2rem;
+      background: var(--gray-50);
+    }
+    .faq-inner { max-width: 800px; margin: 0 auto; }
+    .faq-list { display: flex; flex-direction: column; gap: .75rem; }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid rgba(33,150,243,.1);
+      border-radius: var(--r-md); overflow: hidden;
+      transition: border-color .2s;
+    }
+    .faq-item.open { border-color: rgba(33,150,243,.32); }
+    .faq-q {
+      width: 100%; display: flex; align-items: center;
+      justify-content: space-between; gap: 1rem;
+      padding: 1.2rem 1.5rem;
+      background: none; border: none; cursor: pointer; text-align: left;
+      font-family: var(--font-b); font-size: .96rem; font-weight: 600;
+      color: var(--gray-900);
+    }
+    .faq-chevron {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--gray-100);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .8rem; flex-shrink: 0;
+      transition: transform .3s, background .2s;
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); background: rgba(33,150,243,.12); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height .38s ease, padding .38s ease;
+      padding: 0 1.5rem;
+      font-size: .9rem; color: var(--gray-700); line-height: 1.75;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 1.5rem 1.25rem; }
+    .faq-cta { text-align: center; margin-top: 2.5rem; }
+
+    /* Section CTA link */
+    .sec-cta-link {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--blue-mid); color: #fff;
+      font-family: var(--font-b); font-weight: 700; font-size: .95rem;
+      padding: .8rem 1.9rem; border-radius: var(--r-full);
+      transition: background .2s, transform .2s;
+    }
+    .sec-cta-link:hover { background: var(--blue-dark); transform: translateY(-2px); }
+    .sec-cta-link.yellow { background: var(--yellow); color: var(--navy); }
+    .sec-cta-link.yellow:hover { background: #e6c000; }
+
+    /* ============================
        RESPONSIVE
        ============================ */
     @media (max-width: 1024px) {
@@ -650,6 +822,10 @@
       .step-conn { display: none; }
       .reviews-grid { grid-template-columns: 1fr 1fr; }
       .price-cards { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+      .brand-grid { grid-template-columns: repeat(4, 1fr); }
+      .loc-grid { grid-template-columns: repeat(3, 1fr); }
+      .form-row { grid-template-columns: 1fr 1fr; }
+      .form-submit { grid-column: 1 / -1; }
     }
 
     @media (max-width: 640px) {
@@ -661,6 +837,9 @@
       .reviews-grid { grid-template-columns: 1fr; }
       .guarantees { flex-direction: column; align-items: flex-start; }
       .cta-btns { flex-direction: column; align-items: center; }
+      .brand-grid { grid-template-columns: repeat(3, 1fr); }
+      .loc-grid { grid-template-columns: repeat(2, 1fr); }
+      .form-row { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -710,6 +889,27 @@
       <a href="/#booking"      class="btn-ghost" >📅 Book Online</a>
     </div>
 
+    <!-- Quick quote form -->
+    <div class="hero-form">
+      <div class="hero-form-title">⚡ Get a Free Quote — 60 Seconds</div>
+      <div class="form-row">
+        <input class="form-input" type="text"  placeholder="Your Name" aria-label="Name">
+        <input class="form-input" type="tel"   placeholder="Phone Number" aria-label="Phone">
+        <select class="form-input" aria-label="Appliance type">
+          <option value="" disabled selected>Appliance Type</option>
+          <option>Refrigerator</option>
+          <option>Washer</option>
+          <option>Dryer</option>
+          <option>Dishwasher</option>
+          <option>Stove / Oven</option>
+          <option>Freezer</option>
+          <option>Microwave</option>
+          <option>Other</option>
+        </select>
+        <button class="form-submit" onclick="window.location='tel:4375241053'">Get Quote →</button>
+      </div>
+    </div>
+
   </div>
 
   <div class="hero-img-col">
@@ -751,6 +951,37 @@
     <div class="trust-card reveal" style="transition-delay:.3s">
       <div class="trust-num">90-Day</div>
       <div class="trust-lbl">Repair Warranty</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     BRANDS
+═══════════════════════════════ -->
+<section class="brands">
+  <div class="brands-wrap">
+    <div class="sec-head reveal">
+      <span class="tag tag-blue">Brands We Repair</span>
+      <h2 class="sec-title dark">All Major Brands Covered</h2>
+      <p class="sec-sub dark">Factory-trained technicians for every brand — we carry OEM parts and fix it right the first time.</p>
+    </div>
+    <div class="brand-grid">
+      <div class="brand-chip bc-samsung reveal"   ><span class="bi">📱</span>Samsung</div>
+      <div class="brand-chip bc-lg reveal"         style="transition-delay:.05s"><span class="bi">⚡</span>LG</div>
+      <div class="brand-chip bc-whirlpool reveal"  style="transition-delay:.1s" ><span class="bi">🌀</span>Whirlpool</div>
+      <div class="brand-chip bc-ge reveal"         style="transition-delay:.15s"><span class="bi">💡</span>GE</div>
+      <div class="brand-chip bc-bosch reveal"      style="transition-delay:.2s" ><span class="bi">🔧</span>Bosch</div>
+      <div class="brand-chip bc-frigidaire reveal" style="transition-delay:.25s"><span class="bi">❄️</span>Frigidaire</div>
+      <div class="brand-chip bc-maytag reveal"     style="transition-delay:.3s" ><span class="bi">🏠</span>Maytag</div>
+      <div class="brand-chip bc-kitchenaid reveal" style="transition-delay:.35s"><span class="bi">🍳</span>KitchenAid</div>
+      <div class="brand-chip bc-electrolux reveal" style="transition-delay:.4s" ><span class="bi">✨</span>Electrolux</div>
+      <div class="brand-chip bc-kenmore reveal"    style="transition-delay:.45s"><span class="bi">🔩</span>Kenmore</div>
+      <div class="brand-chip bc-miele reveal"      style="transition-delay:.5s" ><span class="bi">💎</span>Miele</div>
+      <div class="brand-chip bc-amana reveal"      style="transition-delay:.55s"><span class="bi">🏡</span>Amana</div>
+    </div>
+    <div class="brands-cta reveal">
+      <a href="tel:4375241053" class="sec-cta-link">📞 Call for Your Brand — 437-524-1053</a>
     </div>
   </div>
 </section>
@@ -810,6 +1041,30 @@
       <div class="svc-price">From $150 CAD</div>
     </div>
 
+    <div class="svc-card reveal" style="transition-delay:.48s">
+      <div class="svc-icon">📡</div>
+      <div class="svc-name">Microwave Repair</div>
+      <div class="svc-desc">Not heating, sparking, turntable not spinning, control panel issues — all models.</div>
+      <div class="svc-price">From $100 CAD</div>
+    </div>
+
+    <div class="svc-card reveal" style="transition-delay:.56s">
+      <div class="svc-icon">🍕</div>
+      <div class="svc-name">Range Repair</div>
+      <div class="svc-desc">Gas or electric range issues — burners, igniters, oven elements, control boards.</div>
+      <div class="svc-price">From $150 CAD</div>
+    </div>
+
+    <div class="svc-card reveal" style="transition-delay:.64s">
+      <div class="svc-icon">🍷</div>
+      <div class="svc-name">Wine Cooler Repair</div>
+      <div class="svc-desc">Not cooling, temperature fluctuations, compressor problems — wine fridge specialists.</div>
+      <div class="svc-price">From $150 CAD</div>
+    </div>
+
+  </div>
+  <div style="text-align:center;margin-top:2.5rem" class="reveal">
+    <a href="tel:4375241053" class="sec-cta-link yellow">📞 Book Repair — 437-524-1053</a>
   </div>
 </section>
 
@@ -850,6 +1105,37 @@
         <div class="step-desc">We repair it right the first time. 90-day parts &amp; labour warranty included on every job.</div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     LOCATIONS
+═══════════════════════════════ -->
+<section class="locations">
+  <div class="loc-inner">
+    <div class="sec-head reveal">
+      <span class="tag tag-light">Service Areas</span>
+      <h2 class="sec-title light">We Come to You Across the GTA</h2>
+      <p class="sec-sub light">Same-day technician dispatch available throughout Toronto and surrounding cities.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card reveal"                        ><span class="loc-icon">📍</span>Toronto</div>
+      <div class="loc-card reveal" style="transition-delay:.05s"><span class="loc-icon">📍</span>Vaughan</div>
+      <div class="loc-card reveal" style="transition-delay:.1s" ><span class="loc-icon">📍</span>Richmond Hill</div>
+      <div class="loc-card reveal" style="transition-delay:.15s"><span class="loc-icon">📍</span>Markham</div>
+      <div class="loc-card reveal" style="transition-delay:.2s" ><span class="loc-icon">📍</span>Brampton</div>
+      <div class="loc-card reveal" style="transition-delay:.25s"><span class="loc-icon">📍</span>Mississauga</div>
+      <div class="loc-card reveal" style="transition-delay:.3s" ><span class="loc-icon">📍</span>East Gwillimbury</div>
+      <div class="loc-card reveal" style="transition-delay:.35s"><span class="loc-icon">📍</span>Newmarket</div>
+      <div class="loc-card reveal" style="transition-delay:.4s" ><span class="loc-icon">📍</span>Aurora</div>
+      <div class="loc-card reveal" style="transition-delay:.45s"><span class="loc-icon">📍</span>Barrie</div>
+      <div class="loc-card reveal" style="transition-delay:.5s" ><span class="loc-icon">📍</span>King City</div>
+      <div class="loc-card reveal" style="transition-delay:.55s"><span class="loc-icon">📍</span>Woodbridge</div>
+    </div>
+    <div class="loc-cta reveal">
+      <a href="tel:4375241053" class="sec-cta-link">📞 Call for Same-Day Service</a>
     </div>
   </div>
 </section>
@@ -913,6 +1199,90 @@
       </text>
     </svg>
     <div class="goog-text"><strong>4.9 / 5</strong> &nbsp;·&nbsp; 250+ Reviews</div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     FAQ
+═══════════════════════════════ -->
+<section class="faq">
+  <div class="faq-inner">
+    <div class="sec-head reveal">
+      <span class="tag tag-blue">FAQ</span>
+      <h2 class="sec-title dark">Common Questions</h2>
+      <p class="sec-sub dark">Everything you need to know before booking your repair.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How much does appliance repair cost in Toronto?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Appliance repair in Toronto typically costs $150–$400 CAD. Minor repairs (thermostats, door seals, belts) run $150–$250. Major repairs (compressors, control boards, motors) run $250–$400. Diagnostic visit is $80, waived when you proceed with the repair. We give you an upfront written quote before starting any work.</div>
+      </div>
+
+      <div class="faq-item reveal" style="transition-delay:.06s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you offer same-day appliance repair service?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Yes! Same-day service is available Monday through Friday 8am–8pm, Saturday 9am–6pm, and Sunday 10am–5pm. Call 437-524-1053 in the morning for best availability. We cover all of Toronto and the GTA.</div>
+      </div>
+
+      <div class="faq-item reveal" style="transition-delay:.12s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What brands do you repair?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">We repair all major brands including Samsung, LG, Whirlpool, GE, Bosch, Frigidaire, Maytag, KitchenAid, Electrolux, Kenmore, Miele, Amana, and many more. Our technicians are factory-trained and carry OEM parts for the most common models.</div>
+      </div>
+
+      <div class="faq-item reveal" style="transition-delay:.18s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is there a diagnostic fee?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Yes, our diagnostic visit fee is $80 CAD. However, this fee is completely waived when you proceed with the repair. If we can't fix your appliance, you only pay the diagnostic fee. We believe in full transparency — no surprises.</div>
+      </div>
+
+      <div class="faq-item reveal" style="transition-delay:.24s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What warranty do you provide on repairs?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Every repair comes with a 90-day warranty on both parts and labour. If the same issue returns within 90 days, we come back and fix it at no additional charge. We stand fully behind our work.</div>
+      </div>
+
+      <div class="faq-item reveal" style="transition-delay:.3s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What areas do you service?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">We service all of Toronto and the Greater Toronto Area including Vaughan, Richmond Hill, Markham, Brampton, Mississauga, East Gwillimbury, Newmarket, Aurora, Barrie, King City, and Woodbridge. Call to confirm availability in your specific neighbourhood.</div>
+      </div>
+
+      <div class="faq-item reveal" style="transition-delay:.36s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How long does a repair typically take?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Most repairs are completed in 1–2 hours during the same visit. Some repairs requiring special parts may need a second visit, but we stock parts for the most common issues and complete 90%+ of repairs on the first visit.</div>
+      </div>
+
+      <div class="faq-item reveal" style="transition-delay:.42s">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What if you can't fix my appliance?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Our "No Fix, No Fee" guarantee means you won't be charged for the repair if we can't fix it — you only pay the $80 diagnostic fee. We'll also give you an honest recommendation on whether repair or replacement makes more financial sense for your situation.</div>
+      </div>
+
+    </div>
+    <div class="faq-cta reveal">
+      <a href="tel:4375241053" class="sec-cta-link yellow">📞 Still have questions? Call 437-524-1053</a>
+    </div>
   </div>
 </section>
 
@@ -985,6 +1355,14 @@
   window.addEventListener('scroll', () => {
     bar.classList.toggle('visible', window.scrollY > 480);
   }, { passive: true });
+
+  // ─── FAQ accordion ─────────────────────────────
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
 
   // ─── Scroll reveal ──────────────────────────────
   const io = new IntersectionObserver((entries) => {
