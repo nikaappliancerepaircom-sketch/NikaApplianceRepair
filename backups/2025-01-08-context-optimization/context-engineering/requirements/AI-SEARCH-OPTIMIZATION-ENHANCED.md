@@ -16,15 +16,15 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://nikaappliancerepair.ca/#business",
+  "@id": "https://nikaappliancerepair.com/#business",
   "name": "Nika Appliance Repair",
   "image": [
-    "https://nikaappliancerepair.ca/images/logo.jpg",
-    "https://nikaappliancerepair.ca/images/team.jpg",
-    "https://nikaappliancerepair.ca/images/service-van.jpg"
+    "https://nikaappliancerepair.com/images/logo.jpg",
+    "https://nikaappliancerepair.com/images/team.jpg",
+    "https://nikaappliancerepair.com/images/service-van.jpg"
   ],
   "telephone": "+14375241053",
-  "email": "care@nikaappliancerepair.ca",
+  "email": "care@nikaappliancerepair.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "60 Walter Tunny Crescent",
@@ -38,7 +38,7 @@
     "latitude": 43.653226,
     "longitude": -79.383184
   },
-  "url": "https://nikaappliancerepair.ca",
+  "url": "https://nikaappliancerepair.com",
   "sameAs": [
     "https://facebook.com/nikaappliancerepair",
     "https://twitter.com/nikarepair",
@@ -97,7 +97,7 @@
   "serviceType": "Refrigerator Repair",
   "provider": {
     "@type": "LocalBusiness",
-    "@id": "https://nikaappliancerepair.ca/#business"
+    "@id": "https://nikaappliancerepair.com/#business"
   },
   "areaServed": {
     "@type": "City",
