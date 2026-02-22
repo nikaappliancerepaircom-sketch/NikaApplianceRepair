@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Nika Appliance Repair — Toronto & GTA | Same-Day Service | 437-524-1053</title>
+<meta name="description" content="Certified appliance repair in Toronto & GTA. Same-day service, upfront pricing, 90-day warranty. Call 437-524-1053.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* =============================================
+   RESET & BASE
+   ============================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #FFFFFF;
+  color: #0A0A0A;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button, input, select, textarea { font-family: inherit; }
+
+/* =============================================
+   LAYOUT
+   ============================================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =============================================
+   STICKY NAV
+   ============================================= */
+#site-nav {
+  position: fixed;
+  top: -80px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E5E7EB;
+  transition: top 0.3s ease;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+#site-nav.visible { top: 0; }
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.nav-logo {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0A0A0A;
+}
+.nav-logo span { color: #2563EB; }
+.nav-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0A0A0A;
+  background: #F8FAFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+.nav-rating .star { color: #F59E0B; }
+.nav-phone a {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #2563EB;
+  letter-spacing: -0.01em;
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+#hero {
+  padding: 96px 0 80px;
+  background: #FFFFFF;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 64px;
+  align-items: center;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #2563EB;
+  margin-bottom: 20px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #2563EB;
+}
+h1.hero-headline {
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #0A0A0A;
+  margin-bottom: 20px;
+}
+.hero-subhead {
+  font-size: 1.0625rem;
+  color: #4B5563;
+  line-height: 1.65;
+  margin-bottom: 32px;
+  max-width: 440px;
+}
+.trust-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0A0A0A;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+.chip .chip-icon { font-size: 0.9375rem; }
+.hero-cta-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #2563EB;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 16px 28px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  transition: background 0.15s ease;
+}
+.hero-cta-phone:hover { background: #1D4ED8; }
+.hero-cta-phone svg { flex-shrink: 0; }
+.hero-tech-img {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hero-tech-img img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #E5E7EB;
+}
+.hero-tech-label { font-size: 0.8125rem; color: #6B7280; line-height: 1.4; }
+.hero-tech-label strong { color: #0A0A0A; font-weight: 600; display: block; }
+
+/* Hero Form */
+.hero-form-card {
+  background: #F8FAFF;
+  border: 1px solid #DBEAFE;
+  border-radius: 8px;
+  padding: 36px 32px 28px;
+}
+.form-heading {
+  font-size: 1.3125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0A0A0A;
+  margin-bottom: 4px;
+}
+.form-subheading {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin-bottom: 24px;
+}
+.form-group { margin-bottom: 14px; position: relative; }
+.form-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6B7280;
+  margin-bottom: 6px;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 0.9375rem;
+  color: #0A0A0A;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.15s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.form-group input:focus,
+.form-group select:focus { border-color: #2563EB; }
+.form-group input.error,
+.form-group select.error { border-color: #DC2626; }
+.form-group .error-msg {
+  display: none;
+  font-size: 0.75rem;
+  color: #DC2626;
+  margin-top: 4px;
+  font-weight: 600;
+}
+.form-group .error-msg.visible { display: block; }
+.select-wrapper { position: relative; }
+.select-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #6B7280;
+  pointer-events: none;
+}
+.btn-form-submit {
+  width: 100%;
+  background: #2563EB;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+  transition: background 0.15s ease;
+  margin-top: 4px;
+}
+.btn-form-submit:hover { background: #1D4ED8; }
+.form-reassurance {
+  text-align: center;
+  font-size: 0.78125rem;
+  color: #9CA3AF;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+.form-reassurance span { display: inline-block; }
+.form-reassurance span::before { content: '\00B7'; margin: 0 8px; color: #D1D5DB; }
+.form-reassurance span:first-child::before { display: none; }
+
+/* =============================================
+   SOCIAL PROOF STRIP
+   ============================================= */
+#social-strip {
+  padding: 20px 0;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+  background: #FFFFFF;
+}
+.social-strip-text {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6B7280;
+  letter-spacing: 0.01em;
+}
+.social-strip-text .accent { color: #0A0A0A; }
+.social-strip-text .star { color: #F59E0B; }
+
+/* =============================================
+   SECTION COMMON
+   ============================================= */
+.section-label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #2563EB;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #E5E7EB;
+  max-width: 40px;
+}
+.section-title {
+  font-size: clamp(1.625rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #0A0A0A;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.section-sub {
+  font-size: 1rem;
+  color: #6B7280;
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+/* =============================================
+   SERVICES
+   ============================================= */
+#services {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+.services-header { margin-bottom: 48px; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #E5E7EB;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.service-card {
+  background: #FFFFFF;
+  padding: 28px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: background 0.15s ease;
+}
+.service-card:hover { background: #F8FAFF; }
+.service-icon-col {
+  width: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px solid #2563EB;
+  padding-left: 12px;
+}
+.service-icon-col img { width: 28px; height: 28px; }
+.service-info { flex: 1; }
+.service-name {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #0A0A0A;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+.service-desc {
+  font-size: 0.8125rem;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+/* =============================================
+   BENEFITS
+   ============================================= */
+#benefits {
+  padding: 80px 0;
+  background: #FAFAFA;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+}
+.benefits-header { margin-bottom: 56px; }
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 64px;
+}
+.benefit-block { display: flex; align-items: flex-start; gap: 20px; }
+.benefit-icon-wrap {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefit-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0A0A0A;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+.benefit-desc {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.65;
+}
+
+/* =============================================
+   VIDEO SECTION
+   ============================================= */
+#video-section {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+.video-header { text-align: center; margin-bottom: 40px; }
+.video-header .section-label { justify-content: center; }
+.video-header .section-label::after { display: none; }
+.video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.yt-facade {
+  position: relative;
+  padding-bottom: 56.25%;
+  background: #0A0A0A;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.yt-facade img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.yt-facade:hover img { opacity: 1; }
+.yt-facade iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  background: #2563EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.15s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+.yt-facade:hover .play-btn { transform: translate(-50%, -50%) scale(1.08); background: #1D4ED8; }
+.play-btn svg { margin-left: 4px; }
+.video-caption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* =============================================
+   BRANDS
+   ============================================= */
+#brands {
+  padding: 56px 0;
+  background: #FAFAFA;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+}
+.brands-label {
+  text-align: center;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9CA3AF;
+  margin-bottom: 24px;
+}
+.brands-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.brand-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #9CA3AF;
+  padding: 6px 20px;
+  letter-spacing: 0.02em;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+.brand-name:hover { color: #0A0A0A; }
+.brand-sep {
+  color: #D1D5DB;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* =============================================
+   VIDEO REVIEWS
+   ============================================= */
+#video-reviews {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+.reviews-header { margin-bottom: 48px; }
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.review-card { }
+.review-yt {
+  position: relative;
+  padding-bottom: 56.25%;
+  background: #0A0A0A;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.review-yt img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.review-yt:hover img { opacity: 1; }
+.review-yt iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.review-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  background: rgba(37, 99, 235, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: transform 0.2s, background 0.15s;
+  pointer-events: none;
+}
+.review-yt:hover .review-play { transform: translate(-50%, -50%) scale(1.08); background: #2563EB; }
+.review-play svg { margin-left: 3px; }
+.reviewer-name {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #0A0A0A;
+  letter-spacing: -0.01em;
+}
+.reviewer-meta {
+  font-size: 0.8125rem;
+  color: #6B7280;
+  margin-top: 3px;
+}
+.reviewer-stars { color: #F59E0B; font-size: 0.8125rem; margin-top: 4px; }
+
+/* =============================================
+   HOW IT WORKS
+   ============================================= */
+#how-it-works {
+  padding: 80px 0;
+  background: #FAFAFA;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+}
+.steps-header { margin-bottom: 56px; }
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  position: relative;
+}
+.steps-grid::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #E5E7EB;
+  z-index: 0;
+}
+.step {
+  padding: 0 32px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.step:last-child { padding-right: 0; }
+.step-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #2563EB;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+  background: #FAFAFA;
+  display: inline-block;
+  padding-right: 16px;
+  margin-bottom: 20px;
+}
+.step-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #0A0A0A;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+.step-desc {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+/* =============================================
+   LOCATIONS
+   ============================================= */
+#locations {
+  padding: 72px 0;
+  background: #FFFFFF;
+}
+.locations-header { margin-bottom: 36px; }
+.cities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.city-pill {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2563EB;
+  border: 1px solid #BFDBFE;
+  border-radius: 4px;
+  padding: 6px 14px;
+  background: #EFF6FF;
+  transition: background 0.15s, border-color 0.15s;
+  cursor: default;
+}
+.city-pill:hover { background: #DBEAFE; border-color: #93C5FD; }
+
+/* =============================================
+   FAQ
+   ============================================= */
+#faq {
+  padding: 80px 0;
+  background: #FAFAFA;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+}
+.faq-header { margin-bottom: 48px; }
+.faq-list { max-width: 760px; }
+.faq-item {
+  border-bottom: 1px solid #E5E7EB;
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+  gap: 16px;
+  list-style: none;
+  user-select: none;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-q-text {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0A0A0A;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+.faq-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563EB;
+  font-size: 1.25rem;
+  font-weight: 400;
+  transition: transform 0.2s ease;
+  line-height: 1;
+}
+details[open] .faq-icon { transform: rotate(45deg); }
+.faq-answer {
+  padding: 0 0 20px;
+  font-size: 0.9rem;
+  color: #4B5563;
+  line-height: 1.7;
+}
+
+/* =============================================
+   PRICING
+   ============================================= */
+#pricing {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+.pricing-header { margin-bottom: 48px; }
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #E5E7EB;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.pricing-card {
+  background: #FFFFFF;
+  padding: 36px 28px;
+}
+.pricing-card.featured { background: #F8FAFF; }
+.pricing-tier {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9CA3AF;
+  margin-bottom: 16px;
+}
+.pricing-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0A0A0A;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.pricing-price .price-note {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6B7280;
+  letter-spacing: 0;
+}
+.pricing-waived {
+  font-size: 0.8125rem;
+  color: #2563EB;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.pricing-divider {
+  height: 1px;
+  background: #E5E7EB;
+  margin: 20px 0;
+}
+.pricing-desc {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.65;
+}
+.pricing-items { list-style: none; margin-top: 12px; }
+.pricing-items li {
+  font-size: 0.8125rem;
+  color: #4B5563;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pricing-items li::before { content: '\2014'; color: #D1D5DB; flex-shrink: 0; }
+
+/* =============================================
+   FINAL CTA
+   ============================================= */
+#final-cta {
+  padding: 80px 0;
+  background: #2563EB;
+}
+.final-cta-inner { text-align: center; }
+.final-cta-headline {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 36px;
+}
+.btn-cta-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  color: #2563EB;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.btn-cta-white:hover { background: #EFF6FF; }
+.final-cta-alt {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.7);
+}
+.final-cta-hours {
+  margin-top: 10px;
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.55);
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+#footer {
+  padding: 28px 0;
+  background: #FFFFFF;
+  border-top: 1px solid #E5E7EB;
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-logo {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0A0A0A;
+}
+.footer-logo span { color: #2563EB; }
+.footer-copy {
+  font-size: 0.8125rem;
+  color: #9CA3AF;
+}
+.footer-phone a {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #2563EB;
+}
+
+/* =============================================
+   STICKY BOTTOM BAR
+   ============================================= */
+#sticky-bottom {
+  position: fixed;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #0A0A0A;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  transition: bottom 0.3s ease;
+}
+#sticky-bottom.visible { bottom: 0; }
+.sticky-label {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.7);
+}
+.sticky-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #2563EB;
+  color: #FFFFFF;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.sticky-phone:hover { background: #1D4ED8; }
+
+/* =============================================
+   FADE-IN ANIMATION
+   ============================================= */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.fade-in.visible { opacity: 1; }
+
+/* =============================================
+   SUCCESS STATE
+   ============================================= */
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 32px 0;
+}
+.form-success.visible { display: block; }
+.form-success-icon {
+  width: 56px;
+  height: 56px;
+  background: #DCFCE7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+.form-success-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0A0A0A;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+.form-success-text {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+/* =============================================
+   RESPONSIVE — TABLET
+   ============================================= */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+  .hero-subhead { max-width: 100%; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .benefits-grid { gap: 32px 40px; }
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .steps-grid::before { display: none; }
+  .steps-grid { grid-template-columns: 1fr; gap: 40px; }
+  .step { padding-right: 0; }
+  .step-number { padding-right: 0; }
+  .pricing-grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE
+   ============================================= */
+@media (max-width: 640px) {
+  #hero { padding: 72px 0 60px; }
+  .hero-form-card { padding: 28px 20px 22px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .benefits-grid { grid-template-columns: 1fr; gap: 28px; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .nav-rating { display: none; }
+  h1.hero-headline { font-size: 2rem; }
+  .hero-cta-phone { font-size: 1rem; padding: 14px 20px; }
+  .sticky-label { display: none; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .trust-chips { gap: 8px; }
+  .chip { font-size: 0.75rem; padding: 5px 10px; }
+  .brand-name { padding: 4px 12px; font-size: 0.875rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- =============================================
+     STICKY NAV
+     ============================================= -->
+<nav id="site-nav" role="navigation" aria-label="Site navigation">
+  <div class="nav-inner">
+    <div class="nav-logo"><span>Nika</span> Appliance Repair</div>
+    <div class="nav-rating">
+      <span class="star">&#9733;</span>
+      <span>4.9/5 Google</span>
+    </div>
+    <div class="nav-phone">
+      <a href="tel:4375241053">437-524-1053</a>
+    </div>
+  </div>
+</nav>
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<section id="hero" aria-label="Hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- LEFT: Headline + Trust -->
+      <div class="hero-left">
+        <div class="hero-eyebrow">Toronto &amp; GTA Appliance Repair</div>
+        <h1 class="hero-headline">Your Appliance<br>Repaired Today.</h1>
+        <p class="hero-subhead">Certified technicians across Toronto &amp; GTA. Upfront pricing. 90-day warranty on all repairs.</p>
+        <div class="trust-chips">
+          <div class="chip"><span class="chip-icon">&#11088;</span> 4.9/5 Google</div>
+          <div class="chip"><span class="chip-icon">&#10003;</span> 500+ Repairs</div>
+          <div class="chip"><span class="chip-icon">&#128737;</span> 90-Day Warranty</div>
+        </div>
+        <a href="tel:4375241053" class="hero-cta-phone" aria-label="Call Nika Appliance Repair at 437-524-1053">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 437-524-1053
+        </a>
+        <div class="hero-tech-img">
+          <img src="assets/images/friendly-technician-character-min.webp" alt="Nika appliance repair certified technician" width="52" height="52">
+          <div class="hero-tech-label">
+            <strong>Certified Technicians</strong>
+            Ready for same-day service across the GTA
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Hero Form -->
+      <div class="hero-right">
+        <div class="hero-form-card">
+          <div id="lead-form-body">
+            <div class="form-heading">Get a Free Diagnosis</div>
+            <div class="form-subheading">Tell us about your appliance &mdash; no commitment needed.</div>
+            <form id="lead-form" novalidate>
+              <div class="form-group">
+                <label for="f-name">Your Name</label>
+                <input type="text" id="f-name" name="name" placeholder="Jane Smith" autocomplete="name">
+                <div class="error-msg" id="err-name" role="alert">Please enter your name.</div>
+              </div>
+              <div class="form-group">
+                <label for="f-phone">Phone Number</label>
+                <input type="tel" id="f-phone" name="phone" placeholder="416-555-0123" autocomplete="tel">
+                <div class="error-msg" id="err-phone" role="alert">Please enter a valid phone number.</div>
+              </div>
+              <div class="form-group">
+                <label for="f-appliance">Appliance Type</label>
+                <div class="select-wrapper">
+                  <select id="f-appliance" name="appliance">
+                    <option value="" disabled selected>Select appliance&hellip;</option>
+                    <option value="refrigerator">Refrigerator / Fridge</option>
+                    <option value="washer">Washing Machine</option>
+                    <option value="dryer">Dryer</option>
+                    <option value="dishwasher">Dishwasher</option>
+                    <option value="oven-range">Oven / Range / Stove</option>
+                    <option value="microwave">Microwave</option>
+                    <option value="freezer">Freezer</option>
+                    <option value="ice-maker">Ice Maker</option>
+                    <option value="other">Other Appliance</option>
+                  </select>
+                </div>
+                <div class="error-msg" id="err-appliance" role="alert">Please select an appliance.</div>
+              </div>
+              <button type="submit" class="btn-form-submit">Book Free Diagnosis &#8594;</button>
+            </form>
+            <div class="form-reassurance">
+              <span>No commitment</span>
+              <span>We call you back within 1 hour</span>
+              <span>Free estimate</span>
+            </div>
+          </div>
+          <div class="form-success" id="form-success" role="alert" aria-live="polite">
+            <div class="form-success-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="form-success-title">Request Received!</div>
+            <div class="form-success-text">A certified technician will call you back within 1 hour.<br>For urgent repairs, call <strong><a href="tel:4375241053">437-524-1053</a></strong>.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SOCIAL PROOF STRIP
+     ============================================= -->
+<div id="social-strip" aria-label="Social proof">
+  <div class="container">
+    <p class="social-strip-text">
+      Trusted by <span class="accent">500+ Toronto families</span> &nbsp;&middot;&nbsp;
+      <span class="star">&#9733;</span> <span class="accent">4.9</span> on Google &nbsp;&middot;&nbsp;
+      <span class="accent">250+</span> Verified Reviews
+    </p>
+  </div>
+</div>
+
+<!-- =============================================
+     SERVICES
+     ============================================= -->
+<section id="services" class="fade-in" aria-label="Services we offer">
+  <div class="container">
+    <div class="services-header">
+      <div class="section-label">What we fix</div>
+      <h2 class="section-title">Every major appliance,<br>repaired right.</h2>
+      <p class="section-sub">Same-day and next-day service available on all appliances. OEM parts, certified repairs.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon-col">
+          <img src="https://nikaappliancerepair.com/service-icon-refrigerator.svg" alt="" aria-hidden="true" width="28" height="28" onerror="this.style.display='none'">
+        </div>
+        <div class="service-info">
+          <div class="service-name">Refrigerator</div>
+          <div class="service-desc">Not cooling, leaking, ice maker issues, compressor failure</div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon-col">
+          <img src="https://nikaappliancerepair.com/service-icon-washer.svg" alt="" aria-hidden="true" width="28" height="28" onerror="this.style.display='none'">
+        </div>
+        <div class="service-info">
+          <div class="service-name">Washing Machine</div>
+          <div class="service-desc">Not spinning, leaking, won't drain, error codes</div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon-col">
+          <img src="https://nikaappliancerepair.com/service-icon-dryer.svg" alt="" aria-hidden="true" width="28" height="28" onerror="this.style.display='none'">
+        </div>
+        <div class="service-info">
+          <div class="service-name">Dryer</div>
+          <div class="service-desc">Not heating, takes too long, making noise, won't start</div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon-col">
+          <img src="https://nikaappliancerepair.com/service-icon-dishwasher.svg" alt="" aria-hidden="true" width="28" height="28" onerror="this.style.display='none'">
+        </div>
+        <div class="service-info">
+          <div class="service-name">Dishwasher</div>
+          <div class="service-desc">Not cleaning, won't drain, leaking, door latch broken</div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon-col">
+          <img src="https://nikaappliancerepair.com/service-icon-oven.svg" alt="" aria-hidden="true" width="28" height="28" onerror="this.style.display='none'">
+        </div>
+        <div class="service-info">
+          <div class="service-name">Oven &amp; Range</div>
+          <div class="service-desc">Not heating, uneven temperature, burner issues, igniter</div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon-col">
+          <img src="https://nikaappliancerepair.com/service-icon-stove.svg" alt="" aria-hidden="true" width="28" height="28" onerror="this.style.display='none'">
+        </div>
+        <div class="service-info">
+          <div class="service-name">Stove / Cooktop</div>
+          <div class="service-desc">Burner not working, gas ignition, electric element failure</div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon-col">
+          <img src="https://nikaappliancerepair.com/service-icon-microwave.svg" alt="" aria-hidden="true" width="28" height="28" onerror="this.style.display='none'">
+        </div>
+        <div class="service-info">
+          <div class="service-name">Microwave</div>
+          <div class="service-desc">Not heating, turntable broken, sparking, display failure</div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon-col">
+          <img src="https://nikaappliancerepair.com/service-icon-freezer.svg" alt="" aria-hidden="true" width="28" height="28" onerror="this.style.display='none'">
+        </div>
+        <div class="service-info">
+          <div class="service-name">Freezer</div>
+          <div class="service-desc">Not freezing, frost buildup, temperature swings</div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon-col">
+          <img src="https://nikaappliancerepair.com/service-icon-ice-maker.svg" alt="" aria-hidden="true" width="28" height="28" onerror="this.style.display='none'">
+        </div>
+        <div class="service-info">
+          <div class="service-name">Ice Maker</div>
+          <div class="service-desc">Not making ice, slow production, water dispenser issues</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     BENEFITS
+     ============================================= -->
+<section id="benefits" class="fade-in" aria-label="Why choose Nika">
+  <div class="container">
+    <div class="benefits-header">
+      <div class="section-label">Why Nika</div>
+      <h2 class="section-title">The standard we hold<br>every repair to.</h2>
+    </div>
+    <div class="benefits-grid">
+
+      <div class="benefit-block">
+        <div class="benefit-icon-wrap">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="benefit-title">Certified Technicians</div>
+          <div class="benefit-desc">Every technician is factory-trained, background-checked, and carries full liability insurance. You know exactly who is coming to your home.</div>
+        </div>
+      </div>
+
+      <div class="benefit-block">
+        <div class="benefit-icon-wrap">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div class="benefit-title">OEM Parts Only</div>
+          <div class="benefit-desc">We use only original manufacturer parts &mdash; never cheap substitutes. Your appliance works the way it was designed to, with full manufacturer spec.</div>
+        </div>
+      </div>
+
+      <div class="benefit-block">
+        <div class="benefit-icon-wrap">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div>
+          <div class="benefit-title">90-Day Warranty</div>
+          <div class="benefit-desc">Every repair is covered by our 90-day parts and labour warranty. If anything related to the repair fails, we fix it &mdash; no questions, no charge.</div>
+        </div>
+      </div>
+
+      <div class="benefit-block">
+        <div class="benefit-icon-wrap">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        </div>
+        <div>
+          <div class="benefit-title">Upfront Pricing &mdash; No Surprises</div>
+          <div class="benefit-desc">You receive a firm written quote before any work begins. The price we quote is the price you pay &mdash; no hidden fees, no after-the-fact add-ons.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     VIDEO SECTION
+     ============================================= -->
+<section id="video-section" class="fade-in" aria-label="Watch us work">
+  <div class="container">
+    <div class="video-header">
+      <div class="section-label">In action</div>
+      <h2 class="section-title">See how we work.</h2>
+    </div>
+    <div class="video-wrapper">
+      <div class="yt-facade" data-video-id="Nk1ab2OskJ4" role="button" tabindex="0" aria-label="Play: Nika Appliance Repair video &mdash; see how we work">
+        <img src="https://img.youtube.com/vi/Nk1ab2OskJ4/maxresdefault.jpg" alt="Nika Appliance Repair technician at work" width="1280" height="720" loading="lazy">
+        <div class="play-btn" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+      </div>
+      <p class="video-caption">See how we repair your appliance &mdash; same day, right the first time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     BRANDS
+     ============================================= -->
+<div id="brands" aria-label="Brands we service">
+  <div class="container">
+    <div class="brands-label">All major brands serviced</div>
+    <div class="brands-row">
+      <span class="brand-name">Samsung</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">LG</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">Whirlpool</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">GE</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">Bosch</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">Frigidaire</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">Maytag</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">KitchenAid</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">Electrolux</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">Kenmore</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">Miele</span><span class="brand-sep">&middot;</span>
+      <span class="brand-name">Amana</span>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================
+     VIDEO REVIEWS
+     ============================================= -->
+<section id="video-reviews" class="fade-in" aria-label="Customer video testimonials">
+  <div class="container">
+    <div class="reviews-header">
+      <div class="section-label">Customer reviews</div>
+      <h2 class="section-title">Real customers. Real results.</h2>
+      <p class="section-sub">Hear directly from Toronto families we have helped.</p>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-yt" data-video-id="vdL7LqIvzhs" role="button" tabindex="0" aria-label="Play customer testimonial from Sarah M., North York">
+          <img src="https://img.youtube.com/vi/vdL7LqIvzhs/mqdefault.jpg" alt="Customer testimonial video" width="320" height="180" loading="lazy">
+          <div class="review-play" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+        </div>
+        <div class="reviewer-name">Sarah M.</div>
+        <div class="reviewer-meta">North York &middot; Refrigerator repair</div>
+        <div class="reviewer-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-yt" data-video-id="P0RYfb2D-wY" role="button" tabindex="0" aria-label="Play customer testimonial from David K., Scarborough">
+          <img src="https://img.youtube.com/vi/P0RYfb2D-wY/mqdefault.jpg" alt="Customer testimonial video" width="320" height="180" loading="lazy">
+          <div class="review-play" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+        </div>
+        <div class="reviewer-name">David K.</div>
+        <div class="reviewer-meta">Scarborough &middot; Washing machine</div>
+        <div class="reviewer-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-yt" data-video-id="0ChLLYanSNY" role="button" tabindex="0" aria-label="Play customer testimonial from Lisa T., Mississauga">
+          <img src="https://img.youtube.com/vi/0ChLLYanSNY/mqdefault.jpg" alt="Customer testimonial video" width="320" height="180" loading="lazy">
+          <div class="review-play" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+        </div>
+        <div class="reviewer-name">Lisa T.</div>
+        <div class="reviewer-meta">Mississauga &middot; Dryer repair</div>
+        <div class="reviewer-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     HOW IT WORKS
+     ============================================= -->
+<section id="how-it-works" class="fade-in" aria-label="How our repair process works">
+  <div class="container">
+    <div class="steps-header">
+      <div class="section-label">Process</div>
+      <h2 class="section-title">Three steps to a<br>working appliance.</h2>
+    </div>
+    <div class="steps-grid">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-title">Book in 60 seconds</div>
+        <div class="step-desc">Fill the form above or call 437-524-1053. We confirm your appointment within 1 hour and give you a 2-hour arrival window that fits your schedule.</div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-title">Free diagnosis on-site</div>
+        <div class="step-desc">Your certified technician arrives, diagnoses the problem, and gives you a firm upfront price. No obligation to proceed &mdash; the diagnosis is free.</div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-title">Repaired same day</div>
+        <div class="step-desc">95% of repairs are completed in a single visit using OEM parts carried in the service van. Your appliance is running before we leave, backed by a 90-day warranty.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     LOCATIONS
+     ============================================= -->
+<section id="locations" class="fade-in" aria-label="Service locations">
+  <div class="container">
+    <div class="locations-header">
+      <div class="section-label">Service area</div>
+      <h2 class="section-title">Serving all of Toronto &amp; GTA</h2>
+      <p class="section-sub">We dispatch technicians from multiple locations &mdash; fast arrival times across the entire region.</p>
+    </div>
+    <div class="cities-grid">
+      <span class="city-pill">Toronto</span>
+      <span class="city-pill">Mississauga</span>
+      <span class="city-pill">Brampton</span>
+      <span class="city-pill">Scarborough</span>
+      <span class="city-pill">North York</span>
+      <span class="city-pill">Etobicoke</span>
+      <span class="city-pill">Vaughan</span>
+      <span class="city-pill">Markham</span>
+      <span class="city-pill">Richmond Hill</span>
+      <span class="city-pill">Oakville</span>
+      <span class="city-pill">Burlington</span>
+      <span class="city-pill">Ajax &amp; Pickering</span>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FAQ
+     ============================================= -->
+<section id="faq" class="fade-in" aria-label="Frequently asked questions">
+  <div class="container">
+    <div class="faq-header">
+      <div class="section-label">Questions</div>
+      <h2 class="section-title">Frequently asked.</h2>
+    </div>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span class="faq-q-text">How much does appliance repair cost in Toronto?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-answer">Diagnostic visits are $80, which is waived if you proceed with the repair. Standard repairs typically run $150&ndash;$280, while complex repairs involving compressors or control boards range from $280&ndash;$450. You receive a firm written quote before any work begins &mdash; the price never changes.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span class="faq-q-text">Do you offer same-day appliance repair?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-answer">Yes. Same-day service is available Monday through Friday 8am&ndash;8pm, Saturday 9am&ndash;6pm, and Sunday 10am&ndash;5pm. Availability depends on your location and the time you call. We recommend calling before noon for the highest chance of same-day service.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span class="faq-q-text">What warranty do you provide on repairs?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-answer">Every repair is covered by a 90-day warranty on both parts and labour. If the same issue recurs within 90 days of your repair, we will return and fix it at no charge. This warranty applies to all appliances and all brands we service.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span class="faq-q-text">Is it worth repairing or should I replace my appliance?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-answer">A general rule: if the repair costs less than 50% of a new appliance's price and the appliance is under 10 years old, repair is almost always the better financial decision. Our technicians will give you an honest assessment and never recommend repairs that do not make economic sense.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span class="faq-q-text">Which brands do you repair?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-answer">We service all major brands including Samsung, LG, Whirlpool, GE, Bosch, Frigidaire, Maytag, KitchenAid, Electrolux, Kenmore, Miele, and Amana. If you do not see your brand listed, call us &mdash; we service virtually every residential brand sold in Canada.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span class="faq-q-text">Do your technicians carry parts with them?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-answer">Yes. Our service vans are stocked with the most commonly needed OEM parts for all major brands. This is why 95% of repairs are completed in a single visit. In rare cases where a specific part must be ordered, we schedule a return visit as quickly as possible.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span class="faq-q-text">What areas of Toronto and the GTA do you serve?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-answer">We serve all of Toronto including Scarborough, North York, and Etobicoke, as well as Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, Ajax, and Pickering. If you are unsure whether we cover your area, call 437-524-1053 and we will confirm immediately.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     BOOKING
+     ============================================= -->
+<section id="booking" class="fade-in" aria-label="Book your repair online">
+  <div class="container">
+    <div class="section-label">Online Booking</div>
+    <h2 class="section-title">Book your repair<br>in minutes.</h2>
+    <p class="section-sub">Choose a convenient time — real-time scheduling, instant confirmation.</p>
+    <iframe src="https://hub.fixlify.app/book/nicks-appliance-repair-b8c8ce?embed=true" style="width:100%;min-height:600px;border:none;border-radius:8px;margin-top:1.5rem;" title="Book a Service" loading="lazy"></iframe>
+    <p style="margin-top: 1rem; font-size: 0.85rem; color: #64748B; text-align: center;">Or call us: <a href="tel:4375241053" style="color:#2563EB;font-weight:600;">437-524-1053</a></p>
+  </div>
+</section>
+
+<!-- =============================================
+     PRICING
+     ============================================= -->
+<section id="pricing" class="fade-in" aria-label="Repair pricing">
+  <div class="container">
+    <div class="pricing-header">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Honest, upfront pricing.</h2>
+      <p class="section-sub">No hidden fees. The quote you receive before work begins is the price you pay.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <div class="pricing-card">
+        <div class="pricing-tier">Diagnostic Visit</div>
+        <div class="pricing-price">$80 <span class="price-note">flat fee</span></div>
+        <div class="pricing-waived">Waived when you book the repair</div>
+        <div class="pricing-divider"></div>
+        <div class="pricing-desc">A certified technician visits your home, identifies the problem, and provides a detailed written quote at no obligation.</div>
+        <ul class="pricing-items">
+          <li>Full appliance inspection</li>
+          <li>Written diagnosis report</li>
+          <li>Firm upfront repair quote</li>
+          <li>No obligation to proceed</li>
+        </ul>
+      </div>
+
+      <div class="pricing-card featured">
+        <div class="pricing-tier">Standard Repair</div>
+        <div class="pricing-price">$150&ndash;$280 <span class="price-note">incl. parts</span></div>
+        <div class="pricing-waived">Most common repair range</div>
+        <div class="pricing-divider"></div>
+        <div class="pricing-desc">Covers the majority of appliance repairs including heating elements, pumps, motors, valves, belts, and standard electronic components.</div>
+        <ul class="pricing-items">
+          <li>OEM replacement parts</li>
+          <li>Same-day completion</li>
+          <li>90-day warranty</li>
+          <li>Labour included</li>
+        </ul>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-tier">Complex Repair</div>
+        <div class="pricing-price">$280&ndash;$450 <span class="price-note">incl. parts</span></div>
+        <div class="pricing-waived">Compressors, control boards</div>
+        <div class="pricing-divider"></div>
+        <div class="pricing-desc">Applies to major component replacements such as compressors, sealed system repairs, main control boards, and inverter drives.</div>
+        <ul class="pricing-items">
+          <li>Premium OEM components</li>
+          <li>Extended diagnostics</li>
+          <li>90-day warranty</li>
+          <li>Labour included</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FINAL CTA
+     ============================================= -->
+<section id="final-cta" aria-label="Book your repair now">
+  <div class="container">
+    <div class="final-cta-inner">
+      <h2 class="final-cta-headline">Ready to book your repair?</h2>
+      <a href="tel:4375241053" class="btn-cta-white" aria-label="Call Nika Appliance Repair at 437-524-1053">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call 437-524-1053
+      </a>
+      <p class="final-cta-alt">Or fill the form above &mdash; we will call you back within 1 hour.</p>
+      <p class="final-cta-hours">Mon&ndash;Fri 8am&ndash;8pm &nbsp;&middot;&nbsp; Sat 9am&ndash;6pm &nbsp;&middot;&nbsp; Sun 10am&ndash;5pm</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer id="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo"><span>Nika</span> Appliance Repair</div>
+      <div class="footer-copy">&copy; 2026 Nika Appliance Repair. Toronto &amp; GTA.</div>
+      <div class="footer-phone"><a href="tel:4375241053">437-524-1053</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- =============================================
+     STICKY BOTTOM BAR
+     ============================================= -->
+<div id="sticky-bottom" role="complementary" aria-label="Quick call bar">
+  <span class="sticky-label">Need a repair? Call us now &mdash;</span>
+  <a href="tel:4375241053" class="sticky-phone" aria-label="Call Nika Appliance Repair at 437-524-1053">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    437-524-1053
+  </a>
+</div>
+
+<!-- =============================================
+     JAVASCRIPT — no innerHTML, DOM-safe
+     ============================================= -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---- Sticky Nav + Sticky Bottom Bar ---- */
+  var nav = document.getElementById('site-nav');
+  var heroSection = document.getElementById('hero');
+  var stickyBar = document.getElementById('sticky-bottom');
+
+  function onScroll() {
+    var scrollY = window.scrollY || window.pageYOffset;
+
+    if (scrollY > 60) {
+      nav.classList.add('visible');
+    } else {
+      nav.classList.remove('visible');
+    }
+
+    if (heroSection) {
+      var heroRect = heroSection.getBoundingClientRect();
+      var pastHero = heroRect.bottom < 0;
+      if (pastHero) {
+        stickyBar.classList.add('visible');
+      } else {
+        stickyBar.classList.remove('visible');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---- YouTube Facade — safe DOM construction (no innerHTML) ---- */
+  function buildIframe(videoId) {
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1&rel=0&modestbranding=1';
+    iframe.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.title = 'YouTube video player';
+    return iframe;
+  }
+
+  function activateFacade(container) {
+    var videoId = container.getAttribute('data-video-id');
+    if (!videoId) return;
+
+    /* Remove all existing children (thumbnail, play button) */
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+
+    container.appendChild(buildIframe(videoId));
+    container.style.cursor = 'default';
+  }
+
+  function attachFacadeListeners(el) {
+    el.addEventListener('click', function handler() {
+      activateFacade(el);
+      el.removeEventListener('click', handler);
+    });
+    el.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        el.click();
+      }
+    });
+  }
+
+  document.querySelectorAll('.yt-facade, .review-yt').forEach(attachFacadeListeners);
+
+  /* ---- IntersectionObserver fade-in ---- */
+  var fadeEls = document.querySelectorAll('.fade-in');
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    fadeEls.forEach(function (el) { io.observe(el); });
+  } else {
+    fadeEls.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  /* ---- Form validation ---- */
+  var form = document.getElementById('lead-form');
+  if (!form) return;
+
+  function showError(fieldEl, errEl) {
+    fieldEl.classList.add('error');
+    errEl.classList.add('visible');
+  }
+
+  function clearError(fieldEl, errEl) {
+    fieldEl.classList.remove('error');
+    errEl.classList.remove('visible');
+  }
+
+  function attachClearListener(fieldEl, errEl) {
+    var eventType = fieldEl.tagName === 'SELECT' ? 'change' : 'input';
+    fieldEl.addEventListener(eventType, function () {
+      if (fieldEl.value.trim()) clearError(fieldEl, errEl);
+    });
+  }
+
+  var nameEl = document.getElementById('f-name');
+  var nameErr = document.getElementById('err-name');
+  var phoneEl = document.getElementById('f-phone');
+  var phoneErr = document.getElementById('err-phone');
+  var applianceEl = document.getElementById('f-appliance');
+  var applianceErr = document.getElementById('err-appliance');
+
+  attachClearListener(nameEl, nameErr);
+  attachClearListener(phoneEl, phoneErr);
+  attachClearListener(applianceEl, applianceErr);
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var valid = true;
+
+    /* Name */
+    if (!nameEl.value.trim() || nameEl.value.trim().length < 2) {
+      showError(nameEl, nameErr);
+      valid = false;
+    } else {
+      clearError(nameEl, nameErr);
+    }
+
+    /* Phone — require 10+ digits */
+    var digits = phoneEl.value.replace(/\D/g, '');
+    if (digits.length < 10) {
+      showError(phoneEl, phoneErr);
+      valid = false;
+    } else {
+      clearError(phoneEl, phoneErr);
+    }
+
+    /* Appliance */
+    if (!applianceEl.value) {
+      showError(applianceEl, applianceErr);
+      valid = false;
+    } else {
+      clearError(applianceEl, applianceErr);
+    }
+
+    if (valid) {
+      var formBody = document.getElementById('lead-form-body');
+      var successEl = document.getElementById('form-success');
+      if (formBody) formBody.style.display = 'none';
+      if (successEl) successEl.classList.add('visible');
+
+      /* Production: POST to your endpoint
+      var data = new FormData(form);
+      fetch('/api/leads', { method: 'POST', body: data });
+      */
+    }
+  });
+
+}());
+</script>
+
+</body>
+</html>

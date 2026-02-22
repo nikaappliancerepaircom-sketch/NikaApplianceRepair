@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Landing Variants Preview</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a12;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: #111120;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 50px;
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    .topbar-logo {
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      opacity: .5;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 3px;
+      flex: 1;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,.2) transparent;
+    }
+    .tabs::-webkit-scrollbar { height: 3px; }
+    .tabs::-webkit-scrollbar-track { background: transparent; }
+    .tabs::-webkit-scrollbar-thumb { background: rgba(255,255,255,.2); border-radius: 2px; }
+
+    .tab {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 9px;
+      border-radius: 7px;
+      border: 1px solid rgba(255,255,255,.09);
+      background: transparent;
+      color: #777;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .tab:hover { background: rgba(255,255,255,.05); color: #bbb; }
+    .tab.active { background: #1565C0; color: #fff; border-color: #1976D2; }
+    .tab.active.cv3 { background: #1a3a5c; border-color: #2196F3; }
+    .tab.active.cv4 { background: #1E6B4F; border-color: #27ae60; }
+    .tab.active.cv5 { background: #5B21B6; border-color: #7C3AED; }
+    .tab.active.cv6 { background: #92400E; border-color: #D97706; }
+    .tab.pending { opacity: .45; cursor: not-allowed; }
+
+    .tab-score {
+      background: rgba(255,255,255,.13);
+      border-radius: 8px;
+      padding: 1px 6px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    .tab-best {
+      background: #FFD600;
+      color: #111;
+      border-radius: 8px;
+      padding: 1px 5px;
+      font-size: 9px;
+      font-weight: 800;
+    }
+    .tab-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #f59e0b;
+      animation: blink 1.2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .btn-open {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 12px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 6px;
+      color: #bbb;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all .15s;
+      white-space: nowrap;
+    }
+    .btn-open:hover { background: rgba(255,255,255,.13); color: #fff; }
+
+    /* ── INFO BAR ── */
+    .infobar {
+      background: #0d0d1c;
+      border-bottom: 1px solid rgba(255,255,255,.04);
+      padding: 5px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      color: #555;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+    .infobar-name { color: #ccc; font-weight: 700; font-size: 11.5px; }
+    .infotag {
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .infotag.yes  { background: rgba(34,197,94,.1);  color: #4ade80; }
+    .infotag.no   { background: rgba(255,59,48,.08); color: #f87171; }
+    .infotag.note { background: rgba(255,214,0,.08); color: #fbbf24; }
+    .infotag.new  { background: rgba(139,92,246,.15);color: #a78bfa; }
+    .score-display { margin-left: auto; color: #444; font-size: 11px; }
+    .score-display strong { color: #4ade80; }
+
+    /* ── IFRAME ── */
+    .frame-wrap {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+    .frame-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      background: #fff;
+    }
+
+    /* Overlays */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 14px;
+      z-index: 10;
+      background: #0a0a12;
+      transition: opacity .3s;
+    }
+    .overlay.hidden { opacity: 0; pointer-events: none; }
+
+    .spinner {
+      width: 34px; height: 34px;
+      border: 3px solid rgba(255,255,255,.08);
+      border-top-color: #2196F3;
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .overlay-text { color: #555; font-size: 13px; }
+
+    .overlay-icon { font-size: 44px; }
+    .overlay-title { color: #ddd; font-size: 18px; font-weight: 700; }
+    .overlay-sub { color: #555; font-size: 13px; text-align: center; max-width: 280px; line-height: 1.6; }
+    .overlay-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #f59e0b; animation: blink 1.2s ease-in-out infinite; margin-right: 5px; }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-logo">🎨</div>
+
+  <div class="tabs" id="tabsRow">
+    <button class="tab active" onclick="switchTo(1,this,'')">
+      V1 — Dark Navy
+      <span class="tab-score">8.2</span>
+    </button>
+    <button class="tab" onclick="switchTo(2,this,'')">
+      V2 — White Pro
+      <span class="tab-score">7.8</span>
+    </button>
+    <button class="tab" onclick="switchTo(3,this,'cv3')">
+      V3 — Expertise
+      <span class="tab-score">8.5</span>
+    </button>
+    <button class="tab" onclick="switchTo(4,this,'cv4')">
+      V4 — Warm Trust
+      <span class="tab-score">8.0</span>
+    </button>
+    <button class="tab" onclick="switchTo(5,this,'cv5')" id="tab5">
+      V5 — Pain First
+      <span class="tab-score">8.6</span>
+    </button>
+    <button class="tab" onclick="switchTo(6,this,'cv6')" id="tab6">
+      V6 — Social Proof
+      <span class="tab-score">8.9</span>
+      <span class="tab-best">🏆</span>
+    </button>
+    <button class="tab" onclick="switchTo(7,this,'cv5')" id="tab7">
+      V7 — Editorial
+      <span class="tab-score">8.4</span>
+    </button>
+    <button class="tab" onclick="switchTo(8,this,'cv6')" id="tab8">
+      V8 — Cinematic
+      <span class="tab-score">8.7</span>
+    </button>
+    <button class="tab" onclick="switchTo(9,this,'cv5')" id="tab9">
+      V9 — Swiss Min
+      <span class="tab-score">9.1</span>
+      <span class="tab-best">NEW</span>
+    </button>
+    <button class="tab" onclick="switchTo(10,this,'cv6')" id="tab10">
+      V10 — Authority
+      <span class="tab-score">9.0</span>
+      <span class="tab-best">NEW</span>
+    </button>
+  </div>
+
+  <div class="topbar-actions">
+    <a id="openBtn" href="http://127.0.0.1:3456/landing.html" target="_blank" class="btn-open">↗ Открыть</a>
+  </div>
+</div>
+
+<div class="infobar">
+  <span class="infobar-name" id="infoName">V1 — Dark Navy</span>
+  <span class="infotag yes">✓ Форма в hero</span>
+  <span class="infotag yes">✓ Sticky bar</span>
+  <span class="infotag note">Fredoka + Rubik</span>
+  <span class="infotag note">Тёмный фон</span>
+  <span class="score-display">CRO: <strong id="scoreText">8.2 / 10</strong></span>
+</div>
+
+<div class="frame-wrap">
+  <div class="overlay" id="loader">
+    <div class="spinner"></div>
+    <div class="overlay-text">Загрузка...</div>
+  </div>
+  <div class="overlay hidden" id="pendingOverlay">
+    <div class="overlay-icon">⏳</div>
+    <div class="overlay-title" id="pendingTitle">Создаётся...</div>
+    <div class="overlay-sub"><span class="overlay-dot"></span>Агент пишет страницу. Обновится автоматически.</div>
+  </div>
+  <iframe id="mainFrame" src="http://127.0.0.1:3456/landing.html"></iframe>
+</div>
+
+<script>
+var variants = {
+  1: { url:'http://127.0.0.1:3456/landing.html',    name:'V1 — Dark Navy',        score:'8.2', tags:['✓ Fixlify iframe','✓ Sticky bar','Fredoka + Rubik','Тёмный фон'],        tagCls:['yes','yes','note','note'], pending:false },
+  2: { url:'http://127.0.0.1:3456/landing-v2.html', name:'V2 — White Professional',score:'7.8', tags:['✓ Fixlify iframe','✓ Высокое доверие','DM Sans + Rubik','Белый'],       tagCls:['yes','yes','note','note'],  pending:false },
+  3: { url:'http://127.0.0.1:3456/landing-v3.html', name:'V3 — Expertise Dark',   score:'8.5', tags:['✓ Fixlify iframe','✓ Без urgency','DM Serif + DM Sans','Премиум тёмный'],tagCls:['yes','yes','note','note'],  pending:false },
+  4: { url:'http://127.0.0.1:3456/landing-v4.html', name:'V4 — Warm & Trust',     score:'8.0', tags:['✓ Fixlify iframe','✓ Доверие','Lora + Rubik','Тёплый зелёный'],          tagCls:['yes','yes','note','note'],  pending:false },
+  5: { url:'http://127.0.0.1:3456/landing-v5.html', name:'V5 — Pain Point First', score:'8.6', tags:['✓ Боль клиента в hero','✓ Fixlify iframe','Playfair + Source Sans','Контраст'],  tagCls:['new','yes','note','note'],  pending:false },
+  6: { url:'http://127.0.0.1:3456/landing-v6.html', name:'V6 — Social Proof 🏆',  score:'8.9', tags:['✓ Рейтинг в hero','✓ 6 отзывов выше','Merriweather + Nunito','Доверие'],tagCls:['new','new','note','note'],  pending:false },
+  7: { url:'http://127.0.0.1:3456/landing-v7.html', name:'V7 — Editorial Bold',   score:'?',   tags:['✓ Реальные фото','✓ YouTube видео','Syne + IBM Plex','Газетный стиль'],  tagCls:['new','new','note','note'],  pending:false },
+  8: { url:'http://127.0.0.1:3456/landing-v8.html', name:'V8 — Cinematic Dark',   score:'?',   tags:['✓ Видео в hero','✓ Glassmorphism','Outfit + Plus Jakarta','Кино-стиль'],  tagCls:['new','new','note','note'],  pending:false },
+  9: { url:'http://127.0.0.1:3456/landing-v9.html', name:'V9 — Swiss Minimal',    score:'9.1', tags:['✓ Fixlify iframe','✓ Один CTA','Instrument Sans','Минимализм'],           tagCls:['new','yes','note','note'],  pending:false },
+  10:{ url:'http://127.0.0.1:3456/landing-v10.html',name:'V10 — Bold Authority',  score:'9.0', tags:['✓ Fixlify iframe','✓ Видео Reviews','Barlow Condensed','Авторитет'],       tagCls:['new','new','note','note'],  pending:false }
+};
+
+var current = 1;
+var loader = document.getElementById('loader');
+var frame  = document.getElementById('mainFrame');
+var openBtn = document.getElementById('openBtn');
+var infoName = document.getElementById('infoName');
+var scoreText = document.getElementById('scoreText');
+var pendingOverlay = document.getElementById('pendingOverlay');
+var pendingTitle = document.getElementById('pendingTitle');
+
+frame.addEventListener('load', function() { loader.classList.add('hidden'); });
+
+function updateInfobar(v) {
+  infoName.textContent = v.name;
+  scoreText.textContent = v.score + ' / 10';
+  var bar = document.querySelector('.infobar');
+  // Remove old tags
+  Array.from(bar.querySelectorAll('.infotag')).forEach(function(t){ t.remove(); });
+  var nameEl = bar.querySelector('.infobar-name');
+  v.tags.forEach(function(tag, i) {
+    var el = document.createElement('span');
+    el.className = 'infotag ' + v.tagCls[i];
+    el.textContent = tag;
+    nameEl.insertAdjacentElement('afterend', el);
+  });
+}
+
+function switchTo(num, btn, colorCls) {
+  if (num === current) return;
+  var v = variants[num];
+
+  // Update tabs
+  document.querySelectorAll('.tab').forEach(function(t){
+    t.classList.remove('active','cv3','cv4','cv5','cv6');
+  });
+  btn.classList.add('active');
+  if (colorCls) btn.classList.add(colorCls);
+
+  current = num;
+  openBtn.href = v.url;
+  updateInfobar(v);
+
+  if (v.pending) {
+    pendingTitle.textContent = v.name + ' — создаётся';
+    pendingOverlay.classList.remove('hidden');
+    loader.classList.add('hidden');
+    return;
+  }
+  pendingOverlay.classList.add('hidden');
+  loader.classList.remove('hidden');
+  frame.src = v.url;
+}
+
+// Poll for pending variants
+function pollVariant(num) {
+  var v = variants[num];
+  if (!v.pending) return;
+  fetch(v.url, { method: 'HEAD' })
+    .then(function(r) {
+      var len = parseInt(r.headers.get('Content-Length') || '0');
+      if (len > 25000) {
+        v.pending = false;
+        // Remove dot
+        var dot = document.getElementById('dot' + num);
+        if (dot) dot.remove();
+        // If currently viewing this tab, load it
+        if (current === num) {
+          pendingOverlay.classList.add('hidden');
+          loader.classList.remove('hidden');
+          frame.src = v.url;
+        }
+      } else {
+        setTimeout(function(){ pollVariant(num); }, 20000);
+      }
+    })
+    .catch(function(){ setTimeout(function(){ pollVariant(num); }, 20000); });
+}
+
+// Initial load
+loader.classList.remove('hidden');
+</script>
+</body>
+</html>
