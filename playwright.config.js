@@ -41,54 +41,12 @@ module.exports = defineConfig({
     video: 'retain-on-failure',
   },
 
-  /* Configure projects for major browsers and devices */
+  /* Single browser project — viewport sizes are set per-test in design-tests.spec.js */
   projects: [
-    {
-      name: 'Mobile Chrome',
-      use: {
-        ...devices['Pixel 5'],
-        viewport: { width: 393, height: 851 }
-      },
-    },
-
-    {
-      name: 'Mobile Safari',
-      use: {
-        ...devices['iPhone 12'],
-        viewport: { width: 390, height: 844 }
-      },
-    },
-
-    {
-      name: 'iPhone SE',
-      use: {
-        ...devices['iPhone SE'],
-        viewport: { width: 375, height: 667 }
-      },
-    },
-
-    {
-      name: 'Galaxy S9+',
-      use: {
-        ...devices['Galaxy S9+'],
-        viewport: { width: 412, height: 846 }
-      },
-    },
-
-    {
-      name: 'iPad Mini',
-      use: {
-        ...devices['iPad Mini'],
-        viewport: { width: 768, height: 1024 }
-      },
-    },
-
-    // Desktop browsers for comparison
     {
       name: 'Desktop Chrome',
       use: {
         ...devices['Desktop Chrome'],
-        viewport: { width: 1920, height: 1080 }
       },
     },
   ],
