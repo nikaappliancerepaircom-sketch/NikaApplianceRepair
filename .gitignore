@@ -38,6 +38,17 @@ build/
 *.temp
 ~$*
 
+# Generator scripts (run locally, not part of site)
+gen-*.js
+dw-install-content*.js
+gas-gen*.js
+gen-stove*.js
+generate-*.js
+measure-*.js
+stove-content*.js
+stove-nb*.js
+bmad-check.js
+
 # Python cache
 __pycache__/
 *.py[cod]
@@ -52,3 +63,4 @@ __pycache__/
 *.png
 *.jpg
 *.jpeg
+.vercel
