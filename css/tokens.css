@@ -1,0 +1,136 @@
+/* ============================================================
+   DESIGN TOKENS — Nika Appliance Repair
+   Single source of truth for all design decisions.
+   Load BEFORE design-system.css and style.css.
+   ============================================================ */
+
+:root {
+
+  /* ── Brand Colors ─────────────────────────────────────── */
+  --blue-50:  #E3F2FD;
+  --blue-100: #BBDEFB;
+  --blue-200: #90CAF9;
+  --blue-400: #42A5F5;
+  --blue-500: #2196F3;   /* primary brand blue */
+  --blue-700: #1976D2;   /* dark blue */
+  --blue-800: #1565C0;   /* darker blue */
+  --blue-900: #0D47A1;   /* darkest blue */
+
+  --yellow-400: #FFD600; /* primary accent yellow */
+  --green-500:  #4CAF50;
+  --green-600:  #28a745;
+
+  /* ── Neutral Scale ────────────────────────────────────── */
+  --gray-50:  #f8f9fa;
+  --gray-100: #e9ecef;
+  --gray-200: #dee2e6;
+  --gray-400: #adb5bd;
+  --gray-500: #6c757d;
+  --gray-700: #495057;
+  --gray-900: #212529;
+  --white:    #ffffff;
+  --black:    #000000;
+
+  /* ── Semantic Color Tokens ────────────────────────────── */
+
+  /* Headings */
+  --color-heading:          var(--blue-800);   /* #1565C0 — on light bg */
+  --color-heading-on-dark:  var(--white);      /* #ffffff — on dark/blue bg */
+  --color-heading-hero:     var(--white);      /* #ffffff — hero section */
+
+  /* Body text */
+  --color-text-primary:   var(--gray-900);
+  --color-text-body:      var(--gray-700);
+  --color-text-muted:     var(--gray-500);
+  --color-text-link:      var(--blue-500);
+  --color-text-on-dark:   var(--white);
+
+  /* Backgrounds */
+  --color-bg-page:         var(--gray-50);
+  --color-bg-white:        var(--white);
+  --color-bg-dark:         linear-gradient(135deg, var(--blue-700) 0%, var(--blue-500) 50%, var(--blue-800) 100%);
+  --color-bg-hero:         linear-gradient(135deg, #0D47A1 0%, var(--blue-700) 50%, var(--blue-500) 100%);
+
+  /* Borders */
+  --color-border:          var(--gray-200);
+  --color-border-blue:     var(--blue-500);
+
+  /* Buttons */
+  --color-btn-primary-bg:  var(--green-600);
+  --color-btn-primary-text: var(--white);
+  --color-btn-secondary-bg: var(--blue-500);
+
+  /* Status */
+  --color-success:  var(--green-500);
+  --color-warning:  #FF9800;
+  --color-error:    #F44336;
+
+  /* ── Typography ───────────────────────────────────────── */
+  --font-heading: 'Fredoka', cursive, -apple-system, system-ui;
+  --font-body:    'Rubik', sans-serif, -apple-system, system-ui;
+
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  1.875rem;   /* 30px */
+  --text-4xl:  2.25rem;    /* 36px */
+  --text-5xl:  3rem;       /* 48px */
+
+  --font-normal:   400;
+  --font-medium:   500;
+  --font-semibold: 600;
+  --font-bold:     700;
+
+  --leading-tight:   1.25;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.75;
+
+  /* ── Spacing ──────────────────────────────────────────── */
+  --space-1:  0.25rem;   /* 4px */
+  --space-2:  0.5rem;    /* 8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+
+  /* ── Border Radius ────────────────────────────────────── */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  24px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ──────────────────────────────────────────── */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:  0 4px 12px rgba(0,0,0,0.10);
+  --shadow-lg:  0 8px 24px rgba(0,0,0,0.12);
+  --shadow-xl:  0 16px 40px rgba(0,0,0,0.15);
+
+  /* ── Transitions ──────────────────────────────────────── */
+  --transition-fast:   0.15s ease;
+  --transition-base:   0.3s ease;
+  --transition-slow:   0.5s ease;
+
+  /* ── Layout ───────────────────────────────────────────── */
+  --container-max:  1200px;
+  --container-sm:   768px;
+  --container-md:   992px;
+
+  /* ── Z-Index ──────────────────────────────────────────── */
+  --z-base:    1;
+  --z-dropdown: 100;
+  --z-sticky:  200;
+  --z-modal:   300;
+  --z-toast:   400;
+  --z-tooltip: 500;
+}
