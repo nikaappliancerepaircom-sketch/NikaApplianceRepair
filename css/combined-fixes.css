@@ -961,6 +961,16 @@ nav a, .nav-link {
 
 .service-card h3 {
     font-size: clamp(1.125rem, 2vw + 0.5rem, 1.5rem);
+    color: #1565C0 !important;
+    -webkit-text-fill-color: #1565C0 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+.service-card h3 a {
+    color: #1565C0 !important;
+    -webkit-text-fill-color: #1565C0 !important;
 }
 
 .service-card p {
