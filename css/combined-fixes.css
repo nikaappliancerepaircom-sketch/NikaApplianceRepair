@@ -1250,3 +1250,45 @@ section[style*="#2196F3"] div,
 section[style*="#1976D2"] div {
     color: #ffffff !important;
 }
+
+/* ============================================================
+   DARK SECTION HEADINGS — force white on all blue-bg sections
+   ============================================================ */
+.brands-section-premium h1,
+.brands-section-premium h2,
+.brands-section-premium h3,
+.brands-section-premium h4,
+.brands-section-premium .section-title,
+.brands-section-premium .section-title-light {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+.common-problems-premium h1,
+.common-problems-premium h2,
+.common-problems-premium h3,
+.common-problems-premium h4,
+.common-problems-premium .section-title,
+.common-problems-premium .section-title-light {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+.areas-section-premium h1,
+.areas-section-premium h2,
+.areas-section-premium h3,
+.areas-section-premium h4,
+.areas-section-premium .section-title,
+.areas-section-premium .section-title-light {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
