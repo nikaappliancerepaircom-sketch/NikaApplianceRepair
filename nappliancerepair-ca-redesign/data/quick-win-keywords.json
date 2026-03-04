@@ -1,0 +1,29 @@
+{
+  "exported": "2026-03-02",
+  "description": "Keywords ranking position 4-20 with high impressions — optimize these first",
+  "quick_wins": [
+    {"query": "appliance repair richmond hill", "position": 12.0, "impressions": 1762, "clicks": 8, "potential": "page2_to_page1"},
+    {"query": "appliance repair north york", "position": 16.8, "impressions": 1461, "clicks": 1, "potential": "page2_to_page1"},
+    {"query": "appliance repair newmarket", "position": 16.5, "impressions": 1256, "clicks": 7, "potential": "page2_to_page1"},
+    {"query": "dishwasher repair north york", "position": 18.5, "impressions": 1191, "clicks": 1, "potential": "page2_to_page1"},
+    {"query": "appliance repair", "position": 13.3, "impressions": 1102, "clicks": 3, "potential": "page2_to_page1"},
+    {"query": "dryer repair north york", "position": 14.5, "impressions": 1018, "clicks": 1, "potential": "page2_to_page1"},
+    {"query": "ge refrigerator not cooling or freezing", "position": 6.4, "impressions": 583, "clicks": 4, "potential": "page1_boost"},
+    {"query": "appliance repair bradford", "position": 4.8, "impressions": 548, "clicks": 0, "potential": "page1_boost"},
+    {"query": "washing machine repair", "position": 15.4, "impressions": 344, "clicks": 1, "potential": "page2_to_page1"},
+    {"query": "appliance installation richmond hill", "position": 12.0, "impressions": 236, "clicks": 0, "potential": "page2_to_page1"},
+    {"query": "fridge repair richmond hill", "position": 10.1, "impressions": 220, "clicks": 1, "potential": "page1_boost"},
+    {"query": "frigidaire appliance repair", "position": 17.7, "impressions": 199, "clicks": 1, "potential": "page2_to_page1"},
+    {"query": "dryer repair richmond hill", "position": 8.8, "impressions": 190, "clicks": 3, "potential": "page1_boost"},
+    {"query": "washing machine repair newmarket", "position": 6.8, "impressions": 169, "clicks": 4, "potential": "page1_boost"},
+    {"query": "sr code on speed queen washer", "position": 4.8, "impressions": 137, "clicks": 2, "potential": "page1_boost"},
+    {"query": "lg dryer cl code", "position": 10.1, "impressions": 133, "clicks": 1, "potential": "page1_boost"},
+    {"query": "blomberg dryer repair toronto", "position": 8.2, "impressions": 128, "clicks": 3, "potential": "page1_boost"},
+    {"query": "washing machine repair richmond hill", "position": 9.0, "impressions": 126, "clicks": 2, "potential": "page1_boost"},
+    {"query": "blomberg appliance repair toronto", "position": 6.8, "impressions": 124, "clicks": 2, "potential": "page1_boost"},
+    {"query": "ge fridge not cooling", "position": 13.7, "impressions": 101, "clicks": 1, "potential": "page2_to_page1"},
+    {"query": "commercial oven repair toronto", "position": 6.5, "impressions": 78, "clicks": 2, "potential": "page1_boost"},
+    {"query": "viking appliance repair toronto", "position": 7.3, "impressions": 82, "clicks": 1, "potential": "page1_boost"},
+    {"query": "lg appliance repair toronto", "position": 11.6, "impressions": 61, "clicks": 1, "potential": "page2_to_page1"}
+  ]
+}

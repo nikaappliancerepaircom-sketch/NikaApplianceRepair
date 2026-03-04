@@ -1,0 +1,2903 @@
+Total rows: 5000
+Total unique pages: 61
+{
+  "/": {
+    "total_impressions": 40700,
+    "total_clicks": 142,
+    "keywords_count": 2931,
+    "top_keywords": [
+      {
+        "query": "appliance repair north york",
+        "clicks": 1,
+        "impressions": 1303,
+        "position": 10.3
+      },
+      {
+        "query": "fridge repair north york",
+        "clicks": 0,
+        "impressions": 1296,
+        "position": 6.5
+      },
+      {
+        "query": "refrigerator repair north york",
+        "clicks": 0,
+        "impressions": 1289,
+        "position": 7.1
+      },
+      {
+        "query": "appliance repair newmarket",
+        "clicks": 5,
+        "impressions": 1036,
+        "position": 8.6
+      },
+      {
+        "query": "dryer repair north york",
+        "clicks": 1,
+        "impressions": 977,
+        "position": 17.2
+      },
+      {
+        "query": "washing machine repair north york",
+        "clicks": 0,
+        "impressions": 959,
+        "position": 8.4
+      },
+      {
+        "query": "dishwasher repair north york",
+        "clicks": 1,
+        "impressions": 951,
+        "position": 24.1
+      },
+      {
+        "query": "appliance repair near me",
+        "clicks": 0,
+        "impressions": 930,
+        "position": 9.8
+      },
+      {
+        "query": "appliance repair",
+        "clicks": 3,
+        "impressions": 784,
+        "position": 3.6
+      },
+      {
+        "query": "north york appliance repair",
+        "clicks": 0,
+        "impressions": 681,
+        "position": 11.6
+      },
+      {
+        "query": "appliance repair north york toronto",
+        "clicks": 0,
+        "impressions": 592,
+        "position": 11.3
+      },
+      {
+        "query": "appliance repair bradford",
+        "clicks": 0,
+        "impressions": 512,
+        "position": 2.5
+      },
+      {
+        "query": "fixing washing machine",
+        "clicks": 0,
+        "impressions": 456,
+        "position": 1.1
+      },
+      {
+        "query": "appliance repair toronto",
+        "clicks": 3,
+        "impressions": 423,
+        "position": 45.6
+      },
+      {
+        "query": "appliance repair east gwillimbury",
+        "clicks": 5,
+        "impressions": 411,
+        "position": 1.1
+      },
+      {
+        "query": "washing machine repair near me",
+        "clicks": 1,
+        "impressions": 380,
+        "position": 40.7
+      },
+      {
+        "query": "oven repair north york",
+        "clicks": 0,
+        "impressions": 366,
+        "position": 9.2
+      },
+      {
+        "query": "refrigerator repair",
+        "clicks": 0,
+        "impressions": 364,
+        "position": 2.5
+      },
+      {
+        "query": "stove repair north york",
+        "clicks": 0,
+        "impressions": 361,
+        "position": 7.1
+      },
+      {
+        "query": "newmarket appliance repair",
+        "clicks": 1,
+        "impressions": 335,
+        "position": 18.1
+      }
+    ]
+  },
+  "/appliance-repair-edmonton/": {
+    "total_impressions": 16852,
+    "total_clicks": 0,
+    "keywords_count": 274,
+    "top_keywords": [
+      {
+        "query": "oven repair",
+        "clicks": 0,
+        "impressions": 675,
+        "position": 55.6
+      },
+      {
+        "query": "washer repair edmonton",
+        "clicks": 0,
+        "impressions": 393,
+        "position": 76.2
+      },
+      {
+        "query": "appliance repair edmonton",
+        "clicks": 0,
+        "impressions": 347,
+        "position": 67.7
+      },
+      {
+        "query": "oven repair edmonton",
+        "clicks": 0,
+        "impressions": 345,
+        "position": 78.2
+      },
+      {
+        "query": "fridge repair edmonton",
+        "clicks": 0,
+        "impressions": 311,
+        "position": 49.6
+      },
+      {
+        "query": "lg dryer repair edmonton",
+        "clicks": 0,
+        "impressions": 274,
+        "position": 56.9
+      },
+      {
+        "query": "lg oven repair edmonton",
+        "clicks": 0,
+        "impressions": 274,
+        "position": 57.2
+      },
+      {
+        "query": "lg fridge repair edmonton",
+        "clicks": 0,
+        "impressions": 271,
+        "position": 68.8
+      },
+      {
+        "query": "lg washer repair edmonton",
+        "clicks": 0,
+        "impressions": 261,
+        "position": 59.1
+      },
+      {
+        "query": "appliance repair services edmonton",
+        "clicks": 0,
+        "impressions": 252,
+        "position": 79.3
+      },
+      {
+        "query": "samsung washer repair edmonton",
+        "clicks": 0,
+        "impressions": 245,
+        "position": 71.0
+      },
+      {
+        "query": "samsung dryer repair edmonton",
+        "clicks": 0,
+        "impressions": 221,
+        "position": 64.3
+      },
+      {
+        "query": "stove repair edmonton",
+        "clicks": 0,
+        "impressions": 193,
+        "position": 79.9
+      },
+      {
+        "query": "samsung fridge repair edmonton",
+        "clicks": 0,
+        "impressions": 187,
+        "position": 62.2
+      },
+      {
+        "query": "whirlpool oven repair edmonton",
+        "clicks": 0,
+        "impressions": 186,
+        "position": 54.9
+      },
+      {
+        "query": "kenmore stove repair edmonton",
+        "clicks": 0,
+        "impressions": 180,
+        "position": 41.3
+      },
+      {
+        "query": "kenmore fridge repair edmonton",
+        "clicks": 0,
+        "impressions": 178,
+        "position": 46.6
+      },
+      {
+        "query": "samsung oven repair edmonton",
+        "clicks": 0,
+        "impressions": 178,
+        "position": 61.6
+      },
+      {
+        "query": "ge oven repair edmonton",
+        "clicks": 0,
+        "impressions": 175,
+        "position": 42.4
+      },
+      {
+        "query": "ge stove repair edmonton",
+        "clicks": 0,
+        "impressions": 175,
+        "position": 50.0
+      }
+    ]
+  },
+  "/appliance-repair-brampton/": {
+    "total_impressions": 14214,
+    "total_clicks": 3,
+    "keywords_count": 1161,
+    "top_keywords": [
+      {
+        "query": "appliance repair near me",
+        "clicks": 0,
+        "impressions": 590,
+        "position": 72.2
+      },
+      {
+        "query": "refrigerator repair near me",
+        "clicks": 0,
+        "impressions": 535,
+        "position": 75.8
+      },
+      {
+        "query": "fridge repair near me",
+        "clicks": 0,
+        "impressions": 453,
+        "position": 75.3
+      },
+      {
+        "query": "dryer repair near me",
+        "clicks": 0,
+        "impressions": 442,
+        "position": 75.9
+      },
+      {
+        "query": "appliance repair brampton",
+        "clicks": 1,
+        "impressions": 438,
+        "position": 29.2
+      },
+      {
+        "query": "dryer repair",
+        "clicks": 0,
+        "impressions": 399,
+        "position": 77.8
+      },
+      {
+        "query": "commercial appliance repair bramalea",
+        "clicks": 0,
+        "impressions": 336,
+        "position": 48.9
+      },
+      {
+        "query": "washer repair near me",
+        "clicks": 0,
+        "impressions": 237,
+        "position": 73.2
+      },
+      {
+        "query": "refrigerator installation near me",
+        "clicks": 0,
+        "impressions": 231,
+        "position": 75.4
+      },
+      {
+        "query": "fridge repair in brampton",
+        "clicks": 0,
+        "impressions": 211,
+        "position": 19.9
+      },
+      {
+        "query": "stove repair near me",
+        "clicks": 0,
+        "impressions": 184,
+        "position": 77.7
+      },
+      {
+        "query": "brampton appliance repair",
+        "clicks": 0,
+        "impressions": 181,
+        "position": 35.5
+      },
+      {
+        "query": "oven repair near me",
+        "clicks": 0,
+        "impressions": 170,
+        "position": 78.0
+      },
+      {
+        "query": "refrigerator repair",
+        "clicks": 0,
+        "impressions": 157,
+        "position": 82.8
+      },
+      {
+        "query": "refrigerator repair service near me",
+        "clicks": 0,
+        "impressions": 157,
+        "position": 72.6
+      },
+      {
+        "query": "same day appliance repair",
+        "clicks": 0,
+        "impressions": 155,
+        "position": 72.2
+      },
+      {
+        "query": "dryer repair brampton",
+        "clicks": 0,
+        "impressions": 154,
+        "position": 13.4
+      },
+      {
+        "query": "local appliance repair near me",
+        "clicks": 0,
+        "impressions": 153,
+        "position": 31.0
+      },
+      {
+        "query": "dishwasher installation brampton",
+        "clicks": 0,
+        "impressions": 123,
+        "position": 27.4
+      },
+      {
+        "query": "cheap appliance repair near me",
+        "clicks": 0,
+        "impressions": 120,
+        "position": 44.9
+      }
+    ]
+  },
+  "/appliance-repair-calgary/": {
+    "total_impressions": 6045,
+    "total_clicks": 0,
+    "keywords_count": 159,
+    "top_keywords": [
+      {
+        "query": "stove repair",
+        "clicks": 0,
+        "impressions": 474,
+        "position": 59.2
+      },
+      {
+        "query": "appliance repair calgary",
+        "clicks": 0,
+        "impressions": 396,
+        "position": 76.9
+      },
+      {
+        "query": "stove repair calgary",
+        "clicks": 0,
+        "impressions": 274,
+        "position": 66.9
+      },
+      {
+        "query": "appliance repair experts calgary",
+        "clicks": 0,
+        "impressions": 237,
+        "position": 74.0
+      },
+      {
+        "query": "appliance repair services calgary",
+        "clicks": 0,
+        "impressions": 236,
+        "position": 81.1
+      },
+      {
+        "query": "calgary appliance repair",
+        "clicks": 0,
+        "impressions": 217,
+        "position": 74.4
+      },
+      {
+        "query": "gas oven repair near me",
+        "clicks": 0,
+        "impressions": 211,
+        "position": 28.5
+      },
+      {
+        "query": "stove repair near me",
+        "clicks": 0,
+        "impressions": 197,
+        "position": 58.4
+      },
+      {
+        "query": "gas oven repair",
+        "clicks": 0,
+        "impressions": 196,
+        "position": 30.2
+      },
+      {
+        "query": "gas appliance repair",
+        "clicks": 0,
+        "impressions": 188,
+        "position": 76.8
+      },
+      {
+        "query": "oven repair calgary",
+        "clicks": 0,
+        "impressions": 146,
+        "position": 61.3
+      },
+      {
+        "query": "washer dryer repair calgary",
+        "clicks": 0,
+        "impressions": 132,
+        "position": 86.1
+      },
+      {
+        "query": "cooktop repair calgary",
+        "clicks": 0,
+        "impressions": 131,
+        "position": 88.7
+      },
+      {
+        "query": "gas stove repair calgary",
+        "clicks": 0,
+        "impressions": 128,
+        "position": 67.1
+      },
+      {
+        "query": "lg dryer repair calgary",
+        "clicks": 0,
+        "impressions": 115,
+        "position": 78.5
+      },
+      {
+        "query": "freezer repair calgary",
+        "clicks": 0,
+        "impressions": 114,
+        "position": 81.4
+      },
+      {
+        "query": "appliance repair in calgary",
+        "clicks": 0,
+        "impressions": 113,
+        "position": 69.3
+      },
+      {
+        "query": "home appliance repair calgary",
+        "clicks": 0,
+        "impressions": 111,
+        "position": 89.2
+      },
+      {
+        "query": "gas stove repair near me",
+        "clicks": 0,
+        "impressions": 105,
+        "position": 35.8
+      },
+      {
+        "query": "gas oven repairs near me",
+        "clicks": 0,
+        "impressions": 95,
+        "position": 28.3
+      }
+    ]
+  },
+  "/appliance-repair-richmond-hill/": {
+    "total_impressions": 2332,
+    "total_clicks": 28,
+    "keywords_count": 15,
+    "top_keywords": [
+      {
+        "query": "appliance repair richmond hill",
+        "clicks": 6,
+        "impressions": 1679,
+        "position": 9.5
+      },
+      {
+        "query": "fridge repair richmond hill",
+        "clicks": 1,
+        "impressions": 220,
+        "position": 10.1
+      },
+      {
+        "query": "dryer repair richmond hill",
+        "clicks": 1,
+        "impressions": 175,
+        "position": 6.8
+      },
+      {
+        "query": "washing machine repair richmond hill",
+        "clicks": 2,
+        "impressions": 119,
+        "position": 7.0
+      },
+      {
+        "query": "nick's appliance repair",
+        "clicks": 2,
+        "impressions": 63,
+        "position": 3.4
+      },
+      {
+        "query": "stove repair near me",
+        "clicks": 6,
+        "impressions": 27,
+        "position": 32.5
+      },
+      {
+        "query": "microwave repair near me",
+        "clicks": 1,
+        "impressions": 16,
+        "position": 21.1
+      },
+      {
+        "query": "fridge repair near me",
+        "clicks": 2,
+        "impressions": 15,
+        "position": 3.4
+      },
+      {
+        "query": "oven repair",
+        "clicks": 1,
+        "impressions": 10,
+        "position": 12
+      },
+      {
+        "query": "breville toaster repair near me",
+        "clicks": 1,
+        "impressions": 2,
+        "position": 1
+      },
+      {
+        "query": "small appliance repair near me",
+        "clicks": 1,
+        "impressions": 2,
+        "position": 1.5
+      },
+      {
+        "query": "blomberg dryer parts",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 5
+      },
+      {
+        "query": "ge spacemaker dryer repair",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 6
+      },
+      {
+        "query": "kitchen mixer repair near me",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 1
+      },
+      {
+        "query": "samsung electric range repair",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 1
+      }
+    ]
+  },
+  "/appliance-repair-east-york/": {
+    "total_impressions": 1429,
+    "total_clicks": 2,
+    "keywords_count": 66,
+    "top_keywords": [
+      {
+        "query": "appliance repair east york",
+        "clicks": 0,
+        "impressions": 138,
+        "position": 13.5
+      },
+      {
+        "query": "dishwasher repair east york",
+        "clicks": 0,
+        "impressions": 132,
+        "position": 11.7
+      },
+      {
+        "query": "dryer repair east york",
+        "clicks": 0,
+        "impressions": 127,
+        "position": 12.3
+      },
+      {
+        "query": "nick's appliance repair",
+        "clicks": 1,
+        "impressions": 113,
+        "position": 2.1
+      },
+      {
+        "query": "appliance repair north york toronto",
+        "clicks": 0,
+        "impressions": 106,
+        "position": 13.3
+      },
+      {
+        "query": "refrigerator repair north york",
+        "clicks": 0,
+        "impressions": 90,
+        "position": 10.4
+      },
+      {
+        "query": "dryer repair north york",
+        "clicks": 0,
+        "impressions": 81,
+        "position": 10.4
+      },
+      {
+        "query": "fridge repair north york",
+        "clicks": 0,
+        "impressions": 79,
+        "position": 10.4
+      },
+      {
+        "query": "oven repair north york",
+        "clicks": 0,
+        "impressions": 51,
+        "position": 10.7
+      },
+      {
+        "query": "epic appliance repair",
+        "clicks": 0,
+        "impressions": 44,
+        "position": 56.6
+      },
+      {
+        "query": "appliance technician north york",
+        "clicks": 0,
+        "impressions": 39,
+        "position": 10.7
+      },
+      {
+        "query": "north york appliance repair",
+        "clicks": 0,
+        "impressions": 33,
+        "position": 9.5
+      },
+      {
+        "query": "insignia appliance repair",
+        "clicks": 0,
+        "impressions": 32,
+        "position": 52.7
+      },
+      {
+        "query": "appliance repair north york",
+        "clicks": 0,
+        "impressions": 31,
+        "position": 11.4
+      },
+      {
+        "query": "freezer repair north york",
+        "clicks": 0,
+        "impressions": 29,
+        "position": 11.0
+      },
+      {
+        "query": "stove repair north york",
+        "clicks": 0,
+        "impressions": 26,
+        "position": 10.0
+      },
+      {
+        "query": "mobile appliance repair north york",
+        "clicks": 0,
+        "impressions": 25,
+        "position": 10.8
+      },
+      {
+        "query": "washer repair north york",
+        "clicks": 0,
+        "impressions": 24,
+        "position": 10.8
+      },
+      {
+        "query": "appliance repair company north york",
+        "clicks": 0,
+        "impressions": 22,
+        "position": 9.1
+      },
+      {
+        "query": "dishwasher repair north york",
+        "clicks": 0,
+        "impressions": 20,
+        "position": 11.1
+      }
+    ]
+  },
+  "/appliance-repair-burlington/": {
+    "total_impressions": 1261,
+    "total_clicks": 0,
+    "keywords_count": 28,
+    "top_keywords": [
+      {
+        "query": "appliance repair burlington",
+        "clicks": 0,
+        "impressions": 295,
+        "position": 51.0
+      },
+      {
+        "query": "burlington appliance repair",
+        "clicks": 0,
+        "impressions": 118,
+        "position": 47.2
+      },
+      {
+        "query": "dryer repair burlington",
+        "clicks": 0,
+        "impressions": 98,
+        "position": 51.2
+      },
+      {
+        "query": "dishwasher repair burlington",
+        "clicks": 0,
+        "impressions": 94,
+        "position": 45.6
+      },
+      {
+        "query": "washer repair burlington",
+        "clicks": 0,
+        "impressions": 91,
+        "position": 66.6
+      },
+      {
+        "query": "oven repair burlington",
+        "clicks": 0,
+        "impressions": 89,
+        "position": 53.0
+      },
+      {
+        "query": "refrigerator repair burlington",
+        "clicks": 0,
+        "impressions": 74,
+        "position": 41.0
+      },
+      {
+        "query": "washing machine repair burlington",
+        "clicks": 0,
+        "impressions": 60,
+        "position": 38.4
+      },
+      {
+        "query": "stove repair burlington",
+        "clicks": 0,
+        "impressions": 48,
+        "position": 42.0
+      },
+      {
+        "query": "fridge repair burlington",
+        "clicks": 0,
+        "impressions": 47,
+        "position": 48.1
+      },
+      {
+        "query": "appliance installation burlington",
+        "clicks": 0,
+        "impressions": 45,
+        "position": 82.8
+      },
+      {
+        "query": "dryer repair burlington ontario",
+        "clicks": 0,
+        "impressions": 39,
+        "position": 72.2
+      },
+      {
+        "query": "freezer repair burlington",
+        "clicks": 0,
+        "impressions": 34,
+        "position": 60.0
+      },
+      {
+        "query": "appliance repair in burlington",
+        "clicks": 0,
+        "impressions": 25,
+        "position": 46.4
+      },
+      {
+        "query": "gas stove repair burlington",
+        "clicks": 0,
+        "impressions": 19,
+        "position": 69.7
+      },
+      {
+        "query": "small appliance repair burlington",
+        "clicks": 0,
+        "impressions": 19,
+        "position": 65.8
+      },
+      {
+        "query": "electric stove repair burlington",
+        "clicks": 0,
+        "impressions": 18,
+        "position": 77.7
+      },
+      {
+        "query": "appliance service repair burlington",
+        "clicks": 0,
+        "impressions": 13,
+        "position": 72
+      },
+      {
+        "query": "appliance repair burlington ontario",
+        "clicks": 0,
+        "impressions": 12,
+        "position": 75.1
+      },
+      {
+        "query": "appliance repair burlington vt",
+        "clicks": 0,
+        "impressions": 5,
+        "position": 76.8
+      }
+    ]
+  },
+  "/washing-machine-repair/speed-queen-washer-error-codes/": {
+    "total_impressions": 1044,
+    "total_clicks": 23,
+    "keywords_count": 20,
+    "top_keywords": [
+      {
+        "query": "ernf speed queen",
+        "clicks": 1,
+        "impressions": 199,
+        "position": 9.9
+      },
+      {
+        "query": "sr code on speed queen washer",
+        "clicks": 2,
+        "impressions": 138,
+        "position": 4.8
+      },
+      {
+        "query": "speed queen washer sr code",
+        "clicks": 1,
+        "impressions": 135,
+        "position": 5.3
+      },
+      {
+        "query": "speed queen sr code",
+        "clicks": 1,
+        "impressions": 99,
+        "position": 5.0
+      },
+      {
+        "query": "speed queen 5r code",
+        "clicks": 1,
+        "impressions": 84,
+        "position": 5.5
+      },
+      {
+        "query": "speed queen washer wash spin and lid lock flashing 3 times",
+        "clicks": 2,
+        "impressions": 61,
+        "position": 9.5
+      },
+      {
+        "query": "speed queen washer error codes",
+        "clicks": 2,
+        "impressions": 59,
+        "position": 29.2
+      },
+      {
+        "query": "speed queen er dr error code",
+        "clicks": 1,
+        "impressions": 57,
+        "position": 10.4
+      },
+      {
+        "query": "speed queen error nf reset",
+        "clicks": 1,
+        "impressions": 51,
+        "position": 10.7
+      },
+      {
+        "query": "speed queen washer all lights blinking",
+        "clicks": 1,
+        "impressions": 28,
+        "position": 9.5
+      },
+      {
+        "query": "what does sr mean on speed queen washer",
+        "clicks": 1,
+        "impressions": 25,
+        "position": 4.4
+      },
+      {
+        "query": "er 65 speed queen washer",
+        "clicks": 1,
+        "impressions": 19,
+        "position": 10.8
+      },
+      {
+        "query": "speed queen nf error code",
+        "clicks": 1,
+        "impressions": 19,
+        "position": 10.1
+      },
+      {
+        "query": "speed queen washer wash and spin lights flashing 4 times",
+        "clicks": 1,
+        "impressions": 18,
+        "position": 9.9
+      },
+      {
+        "query": "speed queen er dr code",
+        "clicks": 1,
+        "impressions": 14,
+        "position": 11.4
+      },
+      {
+        "query": "speed queen washer error codes ed",
+        "clicks": 1,
+        "impressions": 13,
+        "position": 8
+      },
+      {
+        "query": "speed queen blinking light codes",
+        "clicks": 1,
+        "impressions": 11,
+        "position": 12.3
+      },
+      {
+        "query": "speed queen washer error nf",
+        "clicks": 1,
+        "impressions": 10,
+        "position": 14.2
+      },
+      {
+        "query": "speed queen blinking light codes top load",
+        "clicks": 1,
+        "impressions": 3,
+        "position": 11.7
+      },
+      {
+        "query": "speed queen beeps 3 times",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 15
+      }
+    ]
+  },
+  "/refrigerator-repair/ge-refrigerator-not-cooling/": {
+    "total_impressions": 1034,
+    "total_clicks": 8,
+    "keywords_count": 5,
+    "top_keywords": [
+      {
+        "query": "ge refrigerator not cooling or freezing",
+        "clicks": 4,
+        "impressions": 584,
+        "position": 6.3
+      },
+      {
+        "query": "fridge is not cooling",
+        "clicks": 1,
+        "impressions": 288,
+        "position": 1.0
+      },
+      {
+        "query": "ge fridge not cooling",
+        "clicks": 1,
+        "impressions": 89,
+        "position": 12.4
+      },
+      {
+        "query": "ge refrigerator not cooling",
+        "clicks": 1,
+        "impressions": 65,
+        "position": 19.6
+      },
+      {
+        "query": "new ge fridge not cooling",
+        "clicks": 1,
+        "impressions": 8,
+        "position": 20.6
+      }
+    ]
+  },
+  "/appliance-repair-aurora/": {
+    "total_impressions": 924,
+    "total_clicks": 0,
+    "keywords_count": 22,
+    "top_keywords": [
+      {
+        "query": "appliance repair aurora",
+        "clicks": 0,
+        "impressions": 351,
+        "position": 31.1
+      },
+      {
+        "query": "refrigerator repair aurora",
+        "clicks": 0,
+        "impressions": 122,
+        "position": 38.7
+      },
+      {
+        "query": "washer repair aurora",
+        "clicks": 0,
+        "impressions": 105,
+        "position": 36.5
+      },
+      {
+        "query": "dryer repair aurora",
+        "clicks": 0,
+        "impressions": 79,
+        "position": 29.2
+      },
+      {
+        "query": "dishwasher repair aurora",
+        "clicks": 0,
+        "impressions": 75,
+        "position": 30.0
+      },
+      {
+        "query": "stove repair aurora",
+        "clicks": 0,
+        "impressions": 70,
+        "position": 28.2
+      },
+      {
+        "query": "appliance installation aurora",
+        "clicks": 0,
+        "impressions": 67,
+        "position": 49.4
+      },
+      {
+        "query": "aurora appliance repair",
+        "clicks": 0,
+        "impressions": 18,
+        "position": 45.2
+      },
+      {
+        "query": "appliance repair in aurora",
+        "clicks": 0,
+        "impressions": 8,
+        "position": 31.6
+      },
+      {
+        "query": "aurora refrigerator repair",
+        "clicks": 0,
+        "impressions": 7,
+        "position": 71.4
+      },
+      {
+        "query": "fix appliances aurora",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 47.2
+      },
+      {
+        "query": "fridge repair aurora",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 24.2
+      },
+      {
+        "query": "washing machine repair aurora",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 26.7
+      },
+      {
+        "query": "appliance repair aurora ontario",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 57.5
+      },
+      {
+        "query": "oven repair aurora",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 20
+      },
+      {
+        "query": "ac repair service aurora",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 76
+      },
+      {
+        "query": "appliance repair training online",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 98
+      },
+      {
+        "query": "dryer repair in aurora",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 21
+      },
+      {
+        "query": "handyman services aurora",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 56
+      },
+      {
+        "query": "maytag refrigerator repair aurora",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 52
+      }
+    ]
+  },
+  "/appliance-repair-ajax/": {
+    "total_impressions": 899,
+    "total_clicks": 0,
+    "keywords_count": 58,
+    "top_keywords": [
+      {
+        "query": "appliance repair ajax",
+        "clicks": 0,
+        "impressions": 221,
+        "position": 28.1
+      },
+      {
+        "query": "ajax appliance repair",
+        "clicks": 0,
+        "impressions": 132,
+        "position": 31.6
+      },
+      {
+        "query": "dishwasher repair ajax",
+        "clicks": 0,
+        "impressions": 76,
+        "position": 44.8
+      },
+      {
+        "query": "fridge repair ajax",
+        "clicks": 0,
+        "impressions": 70,
+        "position": 48.6
+      },
+      {
+        "query": "appliance installation ajax",
+        "clicks": 0,
+        "impressions": 61,
+        "position": 42.1
+      },
+      {
+        "query": "refrigerator repair ajax",
+        "clicks": 0,
+        "impressions": 57,
+        "position": 48.4
+      },
+      {
+        "query": "washing machine repair ajax",
+        "clicks": 0,
+        "impressions": 53,
+        "position": 54.1
+      },
+      {
+        "query": "stove repair ajax",
+        "clicks": 0,
+        "impressions": 52,
+        "position": 54.8
+      },
+      {
+        "query": "dishwasher installation ajax",
+        "clicks": 0,
+        "impressions": 47,
+        "position": 60.7
+      },
+      {
+        "query": "gas stove installation ajax",
+        "clicks": 0,
+        "impressions": 26,
+        "position": 54.0
+      },
+      {
+        "query": "dryer repair ajax",
+        "clicks": 0,
+        "impressions": 19,
+        "position": 49.7
+      },
+      {
+        "query": "washer repair ajax",
+        "clicks": 0,
+        "impressions": 12,
+        "position": 47.4
+      },
+      {
+        "query": "oven repair ajax",
+        "clicks": 0,
+        "impressions": 11,
+        "position": 50.2
+      },
+      {
+        "query": "747 ajax",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 31.3
+      },
+      {
+        "query": "affordable appliance repair near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 34.7
+      },
+      {
+        "query": "appliance repair in ajax",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 22.5
+      },
+      {
+        "query": "cooktop repair in ajax",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 19
+      },
+      {
+        "query": "dishwasher repair in ajax",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 21.5
+      },
+      {
+        "query": "dryer repair in ajax",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 22
+      },
+      {
+        "query": "fridge repair in ajax",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 29
+      }
+    ]
+  },
+  "/appliance-installation-services/": {
+    "total_impressions": 894,
+    "total_clicks": 0,
+    "keywords_count": 20,
+    "top_keywords": [
+      {
+        "query": "appliance installation near me",
+        "clicks": 0,
+        "impressions": 299,
+        "position": 61.0
+      },
+      {
+        "query": "appliance installation toronto",
+        "clicks": 0,
+        "impressions": 256,
+        "position": 48.9
+      },
+      {
+        "query": "dishwasher installation toronto",
+        "clicks": 0,
+        "impressions": 160,
+        "position": 82.7
+      },
+      {
+        "query": "appliance installation",
+        "clicks": 0,
+        "impressions": 73,
+        "position": 65.7
+      },
+      {
+        "query": "appliance installation costs",
+        "clicks": 0,
+        "impressions": 51,
+        "position": 79.7
+      },
+      {
+        "query": "toronto dishwasher installation",
+        "clicks": 0,
+        "impressions": 13,
+        "position": 94.5
+      },
+      {
+        "query": "appliance installation company",
+        "clicks": 0,
+        "impressions": 8,
+        "position": 35.2
+      },
+      {
+        "query": "appliance installations burlington",
+        "clicks": 0,
+        "impressions": 7,
+        "position": 55.3
+      },
+      {
+        "query": "appliance installation services",
+        "clicks": 0,
+        "impressions": 6,
+        "position": 49.8
+      },
+      {
+        "query": "appliance installation services near me",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 40.8
+      },
+      {
+        "query": "dishwasher installation vaughan",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 51.3
+      },
+      {
+        "query": "toronto appliance installation",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 40.7
+      },
+      {
+        "query": "appliance installation service",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 30
+      },
+      {
+        "query": "appliances installation toronto",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 67.5
+      },
+      {
+        "query": "install dishwasher toronto",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 59
+      },
+      {
+        "query": "appliance installations",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 96
+      },
+      {
+        "query": "appliance installers toronto",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 38
+      },
+      {
+        "query": "gas appliance install near me",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 98
+      },
+      {
+        "query": "service installation",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 99
+      },
+      {
+        "query": "washer dryer installation service",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 84
+      }
+    ]
+  },
+  "/dishwasher-repair/whirlpool-dishwasher-not-washing/": {
+    "total_impressions": 888,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "whirlpool dishwasher not washing",
+        "clicks": 1,
+        "impressions": 888,
+        "position": 2.2
+      }
+    ]
+  },
+  "/appliance-repair-etobicoke/": {
+    "total_impressions": 785,
+    "total_clicks": 0,
+    "keywords_count": 30,
+    "top_keywords": [
+      {
+        "query": "appliance repair etobicoke",
+        "clicks": 0,
+        "impressions": 223,
+        "position": 38.4
+      },
+      {
+        "query": "refrigerator repair etobicoke",
+        "clicks": 0,
+        "impressions": 158,
+        "position": 44.9
+      },
+      {
+        "query": "dishwasher repair etobicoke",
+        "clicks": 0,
+        "impressions": 103,
+        "position": 40.7
+      },
+      {
+        "query": "etobicoke appliance repair",
+        "clicks": 0,
+        "impressions": 98,
+        "position": 43.4
+      },
+      {
+        "query": "small appliance repair etobicoke",
+        "clicks": 0,
+        "impressions": 60,
+        "position": 71.8
+      },
+      {
+        "query": "washing machine repair etobicoke",
+        "clicks": 0,
+        "impressions": 30,
+        "position": 47.9
+      },
+      {
+        "query": "appliance repair etobicoke etobicoke on",
+        "clicks": 0,
+        "impressions": 26,
+        "position": 31.4
+      },
+      {
+        "query": "fridge repair etobicoke",
+        "clicks": 0,
+        "impressions": 26,
+        "position": 44.3
+      },
+      {
+        "query": "dryer repair etobicoke",
+        "clicks": 0,
+        "impressions": 22,
+        "position": 50.6
+      },
+      {
+        "query": "stove repair etobicoke",
+        "clicks": 0,
+        "impressions": 5,
+        "position": 56.6
+      },
+      {
+        "query": "kmg appliance repair",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 49
+      },
+      {
+        "query": "microwave repair etobicoke",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 61.2
+      },
+      {
+        "query": "washer repair etobicoke",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 53.2
+      },
+      {
+        "query": "certified appliance repair engineers etobicoke",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 62.3
+      },
+      {
+        "query": "appliance fault assessment and service etobicoke",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 23.5
+      },
+      {
+        "query": "oven repair etobicoke",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 46.5
+      },
+      {
+        "query": "trusted household appliance repair etobicoke",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 61
+      },
+      {
+        "query": "appliance repair in etobicoke",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 40
+      },
+      {
+        "query": "appliance repair services in etobicoke",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 39
+      },
+      {
+        "query": "dedicated home appliance repair etobicoke",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 35
+      }
+    ]
+  },
+  "/appliance-repair-markham/": {
+    "total_impressions": 717,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "appliance repair markham",
+        "clicks": 1,
+        "impressions": 717,
+        "position": 42.6
+      }
+    ]
+  },
+  "/appliance-repair-mississauga/": {
+    "total_impressions": 664,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "appliance repair mississauga",
+        "clicks": 1,
+        "impressions": 664,
+        "position": 53.0
+      }
+    ]
+  },
+  "/appliance-repair-bradford/": {
+    "total_impressions": 484,
+    "total_clicks": 0,
+    "keywords_count": 33,
+    "top_keywords": [
+      {
+        "query": "gas dryer installation service near me",
+        "clicks": 0,
+        "impressions": 265,
+        "position": 79.4
+      },
+      {
+        "query": "dishwasher installation bradford",
+        "clicks": 0,
+        "impressions": 52,
+        "position": 33.6
+      },
+      {
+        "query": "appliance repair bradford",
+        "clicks": 0,
+        "impressions": 44,
+        "position": 43.1
+      },
+      {
+        "query": "dryer repair near me",
+        "clicks": 0,
+        "impressions": 17,
+        "position": 67.4
+      },
+      {
+        "query": "dishwasher repair bradford",
+        "clicks": 0,
+        "impressions": 11,
+        "position": 38.2
+      },
+      {
+        "query": "fridge repair bradford",
+        "clicks": 0,
+        "impressions": 11,
+        "position": 39.2
+      },
+      {
+        "query": "dryer repair bradford",
+        "clicks": 0,
+        "impressions": 10,
+        "position": 38.2
+      },
+      {
+        "query": "bradford appliance repair",
+        "clicks": 0,
+        "impressions": 8,
+        "position": 51.9
+      },
+      {
+        "query": "refrigerator repair bradford",
+        "clicks": 0,
+        "impressions": 8,
+        "position": 41.5
+      },
+      {
+        "query": "cooker repair shops near me",
+        "clicks": 0,
+        "impressions": 7,
+        "position": 67.1
+      },
+      {
+        "query": "washing machine repair bradford",
+        "clicks": 0,
+        "impressions": 7,
+        "position": 48
+      },
+      {
+        "query": "appliance repair bradford ontario",
+        "clicks": 0,
+        "impressions": 6,
+        "position": 68
+      },
+      {
+        "query": "gas appliance repair",
+        "clicks": 0,
+        "impressions": 6,
+        "position": 80.7
+      },
+      {
+        "query": "gas range repair near me",
+        "clicks": 0,
+        "impressions": 5,
+        "position": 66.6
+      },
+      {
+        "query": "gas cooker repairs near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 46.7
+      },
+      {
+        "query": "gas hob repairs near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 49.3
+      },
+      {
+        "query": "range oven repair near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 79
+      },
+      {
+        "query": "fix oven near me",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 28.5
+      },
+      {
+        "query": "gas oven repair near me",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 92.5
+      },
+      {
+        "query": "cooker installation bradford",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 22
+      }
+    ]
+  },
+  "/blomberg-appliance-repair/": {
+    "total_impressions": 293,
+    "total_clicks": 6,
+    "keywords_count": 3,
+    "top_keywords": [
+      {
+        "query": "blomberg dryer repair toronto",
+        "clicks": 2,
+        "impressions": 128,
+        "position": 8.7
+      },
+      {
+        "query": "blomberg appliance repair toronto",
+        "clicks": 2,
+        "impressions": 123,
+        "position": 8.3
+      },
+      {
+        "query": "blomberg customer service canada",
+        "clicks": 2,
+        "impressions": 42,
+        "position": 6.1
+      }
+    ]
+  },
+  "/amana-appliance-repair/": {
+    "total_impressions": 248,
+    "total_clicks": 0,
+    "keywords_count": 46,
+    "top_keywords": [
+      {
+        "query": "amana appliance repair",
+        "clicks": 0,
+        "impressions": 78,
+        "position": 31
+      },
+      {
+        "query": "amana washer repair",
+        "clicks": 0,
+        "impressions": 28,
+        "position": 84.1
+      },
+      {
+        "query": "amana washing machine repair",
+        "clicks": 0,
+        "impressions": 22,
+        "position": 66.6
+      },
+      {
+        "query": "amana dishwasher repair",
+        "clicks": 0,
+        "impressions": 15,
+        "position": 81.9
+      },
+      {
+        "query": "amana refrigerator repair",
+        "clicks": 0,
+        "impressions": 12,
+        "position": 66.5
+      },
+      {
+        "query": "amana washer repair service",
+        "clicks": 0,
+        "impressions": 8,
+        "position": 60.4
+      },
+      {
+        "query": "amana appliance repair near me",
+        "clicks": 0,
+        "impressions": 7,
+        "position": 45.9
+      },
+      {
+        "query": "amana appliance repair edmonton",
+        "clicks": 0,
+        "impressions": 6,
+        "position": 77
+      },
+      {
+        "query": "amana fridge repair",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 84.2
+      },
+      {
+        "query": "amana microwave repair",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 32.8
+      },
+      {
+        "query": "amana washer repair near me",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 14.8
+      },
+      {
+        "query": "amana appliance repair service near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 68.7
+      },
+      {
+        "query": "amana fridge repair near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 40.7
+      },
+      {
+        "query": "amana fridge repairs",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 22.7
+      },
+      {
+        "query": "amana oven repair",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 17
+      },
+      {
+        "query": "amana repair",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 18.7
+      },
+      {
+        "query": "amana air conditioner repair near me",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 37.5
+      },
+      {
+        "query": "amana clothes dryer repair",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 15.5
+      },
+      {
+        "query": "amana commercial microwave repair",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 11
+      },
+      {
+        "query": "amana dishwasher repair near me",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 13
+      }
+    ]
+  },
+  "/booking/": {
+    "total_impressions": 232,
+    "total_clicks": 17,
+    "keywords_count": 12,
+    "top_keywords": [
+      {
+        "query": "nick's appliance repair",
+        "clicks": 1,
+        "impressions": 141,
+        "position": 6.1
+      },
+      {
+        "query": "nicks appliances",
+        "clicks": 1,
+        "impressions": 28,
+        "position": 9.8
+      },
+      {
+        "query": "appliance repair near me",
+        "clicks": 2,
+        "impressions": 15,
+        "position": 5.5
+      },
+      {
+        "query": "appliance repair richmond hill",
+        "clicks": 2,
+        "impressions": 14,
+        "position": 4.4
+      },
+      {
+        "query": "appliance repair newmarket",
+        "clicks": 2,
+        "impressions": 12,
+        "position": 3.3
+      },
+      {
+        "query": "appliance repair east gwillimbury",
+        "clicks": 1,
+        "impressions": 8,
+        "position": 8.4
+      },
+      {
+        "query": "dishwasher repair",
+        "clicks": 2,
+        "impressions": 5,
+        "position": 1
+      },
+      {
+        "query": "dishwasher repair richmond hill",
+        "clicks": 1,
+        "impressions": 3,
+        "position": 1.3
+      },
+      {
+        "query": "dryer repair richmond hill",
+        "clicks": 2,
+        "impressions": 2,
+        "position": 1
+      },
+      {
+        "query": "washing machine repair newmarket",
+        "clicks": 1,
+        "impressions": 2,
+        "position": 2.5
+      },
+      {
+        "query": "laundry machine repair",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 1
+      },
+      {
+        "query": "thermador repair near me",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 3
+      }
+    ]
+  },
+  "/blog/dryer-not-heating-heres-how-to-solve-it/": {
+    "total_impressions": 203,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "dryer not heating up",
+        "clicks": 1,
+        "impressions": 203,
+        "position": 39.2
+      }
+    ]
+  },
+  "/frigidaire-appliance-repair/": {
+    "total_impressions": 193,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "frigidaire appliance repair",
+        "clicks": 1,
+        "impressions": 193,
+        "position": 20.4
+      }
+    ]
+  },
+  "/dryer-repair/lg-dryer-cl-code/": {
+    "total_impressions": 182,
+    "total_clicks": 3,
+    "keywords_count": 3,
+    "top_keywords": [
+      {
+        "query": "lg dryer cl code",
+        "clicks": 1,
+        "impressions": 134,
+        "position": 10.1
+      },
+      {
+        "query": "lg dryer code cl",
+        "clicks": 1,
+        "impressions": 45,
+        "position": 11.0
+      },
+      {
+        "query": "dryer code cl",
+        "clicks": 1,
+        "impressions": 3,
+        "position": 5.3
+      }
+    ]
+  },
+  "/dryer-repair/samsung-dryer-not-heating/": {
+    "total_impressions": 144,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "samsung dryer not heating",
+        "clicks": 1,
+        "impressions": 144,
+        "position": 44.2
+      }
+    ]
+  },
+  "/gas-appliance-repair/": {
+    "total_impressions": 141,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "gas stove repair",
+        "clicks": 1,
+        "impressions": 141,
+        "position": 60.7
+      }
+    ]
+  },
+  "/dishwasher-repair/lg-dishwasher-error-codes/": {
+    "total_impressions": 122,
+    "total_clicks": 2,
+    "keywords_count": 2,
+    "top_keywords": [
+      {
+        "query": "lg dishwasher error codes",
+        "clicks": 1,
+        "impressions": 121,
+        "position": 43.4
+      },
+      {
+        "query": "bubble error lg dishwasher",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 27
+      }
+    ]
+  },
+  "/lg-appliance-repair/": {
+    "total_impressions": 119,
+    "total_clicks": 3,
+    "keywords_count": 3,
+    "top_keywords": [
+      {
+        "query": "lg appliance repair toronto",
+        "clicks": 1,
+        "impressions": 55,
+        "position": 12.1
+      },
+      {
+        "query": "lg dryer repair toronto",
+        "clicks": 1,
+        "impressions": 50,
+        "position": 12.8
+      },
+      {
+        "query": "lg repair service",
+        "clicks": 1,
+        "impressions": 14,
+        "position": 39.8
+      }
+    ]
+  },
+  "/appliance-repair-toronto/": {
+    "total_impressions": 113,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "appliance repair toronto",
+        "clicks": 1,
+        "impressions": 113,
+        "position": 87.2
+      }
+    ]
+  },
+  "/appliance-repair-concord/": {
+    "total_impressions": 90,
+    "total_clicks": 0,
+    "keywords_count": 20,
+    "top_keywords": [
+      {
+        "query": "appliance repair concord",
+        "clicks": 0,
+        "impressions": 13,
+        "position": 28.1
+      },
+      {
+        "query": "appliance repair samsung dryer",
+        "clicks": 0,
+        "impressions": 13,
+        "position": 94.2
+      },
+      {
+        "query": "dryer repair concord",
+        "clicks": 0,
+        "impressions": 13,
+        "position": 10
+      },
+      {
+        "query": "oven repair concord",
+        "clicks": 0,
+        "impressions": 10,
+        "position": 12.1
+      },
+      {
+        "query": "concord appliance repair",
+        "clicks": 0,
+        "impressions": 7,
+        "position": 27.6
+      },
+      {
+        "query": "refrigerator repair concord",
+        "clicks": 0,
+        "impressions": 7,
+        "position": 16.9
+      },
+      {
+        "query": "commercial fridge repair concord",
+        "clicks": 0,
+        "impressions": 5,
+        "position": 61.8
+      },
+      {
+        "query": "oven repair richmond hill",
+        "clicks": 0,
+        "impressions": 5,
+        "position": 86.6
+      },
+      {
+        "query": "affordable appliance repair concord on",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 10.5
+      },
+      {
+        "query": "dishwasher repair concord",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 12
+      },
+      {
+        "query": "nick's appliance repair",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 2
+      },
+      {
+        "query": "stove repair richmond hill",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 90.5
+      },
+      {
+        "query": "washing machine repair concord on",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 22.5
+      },
+      {
+        "query": "appliance installation service concord on",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 15
+      },
+      {
+        "query": "appliance service concord on",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 24
+      },
+      {
+        "query": "home repair services concord",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 41
+      },
+      {
+        "query": "hotpoint stove repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 44
+      },
+      {
+        "query": "nick appliance repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 2
+      },
+      {
+        "query": "stove repair concord",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 31
+      },
+      {
+        "query": "washer leaking hamilton",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 48
+      }
+    ]
+  },
+  "/refrigerator-repair/ge-fridge-not-cooling/": {
+    "total_impressions": 85,
+    "total_clicks": 2,
+    "keywords_count": 2,
+    "top_keywords": [
+      {
+        "query": "ge fridge not cooling but light is on",
+        "clicks": 1,
+        "impressions": 70,
+        "position": 11.3
+      },
+      {
+        "query": "ge refrigerator not cooling but lights work",
+        "clicks": 1,
+        "impressions": 15,
+        "position": 11.7
+      }
+    ]
+  },
+  "/viking-appliance-repair/": {
+    "total_impressions": 84,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "viking appliance repair toronto",
+        "clicks": 1,
+        "impressions": 84,
+        "position": 7.3
+      }
+    ]
+  },
+  "/commercial-appliance-repair/": {
+    "total_impressions": 79,
+    "total_clicks": 3,
+    "keywords_count": 2,
+    "top_keywords": [
+      {
+        "query": "commercial oven repair toronto",
+        "clicks": 2,
+        "impressions": 78,
+        "position": 6.4
+      },
+      {
+        "query": "commercial dishwasher repairs near me",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 50
+      }
+    ]
+  },
+  "/appliance-repair-uxbridge/": {
+    "total_impressions": 71,
+    "total_clicks": 5,
+    "keywords_count": 2,
+    "top_keywords": [
+      {
+        "query": "appliance repair uxbridge",
+        "clicks": 4,
+        "impressions": 58,
+        "position": 8.9
+      },
+      {
+        "query": "appliance repair near me",
+        "clicks": 1,
+        "impressions": 13,
+        "position": 7.7
+      }
+    ]
+  },
+  "/appliance-repair-greater-toronto-area/": {
+    "total_impressions": 61,
+    "total_clicks": 1,
+    "keywords_count": 14,
+    "top_keywords": [
+      {
+        "query": "dryer repair service",
+        "clicks": 1,
+        "impressions": 32,
+        "position": 52.4
+      },
+      {
+        "query": "24 hour fridge repair",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 36.7
+      },
+      {
+        "query": "24 hour refrigerator repair",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 48.3
+      },
+      {
+        "query": "24 hour refrigerator repair near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 54.7
+      },
+      {
+        "query": "ac fridge repair near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 41.7
+      },
+      {
+        "query": "affordable dryer repair near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 54.7
+      },
+      {
+        "query": "appliance dent repair near me",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 49.7
+      },
+      {
+        "query": "24 hour appliance repair",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 48.5
+      },
+      {
+        "query": "24 hour dryer repair near me",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 48
+      },
+      {
+        "query": "24 hour washer repair near me",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 50.5
+      },
+      {
+        "query": "affordable refrigerator repair near me",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 38
+      },
+      {
+        "query": "24 hour dryer repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 50
+      },
+      {
+        "query": "24 hour freezer repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 73
+      },
+      {
+        "query": "affordable washer repair near me",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 47
+      }
+    ]
+  },
+  "/appliance-repair-toronto/5-best-appliance-repair-services-in-toronto/": {
+    "total_impressions": 42,
+    "total_clicks": 2,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "appliance repair toronto",
+        "clicks": 2,
+        "impressions": 42,
+        "position": 84.1
+      }
+    ]
+  },
+  "/about-us/": {
+    "total_impressions": 41,
+    "total_clicks": 0,
+    "keywords_count": 11,
+    "top_keywords": [
+      {
+        "query": "nick's appliance repair",
+        "clicks": 0,
+        "impressions": 14,
+        "position": 6.1
+      },
+      {
+        "query": "nick appliances",
+        "clicks": 0,
+        "impressions": 9,
+        "position": 51.8
+      },
+      {
+        "query": "nicks appliances",
+        "clicks": 0,
+        "impressions": 6,
+        "position": 8.7
+      },
+      {
+        "query": "nick appliances surrey",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 64.3
+      },
+      {
+        "query": "nick appliance repair",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 43.5
+      },
+      {
+        "query": "nick's appliances",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 80
+      },
+      {
+        "query": "\"sears appliance repair\" \"burlington\"",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 38
+      },
+      {
+        "query": "nick's appliance",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 61
+      },
+      {
+        "query": "nick's appliance repair richmond hill",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 2
+      },
+      {
+        "query": "nicks appliance repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 49
+      },
+      {
+        "query": "nicks appliances surrey",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 58
+      }
+    ]
+  },
+  "/testimonials/": {
+    "total_impressions": 36,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "nick's appliance repair reviews",
+        "clicks": 1,
+        "impressions": 36,
+        "position": 3.4
+      }
+    ]
+  },
+  "/appliance-repair-berczy-village/": {
+    "total_impressions": 32,
+    "total_clicks": 0,
+    "keywords_count": 4,
+    "top_keywords": [
+      {
+        "query": "dishwasher won't start fix north york",
+        "clicks": 0,
+        "impressions": 26,
+        "position": 32.8
+      },
+      {
+        "query": "washer repair st albert",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 50.7
+      },
+      {
+        "query": "fridge repair st albert",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 66
+      },
+      {
+        "query": "oven repair in ajax",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 78
+      }
+    ]
+  },
+  "/samsung-appliance-repair/how-to-fix-samsung-washer-ur-code/": {
+    "total_impressions": 16,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "ur samsung washer code",
+        "clicks": 1,
+        "impressions": 16,
+        "position": 17
+      }
+    ]
+  },
+  "/fisher-paykel-appliance-repair/": {
+    "total_impressions": 15,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "cooktop repair toronto",
+        "clicks": 1,
+        "impressions": 15,
+        "position": 26
+      }
+    ]
+  },
+  "/samsung-appliance-repair/samsung-washer-sud-code/": {
+    "total_impressions": 14,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "samsung washer sud error",
+        "clicks": 1,
+        "impressions": 14,
+        "position": 33.9
+      }
+    ]
+  },
+  "/appliance-repair-don-valley-village/": {
+    "total_impressions": 14,
+    "total_clicks": 0,
+    "keywords_count": 6,
+    "top_keywords": [
+      {
+        "query": "fridge repair langdon",
+        "clicks": 0,
+        "impressions": 8,
+        "position": 70
+      },
+      {
+        "query": "don's appliance repair",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 66.5
+      },
+      {
+        "query": "don appliance repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 58
+      },
+      {
+        "query": "don's appliance",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 100
+      },
+      {
+        "query": "east valley appliance repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 15
+      },
+      {
+        "query": "langdon appliance repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 69
+      }
+    ]
+  },
+  "/appliance-maintenance-services/": {
+    "total_impressions": 13,
+    "total_clicks": 0,
+    "keywords_count": 6,
+    "top_keywords": [
+      {
+        "query": "huebsch dryer repair",
+        "clicks": 0,
+        "impressions": 8,
+        "position": 49.6
+      },
+      {
+        "query": "affordable appliance repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 58
+      },
+      {
+        "query": "affordable appliance repair near me",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 93
+      },
+      {
+        "query": "arni services appliance repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 61
+      },
+      {
+        "query": "nick's appliance repair",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 2
+      },
+      {
+        "query": "nicks appliances",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 76
+      }
+    ]
+  },
+  "/appliance-repair-aurora/aurora-appliance-repair-guru-expert-tips/": {
+    "total_impressions": 11,
+    "total_clicks": 0,
+    "keywords_count": 3,
+    "top_keywords": [
+      {
+        "query": "washer dryer repair guru",
+        "clicks": 0,
+        "impressions": 5,
+        "position": 32.8
+      },
+      {
+        "query": "aurora appliance repair",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 56.2
+      },
+      {
+        "query": "appliance repair aurora",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 80.5
+      }
+    ]
+  },
+  "/appliance-repair-gwillimbury/": {
+    "total_impressions": 10,
+    "total_clicks": 2,
+    "keywords_count": 2,
+    "top_keywords": [
+      {
+        "query": "nicks appliance repair",
+        "clicks": 1,
+        "impressions": 9,
+        "position": 3.9
+      },
+      {
+        "query": "lg gas dryer repair near me",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 8
+      }
+    ]
+  },
+  "/appliance-repair-bayview-glen/": {
+    "total_impressions": 10,
+    "total_clicks": 0,
+    "keywords_count": 4,
+    "top_keywords": [
+      {
+        "query": "bayview home appliance centre",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 42.8
+      },
+      {
+        "query": "bayview home appliance",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 23
+      },
+      {
+        "query": "bayview appliance repair",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 17.5
+      },
+      {
+        "query": "appliance installation pickering",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 74
+      }
+    ]
+  },
+  "/dishwasher-repair/how-long-does-a-dishwasher-take/": {
+    "total_impressions": 8,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "why does dishwasher take so long",
+        "clicks": 1,
+        "impressions": 8,
+        "position": 35.9
+      }
+    ]
+  },
+  "/appliance-repair-aurora/aurora-common-appliance-issues-diy-fixes/": {
+    "total_impressions": 7,
+    "total_clicks": 0,
+    "keywords_count": 3,
+    "top_keywords": [
+      {
+        "query": "washing machine drain clogged aurora",
+        "clicks": 0,
+        "impressions": 5,
+        "position": 22
+      },
+      {
+        "query": "appliance repair aurora",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 50
+      },
+      {
+        "query": "aurora washing machine",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 8
+      }
+    ]
+  },
+  "/kitchenaid-appliance-repair/": {
+    "total_impressions": 6,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "kitchenaid mixer repair toronto",
+        "clicks": 1,
+        "impressions": 6,
+        "position": 18.5
+      }
+    ]
+  },
+  "/kitchenaid-appliance-repair/kitchenaid-dishwasher-troubleshooting/": {
+    "total_impressions": 6,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "kitchenaid dishwasher control board troubleshooting",
+        "clicks": 1,
+        "impressions": 6,
+        "position": 28
+      }
+    ]
+  },
+  "/appliance-repair-ajax/appliance-repair-warranty-what-ajax-residents-need-to-know/": {
+    "total_impressions": 4,
+    "total_clicks": 0,
+    "keywords_count": 2,
+    "top_keywords": [
+      {
+        "query": "ajax warranty",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 15
+      },
+      {
+        "query": "washing machine repair ajax",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 86.5
+      }
+    ]
+  },
+  "/appliance-repair-cathedraltown/": {
+    "total_impressions": 4,
+    "total_clicks": 0,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "beecroft appliance repair",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 85.5
+      }
+    ]
+  },
+  "/appliance-repair-gormley/": {
+    "total_impressions": 4,
+    "total_clicks": 0,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "nimbly appliance repair",
+        "clicks": 0,
+        "impressions": 4,
+        "position": 91
+      }
+    ]
+  },
+  "/dishwasher-repair/ge-dishwasher-not-draining/": {
+    "total_impressions": 2,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "ge dishwasher force drain cycle troubleshooting",
+        "clicks": 1,
+        "impressions": 2,
+        "position": 21
+      }
+    ]
+  },
+  "/appliance-repair-agincourt/": {
+    "total_impressions": 2,
+    "total_clicks": 0,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "electric dryer repair in mount pleasant on",
+        "clicks": 0,
+        "impressions": 2,
+        "position": 12
+      }
+    ]
+  },
+  "/appliance-repair-beverley-acres/": {
+    "total_impressions": 2,
+    "total_clicks": 0,
+    "keywords_count": 2,
+    "top_keywords": [
+      {
+        "query": "beverley acres",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 35
+      },
+      {
+        "query": "hot water dispenser repair calgary",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 55
+      }
+    ]
+  },
+  "/appliance-repair-schomberg/": {
+    "total_impressions": 1,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "nick's appliance repair",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 2
+      }
+    ]
+  },
+  "/appliance-repair-vaughan/": {
+    "total_impressions": 1,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "nick's appliance repair",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 2
+      }
+    ]
+  },
+  "/dryer-repair/dryer-wont-start/": {
+    "total_impressions": 1,
+    "total_clicks": 1,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "dryer motor not working",
+        "clicks": 1,
+        "impressions": 1,
+        "position": 25
+      }
+    ]
+  },
+  "/appliance-repair-beverley-glen/": {
+    "total_impressions": 1,
+    "total_clicks": 0,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "ge dishwasher repair edmonton",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 98
+      }
+    ]
+  },
+  "/appliance-repair-cachet/": {
+    "total_impressions": 1,
+    "total_clicks": 0,
+    "keywords_count": 1,
+    "top_keywords": [
+      {
+        "query": "fisher & paykel authorized repair service",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 47
+      }
+    ]
+  }
+}

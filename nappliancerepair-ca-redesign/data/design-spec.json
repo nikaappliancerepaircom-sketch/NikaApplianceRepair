@@ -1,0 +1,124 @@
+{
+  "source": "nappliancerepair.ca (WordPress/Elementor)",
+  "target": "Static HTML + Vanilla CSS/JS",
+
+  "colors": {
+    "primary": "#18256D",
+    "accent_green": "#1EC651",
+    "accent_pink": "#F52A85",
+    "accent_orange": "#F5962A",
+    "accent_cyan": "#1ECBEA",
+    "accent_purple": "#CC2AF5",
+    "accent_red": "#F93B51",
+    "accent_yellow": "#FDC733",
+    "deep_blue": "#002B98",
+    "steel_blue": "#5393C2",
+    "text_dark": "#000000",
+    "text_navy": "#18256D",
+    "bg_light": "#f7f7f7",
+    "bg_white": "#ffffff",
+    "border": "#ddd",
+    "checkmark_green": "#0f9d58",
+    "error_red": "#e91313"
+  },
+
+  "typography": {
+    "heading_font": "Fredoka One",
+    "body_font": "Rubik",
+    "decorative_font": "Mrs Saint Delafield",
+    "h1_size": "40px",
+    "h2_size": "36px",
+    "h3_size": "30px",
+    "h4_size": "20px",
+    "body_size": "16px",
+    "body_line_height": "1.65em",
+    "heading_color": "#18256D",
+    "body_color": "#000000"
+  },
+
+  "layout": {
+    "max_width": "1200px",
+    "container_padding": "24px",
+    "breakpoints": {
+      "desktop": "922px+",
+      "tablet": "544px-921px",
+      "mobile": "<544px"
+    }
+  },
+
+  "buttons": {
+    "primary_cta": {
+      "background": "#1EC651",
+      "color": "#FFFFFF",
+      "border_radius": "24px",
+      "padding": "35px",
+      "font_weight": "600"
+    },
+    "secondary_cta": {
+      "background": "#E91313",
+      "color": "#FFFFFF",
+      "border_radius": "24px",
+      "padding": "35px"
+    }
+  },
+
+  "sections_homepage": [
+    "special_offer_top_bar",
+    "transparent_header_sticky",
+    "hero_with_countdown_timer",
+    "services_grid_6_cards",
+    "why_choose_us_6_cards",
+    "brand_logos_gallery",
+    "video_testimonials_youtube",
+    "gradient_features_section",
+    "stats_counter",
+    "long_form_seo_content",
+    "locations_list_checkmarks",
+    "working_process_3_steps",
+    "second_cta_countdown",
+    "faq_accordion",
+    "payment_methods",
+    "footer_3_column"
+  ],
+
+  "images_to_download": [
+    "logo_webp: /wp-content/uploads/2021/10/Nicks-Appliance-2-300x300-1.webp",
+    "logo_png: /wp-content/uploads/2021/06/Nicks-Appliance-2-300x300.png",
+    "hero_banner: /wp-content/uploads/2022/03/Website-banner-size-changed-8-1.jpg",
+    "hero_overlay: /wp-content/uploads/2025/03/Nicks-Appliance-repair-1.png",
+    "video_thumb: /wp-content/uploads/2023/04/Nicks-appliance-repair.png",
+    "texture_green: /wp-content/uploads/2021/06/icon_texture_green.png",
+    "texture_purple: /wp-content/uploads/2021/06/icon_texture_purple.png",
+    "texture_red: /wp-content/uploads/2021/06/icon_texture_red.png",
+    "texture_pink: /wp-content/uploads/2021/06/icon_texture_pink.png",
+    "texture_orange: /wp-content/uploads/2021/06/icon_texture_orange.png",
+    "texture_blue: /wp-content/uploads/2021/06/icon_texture_blue.png",
+    "dots_decor: /wp-content/uploads/2021/06/dots_orange.png",
+    "slider_tex_1: /wp-content/uploads/2021/06/slider_text_texture_1.png",
+    "slider_tex_2: /wp-content/uploads/2021/06/slider_text_texture_2.png",
+    "brand_logos: 20+ brand logo JPGs in /wp-content/uploads/2021/06/",
+    "payment_icons: visa, mastercard, interac, cash, amex"
+  ],
+
+  "navigation": {
+    "main_menu": [
+      "Book Now (CTA)",
+      "Services (dropdown: 10 items)",
+      "Location (mega dropdown: 50+ cities)",
+      "Brands (dropdown: 20+ brands)",
+      "Testimonials",
+      "Info (dropdown: FAQ, Working Process, About, Why Choose Us)",
+      "Phone number",
+      "REQUEST SERVICE (CTA button)"
+    ]
+  },
+
+  "footer": {
+    "columns": [
+      {"title": "Useful Links", "items": ["Why Choose Us", "Testimonials", "Working Process", "Online Booking", "FAQ", "Privacy Policy", "Cancellation Policy", "Terms Of Use", "Sitemap", "Careers"]},
+      {"title": "Services", "items": ["Refrigerator Repair", "Washing Machine Repair", "Dishwasher Repair", "Dryer Repair", "Oven Repair", "Stove Repair", "Gas Appliance Repair", "Maintenance", "Installation", "Commercial Repair"]},
+      {"title": "Contact", "items": ["Phone: +1 437 524 1053", "Email: care@nappliancerepair.ca", "WhatsApp", "Address 1: 60 Walter Tunny Crescent, East Gwillimbury", "Address 2: 755 Steeles Ave W #311, North York", "Address 3: Marshall St, Richmond Hill"]}
+    ],
+    "social": ["Facebook", "Instagram", "Twitter", "Yelp", "LinkedIn", "YouTube"]
+  }
+}
