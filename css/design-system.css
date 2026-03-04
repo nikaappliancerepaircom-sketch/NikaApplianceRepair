@@ -435,40 +435,28 @@ h1, h2, h3, h4, h5, h6 {
 /* H1 - Main Page Title */
 h1 {
     font-size: clamp(2rem, 5vw + 1rem, 3.5rem); /* 32px - 63px */
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1565C0;
     margin-bottom: var(--space-6);
 }
 
 /* H2 - Section Titles */
 h2 {
     font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem); /* 24px - 45px */
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1565C0;
     margin-bottom: var(--space-4);
 }
 
 /* H3 - Subsection Titles */
 h3 {
     font-size: clamp(1.25rem, 2.5vw + 0.5rem, 2rem); /* 20px - 36px */
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1565C0;
     margin-bottom: var(--space-3);
 }
 
 /* H4 - Minor Headings */
 h4 {
     font-size: clamp(1.125rem, 2vw + 0.25rem, 1.5rem); /* 18px - 27px */
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1565C0;
     margin-bottom: var(--space-3);
 }
 
