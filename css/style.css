@@ -107,31 +107,19 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3.5rem; /* 63px - increased for better visibility */
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1565C0;
 }
 h2 {
     font-size: 2.5rem; /* 45px - increased */
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1565C0;
 }
 h3 {
     font-size: 2rem; /* 36px - increased */
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1565C0;
 }
 h4 {
     font-size: 1.5rem; /* 27px - increased */
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1565C0;
 }
 
 p {
@@ -508,10 +496,11 @@ a {
 
 .section-title {
     text-align: center;
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1565C0;
+    background: none;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    -webkit-background-clip: unset;
     margin-bottom: 3rem;
     font-size: 2.5rem;
     font-weight: 700;

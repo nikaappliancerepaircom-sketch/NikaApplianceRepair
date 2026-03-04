@@ -118,62 +118,156 @@ function getNonCriticalHref(line) {
 }
 
 /**
+ * Check if a line is inside a <noscript> tag.
+ */
+function isNoscriptLine(line) {
+  return /<noscript>/i.test(line);
+}
+
+/**
+ * Check if a line is a bare preload hint (no onload — just a hint).
+ */
+function isBarePreload(line) {
+  return /<link\s[^>]*rel=["']preload["']/i.test(line) && !line.includes('onload=');
+}
+
+/**
+ * Check if a line is an already-converted async preload (has onload=).
+ */
+function isAsyncPreload(line) {
+  return line.includes('onload=') && /<link\s[^>]*rel=["']preload["']/i.test(line);
+}
+
+/**
+ * Extract href from a stylesheet link tag on this line.
+ * Returns null for noscript lines, bare preload hints, and async preloads.
+ */
+function getStylesheetHref(line) {
+  if (isNoscriptLine(line)) return null;
+  if (isBarePreload(line)) return null;
+  if (isAsyncPreload(line)) return null;
+  const m = line.match(/<link\s[^>]*rel=["']stylesheet["'][^>]*href=["']([^"']+)["'][^>]*>/i)
+         || line.match(/<link\s[^>]*href=["']([^"']+)["'][^>]*rel=["']stylesheet["'][^>]*>/i);
+  return m ? m[1] : null;
+}
+
+/**
+ * Extract href from an async preload line (onload pattern).
+ */
+function getAsyncPreloadHref(line) {
+  if (!isAsyncPreload(line)) return null;
+  const m = line.match(/href=["']([^"']+)["']/i);
+  return m ? m[1] : null;
+}
+
+/**
+ * Extract href from a bare preload hint line.
+ */
+function getBarePreloadHref(line) {
+  if (!isBarePreload(line)) return null;
+  const m = line.match(/href=["']([^"']+)["']/i);
+  return m ? m[1] : null;
+}
+
+/**
  * Process a single HTML file. Returns changes log array.
  */
 function processFile(filePath) {
   const relPath = path.relative(ROOT, filePath);
   let html = fs.readFileSync(filePath, 'utf8');
   const changes = [];
-
-  // --- 1. Remove duplicate stylesheet links (same href) ---
-  const seenHrefs = new Set();
-  const lines = html.split('\n');
-  const deduped = [];
   let dupsRemoved = 0;
-
-  for (const line of lines) {
-    const stylesheetMatch = line.match(/<link\s[^>]*rel=["']stylesheet["'][^>]*href=["']([^"']+)["'][^>]*>/i)
-                         || line.match(/<link\s[^>]*href=["']([^"']+)["'][^>]*rel=["']stylesheet["'][^>]*>/i);
-    if (stylesheetMatch) {
-      const href = stylesheetMatch[1];
-      // Normalize: strip leading ../ or ./ or / for comparison
-      const normalized = href.replace(/^\.\.\/|^\.\/|^\//g, '');
-      if (seenHrefs.has(normalized)) {
-        dupsRemoved++;
-        changes.push(`  REMOVED duplicate: ${href}`);
-        continue; // skip this duplicate line
-      }
-      seenHrefs.add(normalized);
-    }
-    deduped.push(line);
-  }
-  html = deduped.join('\n');
-
-  // --- 2. Convert non-critical CSS to async preload pattern ---
-  // Process line by line again to handle replacements
-  const finalLines = html.split('\n');
-  const result = [];
   let cssDeferred = 0;
 
-  for (const line of finalLines) {
-    // Skip lines that already have the preload+onload pattern
-    if (line.includes('onload=') && line.includes('rel=\'stylesheet\'')) {
+  const lines = html.split('\n');
+  const result = [];
+
+  // Track seen hrefs for dedup (normalized)
+  const seenHrefs = new Set();
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    // --- Handle bare preload hints (remove duplicates or stale hints) ---
+    const bareHref = getBarePreloadHref(line);
+    if (bareHref) {
+      const normalized = bareHref.replace(/^\.\.\/|^\.\/|^\//g, '');
+      // Remove bare preload hints — they'll be re-added properly as async preloads
+      // or kept synchronous. Either way, bare hints without onload are stale.
+      dupsRemoved++;
+      changes.push(`  REMOVED stale preload hint: ${cssBasename(bareHref)}`);
+      continue;
+    }
+
+    // --- Handle already-converted async preload lines ---
+    const asyncHref = getAsyncPreloadHref(line);
+    if (asyncHref) {
+      const base = cssBasename(asyncHref);
+      const normalized = asyncHref.replace(/^\.\.\/|^\.\/|^\//g, '');
+
+      if (CRITICAL.has(base)) {
+        // This CSS is now critical — revert from async preload to synchronous
+        const indent = line.match(/^(\s*)/)[1];
+        result.push(`${indent}<link rel="stylesheet" href="${asyncHref}">`);
+        seenHrefs.add(normalized);
+        changes.push(`  REVERTED to sync (critical): ${base}`);
+        // Also skip the following <noscript> line if it exists
+        if (i + 1 < lines.length && isNoscriptLine(lines[i + 1])) {
+          i++; // skip noscript fallback
+        }
+        continue;
+      }
+
+      // Already async preload for a non-critical CSS — keep as-is
+      seenHrefs.add(normalized);
       result.push(line);
       continue;
     }
 
-    const href = getNonCriticalHref(line);
-    if (href) {
-      // Get the indentation from original line
-      const indent = line.match(/^(\s*)/)[1];
-      // Replace with async preload pattern
-      result.push(`${indent}<link rel="preload" href="${href}" as="style" onload="this.onload=null;this.rel='stylesheet'">`);
-      result.push(`${indent}<noscript><link rel="stylesheet" href="${href}"></noscript>`);
-      cssDeferred++;
-      changes.push(`  ASYNC PRELOAD: ${cssBasename(href)}`);
-    } else {
+    // --- Handle <noscript> fallback lines — keep them as-is ---
+    if (isNoscriptLine(line)) {
       result.push(line);
+      continue;
     }
+
+    // --- Handle regular stylesheet links ---
+    const href = getStylesheetHref(line);
+    if (href) {
+      const normalized = href.replace(/^\.\.\/|^\.\/|^\//g, '');
+      const base = cssBasename(href);
+
+      // Skip Google Fonts
+      if (href.includes('fonts.googleapis.com')) {
+        result.push(line);
+        continue;
+      }
+
+      // Dedup: skip if we've already seen this href
+      if (seenHrefs.has(normalized)) {
+        dupsRemoved++;
+        changes.push(`  REMOVED duplicate: ${base}`);
+        continue;
+      }
+      seenHrefs.add(normalized);
+
+      // Convert non-critical CSS to async preload
+      if (NON_CRITICAL.has(base)) {
+        const indent = line.match(/^(\s*)/)[1];
+        result.push(`${indent}<link rel="preload" href="${href}" as="style" onload="this.onload=null;this.rel='stylesheet'">`);
+        result.push(`${indent}<noscript><link rel="stylesheet" href="${href}"></noscript>`);
+        cssDeferred++;
+        changes.push(`  ASYNC PRELOAD: ${base}`);
+        continue;
+      }
+
+      // Critical or unknown CSS — keep synchronous
+      result.push(line);
+      continue;
+    }
+
+    // --- All other lines — keep as-is ---
+    result.push(line);
   }
 
   html = result.join('\n');
@@ -196,7 +290,6 @@ function main() {
   let totalFiles = 0;
   let totalDups = 0;
   let totalDeferred = 0;
-  let totalHeaderDefer = 0;
   const allResults = [];
 
   for (const f of files) {
@@ -205,7 +298,6 @@ function main() {
       totalFiles++;
       totalDups += dupsRemoved;
       totalDeferred += cssDeferred;
-      if (changes.some(c => c.includes('DEFERRED: header-loader'))) totalHeaderDefer++;
       allResults.push({ relPath, changes });
     }
   }
@@ -225,7 +317,6 @@ function main() {
   console.log(`Files with changes: ${totalFiles}`);
   console.log(`Duplicate stylesheets removed: ${totalDups}`);
   console.log(`CSS files converted to async preload: ${totalDeferred}`);
-  console.log(`header-loader.js deferred: ${totalHeaderDefer}`);
   if (DRY_RUN) {
     console.log('\n(Dry run — no files were modified)\n');
   } else {
