@@ -33,9 +33,24 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Install dependencies
         run: |
           pip install google-auth google-auth-httplib2
+
+      - name: Publish queued location pages (5/day drip)
+        env:
+          GOOGLE_INDEXING_SA: ${{ secrets.GOOGLE_INDEXING_SA }}
+        run: |
+          if [ -d "_pages_queue" ] && [ "$(ls _pages_queue/*.html 2>/dev/null | wc -l)" -gt 0 ]; then
+            node publish-next-page.js --count 5
+          else
+            echo "[pages] No queued pages to publish."
+          fi
 
       - name: Check for scheduled posts
         id: check-posts
