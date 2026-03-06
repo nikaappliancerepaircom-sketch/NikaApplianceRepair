@@ -428,7 +428,7 @@ window.addEventListener('message',function(e){if(e.data&&e.data.type==='fixlify-
 
     <script>
         // Set current year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        const yearEl = document.getElementById('current-year'); if (yearEl) yearEl.textContent = new Date().getFullYear();
 
         // Prevent accidental navigation away
         let formInteracted = false;
