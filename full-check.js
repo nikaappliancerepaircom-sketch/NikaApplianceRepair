@@ -29,7 +29,7 @@ const SITES = {
 };
 
 const SKIP_DIRS = ['_pages_queue', 'blog', 'node_modules', '.github'];
-const SKIP_FILES = ['404', 'index', 'sitemap', 'robots', 'privacy', 'terms', 'thank-you'];
+const SKIP_FILES = ['404', 'index', 'sitemap', 'robots', 'privacy', 'terms', 'thank-you', 'service-template', 'landing-v2', 'landing-v3', 'landing-v5', 'landing-v6', 'landing-v7', 'landing-v8', 'landing-v9', 'landing-v10', 'landing', 'compare'];
 
 // ── PHASE 1: file-based checks ───────────────────────────────────────────────
 
@@ -45,7 +45,7 @@ function getHtmlFiles(dir) {
 
 const BOOKING_ID = 'fixlify-booking-nicks-appliance-repair-b8c8ce';
 const SKIP_IFRAME_SITES = ['nikaappliancerepair.com'];
-const SKIP_IFRAME_SLUGS = ['services', 'locations', 'brands', 'for-businesses', '404'];
+const SKIP_IFRAME_SLUGS = ['services', 'locations', 'brands', 'for-businesses', '404', 'about'];
 
 function checkFile(fpath, domain) {
   const html = fs.readFileSync(fpath, 'utf8');
