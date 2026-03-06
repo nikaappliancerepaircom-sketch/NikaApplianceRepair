@@ -29,7 +29,7 @@ const SITES = {
 };
 
 const SKIP_DIRS = ['_pages_queue', 'blog', 'node_modules', '.github'];
-const SKIP_FILES = ['404', 'index', 'sitemap', 'robots', 'privacy', 'terms', 'thank-you', 'service-template', 'landing-v2', 'landing-v3', 'landing-v5', 'landing-v6', 'landing-v7', 'landing-v8', 'landing-v9', 'landing-v10', 'landing', 'compare'];
+const SKIP_FILES = ['404', 'index', 'sitemap', 'robots', 'privacy', 'terms', 'thank-you', 'service-template', 'landing-v2', 'landing-v3', 'landing-v5', 'landing-v6', 'landing-v7', 'landing-v8', 'landing-v9', 'landing-v10', 'landing', 'compare', 'preview'];
 
 // ── PHASE 1: file-based checks ───────────────────────────────────────────────
 
