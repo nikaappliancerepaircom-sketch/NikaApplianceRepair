@@ -80,6 +80,22 @@ def generate_sitemap(base_url='https://nikaappliancerepair.com'):
             location_count += 1
         print(f"    + {location_count} location pages added")
 
+    # 3b. Add locations/services neighbourhood pages
+    print("\n[+] Adding locations/services neighbourhood pages...")
+    loc_services_dir = base_dir / 'locations' / 'services'
+    if loc_services_dir.exists():
+        loc_service_count = 0
+        for loc_service_file in sorted(loc_services_dir.glob('*.html')):
+            metadata = extract_metadata_from_html(loc_service_file)
+            urls.append({
+                'loc': f"{base_url}/locations/services/{loc_service_file.stem}",
+                'lastmod': metadata['lastmod'],
+                'changefreq': 'monthly',
+                'priority': '0.7'
+            })
+            loc_service_count += 1
+        print(f"    + {loc_service_count} neighbourhood service pages added")
+
     # 4. Add service pages
     print("\n[+] Adding service pages...")
     services_dir = base_dir / 'services'
