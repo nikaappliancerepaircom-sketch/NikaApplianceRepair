@@ -51,18 +51,24 @@ def generate_sitemap(base_url='https://nikaappliancerepair.com'):
 
     # 2. Add main pages
     print("[+] Adding main pages...")
-    main_pages = ['services.html', 'locations.html', 'brands.html', 'about.html', 'blog.html']
-    for page in main_pages:
-        page_path = base_dir / page
+    main_pages = [
+        ('services.html', '/services', '0.9', 'weekly'),
+        ('locations.html', '/locations', '0.9', 'weekly'),
+        ('brands.html', '/brands', '0.8', 'monthly'),
+        ('about.html', '/about', '0.8', 'monthly'),
+        ('blog/index.html', '/blog', '1.0', 'daily'),
+    ]
+    for page_file, url_path, priority, changefreq in main_pages:
+        page_path = base_dir / page_file
         if page_path.exists():
             metadata = extract_metadata_from_html(page_path)
             urls.append({
-                'loc': f"{base_url}/{page.replace('.html', '')}",
+                'loc': f"{base_url}{url_path}",
                 'lastmod': metadata['lastmod'],
-                'changefreq': 'weekly',
-                'priority': '0.9'
+                'changefreq': changefreq,
+                'priority': priority
             })
-            print(f"    + {page}")
+            print(f"    + {page_file} -> {url_path}")
 
     # 3. Add location pages
     print("\n[+] Adding location pages...")
