@@ -5,6 +5,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/blog",
+      "destination": "/blog-nika-appliance-repair",
+      "permanent": true
+    },
+    {
       "source": "/blog/:category/:slug.html",
       "destination": "/blog/:category/:slug",
       "permanent": true
