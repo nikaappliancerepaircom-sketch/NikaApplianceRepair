@@ -183,6 +183,10 @@ function generateMeta(pageType, info, site) {
   const { brand, city, service, isInstallation } = info;
   const { phone, voice } = site;
 
+  // SAFETY: cityLabel defaults to 'Toronto' for pageType='service'/'brand'/etc.
+  // For Alberta or other non-Toronto cities, callers MUST pass pageType='service-city'
+  // or 'brand-city' AND a city. See bug history: queue files were once generated with
+  // pageType='service' and a city, which incorrectly hardcoded Toronto in title/meta.
   const cityLabel    = city    ? toTitleCase(city)    : 'Toronto';
   const serviceLabel = service ? toTitleCase(service) : 'Appliance';
   const brandLabel   = brand   ? (BRAND_DISPLAY[brand] || toTitleCase(brand)) : '';
@@ -195,7 +199,7 @@ function generateMeta(pageType, info, site) {
       case 'authority':   return `Certified experts since 2017. Call ${phone}.`;
       case 'professional': return `Licensed & insured. Call ${phone}!`;
       case 'proximity':   return `Local experts near you. Call ${phone}!`;
-      case 'value':       return `$65 flat diagnostic, no hidden fees. Book today!`;
+      case 'value':       return `$89 flat diagnostic, no hidden fees. Book today!`;
     }
   }
 
@@ -206,13 +210,13 @@ function generateMeta(pageType, info, site) {
         authority:    `Nika Appliance Repair Toronto | Certified Since 2017 | ${phone}`,
         professional: `Appliance Repair Toronto | Same-Day Service | ${phone}`,
         proximity:    `Appliance Repair Near Me Toronto | 1-Hour Response | ${phone}`,
-        value:        `Appliance Repair Toronto | $65 Diagnostic | ${phone}`,
+        value:        `Appliance Repair Toronto | $89 Diagnostic | ${phone}`,
       };
       const D = {
-        authority:    `Toronto's certified appliance repair experts since 2017. Same-day service for all brands. $65 diagnostic fee. 4.8★ rated. Call ${phone}.`,
-        professional: `Toronto's trusted appliance repair. Same-day service for fridges, washers, dryers & more. Licensed technicians, $65 diagnostic. Call ${phone} today.`,
-        proximity:    `Fast appliance repair near you in Toronto & GTA. Certified local technicians fix fridges, washers, dishwashers same day. $65 flat diagnostic. Call now!`,
-        value:        `Expert appliance repair in Toronto. Transparent pricing starting at $65 diagnostic. Same-day fixes for all major brands. Licensed & insured. Book today!`,
+        authority:    `Toronto's certified appliance repair experts since 2017. Same-day service for all brands. $89 diagnostic fee. 4.8★ rated. Call ${phone}.`,
+        professional: `Toronto's trusted appliance repair. Same-day service for fridges, washers, dryers & more. Licensed technicians, $89 diagnostic. Call ${phone} today.`,
+        proximity:    `Fast appliance repair near you in Toronto & GTA. Certified local technicians fix fridges, washers, dishwashers same day. $89 flat diagnostic. Call now!`,
+        value:        `Expert appliance repair in Toronto. Transparent pricing starting at $89 diagnostic. Same-day fixes for all major brands. Licensed & insured. Book today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -222,13 +226,13 @@ function generateMeta(pageType, info, site) {
         authority:    `${serviceLabel} ${action} Toronto | Certified Experts | ${phone}`,
         professional: `${serviceLabel} ${action} Toronto | Same-Day Fix | ${phone}`,
         proximity:    `${serviceLabel} ${action} Near Me Toronto | Same-Day | ${phone}`,
-        value:        `${serviceLabel} ${action} Toronto | From $65 | ${phone}`,
+        value:        `${serviceLabel} ${action} Toronto | From $89 | ${phone}`,
       };
       const D = {
-        authority:    `Certified ${serviceLabel.toLowerCase()} ${actionL} in Toronto since 2017. All brands: Samsung, LG, Bosch & more. $65 diagnostic, same-day service. Call ${phone}.`,
-        professional: `Professional ${serviceLabel.toLowerCase()} ${actionL} in Toronto. Same-day service for all brands — Samsung, Bosch, LG & more. $65 diagnostic, licensed technicians. Call now!`,
-        proximity:    `${serviceLabel} ${actionL} near you in Toronto & GTA. Certified local technicians, same-day service. Samsung, LG, Bosch & all brands. $65 diagnostic. Call ${phone}!`,
-        value:        `Expert ${serviceLabel.toLowerCase()} ${actionL} in Toronto. $65 flat diagnostic, transparent pricing. All brands — Samsung, LG, Bosch & more. Same-day service. Book today!`,
+        authority:    `Certified ${serviceLabel.toLowerCase()} ${actionL} in Toronto since 2017. All brands: Samsung, LG, Bosch & more. $89 diagnostic, same-day service. Call ${phone}.`,
+        professional: `Professional ${serviceLabel.toLowerCase()} ${actionL} in Toronto. Same-day service for all brands — Samsung, Bosch, LG & more. $89 diagnostic, licensed technicians. Call now!`,
+        proximity:    `${serviceLabel} ${actionL} near you in Toronto & GTA. Certified local technicians, same-day service. Samsung, LG, Bosch & all brands. $89 diagnostic. Call ${phone}!`,
+        value:        `Expert ${serviceLabel.toLowerCase()} ${actionL} in Toronto. $89 flat diagnostic, transparent pricing. All brands — Samsung, LG, Bosch & more. Same-day service. Book today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -238,13 +242,13 @@ function generateMeta(pageType, info, site) {
         authority:    `${serviceLabel} ${action} ${cityLabel} | Certified Techs | ${phone}`,
         professional: `${serviceLabel} ${action} ${cityLabel} | Same-Day Service | ${phone}`,
         proximity:    `${serviceLabel} ${action} Near Me ${cityLabel} | Same-Day | ${phone}`,
-        value:        `${serviceLabel} ${action} ${cityLabel} | $65 Diagnostic | ${phone}`,
+        value:        `${serviceLabel} ${action} ${cityLabel} | $89 Diagnostic | ${phone}`,
       };
       const D = {
-        authority:    `Certified ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel} since 2017. Samsung, LG, Bosch & all brands. $65 diagnostic, same-day service. Call ${phone}.`,
-        professional: `Fast ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel}. Licensed technicians fix Samsung, LG, Bosch & all brands same day. $65 flat diagnostic. Call ${phone}!`,
-        proximity:    `${serviceLabel} ${actionL} near you in ${cityLabel}. Local certified technicians, same-day service for all brands. $65 diagnostic. Call ${phone}!`,
-        value:        `${serviceLabel} ${actionL} in ${cityLabel}. $65 flat diagnostic, transparent pricing. Samsung, LG, Bosch & all brands, same-day service. Book today!`,
+        authority:    `Certified ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel} since 2017. Samsung, LG, Bosch & all brands. $89 diagnostic, same-day service. Call ${phone}.`,
+        professional: `Fast ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel}. Licensed technicians fix Samsung, LG, Bosch & all brands same day. $89 flat diagnostic. Call ${phone}!`,
+        proximity:    `${serviceLabel} ${actionL} near you in ${cityLabel}. Local certified technicians, same-day service for all brands. $89 diagnostic. Call ${phone}!`,
+        value:        `${serviceLabel} ${actionL} in ${cityLabel}. $89 flat diagnostic, transparent pricing. Samsung, LG, Bosch & all brands, same-day service. Book today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -254,13 +258,13 @@ function generateMeta(pageType, info, site) {
         authority:    `${brandLabel} Appliance Repair Toronto | Certified | ${phone}`,
         professional: `${brandLabel} Appliance Repair Toronto | Same-Day | ${phone}`,
         proximity:    `${brandLabel} Repair Near Me Toronto | Same-Day | ${phone}`,
-        value:        `${brandLabel} Appliance Repair Toronto | $65 Diagnostic | ${phone}`,
+        value:        `${brandLabel} Appliance Repair Toronto | $89 Diagnostic | ${phone}`,
       };
       const D = {
-        authority:    `Certified ${brandLabel} appliance repair in Toronto since 2017. Fridges, washers, dishwashers & dryers. $65 diagnostic, same-day service. Call ${phone}.`,
-        professional: `${brandLabel} appliance repair in Toronto. Licensed technicians fix all models same-day. $65 diagnostic, 90-day warranty. Call ${phone}!`,
-        proximity:    `${brandLabel} appliance repair near you in Toronto & GTA. Local certified technicians, same-day service for all models. $65 diagnostic. Call ${phone}!`,
-        value:        `${brandLabel} appliance repair in Toronto. $65 flat diagnostic, transparent pricing. Expert fixes for fridges, washers, dishwashers & dryers. Same-day. Book today!`,
+        authority:    `Certified ${brandLabel} appliance repair in Toronto since 2017. Fridges, washers, dishwashers & dryers. $89 diagnostic, same-day service. Call ${phone}.`,
+        professional: `${brandLabel} appliance repair in Toronto. Licensed technicians fix all models same-day. $89 diagnostic, 90-day warranty. Call ${phone}!`,
+        proximity:    `${brandLabel} appliance repair near you in Toronto & GTA. Local certified technicians, same-day service for all models. $89 diagnostic. Call ${phone}!`,
+        value:        `${brandLabel} appliance repair in Toronto. $89 flat diagnostic, transparent pricing. Expert fixes for fridges, washers, dishwashers & dryers. Same-day. Book today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -270,13 +274,13 @@ function generateMeta(pageType, info, site) {
         authority:    `${brandLabel} ${serviceLabel} ${action} Toronto | Certified | ${phone}`,
         professional: `${brandLabel} ${serviceLabel} ${action} Toronto | Same-Day | ${phone}`,
         proximity:    `${brandLabel} ${serviceLabel} ${action} Near Me | Same-Day | ${phone}`,
-        value:        `${brandLabel} ${serviceLabel} ${action} Toronto | $65 | ${phone}`,
+        value:        `${brandLabel} ${serviceLabel} ${action} Toronto | $89 | ${phone}`,
       };
       const D = {
-        authority:    `Certified ${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in Toronto since 2017. All models, $65 diagnostic, same-day service. Call ${phone}.`,
-        professional: `Professional ${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in Toronto. Same-day service, all models. $65 diagnostic, licensed techs. Call ${phone}!`,
-        proximity:    `${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} near you in Toronto. Local certified technicians, all models, same-day. $65 diagnostic. Call ${phone}!`,
-        value:        `${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in Toronto. $65 flat diagnostic, transparent pricing. All models, same-day service. Book today!`,
+        authority:    `Certified ${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in Toronto since 2017. All models, $89 diagnostic, same-day service. Call ${phone}.`,
+        professional: `Professional ${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in Toronto. Same-day service, all models. $89 diagnostic, licensed techs. Call ${phone}!`,
+        proximity:    `${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} near you in Toronto. Local certified technicians, all models, same-day. $89 diagnostic. Call ${phone}!`,
+        value:        `${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in Toronto. $89 flat diagnostic, transparent pricing. All models, same-day service. Book today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -286,13 +290,13 @@ function generateMeta(pageType, info, site) {
         authority:    `${brandLabel} Appliance Repair ${cityLabel} | Certified | ${phone}`,
         professional: `${brandLabel} Appliance Repair ${cityLabel} | Same-Day | ${phone}`,
         proximity:    `${brandLabel} Repair Near Me ${cityLabel} | Same-Day | ${phone}`,
-        value:        `${brandLabel} Appliance Repair ${cityLabel} | $65 Diag | ${phone}`,
+        value:        `${brandLabel} Appliance Repair ${cityLabel} | $89 Diag | ${phone}`,
       };
       const D = {
-        authority:    `Certified ${brandLabel} appliance repair in ${cityLabel} since 2017. All models fixed same day. $65 diagnostic, 90-day warranty. Call ${phone}.`,
-        professional: `Fast ${brandLabel} appliance repair in ${cityLabel}. Licensed technicians, all models, same-day service. $65 diagnostic. Call ${phone}!`,
-        proximity:    `${brandLabel} appliance repair near you in ${cityLabel}. Certified local techs, same-day service, all models. $65 diagnostic. Call ${phone}!`,
-        value:        `${brandLabel} appliance repair in ${cityLabel}. $65 flat diagnostic, transparent pricing, same-day service. Licensed & insured. Book today!`,
+        authority:    `Certified ${brandLabel} appliance repair in ${cityLabel} since 2017. All models fixed same day. $89 diagnostic, 90-day warranty. Call ${phone}.`,
+        professional: `Fast ${brandLabel} appliance repair in ${cityLabel}. Licensed technicians, all models, same-day service. $89 diagnostic. Call ${phone}!`,
+        proximity:    `${brandLabel} appliance repair near you in ${cityLabel}. Certified local techs, same-day service, all models. $89 diagnostic. Call ${phone}!`,
+        value:        `${brandLabel} appliance repair in ${cityLabel}. $89 flat diagnostic, transparent pricing, same-day service. Licensed & insured. Book today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -302,13 +306,13 @@ function generateMeta(pageType, info, site) {
         authority:    `${brandLabel} ${serviceLabel} ${action} ${cityLabel} | ${phone}`,
         professional: `${brandLabel} ${serviceLabel} ${action} ${cityLabel} | Same-Day | ${phone}`,
         proximity:    `${brandLabel} ${serviceLabel} ${action} Near Me ${cityLabel} | ${phone}`,
-        value:        `${brandLabel} ${serviceLabel} ${action} ${cityLabel} | $65 | ${phone}`,
+        value:        `${brandLabel} ${serviceLabel} ${action} ${cityLabel} | $89 | ${phone}`,
       };
       const D = {
-        authority:    `Certified ${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel} since 2017. All models, $65 diagnostic, same-day service. Call ${phone}.`,
-        professional: `Fast ${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel}. Licensed techs, all models, $65 diagnostic. Call ${phone}!`,
-        proximity:    `${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} near you in ${cityLabel}. Local certified techs, same-day service. $65 diagnostic. Call ${phone}!`,
-        value:        `${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel}. $65 flat diagnostic, transparent pricing, same-day. Book today!`,
+        authority:    `Certified ${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel} since 2017. All models, $89 diagnostic, same-day service. Call ${phone}.`,
+        professional: `Fast ${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel}. Licensed techs, all models, $89 diagnostic. Call ${phone}!`,
+        proximity:    `${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} near you in ${cityLabel}. Local certified techs, same-day service. $89 diagnostic. Call ${phone}!`,
+        value:        `${brandLabel} ${serviceLabel.toLowerCase()} ${actionL} in ${cityLabel}. $89 flat diagnostic, transparent pricing, same-day. Book today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -318,13 +322,13 @@ function generateMeta(pageType, info, site) {
         authority:    `Appliance Repair ${cityLabel} | Certified Since 2017 | ${phone}`,
         professional: `Appliance Repair ${cityLabel} | Same-Day Service | ${phone}`,
         proximity:    `Appliance Repair Near Me ${cityLabel} | Same-Day | ${phone}`,
-        value:        `Appliance Repair ${cityLabel} | $65 Diagnostic | ${phone}`,
+        value:        `Appliance Repair ${cityLabel} | $89 Diagnostic | ${phone}`,
       };
       const D = {
-        authority:    `Certified appliance repair in ${cityLabel} since 2017. All brands fixed same day — Samsung, LG, Bosch & more. $65 diagnostic. Call ${phone}.`,
-        professional: `Trusted appliance repair in ${cityLabel}. Licensed technicians fix fridges, washers, dryers & dishwashers. Same-day service, $65 diagnostic. Call ${phone}!`,
-        proximity:    `Appliance repair near you in ${cityLabel}. Certified local technicians, same-day service for all brands. $65 diagnostic. Call ${phone}!`,
-        value:        `Expert appliance repair in ${cityLabel}. $65 flat diagnostic, transparent pricing. All brands, same-day service. Licensed & insured. Book today!`,
+        authority:    `Certified appliance repair in ${cityLabel} since 2017. All brands fixed same day — Samsung, LG, Bosch & more. $89 diagnostic. Call ${phone}.`,
+        professional: `Trusted appliance repair in ${cityLabel}. Licensed technicians fix fridges, washers, dryers & dishwashers. Same-day service, $89 diagnostic. Call ${phone}!`,
+        proximity:    `Appliance repair near you in ${cityLabel}. Certified local technicians, same-day service for all brands. $89 diagnostic. Call ${phone}!`,
+        value:        `Expert appliance repair in ${cityLabel}. $89 flat diagnostic, transparent pricing. All brands, same-day service. Licensed & insured. Book today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -337,13 +341,13 @@ function generateMeta(pageType, info, site) {
         authority:    `${readableCap}? Fix Today Toronto | ${phone}`,
         professional: `${readableCap}? Same-Day Repair Toronto | ${phone}`,
         proximity:    `${readableCap}? Local Repair Near You | ${phone}`,
-        value:        `${readableCap}? From $65 Fix Toronto | ${phone}`,
+        value:        `${readableCap}? From $89 Fix Toronto | ${phone}`,
       };
       const D = {
-        authority:    `${serviceLabel} ${readable}? Certified Toronto technicians diagnose & fix same day since 2017. $65 diagnostic. Call ${phone}.`,
-        professional: `${serviceLabel} ${readable}? Same-day repair in Toronto from $65 diagnostic. Licensed technicians, all brands. Call ${phone}!`,
-        proximity:    `${serviceLabel} ${readable}? Local repair technicians near you in Toronto. Same-day service, $65 diagnostic. All brands. Call ${phone}!`,
-        value:        `${serviceLabel} ${readable}? $65 flat diagnostic in Toronto. Transparent pricing, same-day repair, all brands. Licensed & insured. Book today!`,
+        authority:    `${serviceLabel} ${readable}? Certified Toronto technicians diagnose & fix same day since 2017. $89 diagnostic. Call ${phone}.`,
+        professional: `${serviceLabel} ${readable}? Same-day repair in Toronto from $89 diagnostic. Licensed technicians, all brands. Call ${phone}!`,
+        proximity:    `${serviceLabel} ${readable}? Local repair technicians near you in Toronto. Same-day service, $89 diagnostic. All brands. Call ${phone}!`,
+        value:        `${serviceLabel} ${readable}? $89 flat diagnostic in Toronto. Transparent pricing, same-day repair, all brands. Licensed & insured. Book today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -354,13 +358,13 @@ function generateMeta(pageType, info, site) {
         authority:    `${svcLabel} Cost Toronto 2026 | Certified Pricing | ${phone}`,
         professional: `${svcLabel} Cost Toronto 2026 | Honest Pricing | ${phone}`,
         proximity:    `${svcLabel} Cost Near Me Toronto 2026 | ${phone}`,
-        value:        `${svcLabel} Cost Toronto 2026 | $65 Diagnostic | Pricing Guide`,
+        value:        `${svcLabel} Cost Toronto 2026 | $89 Diagnostic | Pricing Guide`,
       };
       const D = {
-        authority:    `How much does ${svcLabel.toLowerCase()} cost in Toronto? Average $150–$400. Certified experts since 2017. $65 diagnostic fee. Get a quote: ${phone}.`,
-        professional: `How much does ${svcLabel.toLowerCase()} cost in Toronto? Average $150–$400. $65 flat diagnostic, no hidden fees. Licensed technicians. Call ${phone}!`,
-        proximity:    `How much does ${svcLabel.toLowerCase()} cost near you in Toronto? Average $150–$400. $65 diagnostic. Local certified techs. Call ${phone}!`,
-        value:        `How much does ${svcLabel.toLowerCase()} cost in Toronto? Average $150–$400. $65 flat diagnostic, transparent pricing, no hidden charges. Get a quote today!`,
+        authority:    `How much does ${svcLabel.toLowerCase()} cost in Toronto? Average $150–$400. Certified experts since 2017. $89 diagnostic fee. Get a quote: ${phone}.`,
+        professional: `How much does ${svcLabel.toLowerCase()} cost in Toronto? Average $150–$400. $89 flat diagnostic, no hidden fees. Licensed technicians. Call ${phone}!`,
+        proximity:    `How much does ${svcLabel.toLowerCase()} cost near you in Toronto? Average $150–$400. $89 diagnostic. Local certified techs. Call ${phone}!`,
+        value:        `How much does ${svcLabel.toLowerCase()} cost in Toronto? Average $150–$400. $89 flat diagnostic, transparent pricing, no hidden charges. Get a quote today!`,
       };
       return { title: T[voice], desc: D[voice] };
     }
@@ -370,7 +374,7 @@ function generateMeta(pageType, info, site) {
         authority:    `${serviceLabel} Installation ${cityLabel !== 'Toronto' ? cityLabel + ' | ' : 'Toronto | '}Certified Techs | ${phone}`,
         professional: `${serviceLabel} Installation ${cityLabel !== 'Toronto' ? cityLabel + ' | ' : 'Toronto | '}Same-Day | ${phone}`,
         proximity:    `${serviceLabel} Installation Near Me ${cityLabel} | ${phone}`,
-        value:        `${serviceLabel} Installation ${cityLabel !== 'Toronto' ? cityLabel + ' | ' : 'Toronto | '}From $65 | ${phone}`,
+        value:        `${serviceLabel} Installation ${cityLabel !== 'Toronto' ? cityLabel + ' | ' : 'Toronto | '}From $89 | ${phone}`,
       };
       const D = {
         authority:    `Professional ${serviceLabel.toLowerCase()} installation in ${cityLabel} since 2017. Certified technicians, all brands. Same-day service. Call ${phone}.`,
@@ -386,13 +390,13 @@ function generateMeta(pageType, info, site) {
         authority:    `Emergency Appliance Repair Toronto | 24/7 Certified | ${phone}`,
         professional: `Emergency Appliance Repair Toronto | 24/7 Same-Day | ${phone}`,
         proximity:    `Emergency Appliance Repair Near Me Toronto | 24/7 | ${phone}`,
-        value:        `Emergency Appliance Repair Toronto | $65 Diag | 24/7 | ${phone}`,
+        value:        `Emergency Appliance Repair Toronto | $89 Diag | 24/7 | ${phone}`,
       };
       const D = {
-        authority:    `24/7 emergency appliance repair in Toronto. Certified technicians since 2017, rapid response. $65 diagnostic. All brands. Call ${phone}.`,
-        professional: `24/7 emergency appliance repair in Toronto. Licensed technicians, rapid same-day response. $65 diagnostic. Call ${phone} now!`,
-        proximity:    `Emergency appliance repair near you in Toronto, 24/7. Local certified technicians, rapid response. $65 diagnostic. Call ${phone}!`,
-        value:        `24/7 emergency appliance repair in Toronto. $65 flat diagnostic, transparent pricing. Rapid response for all brands. Call ${phone}!`,
+        authority:    `24/7 emergency appliance repair in Toronto. Certified technicians since 2017, rapid response. $89 diagnostic. All brands. Call ${phone}.`,
+        professional: `24/7 emergency appliance repair in Toronto. Licensed technicians, rapid same-day response. $89 diagnostic. Call ${phone} now!`,
+        proximity:    `Emergency appliance repair near you in Toronto, 24/7. Local certified technicians, rapid response. $89 diagnostic. Call ${phone}!`,
+        value:        `24/7 emergency appliance repair in Toronto. $89 flat diagnostic, transparent pricing. Rapid response for all brands. Call ${phone}!`,
       };
       return { title: T[voice], desc: D[voice] };
     }

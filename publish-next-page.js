@@ -34,8 +34,11 @@ if (files.length === 0) {
 }
 
 async function submitIndexing(url) {
-  const saJson = process.env.GOOGLE_INDEXING_SA;
-  if (!saJson) return;
+  const saJson = process.env.GOOGLE_INDEXING_SA || process.env.GOOGLE_INDEXING_API_KEY;
+  if (!saJson) {
+    console.warn(`  [indexing] no GOOGLE_INDEXING_SA / GOOGLE_INDEXING_API_KEY env var; skipping ${url}`);
+    return;
+  }
   try {
     const { createSign } = require('crypto');
     const sa = JSON.parse(saJson);
@@ -58,19 +61,35 @@ async function submitIndexing(url) {
       req.write(body); req.end();
     });
 
-    if (!tokenRes.access_token) return;
+    if (!tokenRes.access_token) {
+      console.warn(`  [indexing] OAuth token request failed for ${url}: ${JSON.stringify(tokenRes).slice(0, 200)}`);
+      return;
+    }
 
-    await new Promise((resolve) => {
+    const indexingResult = await new Promise((resolve) => {
       const body = JSON.stringify({ url, type: 'URL_UPDATED' });
       const req = https.request({
         hostname: 'indexing.googleapis.com',
         path: '/v3/urlNotifications:publish',
         method: 'POST',
         headers: { 'Authorization': `Bearer ${tokenRes.access_token}`, 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) }
-      }, res => { let d = ''; res.on('data', c => d += c); res.on('end', () => resolve(JSON.parse(d))); });
+      }, res => {
+        let d = '';
+        res.on('data', c => d += c);
+        res.on('end', () => resolve({ status: res.statusCode, body: d }));
+      });
+      req.on('error', err => resolve({ status: 0, body: err.message }));
       req.write(body); req.end();
     });
-  } catch(e) { /* silent */ }
+
+    if (indexingResult.status !== 200) {
+      console.warn(`  [indexing] HTTP ${indexingResult.status} for ${url}: ${indexingResult.body.slice(0, 200)}`);
+    } else {
+      console.log(`  [indexing] OK ${url}`);
+    }
+  } catch (e) {
+    console.warn(`  [indexing] exception for ${url}: ${e.message}`);
+  }
 }
 
 (async () => {
@@ -82,6 +101,10 @@ async function submitIndexing(url) {
     if (DRY) {
       console.log(`  [DRY] ${file} → / (${url})`);
     } else {
+      if (fs.existsSync(dst)) {
+        console.warn(`  [SKIP] ${path.basename(dst)} already exists; skipping to avoid overwrite.`);
+        continue;
+      }
       fs.renameSync(src, dst);
       await submitIndexing(url);
       console.log(`  ✓ ${file}`);

@@ -4,12 +4,17 @@ Generate sitemap.xml for all blog posts and pages
 Includes blog posts from all categories
 """
 import os
+import subprocess
 from pathlib import Path
 from datetime import datetime
 import re
 
+# Repo root (resolved once for git invocations)
+REPO_ROOT = Path(__file__).parent.parent.resolve()
+
 def extract_metadata_from_html(filepath):
     """Extract metadata from HTML file"""
+    filepath = Path(filepath)
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
 
@@ -20,9 +25,25 @@ def extract_metadata_from_html(filepath):
         end = content.find('</title>')
         title = content[start:end]
 
-    # Get last modified date from file
-    modified_timestamp = os.path.getmtime(filepath)
-    lastmod = datetime.fromtimestamp(modified_timestamp).strftime('%Y-%m-%d')
+    # Get last modified date from git's last-commit time, fallback to file mtime.
+    # Using git mtime is critical because CI checkouts (actions/checkout@v4) reset
+    # all file mtimes to the checkout time, which would make every <lastmod>
+    # collapse to "today" and de-prioritize the sitemap with Google.
+    lastmod = None
+    try:
+        rel_path = filepath.resolve().relative_to(REPO_ROOT).as_posix()
+        result = subprocess.run(
+            ['git', 'log', '-1', '--format=%cI', '--', rel_path],
+            capture_output=True, text=True, cwd=str(REPO_ROOT)
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            # Parse ISO 8601 like "2026-04-15T10:30:45-04:00" -> "2026-04-15"
+            lastmod = result.stdout.strip()[:10]
+    except Exception:
+        lastmod = None
+
+    if not lastmod:
+        lastmod = datetime.fromtimestamp(os.path.getmtime(filepath)).strftime('%Y-%m-%d')
 
     return {
         'title': title,
@@ -158,6 +179,32 @@ def generate_sitemap(base_url='https://nikaappliancerepair.com'):
                 total_blog_posts += category_count
 
     print(f"\n[TOTAL] {total_blog_posts} blog posts added to sitemap")
+
+    # 7. Add root-level service+city pages (Alberta expansion)
+    print("\n[+] Adding root-level service+city pages...")
+    alberta_cities = ['edmonton', 'calgary', 'airdrie', 'leduc', 'fort-saskatchewan',
+                      'sherwood-park', 'spruce-grove', 'st-albert', 'stony-plain',
+                      'strathmore', 'okotoks', 'cochrane', 'chestermere', 'canmore',
+                      'beaumont', 'devon', 'langdon', 'high-river']
+    existing_locs = {u['loc'] for u in urls}
+    root_pages_count = 0
+    for root_file in sorted(base_dir.glob('*-repair-*.html')):
+        # match Alberta cities only (suffix match to avoid e.g. "edmonton" inside other slugs)
+        if any(root_file.stem.endswith('-' + city) or root_file.stem == city
+               for city in alberta_cities):
+            loc = f"{base_url}/{root_file.stem}"
+            if loc in existing_locs:
+                continue
+            metadata = extract_metadata_from_html(root_file)
+            urls.append({
+                'loc': loc,
+                'lastmod': metadata['lastmod'],
+                'changefreq': 'monthly',
+                'priority': '0.7'
+            })
+            existing_locs.add(loc)
+            root_pages_count += 1
+    print(f"    + {root_pages_count} root-level Alberta pages added")
 
     # Generate XML
     print("\n[+] Generating XML...")
