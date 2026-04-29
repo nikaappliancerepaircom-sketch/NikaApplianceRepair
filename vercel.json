@@ -5,6 +5,12 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.nikaappliancerepair.com" }],
+      "destination": "https://nikaappliancerepair.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/blog",
       "destination": "/blog-nika-appliance-repair",
       "permanent": true
