@@ -1,0 +1,2313 @@
+{
+  "timestamp": "2026-04-28T11:31:44.167510Z",
+  "config_path": "lazy-config.json",
+  "total_pages": 1,
+  "passing_pages": 0,
+  "failing_pages": 1,
+  "cross_page": {
+    "duplicate_page_groups": [],
+    "shared_sentences_count": 0
+  },
+  "reports": [
+    {
+      "page": "index.html",
+      "detected_niche": "local-service",
+      "detection_confidence": 0.82,
+      "detection_signals": {
+        "ecommerce": [
+          "keyword:\\$\\s?\\d+(\\.\\d{2})?\\b... ×6 (+1.7999999999999998)"
+        ],
+        "local-service": [
+          "keyword:\\b(emergency service|24/7|same-?day|serv... ×4 (+4.0)",
+          "keyword:\\b(plumber|electrician|hvac|technician|r... ×4 (+2.8)"
+        ],
+        "saas": [
+          "pricing/tiers element (+1.5)"
+        ]
+      },
+      "categories": [
+        {
+          "category": "seo",
+          "total": 31,
+          "passed": 22,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "word_count_in_range",
+              "passed": true,
+              "details": "1774 words (target 1200-4500)",
+              "location": ""
+            },
+            {
+              "param": "h1_exactly_one",
+              "passed": true,
+              "details": "found 1 h1 tags",
+              "location": ""
+            },
+            {
+              "param": "h2_count_in_range",
+              "passed": true,
+              "details": "9 h2 tags (target 5-12)",
+              "location": ""
+            },
+            {
+              "param": "h3_count_min",
+              "passed": true,
+              "details": "9 h3 tags (min 3)",
+              "location": ""
+            },
+            {
+              "param": "heading_hierarchy_logical",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "internal_links_min",
+              "passed": true,
+              "details": "41 internal links (min 5)",
+              "location": ""
+            },
+            {
+              "param": "external_links_under_max",
+              "passed": true,
+              "details": "0 external links (max 10)",
+              "location": ""
+            },
+            {
+              "param": "images_min",
+              "passed": true,
+              "details": "10 images (min 1)",
+              "location": ""
+            },
+            {
+              "param": "all_images_have_alt",
+              "passed": true,
+              "details": "0 images missing alt text",
+              "location": ""
+            },
+            {
+              "param": "title_present",
+              "passed": true,
+              "details": "",
+              "location": ""
+            },
+            {
+              "param": "title_length_in_range",
+              "passed": false,
+              "details": "69 chars (target 40-60)",
+              "location": ""
+            },
+            {
+              "param": "meta_description_present",
+              "passed": true,
+              "details": "",
+              "location": ""
+            },
+            {
+              "param": "meta_description_length_in_range",
+              "passed": false,
+              "details": "163 chars (target 140-160)",
+              "location": ""
+            },
+            {
+              "param": "viewport_meta",
+              "passed": true,
+              "details": "",
+              "location": ""
+            },
+            {
+              "param": "canonical_present",
+              "passed": true,
+              "details": "",
+              "location": ""
+            },
+            {
+              "param": "canonical_uses_https",
+              "passed": true,
+              "details": "canonical: https://nikaappliancerepair.com/",
+              "location": ""
+            },
+            {
+              "param": "robots_meta_not_noindex",
+              "passed": true,
+              "details": "no robots meta (default index)",
+              "location": ""
+            },
+            {
+              "param": "faq_section_present",
+              "passed": true,
+              "details": "no FAQ section detected",
+              "location": ""
+            },
+            {
+              "param": "question_format_h3",
+              "passed": false,
+              "details": "1 question-format h3 tags",
+              "location": ""
+            },
+            {
+              "param": "lists_present_for_snippets",
+              "passed": false,
+              "details": "0 lists",
+              "location": ""
+            },
+            {
+              "param": "structured_content_lists_or_tables",
+              "passed": true,
+              "details": "0 lists, 1 tables",
+              "location": ""
+            },
+            {
+              "param": "voice_friendly_questions",
+              "passed": false,
+              "details": "1 natural-language Q&A headings (need >= 3)",
+              "location": ""
+            },
+            {
+              "param": "phone_present_on_page",
+              "passed": false,
+              "details": "phone +1-437-524-1053 not found in page text",
+              "location": ""
+            },
+            {
+              "param": "phone_clickable_tel_link",
+              "passed": true,
+              "details": "8 tel: links",
+              "location": ""
+            },
+            {
+              "param": "address_or_city_mentioned",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "local_business_schema_present",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "directions_or_map_link",
+              "passed": false,
+              "details": "no map/directions link found",
+              "location": ""
+            },
+            {
+              "param": "ctas_present",
+              "passed": true,
+              "details": "5 CTA-like elements (min 3)",
+              "location": ""
+            },
+            {
+              "param": "contact_or_lead_form_present",
+              "passed": false,
+              "details": "0 forms",
+              "location": ""
+            },
+            {
+              "param": "navigation_present",
+              "passed": false,
+              "details": "no <nav> element found",
+              "location": ""
+            },
+            {
+              "param": "navigation_max_seven_top_level",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "seo_advanced",
+          "total": 30,
+          "passed": 18,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "search_intent_detectable",
+              "passed": true,
+              "details": "could not detect intent from title/h1: 'Nika Appliance Repair Toronto | Certified Since 2017 | (437) 524-1053' / 'We're theappliancerepair company thatwillmakeyou say...WOW!'",
+              "location": ""
+            },
+            {
+              "param": "h1_signals_intent",
+              "passed": false,
+              "details": "detected intent=informational but H1 lacks intent words",
+              "location": ""
+            },
+            {
+              "param": "ctas_aligned_with_intent",
+              "passed": false,
+              "details": "intent=informational but no matching CTAs (['learn', 'read', 'guide', 'discover', 'explore'])",
+              "location": ""
+            },
+            {
+              "param": "structure_matches_intent",
+              "passed": false,
+              "details": "intent=informational but structure missing expected elements",
+              "location": ""
+            },
+            {
+              "param": "title_contains_intent_signal",
+              "passed": false,
+              "details": "title lacks intent words: 'Nika Appliance Repair Toronto | Certified Since 2017 | (437) 524-1053'",
+              "location": ""
+            },
+            {
+              "param": "subtopic_breadth",
+              "passed": true,
+              "details": "only 38 unique sub-topic words across H2/H3 (min 12)",
+              "location": ""
+            },
+            {
+              "param": "external_entity_links",
+              "passed": false,
+              "details": "0 authority outbound links (need 1+)",
+              "location": ""
+            },
+            {
+              "param": "related_internal_links",
+              "passed": true,
+              "details": "41 deep internal links (need 3+ to sub-pages)",
+              "location": ""
+            },
+            {
+              "param": "definitions_or_glossary",
+              "passed": true,
+              "details": "no glossary / definition list / 'what is' block",
+              "location": ""
+            },
+            {
+              "param": "topical_hierarchy_three_levels",
+              "passed": true,
+              "details": "only 3 heading levels used (need 3+ for topical depth)",
+              "location": ""
+            },
+            {
+              "param": "featured_snippet_block",
+              "passed": true,
+              "details": "no 35-60 word answer block after a 'what is' / 'how to' heading",
+              "location": ""
+            },
+            {
+              "param": "voice_search_answer_block",
+              "passed": true,
+              "details": "no 20-35 word answer paragraph after a question heading",
+              "location": ""
+            },
+            {
+              "param": "howto_numbered_list",
+              "passed": false,
+              "details": "no <ol> with 3+ steps (HowTo snippet potential)",
+              "location": ""
+            },
+            {
+              "param": "comparison_table_for_commercial_intent",
+              "passed": true,
+              "details": "n/a (intent is not commercial)",
+              "location": ""
+            },
+            {
+              "param": "definition_list_present",
+              "passed": false,
+              "details": "no <dl> definition list (helps featured snippets)",
+              "location": ""
+            },
+            {
+              "param": "howto_schema_when_steps_present",
+              "passed": true,
+              "details": "n/a",
+              "location": ""
+            },
+            {
+              "param": "video_schema_when_video_present",
+              "passed": true,
+              "details": "n/a (no video)",
+              "location": ""
+            },
+            {
+              "param": "schema_has_date_modified_or_published",
+              "passed": false,
+              "details": "no dateModified / datePublished anywhere in JSON-LD",
+              "location": ""
+            },
+            {
+              "param": "image_schema_present",
+              "passed": false,
+              "details": "og:image present but no ImageObject in schema",
+              "location": ""
+            },
+            {
+              "param": "schema_sameAs_for_entity_graph",
+              "passed": false,
+              "details": "no sameAs in any JSON-LD block (entity graph signal)",
+              "location": ""
+            },
+            {
+              "param": "hreflang_includes_x_default",
+              "passed": true,
+              "details": "n/a (single language site)",
+              "location": ""
+            },
+            {
+              "param": "canonical_matches_og_url",
+              "passed": true,
+              "details": "canonical='https://nikaappliancerepair.com/' vs og:url='https://nikaappliancerepair.com/'",
+              "location": ""
+            },
+            {
+              "param": "pagination_rel_next_prev",
+              "passed": true,
+              "details": "n/a (not paginated)",
+              "location": ""
+            },
+            {
+              "param": "title_has_power_word_or_number",
+              "passed": true,
+              "details": "title lacks power words / numbers: 'Nika Appliance Repair Toronto | Certified Since 2017 | (437) 524-1053'",
+              "location": ""
+            },
+            {
+              "param": "meta_desc_has_action_verb",
+              "passed": true,
+              "details": "meta desc lacks action verb: 'Toronto's certified appliance repair experts since 2017. Same-day service for all brands. $89 diagnostic fee (waived with repair). 4.8★ rated. Call (437) 524-1053.'",
+              "location": ""
+            },
+            {
+              "param": "title_no_all_caps_clickbait",
+              "passed": true,
+              "details": "title is ALL CAPS: 'Nika Appliance Repair Toronto | Certified Since 2017 | (437) 524-1053'",
+              "location": ""
+            },
+            {
+              "param": "meta_desc_or_title_includes_year",
+              "passed": false,
+              "details": "neither title nor meta desc include current year (freshness CTR)",
+              "location": ""
+            },
+            {
+              "param": "all_images_have_width_height",
+              "passed": true,
+              "details": "0/10 images missing width/height (CLS risk)",
+              "location": ""
+            },
+            {
+              "param": "images_use_modern_format",
+              "passed": false,
+              "details": "only 1/10 images use webp/avif/<picture>",
+              "location": ""
+            },
+            {
+              "param": "alt_text_descriptive",
+              "passed": true,
+              "details": "only 10/10 images have ≥3-word alt text",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "responsive",
+          "total": 80,
+          "passed": 66,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "iphone_se_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "iphone_se_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 375",
+              "location": ""
+            },
+            {
+              "param": "iphone_se_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=1075, innerWidth=375",
+              "location": ""
+            },
+            {
+              "param": "iphone_se_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "iphone_se_tap_targets_44px_min",
+              "passed": false,
+              "details": "9 interactive elements smaller than 44x44",
+              "location": ""
+            },
+            {
+              "param": "iphone_se_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 18px (min 14)",
+              "location": ""
+            },
+            {
+              "param": "iphone_se_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "iphone_se_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            },
+            {
+              "param": "iphone_12_pro_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "iphone_12_pro_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 390",
+              "location": ""
+            },
+            {
+              "param": "iphone_12_pro_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=1104, innerWidth=390",
+              "location": ""
+            },
+            {
+              "param": "iphone_12_pro_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "iphone_12_pro_tap_targets_44px_min",
+              "passed": false,
+              "details": "10 interactive elements smaller than 44x44",
+              "location": ""
+            },
+            {
+              "param": "iphone_12_pro_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 18px (min 14)",
+              "location": ""
+            },
+            {
+              "param": "iphone_12_pro_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "iphone_12_pro_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            },
+            {
+              "param": "samsung_galaxy_s21_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "samsung_galaxy_s21_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 360",
+              "location": ""
+            },
+            {
+              "param": "samsung_galaxy_s21_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=1042, innerWidth=360",
+              "location": ""
+            },
+            {
+              "param": "samsung_galaxy_s21_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "samsung_galaxy_s21_tap_targets_44px_min",
+              "passed": false,
+              "details": "11 interactive elements smaller than 44x44",
+              "location": ""
+            },
+            {
+              "param": "samsung_galaxy_s21_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 18px (min 14)",
+              "location": ""
+            },
+            {
+              "param": "samsung_galaxy_s21_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "samsung_galaxy_s21_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            },
+            {
+              "param": "iphone_14_pro_max_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "iphone_14_pro_max_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 430",
+              "location": ""
+            },
+            {
+              "param": "iphone_14_pro_max_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=1186, innerWidth=430",
+              "location": ""
+            },
+            {
+              "param": "iphone_14_pro_max_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "iphone_14_pro_max_tap_targets_44px_min",
+              "passed": false,
+              "details": "10 interactive elements smaller than 44x44",
+              "location": ""
+            },
+            {
+              "param": "iphone_14_pro_max_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 18px (min 14)",
+              "location": ""
+            },
+            {
+              "param": "iphone_14_pro_max_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "iphone_14_pro_max_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            },
+            {
+              "param": "ipad_mini_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "ipad_mini_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 768",
+              "location": ""
+            },
+            {
+              "param": "ipad_mini_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=2004, innerWidth=768",
+              "location": ""
+            },
+            {
+              "param": "ipad_mini_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "ipad_mini_tap_targets_44px_min",
+              "passed": true,
+              "details": "n/a (non-mobile)",
+              "location": ""
+            },
+            {
+              "param": "ipad_mini_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 18px (min 13)",
+              "location": ""
+            },
+            {
+              "param": "ipad_mini_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "ipad_mini_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            },
+            {
+              "param": "ipad_air_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "ipad_air_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 820",
+              "location": ""
+            },
+            {
+              "param": "ipad_air_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=1683, innerWidth=820",
+              "location": ""
+            },
+            {
+              "param": "ipad_air_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "ipad_air_tap_targets_44px_min",
+              "passed": true,
+              "details": "n/a (non-mobile)",
+              "location": ""
+            },
+            {
+              "param": "ipad_air_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 15.75px (min 13)",
+              "location": ""
+            },
+            {
+              "param": "ipad_air_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "ipad_air_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            },
+            {
+              "param": "ipad_pro_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "ipad_pro_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 1024",
+              "location": ""
+            },
+            {
+              "param": "ipad_pro_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=1870, innerWidth=1024",
+              "location": ""
+            },
+            {
+              "param": "ipad_pro_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "ipad_pro_tap_targets_44px_min",
+              "passed": true,
+              "details": "n/a (non-mobile)",
+              "location": ""
+            },
+            {
+              "param": "ipad_pro_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 15.75px (min 13)",
+              "location": ""
+            },
+            {
+              "param": "ipad_pro_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "ipad_pro_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            },
+            {
+              "param": "laptop_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "laptop_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 1366",
+              "location": ""
+            },
+            {
+              "param": "laptop_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=2167, innerWidth=1366",
+              "location": ""
+            },
+            {
+              "param": "laptop_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "laptop_tap_targets_44px_min",
+              "passed": true,
+              "details": "n/a (non-mobile)",
+              "location": ""
+            },
+            {
+              "param": "laptop_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 18.16px (min 13)",
+              "location": ""
+            },
+            {
+              "param": "laptop_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "laptop_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            },
+            {
+              "param": "desktop_hd_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "desktop_hd_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 1920",
+              "location": ""
+            },
+            {
+              "param": "desktop_hd_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=2880, innerWidth=1920",
+              "location": ""
+            },
+            {
+              "param": "desktop_hd_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "desktop_hd_tap_targets_44px_min",
+              "passed": true,
+              "details": "n/a (non-mobile)",
+              "location": ""
+            },
+            {
+              "param": "desktop_hd_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 20.25px (min 13)",
+              "location": ""
+            },
+            {
+              "param": "desktop_hd_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "desktop_hd_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            },
+            {
+              "param": "desktop_4k_no_horizontal_overflow",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "desktop_4k_scroll_width_le_viewport",
+              "passed": true,
+              "details": "scrollWidth 2560",
+              "location": ""
+            },
+            {
+              "param": "desktop_4k_body_width_correct",
+              "passed": false,
+              "details": "bodyWidth=3840, innerWidth=2560",
+              "location": ""
+            },
+            {
+              "param": "desktop_4k_no_horizontal_scrollbar",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "desktop_4k_tap_targets_44px_min",
+              "passed": true,
+              "details": "n/a (non-mobile)",
+              "location": ""
+            },
+            {
+              "param": "desktop_4k_text_readable_no_zoom",
+              "passed": true,
+              "details": "body font-size 20.25px (min 13)",
+              "location": ""
+            },
+            {
+              "param": "desktop_4k_images_fit_viewport",
+              "passed": true,
+              "details": "0 images wider than viewport",
+              "location": ""
+            },
+            {
+              "param": "desktop_4k_forms_usable",
+              "passed": true,
+              "details": "some form inputs not visible at this viewport",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "cross_browser",
+          "total": 28,
+          "passed": 25,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "chrome_page_loads",
+              "passed": true,
+              "details": "",
+              "location": ""
+            },
+            {
+              "param": "chrome_no_console_errors",
+              "passed": false,
+              "details": "3 console errors: ['Failed to load resource: net::ERR_FILE_NOT_FOUND', 'Failed to load resource: net::ERR_FILE_NOT_FOUND']",
+              "location": ""
+            },
+            {
+              "param": "chrome_layout_renders",
+              "passed": true,
+              "details": "<body> empty or missing",
+              "location": ""
+            },
+            {
+              "param": "chrome_javascript_runs",
+              "passed": true,
+              "details": "JS context broken",
+              "location": ""
+            },
+            {
+              "param": "chrome_css_applied",
+              "passed": true,
+              "details": "no computed CSS",
+              "location": ""
+            },
+            {
+              "param": "chrome_media_queries_work",
+              "passed": true,
+              "details": "media queries broken",
+              "location": ""
+            },
+            {
+              "param": "chrome_forms_render",
+              "passed": true,
+              "details": "some forms not visible",
+              "location": ""
+            },
+            {
+              "param": "firefox_page_loads",
+              "passed": true,
+              "details": "",
+              "location": ""
+            },
+            {
+              "param": "firefox_no_console_errors",
+              "passed": true,
+              "details": "0 console errors: []",
+              "location": ""
+            },
+            {
+              "param": "firefox_layout_renders",
+              "passed": true,
+              "details": "<body> empty or missing",
+              "location": ""
+            },
+            {
+              "param": "firefox_javascript_runs",
+              "passed": true,
+              "details": "JS context broken",
+              "location": ""
+            },
+            {
+              "param": "firefox_css_applied",
+              "passed": true,
+              "details": "no computed CSS",
+              "location": ""
+            },
+            {
+              "param": "firefox_media_queries_work",
+              "passed": true,
+              "details": "media queries broken",
+              "location": ""
+            },
+            {
+              "param": "firefox_forms_render",
+              "passed": true,
+              "details": "some forms not visible",
+              "location": ""
+            },
+            {
+              "param": "safari_page_loads",
+              "passed": true,
+              "details": "",
+              "location": ""
+            },
+            {
+              "param": "safari_no_console_errors",
+              "passed": false,
+              "details": "3 console errors: ['Not allowed to load local resource: file:///C:/css/design-fixes-2026.css', 'Not allowed to load local resource: file:///C:/includes/header-loader.js']",
+              "location": ""
+            },
+            {
+              "param": "safari_layout_renders",
+              "passed": true,
+              "details": "<body> empty or missing",
+              "location": ""
+            },
+            {
+              "param": "safari_javascript_runs",
+              "passed": true,
+              "details": "JS context broken",
+              "location": ""
+            },
+            {
+              "param": "safari_css_applied",
+              "passed": true,
+              "details": "no computed CSS",
+              "location": ""
+            },
+            {
+              "param": "safari_media_queries_work",
+              "passed": true,
+              "details": "media queries broken",
+              "location": ""
+            },
+            {
+              "param": "safari_forms_render",
+              "passed": true,
+              "details": "some forms not visible",
+              "location": ""
+            },
+            {
+              "param": "edge_page_loads",
+              "passed": true,
+              "details": "",
+              "location": ""
+            },
+            {
+              "param": "edge_no_console_errors",
+              "passed": false,
+              "details": "3 console errors: ['Failed to load resource: net::ERR_FILE_NOT_FOUND', 'Failed to load resource: net::ERR_FILE_NOT_FOUND']",
+              "location": ""
+            },
+            {
+              "param": "edge_layout_renders",
+              "passed": true,
+              "details": "<body> empty or missing",
+              "location": ""
+            },
+            {
+              "param": "edge_javascript_runs",
+              "passed": true,
+              "details": "JS context broken",
+              "location": ""
+            },
+            {
+              "param": "edge_css_applied",
+              "passed": true,
+              "details": "no computed CSS",
+              "location": ""
+            },
+            {
+              "param": "edge_media_queries_work",
+              "passed": true,
+              "details": "media queries broken",
+              "location": ""
+            },
+            {
+              "param": "edge_forms_render",
+              "passed": true,
+              "details": "some forms not visible",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "visual",
+          "total": 20,
+          "passed": 19,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "semantic_sections_used",
+              "passed": true,
+              "details": "12 <section>/<article> blocks",
+              "location": ""
+            },
+            {
+              "param": "external_css_present",
+              "passed": true,
+              "details": "no external CSS files (inline-only is harder to maintain)",
+              "location": ""
+            },
+            {
+              "param": "container_width_constrained",
+              "passed": true,
+              "details": "no max-width / .container constraint detected",
+              "location": ""
+            },
+            {
+              "param": "grid_or_flex_layout",
+              "passed": true,
+              "details": "no flex/grid layout detected",
+              "location": ""
+            },
+            {
+              "param": "no_inline_pixel_layouts",
+              "passed": true,
+              "details": "many inline width: declarations (use classes)",
+              "location": ""
+            },
+            {
+              "param": "web_font_referenced",
+              "passed": true,
+              "details": "no web font import / brand font configured",
+              "location": ""
+            },
+            {
+              "param": "configured_font_used",
+              "passed": true,
+              "details": "configured font 'inter' not in HTML",
+              "location": ""
+            },
+            {
+              "param": "heading_size_styling_present",
+              "passed": true,
+              "details": "no obvious heading size styling",
+              "location": ""
+            },
+            {
+              "param": "line_height_styled",
+              "passed": true,
+              "details": "no line-height declarations",
+              "location": ""
+            },
+            {
+              "param": "text_color_styled",
+              "passed": true,
+              "details": "no color declarations",
+              "location": ""
+            },
+            {
+              "param": "primary_color_in_css",
+              "passed": false,
+              "details": "primary #0ea5e9 not in HTML/CSS",
+              "location": ""
+            },
+            {
+              "param": "secondary_color_in_css",
+              "passed": true,
+              "details": "secondary #1e40af not in HTML/CSS",
+              "location": ""
+            },
+            {
+              "param": "hover_or_focus_states_declared",
+              "passed": true,
+              "details": "no :hover / :focus declarations",
+              "location": ""
+            },
+            {
+              "param": "body_background_styled",
+              "passed": true,
+              "details": "no body background styling detected",
+              "location": ""
+            },
+            {
+              "param": "images_have_alt",
+              "passed": true,
+              "details": "0 imgs missing alt",
+              "location": ""
+            },
+            {
+              "param": "responsive_images_used",
+              "passed": true,
+              "details": "only 0/10 images use srcset/<picture>",
+              "location": ""
+            },
+            {
+              "param": "lazy_loading",
+              "passed": true,
+              "details": "no images use loading=lazy",
+              "location": ""
+            },
+            {
+              "param": "ctas_styled_consistently",
+              "passed": true,
+              "details": "only 4 buttons with btn/cta class",
+              "location": ""
+            },
+            {
+              "param": "links_distinguishable",
+              "passed": true,
+              "details": "no link styling rules",
+              "location": ""
+            },
+            {
+              "param": "form_inputs_styled",
+              "passed": true,
+              "details": "no form/input styling rules",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "accessibility",
+          "total": 15,
+          "passed": 12,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "html_lang_attribute",
+              "passed": true,
+              "details": "<html> missing lang attribute",
+              "location": ""
+            },
+            {
+              "param": "skip_to_content_link",
+              "passed": false,
+              "details": "no 'skip to content' link",
+              "location": ""
+            },
+            {
+              "param": "no_critical_elements_with_tabindex_neg1",
+              "passed": true,
+              "details": "0 interactive elements with tabindex=-1",
+              "location": ""
+            },
+            {
+              "param": "main_landmark_present",
+              "passed": false,
+              "details": "no <main> or role=main landmark",
+              "location": ""
+            },
+            {
+              "param": "all_images_have_alt_attribute",
+              "passed": true,
+              "details": "0 images missing alt attribute",
+              "location": ""
+            },
+            {
+              "param": "all_inputs_labeled",
+              "passed": true,
+              "details": "0 inputs without label",
+              "location": ""
+            },
+            {
+              "param": "all_buttons_have_accessible_name",
+              "passed": true,
+              "details": "0 buttons without accessible name",
+              "location": ""
+            },
+            {
+              "param": "all_links_have_accessible_name",
+              "passed": true,
+              "details": "0 links without accessible name",
+              "location": ""
+            },
+            {
+              "param": "color_not_only_indicator",
+              "passed": true,
+              "details": "no non-color state indicators (hover/focus/underline)",
+              "location": ""
+            },
+            {
+              "param": "focus_visible_styles",
+              "passed": false,
+              "details": "no :focus / :focus-visible styles",
+              "location": ""
+            },
+            {
+              "param": "aria_live_for_form_feedback",
+              "passed": true,
+              "details": "n/a (no forms)",
+              "location": ""
+            },
+            {
+              "param": "heading_levels_logical_order",
+              "passed": true,
+              "details": "heading levels skip (e.g. h2 -> h4)",
+              "location": ""
+            },
+            {
+              "param": "title_descriptive",
+              "passed": true,
+              "details": "title too short: 'Nika Appliance Repair Toronto | Certified Since 2017 | (437) 524-1053'",
+              "location": ""
+            },
+            {
+              "param": "no_autoplay_without_controls",
+              "passed": true,
+              "details": "0 autoplay media without controls",
+              "location": ""
+            },
+            {
+              "param": "no_redundant_aria_roles",
+              "passed": true,
+              "details": "0 redundant ARIA roles",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "content",
+          "total": 16,
+          "passed": 12,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "content_not_empty",
+              "passed": true,
+              "details": "no body text found",
+              "location": ""
+            },
+            {
+              "param": "content_hash_recorded",
+              "passed": true,
+              "details": "hash 3f608eea0918",
+              "location": ""
+            },
+            {
+              "param": "duplicate_sentences_under_threshold",
+              "passed": true,
+              "details": "longest sentence repeats 1 times (max 3)",
+              "location": ""
+            },
+            {
+              "param": "current_year_referenced",
+              "passed": true,
+              "details": "no 2026/2027 reference (freshness signal)",
+              "location": ""
+            },
+            {
+              "param": "lexical_diversity_min",
+              "passed": true,
+              "details": "only 554 unique meaningful words (min 200)",
+              "location": ""
+            },
+            {
+              "param": "avg_sentence_length_reasonable",
+              "passed": true,
+              "details": "avg sentence: 12.4 words (target 10-25)",
+              "location": ""
+            },
+            {
+              "param": "no_overly_long_sentences",
+              "passed": true,
+              "details": "4 sentences > 35 words",
+              "location": ""
+            },
+            {
+              "param": "paragraphs_under_max_sentences",
+              "passed": false,
+              "details": "1 paragraphs > 5 sentences",
+              "location": ""
+            },
+            {
+              "param": "lists_present_for_scannability",
+              "passed": false,
+              "details": "0 lists (min 3)",
+              "location": ""
+            },
+            {
+              "param": "reading_level_in_range",
+              "passed": true,
+              "details": "Flesch-Kincaid grade 8.8 (target 7-11)",
+              "location": ""
+            },
+            {
+              "param": "section_count_reasonable",
+              "passed": true,
+              "details": "9 H2 sections (target 5-12)",
+              "location": ""
+            },
+            {
+              "param": "section_hero_or_intro",
+              "passed": false,
+              "details": "no 'hero_or_intro' section detected",
+              "location": ""
+            },
+            {
+              "param": "section_services_or_offerings",
+              "passed": true,
+              "details": "no 'services_or_offerings' section detected",
+              "location": ""
+            },
+            {
+              "param": "section_faq",
+              "passed": true,
+              "details": "no 'faq' section detected",
+              "location": ""
+            },
+            {
+              "param": "section_contact",
+              "passed": false,
+              "details": "no 'contact' section detected",
+              "location": ""
+            },
+            {
+              "param": "section_social_proof",
+              "passed": true,
+              "details": "no 'social_proof' section detected",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "cro",
+          "total": 20,
+          "passed": 19,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "h1_value_proposition",
+              "passed": true,
+              "details": "h1 too short: 'We're theappliancerepair company thatwillmakeyou say...WOW!'",
+              "location": ""
+            },
+            {
+              "param": "intro_paragraph_under_hero",
+              "passed": true,
+              "details": "no substantive intro section near top",
+              "location": ""
+            },
+            {
+              "param": "primary_cta_present",
+              "passed": true,
+              "details": "no CTA button found",
+              "location": ""
+            },
+            {
+              "param": "phone_visible_in_header",
+              "passed": true,
+              "details": "no tel: link (mobile click-to-call)",
+              "location": ""
+            },
+            {
+              "param": "trust_signal_above_fold",
+              "passed": true,
+              "details": "no trust signal phrasing",
+              "location": ""
+            },
+            {
+              "param": "cta_count_at_least_5",
+              "passed": true,
+              "details": "5 CTAs (min 5)",
+              "location": ""
+            },
+            {
+              "param": "cta_type_diversity",
+              "passed": true,
+              "details": "only 2 CTA types: ['booking', 'phone']",
+              "location": ""
+            },
+            {
+              "param": "action_oriented_cta_copy",
+              "passed": true,
+              "details": "only 5/5 CTAs use action verbs",
+              "location": ""
+            },
+            {
+              "param": "no_weak_cta_copy",
+              "passed": true,
+              "details": "0 weak 'learn more' CTAs",
+              "location": ""
+            },
+            {
+              "param": "mobile_sticky_or_floating_cta",
+              "passed": true,
+              "details": "no sticky/fixed/floating CTA element",
+              "location": ""
+            },
+            {
+              "param": "form_present",
+              "passed": false,
+              "details": "no form on page",
+              "location": ""
+            },
+            {
+              "param": "form_minimal_fields",
+              "passed": true,
+              "details": "forms have [] input fields (max 6 each)",
+              "location": ""
+            },
+            {
+              "param": "submit_button_present",
+              "passed": true,
+              "details": "no submit button in forms",
+              "location": ""
+            },
+            {
+              "param": "privacy_assurance_near_form",
+              "passed": true,
+              "details": "no privacy assurance language",
+              "location": ""
+            },
+            {
+              "param": "form_validation_attributes",
+              "passed": true,
+              "details": "forms lack validation attributes (required/pattern/type=email)",
+              "location": ""
+            },
+            {
+              "param": "no_modal_on_load",
+              "passed": true,
+              "details": "page seems to open a modal on load",
+              "location": ""
+            },
+            {
+              "param": "click_to_call_direct",
+              "passed": true,
+              "details": "no tel: link",
+              "location": ""
+            },
+            {
+              "param": "no_login_wall",
+              "passed": true,
+              "details": "page contains password field (potential login wall)",
+              "location": ""
+            },
+            {
+              "param": "navigation_max_seven_items",
+              "passed": true,
+              "details": "0 top-level nav links",
+              "location": ""
+            },
+            {
+              "param": "secondary_cta_below_fold",
+              "passed": true,
+              "details": "5 CTAs (need 3+ for full-page coverage)",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "psychology",
+          "total": 20,
+          "passed": 15,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "pain_points_identified",
+              "passed": true,
+              "details": "no pain-point language",
+              "location": ""
+            },
+            {
+              "param": "solutions_offered",
+              "passed": true,
+              "details": "no solution language",
+              "location": ""
+            },
+            {
+              "param": "before_after_or_outcome_described",
+              "passed": true,
+              "details": "no before/after framing or outcomes described",
+              "location": ""
+            },
+            {
+              "param": "h1_attention_grabbing",
+              "passed": true,
+              "details": "h1 lacks question/number/length: 'We're theappliancerepair company thatwillmakeyou say...WOW!'",
+              "location": ""
+            },
+            {
+              "param": "interest_first_paragraph_substantive",
+              "passed": false,
+              "details": "first paragraph too short (interest)",
+              "location": ""
+            },
+            {
+              "param": "desire_benefits_focused",
+              "passed": false,
+              "details": "few benefit-focused phrases",
+              "location": ""
+            },
+            {
+              "param": "action_multiple_ctas",
+              "passed": false,
+              "details": "1 action CTAs (min 3)",
+              "location": ""
+            },
+            {
+              "param": "testimonials_present",
+              "passed": true,
+              "details": "no testimonial/review block",
+              "location": ""
+            },
+            {
+              "param": "rating_visible",
+              "passed": true,
+              "details": "rating 4.9 not visible",
+              "location": ""
+            },
+            {
+              "param": "review_count_visible",
+              "passed": true,
+              "details": "review count 250 not visible",
+              "location": ""
+            },
+            {
+              "param": "client_logos_or_named_brands",
+              "passed": true,
+              "details": "no client logos / featured-in section",
+              "location": ""
+            },
+            {
+              "param": "urgency_or_timeliness_present",
+              "passed": true,
+              "details": "no urgency / timeliness language",
+              "location": ""
+            },
+            {
+              "param": "no_forbidden_urgency_phrases",
+              "passed": true,
+              "details": "forbidden urgency phrases: []",
+              "location": ""
+            },
+            {
+              "param": "no_countdown_timers",
+              "passed": true,
+              "details": "page contains countdown / timer / expires-in",
+              "location": ""
+            },
+            {
+              "param": "years_in_business_visible",
+              "passed": true,
+              "details": "no 'since YYYY' / 'X years' phrase",
+              "location": ""
+            },
+            {
+              "param": "credentials_present",
+              "passed": true,
+              "details": "no credentials referenced",
+              "location": ""
+            },
+            {
+              "param": "guarantee_or_warranty",
+              "passed": true,
+              "details": "no guarantee / warranty language",
+              "location": ""
+            },
+            {
+              "param": "named_team_or_founder",
+              "passed": false,
+              "details": "no team/founder/leadership block",
+              "location": ""
+            },
+            {
+              "param": "free_value_offered",
+              "passed": false,
+              "details": "no free guide/consultation/audit offered (reciprocity)",
+              "location": ""
+            },
+            {
+              "param": "specific_numbers_used",
+              "passed": true,
+              "details": "only 114 numeric figures (specificity boosts trust)",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "data_consistency",
+          "total": 14,
+          "passed": 11,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "phone_present",
+              "passed": true,
+              "details": "configured phone +1-437-524-1053 not found on page (variants tried: {'4375241053', '14375241053'})",
+              "location": ""
+            },
+            {
+              "param": "phone_mentioned_multiple_times",
+              "passed": true,
+              "details": "phone appears 9x (recommend 2+)",
+              "location": ""
+            },
+            {
+              "param": "no_other_phone_numbers",
+              "passed": true,
+              "details": "found phone-like sequences not matching config: []",
+              "location": ""
+            },
+            {
+              "param": "configured_email_present_or_domain",
+              "passed": true,
+              "details": "configured info@nikaappliancerepair.com not found and no domain email present",
+              "location": ""
+            },
+            {
+              "param": "no_third_party_emails",
+              "passed": false,
+              "details": "found unrelated emails: ['nicksappliancerepair@on.fixlify.app']",
+              "location": ""
+            },
+            {
+              "param": "founded_year_consistent",
+              "passed": false,
+              "details": "founded year 2017 not found among page years [2025, 2026]",
+              "location": ""
+            },
+            {
+              "param": "review_count_consistent",
+              "passed": false,
+              "details": "review counts in text differ from config 250: [5]",
+              "location": ""
+            },
+            {
+              "param": "rating_consistent",
+              "passed": true,
+              "details": "ratings in text [4.9, 4.9, 4.9] differ from config 4.9",
+              "location": ""
+            },
+            {
+              "param": "city_in_address_present_on_page",
+              "passed": true,
+              "details": "city 'Toronto' not on page",
+              "location": ""
+            },
+            {
+              "param": "canonical_uses_configured_domain",
+              "passed": true,
+              "details": "canonical https://nikaappliancerepair.com/ does not contain nikaappliancerepair.com",
+              "location": ""
+            },
+            {
+              "param": "og_url_uses_configured_domain",
+              "passed": true,
+              "details": "og:url https://nikaappliancerepair.com/ does not contain nikaappliancerepair.com",
+              "location": ""
+            },
+            {
+              "param": "no_forbidden_cross_links",
+              "passed": true,
+              "details": "found forbidden cross-links: []",
+              "location": ""
+            },
+            {
+              "param": "site_name_present",
+              "passed": true,
+              "details": "site name 'Nika Appliance Repair' missing",
+              "location": ""
+            },
+            {
+              "param": "currency_symbols_consistent",
+              "passed": true,
+              "details": "unexpected currency symbols on page: [] (expected $)",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "conversion_design",
+          "total": 10,
+          "passed": 7,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "single_focal_h1",
+              "passed": true,
+              "details": "1 h1 tags",
+              "location": ""
+            },
+            {
+              "param": "ctas_styled_as_buttons",
+              "passed": false,
+              "details": "only 2 buttons with btn/button class",
+              "location": ""
+            },
+            {
+              "param": "content_sectioned",
+              "passed": true,
+              "details": "only 12 <section>/<article> blocks (use semantic HTML)",
+              "location": ""
+            },
+            {
+              "param": "icons_used_for_scanning",
+              "passed": true,
+              "details": "21 SVGs + 9 icon imgs (min 3 combined)",
+              "location": ""
+            },
+            {
+              "param": "primary_color_drives_attention",
+              "passed": false,
+              "details": "primary color #0ea5e9 not in page styles",
+              "location": ""
+            },
+            {
+              "param": "viewport_meta_set",
+              "passed": true,
+              "details": "viewport meta missing or wrong",
+              "location": ""
+            },
+            {
+              "param": "mobile_tap_targets_styled",
+              "passed": true,
+              "details": "no min-height/padding suggesting tap-target sizing",
+              "location": ""
+            },
+            {
+              "param": "tel_link_for_mobile",
+              "passed": true,
+              "details": "no tel: link",
+              "location": ""
+            },
+            {
+              "param": "lazy_loading_images",
+              "passed": true,
+              "details": "9/10 images use loading=lazy",
+              "location": ""
+            },
+            {
+              "param": "mobile_menu_pattern",
+              "passed": false,
+              "details": "no hamburger menu pattern detected",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "eeat",
+          "total": 15,
+          "passed": 6,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "author_signal",
+              "passed": false,
+              "details": "no author meta tag and no Person schema",
+              "location": ""
+            },
+            {
+              "param": "author_bio_or_byline",
+              "passed": false,
+              "details": "no author bio / byline element found",
+              "location": ""
+            },
+            {
+              "param": "years_in_business_signal",
+              "passed": true,
+              "details": "no 'X years' / 'since YYYY' phrase (founded 2017)",
+              "location": ""
+            },
+            {
+              "param": "first_person_voice_used",
+              "passed": true,
+              "details": "no first-person 'we'/'our' (real-experience signal)",
+              "location": ""
+            },
+            {
+              "param": "subject_expertise_terms",
+              "passed": true,
+              "details": "no expertise terms (certified, licensed, expert, ...)",
+              "location": ""
+            },
+            {
+              "param": "case_studies_or_portfolio_referenced",
+              "passed": false,
+              "details": "no case studies / portfolio referenced",
+              "location": ""
+            },
+            {
+              "param": "process_or_methodology_documented",
+              "passed": false,
+              "details": "no process / methodology documented",
+              "location": ""
+            },
+            {
+              "param": "external_authority_links",
+              "passed": false,
+              "details": "no outbound links to authoritative sources",
+              "location": ""
+            },
+            {
+              "param": "organization_schema_present",
+              "passed": true,
+              "details": "no Organization/LocalBusiness schema",
+              "location": ""
+            },
+            {
+              "param": "social_links_in_footer_or_schema",
+              "passed": false,
+              "details": "no social profile links / no sameAs in schema",
+              "location": ""
+            },
+            {
+              "param": "credentials_or_awards_mentioned",
+              "passed": true,
+              "details": "no awards / credentials / press mentions",
+              "location": ""
+            },
+            {
+              "param": "team_or_leadership_visible",
+              "passed": false,
+              "details": "no team / leadership signals",
+              "location": ""
+            },
+            {
+              "param": "https_only_resources",
+              "passed": false,
+              "details": "page references http:// resources",
+              "location": ""
+            },
+            {
+              "param": "privacy_terms_link_present",
+              "passed": false,
+              "details": "no link to privacy / terms / cookie policy",
+              "location": ""
+            },
+            {
+              "param": "trust_badges_or_guarantees",
+              "passed": true,
+              "details": "no trust badges / guarantee language",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "geo_ai",
+          "total": 15,
+          "passed": 9,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "llms_txt_present",
+              "passed": true,
+              "details": "no llms.txt at site root",
+              "location": ""
+            },
+            {
+              "param": "ai_crawlers_allowed",
+              "passed": false,
+              "details": "robots.txt blocks: ['GPTBot', 'PerplexityBot', 'Google-Extended']",
+              "location": ""
+            },
+            {
+              "param": "brand_in_first_100_words",
+              "passed": true,
+              "details": "brand 'Nika Appliance Repair' not in first 100 words",
+              "location": ""
+            },
+            {
+              "param": "summary_or_tldr_block",
+              "passed": true,
+              "details": "no TL;DR / summary / key takeaways block",
+              "location": ""
+            },
+            {
+              "param": "question_format_headings",
+              "passed": true,
+              "details": "8 question-format headings (min 3)",
+              "location": ""
+            },
+            {
+              "param": "faq_section_present",
+              "passed": true,
+              "details": "no FAQ section in content",
+              "location": ""
+            },
+            {
+              "param": "citable_short_answer_passages",
+              "passed": true,
+              "details": "3 answer passages of citable length (need 2+)",
+              "location": ""
+            },
+            {
+              "param": "author_meta_or_byline",
+              "passed": false,
+              "details": "no author meta tag or byline",
+              "location": ""
+            },
+            {
+              "param": "schema_uses_at_id_for_entities",
+              "passed": false,
+              "details": "JSON-LD missing @id properties (helps entity disambiguation)",
+              "location": ""
+            },
+            {
+              "param": "structured_facts_lists_or_dl",
+              "passed": false,
+              "details": "0 lists, 0 <dl>",
+              "location": ""
+            },
+            {
+              "param": "numerical_claims_present",
+              "passed": true,
+              "details": "3 numerical claims",
+              "location": ""
+            },
+            {
+              "param": "outbound_authority_links",
+              "passed": false,
+              "details": "no outbound links to authoritative sources",
+              "location": ""
+            },
+            {
+              "param": "publish_or_update_date_visible",
+              "passed": false,
+              "details": "no published / updated / last reviewed date",
+              "location": ""
+            },
+            {
+              "param": "og_image_present",
+              "passed": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+              "details": "no og:image",
+              "location": ""
+            },
+            {
+              "param": "twitter_card_meta",
+              "passed": true,
+              "details": "no twitter:card meta",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "schema",
+          "total": 13,
+          "passed": 9,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "json_ld_present",
+              "passed": true,
+              "details": "5 JSON-LD blocks parsed",
+              "location": ""
+            },
+            {
+              "param": "json_ld_valid",
+              "passed": true,
+              "details": "every block must be a valid object with @type",
+              "location": ""
+            },
+            {
+              "param": "required_schema_localbusiness",
+              "passed": true,
+              "details": "missing LocalBusiness schema (found: ['FAQPage', 'HowTo', 'ItemList', 'LocalBusiness', 'Organization', 'WebPage'])",
+              "location": ""
+            },
+            {
+              "param": "required_schema_faqpage",
+              "passed": true,
+              "details": "missing FAQPage schema (found: ['FAQPage', 'HowTo', 'ItemList', 'LocalBusiness', 'Organization', 'WebPage'])",
+              "location": ""
+            },
+            {
+              "param": "required_schema_breadcrumblist",
+              "passed": false,
+              "details": "missing BreadcrumbList schema (found: ['FAQPage', 'HowTo', 'ItemList', 'LocalBusiness', 'Organization', 'WebPage'])",
+              "location": ""
+            },
+            {
+              "param": "required_schema_service",
+              "passed": false,
+              "details": "missing Service schema (found: ['FAQPage', 'HowTo', 'ItemList', 'LocalBusiness', 'Organization', 'WebPage'])",
+              "location": ""
+            },
+            {
+              "param": "faq_page_schema",
+              "passed": true,
+              "details": "FAQPage schema not present (helps AI Overviews)",
+              "location": ""
+            },
+            {
+              "param": "schema_context_correct",
+              "passed": true,
+              "details": "ok",
+              "location": ""
+            },
+            {
+              "param": "aggregate_rating_schema",
+              "passed": true,
+              "details": "business has reviews but no aggregateRating in schema",
+              "location": ""
+            },
+            {
+              "param": "review_objects_present",
+              "passed": false,
+              "details": "no Review objects in JSON-LD",
+              "location": ""
+            },
+            {
+              "param": "org_schema_with_same_as",
+              "passed": false,
+              "details": "Organization/LocalBusiness lacks sameAs (social profiles)",
+              "location": ""
+            },
+            {
+              "param": "org_name_matches_site",
+              "passed": true,
+              "details": "organization schema name does not match site 'Nika Appliance Repair'",
+              "location": ""
+            },
+            {
+              "param": "all_json_ld_parse_clean",
+              "passed": true,
+              "details": "0 JSON-LD blocks failed to parse",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "brand",
+          "total": 10,
+          "passed": 7,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "site_name_present",
+              "passed": true,
+              "details": "site name 'Nika Appliance Repair' not in page text",
+              "location": ""
+            },
+            {
+              "param": "site_name_in_title",
+              "passed": true,
+              "details": "site name not in title: 'Nika Appliance Repair Toronto | Certified Since 2017 | (437) 524-1053'",
+              "location": ""
+            },
+            {
+              "param": "primary_color_used",
+              "passed": false,
+              "details": "primary color #0ea5e9 not found in page or linked CSS",
+              "location": ""
+            },
+            {
+              "param": "secondary_color_used",
+              "passed": false,
+              "details": "secondary color #1e40af not found in page or linked CSS",
+              "location": ""
+            },
+            {
+              "param": "primary_font_referenced",
+              "passed": true,
+              "details": "font family 'inter' not referenced",
+              "location": ""
+            },
+            {
+              "param": "logo_present",
+              "passed": true,
+              "details": "no logo image (alt matches site name) and no .logo/.brand element",
+              "location": ""
+            },
+            {
+              "param": "html_lang_matches_config",
+              "passed": true,
+              "details": "<html lang='en'> does not match configured en-ca",
+              "location": ""
+            },
+            {
+              "param": "canonical_domain_matches_config",
+              "passed": true,
+              "details": "canonical 'https://nikaappliancerepair.com/' does not contain 'nikaappliancerepair.com'",
+              "location": ""
+            },
+            {
+              "param": "og_site_name_present",
+              "passed": false,
+              "details": "og:site_name '' != configured 'Nika Appliance Repair'",
+              "location": ""
+            },
+            {
+              "param": "no_cross_brand_links",
+              "passed": true,
+              "details": "found cross-brand links: []",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "internal_linking",
+          "total": 10,
+          "passed": 6,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "internal_links_min",
+              "passed": true,
+              "details": "43 internal links (min 5)",
+              "location": ""
+            },
+            {
+              "param": "external_links_under_max",
+              "passed": true,
+              "details": "0 external links (max 10)",
+              "location": ""
+            },
+            {
+              "param": "no_weak_anchor_text",
+              "passed": true,
+              "details": "weak anchors: []",
+              "location": ""
+            },
+            {
+              "param": "anchor_text_diversity",
+              "passed": true,
+              "details": "only 43/43 unique anchor texts",
+              "location": ""
+            },
+            {
+              "param": "contextual_links_in_paragraphs",
+              "passed": false,
+              "details": "only 0 links inside <p> tags",
+              "location": ""
+            },
+            {
+              "param": "links_to_pillar_pages",
+              "passed": true,
+              "details": "only 43 links to top-level/pillar pages",
+              "location": ""
+            },
+            {
+              "param": "breadcrumb_navigation_present",
+              "passed": false,
+              "details": "no breadcrumb element / aria-label",
+              "location": ""
+            },
+            {
+              "param": "footer_legal_links",
+              "passed": false,
+              "details": "0 legal links in footer",
+              "location": ""
+            },
+            {
+              "param": "related_or_next_step_section",
+              "passed": false,
+              "details": "no related content / next-step block",
+              "location": ""
+            },
+            {
+              "param": "no_broken_template_placeholders_in_links",
+              "passed": true,
+              "details": "broken template placeholders: []",
+              "location": ""
+            }
+          ]
+        },
+        {
+          "category": "niche_compliance",
+          "total": 10,
+          "passed": 7,
+          "is_passing": false,
+          "checks": [
+            {
+              "param": "required_cta_phone",
+              "passed": true,
+              "details": "required CTA 'phone' not detected on page",
+              "location": ""
+            },
+            {
+              "param": "required_cta_contact_form",
+              "passed": false,
+              "details": "required CTA 'contact_form' not detected on page",
+              "location": ""
+            },
+            {
+              "param": "required_cta_emergency_call",
+              "passed": true,
+              "details": "required CTA 'emergency_call' not detected on page",
+              "location": ""
+            },
+            {
+              "param": "required_trust_license_number",
+              "passed": false,
+              "details": "required trust signal 'license_number' not detected on page",
+              "location": ""
+            },
+            {
+              "param": "required_trust_insured_badge",
+              "passed": true,
+              "details": "required trust signal 'insured_badge' not detected on page",
+              "location": ""
+            },
+            {
+              "param": "required_trust_warranty",
+              "passed": true,
+              "details": "required trust signal 'warranty' not detected on page",
+              "location": ""
+            },
+            {
+              "param": "required_trust_reviews",
+              "passed": true,
+              "details": "required trust signal 'reviews' not detected on page",
+              "location": ""
+            },
+            {
+              "param": "required_trust_years_in_business",
+              "passed": true,
+              "details": "required trust signal 'years_in_business' not detected on page",
+              "location": ""
+            },
+            {
+              "param": "forbidden_fake_countdown",
+              "passed": false,
+              "details": "forbidden psychology pattern 'fake_countdown' detected: Countdown",
+              "location": ""
+            },
+            {
+              "param": "forbidden_fake_inventory",
+              "passed": true,
+              "details": "forbidden psychology pattern 'fake_inventory' detected: ",
+              "location": ""
+            }
+          ]
+        }
+      ],
+      "total_params": 357,
+      "passed_params": 270,
+      "is_passing": false
+    }
+  ]
+}

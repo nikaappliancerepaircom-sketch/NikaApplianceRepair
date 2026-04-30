@@ -325,40 +325,58 @@
 
     <!-- Schema Markup - LocalBusiness -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nika Appliance Repair - Washing Machine Repair",
+  "image": "https://nikaappliancerepair.com/images/logo.png",
+  "@id": "https://nikaappliancerepair.com",
+  "url": "https://nikaappliancerepair.com",
+  "telephone": "+14375241053",
+  "priceRange": "$150-$450",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "",
+    "addressLocality": "Toronto",
+    "addressRegion": "ON",
+    "postalCode": "",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.6532,
+    "longitude": -79.3832
+  },
+  "openingHoursSpecification": [
     {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Nika Appliance Repair - Washing Machine Repair",
-        "image": "https://nikaappliancerepair.com/images/logo.png",
-        "@id": "https://nikaappliancerepair.com",
-        "url": "https://nikaappliancerepair.com",
-        "telephone": "+14375241053",
-        "priceRange": "$150-$450",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "",
-            "addressLocality": "Toronto",
-            "addressRegion": "ON",
-            "postalCode": "",
-            "addressCountry": "CA"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 43.6532,
-            "longitude": -79.3832
-        },
-        "openingHoursSpecification": [{
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "00:00",
-            "closes": "23:59"
-        }],
-        "sameAs": [
-            "https://www.facebook.com/nikaappliancerepair",
-            "https://www.instagram.com/nikaappliancerepair"
-        ]
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
     }
-    </script>
+  ],
+  "sameAs": [
+    "https://www.facebook.com/nikaappliancerepair",
+    "https://www.instagram.com/nikaappliancerepair"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Nick"
+  },
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 12
+  }
+}
+</script>
 
     <!-- Schema Markup - BreadcrumbList -->
     <script type="application/ld+json">
@@ -452,6 +470,7 @@
         }
     }
     </script>
+<!-- SCHEMA-ENRICH-v1 -->
 </head>
 <body>
     <!-- Reading Progress Bar -->

@@ -202,6 +202,7 @@
       ]
 }
     </script>
+<!-- SCHEMA-ENRICH-v1 -->
 </head>
 <body>
     <div class="reading-progress" id="progressBar"></div>
@@ -726,77 +727,93 @@
     </script>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nika Appliance Repair",
+  "image": "https://nikaappliancerepair.com/logo.png",
+  "description": "Professional same-day appliance repair service in Toronto with 24/7 emergency availability",
+  "telephone": "+14165551234",
+  "email": "nicksappliancerepair@on.fixlify.app",
+  "url": "https://nikaappliancerepair.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Service Avenue",
+    "addressLocality": "Toronto",
+    "addressRegion": "ON",
+    "postalCode": "M1A 1A1",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
     {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Nika Appliance Repair",
-      "image": "https://nikaappliancerepair.com/logo.png",
-      "description": "Professional same-day appliance repair service in Toronto with 24/7 emergency availability",
-      "telephone": "+14165551234",
-      "email": "nicksappliancerepair@on.fixlify.app",
-      "url": "https://nikaappliancerepair.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Service Avenue",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "postalCode": "M1A 1A1",
-        "addressCountry": "CA"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Toronto"
-        },
-        {
-          "@type": "City",
-          "name": "North York"
-        },
-        {
-          "@type": "City",
-          "name": "Scarborough"
-        },
-        {
-          "@type": "City",
-          "name": "Etobicoke"
-        },
-        {
-          "@type": "City",
-          "name": "Mississauga"
-        },
-        {
-          "@type": "City",
-          "name": "Brampton"
-        },
-        {
-          "@type": "City",
-          "name": "Oakville"
-        },
-        {
-          "@type": "City",
-          "name": "York"
-        },
-        {
-          "@type": "City",
-          "name": "East York"
-        }
-      ],
-      "priceRange": "$150-$800",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "00:00",
-          "closes": "23:59"
-        }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "284"
-      }
+      "@type": "City",
+      "name": "Toronto"
+    },
+    {
+      "@type": "City",
+      "name": "North York"
+    },
+    {
+      "@type": "City",
+      "name": "Scarborough"
+    },
+    {
+      "@type": "City",
+      "name": "Etobicoke"
+    },
+    {
+      "@type": "City",
+      "name": "Mississauga"
+    },
+    {
+      "@type": "City",
+      "name": "Brampton"
+    },
+    {
+      "@type": "City",
+      "name": "Oakville"
+    },
+    {
+      "@type": "City",
+      "name": "York"
+    },
+    {
+      "@type": "City",
+      "name": "East York"
     }
-    </script>
+  ],
+  "priceRange": "$150-$800",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "284"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Nick"
+  },
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 12
+  }
+}
+</script>
 
     <script type="application/ld+json">
     {
