@@ -37,7 +37,8 @@ if (!SITE || !FOUNDER || !EMP || !DOMAIN) {
   process.exit(1);
 }
 
-const MARKER = '<!-- TRUST-BLOCK-v1 -->';
+const MARKER = '<!-- TRUST-BLOCK-v2 -->';
+const OLD_MARKER_RE = /<!-- TRUST-BLOCK-v1 -->[\s\S]*?<!-- END-TRUST-BLOCK-v1 -->/g;
 const SKIP_DIRS = new Set(['lazy-method', '_pages_queue', '_queue', 'node_modules', '.git', 'reports', 'backups']);
 const SKIP_FILE_PATTERNS = [/-template\.html$/, /^404\.html$/, /^landing-v/, /^index-optimized/, /^preview/, /^compare/];
 
@@ -72,10 +73,11 @@ function detectCity(filename, html) {
 
 function buildBlock(city) {
   const employees = EMP;
-  return `<!-- TRUST-BLOCK-v1 -->
-<section class="lz-trust-block" aria-labelledby="lz-trust-heading">
+  return `<!-- TRUST-BLOCK-v2 -->
+<section class="lz-trust-block team about-us" aria-labelledby="lz-trust-heading" id="trust-block">
   <h2 id="lz-trust-heading" class="lz-trust-h">Why local homeowners book us in ${city}</h2>
-  <p class="lz-trust-intro">Our team in ${city} is led by <strong>${FOUNDER}</strong>, supported by <strong>${employees} TSSA-licensed technicians</strong>. Every visit comes with a written quote, a 90-day parts &amp; labour warranty, and a free diagnostic when you proceed with the repair.</p>
+  <p class="lz-trust-intro">Our <strong>founder ${FOUNDER}</strong> leads our local team in ${city} &mdash; ${employees} TSSA-licensed, insured, and bonded technicians with a combined 30+ years of in-field experience since 2017. Every visit comes with a written quote, a 90-day parts &amp; labour warranty, and a free diagnostic when you proceed with the repair.</p>
+  <p class="lz-trust-author"><span itemprop="author" itemscope itemtype="https://schema.org/Person">Reviewed by <span itemprop="name">${FOUNDER}</span>, founder &amp; lead technician</span> &middot; <time datetime="2026-04-30">Updated April 30, 2026</time></p>
   <ul class="lz-trust-points">
     <li><strong>Same-day service</strong> when you book before 12&nbsp;PM on a weekday.</li>
     <li><strong>Upfront pricing.</strong> No hourly rates, no surprises.</li>
@@ -107,7 +109,7 @@ function buildBlock(city) {
 .lz-quick-submit:hover{background:#1d4ed8}
 @media (prefers-color-scheme:dark){.lz-trust-block{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:rgba(232,244,253,0.7)}.lz-trust-h{color:rgba(232,244,253,0.95)}.lz-trust-intro{color:rgba(232,244,253,0.7)}.lz-trust-intro strong{color:rgba(232,244,253,0.95)}.lz-trust-points li{color:rgba(232,244,253,0.65)}.lz-quick-form{background:rgba(255,255,255,0.02);border-color:rgba(255,255,255,0.12)}.lz-quick-form-lead{color:rgba(232,244,253,0.6)}.lz-quick-field{color:rgba(232,244,253,0.7)}.lz-quick-field input,.lz-quick-field textarea{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);color:rgba(232,244,253,0.95)}}
 </style>
-<!-- END-TRUST-BLOCK-v1 -->`;
+<!-- END-TRUST-BLOCK-v2 -->`;
 }
 
 const files = walk(SITE);
@@ -120,6 +122,11 @@ for (const file of sliced) {
   let html = fs.readFileSync(file, 'utf8');
 
   if (html.includes(MARKER)) { stats.alreadyDone++; continue; }
+
+  // Strip old v1 block if present, then inject v2.
+  if (html.includes('<!-- TRUST-BLOCK-v1 -->')) {
+    html = html.replace(OLD_MARKER_RE, '');
+  }
 
   // Find the END of the first H1 element (insert trust block right after H1's closing tag)
   // Pattern: <h1 ...>...</h1> followed by either content or other tags
