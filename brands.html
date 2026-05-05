@@ -21,44 +21,65 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Nika Appliance Repair",
-  "image": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
-  "@id": "https://nikaappliancerepair.com",
-  "url": "https://nikaappliancerepair.com",
-  "telephone": "437-524-1053",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Toronto",
-    "addressRegion": "ON",
-    "addressCountry": "CA"
-  },
-  "serviceType": [
-    "Samsung Appliance Repair",
-    "LG Appliance Repair",
-    "Whirlpool Appliance Repair",
-    "Maytag Appliance Repair",
-    "GE Appliance Repair",
-    "Frigidaire Appliance Repair",
-    "KitchenAid Appliance Repair",
-    "Bosch Appliance Repair",
-    "Electrolux Appliance Repair",
-    "Kenmore Appliance Repair",
-    "Miele Appliance Repair",
-    "Fisher & Paykel Appliance Repair",
-    "Amana Appliance Repair",
-    "Danby Appliance Repair",
-    "Hotpoint Appliance Repair"
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Nick"
-  },
-  "numberOfEmployees": {
-    "@type": "QuantitativeValue",
-    "value": 12
-  }
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Nika Appliance Repair",
+      "image": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
+      "@id": "https://nikaappliancerepair.com",
+      "url": "https://nikaappliancerepair.com",
+      "telephone": "437-524-1053",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "serviceType": [
+        "Samsung Appliance Repair",
+        "LG Appliance Repair",
+        "Whirlpool Appliance Repair",
+        "Maytag Appliance Repair",
+        "GE Appliance Repair",
+        "Frigidaire Appliance Repair",
+        "KitchenAid Appliance Repair",
+        "Bosch Appliance Repair",
+        "Electrolux Appliance Repair",
+        "Kenmore Appliance Repair",
+        "Miele Appliance Repair",
+        "Fisher & Paykel Appliance Repair",
+        "Amana Appliance Repair",
+        "Danby Appliance Repair",
+        "Hotpoint Appliance Repair"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Nick"
+      },
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 12
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nikaappliancerepair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Expert Appliance Repair for All Major Brands"
+        }
+      ]
+    }
+  ]
 }
 </script>
 

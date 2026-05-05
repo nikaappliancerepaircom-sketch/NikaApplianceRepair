@@ -18,120 +18,208 @@
 
     <!-- Schema.org Person Markup for All Team Members -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": [
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Person",
+          "@id": "https://nikaappliancerepair.com/team#sarah-chen",
+          "name": "Sarah Chen",
+          "jobTitle": "Master Appliance Technician",
+          "worksFor": {
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair",
+            "url": "https://nikaappliancerepair.com"
+          },
+          "url": "https://nikaappliancerepair.com/team/sarah-chen",
+          "email": "sarah@nikaappliancerepair.com",
+          "telephone": "647-557-6342",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          },
+          "knowsAbout": [
+            "Refrigerator Repair",
+            "Cooling Systems",
+            "Samsung Appliances",
+            "LG Appliances",
+            "Whirlpool Appliances"
+          ],
+          "hasCredential": [
             {
-                "@type": "Person",
-                "@id": "https://nikaappliancerepair.com/team#sarah-chen",
-                "name": "Sarah Chen",
-                "jobTitle": "Master Appliance Technician",
-                "worksFor": {
-                    "@type": "LocalBusiness",
-                    "name": "Nika Appliance Repair",
-                    "url": "https://nikaappliancerepair.com"
-                },
-                "url": "https://nikaappliancerepair.com/team/sarah-chen",
-                "email": "sarah@nikaappliancerepair.com",
-                "telephone": "647-557-6342",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Toronto",
-                    "addressRegion": "ON",
-                    "addressCountry": "CA"
-                },
-                "knowsAbout": ["Refrigerator Repair", "Cooling Systems", "Samsung Appliances", "LG Appliances", "Whirlpool Appliances"],
-                "hasCredential": [
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Samsung Certified Technician"},
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "LG Certified Technician"},
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Whirlpool Certified Technician"}
-                ],
-                "description": "Sarah has 12 years of experience repairing major appliances across Toronto. She specializes in diagnosing complex cooling system failures and has a 98% first-visit fix rate."
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "Samsung Certified Technician"
             },
             {
-                "@type": "Person",
-                "@id": "https://nikaappliancerepair.com/team#michael-toronto",
-                "name": "Michael Toronto",
-                "jobTitle": "Senior Dishwasher Specialist",
-                "worksFor": {
-                    "@type": "LocalBusiness",
-                    "name": "Nika Appliance Repair",
-                    "url": "https://nikaappliancerepair.com"
-                },
-                "url": "https://nikaappliancerepair.com/team/michael-toronto",
-                "email": "michael@nikaappliancerepair.com",
-                "telephone": "647-557-6342",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Toronto",
-                    "addressRegion": "ON",
-                    "addressCountry": "CA"
-                },
-                "knowsAbout": ["Dishwasher Repair", "Hard Water Solutions", "Bosch Appliances", "KitchenAid Appliances"],
-                "hasCredential": [
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Bosch Certified Technician"},
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "KitchenAid Certified Technician"}
-                ],
-                "description": "Michael specializes in dishwasher repairs and hard water solutions across the GTA. He has extensive experience with Toronto's water conditions."
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "LG Certified Technician"
             },
             {
-                "@type": "Person",
-                "@id": "https://nikaappliancerepair.com/team#james-wilson",
-                "name": "James Wilson",
-                "jobTitle": "Washer & Dryer Specialist",
-                "worksFor": {
-                    "@type": "LocalBusiness",
-                    "name": "Nika Appliance Repair",
-                    "url": "https://nikaappliancerepair.com"
-                },
-                "url": "https://nikaappliancerepair.com/team/james-wilson",
-                "email": "james@nikaappliancerepair.com",
-                "telephone": "647-557-6342",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Toronto",
-                    "addressRegion": "ON",
-                    "addressCountry": "CA"
-                },
-                "knowsAbout": ["Washing Machine Repair", "Dryer Repair", "Laundry Systems", "Maytag Appliances", "GE Appliances"],
-                "hasCredential": [
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Maytag Certified Technician"},
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "GE Certified Technician"},
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Speed Queen Certified Technician"}
-                ],
-                "description": "James has 14 years of experience specializing in washer and dryer repairs across Toronto. He has extensive knowledge of both front-load and top-load systems."
-            },
-            {
-                "@type": "Person",
-                "@id": "https://nikaappliancerepair.com/team#david-martinez",
-                "name": "David Martinez",
-                "jobTitle": "Oven & Stove Expert",
-                "worksFor": {
-                    "@type": "LocalBusiness",
-                    "name": "Nika Appliance Repair",
-                    "url": "https://nikaappliancerepair.com"
-                },
-                "url": "https://nikaappliancerepair.com/team/david-martinez",
-                "email": "david@nikaappliancerepair.com",
-                "telephone": "647-557-6342",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Toronto",
-                    "addressRegion": "ON",
-                    "addressCountry": "CA"
-                },
-                "knowsAbout": ["Oven Repair", "Stove Repair", "Range Repair", "Wolf Appliances", "Viking Appliances"],
-                "hasCredential": [
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Wolf Certified Technician"},
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Viking Certified Technician"},
-                    {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Thermador Certified Technician"}
-                ],
-                "description": "David has 11 years of experience repairing ovens, stoves, and ranges across Toronto. He specializes in gas and electric cooking appliances."
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "Whirlpool Certified Technician"
             }
-        ]
+          ],
+          "description": "Sarah has 12 years of experience repairing major appliances across Toronto. She specializes in diagnosing complex cooling system failures and has a 98% first-visit fix rate."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://nikaappliancerepair.com/team#michael-toronto",
+          "name": "Michael Toronto",
+          "jobTitle": "Senior Dishwasher Specialist",
+          "worksFor": {
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair",
+            "url": "https://nikaappliancerepair.com"
+          },
+          "url": "https://nikaappliancerepair.com/team/michael-toronto",
+          "email": "michael@nikaappliancerepair.com",
+          "telephone": "647-557-6342",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          },
+          "knowsAbout": [
+            "Dishwasher Repair",
+            "Hard Water Solutions",
+            "Bosch Appliances",
+            "KitchenAid Appliances"
+          ],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "Bosch Certified Technician"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "KitchenAid Certified Technician"
+            }
+          ],
+          "description": "Michael specializes in dishwasher repairs and hard water solutions across the GTA. He has extensive experience with Toronto's water conditions."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://nikaappliancerepair.com/team#james-wilson",
+          "name": "James Wilson",
+          "jobTitle": "Washer & Dryer Specialist",
+          "worksFor": {
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair",
+            "url": "https://nikaappliancerepair.com"
+          },
+          "url": "https://nikaappliancerepair.com/team/james-wilson",
+          "email": "james@nikaappliancerepair.com",
+          "telephone": "647-557-6342",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          },
+          "knowsAbout": [
+            "Washing Machine Repair",
+            "Dryer Repair",
+            "Laundry Systems",
+            "Maytag Appliances",
+            "GE Appliances"
+          ],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "Maytag Certified Technician"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "GE Certified Technician"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "Speed Queen Certified Technician"
+            }
+          ],
+          "description": "James has 14 years of experience specializing in washer and dryer repairs across Toronto. He has extensive knowledge of both front-load and top-load systems."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://nikaappliancerepair.com/team#david-martinez",
+          "name": "David Martinez",
+          "jobTitle": "Oven & Stove Expert",
+          "worksFor": {
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair",
+            "url": "https://nikaappliancerepair.com"
+          },
+          "url": "https://nikaappliancerepair.com/team/david-martinez",
+          "email": "david@nikaappliancerepair.com",
+          "telephone": "647-557-6342",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+          },
+          "knowsAbout": [
+            "Oven Repair",
+            "Stove Repair",
+            "Range Repair",
+            "Wolf Appliances",
+            "Viking Appliances"
+          ],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "Wolf Certified Technician"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "Viking Certified Technician"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "certification",
+              "name": "Thermador Certified Technician"
+            }
+          ],
+          "description": "David has 11 years of experience repairing ovens, stoves, and ranges across Toronto. He specializes in gas and electric cooking appliances."
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nikaappliancerepair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Meet Our Expert Team"
+        }
+      ]
     }
-    </script>
+  ]
+}
+</script>
 
     <!-- Preconnect for Google Fonts performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

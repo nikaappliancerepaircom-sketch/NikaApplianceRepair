@@ -19,6 +19,9 @@
 
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -34,8 +37,26 @@
           "reviewCount": "5200"
         }
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nikaappliancerepair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Book Your Appliance Repair in 2 Minutes"
+        }
+      ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         * {

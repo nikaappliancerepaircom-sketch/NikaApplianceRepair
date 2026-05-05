@@ -22,29 +22,50 @@
 
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Nika Appliance Repair Blog",
-        "description": "Expert appliance repair guides, maintenance tips, and troubleshooting solutions for Toronto homeowners",
-        "url": "https://nikaappliancerepair.com/blog-nika-appliance-repair.html",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Nika Appliance Repair",
-            "url": "https://nikaappliancerepair.com",
-            "logo": "https://nikaappliancerepair.com/images/logo.png"
-        },
-        "inLanguage": "en-CA",
-        "areaServed": {
-            "@type": "City",
-            "name": "Toronto",
-            "containedIn": {
-                "@type": "AdministrativeArea",
-                "name": "Ontario"
-            }
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Nika Appliance Repair Blog",
+      "description": "Expert appliance repair guides, maintenance tips, and troubleshooting solutions for Toronto homeowners",
+      "url": "https://nikaappliancerepair.com/blog-nika-appliance-repair.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nika Appliance Repair",
+        "url": "https://nikaappliancerepair.com",
+        "logo": "https://nikaappliancerepair.com/images/logo.png"
+      },
+      "inLanguage": "en-CA",
+      "areaServed": {
+        "@type": "City",
+        "name": "Toronto",
+        "containedIn": {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
         }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nikaappliancerepair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nika Appliance Repair Blog Toronto"
+        }
+      ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         * {

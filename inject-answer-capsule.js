@@ -14,7 +14,7 @@ const SITE_FILTER = (() => { const i = args.indexOf('--site'); return i !== -1 ?
 const SITES = {
   nar: {
     dir:    'C:/nappliancerepair',
-    brand:  'N Appliance Repair',
+    brand:  "Nick's Appliance Repair",
     phone:  '(437) 524-1053',
     // NAR style — blue/white professional
     capsuleStyle: `background:#EFF6FF;border-left:4px solid #2563EB;padding:1rem 1.25rem;margin:1rem auto;max-width:900px;border-radius:0 8px 8px 0;font-family:'Instrument Sans',sans-serif`,

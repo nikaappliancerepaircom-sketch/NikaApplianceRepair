@@ -18,31 +18,52 @@
 
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "@context": "https://schema.org",
-        "@type": "AboutPage",
-        "name": "About Nika Appliance Repair",
-        "description": "Learn about Nika Appliance Repair - Toronto's trusted appliance repair company since 2017",
-        "url": "https://nikaappliancerepair.com/about",
-        "mainEntity": {
-            "@type": "LocalBusiness",
-            "name": "Nika Appliance Repair",
-            "foundingDate": "2017",
-            "telephone": "4375241053",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "East Gwillimbury",
-                "addressRegion": "ON",
-                "addressCountry": "CA"
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "5200"
-            }
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Nika Appliance Repair",
+      "description": "Learn about Nika Appliance Repair - Toronto's trusted appliance repair company since 2017",
+      "url": "https://nikaappliancerepair.com/about",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Nika Appliance Repair",
+        "foundingDate": "2017",
+        "telephone": "4375241053",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "East Gwillimbury",
+          "addressRegion": "ON",
+          "addressCountry": "CA"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "5200"
         }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nikaappliancerepair.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Toronto's Most TrustedAppliance Repair Company"
+        }
+      ]
     }
-    </script>
+  ]
+}
+</script>
 
     <!-- Preconnect for Google Fonts performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
