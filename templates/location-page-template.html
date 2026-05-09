@@ -10,6 +10,8 @@
     <meta property="og:description" content="Professional appliance repair in {LOCATION_NAME}. All brands, same-day service, 90-day warranty. Book online or call 437-524-1053!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nikaappliancerepair.com/locations/{LOCATION_SLUG}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://nikaappliancerepair.com/assets/og-image.jpg">
     <title>Appliance Repair {LOCATION_NAME} | Same Day Service - Save $40 | Nika</title>
     
     <!-- Google Fonts -->
@@ -22,31 +24,32 @@
     
     <!-- Schema.org Local Business Markup -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Nika Appliance Repair - {LOCATION_NAME}",
-        "description": "Professional appliance repair service in {LOCATION_NAME}",
-        "telephone": "+14375241053",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "{LOCATION_NAME}",
-            "addressRegion": "ON",
-            "addressCountry": "CA"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "{LOCATION_LAT}",
-            "longitude": "{LOCATION_LNG}"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "{LOCATION_NAME}"
-        },
-        "priceRange": "$$",
-        "openingHours": "Mo-Su 08:00-20:00"
-    }
-    </script>
+{
+  "@id": "https://nikaappliancerepair.com/#business",
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nika Appliance Repair - {LOCATION_NAME}",
+  "description": "Professional appliance repair service in {LOCATION_NAME}",
+  "telephone": "+14375241053",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{LOCATION_NAME}",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{LOCATION_LAT}",
+    "longitude": "{LOCATION_LNG}"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "{LOCATION_NAME}"
+  },
+  "priceRange": "$$",
+  "openingHours": "Mo-Su 08:00-20:00"
+}
+</script>
 </head><body>
     <!-- Header (Same as Homepage) -->
     <header class="main-header">

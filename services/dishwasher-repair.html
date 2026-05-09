@@ -31,6 +31,7 @@
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
 {
+  "@id": "https://nikaappliancerepair.com/#business",
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Nika Appliance Repair - Dishwasher Repair",
@@ -106,149 +107,152 @@
 </script>
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Dishwasher Repair",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "Nika Appliance Repair"
+{
+  "@id": "https://nikaappliancerepair.com/services/dishwasher-repair#service",
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Dishwasher Repair",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Nika Appliance Repair"
+  },
+  "areaServed": "Toronto, ON",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Dishwasher Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Diagnostic Service",
+          "description": "Professional diagnostic service for dishwasher"
         },
-        "areaServed": "Toronto, ON",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Dishwasher Repair Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Diagnostic Service",
-                        "description": "Professional diagnostic service for dishwasher"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "priceCurrency": "CAD",
-                        "price": "119"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Repair Service",
-                        "description": "Complete repair service for dishwasher"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "priceCurrency": "CAD",
-                        "price": "150-450"
-                    }
-                }
-            ]
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "CAD",
+          "price": "119"
         }
-    }
-    </script>
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Repair Service",
+          "description": "Complete repair service for dishwasher"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "CAD",
+          "price": "150-450"
+        }
+      }
+    ]
+  }
+}
+</script>
 
     <script type="application/ld+json">
+{
+  "@id": "https://nikaappliancerepair.com/services/dishwasher-repair#faq",
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How much does dishwasher repair cost in Toronto?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Most dishwasher repairs in Toronto cost between $150 and $450, depending on the issue and parts needed. Our diagnostic fee is $89 (limited time offer), but we waive it completely free if you proceed with the repair. Simple fixes like cleaning spray arms or replacing a door latch run $150-$250, while more complex repairs like pump or control board replacement cost $250-$450. We provide exact quotes before starting any work. Call 437-524-1053 for a free phone estimate."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Why is my dishwasher not draining?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A dishwasher that won't drain usually has a clogged drain pump, blocked filter, or kinked drain hose. Food particles can accumulate in the filter basket or pump impeller, preventing water from draining properly. Sometimes the drain hose connection at your sink has a blockage or air gap issue. Our technicians clean or replace the drain pump, clear all blockages, and check the drain hose connection. Most drainage problems are fixed same-day for $150-$300 depending on parts needed."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How long does dishwasher repair take?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Most dishwasher repairs take 45 minutes to 2 hours from diagnosis to completion. Simple fixes like replacing door latches or cleaning spray arms take under an hour. More complex repairs like pump or heating element replacement may take 1.5-2 hours. Our technicians carry common dishwasher parts on their trucks, so we complete 85% of repairs in one visit. We'll give you an accurate time estimate after diagnosing your specific issue."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Should I repair or replace my dishwasher?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "If your dishwasher is under 7 years old and the repair costs less than 50% of a new unit, repair is usually the smart choice. For example, a $250 pump replacement on a 5-year-old Bosch dishwasher makes sense since new units cost $800+. However, if your 10-year-old dishwasher needs a $400 control board, replacement might be better. We'll give honest advice based on your dishwasher's age, condition, and repair cost. Our goal is to help you make the most economical decision."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you service all dishwasher brands?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we repair all major dishwasher brands including Bosch, KitchenAid, Whirlpool, GE, Samsung, LG, Maytag, Frigidaire, Miele, and 90+ more brands. Our technicians are factory-trained on all major brands and carry OEM parts for the most common models. Whether you have a high-end European dishwasher or a standard North American model, we have the expertise to fix it. We maintain relationships with parts suppliers for even rare or discontinued models."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What's covered under your dishwasher repair warranty?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Every dishwasher repair comes with our industry-leading 90-day warranty covering both parts and labor. If the same problem occurs within 90 days, we'll fix it free of charge - no questions asked. This warranty covers the specific repair we performed, not general wear and tear or new issues. For example, if we replace your drain pump and it fails within 90 days, we'll replace it free. Our low warranty claim rate (under 3%) proves our repairs last."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can you come today for dishwasher repair?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we offer same-day dishwasher repair service across Toronto and the GTA. Call us before 2 PM, and we'll typically arrive within 2-4 hours. We understand a broken dishwasher means hand-washing dishes, which nobody wants. Our technicians work 7 days a week including weekends and holidays. We complete 95% of same-day service calls successfully. For urgent repairs, call 437-524-1053 and speak directly with our dispatch team to schedule the earliest available slot."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Which areas do you cover for dishwasher repair?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We provide dishwasher repair service throughout Toronto, North York, Scarborough, Etobicoke, East York, Vaughan, Richmond Hill, Markham, Mississauga, Brampton, and all surrounding GTA areas. Our service radius extends 50km from downtown Toronto, covering over 60 neighborhoods. We dispatch the closest available technician to minimize your wait time. Most areas receive 45-minute average response times. Check our service areas section for your specific neighborhood, or call 437-524-1053 to confirm coverage."
-                }
-            }
-        ]
+      "@type": "Question",
+      "name": "How much does dishwasher repair cost in Toronto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most dishwasher repairs in Toronto cost between $150 and $450, depending on the issue and parts needed. Our diagnostic fee is $89 (limited time offer), but we waive it completely free if you proceed with the repair. Simple fixes like cleaning spray arms or replacing a door latch run $150-$250, while more complex repairs like pump or control board replacement cost $250-$450. We provide exact quotes before starting any work. Call 437-524-1053 for a free phone estimate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my dishwasher not draining?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A dishwasher that won't drain usually has a clogged drain pump, blocked filter, or kinked drain hose. Food particles can accumulate in the filter basket or pump impeller, preventing water from draining properly. Sometimes the drain hose connection at your sink has a blockage or air gap issue. Our technicians clean or replace the drain pump, clear all blockages, and check the drain hose connection. Most drainage problems are fixed same-day for $150-$300 depending on parts needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does dishwasher repair take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most dishwasher repairs take 45 minutes to 2 hours from diagnosis to completion. Simple fixes like replacing door latches or cleaning spray arms take under an hour. More complex repairs like pump or heating element replacement may take 1.5-2 hours. Our technicians carry common dishwasher parts on their trucks, so we complete 85% of repairs in one visit. We'll give you an accurate time estimate after diagnosing your specific issue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I repair or replace my dishwasher?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your dishwasher is under 7 years old and the repair costs less than 50% of a new unit, repair is usually the smart choice. For example, a $250 pump replacement on a 5-year-old Bosch dishwasher makes sense since new units cost $800+. However, if your 10-year-old dishwasher needs a $400 control board, replacement might be better. We'll give honest advice based on your dishwasher's age, condition, and repair cost. Our goal is to help you make the most economical decision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you service all dishwasher brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we repair all major dishwasher brands including Bosch, KitchenAid, Whirlpool, GE, Samsung, LG, Maytag, Frigidaire, Miele, and 90+ more brands. Our technicians are factory-trained on all major brands and carry OEM parts for the most common models. Whether you have a high-end European dishwasher or a standard North American model, we have the expertise to fix it. We maintain relationships with parts suppliers for even rare or discontinued models."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's covered under your dishwasher repair warranty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every dishwasher repair comes with our industry-leading 90-day warranty covering both parts and labor. If the same problem occurs within 90 days, we'll fix it free of charge - no questions asked. This warranty covers the specific repair we performed, not general wear and tear or new issues. For example, if we replace your drain pump and it fails within 90 days, we'll replace it free. Our low warranty claim rate (under 3%) proves our repairs last."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you come today for dishwasher repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer same-day dishwasher repair service across Toronto and the GTA. Call us before 2 PM, and we'll typically arrive within 2-4 hours. We understand a broken dishwasher means hand-washing dishes, which nobody wants. Our technicians work 7 days a week including weekends and holidays. We complete 95% of same-day service calls successfully. For urgent repairs, call 437-524-1053 and speak directly with our dispatch team to schedule the earliest available slot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which areas do you cover for dishwasher repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide dishwasher repair service throughout Toronto, North York, Scarborough, Etobicoke, East York, Vaughan, Richmond Hill, Markham, Mississauga, Brampton, and all surrounding GTA areas. Our service radius extends 50km from downtown Toronto, covering over 60 neighborhoods. We dispatch the closest available technician to minimize your wait time. Most areas receive 45-minute average response times. Check our service areas section for your specific neighborhood, or call 437-524-1053 to confirm coverage."
+      }
     }
-    </script>
+  ]
+}
+</script>
 
     <script type="application/ld+json">
+{
+  "@id": "https://nikaappliancerepair.com/services/dishwasher-repair#breadcrumb",
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://nikaappliancerepair.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Services",
-                "item": "https://nikaappliancerepair.com/services/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Dishwasher Repair",
-                "item": "https://nikaappliancerepair.com/services/dishwasher-repair"
-            }
-        ]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nikaappliancerepair.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://nikaappliancerepair.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dishwasher Repair",
+      "item": "https://nikaappliancerepair.com/services/dishwasher-repair"
     }
-    </script>
+  ]
+}
+</script>
     <!-- Custom Video Styling -->
     <link rel="preload" href="../css/video-custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="../css/video-custom.css"></noscript>
@@ -283,6 +287,8 @@
     <link rel="preload" href="../css/final-overflow-fix.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="../css/final-overflow-fix.css"></noscript>
 <!-- SCHEMA-ENRICH-v1 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://nikaappliancerepair.com/assets/og-image.jpg">
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->

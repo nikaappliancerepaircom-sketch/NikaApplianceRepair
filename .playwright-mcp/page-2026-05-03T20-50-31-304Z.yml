@@ -1,0 +1,50 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - img [ref=e8]:
+      - generic [ref=e9]: Fixlify
+      - generic [ref=e12]: AI
+    - paragraph [ref=e17]: AI does the work. You take the credit.
+  - region "Notifications alt+T"
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - img [ref=e22]:
+        - generic [ref=e23]: Fixlify
+        - generic [ref=e26]: AI
+      - paragraph [ref=e31]: AI does the work. You take the credit.
+      - paragraph [ref=e32]: AI-Powered Service Management
+    - generic [ref=e33]:
+      - button "Continue with Google" [ref=e34] [cursor=pointer]:
+        - img
+        - text: Continue with Google
+      - generic [ref=e39]: Or continue with email
+      - generic [ref=e40]:
+        - tablist [ref=e41]:
+          - tab "Sign In" [selected] [ref=e42] [cursor=pointer]
+          - tab "Sign Up" [ref=e43] [cursor=pointer]
+        - tabpanel "Sign In" [ref=e44]:
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - text: Email
+              - textbox "Email" [ref=e47]:
+                - /placeholder: your@email.com
+            - generic [ref=e48]:
+              - text: Password
+              - generic [ref=e49]:
+                - textbox "Password" [ref=e50]:
+                  - /placeholder: ••••••••
+                - button [ref=e51] [cursor=pointer]:
+                  - img [ref=e52]
+            - button "Forgot Password?" [ref=e56] [cursor=pointer]
+            - button "Sign In" [disabled]
+    - generic [ref=e57]:
+      - paragraph [ref=e58]:
+        - text: By continuing, you agree to Fixlify's
+        - link "Terms of Service" [ref=e59] [cursor=pointer]:
+          - /url: https://hub.fixlify.app/terms
+        - text: and
+        - link "Privacy Policy" [ref=e60] [cursor=pointer]:
+          - /url: https://hub.fixlify.app/privacy
+        - text: .
+      - button "Refresh Page" [ref=e61] [cursor=pointer]:
+        - img
+        - text: Refresh Page

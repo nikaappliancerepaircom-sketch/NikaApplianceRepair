@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-05-09T10:06:39.372121Z",
+  "config_path": "lazy-config.json",
+  "total_pages": 0,
+  "passing_pages": 0,
+  "failing_pages": 0,
+  "cross_page": {
+    "duplicate_page_groups": [],
+    "shared_sentences_count": 0
+  },
+  "reports": []
+}

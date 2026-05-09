@@ -31,6 +31,7 @@
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
 {
+  "@id": "https://nikaappliancerepair.com/#business",
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Nika Appliance Repair - Refrigerator Repair",
@@ -106,149 +107,152 @@
 </script>
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Refrigerator Repair",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "Nika Appliance Repair"
+{
+  "@id": "https://nikaappliancerepair.com/services/refrigerator-repair#service",
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Refrigerator Repair",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Nika Appliance Repair"
+  },
+  "areaServed": "Toronto, ON",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Refrigerator Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Diagnostic Service",
+          "description": "Professional diagnostic service for refrigerator"
         },
-        "areaServed": "Toronto, ON",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Refrigerator Repair Services",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Diagnostic Service",
-                        "description": "Professional diagnostic service for refrigerator"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "priceCurrency": "CAD",
-                        "price": "119"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Repair Service",
-                        "description": "Complete repair service for refrigerator"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "priceCurrency": "CAD",
-                        "price": "150-450"
-                    }
-                }
-            ]
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "CAD",
+          "price": "119"
         }
-    }
-    </script>
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Repair Service",
+          "description": "Complete repair service for refrigerator"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "CAD",
+          "price": "150-450"
+        }
+      }
+    ]
+  }
+}
+</script>
 
     <script type="application/ld+json">
+{
+  "@id": "https://nikaappliancerepair.com/services/refrigerator-repair#faq",
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How much does refrigerator repair cost in Toronto?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Most refrigerator repairs in Toronto cost between $150 and $450, depending on the problem and parts needed. Our diagnostic fee is $89 (limited time offer), but we waive it completely free if you proceed with the repair. Simple fixes like replacing a door seal or thermostat run $150-$250, while more complex repairs like compressor replacement cost $350-$450."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Why is my refrigerator not cooling but the light works?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "If your refrigerator light works but it's not cooling, the compressor, evaporator fan, or defrost system has likely failed. The light runs on a separate circuit, so it can work even when cooling stops. Other causes include a faulty thermostat, low refrigerant, or dirty condenser coils blocking airflow."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How long does refrigerator repair take?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Most refrigerator repairs take 1-2 hours from start to finish. This includes the 15-minute diagnostic, ordering parts if needed from our truck inventory, and completing the actual repair. Simple fixes like replacing a door gasket or thermostat might take just 30-45 minutes."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Should I repair or replace my refrigerator?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Repair your refrigerator if it's less than 10 years old and the repair costs less than 50% of a new fridge. Replace if your fridge is over 15 years old, needs frequent repairs, or the repair costs more than half its value."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you repair all refrigerator brands?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we repair all major refrigerator brands including Samsung, LG, Whirlpool, GE, Frigidaire, Maytag, KitchenAid, Kenmore, Bosch, Electrolux, and more. We're also authorized to service premium brands like Sub-Zero, Viking, and Thermador."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What's covered by your 90-day warranty?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our 90-day warranty covers both parts and labor for the specific repair we performed. If the same problem occurs within 90 days, we return and fix it completely free - no diagnostic fees, no service charges, no questions asked."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Can you provide same-day refrigerator repair?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we offer same-day refrigerator repair service across Toronto and the GTA for most calls. If you call before 2 PM on weekdays, we can usually schedule a technician for the same day."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you service refrigerators in my area of Toronto?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We service refrigerators throughout Toronto and the Greater Toronto Area, including North York, Scarborough, Etobicoke, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and 50+ other cities."
-                }
-            }
-        ]
+      "@type": "Question",
+      "name": "How much does refrigerator repair cost in Toronto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most refrigerator repairs in Toronto cost between $150 and $450, depending on the problem and parts needed. Our diagnostic fee is $89 (limited time offer), but we waive it completely free if you proceed with the repair. Simple fixes like replacing a door seal or thermostat run $150-$250, while more complex repairs like compressor replacement cost $350-$450."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my refrigerator not cooling but the light works?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your refrigerator light works but it's not cooling, the compressor, evaporator fan, or defrost system has likely failed. The light runs on a separate circuit, so it can work even when cooling stops. Other causes include a faulty thermostat, low refrigerant, or dirty condenser coils blocking airflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does refrigerator repair take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most refrigerator repairs take 1-2 hours from start to finish. This includes the 15-minute diagnostic, ordering parts if needed from our truck inventory, and completing the actual repair. Simple fixes like replacing a door gasket or thermostat might take just 30-45 minutes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I repair or replace my refrigerator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Repair your refrigerator if it's less than 10 years old and the repair costs less than 50% of a new fridge. Replace if your fridge is over 15 years old, needs frequent repairs, or the repair costs more than half its value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you repair all refrigerator brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we repair all major refrigerator brands including Samsung, LG, Whirlpool, GE, Frigidaire, Maytag, KitchenAid, Kenmore, Bosch, Electrolux, and more. We're also authorized to service premium brands like Sub-Zero, Viking, and Thermador."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's covered by your 90-day warranty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our 90-day warranty covers both parts and labor for the specific repair we performed. If the same problem occurs within 90 days, we return and fix it completely free - no diagnostic fees, no service charges, no questions asked."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you provide same-day refrigerator repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer same-day refrigerator repair service across Toronto and the GTA for most calls. If you call before 2 PM on weekdays, we can usually schedule a technician for the same day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you service refrigerators in my area of Toronto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We service refrigerators throughout Toronto and the Greater Toronto Area, including North York, Scarborough, Etobicoke, Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and 50+ other cities."
+      }
     }
-    </script>
+  ]
+}
+</script>
 
     <script type="application/ld+json">
+{
+  "@id": "https://nikaappliancerepair.com/services/refrigerator-repair#breadcrumb",
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://nikaappliancerepair.com/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Services",
-                "item": "https://nikaappliancerepair.com/services/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Refrigerator Repair",
-                "item": "https://nikaappliancerepair.com/services/refrigerator-repair"
-            }
-        ]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nikaappliancerepair.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://nikaappliancerepair.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Refrigerator Repair",
+      "item": "https://nikaappliancerepair.com/services/refrigerator-repair"
     }
-    </script>
+  ]
+}
+</script>
     <!-- Custom Video Styling -->
     <link rel="preload" href="../css/video-custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="../css/video-custom.css"></noscript>
@@ -283,6 +287,8 @@
     <link rel="preload" href="../css/final-overflow-fix.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="../css/final-overflow-fix.css"></noscript>
 <!-- SCHEMA-ENRICH-v1 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://nikaappliancerepair.com/assets/og-image.jpg">
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->

@@ -13,6 +13,8 @@
     <meta property="og:description" content="Appliance repair near me in Toronto, Mississauga, Brampton GTA. Same-day service from $75. Expert refrigerator, washer, dryer, dishwasher repair. 90-day warranty. Call 437-524-1053">
     <meta property="og:url" content="https://nikaappliancerepair.com/services">
     <meta property="og:image" content="https://nikaappliancerepair.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://nikaappliancerepair.com/assets/og-image.jpg">
 
     <!-- Schema.org markup for Local Business -->
     <script type="application/ld+json">
@@ -92,6 +94,7 @@
       }
     },
     {
+      "@id": "https://nikaappliancerepair.com/services#breadcrumb",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
@@ -113,126 +116,128 @@
 
     <!-- Schema.org markup for Services -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Appliance Repair",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Nika Appliance Repair"
+{
+  "@id": "https://nikaappliancerepair.com/services#service",
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Appliance Repair",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Nika Appliance Repair"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Ontario"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Refrigerator Repair"
+        }
       },
-      "areaServed": {
-        "@type": "State",
-        "name": "Ontario"
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Washer Repair"
+        }
       },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Appliance Repair Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Refrigerator Repair"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Washer Repair"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Dryer Repair"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Dishwasher Repair"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Oven Repair"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Stove Repair"
-            }
-          }
-        ]
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dryer Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dishwasher Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Oven Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stove Repair"
+        }
       }
-    }
-    </script>
+    ]
+  }
+}
+</script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">
+{
+  "@id": "https://nikaappliancerepair.com/services#faq",
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does appliance repair cost in Toronto?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our service call fee starts at $75, which includes diagnostics. Repair costs vary by appliance and issue, typically ranging from $150-$500. We provide upfront pricing before any work begins, and all repairs come with a 90-day warranty."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer same-day appliance repair service?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes! We offer same-day appliance repair service throughout Toronto, Mississauga, Brampton, and surrounding GTA areas. Call us before 2 PM for same-day availability. Weekend and evening appointments are also available."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What brands of appliances do you repair?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We repair all major appliance brands including Samsung, LG, Whirlpool, GE, Maytag, Bosch, KitchenAid, Frigidaire, Electrolux, Kenmore, and more. Our technicians are trained and certified to work on both domestic and commercial appliances."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What areas do you service in the GTA?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We provide appliance repair services throughout the Greater Toronto Area including Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, Milton, Ajax, Pickering, Whitby, and Oshawa."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you provide a warranty on repairs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, all our appliance repairs come with a comprehensive 90-day warranty on parts and labor. If the same issue occurs within 90 days, we'll fix it at no additional charge. We also use genuine OEM parts whenever possible."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How quickly can you diagnose my appliance problem?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most appliance diagnostics are completed within 30-45 minutes of our technician arriving. We use advanced diagnostic tools and have extensive experience with all appliance types. You'll receive a detailed explanation of the problem and repair options before we proceed."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "How much does appliance repair cost in Toronto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our service call fee starts at $75, which includes diagnostics. Repair costs vary by appliance and issue, typically ranging from $150-$500. We provide upfront pricing before any work begins, and all repairs come with a 90-day warranty."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer same-day appliance repair service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We offer same-day appliance repair service throughout Toronto, Mississauga, Brampton, and surrounding GTA areas. Call us before 2 PM for same-day availability. Weekend and evening appointments are also available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What brands of appliances do you repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We repair all major appliance brands including Samsung, LG, Whirlpool, GE, Maytag, Bosch, KitchenAid, Frigidaire, Electrolux, Kenmore, and more. Our technicians are trained and certified to work on both domestic and commercial appliances."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you service in the GTA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide appliance repair services throughout the Greater Toronto Area including Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, Milton, Ajax, Pickering, Whitby, and Oshawa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide a warranty on repairs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all our appliance repairs come with a comprehensive 90-day warranty on parts and labor. If the same issue occurs within 90 days, we'll fix it at no additional charge. We also use genuine OEM parts whenever possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you diagnose my appliance problem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most appliance diagnostics are completed within 30-45 minutes of our technician arriving. We use advanced diagnostic tools and have extensive experience with all appliance types. You'll receive a detailed explanation of the problem and repair options before we proceed."
+      }
     }
-    </script>
+  ]
+}
+</script>
 
     <!-- Preconnect for Google Fonts performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -1,0 +1,88 @@
+FAIL  C:\NikaApplianceRepair\locations\services\dishwasher-repair-markham.html  (290/357)  [niche: local-service @ 82%]
+  [FAIL] seo                     29/31
+        - question_format_h3: 0 question-format h3 tags
+        - voice_friendly_questions: 0 natural-language Q&A headings (need >= 3)
+  [FAIL] seo_advanced            20/30
+        - h1_signals_intent: detected intent=informational but H1 lacks intent words
+        - ctas_aligned_with_intent: intent=informational but no matching CTAs (['learn', 'read', 'guide', 'discover', 'explore'])
+        - title_contains_intent_signal: title lacks intent words: 'Dishwasher Repair Markham | Same-Day Fix | (437) 524-1053'
+        - external_entity_links: 0 authority outbound links (need 1+)
+        - voice_search_answer_block: no 20-35 word answer paragraph after a question heading
+        - howto_numbered_list: no <ol> with 3+ steps (HowTo snippet potential)
+        - schema_has_date_modified_or_published: no dateModified / datePublished anywhere in JSON-LD
+        - image_schema_present: og:image present but no ImageObject in schema
+        - schema_sameAs_for_entity_graph: no sameAs in any JSON-LD block (entity graph signal)
+        - meta_desc_or_title_includes_year: neither title nor meta desc include current year (freshness CTR)
+  [FAIL] responsive              66/80
+        - iphone_se_body_width_correct: bodyWidth=1981, innerWidth=375
+        - iphone_se_tap_targets_44px_min: 46 interactive elements smaller than 44x44
+        - iphone_12_pro_body_width_correct: bodyWidth=1964, innerWidth=390
+        - iphone_12_pro_tap_targets_44px_min: 46 interactive elements smaller than 44x44
+        - samsung_galaxy_s21_body_width_correct: bodyWidth=2012, innerWidth=360
+        - samsung_galaxy_s21_tap_targets_44px_min: 47 interactive elements smaller than 44x44
+        - iphone_14_pro_max_body_width_correct: bodyWidth=1964, innerWidth=430
+        - iphone_14_pro_max_tap_targets_44px_min: 47 interactive elements smaller than 44x44
+        - ipad_mini_body_width_correct: bodyWidth=2564, innerWidth=768
+        - ipad_air_body_width_correct: bodyWidth=2634, innerWidth=820
+        - ipad_pro_body_width_correct: bodyWidth=2736, innerWidth=1024
+        - laptop_body_width_correct: bodyWidth=2927, innerWidth=1366
+        - desktop_hd_body_width_correct: bodyWidth=3336, innerWidth=1920
+        - desktop_4k_body_width_correct: bodyWidth=4080, innerWidth=2560
+  [FAIL] cross_browser           25/28
+        - chrome_no_console_errors: 2 console errors: ['Failed to load resource: net::ERR_FILE_NOT_FOUND', 'Failed to load resource: net::ERR_FILE_NOT_FOUND']
+        - safari_no_console_errors: 2 console errors: ['Not allowed to load local resource: file:///C:/includes/header-loader.js', 'Not allowed to load local resource: file:///C:/includes/footer-loader.js']
+        - edge_no_console_errors: 2 console errors: ['Failed to load resource: net::ERR_FILE_NOT_FOUND', 'Failed to load resource: net::ERR_FILE_NOT_FOUND']
+  [FAIL] visual                  17/20
+        - secondary_color_in_css: secondary #1e40af not in HTML/CSS
+        - responsive_images_used: only 0/1 images use srcset/<picture>
+        - lazy_loading: no images use loading=lazy
+  [FAIL] accessibility           13/15
+        - skip_to_content_link: no 'skip to content' link
+        - main_landmark_present: no <main> or role=main landmark
+  [FAIL] content                 14/16
+        - paragraphs_under_max_sentences: 4 paragraphs > 5 sentences
+        - section_hero_or_intro: no 'hero_or_intro' section detected
+  [FAIL] cro                     19/20
+        - mobile_sticky_or_floating_cta: no sticky/fixed/floating CTA element
+  [FAIL] psychology              16/20
+        - desire_benefits_focused: few benefit-focused phrases
+        - testimonials_present: no testimonial/review block
+        - rating_visible: rating 4.9 not visible
+        - free_value_offered: no free guide/consultation/audit offered (reciprocity)
+  [FAIL] data_consistency        11/14
+        - no_third_party_emails: found unrelated emails: ['nicksappliancerepair@on.fixlify.app']
+        - review_count_consistent: review counts in text differ from config 250: [5, 176]
+        - rating_consistent: ratings in text [4.7] differ from config 4.9
+  [FAIL] conversion_design       8/10
+        - icons_used_for_scanning: 2 SVGs + 0 icon imgs (min 3 combined)
+        - lazy_loading_images: 0/1 images use loading=lazy
+  [FAIL] eeat                    11/15
+        - author_signal: no author meta tag and no Person schema
+        - case_studies_or_portfolio_referenced: no case studies / portfolio referenced
+        - external_authority_links: no outbound links to authoritative sources
+        - social_links_in_footer_or_schema: no social profile links / no sameAs in schema
+  [FAIL] geo_ai                  6/15
+        - ai_crawlers_allowed: robots.txt blocks: ['GPTBot', 'PerplexityBot', 'Google-Extended']
+        - brand_in_first_100_words: brand 'Nika Appliance Repair' not in first 100 words
+        - summary_or_tldr_block: no TL;DR / summary / key takeaways block
+        - question_format_headings: 1 question-format headings (min 3)
+        - citable_short_answer_passages: 0 answer passages of citable length (need 2+)
+        - schema_uses_at_id_for_entities: JSON-LD missing @id properties (helps entity disambiguation)
+        - numerical_claims_present: 2 numerical claims
+        - outbound_authority_links: no outbound links to authoritative sources
+        - twitter_card_meta: no twitter:card meta
+  [FAIL] schema                  11/13
+        - review_objects_present: no Review objects in JSON-LD
+        - org_schema_with_same_as: Organization/LocalBusiness lacks sameAs (social profiles)
+  [FAIL] brand                   7/10
+        - site_name_in_title: site name not in title: 'Dishwasher Repair Markham | Same-Day Fix | (437) 524-1053'
+        - secondary_color_used: secondary color #1e40af not found in page or linked CSS
+        - og_site_name_present: og:site_name '' != configured 'Nika Appliance Repair'
+  [FAIL] internal_linking        9/10
+        - contextual_links_in_paragraphs: only 0 links inside <p> tags
+  [FAIL] niche_compliance        8/10
+        - required_trust_license_number: required trust signal 'license_number' not detected on page
+        - forbidden_fake_countdown: forbidden psychology pattern 'fake_countdown' detected: countdown
+
+
+SUMMARY: 0/1 pages passing  (report: C:\NikaApplianceRepair\lazy-method\reports\2026-05-09-1113.json)

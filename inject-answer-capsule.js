@@ -209,6 +209,16 @@ function processSite(siteName) {
         idx = html.indexOf(marker);
       }
       if (idx === -1) {
+        // Second fallback: before related-section (skeletal pages with only schema+related)
+        marker = '<section class="related-section"';
+        idx = html.indexOf(marker);
+      }
+      if (idx === -1) {
+        // Third fallback: before related-links-section (FIXLIFY skeletal pages)
+        marker = '<section class="related-links-section"';
+        idx = html.indexOf(marker);
+      }
+      if (idx === -1) {
         console.log(`  ⚠ No marker found: ${relPath}`);
         noMarker++;
         continue;
