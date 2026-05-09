@@ -45,10 +45,15 @@ class Checker(BaseChecker):
                 break
         ai_bots = ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended"]
         if robots_txt:
-            disallowed_bots = [
-                bot for bot in ai_bots
-                if re.search(rf"User-agent:\s*{bot}.*?Disallow:\s*/", robots_txt, re.I | re.S)
-            ]
+            def bot_blocked(bot, txt):
+                # Extract only the block for this specific bot (stop at next User-agent)
+                m = re.search(rf"User-agent:\s*{re.escape(bot)}\s*\n(.*?)(?:\nUser-agent:|\Z)", txt, re.I | re.S)
+                if not m:
+                    return False
+                block = m.group(1)
+                # Check for Disallow: / (root) — not Disallow: /something
+                return bool(re.search(r"Disallow:\s*/\s*$", block, re.M))
+            disallowed_bots = [bot for bot in ai_bots if bot_blocked(bot, robots_txt)]
             result.add(CheckResult(
                 "ai_crawlers_allowed",
                 not disallowed_bots,
