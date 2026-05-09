@@ -176,7 +176,7 @@ class Checker(BaseChecker):
 
         external_authority = sum(
             1 for a in soup.find_all("a", href=True)
-            if re.search(r"\.(gov|edu)|wikipedia\.org|nature\.com|hbr\.org|forbes\.com|nytimes\.com|reuters\.com|who\.int", a["href"])
+            if re.search(r"\.(gov|edu)|\.gc\.ca|canada\.ca|ontario\.ca|wikipedia\.org|nature\.com|hbr\.org|forbes\.com|nytimes\.com|reuters\.com|who\.int|energystar\.gov|consumerreports\.org", a["href"])
         )
         result.add(CheckResult(
             "external_entity_links",

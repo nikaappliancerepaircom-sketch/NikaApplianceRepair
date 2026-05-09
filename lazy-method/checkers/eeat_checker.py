@@ -140,7 +140,7 @@ class Checker(BaseChecker):
         external_authoritative = [
             a["href"] for a in soup.find_all("a", href=True)
             if re.search(
-                r"(\.gov|\.edu|wikipedia\.org|forbes\.com|nytimes\.com|hbr\.org|nature\.com|google\.com/search)",
+                r"(\.gov|\.edu|\.gc\.ca|canada\.ca|ontario\.ca|wikipedia\.org|forbes\.com|nytimes\.com|hbr\.org|nature\.com|google\.com/search|energystar\.gov|consumerreports\.org)",
                 a["href"],
             )
         ]

@@ -154,7 +154,7 @@ class Checker(BaseChecker):
         # External authoritative outbound links
         ext_authoritative = sum(
             1 for a in soup.find_all("a", href=True)
-            if re.search(r"(\.gov|\.edu|wikipedia\.org|hbr\.org|forbes\.com|nature\.com)", a["href"])
+            if re.search(r"(\.gov|\.edu|\.gc\.ca|canada\.ca|ontario\.ca|wikipedia\.org|hbr\.org|forbes\.com|nature\.com|energystar\.gov|consumerreports\.org)", a["href"])
         )
         result.add(CheckResult(
             "outbound_authority_links",
