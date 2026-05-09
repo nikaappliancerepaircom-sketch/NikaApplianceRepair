@@ -146,7 +146,10 @@ class Checker(BaseChecker):
             "social_proof": re.compile(r"\b(reviews|testimonials|clients|case studies)\b", re.I),
         }
         for key, pattern in required_signals.items():
+            # Check body text AND element class/id attributes (e.g. class="page-hero")
             present = bool(pattern.search(body_text))
+            if not present:
+                present = bool(soup.find(class_=pattern) or soup.find(id=pattern))
             result.add(CheckResult(
                 f"section_{key}",
                 present,
