@@ -6,7 +6,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const API_KEY = 'AIzaSyBAQoDlAUEKYuJE9dOBejtD5fTP52MciCM';
+const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_AI_API_KEY;
 const MODEL = 'imagen-4.0-fast-generate-001';
 
 const OUTPUT_DIRS = [

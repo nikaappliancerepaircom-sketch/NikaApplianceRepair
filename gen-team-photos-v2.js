@@ -6,7 +6,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const API_KEY = 'AIzaSyBAQoDlAUEKYuJE9dOBejtD5fTP52MciCM';
+const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_AI_API_KEY;
 const MODEL = 'imagen-4.0-generate-001'; // High quality, not fast
 
 const LENS = 'Canon EOS R5 35mm f/1.8, natural light, slight bokeh, photojournalistic style, NOT stock photo, NOT studio lighting';

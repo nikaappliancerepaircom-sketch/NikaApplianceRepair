@@ -56,6 +56,11 @@ __pycache__/
 *.pyd
 .Python
 
+# Generation scripts (run locally only, may reference env vars)
+gen-*.js
+inject-*.js
+add-og-image.js
+
 # Terminal Paste Image folder
 .cp-images/
 
