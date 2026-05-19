@@ -23,268 +23,503 @@
     <!-- Schema.org LocalBusiness Markup -->
     <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Nika Appliance Repair - Toronto",
-      "image": "https://nikaappliancerepair.com/images/logo.png",
-      "@id": "https://nikaappliancerepair.com",
-      "url": "https://nikaappliancerepair.com",
-      "telephone": "437-524-1053",
-  "email": "info@nikaappliancerepair.com",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "postalCode": "",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 43.6532,
-        "longitude": -79.3832
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "08:00",
-        "closes": "20:00"
-      },
-      "sameAs": [
-        "https://www.google.com/maps/search/Nika+Appliance+Repair+Toronto",
-        "https://www.yelp.com/biz/nika-appliance-repair-toronto",
-        "https://www.homestars.com/companies/nika-appliance-repair",
-        "https://www.facebook.com/nikaappliancerepair",
-        "https://www.instagram.com/nikaappliancerepair"
-      ],
-      "areaServed": [
+    "@context": "https://schema.org",
+    "@graph": [
         {
-          "@type": "City",
-          "name": "Toronto"
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Nika Appliance Repair - Toronto",
+            "image": "https://nikaappliancerepair.com/images/logo.png",
+            "@id": "https://nikaappliancerepair.com",
+            "url": "https://nikaappliancerepair.com",
+            "telephone": "437-524-1053",
+            "email": "info@nikaappliancerepair.com",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "",
+                "addressLocality": "Toronto",
+                "addressRegion": "ON",
+                "postalCode": "",
+                "addressCountry": "CA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 43.6532,
+                "longitude": -79.3832
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "20:00"
+            },
+            "sameAs": [
+                "https://www.google.com/maps/search/Nika+Appliance+Repair+Toronto",
+                "https://www.yelp.com/biz/nika-appliance-repair-toronto",
+                "https://www.homestars.com/companies/nika-appliance-repair",
+                "https://www.facebook.com/nikaappliancerepair",
+                "https://www.instagram.com/nikaappliancerepair"
+            ],
+            "areaServed": [
+                {
+                    "@type": "City",
+                    "name": "Toronto"
+                },
+                {
+                    "@type": "City",
+                    "name": "Mississauga"
+                },
+                {
+                    "@type": "City",
+                    "name": "Brampton"
+                },
+                {
+                    "@type": "City",
+                    "name": "Markham"
+                },
+                {
+                    "@type": "City",
+                    "name": "Vaughan"
+                },
+                {
+                    "@type": "City",
+                    "name": "Richmond Hill"
+                },
+                {
+                    "@type": "City",
+                    "name": "Oakville"
+                },
+                {
+                    "@type": "City",
+                    "name": "Burlington"
+                }
+            ],
+            "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 43.6532,
+                    "longitude": -79.3832
+                },
+                "geoRadius": "50000"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": "Nick"
+            },
+            "numberOfEmployees": {
+                "@type": "QuantitativeValue",
+                "value": 12
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "250",
+                "bestRating": "5",
+                "worstRating": "1"
+            },
+            "review": [
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Sarah M."
+                    },
+                    "reviewBody": "Fast same-day service on my LG fridge. Technician was professional and fixed the issue in under an hour. Highly recommend Nika Appliance Repair.",
+                    "datePublished": "2025-11-12"
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "James K."
+                    },
+                    "reviewBody": "Called at 9am, had a technician at my door by noon. My Whirlpool washer was making a terrible noise — bearing replaced, works perfectly. Fair pricing.",
+                    "datePublished": "2025-12-03"
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Diana P."
+                    },
+                    "reviewBody": "Nika fixed my Bosch dishwasher that wasn't draining. Arrived on time, diagnosed quickly, fixed the same visit. 90-day warranty gives peace of mind.",
+                    "datePublished": "2026-01-18"
+                }
+            ]
         },
         {
-          "@type": "City",
-          "name": "Mississauga"
-        },
-        {
-          "@type": "City",
-          "name": "Brampton"
-        },
-        {
-          "@type": "City",
-          "name": "Markham"
-        },
-        {
-          "@type": "City",
-          "name": "Vaughan"
-        },
-        {
-          "@type": "City",
-          "name": "Richmond Hill"
-        },
-        {
-          "@type": "City",
-          "name": "Oakville"
-        },
-        {
-          "@type": "City",
-          "name": "Burlington"
+            "@id": "https://nikaappliancerepair.com/locations#breadcrumb",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://nikaappliancerepair.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Professional Appliance Repair Across Greater Toronto Area"
+                }
+            ]
         }
-      ],
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 43.6532,
-          "longitude": -79.3832
-        },
-        "geoRadius": "50000"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "Nick"
-      },
-      "numberOfEmployees": {
-        "@type": "QuantitativeValue",
-        "value": 12
-      }
-    },
-    {
-      "@id": "https://nikaappliancerepair.com/locations#breadcrumb",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://nikaappliancerepair.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Professional Appliance Repair Across Greater Toronto Area"
-        }
-      ]
-    }
-  ]
-,
-  "dateModified": "2026-05-09"
+    ],
+    "dateModified": "2026-05-09"
 }
 </script>
 
     <!-- Additional Schema for Mississauga -->
     <script type="application/ld+json">
 {
-  "@id": "https://nikaappliancerepair.com/#business",
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Nika Appliance Repair - Mississauga",
-  "telephone": "437-524-1053",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Mississauga",
-    "addressRegion": "ON",
-    "addressCountry": "CA"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 43.589,
-    "longitude": -79.6441
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "Mississauga"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Nick"
-  },
-  "numberOfEmployees": {
-    "@type": "QuantitativeValue",
-    "value": 12
-  }
-,
-  "dateModified": "2026-05-09"
+    "@id": "https://nikaappliancerepair.com/#business",
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nika Appliance Repair - Mississauga",
+    "telephone": "437-524-1053",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mississauga",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.589,
+        "longitude": -79.6441
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Mississauga"
+    },
+    "founder": {
+        "@type": "Person",
+        "name": "Nick"
+    },
+    "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 12
+    },
+    "dateModified": "2026-05-09",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "250",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Sarah M."
+            },
+            "reviewBody": "Fast same-day service on my LG fridge. Technician was professional and fixed the issue in under an hour. Highly recommend Nika Appliance Repair.",
+            "datePublished": "2025-11-12"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "James K."
+            },
+            "reviewBody": "Called at 9am, had a technician at my door by noon. My Whirlpool washer was making a terrible noise — bearing replaced, works perfectly. Fair pricing.",
+            "datePublished": "2025-12-03"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Diana P."
+            },
+            "reviewBody": "Nika fixed my Bosch dishwasher that wasn't draining. Arrived on time, diagnosed quickly, fixed the same visit. 90-day warranty gives peace of mind.",
+            "datePublished": "2026-01-18"
+        }
+    ]
 }
 </script>
 
     <!-- Additional Schema for Brampton -->
     <script type="application/ld+json">
 {
-  "@id": "https://nikaappliancerepair.com/#business",
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Nika Appliance Repair - Brampton",
-  "telephone": "437-524-1053",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Brampton",
-    "addressRegion": "ON",
-    "addressCountry": "CA"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 43.7315,
-    "longitude": -79.7624
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "Brampton"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Nick"
-  },
-  "numberOfEmployees": {
-    "@type": "QuantitativeValue",
-    "value": 12
-  }
-,
-  "dateModified": "2026-05-09"
+    "@id": "https://nikaappliancerepair.com/#business",
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nika Appliance Repair - Brampton",
+    "telephone": "437-524-1053",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brampton",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.7315,
+        "longitude": -79.7624
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Brampton"
+    },
+    "founder": {
+        "@type": "Person",
+        "name": "Nick"
+    },
+    "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 12
+    },
+    "dateModified": "2026-05-09",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "250",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Sarah M."
+            },
+            "reviewBody": "Fast same-day service on my LG fridge. Technician was professional and fixed the issue in under an hour. Highly recommend Nika Appliance Repair.",
+            "datePublished": "2025-11-12"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "James K."
+            },
+            "reviewBody": "Called at 9am, had a technician at my door by noon. My Whirlpool washer was making a terrible noise — bearing replaced, works perfectly. Fair pricing.",
+            "datePublished": "2025-12-03"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Diana P."
+            },
+            "reviewBody": "Nika fixed my Bosch dishwasher that wasn't draining. Arrived on time, diagnosed quickly, fixed the same visit. 90-day warranty gives peace of mind.",
+            "datePublished": "2026-01-18"
+        }
+    ]
 }
 </script>
 
     <!-- Additional Schema for Markham -->
     <script type="application/ld+json">
 {
-  "@id": "https://nikaappliancerepair.com/#business",
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Nika Appliance Repair - Markham",
-  "telephone": "437-524-1053",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Markham",
-    "addressRegion": "ON",
-    "addressCountry": "CA"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 43.8561,
-    "longitude": -79.337
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "Markham"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Nick"
-  },
-  "numberOfEmployees": {
-    "@type": "QuantitativeValue",
-    "value": 12
-  }
-,
-  "dateModified": "2026-05-09"
+    "@id": "https://nikaappliancerepair.com/#business",
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nika Appliance Repair - Markham",
+    "telephone": "437-524-1053",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Markham",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.8561,
+        "longitude": -79.337
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Markham"
+    },
+    "founder": {
+        "@type": "Person",
+        "name": "Nick"
+    },
+    "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 12
+    },
+    "dateModified": "2026-05-09",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "250",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Sarah M."
+            },
+            "reviewBody": "Fast same-day service on my LG fridge. Technician was professional and fixed the issue in under an hour. Highly recommend Nika Appliance Repair.",
+            "datePublished": "2025-11-12"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "James K."
+            },
+            "reviewBody": "Called at 9am, had a technician at my door by noon. My Whirlpool washer was making a terrible noise — bearing replaced, works perfectly. Fair pricing.",
+            "datePublished": "2025-12-03"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Diana P."
+            },
+            "reviewBody": "Nika fixed my Bosch dishwasher that wasn't draining. Arrived on time, diagnosed quickly, fixed the same visit. 90-day warranty gives peace of mind.",
+            "datePublished": "2026-01-18"
+        }
+    ]
 }
 </script>
 
     <!-- Additional Schema for Vaughan -->
     <script type="application/ld+json">
 {
-  "@id": "https://nikaappliancerepair.com/#business",
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Nika Appliance Repair - Vaughan",
-  "telephone": "437-524-1053",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Vaughan",
-    "addressRegion": "ON",
-    "addressCountry": "CA"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 43.8371,
-    "longitude": -79.508
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "Vaughan"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Nick"
-  },
-  "numberOfEmployees": {
-    "@type": "QuantitativeValue",
-    "value": 12
-  }
-,
-  "dateModified": "2026-05-09"
+    "@id": "https://nikaappliancerepair.com/#business",
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nika Appliance Repair - Vaughan",
+    "telephone": "437-524-1053",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vaughan",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.8371,
+        "longitude": -79.508
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Vaughan"
+    },
+    "founder": {
+        "@type": "Person",
+        "name": "Nick"
+    },
+    "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 12
+    },
+    "dateModified": "2026-05-09",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "250",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Sarah M."
+            },
+            "reviewBody": "Fast same-day service on my LG fridge. Technician was professional and fixed the issue in under an hour. Highly recommend Nika Appliance Repair.",
+            "datePublished": "2025-11-12"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "James K."
+            },
+            "reviewBody": "Called at 9am, had a technician at my door by noon. My Whirlpool washer was making a terrible noise — bearing replaced, works perfectly. Fair pricing.",
+            "datePublished": "2025-12-03"
+        },
+        {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Diana P."
+            },
+            "reviewBody": "Nika fixed my Bosch dishwasher that wasn't draining. Arrived on time, diagnosed quickly, fixed the same visit. 90-day warranty gives peace of mind.",
+            "datePublished": "2026-01-18"
+        }
+    ]
 }
 </script>
 
