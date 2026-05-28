@@ -69,3 +69,4 @@ add-og-image.js
 *.jpg
 *.jpeg
 .vercel
+fix-sitemap-dates.js
