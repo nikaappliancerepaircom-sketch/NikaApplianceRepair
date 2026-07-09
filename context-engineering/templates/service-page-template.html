@@ -107,21 +107,62 @@
     <!-- FAQ Section -->
     
 <!-- VOICE-QA-v1 -->
-<section style="margin:2rem auto;max-width:880px;padding:0 1rem" aria-label="Common questions about Appliance repair in Service Page Template">
-  <h2 style="font-size:1.4rem;font-weight:700;color:#0F172A;margin:0 0 1.25rem;border-bottom:2px solid #2563EB;padding-bottom:.5rem;font-family:'Instrument Sans',sans-serif">Common Questions</h2>
-  <div style="background:#EFF6FF;border-left:4px solid #2563EB;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin-bottom:1rem">
-    <h3 style="font-size:1rem;font-weight:600;color:#1E3A5F;margin:0 0 .4rem;font-family:'Instrument Sans',sans-serif">How long does appliance repair take in Service Page Template?</h3>
-    <p style="margin:0;color:#374151;font-size:.9rem;line-height:1.6">Most appliance repairs in Service Page Template finish in 1–2 hours on the first visit. Technicians carry common parts on every van. Call (437) 524-1053 to book same-day service.</p>
-  </div>
-  <div style="background:#EFF6FF;border-left:4px solid #2563EB;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin-bottom:1rem">
-    <h3 style="font-size:1rem;font-weight:600;color:#1E3A5F;margin:0 0 .4rem;font-family:'Instrument Sans',sans-serif">What does appliance repair cost in Service Page Template?</h3>
-    <p style="margin:0;color:#374151;font-size:.9rem;line-height:1.6">Appliance repair in Service Page Template typically costs $120–$350 depending on the fault. A flat $89 diagnostic fee applies, waived when you proceed. Upfront quote before any work starts — no hidden charges.</p>
-  </div>
-  <div style="background:#EFF6FF;border-left:4px solid #2563EB;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin-bottom:1rem">
-    <h3 style="font-size:1rem;font-weight:600;color:#1E3A5F;margin:0 0 .4rem;font-family:'Instrument Sans',sans-serif">Which appliance brands does Nika Appliance Repair service in Service Page Template?</h3>
-    <p style="margin:0;color:#374151;font-size:.9rem;line-height:1.6">We repair all major brands in Service Page Template: Samsung, LG, Whirlpool, Bosch, GE, Frigidaire, Maytag, KitchenAid, Kenmore, and more. Every repair includes a 90-day parts and labour warranty.</p>
+<section class="vfaq-section" aria-label="Common questions about Appliance repair in Service Page Template">
+  <div class="vfaq-container">
+    <h2 class="vfaq-title">Common Questions</h2>
+    <div class="vfaq-item">
+      <button type="button" class="vfaq-question" aria-expanded="false">
+        <span>How long does appliance repair take in Service Page Template?</span>
+        <span class="vfaq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="vfaq-answer" hidden>
+        <p>Most appliance repairs in Service Page Template finish in 1–2 hours on the first visit. Technicians carry common parts on every van. Call (437) 524-1053 to book same-day service.</p>
+      </div>
+    </div>
+    <div class="vfaq-item">
+      <button type="button" class="vfaq-question" aria-expanded="false">
+        <span>What does appliance repair cost in Service Page Template?</span>
+        <span class="vfaq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="vfaq-answer" hidden>
+        <p>Appliance repair in Service Page Template typically costs $120–$350 depending on the fault. A flat $89 diagnostic fee applies, waived when you proceed. Upfront quote before any work starts — no hidden charges.</p>
+      </div>
+    </div>
+    <div class="vfaq-item">
+      <button type="button" class="vfaq-question" aria-expanded="false">
+        <span>Which appliance brands does Nika Appliance Repair service in Service Page Template?</span>
+        <span class="vfaq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="vfaq-answer" hidden>
+        <p>We repair all major brands in Service Page Template: Samsung, LG, Whirlpool, Bosch, GE, Frigidaire, Maytag, KitchenAid, Kenmore, and more. Every repair includes a 90-day parts and labour warranty.</p>
+      </div>
+    </div>
   </div>
 </section>
+<style>
+.vfaq-section{margin:2rem auto!important;max-width:880px!important;padding:0 1rem!important}
+.vfaq-container{width:100%}
+.vfaq-title{font-size:1.4rem;font-weight:700;color:#0F172A;margin:0 0 1.25rem;border-bottom:2px solid #2563EB;padding-bottom:.5rem;font-family:'Instrument Sans',sans-serif;text-align:left}
+.vfaq-item{background:#fff;border:1px solid #e5e7eb;border-radius:10px;margin-bottom:.75rem;overflow:hidden;box-shadow:0 1px 2px rgba(15,23,42,0.04)}
+.vfaq-question{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:none;border:none;padding:1rem 1.25rem;font-size:1rem;font-weight:600;color:#1E3A5F;font-family:'Instrument Sans',sans-serif;text-align:left;cursor:pointer;margin:0}
+.vfaq-icon{flex-shrink:0;font-size:1.25rem;line-height:1;color:#2563EB;transition:transform .2s ease}
+.vfaq-question[aria-expanded="true"] .vfaq-icon{transform:rotate(45deg)}
+.vfaq-answer{padding:0 1.25rem 1rem!important;color:#374151;font-size:.9rem;line-height:1.6}
+.vfaq-answer p{margin:0}
+@media (prefers-color-scheme:dark){.vfaq-item{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12)}.vfaq-title{color:rgba(232,244,253,0.95)}.vfaq-question{color:rgba(232,244,253,0.9)}.vfaq-answer{color:rgba(232,244,253,0.7)}}
+</style>
+<script>
+(function(){
+  document.querySelectorAll('.vfaq-question').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      var answer = btn.parentElement.querySelector('.vfaq-answer');
+      if (answer) answer.hidden = expanded;
+    });
+  });
+})();
+</script>
 <!-- /VOICE-QA-v1 -->
 <section class="faq-section">
         <div class="container">
