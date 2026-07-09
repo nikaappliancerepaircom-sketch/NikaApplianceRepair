@@ -180,31 +180,24 @@ def generate_sitemap(base_url='https://nikaappliancerepair.com'):
 
     print(f"\n[TOTAL] {total_blog_posts} blog posts added to sitemap")
 
-    # 7. Add root-level service+city pages (Alberta expansion)
+    # 7. Add root-level service+city pages (Alberta expansion + all neighborhoods)
     print("\n[+] Adding root-level service+city pages...")
-    alberta_cities = ['edmonton', 'calgary', 'airdrie', 'leduc', 'fort-saskatchewan',
-                      'sherwood-park', 'spruce-grove', 'st-albert', 'stony-plain',
-                      'strathmore', 'okotoks', 'cochrane', 'chestermere', 'canmore',
-                      'beaumont', 'devon', 'langdon', 'high-river']
     existing_locs = {u['loc'] for u in urls}
     root_pages_count = 0
     for root_file in sorted(base_dir.glob('*-repair-*.html')):
-        # match Alberta cities only (suffix match to avoid e.g. "edmonton" inside other slugs)
-        if any(root_file.stem.endswith('-' + city) or root_file.stem == city
-               for city in alberta_cities):
-            loc = f"{base_url}/{root_file.stem}"
-            if loc in existing_locs:
-                continue
-            metadata = extract_metadata_from_html(root_file)
-            urls.append({
-                'loc': loc,
-                'lastmod': metadata['lastmod'],
-                'changefreq': 'monthly',
-                'priority': '0.7'
-            })
-            existing_locs.add(loc)
-            root_pages_count += 1
-    print(f"    + {root_pages_count} root-level Alberta pages added")
+        loc = f"{base_url}/{root_file.stem}"
+        if loc in existing_locs:
+            continue
+        metadata = extract_metadata_from_html(root_file)
+        urls.append({
+            'loc': loc,
+            'lastmod': metadata['lastmod'],
+            'changefreq': 'monthly',
+            'priority': '0.7'
+        })
+        existing_locs.add(loc)
+        root_pages_count += 1
+    print(f"    + {root_pages_count} root-level service+city pages added")
 
     # Generate XML
     print("\n[+] Generating XML...")
