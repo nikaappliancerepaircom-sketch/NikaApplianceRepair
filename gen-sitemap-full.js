@@ -1,90 +1,64 @@
-#!/usr/bin/env node
-// gen-sitemap-full.js — nikaappliancerepair.com
-// Full filesystem scan — replaces gen-sitemap.js
-// Runs LAST in CI after all drip/publish steps.
-
+// Preserve the published URL set, including only indexable canonical pages.
 'use strict';
-const fs   = require('fs');
-const path = require('path');
-
-const DOMAIN   = 'https://nikaappliancerepair.com';
-const SITE_DIR = path.resolve(__dirname);
-const TODAY    = new Date().toISOString().slice(0, 10);
-
-const SKIP_FILES = new Set([
-  '404.html','service-template.html','ajax.html','book.html',
-  'preview.html','sitemap.html','accessibility.html',
-  'index.html', // handled as '/' below
-]);
-const SKIP_DIRS = new Set([
-  'node_modules','.git','_queue','assets','css','js','images',
-  'fonts','components','templates','styles','backups','backup',
-  'old','archive','reports','tools','compare','preview',
-  '_drafts','_published_log.json','test-components','premium-blog',
-  'maintenance','nul',
-]);
-const SKIP_PATTERNS = [/^landing/, /\.bak\.html$/];
-
-function shouldSkipFile(name) {
-  if (SKIP_FILES.has(name)) return true;
-  if (SKIP_PATTERNS.some(p => p.test(name))) return true;
-  return false;
+const fs = require('node:fs');
+const path = require('node:path');
+const DOMAIN = 'https://nikaappliancerepair.com';
+const root = __dirname;
+const config = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8'));
+const sitemapFile = path.join(root, 'sitemap.xml');
+const previous = fs.readFileSync(sitemapFile, 'utf8');
+function cleanUrl(value) {
+  const url = new URL(value.replace(/&amp;/g, '&'));
+  let route = url.pathname.replace(/\.html$/, '').replace(/\/index$/, '').replace(/\/$/, '') || '/';
+  return 'https://' + url.hostname.replace(/^www\./, '') + route;
 }
-
-function mtime(fp) {
-  try { return fs.statSync(fp).mtime.toISOString().slice(0, 10); } catch { return TODAY; }
-}
-
-const urls = [];
-
-function addUrl(loc, lastmod, priority = '0.8', changefreq = 'weekly') {
-  urls.push({ loc, lastmod, priority, changefreq });
-}
-
-// Homepage
-addUrl(DOMAIN + '/', mtime(path.join(SITE_DIR, 'index.html')), '1.0', 'weekly');
-
-// Walk a directory recursively, building clean URLs
-function walk(dir, urlPrefix, priority = '0.8') {
-  let items;
-  try { items = fs.readdirSync(dir, { withFileTypes: true }); } catch { return; }
-
-  for (const item of items) {
-    if (item.isDirectory()) {
-      if (SKIP_DIRS.has(item.name)) continue;
-      walk(path.join(dir, item.name), urlPrefix + item.name + '/', priority);
-    } else if (item.name.endsWith('.html')) {
-      if (shouldSkipFile(item.name)) continue;
-      const fp = path.join(dir, item.name);
-      if (item.name === 'index.html') {
-        // directory index — URL is the directory path
-        addUrl(DOMAIN + '/' + urlPrefix, mtime(fp), priority, 'weekly');
-      } else {
-        const slug = item.name.replace(/\.html$/, '');
-        addUrl(DOMAIN + '/' + urlPrefix + slug, mtime(fp), priority, 'weekly');
-      }
-    }
+// Publish scripts add their selected pages to sitemap.xml before this final cleanup.
+const published = new Set([...previous.matchAll(/<loc>\s*([^<]+)\s*<\/loc>/g)].map(m => cleanUrl(m[1].trim())));
+for (const rule of config.redirects || []) {
+  if (!rule.has && !rule.source.includes(':') && published.has(DOMAIN + rule.source)) {
+    const destination = cleanUrl(new URL(rule.destination, DOMAIN).href);
+    if (new URL(destination).origin === DOMAIN) published.add(destination);
   }
 }
-
-// Root service+city pages
-walk(SITE_DIR, '', '0.85');
-
-// Output XML
-const lines = [
-  '<?xml version="1.0" encoding="UTF-8"?>',
-  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-];
-for (const { loc, lastmod, priority, changefreq } of urls) {
-  lines.push('  <url>');
-  lines.push(`    <loc>${loc}</loc>`);
-  lines.push(`    <lastmod>${lastmod}</lastmod>`);
-  lines.push(`    <changefreq>${changefreq}</changefreq>`);
-  lines.push(`    <priority>${priority}</priority>`);
-  lines.push('  </url>');
+const redirects = new Set((config.redirects || []).filter(r => !r.has && !r.source.includes(':')).map(r => r.source));
+const skipDirs = new Set(['node_modules', '.git', '.github', '.claude', '_queue', '_drafts', 'assets', 'css', 'js', 'images', 'img', 'fonts', 'includes', 'components', 'templates', 'styles', 'backups', 'backup', 'old', 'archive', 'reports', 'tools', 'tests', 'test-components', 'preview', 'premium-blog', 'src']);
+const skipFiles = new Set(['404.html', 'service-template.html', 'preview.html']);
+const urls = new Set();
+const skipped = {};
+function skip(reason) { skipped[reason] = (skipped[reason] || 0) + 1; }
+function attrs(tag) {
+  const result = {};
+  for (const match of tag.matchAll(/([\w:-]+)\s*=\s*(["'])(.*?)\2/gs)) result[match[1].toLowerCase()] = match[3];
+  return result;
 }
-lines.push('</urlset>');
-
-const out = path.join(SITE_DIR, 'sitemap.xml');
-fs.writeFileSync(out, lines.join('\n'), 'utf8');
-console.log(`nikaappliancerepair.com: sitemap.xml → ${urls.length} URLs`);
+function walk(dir, prefix = '') {
+  for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+    if (entry.isDirectory()) {
+      if (!skipDirs.has(entry.name) && !entry.name.startsWith('.')) walk(path.join(dir, entry.name), prefix + entry.name + '/');
+      continue;
+    }
+    if (!entry.isFile() || !entry.name.endsWith('.html') || skipFiles.has(entry.name) || /\.bak\.|^landing[-.]/.test(entry.name)) continue;
+    const rel = prefix + entry.name;
+    let route = '/' + rel.replace(/\.html$/, '').replace(/(^|\/)index$/, '');
+    route = route.replace(/\/$/, '') || '/';
+    if (!published.has(DOMAIN + route)) { skip('not_in_published_sitemap'); continue; }
+    if (redirects.has(route)) { skip('redirect'); continue; }
+    const text = fs.readFileSync(path.join(dir, entry.name), 'utf8');
+    const head = text.split(/<\/head\s*>/i)[0];
+    const metas = [...head.matchAll(/<meta\b[^>]*>/gi)].map(m => attrs(m[0]));
+    if (metas.some(m => /^(robots|googlebot)$/i.test(m.name || '') && /\bnoindex\b/i.test(m.content || ''))) { skip('noindex'); continue; }
+    const canonical = [...head.matchAll(/<link\b[^>]*>/gi)].map(m => attrs(m[0])).filter(a => (a.rel || '').toLowerCase() === 'canonical');
+    if (canonical.length !== 1) { skip('missing_or_multiple_canonical'); continue; }
+    const expected = DOMAIN + route;
+    if ((canonical[0].href || '').replace(/\/$/, '') !== expected.replace(/\/$/, '')) { skip('alternate_or_invalid_canonical'); continue; }
+    urls.add(expected);
+  }
+}
+walk(root);
+const escapeXml = text => text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+// Checkout mtimes do not establish when content changed; omit optional lastmod.
+const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+  + [...urls].sort().map(url => `  <url><loc>${escapeXml(url)}</loc></url>`).join('\n')
+  + '\n</urlset>\n';
+fs.writeFileSync(sitemapFile, xml);
+console.log(JSON.stringify({domain: DOMAIN, urls: urls.size, skipped}));
