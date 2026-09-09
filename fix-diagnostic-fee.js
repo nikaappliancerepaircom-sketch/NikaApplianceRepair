@@ -44,32 +44,32 @@ function getHtmlFiles(dir) {
 // Order matters — more specific patterns first.
 
 const rules = [
-  // 1. "an $80 diagnostic" / "an $80 CAD diagnostic" → grammar fix: "a $65 ..."
-  [/\ban \$80\b(\s+(?:CAD\s+)?diagnostic)/gi,   'a $65$1',   'an $80 diagnostic → a $65 diagnostic (grammar)'],
+  // 1. "an $89 diagnostic" / "an $89 CAD diagnostic" → grammar fix: "a $65 ..."
+  [/\ban \$80\b(\s+(?:CAD\s+)?diagnostic)/gi,   'a $65$1',   'an $89 diagnostic → a $89 diagnostic (grammar)'],
 
-  // 2. "an $80 diagnostic fee" (standalone)
-  [/\ban \$80\b(\s+diagnostic\s+fee)/gi,         'a $65$1',   'an $80 diagnostic fee → a $65 diagnostic fee'],
+  // 2. "an $89 diagnostic fee" (standalone)
+  [/\ban \$80\b(\s+diagnostic\s+fee)/gi,         'a $65$1',   'an $89 diagnostic fee → a $89 diagnostic fee'],
 
-  // 3. "$80 diagnostic fee" (not preceded by "an ")
-  [/\$80(\s+diagnostic\s+fee)/gi,                '$65$1',     '$80 diagnostic fee → $65 diagnostic fee'],
+  // 3. "$89 diagnostic fee" (not preceded by "an ")
+  [/\$80(\s+diagnostic\s+fee)/gi,                '$65$1',     '$89 diagnostic fee → $89 diagnostic fee'],
 
-  // 4. "$80 diagnostic" (general — not part of a range)
-  [/\$80(\s+diagnostic)/gi,                      '$65$1',     '$80 diagnostic → $65 diagnostic'],
+  // 4. "$89 diagnostic" (general — not part of a range)
+  [/\$80(\s+diagnostic)/gi,                      '$65$1',     '$89 diagnostic → $89 diagnostic'],
 
-  // 5. "$80 diagnosis"
-  [/\$80(\s+diagnosis)/gi,                       '$65$1',     '$80 diagnosis → $65 diagnosis'],
+  // 5. "$89 diagnosis"
+  [/\$80(\s+diagnosis)/gi,                       '$65$1',     '$89 diagnosis → $89 diagnosis'],
 
   // 6. "$80 flat fee" / "$80 flat-rate"
   [/\$80(\s+flat[ -](?:fee|rate))/gi,            '$65$1',     '$80 flat fee → $65 flat fee'],
 
-  // 7. "$80 service call"
-  [/\$80(\s+service\s+call)/gi,                  '$65$1',     '$80 service call → $65 service call'],
+  // 7. "$89 service call"
+  [/\$80(\s+service\s+call)/gi,                  '$65$1',     '$89 service call → $89 service call'],
 
   // 8. "$80 inspection"
   [/\$80(\s+inspection)/gi,                      '$65$1',     '$80 inspection → $65 inspection'],
 
-  // 9. "Diagnostic fee ($80)" / "diagnostic fee ($80)"
-  [/((?:D|d)iagnostic\s+fee\s*)\(\$80\)/g,       '$1($65)',   'Diagnostic fee ($80) → ($65)'],
+  // 9. "Diagnostic fee ($89)" / "diagnostic fee ($89)"
+  [/((?:D|d)iagnostic\s+fee\s*)\(\$80\)/g,       '$1($65)',   'Diagnostic fee ($89) → ($65)'],
 
   // 10. "($80) waived" / "($80) is waived" / "($80) is credited"
   [/\(\$80\)(\s+(?:is\s+)?(?:waived|credited|applied))/gi, '($65)$1', '($80) waived → ($65) waived'],
@@ -78,13 +78,13 @@ const rules = [
   //     (verified: always preceded by "Diagnostic visit (waived with repair)")
   [/(<td>)\$80(<\/td>)/g,                        '$1$65$2',   '<td>$80</td> → <td>$65</td>'],
 
-  // 12. "Diagnostics from $80" / "Diagnostics start at $80"
+  // 12. "Diagnostics from $80" / "Diagnostics start at $89"
   [/((?:D|d)iagnostics?\s+(?:from|start(?:s|ing)?\s+at))\s+\$80/g,
     '$1 $65', 'Diagnostics from/start at $80 → $65'],
 
-  // 13. "diagnostic visits start at $80"
+  // 13. "diagnostic visits start at $89"
   [/(diagnostic\s+visits?\s+start(?:s|ing)?\s+at)\s+\$80/gi,
-    '$1 $65', 'diagnostic visits start at $80 → $65'],
+    '$1 $65', 'diagnostic visits start at $89 → $65'],
 
   // 14. "$80–$100 diagnostic" / "$80-$100 diagnostic" — diagnostic fee range
   [/\$80([–—-])\$100(\s+(?:diagnostic|fee))/gi,  '$65$1$100$2', '$80–$100 diagnostic → $65–$100'],
@@ -113,8 +113,8 @@ const rules = [
   // 21. In JSON-LD "text" fields: "charges an $80" → "charges a $65"
   [/(charges?\s+)an\s+\$80/gi,                   '$1a $65',   'charges an $80 → charges a $65'],
 
-  // 22. "is an $80" in diagnostic context (e.g. "there is an $80 CAD diagnostic fee")
-  [/(is\s+)an\s+\$80(\s+(?:CAD\s+)?diagnostic)/gi, '$1a $65$2', 'is an $80 diagnostic → is a $65 diagnostic'],
+  // 22. "is an $80" in diagnostic context (e.g. "there is an $89 CAD diagnostic fee")
+  [/(is\s+)an\s+\$80(\s+(?:CAD\s+)?diagnostic)/gi, '$1a $65$2', 'is an $89 diagnostic → is a $89 diagnostic'],
 ];
 
 // ── Main ─────────────────────────────────────────────────────────────

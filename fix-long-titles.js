@@ -86,7 +86,7 @@ function shortenTitle(title) {
         .replace('1-Hour Response', '1-Hour')
         .replace('Upfront Quotes', '')
         .replace('Pricing Guide', 'Pricing')
-        .replace('$65 Diagnostic', '$65 Diag')
+        .replace('$89 Diagnostic', '$65 Diag')
         .replace('From $65', '$65')
         .trim();
       if (mid) shortenedParts.push(mid);
@@ -129,7 +129,7 @@ function shortenTitle(title) {
     let s2 = second
       .replace('Same-Day Service', 'Same-Day')
       .replace('Same-Day Fix', 'Same-Day')
-      .replace('$65 Diagnostic', '$65 Diag')
+      .replace('$89 Diagnostic', '$65 Diag')
       .replace('From $65', '$65')
       .trim();
     const try2 = first + ' | ' + s2;

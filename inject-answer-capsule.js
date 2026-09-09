@@ -137,7 +137,7 @@ function buildCapsuleText(pageType, info, site) {
     case 'emergency':
       return `${siteBrand} provides 24/7 emergency appliance repair in Toronto & GTA. ${tail}`;
     case 'cost-guide':
-      return `How much does ${serviceLabel.toLowerCase()} repair cost in Toronto? Typical range: ${cost}. ${siteBrand} offers flat $65 diagnostic fee, transparent pricing, no hidden charges. Call ${phone}.`;
+      return `How much does ${serviceLabel.toLowerCase()} repair cost in Toronto? Typical range: ${cost}. ${siteBrand} offers flat $89 diagnostic fee, transparent pricing, no hidden charges. Call ${phone}.`;
     case 'problem':
       return `${base} ${serviceLabel.toLowerCase()} repair in Toronto including ${info.base.replace(/-/g,' ')} issues. ${tail}`;
     default:
