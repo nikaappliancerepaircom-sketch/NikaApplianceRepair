@@ -26,6 +26,7 @@ function toUrl(filepath) {
 const urls = [];
 
 function addUrl(loc, lastmod, priority = '0.8', changefreq = 'weekly') {
+  if (new URL(loc).pathname.split('/').some(segment => segment.startsWith('gas-'))) return;
   urls.push({ loc, lastmod, priority, changefreq });
 }
 

@@ -67,3 +67,9 @@ button.faq-question { width: 100%; border: 0; background: none; color: inherit; 
     .post-navigation, .related-grid, .footer-container { grid-template-columns: minmax(0, 1fr); }
     .author-box { flex-wrap: wrap; }
 }
+
+/* Gas service is temporarily unavailable. Keep its URLs, but do not expose navigation to them. */
+a[href^="gas-"],
+a[href*="/gas-"] {
+  display: none !important;
+}

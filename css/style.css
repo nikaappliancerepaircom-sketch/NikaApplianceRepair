@@ -40,6 +40,12 @@
     --element-padding: 2rem;
 }
 
+/* Gas service is temporarily unavailable. Keep its URLs, but do not expose navigation to them. */
+a[href^="gas-"],
+a[href*="/gas-"] {
+    display: none !important;
+}
+
 /* Background Color Classes - Use these for consistent styling */
 .bg-white {
     background: var(--bg-white) !important;

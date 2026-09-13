@@ -1009,3 +1009,9 @@ img {
         padding: 1rem;
     }
 }
+
+/* Gas service is temporarily unavailable. Keep its URLs, but do not expose navigation to them. */
+a[href^="gas-"],
+a[href*="/gas-"] {
+    display: none !important;
+}
