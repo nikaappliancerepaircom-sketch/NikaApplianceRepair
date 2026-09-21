@@ -1,90 +1,161 @@
 #!/usr/bin/env node
-// gen-sitemap-full.js — nikaappliancerepair.com
-// Full filesystem scan — replaces gen-sitemap.js
-// Runs LAST in CI after all drip/publish steps.
 
 'use strict';
-const fs   = require('fs');
+
+const fs = require('fs');
 const path = require('path');
 
-const DOMAIN   = 'https://nikaappliancerepair.com';
+const DOMAIN = 'https://nikaappliancerepair.com';
 const SITE_DIR = path.resolve(__dirname);
-const TODAY    = new Date().toISOString().slice(0, 10);
+const SITEMAP_PATH = path.join(SITE_DIR, 'sitemap.xml');
 
-const SKIP_FILES = new Set([
-  '404.html','service-template.html','ajax.html','book.html',
-  'preview.html','sitemap.html','accessibility.html',
-  'index.html', // handled as '/' below
-]);
 const SKIP_DIRS = new Set([
-  'node_modules','.git','_queue','assets','css','js','images',
-  'fonts','components','templates','styles','backups','backup',
-  'old','archive','reports','tools','compare','preview',
-  '_drafts','_published_log.json','test-components','premium-blog',
-  'maintenance','nul',
+  '.git', '.github', '.wrangler', 'archive', 'assets', 'backup', 'backups',
+  'compare', 'components', 'css', 'fonts', 'images', 'includes', 'js',
+  'node_modules', 'old', 'preview', 'reports', 'templates', 'test-components',
+  'tests', 'tools', '_drafts', '_queue',
 ]);
-const SKIP_PATTERNS = [/^landing/, /\.bak\.html$/];
+const SKIP_FILES = new Set([
+  '404.html', 'accessibility.html', 'book.html', 'preview.html',
+  'service-template.html', 'sitemap.html',
+]);
+const SKIP_PATTERNS = [/^landing/i, /\.bak\.html$/i];
 
-function shouldSkipFile(name) {
-  if (SKIP_FILES.has(name)) return true;
-  if (SKIP_PATTERNS.some(p => p.test(name))) return true;
-  return false;
-}
-
-function mtime(fp) {
-  try { return fs.statSync(fp).mtime.toISOString().slice(0, 10); } catch { return TODAY; }
-}
-
-const urls = [];
-
-function addUrl(loc, lastmod, priority = '0.8', changefreq = 'weekly') {
-  urls.push({ loc, lastmod, priority, changefreq });
-}
-
-// Homepage
-addUrl(DOMAIN + '/', mtime(path.join(SITE_DIR, 'index.html')), '1.0', 'weekly');
-
-// Walk a directory recursively, building clean URLs
-function walk(dir, urlPrefix, priority = '0.8') {
-  let items;
-  try { items = fs.readdirSync(dir, { withFileTypes: true }); } catch { return; }
-
-  for (const item of items) {
-    if (item.isDirectory()) {
-      if (SKIP_DIRS.has(item.name)) continue;
-      walk(path.join(dir, item.name), urlPrefix + item.name + '/', priority);
-    } else if (item.name.endsWith('.html')) {
-      if (shouldSkipFile(item.name)) continue;
-      const fp = path.join(dir, item.name);
-      if (item.name === 'index.html') {
-        // directory index — URL is the directory path
-        addUrl(DOMAIN + '/' + urlPrefix, mtime(fp), priority, 'weekly');
-      } else {
-        const slug = item.name.replace(/\.html$/, '');
-        addUrl(DOMAIN + '/' + urlPrefix + slug, mtime(fp), priority, 'weekly');
-      }
-    }
+function normalizePath(value) {
+  let pathname = value;
+  try {
+    pathname = new URL(value, DOMAIN).pathname;
+  } catch {
+    return null;
   }
+
+  pathname = decodeURI(pathname).replace(/\\/g, '/');
+  pathname = pathname.replace(/\/index\.html$/i, '/');
+  pathname = pathname.replace(/\.html$/i, '');
+  pathname = pathname.replace(/\/{2,}/g, '/');
+  if (!pathname.startsWith('/')) pathname = `/${pathname}`;
+  if (pathname.length > 1) pathname = pathname.replace(/\/$/, '');
+  return pathname;
 }
 
-// Root service+city pages
-walk(SITE_DIR, '', '0.85');
-
-// Output XML
-const lines = [
-  '<?xml version="1.0" encoding="UTF-8"?>',
-  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-];
-for (const { loc, lastmod, priority, changefreq } of urls) {
-  lines.push('  <url>');
-  lines.push(`    <loc>${loc}</loc>`);
-  lines.push(`    <lastmod>${lastmod}</lastmod>`);
-  lines.push(`    <changefreq>${changefreq}</changefreq>`);
-  lines.push(`    <priority>${priority}</priority>`);
-  lines.push('  </url>');
+function escapeXml(value) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
 }
-lines.push('</urlset>');
 
-const out = path.join(SITE_DIR, 'sitemap.xml');
-fs.writeFileSync(out, lines.join('\n'), 'utf8');
-console.log(`nikaappliancerepair.com: sitemap.xml → ${urls.length} URLs`);
+function readPublishedPaths() {
+  if (!fs.existsSync(SITEMAP_PATH)) {
+    throw new Error('sitemap.xml is required to preserve the existing published URL set');
+  }
+
+  const xml = fs.readFileSync(SITEMAP_PATH, 'utf8');
+  const paths = new Set();
+  for (const match of xml.matchAll(/<loc>\s*([^<]+?)\s*<\/loc>/gi)) {
+    const pathname = normalizePath(match[1]);
+    if (pathname) paths.add(pathname);
+  }
+  if (paths.size === 0) throw new Error('sitemap.xml contains no published URLs');
+  return paths;
+}
+
+function shouldSkipFile(filePath) {
+  const relative = path.relative(SITE_DIR, filePath);
+  const parts = relative.split(path.sep);
+  if (parts.slice(0, -1).some((part) => SKIP_DIRS.has(part))) return true;
+  const name = parts.at(-1);
+  return SKIP_FILES.has(name) || SKIP_PATTERNS.some((pattern) => pattern.test(name));
+}
+
+function collectHtmlFiles(directory, files = []) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    if (entry.isDirectory() && SKIP_DIRS.has(entry.name)) continue;
+    const absolute = path.join(directory, entry.name);
+    if (entry.isDirectory()) collectHtmlFiles(absolute, files);
+    else if (entry.name.endsWith('.html') && !shouldSkipFile(absolute)) files.push(absolute);
+  }
+  return files;
+}
+
+function routeForFile(filePath) {
+  const relative = path.relative(SITE_DIR, filePath).split(path.sep).join('/');
+  return normalizePath(`/${relative}`);
+}
+
+function inspectPage(filePath) {
+  const html = fs.readFileSync(filePath, 'utf8');
+  const route = routeForFile(filePath);
+  const canonicalMatches = [...html.matchAll(/<link\b[^>]*\brel=["'][^"']*canonical[^"']*["'][^>]*>/gi)];
+  const canonicalValues = canonicalMatches
+    .map((match) => match[0].match(/\bhref=["']([^"']+)["']/i)?.[1])
+    .filter(Boolean);
+  const canonical = canonicalValues.length === 1 ? normalizePath(canonicalValues[0]) : null;
+  const noindex = /<meta\b[^>]*\bname=["']robots["'][^>]*\bcontent=["'][^"']*noindex/i.test(html)
+    || /<meta\b[^>]*\bcontent=["'][^"']*noindex[^"']*["'][^>]*\bname=["']robots["']/i.test(html);
+  const redirect = /<meta\b[^>]*http-equiv=["']refresh["']/i.test(html);
+
+  return { route, canonical, canonicalCount: canonicalValues.length, noindex, redirect };
+}
+
+function buildSitemap() {
+  const publishedPaths = readPublishedPaths();
+  const included = new Set();
+  const skipped = {
+    alternateCanonical: 0,
+    duplicateCanonical: 0,
+    missingCanonical: 0,
+    noindex: 0,
+    redirect: 0,
+    unpublished: 0,
+  };
+
+  for (const filePath of collectHtmlFiles(SITE_DIR)) {
+    const page = inspectPage(filePath);
+    if (!publishedPaths.has(page.route)) {
+      skipped.unpublished += 1;
+      continue;
+    }
+    if (page.redirect) {
+      skipped.redirect += 1;
+      continue;
+    }
+    if (page.noindex) {
+      skipped.noindex += 1;
+      continue;
+    }
+    if (page.canonicalCount === 0) {
+      skipped.missingCanonical += 1;
+      continue;
+    }
+    if (page.canonicalCount > 1) {
+      skipped.duplicateCanonical += 1;
+      continue;
+    }
+    if (page.canonical !== page.route) {
+      skipped.alternateCanonical += 1;
+      continue;
+    }
+    included.add(page.route);
+  }
+
+  const urls = [...included].sort((a, b) => a.localeCompare(b));
+  const lines = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...urls.map((pathname) => `  <url><loc>${escapeXml(`${DOMAIN}${pathname === '/' ? '/' : pathname}`)}</loc></url>`),
+    '</urlset>',
+    '',
+  ];
+  fs.writeFileSync(SITEMAP_PATH, lines.join('\n'), 'utf8');
+  return { domain: DOMAIN, urls: urls.length, skipped };
+}
+
+try {
+  console.log(JSON.stringify(buildSitemap()));
+} catch (error) {
+  console.error(error.message);
+  process.exitCode = 1;
+}
