@@ -41,12 +41,15 @@
 @media (max-width: 480px) {
     .countdown-timer {
         flex-direction: row !important;
-        gap: 10px !important;
+        gap: 8px !important;
     }
     
     .timer-box {
-        min-width: 100px !important;
-        padding: 15px 20px !important;
+        box-sizing: border-box !important;
+        flex: 1 1 0 !important;
+        min-width: 0 !important;
+        min-inline-size: 0 !important;
+        padding: 15px 8px !important;
     }
     
     .timer-value {
