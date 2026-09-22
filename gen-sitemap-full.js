@@ -1,161 +1,64 @@
-#!/usr/bin/env node
-
+// Preserve the published URL set, including only indexable canonical pages.
 'use strict';
-
-const fs = require('fs');
-const path = require('path');
-
+const fs = require('node:fs');
+const path = require('node:path');
 const DOMAIN = 'https://nikaappliancerepair.com';
-const SITE_DIR = path.resolve(__dirname);
-const SITEMAP_PATH = path.join(SITE_DIR, 'sitemap.xml');
-
-const SKIP_DIRS = new Set([
-  '.git', '.github', '.wrangler', 'archive', 'assets', 'backup', 'backups',
-  'compare', 'components', 'css', 'fonts', 'images', 'includes', 'js',
-  'node_modules', 'old', 'preview', 'reports', 'templates', 'test-components',
-  'tests', 'tools', '_drafts', '_queue',
-]);
-const SKIP_FILES = new Set([
-  '404.html', 'accessibility.html', 'book.html', 'preview.html',
-  'service-template.html', 'sitemap.html',
-]);
-const SKIP_PATTERNS = [/^landing/i, /\.bak\.html$/i];
-
-function normalizePath(value) {
-  let pathname = value;
-  try {
-    pathname = new URL(value, DOMAIN).pathname;
-  } catch {
-    return null;
+const root = __dirname;
+const config = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8'));
+const sitemapFile = path.join(root, 'sitemap.xml');
+const previous = fs.readFileSync(sitemapFile, 'utf8');
+function cleanUrl(value) {
+  const url = new URL(value.replace(/&amp;/g, '&'));
+  let route = url.pathname.replace(/\.html$/, '').replace(/\/index$/, '').replace(/\/$/, '') || '/';
+  return 'https://' + url.hostname.replace(/^www\./, '') + route;
+}
+// Publish scripts add their selected pages to sitemap.xml before this final cleanup.
+const published = new Set([...previous.matchAll(/<loc>\s*([^<]+)\s*<\/loc>/g)].map(m => cleanUrl(m[1].trim())));
+for (const rule of config.redirects || []) {
+  if (!rule.has && !rule.source.includes(':') && published.has(DOMAIN + rule.source)) {
+    const destination = cleanUrl(new URL(rule.destination, DOMAIN).href);
+    if (new URL(destination).origin === DOMAIN) published.add(destination);
   }
-
-  pathname = decodeURI(pathname).replace(/\\/g, '/');
-  pathname = pathname.replace(/\/index\.html$/i, '/');
-  pathname = pathname.replace(/\.html$/i, '');
-  pathname = pathname.replace(/\/{2,}/g, '/');
-  if (!pathname.startsWith('/')) pathname = `/${pathname}`;
-  if (pathname.length > 1) pathname = pathname.replace(/\/$/, '');
-  return pathname;
 }
-
-function escapeXml(value) {
-  return value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;');
+const redirects = new Set((config.redirects || []).filter(r => !r.has && !r.source.includes(':')).map(r => r.source));
+const skipDirs = new Set(['node_modules', '.git', '.github', '.claude', '_queue', '_drafts', 'assets', 'css', 'js', 'images', 'img', 'fonts', 'includes', 'components', 'templates', 'styles', 'backups', 'backup', 'old', 'archive', 'reports', 'tools', 'tests', 'test-components', 'preview', 'premium-blog', 'src']);
+const skipFiles = new Set(['404.html', 'service-template.html', 'preview.html']);
+const urls = new Set();
+const skipped = {};
+function skip(reason) { skipped[reason] = (skipped[reason] || 0) + 1; }
+function attrs(tag) {
+  const result = {};
+  for (const match of tag.matchAll(/([\w:-]+)\s*=\s*(["'])(.*?)\2/gs)) result[match[1].toLowerCase()] = match[3];
+  return result;
 }
-
-function readPublishedPaths() {
-  if (!fs.existsSync(SITEMAP_PATH)) {
-    throw new Error('sitemap.xml is required to preserve the existing published URL set');
+function walk(dir, prefix = '') {
+  for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+    if (entry.isDirectory()) {
+      if (!skipDirs.has(entry.name) && !entry.name.startsWith('.')) walk(path.join(dir, entry.name), prefix + entry.name + '/');
+      continue;
+    }
+    if (!entry.isFile() || !entry.name.endsWith('.html') || skipFiles.has(entry.name) || /\.bak\.|^landing[-.]/.test(entry.name)) continue;
+    const rel = prefix + entry.name;
+    let route = '/' + rel.replace(/\.html$/, '').replace(/(^|\/)index$/, '');
+    route = route.replace(/\/$/, '') || '/';
+    if (!published.has(DOMAIN + route)) { skip('not_in_published_sitemap'); continue; }
+    if (redirects.has(route)) { skip('redirect'); continue; }
+    const text = fs.readFileSync(path.join(dir, entry.name), 'utf8');
+    const head = text.split(/<\/head\s*>/i)[0];
+    const metas = [...head.matchAll(/<meta\b[^>]*>/gi)].map(m => attrs(m[0]));
+    if (metas.some(m => /^(robots|googlebot)$/i.test(m.name || '') && /\bnoindex\b/i.test(m.content || ''))) { skip('noindex'); continue; }
+    const canonical = [...head.matchAll(/<link\b[^>]*>/gi)].map(m => attrs(m[0])).filter(a => (a.rel || '').toLowerCase() === 'canonical');
+    if (canonical.length !== 1) { skip('missing_or_multiple_canonical'); continue; }
+    const expected = DOMAIN + route;
+    if ((canonical[0].href || '').replace(/\/$/, '') !== expected.replace(/\/$/, '')) { skip('alternate_or_invalid_canonical'); continue; }
+    urls.add(expected);
   }
-
-  const xml = fs.readFileSync(SITEMAP_PATH, 'utf8');
-  const paths = new Set();
-  for (const match of xml.matchAll(/<loc>\s*([^<]+?)\s*<\/loc>/gi)) {
-    const pathname = normalizePath(match[1]);
-    if (pathname) paths.add(pathname);
-  }
-  if (paths.size === 0) throw new Error('sitemap.xml contains no published URLs');
-  return paths;
 }
-
-function shouldSkipFile(filePath) {
-  const relative = path.relative(SITE_DIR, filePath);
-  const parts = relative.split(path.sep);
-  if (parts.slice(0, -1).some((part) => SKIP_DIRS.has(part))) return true;
-  const name = parts.at(-1);
-  return SKIP_FILES.has(name) || SKIP_PATTERNS.some((pattern) => pattern.test(name));
-}
-
-function collectHtmlFiles(directory, files = []) {
-  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
-    if (entry.isDirectory() && SKIP_DIRS.has(entry.name)) continue;
-    const absolute = path.join(directory, entry.name);
-    if (entry.isDirectory()) collectHtmlFiles(absolute, files);
-    else if (entry.name.endsWith('.html') && !shouldSkipFile(absolute)) files.push(absolute);
-  }
-  return files;
-}
-
-function routeForFile(filePath) {
-  const relative = path.relative(SITE_DIR, filePath).split(path.sep).join('/');
-  return normalizePath(`/${relative}`);
-}
-
-function inspectPage(filePath) {
-  const html = fs.readFileSync(filePath, 'utf8');
-  const route = routeForFile(filePath);
-  const canonicalMatches = [...html.matchAll(/<link\b[^>]*\brel=["'][^"']*canonical[^"']*["'][^>]*>/gi)];
-  const canonicalValues = canonicalMatches
-    .map((match) => match[0].match(/\bhref=["']([^"']+)["']/i)?.[1])
-    .filter(Boolean);
-  const canonical = canonicalValues.length === 1 ? normalizePath(canonicalValues[0]) : null;
-  const noindex = /<meta\b[^>]*\bname=["']robots["'][^>]*\bcontent=["'][^"']*noindex/i.test(html)
-    || /<meta\b[^>]*\bcontent=["'][^"']*noindex[^"']*["'][^>]*\bname=["']robots["']/i.test(html);
-  const redirect = /<meta\b[^>]*http-equiv=["']refresh["']/i.test(html);
-
-  return { route, canonical, canonicalCount: canonicalValues.length, noindex, redirect };
-}
-
-function buildSitemap() {
-  const publishedPaths = readPublishedPaths();
-  const included = new Set();
-  const skipped = {
-    alternateCanonical: 0,
-    duplicateCanonical: 0,
-    missingCanonical: 0,
-    noindex: 0,
-    redirect: 0,
-    unpublished: 0,
-  };
-
-  for (const filePath of collectHtmlFiles(SITE_DIR)) {
-    const page = inspectPage(filePath);
-    if (!publishedPaths.has(page.route)) {
-      skipped.unpublished += 1;
-      continue;
-    }
-    if (page.redirect) {
-      skipped.redirect += 1;
-      continue;
-    }
-    if (page.noindex) {
-      skipped.noindex += 1;
-      continue;
-    }
-    if (page.canonicalCount === 0) {
-      skipped.missingCanonical += 1;
-      continue;
-    }
-    if (page.canonicalCount > 1) {
-      skipped.duplicateCanonical += 1;
-      continue;
-    }
-    if (page.canonical !== page.route) {
-      skipped.alternateCanonical += 1;
-      continue;
-    }
-    included.add(page.route);
-  }
-
-  const urls = [...included].sort((a, b) => a.localeCompare(b));
-  const lines = [
-    '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    ...urls.map((pathname) => `  <url><loc>${escapeXml(`${DOMAIN}${pathname === '/' ? '/' : pathname}`)}</loc></url>`),
-    '</urlset>',
-    '',
-  ];
-  fs.writeFileSync(SITEMAP_PATH, lines.join('\n'), 'utf8');
-  return { domain: DOMAIN, urls: urls.length, skipped };
-}
-
-try {
-  console.log(JSON.stringify(buildSitemap()));
-} catch (error) {
-  console.error(error.message);
-  process.exitCode = 1;
-}
+walk(root);
+const escapeXml = text => text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+// Checkout mtimes do not establish when content changed; omit optional lastmod.
+const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+  + [...urls].sort().map(url => `  <url><loc>${escapeXml(url)}</loc></url>`).join('\n')
+  + '\n</urlset>\n';
+fs.writeFileSync(sitemapFile, xml);
+console.log(JSON.stringify({domain: DOMAIN, urls: urls.size, skipped}));

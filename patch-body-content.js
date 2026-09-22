@@ -26,17 +26,17 @@ const SITES = {
   nar: {
     dir: 'C:/nappliancerepair', domain: 'https://nappliancerepair.com',
     name: 'N Appliance Repair', phone: '(437) 524-1053',
-    angle: 'professional Toronto GTA service, trusted since 2017, $65 flat diagnostic fee, licensed & insured technicians',
+    angle: 'professional Toronto GTA service, trusted since 2017, $89 flat diagnostic fee, licensed & insured technicians',
   },
   neary: {
     dir: 'C:/appliancerepairneary', domain: 'https://appliancerepairneary.com',
     name: 'Appliance Repair Near Me', phone: '(437) 524-1053',
-    angle: 'convenient local service near you, technicians dispatched from your neighbourhood, same-day booking, $65 diagnostic',
+    angle: 'convenient local service near you, technicians dispatched from your neighbourhood, same-day booking, $89 diagnostic',
   },
   fixlify: {
     dir: 'C:/fixlifyservices', domain: 'https://fixlifyservices.com',
     name: 'Fixlify Appliance Services', phone: '(437) 524-1053',
-    angle: 'transparent $65 diagnostic pricing, modern brand, expert technicians, same-day service, no hidden fees',
+    angle: 'transparent $89 diagnostic pricing, modern brand, expert technicians, same-day service, no hidden fees',
   },
 };
 

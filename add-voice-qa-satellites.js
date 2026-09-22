@@ -59,7 +59,7 @@ function buildBlock(info, site) {
     },
     {
       q: `How much does ${svc} repair cost in ${city}?`,
-      a: `${service} repair in ${city} costs $120–$350 depending on the part and brand. Flat $65 diagnostic fee, waived with repair. Upfront quote — no surprises, 90-day warranty included.`,
+      a: `${service} repair in ${city} costs $120–$350 depending on the part and brand. Flat $89 diagnostic fee, waived with repair. Upfront quote — no surprises, 90-day warranty included.`,
     },
     {
       q: `Which ${svc} brands do you fix in ${city}?`,

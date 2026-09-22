@@ -190,7 +190,7 @@ function faqBrandService(brand, service, phone, name) {
     },
     {
       q: `How much does ${B} ${S.toLowerCase()} repair cost in Toronto?`,
-      a: `${B} ${S.toLowerCase()} repair in Toronto typically costs ${sd.cost} depending on the fault and parts required. We charge a $65 diagnostic fee (waived when you proceed with repair). All ${B} repairs include a 90-day parts and labour warranty.`,
+      a: `${B} ${S.toLowerCase()} repair in Toronto typically costs ${sd.cost} depending on the fault and parts required. We charge a $89 diagnostic fee (waived when you proceed with repair). All ${B} repairs include a 90-day parts and labour warranty.`,
     },
     {
       q: `Is my ${B} ${S.toLowerCase()} worth repairing?`,
@@ -222,7 +222,7 @@ function faqBrandOnly(brand, phone, name, area) {
     },
     {
       q: `How much does ${B} appliance repair cost in ${area}?`,
-      a: `${B} appliance repair in ${area} typically costs $100–$450 depending on the appliance and issue. We charge a $65 flat diagnostic fee, waived when you proceed with the repair. All repairs include a 90-day parts and labour warranty.`,
+      a: `${B} appliance repair in ${area} typically costs $100–$450 depending on the appliance and issue. We charge a $89 flat diagnostic fee, waived when you proceed with the repair. All repairs include a 90-day parts and labour warranty.`,
     },
     {
       q: `Is my ${B} appliance worth repairing?`,
@@ -245,7 +245,7 @@ function faqService(service, phone, name, area) {
     },
     {
       q: `How much does ${S.toLowerCase()} repair cost in ${area}?`,
-      a: `${S} repair in ${area} typically costs ${sd.cost} depending on the fault, brand, and parts. We charge a $65 flat diagnostic fee, waived when you proceed with the repair. You receive an exact quote before we start any work.`,
+      a: `${S} repair in ${area} typically costs ${sd.cost} depending on the fault, brand, and parts. We charge a $89 flat diagnostic fee, waived when you proceed with the repair. You receive an exact quote before we start any work.`,
     },
     {
       q: `Is my ${S.toLowerCase()} worth repairing?`,
