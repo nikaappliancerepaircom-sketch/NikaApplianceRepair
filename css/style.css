@@ -139,6 +139,11 @@ a {
     transition: all 0.3s ease;
 }
 
+main p a[href^="tel:"] {
+    display: inline-block;
+    min-block-size: 24px;
+}
+
 /* Buttons */
 /* PRIMARY = Booking buttons (Green) */
 .cta-primary {
