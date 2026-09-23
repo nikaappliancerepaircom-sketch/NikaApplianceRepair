@@ -314,8 +314,10 @@ ELSE:
 - Mentions per page: 8-12 clickable links
 
 **Business Info:**
-- Reviews: 5,200+ Reviews
-- Rating: 4.9/5 stars
+- Reviews: 200+ Google reviews
+- Do not state an exact rating
+- Service model: On-site appliance repair at the customer's location
+- Do not publish a customer drop-off address
 - Warranty: 90-day warranty
 - Years: Since 2017
 - License: Licensed & Insured
@@ -412,7 +414,8 @@ ELSE:
 
 5. **Check data consistency:**
    - Phone: 437-524-1053 (everywhere)
-   - Reviews: 5,200+ (everywhere)
+   - Reviews: 200+ Google reviews
+   - Do not include an exact rating or customer drop-off address
    - Warranty: 90-day (everywhere)
    - Pricing: $150-$450 (everywhere)
 
@@ -422,7 +425,7 @@ ELSE:
 
 1. **DO NOT change:**
    - Phone number (437-524-1053)
-   - Review count (5,200+)
+   - Review count (200+ Google reviews)
    - Warranty period (90-day)
    - Pricing range ($150-$450)
 
@@ -502,7 +505,7 @@ ELSE:
 
 **Category 10 (Data Consistency):**
 - Parameter #268 (Phone consistency): Must be 437-524-1053 everywhere
-- Parameter #273 (Review count): Must be 5,200+ everywhere
+- Parameter #273 (Review count): State 200+ Google reviews; do not state an exact rating
 - Parameter #270 (Service areas): Brand mentions must match area affluence
 
 ---
@@ -512,15 +515,15 @@ ELSE:
 **Before Publishing ANY Page:**
 
 - [ ] Phone: 437-524-1053 (8-12 clickable mentions)
-- [ ] Reviews: 5,200+ Reviews
-- [ ] Rating: 4.9/5
+- [ ] Reviews: 200+ Google reviews
+- [ ] No exact rating or customer drop-off address
 - [ ] Warranty: 90-day
 - [ ] Pricing: $150-$450
 - [ ] Brands: Correct category for location (standard vs luxury)
 - [ ] Tone: Matches location affluence level
 - [ ] Services: All 9 core services mentioned
 - [ ] Same-day: Mentioned 3-5 times
-- [ ] Schema: LocalBusiness + FAQPage present
+- [ ] Schema: Organization/Service + FAQPage present; no address or rating claims
 - [ ] Word count: 2,000-2,500 visible words
 
 ---

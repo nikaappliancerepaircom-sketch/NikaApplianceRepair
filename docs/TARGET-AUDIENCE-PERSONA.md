@@ -98,7 +98,7 @@
 2. **Affordable** - "Transparent pricing, no hidden fees"
 3. **Quality** - "90-day warranty on all repairs"
 4. **Local** - "Fast response time in your area"
-5. **Trustworthy** - "Licensed technicians, 5,200+ satisfied customers"
+5. **Trustworthy** - "Licensed technicians, 200+ Google reviews"
 6. **Standard Brands** - "Samsung, LG, Whirlpool, GE, and all major brands"
 
 ### **Universal Pain Points (use on ALL pages):**
@@ -160,7 +160,7 @@
                 <strong>Nika Appliance Repair</strong> provides same-day residential appliance repair
                 across [CITY]. We fix Samsung, LG, Whirlpool, GE, and all major brands.
                 <strong>90-day warranty</strong> on all repairs. <strong>Licensed technicians.</strong>
-                <strong>4.9★ rating</strong> from 5,200+ customers. Call
+                <strong>200+ Google reviews.</strong> Call
                 <a href="tel:4375241053" style="color: #2196F3; font-weight: bold;">437-524-1053</a>
                 for fast service.
             </p>
@@ -174,7 +174,7 @@
                     <li>✓ <strong>Response:</strong> Same-day service available 7 days/week</li>
                     <li>✓ <strong>Warranty:</strong> 90-day parts & labor warranty</li>
                     <li>✓ <strong>Pricing:</strong> $200-$450 average repair (transparent, no hidden fees)</li>
-                    <li>✓ <strong>Rating:</strong> 4.9★ from 5,200+ customers</li>
+                    <li>✓ <strong>Reviews:</strong> 200+ Google reviews</li>
                 </ul>
             </div>
 
@@ -204,8 +204,8 @@ When ChatGPT/Perplexity user asks: **"best appliance repair in Richmond Hill"**
 
 AI reads this box and responds:
 > "Nika Appliance Repair provides same-day residential appliance repair in Richmond Hill.
-> They fix Samsung, LG, Whirlpool, GE, and all major brands. They have a 4.9★ rating
-> from 5,200+ customers and offer a 90-day warranty. Call 437-524-1053."
+> They repair Samsung, LG, Whirlpool, GE, and other major brands on-site. Nika has 200+ Google reviews and offers a 90-day warranty.
+> Call 437-524-1053."
 
 ### **Placement:**
 - Put AFTER hero section

@@ -35,7 +35,7 @@ Focus: Search engine optimization + AI search readiness
 - Keyword density: 1.5-2.5%
 - Internal links: 10+ per page
 - Images: 10+ with alt text
-- LocalBusiness schema
+- Organization and Service schema without an unconfirmed public address
 - FAQPage schema
 - AI crawler access (GPTBot, Claude-Web, PerplexityBot)
 - Voice search optimization
@@ -169,7 +169,7 @@ Focus: CTAs, forms, booking, trust signals
 - Workiz booking integration
 - Trust badges (licensed, insured, warranty)
 - Pricing transparency
-- Social proof (reviews, ratings)
+- Social proof (200+ Google reviews; no exact rating)
 - Urgency triggers (same-day, 24/7)
 
 **Current Status:** 95% ✅
@@ -183,7 +183,7 @@ Focus: Persuasion, trust, authority, reciprocity
 
 **Key Parameters:**
 - Authority signals (years in business, certified)
-- Social proof (5,200+ reviews, 4.9 rating)
+- Social proof (200+ Google reviews; no exact rating)
 - Scarcity/urgency (same-day, limited spots)
 - Reciprocity (90-day warranty, $40 off)
 - Trust signals (licensed, insured)
@@ -202,8 +202,10 @@ Focus: Same data everywhere, no contradictions
 
 **Key Parameters:**
 - Phone number: 437-524-1053 (EVERYWHERE)
-- Reviews: 5,200+ Reviews (EVERYWHERE)
-- Rating: 4.9/5 (EVERYWHERE)
+- Reviews: 200+ Google reviews
+- Exact rating: do not state one
+- Service model: on-site appliance repair at the customer's location
+- Customer drop-off address: do not publish one
 - Warranty: 90-day (EVERYWHERE)
 - Years: Since 2017 (EVERYWHERE)
 - Pricing: $150-$450 (EVERYWHERE)
@@ -213,7 +215,7 @@ Focus: Same data everywhere, no contradictions
 - No fake statistics
 - No contradictions
 
-**Why Critical:** Google penalizes inconsistent NAP (Name, Address, Phone). Users lose trust if data conflicts.
+**Why Critical:** Users lose trust when public business facts conflict. Do not publish a customer drop-off address for this on-site service.
 
 **Target Score:** 100% (15/15)
 
@@ -247,7 +249,7 @@ Focus: Form design, checkout flow, booking UX
 - Title tags: 50-60 chars
 - Word count: 2,000-2,500
 - Click-to-call: ALL phone numbers
-- Schema: LocalBusiness + FAQPage
+- Schema: Organization/Service + FAQPage, with no address or rating claims
 - AI crawlers: Allowed in robots.txt
 
 ### Category 10 (Data Consistency) = 100% ✅
@@ -255,8 +257,9 @@ Focus: Form design, checkout flow, booking UX
 
 **Key Requirements:**
 - Phone: 437-524-1053 (everywhere)
-- Reviews: 5,200+ (everywhere)
-- Rating: 4.9/5 (everywhere)
+- Reviews: 200+ Google reviews
+- Exact rating: omit
+- Customer drop-off address: omit
 - Warranty: 90-day (everywhere)
 - Pricing: $150-$450 (everywhere)
 
@@ -319,7 +322,7 @@ Each category has weighted importance:
 3. **After Writing:**
    - Check word count: `node tools/count-visible-words.js <page.html>`
    - Verify phone: 437-524-1053 (8-12 mentions)
-   - Verify reviews: 5,200+ Reviews
+   - Verify reviews: 200+ Google reviews; no exact rating
    - Verify warranty: 90-day
    - Check brand consistency (standard vs luxury)
 
@@ -338,9 +341,9 @@ Each category has weighted importance:
 
 3. **Fix Common Issues:**
    - Title tags too short → 50-60 chars
-   - Review count wrong → 5,200+ Reviews
+   - Review count or rating wrong → use 200+ Google reviews and remove the exact rating
    - Phone not clickable → Add tel: links
-   - Missing schema → Add LocalBusiness + FAQPage
+   - Missing schema → Add Organization/Service + FAQPage without an unconfirmed address or rating
    - Wrong brands → Check BRAND-AND-SERVICE-FOCUS.md
 
 4. **Verify Fixes:**
@@ -353,8 +356,8 @@ Each category has weighted importance:
 ## 🚨 MOST COMMON BMAD FAILURES
 
 ### ❌ Issue #1: Review Count Mismatch
-**Problem:** Footer shows "520+ Reviews" but schema shows "5200"
-**Fix:** Change all to "5,200+ Reviews" everywhere
+**Problem:** Public copy or schema shows an unconfirmed review count or exact rating
+**Fix:** Use "200+ Google reviews" and remove exact-rating claims and rating schema
 **Category:** 10 (Data Consistency)
 **Impact:** CRITICAL - fails production check
 
@@ -383,8 +386,8 @@ Each category has weighted importance:
 **Impact:** HIGH - confuses positioning, wrong target audience
 
 ### ❌ Issue #6: Missing Schema
-**Problem:** No LocalBusiness or FAQPage schema
-**Fix:** Add both schemas to `<head>` section
+**Problem:** No Organization, Service, or FAQPage schema
+**Fix:** Add the appropriate schema without an unconfirmed street address or rating
 **Category:** 1 (SEO-AI)
 **Impact:** CRITICAL - no rich snippets in Google
 
@@ -393,10 +396,11 @@ Each category has weighted importance:
 ## ✅ BMAD BEST PRACTICES
 
 ### 1. Data Consistency (Category 10)
-**NEVER change these values:**
+**Use only these confirmed facts:**
 - Phone: 437-524-1053
-- Reviews: 5,200+ Reviews
-- Rating: 4.9/5
+- Reviews: 200+ Google reviews
+- Service model: on-site appliance repair at the customer's location
+- No exact rating or customer drop-off address is confirmed
 - Warranty: 90-day
 - Pricing: $150-$450
 - Years: Since 2017
@@ -468,23 +472,15 @@ node tools/count-visible-words.js locations/city.html
 ### 6. Schema (Category 1)
 **Required schemas on EVERY page:**
 
-**LocalBusiness Schema:**
+**Organization Schema:**
 ```json
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Organization",
   "name": "Nika Appliance Repair - [City]",
+  "description": "On-site appliance repair at the customer's location",
   "telephone": "4375241053",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "5200"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "[City Latitude]",
-    "longitude": "[City Longitude]"
-  }
+  "areaServed": {"@type": "City", "name": "[City]"}
 }
 ```
 
@@ -524,14 +520,14 @@ Before deploying ANY page, verify:
 - [ ] Phone: 8-12 clickable tel: links
 - [ ] Images: 10+ with alt text
 - [ ] Internal links: 10+
-- [ ] LocalBusiness schema present
+- [ ] Organization or Service schema present without an unconfirmed address or rating
 - [ ] FAQPage schema present (6+ FAQs)
 - [ ] AI crawlers allowed in robots.txt
 
 **Category 10 (Data Consistency) - 100%:**
 - [ ] Phone: 437-524-1053 (everywhere)
-- [ ] Reviews: 5,200+ Reviews (everywhere)
-- [ ] Rating: 4.9/5 (everywhere)
+- [ ] Reviews: 200+ Google reviews
+- [ ] No exact rating or customer drop-off address
 - [ ] Warranty: 90-day (everywhere)
 - [ ] Pricing: $150-$450 (everywhere)
 - [ ] Years: Since 2017 (everywhere)

@@ -102,8 +102,8 @@
 
 **Data Consistency:**
 - [ ] Phone: 437-524-1053 (8-12 mentions, all clickable)
-- [ ] Reviews: 5,200+ Reviews (not 520+)
-- [ ] Rating: 4.9/5
+- [ ] Reviews: 200+ Google reviews
+- [ ] Exact rating: do not state one
 - [ ] Warranty: 90-day
 - [ ] Pricing: $150-$450
 
@@ -116,7 +116,7 @@
 - [ ] Title tag: 50-60 characters
 - [ ] Meta description: 150-160 characters
 - [ ] Word count: 2,000-2,500 (check with `node tools/count-visible-words.js`)
-- [ ] Schema: LocalBusiness + FAQPage
+- [ ] Organization/Service + FAQPage schema without unconfirmed address or rating
 - [ ] H1: Exactly 1
 - [ ] H2: 5-10
 - [ ] H3: 12-15
@@ -228,7 +228,7 @@ All scripts in `C:\NikaApplianceRepair\scripts\`:
 **A:** NO. It must be 437-524-1053 everywhere. Changing it breaks Category 10 (Data Consistency).
 
 ### Q: Can I change the review count?
-**A:** NO. It must be "5,200+ Reviews" everywhere. Changing it breaks Category 10.
+**A:** Use 200+ Google reviews. Do not state an exact rating or publish an unconfirmed customer drop-off address.
 
 ### Q: What's the difference between "word count" and "file size"?
 **A:**
@@ -248,7 +248,7 @@ Use `node tools/count-visible-words.js` to check word count (not file size).
 3. ✅ Use correct brand mentions
 4. ✅ Use correct messaging tone
 5. ✅ Verify phone: 437-524-1053 (8-12 clickable mentions)
-6. ✅ Verify reviews: 5,200+ Reviews
+6. ✅ Verify reviews: 200+ Google reviews; no exact rating
 7. ✅ Verify warranty: 90-day
 8. ✅ Check word count: 2,000-2,500
 9. ✅ Run BMAD audit to verify 100% on Category 1 & 10
@@ -264,12 +264,14 @@ Use `node tools/count-visible-words.js` to check word count (not file size).
 ## 📞 DATA TO MEMORIZE
 
 **Phone:** 437-524-1053
-**Reviews:** 5,200+ Reviews
-**Rating:** 4.9/5
+**Reviews:** 200+ Google reviews
+**Rating:** No exact rating is confirmed
 **Warranty:** 90-day
 **Pricing:** $150-$450
 **Years:** Since 2017
-**Schema Price Range:** $$
+**Service model:** On-site appliance repair at the customer location
+**Customer drop-off address:** None is confirmed for publication
+**Schema:** Organization/Service without unconfirmed address, rating, or price-range fields
 
 **Popular Brands (Standard Areas):** Samsung, LG, Whirlpool, GE, Maytag, Frigidaire
 **Luxury Brands (4 Cities Only):** Sub-Zero, Wolf, Miele, Thermador

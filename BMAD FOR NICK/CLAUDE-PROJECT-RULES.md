@@ -8,8 +8,9 @@ Appliance repair business website serving Toronto and GTA. Focus on residential 
 - **Phone**: 437-524-1053
 - **Service Area**: Toronto, Mississauga, Brampton, North York, Scarborough, Etobicoke, Markham, Vaughan, Richmond Hill
 - **Hours**: 24/7 Emergency Service
-- **Rating**: 4.9 ★
-- **Reviews**: 5,200+
+- **Reviews**: 200+ Google reviews
+- **Service model**: On-site appliance repair at the customer's location
+- **Rating and drop-off address**: No exact rating or customer drop-off address is confirmed
 - **Warranty**: 90-day warranty on all repairs
 - **Experience**: 6+ years
 
@@ -64,8 +65,8 @@ Testing organized in 4 priority tiers:
 5. Keep page load under 3 seconds
 
 ## Key Features
-- LocalBusiness schema on all pages
-- AggregateRating schema
+- Organization and Service schema without an unconfirmed public address
+- No AggregateRating or Review schema
 - Responsive typography with CSS clamp()
 - Mobile hamburger menu
 - Trust signals (licensed, insured, warranty)
@@ -93,7 +94,7 @@ Testing organized in 4 priority tiers:
 
 ## Content Strategy
 - Pain point focus (broken appliances, emergency repairs)
-- Social proof emphasis (reviews, ratings, testimonials)
+- Social proof: 200+ Google reviews; do not state an exact rating
 - Urgency triggers (same-day, 24/7, now)
 - Authority signals (licensed, certified, experienced)
 - Clear value propositions

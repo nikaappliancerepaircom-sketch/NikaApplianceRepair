@@ -1,5 +1,13 @@
 # SEO Guidelines - Nika Appliance Repair
 
+## Confirmed Nika business facts
+- Name: Nika Appliance Repair
+- Phone: (437) 524-1053
+- Service model: on-site appliance repair at the customer's location
+- Reviews: 200+ Google reviews
+- Do not state an exact rating or publish a customer drop-off address.
+- Use Organization or Service structured data without an unconfirmed street address or rating.
+
 ## 📋 SEO Checklist for Every Page
 
 ### Title Tags
@@ -12,13 +20,13 @@
 **Service Pages:**
 ```
 [Appliance] Repair in [City] | Same Day Service | Nika Appliance
-Example: Refrigerator Repair in Chicago | Same Day Service | Nika Appliance
+Example: Refrigerator Repair in Toronto | Same Day Service | Nika Appliance
 ```
 
 **Location Pages:**
 ```
 Appliance Repair in [Location] | Fast Local Service | Nika
-Example: Appliance Repair in Downtown Chicago | Fast Local Service | Nika
+Example: Appliance Repair in Downtown Toronto | Fast Local Service | Nika
 ```
 
 **Brand Pages:**
@@ -50,11 +58,11 @@ Example: Samsung Appliance Repair | Authorized Service | Nika Appliance
 ```json
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Organization",
   "@id": "https://nikaappliancerepair.com/#organization",
   "name": "Nika Appliance Repair",
-  "alternateName": ["Nika Repair", "Nika Appliance Service"],
-  "description": "Professional appliance repair service in Chicago",
+  "telephone": "+14375241053",
+  "description": "On-site appliance repair at the customer's location in Toronto and the GTA. 200+ Google reviews.",
   "knowsAbout": [
     "Refrigerator Repair",
     "Washer Repair",
@@ -64,8 +72,7 @@ Example: Samsung Appliance Repair | Authorized Service | Nika Appliance
   ],
   "areaServed": {
     "@type": "City",
-    "name": "Chicago",
-    "containsPlace": ["Downtown", "North Side", "South Side"]
+    "name": "Toronto"
   }
 }
 ```
@@ -117,26 +124,17 @@ Create topical relevance through smart linking:
 ### Location-Specific Optimization
 ```html
 <!-- Unique content for each location -->
-<h1>Appliance Repair in Downtown Chicago</h1>
-<p>Serving the Loop area including Willis Tower, Millennium Park, 
-and the Financial District. Our technicians know the parking 
-restrictions and building access requirements unique to high-rise 
-living.</p>
+<h1>Appliance Repair in Toronto</h1>
+<p>Describe the neighborhoods served and explain that Nika repairs appliances
+at the customer's location. Do not imply customers can visit a drop-off address.</p>
 ```
 
 ### Local Schema Implementation
 ```json
 {
-  "@type": "LocalBusiness",
+  "@type": "Organization",
   "areaServed": [
-    {"@type": "City", "name": "Chicago"},
-    {"@type": "Place", "name": "Downtown Chicago"},
-    {"@type": "Place", "name": "Chicago Loop"}
-  ],
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 41.8781,
-    "longitude": -87.6298
-  }
+    {"@type": "City", "name": "Toronto"}
+  ]
 }
 ```

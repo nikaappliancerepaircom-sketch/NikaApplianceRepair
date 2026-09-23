@@ -16,7 +16,7 @@
 Fast Response • Licensed Technicians • Save $40 Today
 
 ### Hero Subtitle:
-⭐ 4.9/5 from 5,200+ repairs • Licensed across 158 Toronto neighborhoods • Same-day appointments • 90-day parts warranty
+On-site appliance repair | 200+ Google reviews | Same-day appointments | 90-day parts warranty
 
 ### Hero Description (below CTAs):
 When your appliances break in Toronto, you need experts who understand this city's unique challenges. From century-old Victorian homes in Cabbagetown to brand-new Liberty Village condos, Toronto's diverse housing stock creates specific appliance problems. We've spent years mastering repairs in every type of Toronto residence — whether your refrigerator is struggling in a home with 100-year-old wiring, your dryer vent barely fits through your condo's exterior wall, or your dishwasher battles the mineral-rich water flowing through Scarborough's aging pipes.
@@ -47,7 +47,7 @@ Looking for reliable appliance repair in Toronto? Nika Appliance Repair delivers
 
 **Complete coverage:** All 158 Toronto neighborhoods plus 50+ GTA municipalities including Mississauga, Brampton, Vaughan, Richmond Hill, Markham, and Oakville.
 
-**4.9★ rating from 5,200+ satisfied Toronto customers.** We repair every major brand: Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Fisher & Paykel, plus 84 additional manufacturers.
+**See what local customers say in our 200+ Google reviews.** We repair every major brand: Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Fisher & Paykel, plus 84 additional manufacturers.
 
 ---
 

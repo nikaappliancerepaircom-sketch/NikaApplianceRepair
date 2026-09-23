@@ -307,36 +307,15 @@ function generateNeighborhoodHub(slug, data) {
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "Organization",
         "name": "Nika Appliance Repair - ${escName}",
         "image": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
         "url": "https://nikaappliancerepair.com/locations/${slug}",
         "telephone": "+14375241053",
         "email": "nicksappliancerepair@on.fixlify.app",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "755 Steeles Ave W #311",
-            "addressLocality": "North York",
-            "addressRegion": "ON",
-            "postalCode": "M2R 3W9",
-            "addressCountry": "CA"
-        },
-        "priceRange": "$$",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "reviewCount": "176",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
         "areaServed": [
             { "@type": "Place", "name": "${escName}" },
             { "@type": "City", "name": "Toronto" }
-        ],
-        "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "17:00" }
         ]
     }
     </script>
@@ -472,33 +451,12 @@ function generateLocationsIndex() {
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "Organization",
         "name": "Nika Appliance Repair",
         "image": "https://nikaappliancerepair.com/assets/images/friendly-technician-character-min.webp",
         "url": "https://nikaappliancerepair.com/locations",
         "telephone": "+14375241053",
         "email": "nicksappliancerepair@on.fixlify.app",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "755 Steeles Ave W #311",
-            "addressLocality": "North York",
-            "addressRegion": "ON",
-            "postalCode": "M2R 3W9",
-            "addressCountry": "CA"
-        },
-        "priceRange": "$$",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "reviewCount": "176",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00" },
-            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "17:00" }
-        ],
         "areaServed": [
             ${[...CITIES, ...Object.keys(NEIGHBORHOODS)].map(s => {
                 const name = NEIGHBORHOODS[s] ? NEIGHBORHOODS[s].name : (s === 'st-lawrence' ? 'St. Lawrence' : titleCase(s));
@@ -567,7 +525,7 @@ function generateLocationsIndex() {
                 <span>Service Areas</span>
             </nav>
             <h1>Service Areas Across Greater Toronto and Beyond</h1>
-            <p style="font-size:1.15rem;line-height:1.6;color:#212529;max-width:900px;">Nika Appliance Repair has been serving the Greater Toronto Area since 2017 from our base at 755 Steeles Avenue West in North York. Our service map covers 22 cities across the GTA and 21 Toronto neighborhoods, with same-day appointments available seven days a week. Call <a href="tel:4375241053" style="color:#1976D2;font-weight:600;">(437) 524-1053</a> to book or browse the directory below to find local pricing, common appliance issues, and brand-specific service notes for your area.</p>
+            <p style="font-size:1.15rem;line-height:1.6;color:#212529;max-width:900px;">Nika Appliance Repair provides on-site appliance repair across Toronto and the Greater Toronto Area. Call <a href="tel:4375241053" style="color:#1976D2;font-weight:600;">(437) 524-1053</a> to book or browse the directory below to find local pricing, common appliance issues, and brand-specific service notes for your area.</p>
             <p style="line-height:1.7;color:#212529;margin-top:1rem;max-width:900px;">Every service area page covers the same six appliance categories — refrigerators, washers, dryers, dishwashers, ovens, and stoves — but the local context shifts with the territory. Toronto neighborhoods deal with compact 24-inch European-spec appliances in condos, hard Lake Ontario water that scales heaters and inlet valves, and tight kitchen geometry in Victorian and Edwardian housing stock. GTA suburbs tend to have full-size 30-inch and 36-inch residential pairs, larger laundry rooms, well-water hardness in the outer ring, and more straightforward truck access. Picking the right neighborhood page below gives you the pricing range, brand availability, and access notes that match your home before you call.</p>
             <p style="line-height:1.7;color:#212529;margin-top:1rem;max-width:900px;">If you do not see your area listed, call us anyway — we cover the full GTA, including all 416 and 905 area codes, and we serve adjacent regions like Halton, Peel, York, and Durham daily. Our truck stock and parts inventory is built around the brands we see most often across these communities: Samsung, LG, Whirlpool, Bosch, Frigidaire, Kenmore, GE, KitchenAid, Maytag, Electrolux, Miele, Liebherr, Blomberg, and Fisher &amp; Paykel. We also handle several Asian-market and European import brands that show up regularly in Toronto Chinatown and condo districts. Every repair carries our 90-day parts and labour warranty, and the $89 diagnostic is waived whenever you go ahead with the recommended fix.</p>
             <div style="margin-top:1.5rem;">
@@ -603,7 +561,7 @@ function generateLocationsIndex() {
     <section class="area-section alt">
         <div style="max-width:900px;margin:0 auto;">
             <h2>How Our Service Coverage Works</h2>
-            <p style="line-height:1.7;color:#212529;margin-bottom:1rem;">Our base of operations at 755 Steeles Avenue West sits at the intersection of Toronto, North York, Vaughan, and Markham, which means our trucks are typically within 25 to 40 minutes of any address in the GTA core. We schedule routes daily to balance same-day availability with realistic arrival windows — most customers get a confirmed two-hour window within the first phone call.</p>
+            <p style="line-height:1.7;color:#212529;margin-bottom:1rem;">We provide on-site appliance repair in Toronto, North York, Vaughan, Markham, and the Greater Toronto Area. Call (437) 524-1053 to confirm appointment availability for your location.</p>
             <p style="line-height:1.7;color:#212529;margin-bottom:1rem;">For Toronto neighborhoods, we run dedicated downtown routes that batch King West, St. Lawrence, Trinity-Bellwoods, Little Italy, Ossington, and the surrounding neighborhoods together. East-end routes group Greektown, Riverside, the Beaches, and East York. West-end routes cover Bloor West Village, Roncesvalles, Parkdale, High Park, and Swansea. Midtown and Wychwood share a route with Forest Hill and Mount Pleasant. This routing keeps our same-day capacity high even when the Eglinton Crosstown or Lakeshore construction creates traffic surprises.</p>
             <p style="line-height:1.7;color:#212529;margin-bottom:1rem;">For GTA cities, we run fixed daily routes covering York Region (Richmond Hill, Markham, Vaughan, Newmarket, Aurora, Stouffville, East Gwillimbury), Peel (Mississauga, Brampton, Caledon), Halton (Oakville, Burlington, Milton, Halton Hills), and Durham (Ajax, Pickering, Whitby, Oshawa). We hold same-day capacity on every route, with afternoon slots typically filling up by 11 a.m. — calling first thing in the morning gives you the widest window selection.</p>
             <p style="line-height:1.7;color:#212529;">Pricing is consistent across all service areas: $89 diagnostic (waived with repair), $200–$450 typical full repair range, 90-day parts and labour warranty, and OEM parts wherever the manufacturer still produces them. Brand coverage includes Samsung, LG, Whirlpool, Bosch, Frigidaire, Kenmore, GE, KitchenAid, Maytag, Electrolux, Miele, Liebherr, Blomberg, Fisher &amp; Paykel, Haier, and most other current and recent residential makes. For a confirmed quote on your specific situation, call <a href="tel:4375241053" style="color:#1976D2;font-weight:600;">(437) 524-1053</a> — we can give a typical price range over the phone before any technician is dispatched.</p>

@@ -1,13 +1,19 @@
 // Header Loader Script
-// Loads the unified header from includes/header-unified.html
+// Loads the appropriate header while preserving Alberta page content.
 
 (function() {
     // Create a placeholder for the header
     const headerPlaceholder = document.getElementById('header-placeholder');
 
     if (headerPlaceholder) {
+        const isAlbertaPage = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+            .some(script => /"addressRegion"\s*:\s*"(?:AB|Alberta)"/i.test(script.textContent || ''));
+        const headerPath = isAlbertaPage
+            ? '/includes/header-alberta.html'
+            : '/includes/header-unified.html';
+
         // Fetch and insert the header
-        fetch('/includes/header-unified.html')
+        fetch(headerPath)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to load header');

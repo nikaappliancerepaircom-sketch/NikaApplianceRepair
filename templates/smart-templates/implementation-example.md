@@ -105,8 +105,8 @@ We generate **completely unique content** for each page based on context.
 ### Toronto Page:
 ```javascript
 {
-  heroTitle: "Appliance Repair in Toronto - 45 Minute Response",
-  localProof: "Serving Toronto since 2019 • 5,200+ local repairs",
+  heroTitle: "On-site Appliance Repair in Toronto",
+  localProof: "200+ Google reviews • Appliance repair at your location",
   
   neighborhoods: [
     "Downtown Core",
@@ -132,7 +132,7 @@ We generate **completely unique content** for each page based on context.
 ```javascript
 {
   heroTitle: "Mississauga Appliance Repair - Your Local Experts",
-  localProof: "Your Mississauga neighbors trust us • 1,200+ local reviews",
+  localProof: "200+ Google reviews - on-site service in Mississauga",
   
   neighborhoods: [
     "Square One area",
