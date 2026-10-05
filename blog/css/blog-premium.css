@@ -68,13 +68,13 @@ body {
     margin: 2rem auto;
     padding: 0 2rem;
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: minmax(0, 1fr) 350px;
     gap: 3rem;
 }
 
 @media (max-width: 1024px) {
     .blog-wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         margin: 1rem auto;
         gap: 2rem;
     }
@@ -89,6 +89,7 @@ body {
 
 /* Main Content */
 .blog-main {
+    min-width: 0;
     background: var(--white);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -472,7 +473,9 @@ tbody tr:hover {
     }
 
     table {
-        min-width: 600px;
+        min-width: 0;
+        display: block;
+        overflow-x: auto;
     }
 }
 

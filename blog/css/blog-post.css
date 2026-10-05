@@ -58,6 +58,8 @@ button.faq-question { width: 100%; border: 0; background: none; color: inherit; 
     .blog-main { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 600px) {
+    .blog-post h1 { overflow-wrap: anywhere; }
+    .cta-button, .sidebar-cta-button { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
     .header-container, .container { padding: 16px; }
     .main-nav { order: 3; width: 100%; }
     .main-nav ul { justify-content: space-between; gap: 12px; font-size: 15px; }

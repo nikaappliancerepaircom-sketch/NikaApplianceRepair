@@ -9,6 +9,10 @@ a.site-booking-button:hover { background: #0d5198; color: #fff; }
 .site-booking-page iframe[src*="hub.fixlify.app/book/"] { max-width: 900px; margin: 0 auto 24px; background: white; border-radius: 8px; }
 .booking-iframe-wrap:has(.site-booking-card), .book-iframe-wrap:has(.site-booking-card) { height: auto !important; min-height: 0 !important; }
 @media (max-width: 768px) {
+    h2 { overflow-wrap: anywhere; }
+    a[href^="mailto:"] { overflow-wrap: anywhere; }
+    .fx-footer-cta-content > div, .fx-footer-cta-btns { min-width: 0; max-width: 100%; }
+    .fx-footer-cta-btns a { box-sizing: border-box; max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
     html.site-booking-ready body { padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px)) !important; }
     html.site-booking-ready .mobile-bottom-cta, html.site-booking-ready .fx-mobile-bar,
     html.site-booking-ready #sticky-bottom, html.site-booking-ready #stickyBar { display: none !important; }

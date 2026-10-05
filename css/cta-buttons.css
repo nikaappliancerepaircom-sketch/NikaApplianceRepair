@@ -118,7 +118,6 @@
     letter-spacing: 0.5px;
     text-decoration: none;
     margin-top: 2rem;
-    animation: pulse-shadow 2s infinite;
 }
 
 .countdown-cta:hover {
@@ -159,7 +158,6 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-top: 1.5rem;
-    animation: pulse-shadow-purple 2s infinite;
 }
 
 .emergency-phone-btn:hover {

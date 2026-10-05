@@ -201,7 +201,6 @@
 /* Floating phone button */
 .floating-phone {
     background: linear-gradient(135deg, var(--hot-pink) 0%, var(--orange) 100%);
-    animation: pulse-shadow 2s infinite;
 }
 
 @keyframes pulse-shadow {

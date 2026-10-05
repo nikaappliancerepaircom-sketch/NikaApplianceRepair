@@ -727,7 +727,6 @@ footer {
 
 .fab.phone {
   background: var(--success);
-  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {

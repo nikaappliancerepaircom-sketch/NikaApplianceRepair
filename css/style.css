@@ -386,8 +386,7 @@ main p a[href^="tel:"] {
     color: var(--primary-yellow) !important;
     text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
     display: inline-block; /* Изменено с block на inline-block */
-    animation: pulse 2s infinite;
-    line-height: 0.9; /* Компактнее */
+    line-height: 1.15; /* Keep the accent within a normal text line box. */
     margin-top: 0.5rem;
 }
 
@@ -2335,11 +2334,9 @@ main p a[href^="tel:"] {
 }
 
 .countdown-cta {
-    animation: pulse-shadow 2s infinite;
 }
 
 .call-btn-large {
-    animation: pulse-shadow-purple 2s infinite;
 }
 
 /* Enhanced Button Icons */

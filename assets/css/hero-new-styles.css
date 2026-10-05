@@ -93,7 +93,6 @@
         
         .badge-icon {
             font-size: 1.25rem;
-            animation: pulse 2s ease-in-out infinite;
         }
         
         @keyframes pulse {
@@ -380,7 +379,6 @@
         }
         
         .animate-pulse {
-            animation: pulse 2s ease-in-out infinite;
         }
 /* Mobile Responsive Styles */
 @media (max-width: 968px) {

@@ -311,6 +311,19 @@
 
     /* Small Mobile */
     @media (max-width: 480px) {
+        .header-logo {
+            min-width: 0;
+        }
+
+        .header-logo a {
+            white-space: normal;
+            line-height: 1.2;
+        }
+
+        .mobile-menu-btn {
+            flex-shrink: 0;
+        }
+
         .logo-icon {
             font-size: 24px;
         }

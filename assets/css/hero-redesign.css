@@ -398,7 +398,6 @@
     justify-content: center;
     color: white;
     font-size: 14px;
-    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {

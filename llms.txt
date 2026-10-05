@@ -1,44 +1,37 @@
 # Nika Appliance Repair
 
-> Professional appliance repair service in Toronto, Ontario, Canada.
-> 24/7 same-day service, 90-day warranty on parts and labour, all major brands.
-> 200+ Google reviews
-> On-site appliance repair at the customer's location across Toronto and the GTA.
-> Phone: (437) 524-1053
+> On-site appliance repair in Toronto and the Greater Toronto Area.
+> Phone: (437) 524-1053. Website: https://nikaappliancerepair.com/
+> Booking: https://nikaappliancerepair.com/book
 
 ## About
-Nika Appliance Repair is a trusted appliance repair company serving the Greater Toronto Area since 2023. We have certified technicians who repair all major appliance brands. We offer 24/7 emergency service and a 90-day warranty on all repairs.
+Nika Appliance Repair provides on-site appliance repair. Share the appliance model, symptoms and service address when calling or booking. Availability and the repair scope should be confirmed for the request. This guide does not establish a business address, exact review rating, repair price or guaranteed appointment time.
 
 ## Services
-- [Dryer Repair Toronto](https://nikaappliancerepair.com/services/dryer-repair) — $150-$450
-- [Washer Repair Toronto](https://nikaappliancerepair.com/services/washer-repair) — $150-$400
-- [Refrigerator Repair Toronto](https://nikaappliancerepair.com/services/refrigerator-repair) — $200-$500
-- [Oven Repair Toronto](https://nikaappliancerepair.com/services/oven-repair) — $150-$400
-- [Dishwasher Repair Toronto](https://nikaappliancerepair.com/services/dishwasher-repair) — $150-$350
-- [Stove Repair Toronto](https://nikaappliancerepair.com/services/stove-repair) — $150-$400
-- [Freezer Repair Toronto](https://nikaappliancerepair.com/services/freezer-repair) — $150-$400
-- [Microwave Repair Toronto](https://nikaappliancerepair.com/services/microwave-repair) — $100-$300
-- [Range Repair Toronto](https://nikaappliancerepair.com/services/range-repair) — $150-$400
+- [Refrigerator repair](https://nikaappliancerepair.com/services/refrigerator-repair)
+- [Washer repair](https://nikaappliancerepair.com/services/washer-repair)
+- [Dryer repair](https://nikaappliancerepair.com/services/dryer-repair)
+- [Dishwasher repair](https://nikaappliancerepair.com/services/dishwasher-repair)
+- [Oven repair](https://nikaappliancerepair.com/services/oven-repair)
+- [Stove repair](https://nikaappliancerepair.com/services/stove-repair)
+- [Freezer repair](https://nikaappliancerepair.com/services/freezer-repair)
+- [All services](https://nikaappliancerepair.com/services)
 
-## Brands We Service
-LG, Samsung, Whirlpool, Bosch, Miele, KitchenAid, Frigidaire, GE, Maytag, Kenmore, Electrolux, Amana, Danby, Fisher & Paykel, Hotpoint
+## North York
+- [North York service area](https://nikaappliancerepair.com/locations/north-york)
+- [Refrigerator repair in North York](https://nikaappliancerepair.com/locations/services/refrigerator-repair-north-york)
+- [Washer repair in North York](https://nikaappliancerepair.com/locations/services/washer-repair-north-york)
 
-## Service Areas
-Toronto, North York, Scarborough, Etobicoke, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, Newmarket, Aurora, Ajax, Whitby, Oshawa, Pickering, Caledon, Stouffville
+## Other service areas
+- [Toronto](https://nikaappliancerepair.com/locations/toronto)
+- [Mississauga](https://nikaappliancerepair.com/locations/mississauga)
+- [Brampton](https://nikaappliancerepair.com/locations/brampton)
+- [Vaughan](https://nikaappliancerepair.com/locations/vaughan)
+- [Markham](https://nikaappliancerepair.com/locations/markham)
+- [Richmond Hill](https://nikaappliancerepair.com/locations/richmond-hill)
+- [All service areas](https://nikaappliancerepair.com/locations)
 
-## Pricing
-- Service call / diagnosis: $89 (waived if repair completed same day)
-- Most appliance repairs: $150-$500
-- 90-day parts and labour warranty on all repairs
-- $40 off first repair for new customers
-
-## Contact
-- Phone: (437) 524-1053
-- Website: https://nikaappliancerepair.com
-- Hours: 24 hours, 7 days a week
-
-## Key Pages
-- [All Services](https://nikaappliancerepair.com/services)
-- [Service Areas](https://nikaappliancerepair.com/locations/toronto)
-- [Book Repair](https://nikaappliancerepair.com/book)
-- [Blog & Guides](https://nikaappliancerepair.com/blog)
+## Contact and guides
+- [Book a repair request](https://nikaappliancerepair.com/book)
+- [About Nika](https://nikaappliancerepair.com/about)
+- [Repair guides](https://nikaappliancerepair.com/blog-nika-appliance-repair)

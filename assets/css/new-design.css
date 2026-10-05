@@ -998,7 +998,6 @@ html[lang="en"] {
     border-radius: 50%;
     background: var(--hot-pink);
     opacity: 0.6;
-    animation: pulse-ring 2s ease-in-out infinite;
 }
 
 .phone-pulse::after {
